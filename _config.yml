@@ -1,0 +1,36 @@
+# Site settings
+title: My Learning Wiki
+description: A personal wiki documenting tricks, skills, and knowledge I've learned
+baseurl: "" # Update to "/repo-name" if deploying to github.com/username/repo-name
+url: "" # Update to https://username.github.io when deploying
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Collections for wiki-style organization
+collections:
+  wiki:
+    output: true
+    permalink: /wiki/:categories/:title/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "wiki"
+    values:
+      layout: "entry"
+
+# Categories for organizing entries
+wiki_categories:
+  - name: Programming
+    icon: "💻"
+  - name: Tools
+    icon: "🔧"
+  - name: AI
+    icon: "🤖"
+  - name: Productivity
+    icon: "⚡"
+  - name: Other
+    icon: "📝"

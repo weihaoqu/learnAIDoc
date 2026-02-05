@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<article class="wiki-entry">
+  <header class="entry-header">
+    <h1>{{ page.title }}</h1>
+    <div class="entry-meta">
+      <span class="category">{{ page.category }}</span>
+      <span class="date">{{ page.date | date: "%B %d, %Y" }}</span>
+      {% if page.tags %}
+      <span class="tags">
+        {% for tag in page.tags %}
+        <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </span>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="entry-content">
+    {{ content }}
+  </div>
+
+  {% if page.related %}
+  <footer class="entry-footer">
+    <h3>Related Entries</h3>
+    <ul>
+      {% for related in page.related %}
+      {% assign rel_entry = site.wiki | where: "title", related | first %}
+      {% if rel_entry %}
+      <li><a href="{{ rel_entry.url | relative_url }}">{{ rel_entry.title }}</a></li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </footer>
+  {% endif %}
+</article>

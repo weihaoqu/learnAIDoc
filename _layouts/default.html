@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <header class="site-header">
+        <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+        <p class="tagline">{{ site.description }}</p>
+      </header>
+
+      <nav class="wiki-nav">
+        <h2>Categories</h2>
+        <ul class="category-list">
+          {% for cat in site.wiki_categories %}
+          <li>
+            <a href="{{ '/category/' | append: cat.name | downcase | relative_url }}">
+              <span class="icon">{{ cat.icon }}</span> {{ cat.name }}
+            </a>
+            <span class="count">
+              {{ site.wiki | where: "category", cat.name | size }}
+            </span>
+          </li>
+          {% endfor %}
+        </ul>
+
+        <h2>Recent Entries</h2>
+        <ul class="recent-list">
+          {% assign recent = site.wiki | sort: "date" | reverse | limit: 5 %}
+          {% for entry in recent %}
+          <li><a href="{{ entry.url | relative_url }}">{{ entry.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content">
+      {{ content }}
+    </main>
+  </div>
+</body>
+</html>

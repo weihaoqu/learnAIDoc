@@ -1,0 +1,30 @@
+---
+layout: default
+title: Home
+---
+<div class="home-content">
+  <h2>All Entries</h2>
+
+  {% assign entries_by_category = site.wiki | group_by: "category" %}
+
+  {% for category in entries_by_category %}
+  <h2>{{ category.name }}</h2>
+  <ul class="entry-list">
+    {% assign sorted_entries = category.items | sort: "date" | reverse %}
+    {% for entry in sorted_entries %}
+    <li>
+      <a href="{{ entry.url | relative_url }}">
+        <span class="title">{{ entry.title }}</span>
+        <span class="meta">{{ entry.date | date: "%b %d, %Y" }} • {{ entry.tags | join: ", " }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+
+  {% if site.wiki.size == 0 %}
+  <p style="color: var(--text-secondary); margin-top: 2rem;">
+    No entries yet. Add your first entry in the <code>_wiki</code> folder!
+  </p>
+  {% endif %}
+</div>
