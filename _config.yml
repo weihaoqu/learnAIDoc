@@ -1,8 +1,8 @@
 # Site settings
 title: My Learning Wiki
 description: A personal wiki documenting tricks, skills, and knowledge I've learned
-baseurl: "" # Update to "/repo-name" if deploying to github.com/username/repo-name
-url: "" # Update to https://username.github.io when deploying
+baseurl: "/learnAIDoc"
+url: "https://weihaoqu.github.io"
 
 # Build settings
 markdown: kramdown
