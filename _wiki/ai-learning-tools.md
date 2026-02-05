@@ -50,6 +50,15 @@ No deep CSS/JS knowledge required.
 
 **GitHub:** [github.com/zarazhangrui/frontend-slides](https://github.com/zarazhangrui/frontend-slides)
 
+---
+
+### PDF3MD
+**Core Function:** Content Portability
+
+Simplifies the conversion of PDF files to Markdown or Word for easier editing and integration into other learning tools.
+
+**GitHub:** [github.com/murtaza-nasir/pdf3md](https://github.com/murtaza-nasir/pdf3md)
+
 ## Mapping to High-Engagement Patterns
 
 | Tool | Learning Pattern | How It Helps |
@@ -57,5 +66,6 @@ No deep CSS/JS knowledge required.
 | DeepTutor | Conceptual Inquiry | Build mental models before coding |
 | PageLM | Generation-Then-Comprehension | Test yourself, find gaps |
 | Frontend-Slides | Hybrid Code-Explanation | Visualize to understand |
+| PDF3MD | Content Portability | Convert PDFs for use in other tools |
 
 These tools support the principle: **stay cognitively engaged, even when AI assists**.
