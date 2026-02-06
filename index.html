@@ -3,39 +3,73 @@ layout: default
 title: Home
 ---
 <div class="home-page">
-  {% assign all_entries = site.wiki | sort: "date" | reverse %}
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-section">
+      <div class="sidebar-title">Topics</div>
+      {% for cat in site.wiki_categories %}
+      {% assign cat_entries = site.wiki | where: "category", cat.name | sort: "title" %}
+      {% if cat_entries.size > 0 %}
+      <div class="sidebar-category">
+        <div class="sidebar-category-header">
+          <span class="icon">{{ cat.icon }}</span>
+          <span>{{ cat.name }}</span>
+        </div>
+        <ul class="sidebar-links">
+          {% for entry in cat_entries %}
+          <li><a href="{{ entry.url | relative_url }}" class="sidebar-link">{{ entry.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </aside>
 
-  {% if all_entries.size > 0 %}
-  <div class="magazine-grid">
-    {% for entry in all_entries %}
-    <a href="{{ entry.url | relative_url }}" class="entry-card" data-category="{{ entry.category }}">
-      <div class="card-image-wrapper">
-        {% if entry.image %}
-        <img src="{{ entry.image | relative_url }}" alt="{{ entry.title }}" class="card-image">
-        {% else %}
-        <div class="card-placeholder" data-category="{{ entry.category }}">
-          {% if entry.icon %}{{ entry.icon }}{% else %}📄{% endif %}
-        </div>
-        {% endif %}
+  <!-- Main Content -->
+  <div class="main-content">
+    {% for cat in site.wiki_categories %}
+    {% assign cat_entries = site.wiki | where: "category", cat.name | sort: "date" | reverse %}
+    {% if cat_entries.size > 0 %}
+    <section class="category-section" id="{{ cat.name | downcase }}">
+      <div class="category-header">
+        <span class="category-icon">{{ cat.icon }}</span>
+        <h2 class="category-name">{{ cat.name }}</h2>
+        <span class="category-count">{{ cat_entries.size }}</span>
       </div>
-      <div class="card-content">
-        <h3 class="card-title">{{ entry.title }}</h3>
-        {% if entry.excerpt %}
-        <p class="card-excerpt">{{ entry.excerpt | strip_html | truncate: 120 }}</p>
-        {% endif %}
-        <div class="card-meta">
-          {% if entry.tags.first %}
-          <span class="card-tag">{{ entry.tags.first }}</span>
-          {% endif %}
-          <span class="card-date">{{ entry.date | date: "%b %d, %Y" }}</span>
-        </div>
+
+      <div class="card-grid">
+        {% for entry in cat_entries %}
+        <a href="{{ entry.url | relative_url }}" class="entry-card">
+          <div class="card-image-wrapper">
+            {% if entry.image %}
+            <img src="{{ entry.image | relative_url }}" alt="{{ entry.title }}" class="card-image">
+            {% else %}
+            <div class="card-placeholder" data-category="{{ entry.category }}">
+              {% if entry.icon %}{{ entry.icon }}{% else %}📄{% endif %}
+            </div>
+            {% endif %}
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">{{ entry.title }}</h3>
+            <div class="card-meta">
+              {% if entry.tags.first %}
+              <span class="card-tag">{{ entry.tags.first }}</span>
+              {% endif %}
+              <span class="card-date">{{ entry.date | date: "%b %d" }}</span>
+            </div>
+          </div>
+        </a>
+        {% endfor %}
       </div>
-    </a>
+    </section>
+    {% endif %}
     {% endfor %}
+
+    {% if site.wiki.size == 0 %}
+    <div class="empty-state">
+      <p>No entries yet. Add your first entry in the <code>_wiki</code> folder!</p>
+    </div>
+    {% endif %}
   </div>
-  {% else %}
-  <div class="empty-state">
-    <p>No entries yet. Add your first entry in the <code>_wiki</code> folder!</p>
-  </div>
-  {% endif %}
 </div>

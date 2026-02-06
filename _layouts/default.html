@@ -11,18 +11,6 @@
     <div class="site-container">
       <div class="header-inner">
         <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
-
-        <nav class="main-nav" role="navigation" aria-label="Category filters">
-          <button class="nav-pill active" data-filter="all">All</button>
-          {% for cat in site.wiki_categories %}
-          {% assign cat_count = site.wiki | where: "category", cat.name | size %}
-          {% if cat_count > 0 %}
-          <button class="nav-pill" data-filter="{{ cat.name }}">
-            <span class="icon">{{ cat.icon }}</span>{{ cat.name }}
-          </button>
-          {% endif %}
-          {% endfor %}
-        </nav>
       </div>
     </div>
   </header>
@@ -38,43 +26,5 @@
       Built with Jekyll
     </div>
   </footer>
-
-  <script>
-    // Category filter functionality
-    document.addEventListener('DOMContentLoaded', function() {
-      const pills = document.querySelectorAll('.nav-pill');
-      const cards = document.querySelectorAll('.entry-card');
-      const grid = document.querySelector('.magazine-grid');
-
-      pills.forEach(pill => {
-        pill.addEventListener('click', function() {
-          const filter = this.dataset.filter;
-
-          // Update active state
-          pills.forEach(p => p.classList.remove('active'));
-          this.classList.add('active');
-
-          // Filter cards with animation
-          if (grid) {
-            grid.classList.add('filtering');
-
-            setTimeout(() => {
-              cards.forEach(card => {
-                const category = card.dataset.category;
-                if (filter === 'all' || category === filter) {
-                  card.dataset.hidden = 'false';
-                  card.style.display = '';
-                } else {
-                  card.dataset.hidden = 'true';
-                  card.style.display = 'none';
-                }
-              });
-              grid.classList.remove('filtering');
-            }, 100);
-          }
-        });
-      });
-    });
-  </script>
 </body>
 </html>
