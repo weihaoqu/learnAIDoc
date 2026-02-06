@@ -5,6 +5,7 @@ category: AI
 tags: [claude-code, learning, documentation]
 related: ["Claude Code Power User Tips", "How AI Impacts Skill Formation"]
 icon: "👨‍🏫"
+image: "/assets/images/claude-teacher-setup.jpg"
 ---
 
 Transform Claude Code into a personal technical teacher by adding specific instructions to your `CLAUDE.md` file. Every coding project becomes a learning opportunity.

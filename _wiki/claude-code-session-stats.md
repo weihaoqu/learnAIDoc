@@ -4,6 +4,7 @@ date: 2024-02-05
 category: Tools
 tags: [claude-code, cli, productivity]
 icon: "📊"
+image: "/assets/images/claude-code-stats.jpg"
 ---
 
 Claude Code provides built-in commands to monitor your session statistics, token usage, and costs.

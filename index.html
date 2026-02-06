@@ -3,52 +3,39 @@ layout: default
 title: Home
 ---
 <div class="home-page">
-  <header class="page-header">
-    <h1 class="page-title">{{ site.title }}</h1>
-    <p class="page-description">{{ site.description }}</p>
-  </header>
+  {% assign all_entries = site.wiki | sort: "date" | reverse %}
 
-  {% assign entries_by_category = site.wiki | group_by: "category" %}
-
-  {% for cat in site.wiki_categories %}
-  {% assign cat_entries = site.wiki | where: "category", cat.name | sort: "date" | reverse %}
-  {% if cat_entries.size > 0 %}
-  <section class="category-section" id="{{ cat.name | downcase }}">
-    <div class="category-header">
-      <span class="category-icon">{{ cat.icon }}</span>
-      <h2 class="category-name">{{ cat.name }}</h2>
-      <span class="category-count">{{ cat_entries.size }} {% if cat_entries.size == 1 %}entry{% else %}entries{% endif %}</span>
-    </div>
-
-    <div class="card-grid">
-      {% for entry in cat_entries %}
-      <a href="{{ entry.url | relative_url }}" class="entry-card">
+  {% if all_entries.size > 0 %}
+  <div class="magazine-grid">
+    {% for entry in all_entries %}
+    <a href="{{ entry.url | relative_url }}" class="entry-card" data-category="{{ entry.category }}">
+      <div class="card-image-wrapper">
         {% if entry.image %}
         <img src="{{ entry.image | relative_url }}" alt="{{ entry.title }}" class="card-image">
-        {% elsif entry.icon %}
-        <div class="card-image-placeholder">{{ entry.icon }}</div>
-        {% endif %}
-        <div class="card-content">
-          <h3 class="card-title">{{ entry.title }}</h3>
-          {% if entry.excerpt %}
-          <p class="card-excerpt">{{ entry.excerpt | strip_html | truncate: 120 }}</p>
-          {% endif %}
-          <div class="card-meta">
-            {% for tag in entry.tags limit:3 %}
-            <span class="card-tag">{{ tag }}</span>
-            {% endfor %}
-          </div>
+        {% else %}
+        <div class="card-placeholder" data-category="{{ entry.category }}">
+          {% if entry.icon %}{{ entry.icon }}{% else %}📄{% endif %}
         </div>
-      </a>
-      {% endfor %}
-    </div>
-  </section>
-  {% endif %}
-  {% endfor %}
-
-  {% if site.wiki.size == 0 %}
-  <p style="color: var(--text-muted); margin-top: 2rem;">
-    No entries yet. Add your first entry in the <code>_wiki</code> folder!
-  </p>
+        {% endif %}
+      </div>
+      <div class="card-content">
+        <h3 class="card-title">{{ entry.title }}</h3>
+        {% if entry.excerpt %}
+        <p class="card-excerpt">{{ entry.excerpt | strip_html | truncate: 120 }}</p>
+        {% endif %}
+        <div class="card-meta">
+          {% if entry.tags.first %}
+          <span class="card-tag">{{ entry.tags.first }}</span>
+          {% endif %}
+          <span class="card-date">{{ entry.date | date: "%b %d, %Y" }}</span>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="empty-state">
+    <p>No entries yet. Add your first entry in the <code>_wiki</code> folder!</p>
+  </div>
   {% endif %}
 </div>

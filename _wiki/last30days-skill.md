@@ -5,6 +5,7 @@ category: Tools
 tags: [claude-code, research, skills, reddit, twitter]
 related: ["Claude Code Power User Tips"]
 icon: "📅"
+image: "/assets/images/last30days-skill.jpg"
 ---
 
 A Claude Code skill that aggregates recent discussions from Reddit and X (Twitter) to research any topic. Great for "priming" Claude with current trends before tackling a task.

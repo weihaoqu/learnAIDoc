@@ -5,6 +5,7 @@ category: Tools
 tags: [claude-code, cli, productivity, workflow]
 related: ["Claude Code Session Stats & Usage"]
 icon: "⚡"
+image: "/assets/images/claude-code-power-tips.jpg"
 ---
 
 A collection of advanced tips and workflows for getting more out of Claude Code.

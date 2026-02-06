@@ -2,15 +2,19 @@
 layout: default
 ---
 <article class="entry-container">
-  <header class="entry-header">
-    {% if page.image %}
+  {% if page.image %}
+  <div class="entry-cover-wrapper">
     <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="entry-cover">
-    {% endif %}
+  </div>
+  {% endif %}
 
+  <header class="entry-header">
     <h1 class="entry-title">{{ page.title }}</h1>
 
     <div class="entry-meta">
+      {% if page.category %}
       <span class="meta-category">{{ page.category }}</span>
+      {% endif %}
       <span class="meta-date">{{ page.date | date: "%B %d, %Y" }}</span>
       {% if page.tags %}
       {% for tag in page.tags %}

@@ -4,6 +4,7 @@ date: 2024-02-05
 category: AI
 tags: [learning, education, productivity, research]
 icon: "🧠"
+image: "/assets/images/ai-impacts-skill-formation.jpg"
 ---
 
 A study investigating how AI assistance affects the acquisition of technical skills—specifically conceptual understanding, code reading, and debugging.

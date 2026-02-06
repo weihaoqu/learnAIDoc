@@ -5,6 +5,7 @@ category: AI
 tags: [prompting, research, critical-thinking, productivity]
 related: ["How AI Impacts Skill Formation"]
 icon: "🔬"
+image: "/assets/images/ai-research-toolkit.jpg"
 ---
 
 Shift AI from a "chat assistant" to a "thinking magnifier." Move from asking for answers to collaborative research and rigorous logic testing.

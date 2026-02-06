@@ -5,6 +5,7 @@ category: Tools
 tags: [claude-code, skills, resources, github]
 related: ["Claude Code Power User Tips", "Last 30 Days Skill"]
 icon: "🔗"
+image: "/assets/images/claude-code-resources.jpg"
 ---
 
 A curated list of resources for finding, creating, and managing Claude Code skills.
