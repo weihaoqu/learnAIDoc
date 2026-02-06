@@ -7,41 +7,31 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-  <div class="container">
-    <aside class="sidebar">
-      <header class="site-header">
-        <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-        <p class="tagline">{{ site.description }}</p>
-      </header>
+  <div class="site-container">
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
 
-      <nav class="wiki-nav">
-        <h2>Categories</h2>
-        <ul class="category-list">
+        <nav class="main-nav">
           {% for cat in site.wiki_categories %}
-          <li>
-            <a href="{{ '/category/' | append: cat.name | downcase | relative_url }}">
-              <span class="icon">{{ cat.icon }}</span> {{ cat.name }}
-            </a>
-            <span class="count">
-              {{ site.wiki | where: "category", cat.name | size }}
-            </span>
-          </li>
+          {% assign cat_count = site.wiki | where: "category", cat.name | size %}
+          {% if cat_count > 0 %}
+          <a href="{{ '/' | relative_url }}#{{ cat.name | downcase }}" class="nav-link">
+            <span class="icon">{{ cat.icon }}</span>{{ cat.name }}
+          </a>
+          {% endif %}
           {% endfor %}
-        </ul>
+        </nav>
+      </div>
+    </header>
 
-        <h2>Recent Entries</h2>
-        <ul class="recent-list">
-          {% assign recent = site.wiki | sort: "date" | reverse | limit: 5 %}
-          {% for entry in recent %}
-          <li><a href="{{ entry.url | relative_url }}">{{ entry.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </nav>
-    </aside>
-
-    <main class="content">
+    <main>
       {{ content }}
     </main>
+
+    <footer class="site-footer">
+      Built with Jekyll • Powered by GitHub Pages
+    </footer>
   </div>
 </body>
 </html>

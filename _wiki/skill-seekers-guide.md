@@ -4,6 +4,7 @@ date: 2024-02-05
 category: Tools
 tags: [claude-code, skills, automation, scraping]
 related: ["Claude Code Skills: Resources & Repos", "Claude Code Power User Tips"]
+icon: "🤖"
 ---
 
 Skill Seekers automates the creation of Claude Skills. Instead of manually copying documentation into prompts, it scrapes websites, GitHub repos, or PDFs and packages them into a format Claude can use as a specialized knowledge base.

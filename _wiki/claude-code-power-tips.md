@@ -4,6 +4,7 @@ date: 2024-02-05
 category: Tools
 tags: [claude-code, cli, productivity, workflow]
 related: ["Claude Code Session Stats & Usage"]
+icon: "⚡"
 ---
 
 A collection of advanced tips and workflows for getting more out of Claude Code.

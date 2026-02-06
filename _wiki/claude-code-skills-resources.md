@@ -4,6 +4,7 @@ date: 2024-02-05
 category: Tools
 tags: [claude-code, skills, resources, github]
 related: ["Claude Code Power User Tips", "Last 30 Days Skill"]
+icon: "🔗"
 ---
 
 A curated list of resources for finding, creating, and managing Claude Code skills.

@@ -4,6 +4,7 @@ date: 2024-02-05
 category: AI
 tags: [learning, tools, education, open-source]
 related: ["How AI Impacts Skill Formation"]
+icon: "📚"
 ---
 
 Tools that shift AI from a "crutch" to a "lever" for deep understanding—implementing high-engagement learning patterns.

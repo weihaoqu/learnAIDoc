@@ -2,28 +2,52 @@
 layout: default
 title: Home
 ---
-<div class="home-content">
-  <h2>All Entries</h2>
+<div class="home-page">
+  <header class="page-header">
+    <h1 class="page-title">{{ site.title }}</h1>
+    <p class="page-description">{{ site.description }}</p>
+  </header>
 
   {% assign entries_by_category = site.wiki | group_by: "category" %}
 
-  {% for category in entries_by_category %}
-  <h2>{{ category.name }}</h2>
-  <ul class="entry-list">
-    {% assign sorted_entries = category.items | sort: "date" | reverse %}
-    {% for entry in sorted_entries %}
-    <li>
-      <a href="{{ entry.url | relative_url }}">
-        <span class="title">{{ entry.title }}</span>
-        <span class="meta">{{ entry.date | date: "%b %d, %Y" }} • {{ entry.tags | join: ", " }}</span>
+  {% for cat in site.wiki_categories %}
+  {% assign cat_entries = site.wiki | where: "category", cat.name | sort: "date" | reverse %}
+  {% if cat_entries.size > 0 %}
+  <section class="category-section" id="{{ cat.name | downcase }}">
+    <div class="category-header">
+      <span class="category-icon">{{ cat.icon }}</span>
+      <h2 class="category-name">{{ cat.name }}</h2>
+      <span class="category-count">{{ cat_entries.size }} {% if cat_entries.size == 1 %}entry{% else %}entries{% endif %}</span>
+    </div>
+
+    <div class="card-grid">
+      {% for entry in cat_entries %}
+      <a href="{{ entry.url | relative_url }}" class="entry-card">
+        {% if entry.image %}
+        <img src="{{ entry.image | relative_url }}" alt="{{ entry.title }}" class="card-image">
+        {% elsif entry.icon %}
+        <div class="card-image-placeholder">{{ entry.icon }}</div>
+        {% endif %}
+        <div class="card-content">
+          <h3 class="card-title">{{ entry.title }}</h3>
+          {% if entry.excerpt %}
+          <p class="card-excerpt">{{ entry.excerpt | strip_html | truncate: 120 }}</p>
+          {% endif %}
+          <div class="card-meta">
+            {% for tag in entry.tags limit:3 %}
+            <span class="card-tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        </div>
       </a>
-    </li>
-    {% endfor %}
-  </ul>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
   {% endfor %}
 
   {% if site.wiki.size == 0 %}
-  <p style="color: var(--text-secondary); margin-top: 2rem;">
+  <p style="color: var(--text-muted); margin-top: 2rem;">
     No entries yet. Add your first entry in the <code>_wiki</code> folder!
   </p>
   {% endif %}
