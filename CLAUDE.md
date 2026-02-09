@@ -57,3 +57,11 @@ Categories must match one defined in `_config.yml` under `wiki_categories` for t
 - **GitHub Pages gem** (`github-pages ~> 228`) pins all dependencies for compatibility; don't add gems that aren't supported by GitHub Pages
 - The sidebar in `index.html` uses Liquid to iterate `site.wiki_categories` and entries are grouped by category using `group_by: "category"`
 - Related entries linking works by matching the `related` front matter array against other entry titles
+
+## How I Learn — Claude Code Behavior
+
+When explaining code or making changes:
+
+- **Explain the "why", not just the "what"** — Always explain the reasoning behind code choices, tradeoffs considered, and why this approach was picked over alternatives. Help me learn, not just ship.
+- **Generate visual HTML presentations for unfamiliar code** — When I'm learning a new codebase or module, create a self-contained HTML slide deck that walks through the architecture, key functions, and data flow visually.
+- **Draw ASCII diagrams for protocols and codebases** — When explaining systems, architectures, data flows, or protocols, include ASCII diagrams to build a quick mental model before diving into code.
