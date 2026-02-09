@@ -20,12 +20,35 @@ Run `/permissions` to pre-approve common operations. Avoids constant permission 
 ```
 
 ### Enable Learning Mode
-Set output style to `explanatory` or `learning` in config to have Claude explain the "why" behind its code, not just the "what".
+Instead of a one-time config toggle, add learning instructions directly to your CLAUDE.md so every session follows them automatically.
 
+I added three rules to `~/.claude/CLAUDE.md` (user-level, applies to all projects):
+
+```markdown
+# How I Learn — Claude Code Behavior
+
+When explaining code or making changes:
+
+- **Explain the "why", not just the "what"** — Always explain the reasoning
+  behind code choices, tradeoffs considered, and why this approach was picked
+  over alternatives. Help me learn, not just ship.
+- **Generate visual HTML presentations for unfamiliar code** — When I'm
+  learning a new codebase or module, create a self-contained HTML slide deck
+  that walks through the architecture, key functions, and data flow visually.
+- **Draw ASCII diagrams for protocols and codebases** — When explaining
+  systems, architectures, data flows, or protocols, include ASCII diagrams
+  to build a quick mental model before diving into code.
 ```
-> /config
-# Set output style to explanatory
-```
+
+**Where to put it:**
+
+| File | Scope |
+|------|-------|
+| `~/.claude/CLAUDE.md` | All your projects (personal) |
+| `./CLAUDE.md` | This project only (shared with team) |
+| `./CLAUDE.local.md` | This project only (personal, gitignored) |
+
+The result: Claude now explains *why* it chose a specific approach every time it writes code, draws diagrams when introducing new systems, and offers HTML slide decks when I'm onboarding into unfamiliar codebases — all without me asking each time.
 
 ## Leveraging Subagents
 
@@ -42,14 +65,14 @@ Offload individual tasks to subagents to keep the main agent window focused. The
 ## Learning & Understanding Code
 
 ### Generate Visual HTML Presentations
-Ask Claude to create an HTML presentation explaining unfamiliar code. It produces surprisingly good slides for walkthroughs.
+Ask Claude to create an HTML presentation explaining unfamiliar code. It produces surprisingly good slides for walkthroughs. With learning mode enabled in your CLAUDE.md, Claude will proactively offer these when you're exploring new code.
 
 ```
 > Create an HTML slide deck explaining how this codebase handles authentication
 ```
 
 ### ASCII Architecture Diagrams
-Ask Claude to draw ASCII diagrams of protocols and codebases. Great for quick mental models.
+Ask Claude to draw ASCII diagrams of protocols and codebases. Great for quick mental models. With learning mode, Claude includes these automatically when explaining systems.
 
 ```
 > Draw an ASCII diagram showing how data flows through this system
