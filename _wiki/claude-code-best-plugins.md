@@ -47,6 +47,7 @@ Claude can see and interact with your browser. Read pages, click buttons, fill f
 - Debug live sites, scrape data, automate repetitive browser tasks
 - Works with your actual logged-in session — no need to handle auth separately
 - Pairs well with everything else
+- **Real-world example:** [Clean up promotional emails in Gmail](https://claude.com/resources/use-cases/clean-up-promotional-emails) — Claude navigates your inbox, identifies promo emails, and bulk-cleans them
 
 ## 6. PR Review Toolkit
 
