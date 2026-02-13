@@ -10,6 +10,8 @@ image: "/assets/images/claude-code-plugins.png"
 
 Plugins let you install LSPs, MCPs, skills, agents, and custom hooks into Claude Code from a centralized marketplace.
 
+*Source: [Claude Code creator Boris shares 12 ways that most people don't know about](https://www.reddit.com/r/ClaudeAI/comments/1r2b5xk/claude_code_creator_boris_shares_12_ways_that/)*
+
 ## Getting Started
 
 ```

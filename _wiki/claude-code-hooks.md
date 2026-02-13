@@ -10,6 +10,8 @@ image: "/assets/images/claude-code-hooks.png"
 
 Hooks are a way to deterministically hook into Claude's lifecycle — running your own code at specific points during a session.
 
+*Source: [Claude Code creator Boris shares 12 ways that most people don't know about](https://www.reddit.com/r/ClaudeAI/comments/1r2b5xk/claude_code_creator_boris_shares_12_ways_that/)*
+
 ## Getting Started
 
 Ask Claude to add a hook for you:

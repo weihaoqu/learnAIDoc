@@ -10,6 +10,8 @@ image: "/assets/images/claude-code-custom-agents.png"
 
 A little-known feature in Claude Code lets you set the default agent used for the main conversation. This changes the system prompt and behavior of your primary Claude session.
 
+*Source: [Claude Code creator Boris shares 12 ways that most people don't know about](https://www.reddit.com/r/ClaudeAI/comments/1r2b5xk/claude_code_creator_boris_shares_12_ways_that/)*
+
 ## Getting Started
 
 ```

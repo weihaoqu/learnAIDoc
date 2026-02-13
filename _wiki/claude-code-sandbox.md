@@ -10,6 +10,8 @@ image: "/assets/images/claude-code-sandbox.png"
 
 Claude Code has a built-in sandbox that provides file and network isolation, so commands run in a restricted environment right on your machine.
 
+*Source: [Claude Code creator Boris shares 12 ways that most people don't know about](https://www.reddit.com/r/ClaudeAI/comments/1r2b5xk/claude_code_creator_boris_shares_12_ways_that/)*
+
 ## Getting Started
 
 ```

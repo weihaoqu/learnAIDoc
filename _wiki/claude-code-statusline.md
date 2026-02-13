@@ -10,6 +10,8 @@ image: "/assets/images/claude-code-statusline.png"
 
 Custom status lines show up right below the composer in Claude Code, letting you display model, directory, remaining context, cost, and pretty much anything else you want to see while you work.
 
+*Source: [Claude Code creator Boris shares 12 ways that most people don't know about](https://www.reddit.com/r/ClaudeAI/comments/1r2b5xk/claude_code_creator_boris_shares_12_ways_that/)*
+
 ## Getting Started
 
 Run `/statusline` inside a session and Claude will generate a statusline for you based on your `.bashrc`/`.zshrc` prompt style.
