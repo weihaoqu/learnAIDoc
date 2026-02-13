@@ -10,6 +10,8 @@ image: "/assets/images/claude-code-best-plugins.png"
 
 A curated list of the most useful Claude Code plugins, based on community recommendations. Install any of these with `/plugin`.
 
+*Source: [@DeFiMinty on X](https://x.com/DeFiMinty/status/2021677256515498292)*
+
 ## 1. Superpowers
 
 Great for larger projects. Helps you plan, spins up subagents for research, and actually thinks through the problem before committing to a plan.
