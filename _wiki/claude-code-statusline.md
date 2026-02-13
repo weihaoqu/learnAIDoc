@@ -5,6 +5,7 @@ category: Tools
 tags: [claude-code, cli, customization, workflow]
 related: ["Claude Code Power User Tips", "Claude Code Session Stats & Usage"]
 icon: "📊"
+image: "/assets/images/claude-code-statusline.png"
 ---
 
 Custom status lines show up right below the composer in Claude Code, letting you display model, directory, remaining context, cost, and pretty much anything else you want to see while you work.

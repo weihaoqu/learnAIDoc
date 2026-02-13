@@ -5,6 +5,7 @@ category: Tools
 tags: [claude-code, cli, hooks, automation, workflow]
 related: ["Claude Code Power User Tips", "Claude Code Plugins & Marketplace"]
 icon: "🪝"
+image: "/assets/images/claude-code-hooks.png"
 ---
 
 Hooks are a way to deterministically hook into Claude's lifecycle — running your own code at specific points during a session.

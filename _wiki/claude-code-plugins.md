@@ -5,6 +5,7 @@ category: Tools
 tags: [claude-code, cli, plugins, mcp, skills, extensibility]
 related: ["Claude Code Skills & Resources", "Claude Code Custom Agents"]
 icon: "🔌"
+image: "/assets/images/claude-code-plugins.png"
 ---
 
 Plugins let you install LSPs, MCPs, skills, agents, and custom hooks into Claude Code from a centralized marketplace.

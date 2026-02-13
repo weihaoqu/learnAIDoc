@@ -5,6 +5,7 @@ category: Tools
 tags: [claude-code, cli, agents, customization]
 related: ["Claude Code Agent Teams vs Subagents", "Claude Code Power User Tips"]
 icon: "🤖"
+image: "/assets/images/claude-code-custom-agents.png"
 ---
 
 A little-known feature in Claude Code lets you set the default agent used for the main conversation. This changes the system prompt and behavior of your primary Claude session.

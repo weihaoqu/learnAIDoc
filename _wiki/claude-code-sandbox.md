@@ -5,6 +5,7 @@ category: Tools
 tags: [claude-code, cli, security, sandboxing]
 related: ["Claude Code Power User Tips"]
 icon: "🔒"
+image: "/assets/images/claude-code-sandbox.png"
 ---
 
 Claude Code has a built-in sandbox that provides file and network isolation, so commands run in a restricted environment right on your machine.
