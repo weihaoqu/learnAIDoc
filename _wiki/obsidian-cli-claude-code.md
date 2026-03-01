@@ -10,7 +10,7 @@ image: "/assets/images/obsidian-cli-claude-code.png"
 
 Use Obsidian as a structured "thinking journal" and feed it into Claude Code via CLI — so the agent works from *your* beliefs and context, not just code syntax. The key insight: don't dump code into Obsidian. Write about your thinking instead.
 
-*Sources: [Internet Vin — The Obsidian Architect: Thinking Above the Code](https://www.youtube.com/watch?v=6MBq1paspVU) | [Obsidian + Claude Code Deep Dive](https://www.youtube.com/watch?v=BLdO-32I6Yc)*
+*Sources: [Internet Vin — The Obsidian Architect: Thinking Above the Code](https://www.youtube.com/watch?v=6MBq1paspVU) | [Obsidian + Claude Code Deep Dive](https://www.youtube.com/watch?v=BLdO-32I6Yc) | [How to Use Obsidian](https://www.youtube.com/watch?v=z4AbijUCoKU)*
 
 ## The Core Idea
 
