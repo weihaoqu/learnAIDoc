@@ -10,7 +10,7 @@ image: "/assets/images/ai-fluency-index.png"
 
 Anthropic's 2026 Education Report introduces the **AI Fluency Index** — a 4D framework (24 behaviors, 11 observable) based on 9,830 conversations analyzed. The key finding: being good at prompting doesn't mean you're good at working with AI. The most fluent users treat AI as a thought partner to *augment* their work, not just delegate it.
 
-*Source: [Anthropic AI Fluency Index](https://www.anthropic.com/research/AI-fluency-index)*
+*Source: [Anthropic AI Fluency Index](https://www.anthropic.com/research/AI-fluency-index) | Related paper: [How AI Changes Skill Formation (arXiv)](https://arxiv.org/pdf/2601.20245v1)*
 
 ![Level Up Your AI Fluency](/assets/images/ai-fluency-index-infographic.png)
 
