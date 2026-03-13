@@ -29,25 +29,7 @@ Research backs this up: students who delegate coding to AI score **17% lower** o
 
 ## The Right Way: AI as Learning Amplifier
 
-```
-┌──────────────────────────────────────────────────┐
-│              YOUR BRAIN (always on)               │
-│                                                   │
-│   Think first → Form questions → Attempt it       │
-│        │              │               │           │
-│        ▼              ▼               ▼           │
-│   ┌─────────┐  ┌───────────┐  ┌──────────────┐   │
-│   │ AI as   │  │ AI as     │  │ AI as        │   │
-│   │ tutor   │  │ challenger│  │ connector    │   │
-│   │         │  │           │  │              │   │
-│   │"Explain │  │"Find the  │  │"How does     │   │
-│   │ WHY this│  │ flaw in   │  │ this relate  │   │
-│   │ works"  │  │ my logic" │  │ to X?"       │   │
-│   └─────────┘  └───────────┘  └──────────────┘   │
-│                                                   │
-│   You stay in control. AI extends your reach.     │
-└──────────────────────────────────────────────────┘
-```
+![The Right Way: AI as Learning Amplifier](/assets/images/ai-learning-amplifier.png)
 
 The key mindset shift: **AI is your study partner, not your substitute.**
 
