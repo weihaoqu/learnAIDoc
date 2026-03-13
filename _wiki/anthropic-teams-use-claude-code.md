@@ -12,7 +12,7 @@ Anthropic published an internal report on how their own teams — from Legal and
 
 *Source: [How Anthropic Teams Use Claude Code (PDF)](https://www-cdn.anthropic.com/58284b19e702b49db9302d5b6f135ad8871e7658.pdf)*
 
-![How Anthropic Teams Scale Productivity with Claude Code](/assets/images/anthropic-teams-claude-code-infographic.png)
+![How Anthropic Teams Scale Productivity with Claude Code](/learnAIDoc/assets/images/anthropic-teams-claude-code-infographic.png)
 
 ## 7 Key Takeaways
 

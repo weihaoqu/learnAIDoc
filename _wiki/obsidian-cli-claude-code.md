@@ -16,7 +16,7 @@ Use Obsidian as a structured "thinking journal" and feed it into Claude Code via
 
 Standard AI chat is session-based with temporary context. Obsidian + Claude Code creates **permanent, vault-based context** — your markdown files become persistent memory that Claude can draw from across sessions.
 
-![Obsidian + Claude Code Synergy](/assets/images/obsidian-cli-claude-code-infographic.png)
+![Obsidian + Claude Code Synergy](/learnAIDoc/assets/images/obsidian-cli-claude-code-infographic.png)
 
 ## Why Not Just Dump Code?
 

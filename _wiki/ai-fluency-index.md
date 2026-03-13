@@ -12,7 +12,7 @@ Anthropic's 2026 Education Report introduces the **AI Fluency Index** — a 4D f
 
 *Source: [Anthropic AI Fluency Index](https://www.anthropic.com/research/AI-fluency-index) | Related paper: [How AI Changes Skill Formation (arXiv)](https://arxiv.org/pdf/2601.20245v1)*
 
-![Level Up Your AI Fluency](/assets/images/ai-fluency-index-infographic.png)
+![Level Up Your AI Fluency](/learnAIDoc/assets/images/ai-fluency-index-infographic.png)
 
 ## Takeaway 1: The "Iteration Effect"
 

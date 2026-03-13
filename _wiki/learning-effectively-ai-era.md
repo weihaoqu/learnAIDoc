@@ -29,7 +29,7 @@ Research backs this up: students who delegate coding to AI score **17% lower** o
 
 ## The Right Way: AI as Learning Amplifier
 
-![The Right Way: AI as Learning Amplifier](/assets/images/ai-learning-amplifier.png)
+![The Right Way: AI as Learning Amplifier](/learnAIDoc/assets/images/ai-learning-amplifier.png)
 
 The key mindset shift: **AI is your study partner, not your substitute.**
 
