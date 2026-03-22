@@ -3,7 +3,7 @@ title: "Create Custom Course Materials with Claude"
 date: 2026-02-13
 category: AI
 tags: [claude, education, latex, course-materials, teaching]
-related: ["Build Interactive Diagram Tools with Claude"]
+related: ["Build Interactive Diagram Tools with Claude", "Posterskill — AI-Generated Academic Conference Posters from Your Paper"]
 icon: "📚"
 image: "/assets/images/claude-course-materials.png"
 ---

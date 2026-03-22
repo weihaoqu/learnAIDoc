@@ -3,7 +3,7 @@ title: "Claude Code Skills: Resources & Repos"
 date: 2024-02-05
 category: Tools
 tags: [claude-code, skills, resources, github]
-related: ["Claude Code Power User Tips", "Last 30 Days Skill", "mdpdf: Markdown to PDF with Claude Code", "Gstack — Garry Tan's AI Software Factory for Claude Code"]
+related: ["Claude Code Power User Tips", "Last 30 Days Skill", "mdpdf: Markdown to PDF with Claude Code", "Gstack — Garry Tan's AI Software Factory for Claude Code", "Posterskill — AI-Generated Academic Conference Posters from Your Paper"]
 icon: "🔗"
 image: "/assets/images/claude-code-resources.jpg"
 ---
