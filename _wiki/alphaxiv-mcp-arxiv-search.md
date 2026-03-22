@@ -3,7 +3,7 @@ title: "alphaXiv MCP — Semantic ArXiv Search Directly in Claude Code"
 date: 2026-03-22
 category: Tools
 tags: [mcp, arxiv, research, academic, claude-code, embedding-search, literature-review, paper-search]
-related: ["Claude-Prism — Local-First Academic Writing Workspace with AI", "Autoresearch: 100 Autonomous ML Experiments Overnight", "Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture"]
+related: ["Claude-Prism — Local-First Academic Writing Workspace with AI", "Autoresearch: 100 Autonomous ML Experiments Overnight", "Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "Five Questions for Critical Paper Reading — The Cambridge Method with Claude"]
 icon: "📄"
 image: "/assets/images/alphaxiv-mcp-arxiv-search.png"
 ---

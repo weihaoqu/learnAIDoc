@@ -3,7 +3,7 @@ title: "AI Research & Thinking Toolkit: 13 Power Prompts"
 date: 2024-02-05
 category: AI
 tags: [prompting, research, critical-thinking, productivity]
-related: ["How AI Impacts Skill Formation"]
+related: ["How AI Impacts Skill Formation", "Three Hidden Instructions That Stop Claude from Hallucinating", "Five Questions for Critical Paper Reading — The Cambridge Method with Claude"]
 icon: "🔬"
 image: "/assets/images/ai-research-toolkit.jpg"
 ---
