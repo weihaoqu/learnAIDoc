@@ -2,7 +2,7 @@
 title: "Autoresearch: 100 Autonomous ML Experiments Overnight"
 date: 2026-03-12
 category: AI
-tags: [autoresearch, machine-learning, claude-code, karpathy, automation, research]
+tags: [autoresearch, machine-learning, claude-code, karpathy, automation, research, optimization, skills]
 related: ["Claude Code /loop: Scheduled Prompts on Autopilot", "How Anthropic Teams Use Claude Code", "Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "alphaXiv MCP — Semantic ArXiv Search Directly in Claude Code"]
 icon: "🔬"
 image: "/assets/images/autoresearch.png"
@@ -10,7 +10,7 @@ image: "/assets/images/autoresearch.png"
 
 Autoresearch lets an AI agent run autonomous ML experiments while you sleep. You write instructions in a `program.md` file, and the agent modifies training code, runs 5-minute experiments, measures results, and keeps only the improvements — automatically. Expect ~12 experiments/hour, or ~100 overnight.
 
-*Sources: [karpathy/autoresearch on GitHub](https://github.com/karpathy/autoresearch) | [autoresearch skill on LobeHub](https://lobehub.com/skills/jonmumm-skills-autoresearch) | [Deep dive by Ken Huang](https://kenhuangus.substack.com/p/exploring-andrej-karpathys-autoresearch)*
+*Sources: [karpathy/autoresearch on GitHub](https://github.com/karpathy/autoresearch) | [uditgoenka/autoresearch (general-purpose fork)](https://github.com/uditgoenka/autoresearch) | [autoresearch skill on LobeHub](https://lobehub.com/skills/jonmumm-skills-autoresearch) | [Deep dive by Ken Huang](https://kenhuangus.substack.com/p/exploring-andrej-karpathys-autoresearch) | [Ole Lehmann: AutoResearch for Skills](https://x.com/itsolelehmann/status/2033919415771713715)*
 
 ## How It Works
 
@@ -141,6 +141,69 @@ The original project was designed for any LLM agent, but Claude Code is a natura
 ### Community Forks
 - **Apple Silicon (MLX):** [autoresearch-mlx](https://github.com/trevin-creator/autoresearch-mlx) — no PyTorch required
 - **Multi-agent:** [autoautoresearch](https://github.com/ArmanJR/autoautoresearch) — parallel agent swarms
+
+## Beyond ML: AutoResearch for General Software Engineering
+
+Karpathy's AutoResearch was designed for ML experiments, but the core loop — **modify → verify → keep/discard → repeat** — works for anything that can be scored. [uditgoenka/autoresearch](https://github.com/uditgoenka/autoresearch) adapts this pattern to general software engineering tasks in Claude Code.
+
+### The General-Purpose Loop
+
+```
+Define scoring criteria (3-6 yes/no rubric items)
+     ↓
+Agent makes a small change
+     ↓
+Agent tests the result against criteria
+     ↓
+Better? → keep. Worse? → discard.
+     ↓
+Repeat forever. Go to sleep.
+```
+
+The key: **you only need to define a scoring rubric**. Not code, not architecture — just a checklist of yes/no criteria. Say "run autoresearch on my landing page skill" and it runs the whole process.
+
+### Real-World Results
+
+| Use Case | Before | After | Rounds |
+|---|---|---|---|
+| [Page load speed](https://x.com/itsolelehmann/status/2033919415771713715) | 1,100ms | 67ms | 67 |
+| Landing page copy accuracy | 56% | 92% | auto |
+| Test coverage | 70% | 95% | auto |
+| Bundle size | bloated | <200KB | auto |
+| Lighthouse score | low | 90+ | auto |
+
+### Applicable Scenarios
+
+- **Performance optimization** — Lighthouse scores, page load times, Core Web Vitals
+- **Bundle size reduction** — keep restructuring code until frontend bundle is under target
+- **Code quality** — raise unit test coverage from 70% to 95%
+- **CI/CD security** — add security scanning to pipeline, iterate until no vulnerabilities
+- **Content optimization** — cold emails, newsletter headers, landing page copy
+- **Claude Code Skills** — auto-optimize any skill with measurable scoring criteria
+
+### How to Apply to Claude Skills
+
+One practitioner turned this into a reusable pattern ([ref](https://x.com/itsolelehmann/status/2033919415771713715)):
+
+1. Put the AutoResearch logic into a Claude Code skill
+2. Point it at any other skill you want to optimize
+3. Define 3-6 yes/no scoring criteria, e.g.:
+   - Does the headline contain specific numbers or results?
+   - Is the copy free of marketing buzzwords ("revolutionary", "synergy")?
+   - Does the CTA directly address a pain point?
+   - Is the opening sentence under 15 words?
+4. Say: `run autoresearch on my landing page skill`
+5. The agent loops: modify skill → test against criteria → keep/discard
+
+The changelog becomes the most valuable output — it records what works and what doesn't for that specific skill. When better models come out, hand the changelog to the new agent and it continues optimizing from where the last one left off.
+
+### For Teaching
+
+This pattern teaches students a fundamental concept: **anything with a measurable outcome can be optimized automatically**. The human's job is defining what "good" means (the rubric), not doing the optimization manually. This connects directly to:
+
+- [Formal verification](/learnAIDoc/wiki/tools/claude-code-tips-engineering/) — defining correctness criteria, then automating verification
+- [TDD](/learnAIDoc/wiki/ai/karpathy-end-of-coding/) — tests as automated success criteria
+- The [Claude Certified Architect](/learnAIDoc/wiki/ai/claude-certified-architect/) exam's emphasis on verification loops
 
 ## Who Made This
 
