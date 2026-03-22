@@ -49,6 +49,18 @@ Each use case highlights which Claude features it leverages:
 - **Claude in Excel** — Spreadsheet workflows
 - **Cowork** — Collaborative work features
 
+## Key Insight from the Community
+
+A widely shared observation: Claude's structured output quality in complex tasks consistently exceeds expectations. This isn't marketing — it's what practitioners see in actual workflows. The contrast is telling: some spend thousands of dollars on tokens without knowing how to get started, while others treat the [official use cases page](https://claude.com/resources/use-cases) as a course textbook and iterate from there.
+
+The takeaway: **tool capability boundaries often depend on how well you prompt**, not on the model's raw ability. The use cases directory shows you what's possible when prompting is done right.
+
 ## Why This Matters
 
 Most people use Claude for a narrow set of tasks they already know. This directory is a goldmine for discovering workflows you didn't know were possible. Browse it when you have a repetitive task and think "there's probably a better way" — there usually is.
+
+## Further Reading
+
+- [Claude Use Cases Directory](https://claude.com/resources/use-cases)
+- [Claude API Documentation](https://docs.anthropic.com/en/docs)
+- [Claude Code Official Docs](https://code.claude.com/docs/en/how-claude-code-works)

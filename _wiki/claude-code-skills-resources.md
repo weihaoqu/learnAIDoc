@@ -74,16 +74,41 @@ Automatically converts into usable Skills:
 
 ---
 
+## Courses & Tutorials
+
+### Learn Claude Code — Build an AI Agent from Scratch
+[github.com/shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) | [Interactive Platform: learn.shareai.run](https://learn.shareai.run)
+
+A 12-lesson course that teaches Claude Code internals by building a complete AI coding agent (`s_full.py`) step by step. Each lesson builds on the previous one:
+
+| Section | Topics |
+|---|---|
+| **Foundation (1-3)** | Agent Loop basics, Bash Tool, Tool registration & scheduling |
+| **Intermediate (4-6)** | Sub-agent task decomposition, Skills dynamic loading, context compression, task persistence, async execution |
+| **Advanced (7-9)** | Multi-agent teams, custom inter-agent protocols, worktree isolation |
+| **Final** | Combine all 12 lessons into `s_full.py` — a complete AI coding agent |
+
+The interactive platform at [learn.shareai.run](https://learn.shareai.run) provides a visual learning experience (recommended over just reading the repo). Chinese README available at [README-zh.md](https://github.com/shareAI-lab/learn-claude-code/blob/main/README-zh.md).
+
+**Why this matters:** After completing this course, you understand what Claude Code is actually doing under the hood — Agent Loop, Tool system, Skills, Subagents — not just how to use it. This maps directly to the [Claude Certified Architect](/learnAIDoc/wiki/ai/claude-certified-architect/) exam domains.
+
+### Anthropic Academy (Free)
+[anthropic.skilljar.com](https://anthropic.skilljar.com/) — 13 free courses including the 8.1-hour "Building with the Claude API" flagship course. See [Claude Certified Architect entry](/learnAIDoc/wiki/ai/claude-certified-architect/) for details.
+
+---
+
 ## Quick Reference
 
 | Resource | Type | Best For |
 |----------|------|----------|
-| Official Docs | Documentation | Learning the spec |
-| anthropics/skills | Repo | Official examples |
-| awesome-claude-skills | Repo | Pre-built integrations |
-| obra-superpowers | Repo | Architecture patterns |
-| skillsmp.com | Marketplace | Browsing 70k+ skills |
-| Skill Seekers | Tool | Auto-generating skills |
+| [Official Docs](https://code.claude.com/docs/en/skills) | Documentation | Learning the spec |
+| [anthropics/skills](https://github.com/anthropics/skills) | Repo | Official examples |
+| [awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) | Repo | Pre-built integrations |
+| [obra-superpowers](https://github.com/wln/obra-superpowers) | Repo | Architecture patterns |
+| [skillsmp.com](https://skillsmp.com) | Marketplace | Browsing 70k+ skills |
+| [Skill Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) | Tool | Auto-generating skills |
+| [Learn Claude Code](https://github.com/shareAI-lab/learn-claude-code) | Course | Building agents from scratch |
+| [Anthropic Academy](https://anthropic.skilljar.com/) | Course | Free CCA-F exam prep (13 courses) |
 
 ## Getting Started
 
