@@ -3,7 +3,7 @@ title: "Claude Certified Architect — Anthropic's First Official AI Certificati
 date: 2026-03-22
 category: AI
 tags: [anthropic, certification, claude, education, mcp, agentic-architecture, claude-code]
-related: ["Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "How Anthropic Teams Use Claude Code"]
+related: ["Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "How Anthropic Teams Use Claude Code", "Anthropic Academy — 13 Free AI Courses with Certificates"]
 icon: "🏅"
 image: "/assets/images/claude-certified-architect.png"
 ---

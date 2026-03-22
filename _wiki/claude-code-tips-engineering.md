@@ -3,7 +3,7 @@ title: "Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Arc
 date: 2026-03-22
 category: Tools
 tags: [claude-code, tips, context-management, skills, hooks, subagents, engineering-practices, prompt-caching]
-related: ["Claude Code Power User Tips", "Claude Code: Isolate Heavy Tasks with context: fork", "Claude Code Plugins & Marketplace", "Claude Certified Architect — Anthropic's First Official AI Certification"]
+related: ["Claude Code Power User Tips", "Claude Code: Isolate Heavy Tasks with context: fork", "Claude Code Plugins & Marketplace", "Claude Certified Architect — Anthropic's First Official AI Certification", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure"]
 icon: "🧠"
 image: "/assets/images/claude-code-tips-engineering.png"
 ---
