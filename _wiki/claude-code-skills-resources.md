@@ -72,6 +72,19 @@ Automatically converts into usable Skills:
 - Codebases
 - PDF files
 
+### HyperSkill
+[github.com/hyperbrowserai/hyperbrowser-app-examples/.../hyperskills](https://github.com/hyperbrowserai/hyperbrowser-app-examples/tree/main/hyperskills)
+
+Auto-generates SKILL.md documentation from any web source. Built with Next.js, [Hyperbrowser SDK](https://www.hyperbrowser.ai/), Serper API, and GPT-4o. Three modes:
+
+| Mode | What It Does |
+|---|---|
+| **Single Skill** | Input a topic or URL → generates one SKILL.md |
+| **Batch Mode** | Generate multiple skills at once |
+| **Skill Tree** | Generate a hierarchy of related skills |
+
+Useful for quickly turning existing documentation, API references, or tutorials into Claude Code skills without writing SKILL.md by hand.
+
 ---
 
 ## Courses & Tutorials
@@ -106,7 +119,8 @@ The interactive platform at [learn.shareai.run](https://learn.shareai.run) provi
 | [awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) | Repo | Pre-built integrations |
 | [obra-superpowers](https://github.com/wln/obra-superpowers) | Repo | Architecture patterns |
 | [skillsmp.com](https://skillsmp.com) | Marketplace | Browsing 70k+ skills |
-| [Skill Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) | Tool | Auto-generating skills |
+| [Skill Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) | Tool | Auto-generating skills from files |
+| [HyperSkill](https://github.com/hyperbrowserai/hyperbrowser-app-examples/tree/main/hyperskills) | Tool | Auto-generating SKILL.md from web sources |
 | [Learn Claude Code](https://github.com/shareAI-lab/learn-claude-code) | Course | Building agents from scratch |
 | [Anthropic Academy](https://anthropic.skilljar.com/) | Course | Free CCA-F exam prep (13 courses) |
 
