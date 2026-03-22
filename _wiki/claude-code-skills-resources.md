@@ -3,7 +3,7 @@ title: "Claude Code Skills: Resources & Repos"
 date: 2024-02-05
 category: Tools
 tags: [claude-code, skills, resources, github]
-related: ["Claude Code Power User Tips", "Last 30 Days Skill"]
+related: ["Claude Code Power User Tips", "Last 30 Days Skill", "mdpdf: Markdown to PDF with Claude Code"]
 icon: "🔗"
 image: "/assets/images/claude-code-resources.jpg"
 ---
