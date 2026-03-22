@@ -3,7 +3,7 @@ title: "Autoresearch: 100 Autonomous ML Experiments Overnight"
 date: 2026-03-12
 category: AI
 tags: [autoresearch, machine-learning, claude-code, karpathy, automation, research]
-related: ["Claude Code /loop: Scheduled Prompts on Autopilot", "How Anthropic Teams Use Claude Code"]
+related: ["Claude Code /loop: Scheduled Prompts on Autopilot", "How Anthropic Teams Use Claude Code", "Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era"]
 icon: "🔬"
 image: "/assets/images/autoresearch.png"
 ---
