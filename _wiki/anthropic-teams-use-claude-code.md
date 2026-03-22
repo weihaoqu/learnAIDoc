@@ -3,7 +3,7 @@ title: "How Anthropic Teams Use Claude Code"
 date: 2026-02-24
 category: AI
 tags: [claude-code, anthropic, workflow, productivity, dogfooding, teams]
-related: ["Claude Code Power User Tips", "Best Claude Code Plugins", "Gstack — Garry Tan's AI Software Factory for Claude Code"]
+related: ["Claude Code Power User Tips", "Best Claude Code Plugins", "Gstack — Garry Tan's AI Software Factory for Claude Code", "Claude Certified Architect — Anthropic's First Official AI Certification"]
 icon: "🏢"
 image: "/assets/images/anthropic-teams-claude-code.png"
 ---
