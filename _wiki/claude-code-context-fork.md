@@ -3,7 +3,7 @@ title: "Claude Code: Isolate Heavy Tasks with context: fork"
 date: 2026-02-08
 category: Tools
 tags: [claude-code, cli, skills, subagents, context-management]
-related: ["Claude Code: Agent Teams vs Subagents", "Claude Code Power User Tips"]
+related: ["Claude Code: Agent Teams vs Subagents", "Claude Code Power User Tips", "Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture"]
 icon: "🍴"
 image: "/assets/images/claude-code-context-fork.jpg"
 ---
