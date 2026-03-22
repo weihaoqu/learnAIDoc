@@ -3,7 +3,7 @@ title: "Claude Code Plugins & Marketplace"
 date: 2026-02-13
 category: Tools
 tags: [claude-code, cli, plugins, mcp, skills, extensibility]
-related: ["Claude Code Skills & Resources", "Claude Code Custom Agents"]
+related: ["Claude Code Skills & Resources", "Claude Code Custom Agents", "Understand Anything — Turn Codebases Into Interactive Knowledge Graphs"]
 icon: "🔌"
 image: "/assets/images/claude-code-plugins.png"
 ---
