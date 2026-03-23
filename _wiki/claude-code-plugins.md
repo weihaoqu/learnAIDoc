@@ -10,7 +10,7 @@ image: "/assets/images/claude-code-plugins.png"
 
 Plugins let you install LSPs, MCPs, skills, agents, and custom hooks into Claude Code from a centralized marketplace.
 
-*Source: [Claude Code creator Boris shares 12 ways that most people don't know about](https://www.reddit.com/r/ClaudeAI/comments/1r2b5xk/claude_code_creator_boris_shares_12_ways_that/)*
+*Source: [Claude Code creator Boris shares 12 ways that most people don't know about](https://www.reddit.com/r/ClaudeAI/comments/1r2b5xk/claude_code_creator_boris_shares_12_ways_that/) | [Reddit: 28 Official Plugins — Most People Don't Know](https://www.reddit.com/r/ClaudeAI/comments/1r4tk3u/there_are_28_official_claude_code_plugins_most)*
 
 ## Getting Started
 
@@ -49,6 +49,24 @@ You can create your own private marketplace for your team. Then check the market
 ```
 
 This means when a teammate clones the repo and opens Claude Code, they automatically get access to your team's plugins — no manual setup.
+
+## The 53-Plugin Reality
+
+A Reddit thread revealed there are actually **53 official plugins** (not 28 as the original post claimed) — and the post's description of `hookify` was completely wrong. The community takeaway: **read the official docs, not social media summaries**. You can see everything available in `/plugins` within Claude Code.
+
+The thread also surfaced a broader pattern: people would rather watch a 30-minute video than read 10 minutes of official documentation. Technical literacy — the ability to read docs — is becoming a rare and valuable skill as AI makes everything else easier.
+
+## Practical Adoption Advice
+
+The most practical advice from community discussions:
+
+| Tip | Why |
+|-----|-----|
+| **Start with 3 plugins for one week** | Learn them properly before adding more |
+| **Add one at a time after that** | Each plugin changes Claude's behavior; batch-adding creates confusion |
+| **Use CLAUDE.md pipes** | Organize plugins into three concerns: one for code quality, one for security, one for workflow |
+| **Remove 80% of tools you're not using** | Too many tools makes Claude confused (Vercel learned this the hard way) |
+| **Read the official docs first** | Community posts often contain errors |
 
 ## Why This Matters
 
