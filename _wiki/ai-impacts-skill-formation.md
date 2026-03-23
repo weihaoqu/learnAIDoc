@@ -1,7 +1,7 @@
 ---
 title: "How AI Impacts Skill Formation"
 date: 2024-02-05
-category: AI
+category: AI Education
 tags: [learning, education, productivity, research]
 related: ["Learning in the AI Era: Amplify Your Thinking, Don't Outsource It", "AI Fluency Index: Why Your Best Prompts Might Lead to Your Worst Work"]
 icon: "🧠"

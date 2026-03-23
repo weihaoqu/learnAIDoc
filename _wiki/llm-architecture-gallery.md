@@ -1,7 +1,7 @@
 ---
 title: "LLM Architecture Gallery — Visual Reference for Every Major Model"
 date: 2026-03-22
-category: AI
+category: AI Research
 tags: [llm, architecture, reference, visualization, education, raschka, transformer]
 related: ["TensorTonic — Learn Machine Learning by Implementing 200+ Algorithms from Scratch", "Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "Unsloth Studio — Train and Run LLMs Locally with 70% Less Memory"]
 icon: "🏛️"

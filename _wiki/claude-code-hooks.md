@@ -1,7 +1,7 @@
 ---
 title: "Claude Code Hooks"
 date: 2026-02-13
-category: Tools
+category: Claude Code
 tags: [claude-code, cli, hooks, automation, workflow]
 related: ["Claude Code Power User Tips", "Claude Code Plugins & Marketplace", "Harness Engineering — The Real Bottleneck Isn't the Model"]
 icon: "🪝"

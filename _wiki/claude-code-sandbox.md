@@ -1,7 +1,7 @@
 ---
 title: "Claude Code Sandbox Mode"
 date: 2026-02-13
-category: Tools
+category: Claude Code
 tags: [claude-code, cli, security, sandboxing]
 related: ["Claude Code Power User Tips"]
 icon: "🔒"

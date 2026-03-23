@@ -1,7 +1,7 @@
 ---
 title: "Best Claude Code Plugins"
 date: 2026-02-13
-category: Tools
+category: Claude Code
 tags: [claude-code, cli, plugins, workflow, productivity]
 related: ["Claude Code Plugins & Marketplace", "Claude Code Power User Tips", "Understand Anything — Turn Codebases Into Interactive Knowledge Graphs", "Gstack — Garry Tan's AI Software Factory for Claude Code", "Prompt Master — Write Accurate Prompts for Any AI Tool, Zero Waste"]
 icon: "🔌"

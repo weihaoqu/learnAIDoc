@@ -1,7 +1,7 @@
 ---
 title: "Build Interactive Diagram Tools with Claude"
 date: 2026-02-13
-category: AI
+category: AI Research
 tags: [claude, artifacts, interactive, diagrams, learning, visualization]
 related: ["Claude Code Power User Tips"]
 icon: "🧬"

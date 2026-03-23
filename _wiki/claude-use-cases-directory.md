@@ -1,7 +1,7 @@
 ---
 title: "Claude Use Cases Directory"
 date: 2026-02-13
-category: AI
+category: AI Research
 tags: [claude, use-cases, productivity, workflow, reference]
 related: ["Build Interactive Diagram Tools with Claude", "Create Custom Course Materials with Claude", "Best Claude Code Plugins"]
 icon: "📖"

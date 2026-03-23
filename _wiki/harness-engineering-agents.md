@@ -1,7 +1,7 @@
 ---
 title: "Harness Engineering — The Real Bottleneck Isn't the Model"
 date: 2026-03-22
-category: AI
+category: Claude Code
 tags: [harness-engineering, agents, claude-code, reliability, context-engineering, middleware, subagents, architecture]
 related: ["Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Claude Code: Agent Teams vs Subagents", "Claude Code Hooks", "Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture"]
 icon: "🏇"

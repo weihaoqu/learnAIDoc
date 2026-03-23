@@ -1,7 +1,7 @@
 ---
 title: "Claude Code Session Stats & Usage"
 date: 2024-02-05
-category: Tools
+category: Claude Code
 tags: [claude-code, cli, productivity]
 icon: "📊"
 image: "/assets/images/claude-code-stats.jpg"

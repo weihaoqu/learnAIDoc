@@ -1,7 +1,7 @@
 ---
 title: "Five Questions for Critical Paper Reading — The Cambridge Method with Claude"
 date: 2026-03-22
-category: AI
+category: AI Education
 tags: [academic-reading, critical-thinking, claude, research, papers, education, methodology]
 related: ["Three Hidden Instructions That Stop Claude from Hallucinating", "AI Research & Thinking Toolkit: 13 Power Prompts", "Claude-Prism — Local-First Academic Writing Workspace with AI", "alphaXiv MCP — Semantic ArXiv Search Directly in Claude Code"]
 icon: "📖"

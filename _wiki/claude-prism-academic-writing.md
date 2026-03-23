@@ -1,7 +1,7 @@
 ---
 title: "Claude-Prism — Local-First Academic Writing Workspace with AI"
 date: 2026-03-22
-category: Tools
+category: AI Education
 tags: [academic, latex, writing, claude, zotero, research, education, python, open-source]
 related: ["Posterskill — AI-Generated Academic Conference Posters from Your Paper", "Create Custom Course Materials with Claude", "Claude Certified Architect — Anthropic's First Official AI Certification", "alphaXiv MCP — Semantic ArXiv Search Directly in Claude Code", "Five Questions for Critical Paper Reading — The Cambridge Method with Claude"]
 icon: "✍️"

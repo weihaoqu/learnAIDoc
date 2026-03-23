@@ -1,7 +1,7 @@
 ---
 title: "Claude Code: Resume Sessions from a PR"
 date: 2026-02-08
-category: Tools
+category: Claude Code
 tags: [claude-code, cli, git, collaboration, async]
 related: ["Claude Code Power User Tips"]
 icon: "🔗"

@@ -1,7 +1,7 @@
 ---
 title: "Claude Code /rewind — Undo Without Losing Context"
 date: 2026-02-08
-category: Tools
+category: Claude Code
 tags: [claude-code, cli, productivity, undo, workflow]
 related: ["Claude Code Power User Tips"]
 icon: "⏪"

@@ -1,7 +1,7 @@
 ---
 title: "Frustration Shifts Upward — How AI Coding Changes What's Hard"
 date: 2026-03-22
-category: AI
+category: AI Education
 tags: [ai-coding, developer-skills, architecture, education, frustration, career]
 related: ["Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "How AI Impacts Skill Formation", "Harness Engineering — The Real Bottleneck Isn't the Model"]
 icon: "📈"

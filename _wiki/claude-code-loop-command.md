@@ -1,7 +1,7 @@
 ---
 title: "Claude Code /loop: Scheduled Prompts on Autopilot"
 date: 2026-03-08
-category: Tools
+category: Claude Code
 tags: [claude-code, cli, scheduling, automation, loop, cron]
 related: ["Claude Code Power User Tips", "Claude Code Hooks"]
 icon: "🔄"

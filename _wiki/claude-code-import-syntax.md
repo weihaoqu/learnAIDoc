@@ -1,7 +1,7 @@
 ---
 title: "Claude Code: Share Team Knowledge with @ Imports in CLAUDE.md"
 date: 2026-02-08
-category: Tools
+category: Claude Code
 tags: [claude-code, cli, team, claude-md, configuration]
 related: ["Claude Code Power User Tips"]
 icon: "📎"

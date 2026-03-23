@@ -24,13 +24,13 @@ defaults:
 
 # Categories for organizing entries
 wiki_categories:
+  - name: AI Education
+    icon: "🎓"
+  - name: Claude Code
+    icon: "🖥️"
+  - name: Skills & Plugins
+    icon: "🔌"
+  - name: AI Research
+    icon: "🔬"
   - name: Programming
     icon: "💻"
-  - name: Tools
-    icon: "🔧"
-  - name: AI
-    icon: "🤖"
-  - name: Productivity
-    icon: "⚡"
-  - name: Other
-    icon: "📝"

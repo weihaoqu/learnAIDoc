@@ -1,7 +1,7 @@
 ---
 title: "mdpdf: Markdown to PDF with Claude Code"
 date: 2026-03-21
-category: Tools
+category: Skills & Plugins
 tags: [claude-code, skills, markdown, pdf, mdpdf, sharing-skills]
 related: ["Claude Code Skills: Resources & Repos"]
 icon: "📄"

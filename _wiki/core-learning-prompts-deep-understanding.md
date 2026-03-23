@@ -1,7 +1,7 @@
 ---
 title: "Five Core Learning Prompts — From Memorization to Mastery"
 date: 2026-03-22
-category: AI
+category: AI Education
 tags: [learning, prompting, education, mental-models, critical-thinking, ai-learning]
 related: ["AI Research & Thinking Toolkit: 13 Power Prompts", "Five Questions for Critical Paper Reading — The Cambridge Method with Claude", "Learning in the AI Era: Amplify Your Thinking, Don't Outsource It"]
 icon: "🧠"

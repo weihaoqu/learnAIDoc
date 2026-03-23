@@ -1,7 +1,7 @@
 ---
 title: "AI Tools for High-Engagement Learning"
 date: 2024-02-05
-category: AI
+category: AI Education
 tags: [learning, tools, education, open-source]
 related: ["How AI Impacts Skill Formation", "TensorTonic — Learn Machine Learning by Implementing 200+ Algorithms from Scratch"]
 icon: "📚"

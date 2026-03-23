@@ -1,7 +1,7 @@
 ---
 title: "Last 30 Days Skill for Claude Code"
 date: 2024-02-05
-category: Tools
+category: Skills & Plugins
 tags: [claude-code, research, skills, reddit, twitter]
 related: ["Claude Code Power User Tips"]
 icon: "📅"

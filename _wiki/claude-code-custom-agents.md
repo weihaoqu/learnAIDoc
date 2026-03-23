@@ -1,7 +1,7 @@
 ---
 title: "Claude Code Custom Agents"
 date: 2026-02-13
-category: Tools
+category: Claude Code
 tags: [claude-code, cli, agents, customization]
 related: ["Claude Code Agent Teams vs Subagents", "Claude Code Power User Tips"]
 icon: "🤖"

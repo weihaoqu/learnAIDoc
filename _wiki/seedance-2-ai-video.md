@@ -1,7 +1,7 @@
 ---
 title: "Seedance 2.0: ByteDance's AI Video Generator with Native Audio"
 date: 2026-02-08
-category: AI
+category: AI Research
 tags: [ai, video, generative-ai, bytedance, multimedia]
 related: []
 icon: "🎬"

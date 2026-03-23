@@ -1,7 +1,7 @@
 ---
 title: "Claude Code: Agent Teams vs Subagents"
 date: 2026-02-08
-category: Tools
+category: Claude Code
 tags: [claude-code, cli, agents, multi-agent, productivity]
 related: ["Claude Code Power User Tips", "Harness Engineering — The Real Bottleneck Isn't the Model"]
 icon: "🤝"

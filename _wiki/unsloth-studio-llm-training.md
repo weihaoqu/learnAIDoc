@@ -1,7 +1,7 @@
 ---
 title: "Unsloth Studio — Train and Run LLMs Locally with 70% Less Memory"
 date: 2026-03-22
-category: Tools
+category: Skills & Plugins
 tags: [llm, training, fine-tuning, open-source, qlora, local, inference, ai-education]
 related: ["Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "TensorTonic — Learn Machine Learning by Implementing 200+ Algorithms from Scratch", "LLM Architecture Gallery — Visual Reference for Every Major Model"]
 icon: "🦥"

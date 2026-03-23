@@ -1,7 +1,7 @@
 ---
 title: "Claude Code: Route Tasks to Cheaper Models with Subagents"
 date: 2026-02-08
-category: Tools
+category: Claude Code
 tags: [claude-code, cli, cost-saving, subagents, haiku]
 related: ["Claude Code: Agent Teams vs Subagents", "Claude Code Power User Tips"]
 icon: "💰"

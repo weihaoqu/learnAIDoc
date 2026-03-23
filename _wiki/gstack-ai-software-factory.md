@@ -1,7 +1,7 @@
 ---
 title: "Gstack — Garry Tan's AI Software Factory for Claude Code"
 date: 2026-03-22
-category: Tools
+category: Skills & Plugins
 tags: [claude-code, skills, workflow, ai-development, yc, code-review, qa, shipping]
 related: ["Best Claude Code Plugins", "Claude Code Skills: Resources & Repos", "How Anthropic Teams Use Claude Code", "PUA Skill — Force Your AI to Stop Being Lazy and Actually Debug"]
 icon: "🏭"
