@@ -10,7 +10,7 @@ image: "/assets/images/claude-code-context-claudemd-practices.png"
 
 A practical guide to the two biggest Claude Code pain points: **context window management** and **CLAUDE.md bloat**. Draws from a widely-shared Chinese-language analysis by 爱可可-爱生活, the open-source Citadel orchestration framework, and community discussions on Reddit about what happens when you stop adding rules and start building infrastructure instead.
 
-*Source: [Claude Code Best Practice (shanraisshan)](https://github.com/shanraisshan/claude-code-best-practice) | [Citadel — Agent Orchestration (SethGammon)](https://github.com/SethGammon/Citadel) | [Reddit: What happens when you stop adding rules](https://reddit.com/r/ClaudeAI/comments/1rz2oo3/what_happens_when_you_stop_adding_rules_to) | [claude-md-management plugin](https://github.com/anthropics/claude-code-plugins)*
+*Source: [Claude Code Best Practice (shanraisshan)](https://github.com/shanraisshan/claude-code-best-practice) | [Citadel — Agent Orchestration (SethGammon)](https://github.com/SethGammon/Citadel) | [Reddit: What happens when you stop adding rules](https://reddit.com/r/ClaudeAI/comments/1rz2oo3/what_happens_when_you_stop_adding_rules_to) | [claude-md-management plugin](https://github.com/anthropics/claude-code-plugins) | [Ole Lehmann: CLAUDE.md Pruning](https://x.com/itsolelehmann/status/2036065138147471665/history)*
 
 ## Context Management Is the Core Battlefield
 
@@ -95,6 +95,23 @@ The Reddit thread captures this insight perfectly: the answer isn't more rules �
 | "Follow our coding style" | A linter config that Claude reads and respects |
 | "Check these files before editing" | Skills that preload relevant context |
 
+### The Pruning Methodology
+
+A concrete case study: one developer [pruned 60% of their CLAUDE.md rules](https://x.com/itsolelehmann/status/2036065138147471665/history). The result: **response speed improved 40%** and hallucinations decreased noticeably.
+
+The step-by-step method:
+
+1. **Run an audit prompt** — ask Claude to scan your CLAUDE.md for contradictions. You'll discover conflicts you never noticed, like a vague "maintain natural tone" rule overriding specific formatting rules.
+2. **Delete the flagged rules** — but don't blindly delete everything flagged.
+3. **Test with your 3 most common tasks** — run them after deletion.
+4. **Evaluate**: output the same or better? → those rules were dead weight. A feature broke? → add that one rule back.
+
+The deeper insight:
+
+> **"The real skill isn't knowing rules — it's knowing what to delete. Your AI settings should get simpler over time. If they're getting more complex, you're using rule accumulation to avoid thinking about 'what do I actually want?'"**
+
+Claude can't solve this for you. If you don't know what you want, no amount of CLAUDE.md rules will produce it.
+
 ### Practical CLAUDE.md Guidelines
 
 | Guideline | Detail |
@@ -104,6 +121,7 @@ The Reddit thread captures this insight perfectly: the answer isn't more rules �
 | **Use sub-folder CLAUDE.md files** | `/frontend/CLAUDE.md`, `/backend/CLAUDE.md` for scoped instructions |
 | **Audit regularly** | Use the `claude-md-management` plugin (76,000+ installs) to audit quality |
 | **Treat it like code** | Review it, prune it, test changes by observing behavior shifts |
+| **Simplify over time** | Your CLAUDE.md should get shorter as you learn what matters — not longer |
 
 ## Cost Control: The Agent Layer Approach
 
