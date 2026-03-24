@@ -10,7 +10,7 @@ image: "/assets/images/harness-engineering-agents.png"
 
 If 2025 was the year of the agent, 2026 is the year of the **harness**. The hottest concept in AI agent development right now: the reliability bottleneck of AI agents isn't the model — it's the system *around* the model. Harness engineering is the discipline of designing environments, constraints, and feedback loops that make agents reliably useful. The metaphor: the model is the engine, but without a steering wheel and brakes, you can't reach the destination.
 
-*Source: [Anthropic: Effective Harnesses for Long-Running Agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) | [HumanLayer: Skill Issue — Harness Engineering](https://www.humanlayer.dev/blog/skill-issue-harness-engineering-for-coding-agents) | [NxCode: Complete Guide](https://www.nxcode.io/resources/news/harness-engineering-complete-guide-ai-agent-codex-2026) | [muraco.ai: Harness Engineering 101](https://muraco.ai/en/articles/harness-engineering-claude-code-codex/)*
+*Source: [Anthropic: Effective Harnesses for Long-Running Agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) | [HumanLayer: Skill Issue — Harness Engineering](https://www.humanlayer.dev/blog/skill-issue-harness-engineering-for-coding-agents) | [learn-claude-code (30K+ stars)](https://github.com/shareAI-lab/learn-claude-code) | [NxCode: Complete Guide](https://www.nxcode.io/resources/news/harness-engineering-complete-guide-ai-agent-codex-2026) | [muraco.ai: Harness Engineering 101](https://muraco.ai/en/articles/harness-engineering-claude-code-codex/)*
 
 ## What Is LangChain?
 
@@ -194,6 +194,31 @@ LangChain's middleware architecture is the best current reference. Each layer is
 > **Only invest in harness for errors the agent has actually made.**
 
 Don't pre-engineer for hypothetical failures. Watch your agent work, identify real failure patterns, then build harness components that prevent those specific failures from recurring. Every harness addition should trace back to an observed error.
+
+## Learn It Hands-On: learn-claude-code
+
+[learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) (30K+ stars) is the best hands-on tutorial for harness engineering. It teaches all six pillars through **12 progressive lessons**, each adding exactly one mechanism:
+
+| Step | Mechanism | Pillar It Teaches |
+|------|-----------|-------------------|
+| s01 | Agent Loop | Foundation |
+| s02 | Tool Use | Architectural Constraints |
+| s03 | TodoWrite (Planning) | Reasoning Phases |
+| s04 | Subagents | Context Firewalls |
+| s05 | Skills (on-demand knowledge) | Context Architecture |
+| s06 | Context Compact | Context Architecture |
+| s07 | File-based Tasks | Entropy Governance |
+| s08 | Background Tasks | Modular Middleware |
+| s09 | Agent Teams (JSONL mailboxes) | Modular Middleware |
+| s10 | Team Protocols (FSM) | Modular Middleware |
+| s11 | Autonomous Agents | Entropy Governance |
+| s12 | Worktree Isolation | Context Firewalls |
+
+**How to start:**
+- **Interactive web** (no login): [learn.shareai.run](https://learn.shareai.run) — timelines, visualizations, step-by-step code walkthrough
+- **Local**: `git clone github.com/shareAI-lab/learn-claude-code`, add your Anthropic API key to `.env`, run `python agents/s01_agent_loop.py`
+
+The core design principle: **each step only adds one new capability, the core loop never changes**. By step 12, you've built a full multi-agent system with isolation, persistence, and self-healing — and you understand every layer because you added them one at a time.
 
 ## Key Takeaway
 
