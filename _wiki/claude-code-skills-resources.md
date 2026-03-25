@@ -110,6 +110,36 @@ The interactive platform at [learn.shareai.run](https://learn.shareai.run) provi
 
 ---
 
+## The Nine Skill Types
+
+A [community taxonomy](https://x.com/trq212/status/2033949937936085378) classifies Claude Code skills into nine categories:
+
+| # | Type | What It Does | Example |
+|---|------|-------------|---------|
+| 1 | **API Expert** | Deep knowledge of a specific API/SDK | Claude API skill, AWS SDK skill |
+| 2 | **Product Integration** | Connect Claude to external products | Slack, GitHub, Jira skills |
+| 3 | **Tutorial & Guide** | Step-by-step learning workflows | learn-claude-code, onboarding skills |
+| 4 | **Ecosystem Integrator** | Bridge multiple tools into unified workflows | Gstack (25 skills), Superpowers |
+| 5 | **Code Guardian** | Quality enforcement, linting, security checks | Code review, test runner skills |
+| 6 | **Code Orchestrator** | Multi-step build/deploy/ship workflows | Ship, land-and-deploy skills |
+| 7 | **CLAUDE.md Assistant** | Manage and optimize CLAUDE.md files | claude-md-management, revise-claude-md |
+| 8 | **Runbook (Operations)** | DevOps, incident response, monitoring | Canary, careful, guard skills |
+| 9 | **Research Navigator** | Academic research, literature, analysis | Academic-researcher, citation skills |
+
+### Best Practices for Building Skills
+
+| Practice | Detail |
+|----------|--------|
+| **Start with SKILL.md** | Skills are not just Markdown — they're assets, templates, file layouts, flexible structures |
+| **Phase-driven design** | Break skills into checkpointed phases, not one giant prompt |
+| **Mental model first** | Define the thinking pattern before the steps |
+| **Hook integration** | Use hooks for automatic verification, not prompt suggestions |
+| **Measure & iterate** | Most skills start as a few lines and evolve as edge cases appear |
+
+> "Skills are powerful and flexible tools, but still early stage. Treat these as a collection of useful tips, not an authoritative guide. The best way to understand skills is to start, experiment, and see what works."
+
+---
+
 ## Quick Reference
 
 | Resource | Type | Best For |
