@@ -12,14 +12,29 @@ An overlooked truth about AI in education: **AI may not be a student's "cheat to
 
 *Source: [Reddit: I'm a Teacher and a Claude Nerd](https://reddit.com/r/ClaudeAI/comments/1s0j0pw/im_a_teacher_and_a_claude_nerd_the_impact_on) | [Anthropic × Teach For All Partnership](https://www.anthropic.com/news/anthropic-teach-for-all) | [Introducing Claude for Education](https://www.anthropic.com/news/introducing-claude-for-education)*
 
+## The Uncomfortable Data
+
+A frontline teacher shared a disturbing observation: **AI has NOT become students' "private tutor" — it became a cognitive offloading tool.** In his class of 120 students, **fewer than 5** actually use AI to learn. The rest use it to avoid learning.
+
+A German CS teacher corroborated this with a sharper framing: AI is splitting students into two groups:
+
+| Group | Size | Behavior |
+|-------|------|----------|
+| **Learners** | ~4% | Use AI to learn everything — it accelerates them |
+| **Escapers** | ~96% | Use AI to escape everything — it regresses them |
+
+This contradicts the popular imagination of "AI as the ultimate personalized tutor." For most students, it's just a more advanced answer-search tool — a **"cognitive outsourcing" package**. They use it to bypass thinking, not to aid thinking.
+
 ## The Core Argument
 
-Giving powerful tools to different people produces opposite results:
+The leverage point isn't the student — it's the teacher:
 
 | Who Gets the Tool | Outcome |
 |-------------------|---------|
 | **Students without judgment** | Dependency, regression, "shortcut to capability" that erodes learning |
 | **Teachers with domain expertise** | 10x value — customized materials, instant feedback, personalized curriculum |
+
+One German teacher uses Claude to **prep a 45-minute lesson and write "one-time-use" software tools** for specific teaching moments. A year ago this was fantasy; now it takes about the same time as regular lesson prep. He uses AI to empower himself, creating highly customized teaching tools that were previously unimaginable.
 
 The tool is the same. The variable is the user's **cognitive depth**. This is why the "should students use AI?" debate misses the point. The real question is: **how do we make teachers fluent in AI so they can create the learning experiences that students can't create for themselves?**
 
