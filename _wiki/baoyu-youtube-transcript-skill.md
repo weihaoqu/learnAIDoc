@@ -67,6 +67,19 @@ The result: natural readable text, not the choppy fragments you get from YouTube
 | **SRT export** | Standard subtitle file format for video editing |
 | **Cover image** | Extracts video thumbnail automatically |
 
+## Caching Mechanism
+
+First run caches four files — subsequent format/parameter changes are instant:
+
+| Cached File | Content |
+|-------------|---------|
+| `meta.json` | Video metadata (title, duration, channel) |
+| `transcript-raw.json` | Raw subtitle segments from YouTube |
+| `transcript-sentences.json` | Processed natural sentences |
+| `cover.jpg` | Video thumbnail |
+
+Add `--refresh` to force re-fetch from YouTube.
+
 ## How InnerTube Works
 
 ```
@@ -96,10 +109,11 @@ This skill is particularly powerful when combined with other tools:
 
 ## Installation
 
-Already available as part of the **baoyu utility skills** plugin. If not installed:
-
 ```bash
-# Via Claude Code plugin marketplace
+# Install directly
+npx skills add jimliu/baoyu-skills --skill baoyu-youtube-transcript
+
+# Or via Claude Code plugin marketplace
 /plugin
 # Search for baoyu-skills or utility-skills
 ```
