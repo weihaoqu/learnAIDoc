@@ -3,7 +3,7 @@ title: "Three Hidden Instructions That Stop Claude from Hallucinating"
 date: 2026-03-22
 category: AI Research
 tags: [claude, hallucination, prompting, system-prompt, citations, research-mode, quality]
-related: ["AI Research & Thinking Toolkit: 13 Power Prompts", "Five Questions for Critical Paper Reading — The Cambridge Method with Claude"]
+related: ["AI Research & Thinking Toolkit: 13 Power Prompts", "Five Questions for Critical Paper Reading — The Cambridge Method with Claude", "7 Framework Prompts That Turn Claude into a Thinking Partner"]
 icon: "🎯"
 image: "/assets/images/claude-three-hidden-quality-prompts.png"
 ---
