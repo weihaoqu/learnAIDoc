@@ -14,6 +14,7 @@ title: Home
         <div class="sidebar-category-header" onclick="filterByCategory('{{ cat.name }}')">
           <span class="icon">{{ cat.icon }}</span>
           <span>{{ cat.name }}</span>
+          <span class="sidebar-count">{{ cat_entries.size }}</span>
         </div>
         <ul class="sidebar-links">
           {% for entry in cat_entries %}
@@ -29,11 +30,16 @@ title: Home
   <!-- Main Content -->
   <div class="main-content">
     <div class="filter-bar">
-      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn active" data-filter="all">
+        <span class="filter-icon">✦</span> All
+      </button>
       {% for cat in site.wiki_categories %}
       {% assign cat_entries = site.wiki | where: "category", cat.name %}
       {% if cat_entries.size > 0 %}
-      <button class="filter-btn" data-filter="{{ cat.name }}">{{ cat.icon }} {{ cat.name }} <span class="filter-count">{{ cat_entries.size }}</span></button>
+      <button class="filter-btn" data-filter="{{ cat.name }}">
+        <span class="filter-icon">{{ cat.icon }}</span> {{ cat.name }}
+        <span class="filter-count">{{ cat_entries.size }}</span>
+      </button>
       {% endif %}
       {% endfor %}
     </div>
@@ -41,19 +47,21 @@ title: Home
     {% for cat in site.wiki_categories %}
     {% assign cat_entries = site.wiki | where: "category", cat.name | sort: "date" | reverse %}
     {% if cat_entries.size > 0 %}
-    <section class="category-section" id="{{ cat.name | downcase }}" data-category="{{ cat.name }}">
-      <div class="category-header" style="cursor:pointer" onclick="filterByCategory('{{ cat.name }}')">
-        <span class="category-icon">{{ cat.icon }}</span>
-        <h2 class="category-name">{{ cat.name }}</h2>
-        <span class="category-count">{{ cat_entries.size }}</span>
+    <section class="category-section" id="{{ cat.name | downcase | replace: ' ', '-' }}" data-category="{{ cat.name }}">
+      <div class="category-header" onclick="filterByCategory('{{ cat.name }}')">
+        <div class="category-label">
+          <span class="category-icon">{{ cat.icon }}</span>
+          <h2 class="category-name">{{ cat.name }}</h2>
+        </div>
+        <span class="category-count">{{ cat_entries.size }} entries</span>
       </div>
 
       <div class="card-grid">
         {% for entry in cat_entries %}
-        <a href="{{ entry.url | relative_url }}" class="entry-card">
+        <a href="{{ entry.url | relative_url }}" class="entry-card" style="animation-delay: {{ forloop.index | times: 0.04 }}s">
           <div class="card-image-wrapper">
             {% if entry.image %}
-            <img src="{{ entry.image | relative_url }}" alt="{{ entry.title }}" class="card-image">
+            <img src="{{ entry.image | relative_url }}" alt="{{ entry.title }}" class="card-image" loading="lazy">
             {% else %}
             <div class="card-placeholder" data-category="{{ entry.category }}">
               {% if entry.icon %}{{ entry.icon }}{% else %}📄{% endif %}
@@ -89,7 +97,6 @@ function filterByCategory(category) {
   var sections = document.querySelectorAll('.category-section');
   var buttons = document.querySelectorAll('.filter-btn');
 
-  // Update filter buttons
   buttons.forEach(function(btn) {
     btn.classList.remove('active');
     if (btn.getAttribute('data-filter') === category) {
@@ -97,20 +104,18 @@ function filterByCategory(category) {
     }
   });
 
-  // Show/hide sections
   sections.forEach(function(section) {
     if (section.getAttribute('data-category') === category) {
       section.style.display = '';
+      section.style.animation = 'fadeSlideIn 0.3s ease forwards';
     } else {
       section.style.display = 'none';
     }
   });
 
-  // Scroll to top of main content
   document.querySelector('.main-content').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
-// Filter bar button clicks
 document.querySelectorAll('.filter-btn').forEach(function(btn) {
   btn.addEventListener('click', function() {
     var filter = this.getAttribute('data-filter');
@@ -121,11 +126,28 @@ document.querySelectorAll('.filter-btn').forEach(function(btn) {
     this.classList.add('active');
 
     if (filter === 'all') {
-      sections.forEach(function(s) { s.style.display = ''; });
+      sections.forEach(function(s) {
+        s.style.display = '';
+        s.style.animation = 'fadeSlideIn 0.3s ease forwards';
+      });
     } else {
       sections.forEach(function(s) {
-        s.style.display = s.getAttribute('data-category') === filter ? '' : 'none';
+        if (s.getAttribute('data-category') === filter) {
+          s.style.display = '';
+          s.style.animation = 'fadeSlideIn 0.3s ease forwards';
+        } else {
+          s.style.display = 'none';
+        }
       });
+    }
+  });
+});
+
+// Sidebar toggle
+document.querySelectorAll('.sidebar-category-header').forEach(function(header) {
+  header.addEventListener('click', function(e) {
+    if (e.target.closest('.sidebar-category')) {
+      this.closest('.sidebar-category').classList.toggle('collapsed');
     }
   });
 });
