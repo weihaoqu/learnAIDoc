@@ -10,7 +10,7 @@ image: "/assets/images/harness-engineering-agents.png"
 
 If 2025 was the year of the agent, 2026 is the year of the **harness**. The hottest concept in AI agent development right now: the reliability bottleneck of AI agents isn't the model — it's the system *around* the model. Harness engineering is the discipline of designing environments, constraints, and feedback loops that make agents reliably useful. The metaphor: the model is the engine, but without a steering wheel and brakes, you can't reach the destination.
 
-*Source: [Anthropic: Effective Harnesses for Long-Running Agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) | [HumanLayer: Skill Issue — Harness Engineering](https://www.humanlayer.dev/blog/skill-issue-harness-engineering-for-coding-agents) | [learn-claude-code (30K+ stars)](https://github.com/shareAI-lab/learn-claude-code) | [NxCode: Complete Guide](https://www.nxcode.io/resources/news/harness-engineering-complete-guide-ai-agent-codex-2026) | [muraco.ai: Harness Engineering 101](https://muraco.ai/en/articles/harness-engineering-claude-code-codex/)*
+*Source: [Anthropic: Effective Harnesses for Long-Running Agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) | [Anthropic: Harness Design for Long-Running Apps](https://www.anthropic.com/engineering/harness-design-long-running-apps) | [HumanLayer: Skill Issue — Harness Engineering](https://www.humanlayer.dev/blog/skill-issue-harness-engineering-for-coding-agents) | [learn-claude-code (30K+ stars)](https://github.com/shareAI-lab/learn-claude-code) | [NxCode: Complete Guide](https://www.nxcode.io/resources/news/harness-engineering-complete-guide-ai-agent-codex-2026)*
 
 ## What Is LangChain?
 
@@ -220,9 +220,41 @@ Don't pre-engineer for hypothetical failures. Watch your agent work, identify re
 
 The core design principle: **each step only adds one new capability, the core loop never changes**. By step 12, you've built a full multi-agent system with isolation, persistence, and self-healing — and you understand every layer because you added them one at a time.
 
-## Key Takeaway
+## GAN-Inspired Dual-Agent Architecture
 
-The closing message of the tutorial:
+Anthropic engineer Prithvi Rajasekaran shared a powerful pattern borrowed from GANs (Generative Adversarial Networks): pair a **Generator** agent with an **Evaluator** agent.
+
+```
+┌──────────────┐         ┌──────────────┐
+│  Generator   │────────▶│  Evaluator   │
+│ (writes code)│◀────────│ (critiques)  │
+└──────────────┘  feedback└──────────────┘
+        │                        │
+        │   Iterate until        │
+        │   evaluator passes     │
+        ▼                        ▼
+   Code output            Quality gate
+```
+
+- The **Generator** writes code — it's responsible for creation
+- The **Evaluator** critiques using real tools (e.g., Playwright for UI testing, clicking through pages like a real user)
+- They iterate until the evaluator is satisfied
+
+### Real Example: Digital Audio Workstation
+
+Using a 3-agent scaffold with this pattern, an AI team built a complete **browser-based DAW (Digital Audio Workstation)** in ~4 hours for $124. The final product could compose, edit, mix audio, and even use AI to help write melodies and rhythms. A single agent couldn't do this — but with the generator/evaluator loop plus a coordinator, the system produced production-quality output.
+
+In earlier frontend experiments, the evaluator wrote 4 evaluation criteria (design quality, originality, craftsmanship, functionality) and scored pages directly. One run on a Dutch art museum website, after 10 iterations and 15 refinement rounds, the AI scrapped all previous approaches and created a 3D spatial experience with CSS perspective — a creative leap that single-pass generation would never produce.
+
+## When the Model Upgrades, Re-Evaluate the Harness
+
+> **Every harness component compensates for current model weaknesses. When the model upgrades, re-evaluate which pieces are still useful.**
+
+After Opus 4.6 shipped, the author removed sprint-based segmentation and reduced evaluator overhead — the new model was strong enough that those guardrails became unnecessary friction. But evaluators remained useful for tasks that exceeded the model's comfort zone.
+
+The design space doesn't shrink as models improve — it **migrates**. Intentional harness design means only keeping components that add value, and continuously finding the next valuable combination. This is what AI engineers actually do: not just prompt engineering, but **discovering the right harness for the right model at the right time**.
+
+## Key Takeaway
 
 > **Agent的可靠性瓶颈，不在模型，在模型周围的系统。**
 > The reliability bottleneck of agents isn't the model — it's the system around the model.
