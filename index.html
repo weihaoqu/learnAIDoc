@@ -11,7 +11,7 @@ title: Home
       {% assign cat_entries = site.wiki | where: "category", cat.name | sort: "title" %}
       {% if cat_entries.size > 0 %}
       <div class="sidebar-category">
-        <div class="sidebar-category-header">
+        <div class="sidebar-category-header" onclick="filterByCategory('{{ cat.name }}')">
           <span class="icon">{{ cat.icon }}</span>
           <span>{{ cat.name }}</span>
         </div>
@@ -28,11 +28,21 @@ title: Home
 
   <!-- Main Content -->
   <div class="main-content">
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      {% for cat in site.wiki_categories %}
+      {% assign cat_entries = site.wiki | where: "category", cat.name %}
+      {% if cat_entries.size > 0 %}
+      <button class="filter-btn" data-filter="{{ cat.name }}">{{ cat.icon }} {{ cat.name }} <span class="filter-count">{{ cat_entries.size }}</span></button>
+      {% endif %}
+      {% endfor %}
+    </div>
+
     {% for cat in site.wiki_categories %}
     {% assign cat_entries = site.wiki | where: "category", cat.name | sort: "date" | reverse %}
     {% if cat_entries.size > 0 %}
-    <section class="category-section" id="{{ cat.name | downcase }}">
-      <div class="category-header">
+    <section class="category-section" id="{{ cat.name | downcase }}" data-category="{{ cat.name }}">
+      <div class="category-header" style="cursor:pointer" onclick="filterByCategory('{{ cat.name }}')">
         <span class="category-icon">{{ cat.icon }}</span>
         <h2 class="category-name">{{ cat.name }}</h2>
         <span class="category-count">{{ cat_entries.size }}</span>
@@ -73,3 +83,50 @@ title: Home
     {% endif %}
   </div>
 </div>
+
+<script>
+function filterByCategory(category) {
+  var sections = document.querySelectorAll('.category-section');
+  var buttons = document.querySelectorAll('.filter-btn');
+
+  // Update filter buttons
+  buttons.forEach(function(btn) {
+    btn.classList.remove('active');
+    if (btn.getAttribute('data-filter') === category) {
+      btn.classList.add('active');
+    }
+  });
+
+  // Show/hide sections
+  sections.forEach(function(section) {
+    if (section.getAttribute('data-category') === category) {
+      section.style.display = '';
+    } else {
+      section.style.display = 'none';
+    }
+  });
+
+  // Scroll to top of main content
+  document.querySelector('.main-content').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// Filter bar button clicks
+document.querySelectorAll('.filter-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var filter = this.getAttribute('data-filter');
+    var sections = document.querySelectorAll('.category-section');
+    var buttons = document.querySelectorAll('.filter-btn');
+
+    buttons.forEach(function(b) { b.classList.remove('active'); });
+    this.classList.add('active');
+
+    if (filter === 'all') {
+      sections.forEach(function(s) { s.style.display = ''; });
+    } else {
+      sections.forEach(function(s) {
+        s.style.display = s.getAttribute('data-category') === filter ? '' : 'none';
+      });
+    }
+  });
+});
+</script>
