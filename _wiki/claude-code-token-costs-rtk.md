@@ -69,6 +69,10 @@ Compressed output → Claude
 ### Setup: One Command
 
 ```bash
+# Install on macOS
+brew install rtk
+
+# Then initialize globally
 rtk init --global
 ```
 

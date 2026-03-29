@@ -10,7 +10,7 @@ image: "/assets/images/claude-code-context-claudemd-practices.png"
 
 A practical guide to the two biggest Claude Code pain points: **context window management** and **CLAUDE.md bloat**. Draws from a widely-shared Chinese-language analysis by 爱可可-爱生活, the open-source Citadel orchestration framework, and community discussions on Reddit about what happens when you stop adding rules and start building infrastructure instead.
 
-*Source: [Claude Code Best Practice (shanraisshan)](https://github.com/shanraisshan/claude-code-best-practice) | [Citadel — Agent Orchestration (SethGammon)](https://github.com/SethGammon/Citadel) | [Reddit: What happens when you stop adding rules](https://reddit.com/r/ClaudeAI/comments/1rz2oo3/what_happens_when_you_stop_adding_rules_to) | [claude-md-management plugin](https://github.com/anthropics/claude-code-plugins) | [Ole Lehmann: CLAUDE.md Pruning](https://x.com/itsolelehmann/status/2036065138147471665/history)*
+*Source: [Claude Code Best Practice (shanraisshan)](https://github.com/shanraisshan/claude-code-best-practice) | [Citadel — Agent Orchestration (SethGammon)](https://github.com/SethGammon/Citadel) | [Reddit: What happens when you stop adding rules](https://reddit.com/r/ClaudeAI/comments/1rz2oo3/what_happens_when_you_stop_adding_rules_to) | [claude-md-management plugin](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-md-management) | [Ole Lehmann: CLAUDE.md Pruning](https://x.com/itsolelehmann/status/2036065138147471665/history)*
 
 ## Context Management Is the Core Battlefield
 
