@@ -220,25 +220,31 @@ Don't pre-engineer for hypothetical failures. Watch your agent work, identify re
 
 The core design principle: **each step only adds one new capability, the core loop never changes**. By step 12, you've built a full multi-agent system with isolation, persistence, and self-healing — and you understand every layer because you added them one at a time.
 
-## GAN-Inspired Dual-Agent Architecture
+## The Three-Agent Harness: Planner → Generator → Evaluator
 
-Anthropic engineer Prithvi Rajasekaran shared a powerful pattern borrowed from GANs (Generative Adversarial Networks): pair a **Generator** agent with an **Evaluator** agent.
+Anthropic's engineering blog describes a full **three-agent scaffold** that ran autonomously for hours, producing production-quality frontend apps. A widely-shared analysis (欧巴聊AI) highlights why this architecture survives model upgrades.
+
+*Additional source: [欧巴聊AI on Weibo](https://weibo.com/) (2026-03) | [Anthropic: Harness Design for Long-Running Apps](https://www.anthropic.com/engineering/harness-design-long-running-apps)*
 
 ```
-┌──────────────┐         ┌──────────────┐
-│  Generator   │────────▶│  Evaluator   │
-│ (writes code)│◀────────│ (critiques)  │
-└──────────────┘  feedback└──────────────┘
-        │                        │
-        │   Iterate until        │
-        │   evaluator passes     │
-        ▼                        ▼
-   Code output            Quality gate
+┌──────────────┐     ┌──────────────┐     ┌──────────────┐
+│   Planner    │────▶│  Generator   │────▶│  Evaluator   │
+│  (规划者)     │     │  (生成者)     │◀────│  (评估者)     │
+│              │     │              │feedback│             │
+│ One sentence │     │ Writes code  │     │ Playwright   │
+│ → full PRD   │     │ in chunks    │     │ MCP: clicks, │
+│ with specs   │     │ with review  │     │ drags, tests │
+└──────────────┘     │ checkpoints  │     │ like a human │
+                     └──────────────┘     └──────────────┘
 ```
 
-- The **Generator** writes code — it's responsible for creation
-- The **Evaluator** critiques using real tools (e.g., Playwright for UI testing, clicking through pages like a real user)
-- They iterate until the evaluator is satisfied
+| Agent | Role | Key Detail |
+|-------|------|-----------|
+| **Planner** | Scope expander | From a one-sentence prompt, generates a detailed PRD covering animation systems, sound effects, AI-assisted design docs — prevents "forgot to build X" downstream |
+| **Generator** | Code producer | Writes code in chunks. Before continuing, submits each chunk to the evaluator — like signing a detailed contract with a reviewer before proceeding |
+| **Evaluator** | Quality gate | Equipped with **Playwright MCP** — can click buttons, drag elements, test UI in a real browser. Not just reading code, but *using* the output like a real person |
+
+The evaluator scores across **4 dimensions**: design quality, originality, craftsmanship, and functionality. This quantitative evaluation breaks through AI's tendency toward mediocre, "flat" design.
 
 ### Real Example: Digital Audio Workstation
 

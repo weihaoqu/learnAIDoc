@@ -1,8 +1,8 @@
 ---
-title: "Type4Me: Local Voice Input with LLM Processing for macOS"
+title: "Type4Me & Voice-Input-Src: Local Voice Input Tools for macOS"
 date: 2026-03-26
 category: AI Research
-tags: [voice-input, speech-to-text, local-ai, sherpaonnx, macos, privacy, dictation, llm]
+tags: [voice-input, speech-to-text, local-ai, sherpaonnx, macos, privacy, dictation, llm, vibe-coding, open-source]
 related: ["Voice-Pro: Local AI Dubbing and Voice Cloning Tool"]
 icon: "🎙️"
 image: "/assets/images/type4me-local-voice-input.png"
@@ -81,3 +81,19 @@ This is where it gets interesting:
 ## Plugin Architecture
 
 Adding new speech recognition services requires only two protocol implementations then registration. Interfaces for OpenAI Whisper, Google Speech, and AWS Transcribe are already pre-defined — the community can contribute adapters.
+
+## Also Worth Knowing: Voice-Input-Src
+
+Another open-source Mac voice input project taking a different approach — **voice-input-src** focuses on the *prompt* rather than the engine.
+
+*Source: [GitHub — yetone/voice-input-src](https://github.com/yetone/voice-input-src) | [Vibe Coding dist](https://github.com/yetone/voice-input-dist) | [宝玉 xp on Weibo](https://weibo.com/) (2026-03-29)*
+
+| | Type4Me | Voice-Input-Src |
+|---|---------|----------------|
+| **Focus** | Full-featured voice input app | Open-source prompt for voice-to-code |
+| **Key value** | Local recognition + LLM processing modes | The *prompt design* is the real IP — reproducible by anyone |
+| **Vibe coding** | Supported via command mode | Core use case — voice → code generation |
+| **Engine** | SherpaOnnx (local) + cloud options | Uses external STT + LLM |
+| **License** | MIT | Open source |
+
+The author (宝玉 xp) notes: "What's open-sourced is the Prompt — the code generated afterward has more value than a pile of vibe coding output, because you can reproduce it yourself." The companion repo `voice-input-dist` contains the generated code output for reference.

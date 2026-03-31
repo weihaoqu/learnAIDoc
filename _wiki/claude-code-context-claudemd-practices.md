@@ -162,6 +162,61 @@ This moves cost control from "prompt suggestions" to "infrastructure decisions."
 
 Key features: campaign persistence across sessions, parallel agent coordination with discovery sharing, lifecycle hooks for quality enforcement, and a universal `/do` router that classifies intent and dispatches to the cheapest capable tier.
 
+## The Boris Template: CLAUDE.md as AI Onboarding Manual
+
+A widely-shared infographic (爱可可-爱生活) reframes CLAUDE.md as an **AI co-worker's onboarding manual** — not just a config file, but a structured document that lets AI "remember the past, carry out the present, and evolve into the future."
+
+*Source: [爱可可-爱生活 on Weibo](https://weibo.com/) (2026-03)*
+
+### The Problem It Solves
+
+```
+Without CLAUDE.md:
+  Every session starts from zero → inefficient loop
+  │ User → explain context → AI executes → session ends → repeat │
+
+With CLAUDE.md:
+  AI reads your "onboarding manual" → picks up where it left off
+  │ Past errors │ Project rules │ Execution rules │ → Claude AI
+```
+
+The analogy: CLAUDE.md is a letter to future collaborators — not just a config tool.
+
+### Boris Template Design
+
+The Boris template structures CLAUDE.md into task modes:
+
+| Mode | Purpose | When to Use |
+|------|---------|-------------|
+| **Simple Task** | Write spec first, start | Quick changes |
+| **Complex Analysis** | Subagent-based | Keep context coherent across subtasks |
+| **Post-correction** | Update tasks/lessons.md | Don't repeat mistakes next time |
+| **Task Complete** | Prove completion | Don't just claim done — show evidence |
+| **Decision Making** | Explain trade-offs | Not just explain what, explain *why not* |
+
+### Evolution Mechanism
+
+The template defines three maturity levels:
+
+| Level | How CLAUDE.md is Used |
+|-------|----------------------|
+| **Beginner** | Static config file (copy-paste and forget) |
+| **Intermediate** | Update after each session (effect compounding) |
+| **Advanced** | Dynamic updates via `.bashrc` + agent hooks (auto-evolution) |
+
+### Core Principles (from terminal screenshot)
+
+The accompanying terminal screenshot reveals the full operating principles:
+
+1. **Plan Mode Default** — Enter plan mode for ANY non-trivial task. If something goes sideways, STOP and re-plan immediately.
+2. **Subagent Strategy** — Use subagents liberally to keep main context window clean. For complex problems, throw more compute at it via subagents.
+3. **Self-Improvement Loop** — After ANY correction from user, update `tasks/lessons.md` with the pattern. Write rules for yourself that prevent the same mistake.
+4. **Verification Before Done** — Never mark a task complete without proving it works. Run tests, check logs, demonstrate correctness.
+5. **Demand Elegance (Balanced)** — For non-trivial changes, pause and ask "is there a more elegant way?" But don't over-engineer.
+6. **Autonomous Bug Fixing** — Given a bug report, first list the evidence. Point at logs, errors, failing tests — then resolve them. Zero context switching required from the user.
+
+The `.bashrc` insight: the real nature of CLAUDE.md isn't to make AI smarter — it's to make it more like **a domesticated role-specific interface for your company**, where computing power and knowledge become free-flowing water.
+
 ## Key Takeaway
 
 The article's closing line sums it up: using AI coding tools well isn't about finding the perfect configuration — it's about **understanding how the tool works, then building systems that flow with it**.
