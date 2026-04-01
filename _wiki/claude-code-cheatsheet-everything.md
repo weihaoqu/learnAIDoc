@@ -1,8 +1,8 @@
 ---
-title: "Claude Code Cheat Sheet & Everything-Claude-Code — Complete Reference Kit"
+title: "Claude Code Cheat Sheet, Everything-Claude-Code & Claude How-To — Complete Reference Kit"
 date: 2026-03-31
 category: Claude Code
-tags: [claude-code, cheatsheet, reference, configuration, agents, skills, mcp, shortcuts]
+tags: [claude-code, cheatsheet, reference, configuration, agents, skills, mcp, shortcuts, tutorial, visual-guide, learning-path]
 related: ["Claude Code Power User Tips", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "The Five Levels of Claude Code — From Prompting to Orchestration"]
 icon: "📋"
 image: "/assets/images/claude-code-cheatsheet-everything.png"
@@ -10,15 +10,17 @@ image: "/assets/images/claude-code-cheatsheet-everything.png"
 
 ## What Are These Resources?
 
-Two complementary references that together form a complete Claude Code toolkit:
+Three complementary references that together form a complete Claude Code toolkit:
 
 1. **Claude Code Cheat Sheet (v2.1.61)** — A dense, visual one-page reference covering every major feature of Claude Code: keyboard shortcuts, slash commands, MCP servers, memory files, workflows, configuration, and agent patterns. Designed to be printed or pinned as a quick-lookup companion.
 
 2. **everything-claude-code** — An open-source GitHub repository ([github.com/affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code)) that exploded to 120K+ stars within days of release. It provides a complete, battle-tested Claude Code configuration — from agent setup to skill definitions, shortcuts, rules, and MCP connections. The configs won a hackathon and work on both Windows and Mac.
 
-Together: the cheat sheet tells you *what exists*, and the everything repo shows you *how to wire it all up*.
+3. **Claude How-To** — A visual, example-driven guide ([github.com/luongnv89/claude-howto](https://github.com/luongnv89/claude-howto)) with 13K+ stars that takes you from zero to advanced in a weekend. 10 progressive modules, copy-paste templates, and a structured learning path. v2.2.0, MIT licensed.
 
-Source: Weibo post by 默庵·超级个体
+Together: the cheat sheet tells you *what exists*, the everything repo shows you *how to wire it all up*, and Claude How-To *teaches you step by step*.
+
+*Source: Weibo post by 默庵·超级个体 | [Claude How-To](https://github.com/luongnv89/claude-howto)*
 
 ---
 
@@ -144,6 +146,72 @@ everything-claude-code/
 
 ---
 
+## Claude How-To — Visual Learning Path
+
+**Repo:** [github.com/luongnv89/claude-howto](https://github.com/luongnv89/claude-howto) (13.1K stars, 1.4K forks, v2.2.0)
+
+### The Problem It Solves
+
+You installed Claude Code, ran a few prompts — now what? The official docs describe features but don't show how to combine them. There's no clear learning path. Examples are too basic to build production pipelines. Claude How-To fills that gap with visual tutorials and copy-paste templates.
+
+### 10 Progressive Modules
+
+| Module | Focus | Level | Duration |
+|---|---|---|---|
+| Slash Commands | User-invoked shortcuts | Beginner | 30 min |
+| Memory | Persistent context | Beginner+ | 45 min |
+| Checkpoints | Session snapshots/rewind | Intermediate | 45 min |
+| CLI Basics | Terminal commands | Beginner+ | 30 min |
+| Skills | Reusable capabilities | Intermediate | 1 hour |
+| Hooks | Event-driven automation | Intermediate | 1 hour |
+| MCP Protocol | External tool access | Intermediate+ | 1 hour |
+| Subagents | Specialized AI assistants | Intermediate+ | 1.5 hours |
+| Advanced Features | Planning, thinking, background tasks | Advanced | 2-3 hours |
+| Plugins | Bundled feature collections | Advanced | 2 hours |
+
+Total: ~11-13 hours for the full path, but you get value in 15 minutes.
+
+### What You Can Build
+
+| Use Case | Features Combined |
+|---|---|
+| Automated Code Review | Slash Commands + Subagents + Memory + MCP |
+| Team Onboarding | Memory + Slash Commands + Plugins |
+| CI/CD Automation | CLI + Hooks + Background Tasks |
+| Documentation Generation | Skills + Subagents + Plugins |
+| Security Audits | Subagents + Skills + Hooks (read-only) |
+| Complex Refactoring | Checkpoints + Planning Mode + Hooks |
+
+### Feature Comparison Matrix
+
+| Feature | Invocation | Persistence | Best Use |
+|---|---|---|---|
+| Slash Commands | Manual (`/cmd`) | Session only | Quick shortcuts |
+| Memory | Auto-loaded | Cross-session | Long-term learning |
+| Skills | Auto-invoked | Filesystem | Automated workflows |
+| Subagents | Auto-delegated | Isolated context | Task distribution |
+| MCP Protocol | Auto-queried | Real-time | Live data access |
+| Hooks | Event-triggered | Configured | Automation & validation |
+| Plugins | Single command | All features | Complete solutions |
+
+### Quick Start
+
+```bash
+git clone https://github.com/luongnv89/claude-howto.git
+cd claude-howto
+
+# Copy a slash command to your project
+cp 01-slash-commands/optimize.md .claude/commands/
+
+# Add project memory
+cp 02-memory/project-CLAUDE.md ./CLAUDE.md
+
+# Install a skill
+cp -r 03-skills/code-review ~/.claude/skills/
+```
+
+---
+
 ## How to Use These Resources
 
 ### Quick Start (5 minutes)
@@ -177,5 +245,6 @@ everything-claude-code/
 ## Links & References
 
 - **everything-claude-code repo:** [github.com/affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code)
+- **Claude How-To repo:** [github.com/luongnv89/claude-howto](https://github.com/luongnv89/claude-howto)
 - **Claude Code official docs:** [docs.anthropic.com/en/docs/claude-code](https://docs.anthropic.com/en/docs/claude-code)
 - **Source:** Weibo post by 默庵·超级个体
