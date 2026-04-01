@@ -44,6 +44,74 @@ Pretext sidesteps the entire problem. It uses the browser's font engine output a
 | Chat bubble auto-fit | Message dimensions known before render |
 | Variable-width font ASCII art | Precise character placement without trial-and-error |
 
+### Usage Examples
+
+**Install:**
+
+```bash
+npm install @chenglou/pretext
+```
+
+**Basic height measurement** — the core use case. Two-phase API: `prepare()` does the expensive work once, `layout()` is pure math you can call thousands of times:
+
+```typescript
+import { prepare, layout } from '@chenglou/pretext'
+
+// Phase 1: prepare (one-time, ~19ms for 500 texts)
+const prepared = prepare('AGI 春天到了. بدأت الرحلة 🚀', '16px Inter')
+
+// Phase 2: layout (hot path, ~0.09ms for 500 texts — that's 500x faster)
+const { height, lineCount } = layout(prepared, containerWidth, lineHeight)
+```
+
+**Textarea-style text** — preserves spaces, tabs, and line breaks:
+
+```typescript
+const prepared = prepare(textValue, '16px Inter', { whiteSpace: 'pre-wrap' })
+const { height } = layout(prepared, width, 20)
+```
+
+**Get all lines for custom rendering:**
+
+```typescript
+import { prepareWithSegments, layoutWithLines } from '@chenglou/pretext'
+
+const prepared = prepareWithSegments(text, '14px monospace')
+const { lines } = layoutWithLines(prepared, 320, 26)
+// lines = array of line objects with text content and dimensions
+```
+
+**Variable-width line iteration** — useful for magazine-style layouts where each line has a different available width (e.g., text wrapping around an image):
+
+```typescript
+import { layoutNextLine } from '@chenglou/pretext'
+
+let cursor = 0
+while (cursor < prepared.length) {
+  const widthForThisLine = getAvailableWidth(lineIndex) // varies per line
+  const line = layoutNextLine(prepared, cursor, widthForThisLine)
+  cursor = line.end
+}
+```
+
+**Lightweight dimension check** — when you just need line ranges without building the full text:
+
+```typescript
+import { walkLineRanges } from '@chenglou/pretext'
+
+walkLineRanges(prepared, 320, (line) => {
+  // process each line's range and dimensions
+})
+```
+
+| Function | Cost | Use For |
+|---|---|---|
+| `prepare()` | ~19ms / 500 texts | One-time setup, caches measurements |
+| `layout()` | ~0.09ms / 500 texts | Height/lineCount — call on every resize |
+| `layoutWithLines()` | Slightly more | When you need line-by-line text content |
+| `layoutNextLine()` | Per-line | Variable-width containers |
+| `walkLineRanges()` | Lightweight | Dimension checks without building text |
+
 ### Why It Matters Now
 
 Text layout has been a frontend performance bottleneck since the early web. In the AI era, where chat interfaces, streaming text, and dynamic content generation are central to nearly every product, this bottleneck is more painful than ever. Pretext could change how UI frameworks handle text fundamentally — imagine React or Svelte delegating all text measurement to a Pretext-style engine instead of forcing DOM reads.
