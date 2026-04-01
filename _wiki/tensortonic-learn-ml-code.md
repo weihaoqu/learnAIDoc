@@ -78,7 +78,7 @@ TensorTonic is a natural complement to the LAI thesis. Research questions it ena
 | Resource | Focus | Format |
 |---|---|---|
 | [TensorTonic](https://www.tensortonic.com/) | 200+ ML algorithms from scratch | Browser IDE, gamified |
-| [MicroGPT](http://karpathy.github.io/2026/02/12/microgpt/) | GPT in 243 lines of pure Python | Single file, educational |
+| [MicroGPT](/learnAIDoc/wiki/karpathy-microgpt/) | GPT in 200 lines of pure Python | Single file, educational ([full wiki entry](/learnAIDoc/wiki/karpathy-microgpt/)) |
 | [ML Visualized](https://ml-visualized.com/) | Visual ML explanations | Interactive visualizations |
 | [R2D3](https://r2d3.us/visual-intro-to-machine-learning-part-1/) | Visual intro to ML | Scrollytelling |
 | [fast.ai](https://www.fast.ai/) | Practical deep learning | Video courses + notebooks |
