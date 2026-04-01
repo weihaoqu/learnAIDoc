@@ -222,9 +222,18 @@ The core design principle: **each step only adds one new capability, the core lo
 
 ## The Three-Agent Harness: Planner → Generator → Evaluator
 
-Anthropic's engineering blog describes a full **three-agent scaffold** that ran autonomously for hours, producing production-quality frontend apps. A widely-shared analysis (欧巴聊AI) highlights why this architecture survives model upgrades.
+Anthropic's engineering blog describes a full **three-agent scaffold** that ran autonomously for hours, producing production-quality frontend apps. The core insight, as analyzed by 爱可可-爱生活: Anthropic engineers borrowed from **GANs (Generative Adversarial Networks)** — one Claude generates, another Claude critiques. Don't let the same model be both athlete and referee.
 
-*Additional source: [欧巴聊AI on Weibo](https://weibo.com/) (2026-03) | [Anthropic: Harness Design for Long-Running Apps](https://www.anthropic.com/engineering/harness-design-long-running-apps)*
+*Additional source: [欧巴聊AI on Weibo](https://weibo.com/) (2026-03) | [爱可可-爱生活 on Weibo](https://weibo.com/) (2026-03-29) | [Anthropic: Harness Design for Long-Running Apps](https://www.anthropic.com/engineering/harness-design-long-running-apps)*
+
+### Why Multi-Claude? Two Stubborn Problems
+
+Claude has two failure modes during long coding sessions:
+
+1. **Context anxiety** — As the context window fills up, Claude starts cutting corners, rushing to finish, delivering half-baked results
+2. **Self-review blindness** — Claude can't objectively evaluate its own code. Let it self-review and it always finds "looks good," even when the code is broken
+
+The GAN-inspired fix: **separate the roles structurally**, not with prompts.
 
 ```
 ┌──────────────┐     ┌──────────────┐     ┌──────────────┐
@@ -252,11 +261,31 @@ Using a 3-agent scaffold with this pattern, an AI team built a complete **browse
 
 In earlier frontend experiments, the evaluator wrote 4 evaluation criteria (design quality, originality, craftsmanship, functionality) and scored pages directly. One run on a Dutch art museum website, after 10 iterations and 15 refinement rounds, the AI scrapped all previous approaches and created a 3D spatial experience with CSS perspective — a creative leap that single-pass generation would never produce.
 
+### Benchmark: Single Claude vs Full Harness (Game Dev)
+
+A head-to-head comparison on the same game development task:
+
+| | Single Claude | Full Harness (3 agents) |
+|---|---|---|
+| **Time** | 20 minutes | 6 hours |
+| **Cost** | $9 | $200 |
+| **Core gameplay** | Broken — controls unresponsive | Fully playable |
+| **Bonus features** | None | AI-assisted card design tool |
+| **Quality** | Unusable | Shippable |
+
+The single Claude was faster and cheaper but produced broken output. The harness was 22x more expensive but actually worked. As one commenter put it: *"Selling shovels tells you the way to solve shovel problems is to buy more shovels."* Fair criticism — but the benchmark speaks for itself.
+
 ## When the Model Upgrades, Re-Evaluate the Harness
 
 > **Every harness component compensates for current model weaknesses. When the model upgrades, re-evaluate which pieces are still useful.**
 
-After Opus 4.6 shipped, the author removed sprint-based segmentation and reduced evaluator overhead — the new model was strong enough that those guardrails became unnecessary friction. But evaluators remained useful for tasks that exceeded the model's comfort zone.
+After Opus 4.6 shipped, the author removed sprint-based segmentation ("reset context between sprints") and reduced evaluator overhead — the new model was strong enough that those guardrails became unnecessary friction. As the article honestly notes: as models get stronger, some harness components become unnecessary overhead and should be dropped timely.
+
+### The Evaluator Judgment
+
+One key heuristic worth remembering:
+
+> **Whether the evaluator has value depends on whether the task exceeds what a single model can reliably complete alone.** Within the model's boundary, the evaluator is waste. At the boundary and beyond, it's the critical defense line.
 
 The design space doesn't shrink as models improve — it **migrates**. Intentional harness design means only keeping components that add value, and continuously finding the next valuable combination. This is what AI engineers actually do: not just prompt engineering, but **discovering the right harness for the right model at the right time**.
 
