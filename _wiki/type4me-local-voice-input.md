@@ -82,18 +82,50 @@ This is where it gets interesting:
 
 Adding new speech recognition services requires only two protocol implementations then registration. Interfaces for OpenAI Whisper, Google Speech, and AWS Transcribe are already pre-defined — the community can contribute adapters.
 
-## Also Worth Knowing: Voice-Input-Src
+## Also Worth Knowing: Voice-Input-Src & Voice-Input-Dist
 
-Another open-source Mac voice input project taking a different approach — **voice-input-src** focuses on the *prompt* rather than the engine.
+Another open-source Mac voice input project taking a different approach — **voice-input-src** focuses on the *prompt* rather than the engine, and **voice-input-dist** is the fully working app generated from that prompt.
 
-*Source: [GitHub — yetone/voice-input-src](https://github.com/yetone/voice-input-src) | [Vibe Coding dist](https://github.com/yetone/voice-input-dist) | [宝玉 xp on Weibo](https://weibo.com/) (2026-03-29)*
+*Source: [GitHub — yetone/voice-input-src](https://github.com/yetone/voice-input-src) | [GitHub — yetone/voice-input-dist](https://github.com/yetone/voice-input-dist) | [宝玉 xp on Weibo](https://weibo.com/) (2026-03-29)*
 
-| | Type4Me | Voice-Input-Src |
+| | Type4Me | Voice-Input-Src/Dist |
 |---|---------|----------------|
-| **Focus** | Full-featured voice input app | Open-source prompt for voice-to-code |
+| **Focus** | Full-featured voice input app | Open-source prompt + generated app |
 | **Key value** | Local recognition + LLM processing modes | The *prompt design* is the real IP — reproducible by anyone |
-| **Vibe coding** | Supported via command mode | Core use case — voice → code generation |
-| **Engine** | SherpaOnnx (local) + cloud options | Uses external STT + LLM |
+| **Vibe coding** | Supported via command mode | Core use case — one prompt → full macOS app |
+| **Engine** | SherpaOnnx (local) + cloud options | Apple Speech Recognition (native) |
+| **LLM refinement** | Built-in processing modes | Optional OpenAI-compatible API for mixed Chinese/English |
 | **License** | MIT | Open source |
 
-The author (宝玉 xp) notes: "What's open-sourced is the Prompt — the code generated afterward has more value than a pile of vibe coding output, because you can reproduce it yourself." The companion repo `voice-input-dist` contains the generated code output for reference.
+The author (宝玉 xp) notes: "What's open-sourced is the Prompt — the code generated afterward has more value than a pile of vibe coding output, because you can reproduce it yourself."
+
+### Voice-Input-Dist: The Generated App
+
+The `voice-input-dist` repo (158 stars) is the complete macOS menu-bar app generated from a **single Claude Code prompt**:
+
+```bash
+claude \
+  --dangerously-skip-permissions \
+  --output-format=stream-json \
+  --verbose \
+  -p "请实现一个 macOS menu-bar 语音输入法应用 (Swift, macOS 14+)"
+```
+
+The prompt specifies 7 detailed requirements:
+
+1. **Fn key to record** — press and hold Fn, speech streams into the focused text field via Apple Speech Recognition
+2. **Default zh-CN** — out-of-box Chinese recognition with language switcher (English, Chinese, Japanese, Korean, etc.)
+3. **Floating waveform animation** — elegant borderless NSPanel with 5-bar RMS-driven waveform (44×32px) and live transcript label
+4. **Clipboard injection** — text inserted via Cmd+V paste simulation, auto-detects CJK vs ASCII input method
+5. **LLM refinement** — optional OpenAI-compatible API to improve accuracy for mixed Chinese/English text
+6. **Settings UI** — LLM Refinement toggle, API Base URL, API Key configuration
+7. **LSUIElement mode** — menu bar icon only, no Dock icon, built with Swift Package Manager
+
+```bash
+# Build and run
+make build    # Creates VoiceInput.app
+make run      # Build + launch
+make install  # Copy to /Applications
+```
+
+A reproducibility guarantee: clone the source repo, run `make build`, get an identical app. The full build process is documented in a public asciinema recording.
