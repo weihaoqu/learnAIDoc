@@ -3,7 +3,7 @@ title: "Feynman AI Research Agent & Claude as Lab Partner — Promise and Pitfal
 date: 2026-03-31
 category: AI Research
 tags: [ai-research, feynman, agents, literature-review, physics, hallucination, academic, reproducibility]
-related: ["Claude Code as Research Infrastructure — From Chatbot to AI Research Team"]
+related: ["Claude Code as Research Infrastructure — From Chatbot to AI Research Team", "AI Agents for Academic Research & Writing — From KatmerCode to the Nature Playbook"]
 icon: "🔬"
 image: "/assets/images/feynman-ai-research-agent.png"
 ---

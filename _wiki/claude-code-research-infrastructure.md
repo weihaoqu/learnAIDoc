@@ -3,7 +3,7 @@ title: "Claude Code as Research Infrastructure — From Chatbot to AI Research T
 date: 2026-03-24
 category: Claude Code
 tags: [claude-code, research, multi-agent, academic, claude-md, skills, personas]
-related: ["Claude Code: Agent Teams vs Subagents", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "The Five Levels of Claude Code — From Prompting to Orchestration", "Claude-Prism — Local-First Academic Writing Workspace with AI"]
+related: ["Claude Code: Agent Teams vs Subagents", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "The Five Levels of Claude Code — From Prompting to Orchestration", "Claude-Prism — Local-First Academic Writing Workspace with AI", "AI Agents for Academic Research & Writing — From KatmerCode to the Nature Playbook"]
 icon: "🔬"
 image: "/assets/images/claude-code-research-infrastructure.png"
 ---
