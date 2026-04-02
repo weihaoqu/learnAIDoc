@@ -114,6 +114,41 @@ Here's how the two approaches complement each other across the research lifecycl
 | **8. Abstract Variants** | `/abstract` | Generate submission-ready abstracts |
 | **9. Peer Reviewing** | Gruda's Method #2 | Structure your reviews with AI assistance |
 
+## Agentic-Researcher: Lightweight Lit Workflow for IS Researchers
+
+A newer, more focused tool by [SheeanBen](https://github.com/SheeanBen/Agentic-Researcher) — designed specifically for **Information Systems** grad students who use Zotero + Obsidian. Less feature-rich than KatmerCode but more opinionated about the daily reading workflow.
+
+```
+Keywords → Auto-expand to IS terms → Search top venues
+    → Score & filter papers → Confirm selections
+    → Sync PDFs from Zotero → Generate Chinese research notes
+    → Daily reading report
+```
+
+### 5 Key Features
+
+| Feature | What It Does |
+|---|---|
+| **Smart keyword expansion** | Input "AI" → auto-adds "agentic AI, multi-agent systems"; prioritizes MISQ, ISR, ICIS, etc. |
+| **Auto scoring & filtering** | Each paper gets a score + one-sentence Chinese recommendation |
+| **Structured Chinese notes** | Extracts PDF full text, generates notes following: research question → method → experiment → conclusion → critical evaluation |
+| **Deduplication** | System remembers all papers you've read; won't repeat |
+| **Daily report** | One-click summary of what you read today — advisor-friendly |
+
+### Setup
+
+```bash
+git clone https://github.com/SheeanBen/Agentic-Researcher.git
+cd Agentic-Researcher
+cp .env.example .env.local  # Add API keys if using LLM scoring
+```
+
+Requires Python 3.9+, pdftotext (Poppler), Zotero with Attanger plugin for PDF sync. Works offline with heuristic scoring or with OpenAI API for LLM-powered evaluation.
+
+### Who It's For
+
+Best fit: IS/management PhD students who read papers daily in Chinese and use Obsidian for notes. Less general-purpose than KatmerCode but more streamlined for the daily literature grind.
+
 ## Other Tools in the Ecosystem
 
 | Tool | Focus | Key Feature |
@@ -127,6 +162,7 @@ Here's how the two approaches complement each other across the research lifecycl
 ## Links
 
 - **KatmerCode:** [github.com/hkcanan/katmer-code](https://github.com/hkcanan/katmer-code)
+- **Agentic-Researcher:** [github.com/SheeanBen/Agentic-Researcher](https://github.com/SheeanBen/Agentic-Researcher)
 - **Nature article:** [Three ways ChatGPT helps me in my academic writing](https://www.nature.com/articles/d41586-024-01042-3)
 - **HN discussion:** [Show HN: KatmerCode](https://news.ycombinator.com/item?id=47479462)
 - **XDA coverage:** [Claude Code inside Obsidian](https://www.xda-developers.com/claude-code-inside-obsidian-and-it-was-eye-opening/)
