@@ -3,7 +3,7 @@ title: "oh-my-claudecode — Multi-AI Orchestration Plugin for Claude Code"
 date: 2026-03-31
 category: Skills & Plugins
 tags: [claude-code, orchestration, multi-agent, plugin, codex, gemini, oh-my-claudecode, teams, parallel]
-related: ["Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code: Agent Teams vs Subagents", "Claw Code — Clean-Room Python Rewrite of Claude Code's Agent Harness"]
+related: ["Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code: Agent Teams vs Subagents", "Claw Code — Clean-Room Python Rewrite of Claude Code's Agent Harness", "Agent Framework Explosion — Superpowers, DeerFlow, NOMAD & TradingAgents"]
 icon: "💪"
 image: "/assets/images/oh-my-claudecode-orchestration.png"
 ---
