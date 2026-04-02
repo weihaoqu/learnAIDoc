@@ -188,10 +188,59 @@ Raschka's analysis confirms what many suspected: **the model is necessary but no
 
 > "AI code analysis can give you an 'architecture panorama' in seconds. But that understanding is borrowed. It can't survive follow-up questions."
 
+## Deep-Dive Reference Materials
+
+### "Deep Dive Claude Code" — The 25-Chapter Book
+
+[sawzhang/deep-dive-claude-code](https://github.com/sawzhang/deep-dive-claude-code) is the most thorough technical dissection of Claude Code available — a full book modeled after classic tech references like *"Elasticsearch Source Code Analysis"* and *"Understanding the Linux Kernel."*
+
+| Metric | Detail |
+|---|---|
+| **Chapters** | 25 + 2 appendices |
+| **Words** | ~120,000 |
+| **Mermaid diagrams** | 101 (architecture, sequence, state machines, flows) |
+| **TypeScript code blocks** | 467 with syntax highlighting |
+| **License** | CC BY-NC-SA 4.0 |
+
+Covers 10 sections:
+
+```
+Foundation (Ch 1-3)    → Overview, initialization, type systems
+Core Engine (Ch 4-6)   → Query processing, messaging, streaming
+Tool System (Ch 7-9)   → Tool interfaces, built-ins, execution pipelines
+Agent System (Ch 10-12)→ Agent models, fork/resume, skills
+Security (Ch 13-14)    → Permission architecture, shell safety
+MCP Protocol (Ch 15-16)→ Transport layers, authentication
+State (Ch 17-18)       → Store management, session compression
+Terminal UI (Ch 19-20) → React+Ink rendering, REPL
+Engineering (Ch 21-23) → Optimization, testing, build systems
+Philosophy (Ch 24-25)  → Design patterns, engineering principles
+```
+
+Available as online reading, mdBook build, or PDF export.
+
+### Claude Code as "Agent Operating System" (默庵's Analysis)
+
+默庵 frames Claude Code not as a coding tool but as a full **Agent Operating System** — with a platform entry layer, composable prompt system, managed tool pipeline, specialized agent roles, and four extension mechanisms (Skills, Plugins, Hooks, MCP).
+
+The [tvytlx/claude-code-deep-dive](https://github.com/tvytlx/claude-code-deep-dive) repo contains the analysis report (PDF) plus a minimal teaching agent implementation in Python that strips the architecture down to its essentials — useful for understanding the core patterns without 500K lines of TypeScript.
+
+**5 actionable takeaways for agent builders:**
+
+1. **Decompose the system prompt** into modular, composable pieces — don't put everything in one giant prompt
+2. **Wrap tool calls** with validation and permission management — not raw function calls
+3. **Package high-frequency tasks** into standardized Skills
+4. **Spell out in the prompt** what NOT to do — explicit constraints prevent drift
+5. **Add a standalone verification step** after every critical task completion
+
+> "These methods don't need to be perfect from day one. Add one layer at a time — each layer makes the agent more stable."
+
 ## Links
 
 - **Raschka's full analysis:** [Claude Code's Real Secret Sauce](https://sebastianraschka.com/blog/2026/claude-code-secret-sauce.html)
 - **Latent.Space coverage:** [The Claude Code Source Leak](https://www.latent.space/p/ainews-the-claude-code-source-leak)
+- **Deep Dive book (25 chapters):** [sawzhang/deep-dive-claude-code](https://github.com/sawzhang/deep-dive-claude-code)
+- **Agent OS analysis + teaching impl:** [tvytlx/claude-code-deep-dive](https://github.com/tvytlx/claude-code-deep-dive)
 - **Reverse-engineering repo:** [ComeOnOliver/claude-code-analysis](https://github.com/ComeOnOliver/claude-code-analysis)
 - **Runnable fork:** [beita6969/claude-code](https://github.com/beita6969/claude-code)
 - **Learn by rebuilding:** [shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) — nano Claude Code agent built from scratch
