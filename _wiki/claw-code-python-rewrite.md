@@ -3,7 +3,7 @@ title: "Claw Code — Clean-Room Python Rewrite of Claude Code's Agent Harness"
 date: 2026-03-31
 category: Claude Code
 tags: [claude-code, harness-engineering, python, open-source, agents, reverse-engineering, oh-my-codex, rust]
-related: ["Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code Cheat Sheet & Everything-Claude-Code — Complete Reference Kit", "The Five Levels of Claude Code — From Prompting to Orchestration"]
+related: ["Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code Cheat Sheet & Everything-Claude-Code — Complete Reference Kit", "The Five Levels of Claude Code — From Prompting to Orchestration", "Claude Code Source Analysis — What Makes It Work & How to Actually Learn From It"]
 icon: "🦞"
 image: "/assets/images/claw-code-python-rewrite.png"
 ---

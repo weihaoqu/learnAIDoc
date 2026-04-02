@@ -3,7 +3,7 @@ title: "CC Unpacked — Visual Guide to Claude Code's Internals"
 date: 2026-04-01
 category: Claude Code
 tags: [claude-code, architecture, internals, visualization, agent-loop, tools, commands, reverse-engineering, education]
-related: ["Claw Code — Clean-Room Python Rewrite of Claude Code's Agent Harness", "Harness Engineering — The Real Bottleneck Isn't the Model", "The Five Levels of Claude Code — From Prompting to Orchestration", "Claude Code Cheat Sheet, Everything-Claude-Code & Claude How-To — Complete Reference Kit"]
+related: ["Claw Code — Clean-Room Python Rewrite of Claude Code's Agent Harness", "Harness Engineering — The Real Bottleneck Isn't the Model", "The Five Levels of Claude Code — From Prompting to Orchestration", "Claude Code Cheat Sheet, Everything-Claude-Code & Claude How-To — Complete Reference Kit", "Claude Code Source Analysis — What Makes It Work & How to Actually Learn From It"]
 icon: "🔎"
 image: "/assets/images/ccunpacked-claude-code-internals.png"
 ---
