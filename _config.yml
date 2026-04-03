@@ -32,5 +32,7 @@ wiki_categories:
     icon: "🔌"
   - name: AI Research
     icon: "🔬"
+  - name: Tools
+    icon: "🛠️"
   - name: Programming
     icon: "💻"
