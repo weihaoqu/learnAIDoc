@@ -289,6 +289,22 @@ One key heuristic worth remembering:
 
 The design space doesn't shrink as models improve — it **migrates**. Intentional harness design means only keeping components that add value, and continuously finding the next valuable combination. This is what AI engineers actually do: not just prompt engineering, but **discovering the right harness for the right model at the right time**.
 
+## Awesome Harness Engineering — Curated Reading List
+
+[walkinglabs/awesome-harness-engineering](https://github.com/walkinglabs/awesome-harness-engineering) (1.1K stars) is the best curated collection of harness engineering resources — papers, tools, benchmarks, and reference implementations organized into 8 categories:
+
+| Category | Count | Highlights |
+|---|---|---|
+| **Foundations** | 8 | OpenAI Codex field report, Anthropic's harness design article, LangChain's "agent = model + harness" |
+| **Context, Memory & Working State** | 7 | Context engineering patterns, memory architectures |
+| **Constraints & Guardrails** | 8 | Safe autonomy, permission models, tool restrictions |
+| **Specs & Agent Files** | 6 | AGENTS.md standard, agent.md, repo-local instructions |
+| **Evals & Observability** | 10 | Evaluation frameworks, tracing, debugging agent behavior |
+| **Benchmarks** | 38 | SWE-bench, WebArena, OSWorld, and 35 more |
+| **Runtimes & Implementations** | 8 | SWE-agent, Claude Agent SDK, reference harnesses |
+
+Scope rule: only includes resources that address **harness design, context management, evaluation, runtime control, or reliability-critical primitives** — not generic agent tooling.
+
 ## Key Takeaway
 
 > **Agent的可靠性瓶颈，不在模型，在模型周围的系统。**
