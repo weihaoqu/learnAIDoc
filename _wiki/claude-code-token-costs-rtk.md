@@ -98,3 +98,56 @@ Token savings aren't just about money:
 ### Supported Platforms
 
 Claude Code, OpenCode, Gemini CLI — install is one command, config lives at `~/.config/rtk/config.toml`.
+
+## The Other Side: Cut Output Tokens with claude-token-efficient
+
+rtk cuts **input** tokens (command output → Claude). But Claude also wastes tokens on **output** — filler phrases, flattery, restating your question, unsolicited suggestions. [claude-token-efficient](https://github.com/drona23/claude-token-efficient) is a CLAUDE.md snippet that eliminates this waste.
+
+*Source: [陆三金 on Weibo](https://weibo.com/) (2026-03-31) | [爱可可-爱生活 on Weibo](https://weibo.com/) (2026-04)*
+
+### The Problem: Default Claude Output Is Bloated
+
+By default, Claude:
+
+| Waste Pattern | Example |
+|---|---|
+| Opens with filler | "Sure!", "Great question!", "Absolutely!" |
+| Restates your question | "You're asking about how to..." |
+| Ends with fluff | "I hope this helps! Let me know if you need anything!" |
+| Uses decorative formatting | Em dashes, smart quotes, Unicode characters |
+| Adds unsolicited suggestions | "You might also want to consider..." |
+| Over-engineers | Adds abstractions you didn't ask for |
+| Agrees with wrong statements | "You're absolutely right!" (even when you're not) |
+
+> All of this wastes tokens. None of it adds value.
+
+### The Fix: One File in Your Project
+
+Drop the snippet into your CLAUDE.md. Claude immediately becomes more concise — fewer tokens per response, faster output, cleaner parsing.
+
+```bash
+# Add to any project
+curl -O https://raw.githubusercontent.com/drona23/claude-token-efficient/main/CLAUDE.md
+# Or just add the rules to your existing CLAUDE.md
+```
+
+### When to Use vs When Not To
+
+| Good For | Not Good For |
+|---|---|
+| Automated pipelines (1000+ calls/day) | Single ad-hoc queries (CLAUDE.md loading cost dominates) |
+| Structured output for agent parsing | Exploratory/architectural discussions |
+| Code generation workflows | When you need Claude to push back or explain tradeoffs |
+| Repetitive tasks | When you need detailed explanations |
+| Teams with multi-turn automation | Complex architecture design |
+
+### Combined Strategy: rtk + claude-token-efficient
+
+```
+Input tokens:   rtk compresses command output      → 80% saved
+Output tokens:  claude-token-efficient cuts filler  → 30-50% saved
+─────────────────────────────────────────────────────────────
+Combined:       Both sides optimized                → significant cost + quota savings
+```
+
+Use both together for automated pipelines. For interactive work, rtk alone is usually enough — you probably *want* Claude's explanations when you're learning.
