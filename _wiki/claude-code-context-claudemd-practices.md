@@ -217,6 +217,67 @@ The accompanying terminal screenshot reveals the full operating principles:
 
 The `.bashrc` insight: the real nature of CLAUDE.md isn't to make AI smarter — it's to make it more like **a domesticated role-specific interface for your company**, where computing power and knowledge become free-flowing water.
 
+## Complete Project Structure — The Directory Cheat Sheet
+
+A visual reference (by [Sandipan Bhaumik / agentbuild.ai](https://agentbuild.ai)) showing the full Claude Code project directory structure. Most people only use CLAUDE.md — the real power is in the `.claude/` directory.
+
+*Source: [默庵·超级个体 on Xiaohongshu](https://www.xiaohongshu.com/) (2026-04)*
+
+```
+your-project/
+├── CLAUDE.md ················· Loaded at session start. Project overview,
+│                               tech stack, coding conventions, architecture.
+├── CLAUDE.local.md ··········· Personal preferences. Overrides CLAUDE.md.
+│                               Git-ignored — your private config.
+├── .mcp.json ················· MCP integration configs. Connect to GitHub,
+│                               Jira, Slack, databases. Shared across team via git.
+│
+└── .claude/
+    ├── settings.json ········· Permissions & tool access. Model selection,
+    │   settings.local.json     hooks config. .local overrides shared settings.
+    │
+    ├── rules/ ················ Modular .md files by topic:
+    │   ├── code-style.md       - Covers style, testing, API design
+    │   ├── testing.md          - Can target specific files/paths
+    │   └── api-conventions.md  - Loaded automatically by Claude
+    │
+    ├── commands/ ············· Custom slash commands (/project-name):
+    │   ├── review.md           - Used for repeatable workflows
+    │   └── fix-issue.md        - Supports shell execution
+    │
+    ├── skills/ ··············· Auto-triggered based on task context:
+    │   └── deploy/             - Loads only when needed
+    │       ├── SKILL.md        - Keeps context lightweight
+    │       └── deploy-config.md
+    │
+    ├── agents/ ··············· Specialized sub-agents with roles:
+    │   ├── code-reviewer.md    - Isolated context windows
+    │   └── security-auditor.md - Custom tools and model preferences
+    │
+    └── hooks/
+        └── validate-bash.sh ·· Event-driven scripts (pre/post tool use).
+                                Automate validation, testing, formatting.
+                                Block unsafe operations.
+```
+
+### What Each Layer Does
+
+| Layer | Purpose | Key Insight |
+|---|---|---|
+| **CLAUDE.md** | Project rules + context | The "onboarding manual" — loaded every session |
+| **CLAUDE.local.md** | Personal overrides | Git-ignored; your preferences without polluting team config |
+| **rules/** | Coding standards | Modular — split by topic instead of one giant CLAUDE.md |
+| **commands/** | Repeatable workflows | Custom `/slash-commands` for your team's processes |
+| **skills/** | Domain knowledge | Auto-loaded only when relevant — keeps context lean |
+| **agents/** | Specialized workers | Each agent has its own role, tools, and context isolation |
+| **hooks/** | Automation gates | Deterministic enforcement — linters, tests, safety checks |
+
+### The Real Takeaway
+
+> "Most people put one CLAUDE.md and call it done. The real power is the `.claude/` directory — rules for standards, commands for workflows, skills for knowledge, agents for delegation, hooks for safety."
+
+Configure once, benefit every session. The more structured your `.claude/` directory, the more reliable and consistent Claude's output becomes.
+
 ## Key Takeaway
 
 The article's closing line sums it up: using AI coding tools well isn't about finding the perfect configuration — it's about **understanding how the tool works, then building systems that flow with it**.
