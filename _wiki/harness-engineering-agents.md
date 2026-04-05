@@ -305,6 +305,35 @@ The design space doesn't shrink as models improve — it **migrates**. Intention
 
 Scope rule: only includes resources that address **harness design, context management, evaluation, runtime control, or reliability-critical primitives** — not generic agent tooling.
 
+## OpenHarness (oh) — Open-Source Agent Harness in Python
+
+[HKUDS/OpenHarness](https://github.com/HKUDS/OpenHarness) from HKU's Data Intelligence Lab is an open-source Python implementation of the agent harness pattern — essentially a **research-friendly reimplementation** of Claude Code's architecture. Hit 1.9K stars in 2 days.
+
+```bash
+# One-command install
+curl -fsSL https://raw.githubusercontent.com/HKUDS/OpenHarness/main/scripts/install.sh | bash
+oh  # Launch
+```
+
+### 10 Subsystems
+
+| Subsystem | What It Does |
+|---|---|
+| **Engine** | Agent loop with streaming, tool-call cycles, retry logic |
+| **Tools** | 43+ built-in (file I/O, shell, search, web, notebooks) |
+| **Skills** | On-demand knowledge from markdown files |
+| **Plugins** | Extension ecosystem (commands, hooks, agents, MCP) |
+| **Permissions** | Multi-level safety modes with path/command rules |
+| **Hooks** | PreToolUse/PostToolUse lifecycle events |
+| **Commands** | 54 CLI commands for workflow control |
+| **MCP** | Model Context Protocol client integration |
+| **Memory** | Persistent cross-session storage + auto-compression |
+| **Tasks** | Background task lifecycle management |
+
+Works with Anthropic, OpenAI, DeepSeek, Moonshot/Kimi, Ollama, and GitHub Copilot. Python 3.10+ required.
+
+**Why it matters:** Turns Claude Code's architecture from a black box into a white box. You can read every line, modify every subsystem, and experiment with harness design without reverse-engineering TypeScript.
+
 ## Key Takeaway
 
 > **Agent的可靠性瓶颈，不在模型，在模型周围的系统。**

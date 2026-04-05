@@ -176,6 +176,51 @@ You see "chose A" but can't see "why not B or C." The best way to understand: **
 
 Anthropic's response was notable — Boris Cherny (VP Eng) credited team culture: *"Mistakes happen. The real question is process, team design, and infrastructure."* No individual blame. The issue was a manual deployment step that should have been automated.
 
+## Part 3: 5 Agent Design Patterns — "Treat AI as an Untrustworthy Contractor" (爱可可's Analysis)
+
+爱可可-爱生活 distilled the leak into a production-grade agent design philosophy: **don't treat AI as a trustworthy contractor — build audit, rollback, and verification mechanisms as if it will fail.**
+
+*Source: [爱可可-爱生活 on Weibo](https://weibo.com/) (2026-04) | [Reddit discussion](https://reddit.com/r/artificial/comments/1s9jprb/the_claude_code_leak_accidentally_published_the)*
+
+### Pattern 1: Skeptical Memory (怀疑式记忆)
+
+Most agent developers default-trust the model's prior outputs. This causes **error compounding** — each bad output becomes "fact" for the next turn, drifting the agent further off course.
+
+Claude Code's fix: treat stored memory as **"hints, not facts."** Before acting on recalled information, verify against the real world first. This is like adding a validation unit in the pipeline — prevents corrupted instructions from polluting the entire state machine.
+
+> The logic: treat memory as "suggestions" not "truth." Before acting, verify against reality.
+
+### Pattern 2: autoDream — Background Memory Consolidation
+
+When idle, the agent runs **background consolidation** — deduplicating, compressing, and cleaning messy observations from the session. Like human sleep: active defragmentation prevents context bloat and information noise from accumulating.
+
+This prevents the #1 killer of long-running agents: **context window filled with garbage** that degrades response quality over time.
+
+### Pattern 3: KAIROS — Guardian Daemon Process
+
+KAIROS gives the agent **background session capability** — it can work autonomously while a daemon constrains its behavior:
+
+- Risk-tiered actions: routine operations proceed automatically, high-risk operations require human approval
+- Subscribes to external events (GitHub Webhooks)
+- Includes the "dream" consolidation mechanism for long-term memory
+
+### Pattern 4: Constraint-Driven Architecture
+
+The architecture isn't clever design — it's the **inevitable result of constraints**. If you want an agent that works autonomously without losing control, there's only one way to build it:
+
+- Risk classification for all actions
+- Human audit gates for high-risk operations
+- KAIROS-style guardian processes
+- Verification before completion
+
+A Reddit commenter noted: *"Everyone independently converged on this same architecture."* When developers build agents independently, they all arrive at these same patterns — meaning the path to production-grade agents has essentially one road.
+
+### Pattern 5: The Core Philosophy
+
+> **Don't treat AI as a trustworthy contractor. Treat it as an untrustworthy contractor and build a complete system of audit, rollback, and verification around it.**
+
+This reframes the entire agent design space. Instead of pursuing "better AI that doesn't make mistakes," build **systems that assume mistakes and handle them gracefully**.
+
 ## Why This Matters
 
 ### The Harness Thesis
