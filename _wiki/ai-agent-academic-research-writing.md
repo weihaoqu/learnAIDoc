@@ -149,6 +149,56 @@ Requires Python 3.9+, pdftotext (Poppler), Zotero with Attanger plugin for PDF s
 
 Best fit: IS/management PhD students who read papers daily in Chinese and use Obsidian for notes. Less general-purpose than KatmerCode but more streamlined for the daily literature grind.
 
+## DeepScientist: Local AI Research Workstation
+
+[DeepScientist](https://github.com/ResearAI/DeepScientist) fills a different gap than KatmerCode or Agentic-Researcher — it manages the **experiment side** of research, not just literature and writing. Set up in 15 minutes, it gives you a persistent, local-first workspace where code, experiments, notes, and paper drafts all live together.
+
+```
+Research question or paper
+        │
+        ▼
+┌──────────────────────────────────┐
+│  DeepScientist Workspace         │
+│                                  │
+│  Git repo per project            │
+│  ├── Baseline reproduction       │
+│  ├── Branch per experiment       │
+│  ├── Ablation studies            │
+│  ├── Failed paths preserved      │  ← keeps ALL attempts, not just successes
+│  ├── Metrics & traces            │
+│  └── LaTeX draft + figures       │
+│                                  │
+│  Access: Web UI (:20999) / TUI   │
+│  IM: WeChat, Telegram, Feishu    │
+└──────────────────────────────────┘
+```
+
+### Key Features
+
+| Feature | What It Does |
+|---|---|
+| **Quest-based research** | Start from a paper, repo, or natural-language objective |
+| **Baseline reproduction** | Auto-restore environments, resolve dependencies |
+| **Experiment branching** | Git branch per experiment, structured ablation support |
+| **Failure preservation** | Keeps all failed paths — failed experiments teach more than successes |
+| **LaTeX + PDF** | Local document compilation, auto figure generation |
+| **Multi-surface** | Web UI, terminal, and IM channels (WeChat, Telegram, Feishu) |
+
+### Setup
+
+```bash
+npm install -g @researai/deepscientist
+codex --login
+ds --here
+# Access at http://127.0.0.1:20999
+```
+
+### Philosophy
+
+> "Persistent repository-based projects over ephemeral chats. Human control over black-box automation. Preserved learning from failed paths."
+
+DeepScientist's core insight: **failed experiments are knowledge too**. Most tools discard failed paths. DeepScientist preserves them with full traces, so you (or your advisor) can see why approach A failed and why approach B worked.
+
 ## Other Tools in the Ecosystem
 
 | Tool | Focus | Key Feature |
@@ -158,11 +208,13 @@ Best fit: IS/management PhD students who read papers daily in Chinese and use Ob
 | [Gatsbi](https://www.gatsbi.com/) | Full paper generation | Integrated citations, figures, equations |
 | [Connected Papers](https://www.connectedpapers.com/) | Citation visualization | Graph-based related paper discovery |
 | [Thesify](https://www.thesify.ai/) | Thesis feedback | Structure, argumentation, evidence analysis |
+| [DeepScientist](https://github.com/ResearAI/DeepScientist) | Experiment management | Local-first, branch-per-experiment, failure preservation |
 
 ## Links
 
 - **KatmerCode:** [github.com/hkcanan/katmer-code](https://github.com/hkcanan/katmer-code)
 - **Agentic-Researcher:** [github.com/SheeanBen/Agentic-Researcher](https://github.com/SheeanBen/Agentic-Researcher)
+- **DeepScientist:** [github.com/ResearAI/DeepScientist](https://github.com/ResearAI/DeepScientist)
 - **Nature article:** [Three ways ChatGPT helps me in my academic writing](https://www.nature.com/articles/d41586-024-01042-3)
 - **HN discussion:** [Show HN: KatmerCode](https://news.ycombinator.com/item?id=47479462)
 - **XDA coverage:** [Claude Code inside Obsidian](https://www.xda-developers.com/claude-code-inside-obsidian-and-it-was-eye-opening/)
