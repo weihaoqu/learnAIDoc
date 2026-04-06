@@ -3,7 +3,7 @@ title: "Pretext & Refero — Tools to Fix AI's Frontend Problem"
 date: 2026-03-31
 category: Tools
 tags: [frontend, text-rendering, ui-design, performance, pretext, refero, web-development]
-related: []
+related: ["Awesome DESIGN.md — Install Design Taste Into Your AI Coding Agent", "AI Website Cloner — Reverse-Engineer Any Site Into Clean Next.js Code"]
 icon: "🎨"
 image: "/assets/images/pretext-refero-ui-tools.png"
 ---
