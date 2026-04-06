@@ -3,7 +3,7 @@ title: "AI Tools for High-Engagement Learning"
 date: 2024-02-05
 category: AI Education
 tags: [learning, tools, education, open-source]
-related: ["How AI Impacts Skill Formation", "TensorTonic — Learn Machine Learning by Implementing 200+ Algorithms from Scratch", "AI Mastery Games — Teaching AI Literacy Through Interactive Games"]
+related: ["How AI Impacts Skill Formation", "TensorTonic — Learn Machine Learning by Implementing 200+ Algorithms from Scratch", "AI Mastery Games — Teaching AI Literacy Through Interactive Games", "MuJing (幕境) — Learn English Vocabulary Through Movies and Real Context"]
 icon: "📚"
 image: "/assets/images/ai-learning-tools.jpg"
 ---
