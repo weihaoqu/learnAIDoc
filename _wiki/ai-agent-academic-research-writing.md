@@ -3,7 +3,7 @@ title: "AI Agents for Academic Research & Writing — From KatmerCode to the Nat
 date: 2026-04-01
 category: AI Research
 tags: [academic-writing, research, obsidian, katmer-code, peer-review, literature-review, citation, claude-code, chatgpt]
-related: ["Claude-Prism — Local-First Academic Writing Workspace with AI", "Feynman AI Research Agent & Claude as Lab Partner — Promise and Pitfalls", "Claude Code as Research Infrastructure — From Chatbot to AI Research Team", "Five Questions for Critical Paper Reading — The Cambridge Method with Claude"]
+related: ["Claude-Prism — Local-First Academic Writing Workspace with AI", "Feynman AI Research Agent & Claude as Lab Partner — Promise and Pitfalls", "Claude Code as Research Infrastructure — From Chatbot to AI Research Team", "Five Questions for Critical Paper Reading — The Cambridge Method with Claude", "Paper2Code: Turn ArXiv Papers into Citation-Anchored Code"]
 icon: "📝"
 image: "/assets/images/ai-agent-academic-research-writing.png"
 ---
