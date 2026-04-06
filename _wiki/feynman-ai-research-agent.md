@@ -121,6 +121,68 @@ The physics case study proves AI can compress **weeks of tedious work into hours
 
 The professor's final answer to "will physicists lose their jobs?" — **No.** Computing power and knowledge are becoming cheap as water. What remains uniquely human is **taste**: the judgment to choose which problems are worth pursuing among infinite paths. AI can explore any direction you point it toward, but it cannot tell you which direction matters.
 
+## The Reusable Methodology: From Executor to Commander
+
+超级峰 extracted the professor's approach into a replicable framework. The core shift: **stop being an executor, become a commander.** Don't rely on AI's memory — give it searchable structured documents.
+
+*Source: [超级峰 on Xiaohongshu](https://www.xiaohongshu.com/) (2026-04)*
+
+### Three Core Principles
+
+| Principle | What It Means |
+|---|---|
+| **Clear I/O per task** | Every subtask has explicit input and output definitions — don't let AI guess your intent |
+| **One-conversation granularity** | Each subtask should be completable within a single conversation |
+| **Result persistence** | After completing a task, immediately save results as input for the next task — AI reads documents, not memory |
+
+### The 7-Phase Execution Model
+
+This is how the professor decomposed a year of work into 102 subtasks across 7 phases:
+
+```
+┌──────────┐   ┌──────────┐   ┌──────────┐   ┌──────────┐
+│ 1. Needs │──▶│ 2. Arch  │──▶│ 3. Module│──▶│ 4. Impl  │
+│ Analysis │   │ Design   │   │ Decompose│   │ (one by  │
+│          │   │          │   │          │   │  one)    │
+│• Define  │   │• Problem │   │• Break   │   │• Priority│
+│  problem │   │  structure│  │  into    │   │  order   │
+│• Success │   │• Tech    │   │  subtasks│   │• Verify  │
+│  criteria│   │  roadmap │   │• Clear   │   │  each    │
+│• Key     │   │• Verify  │   │  I/O per │   │• Record  │
+│  limits  │   │  approach│   │  subtask │   │  issues  │
+└──────────┘   └──────────┘   └──────────┘   └──────────┘
+       │                                            │
+       ▼                                            ▼
+┌──────────┐   ┌──────────┐   ┌──────────┐
+│ 5. Integ │──▶│ 6. Opt   │──▶│ 7. Docs  │
+│ Testing  │   │ Iterate  │   │          │
+│          │   │          │   │• Process │
+│• Combine │   │• Test-   │   │  docs    │
+│  modules │   │  based   │   │• Final   │
+│• End-to- │   │  optimize│   │  paper   │
+│  end test│   │• Adjust  │   │• Publish │
+│• Fix     │   │  params  │   │  prep    │
+│  issues  │   │          │   │          │
+└──────────┘   └──────────┘   └──────────┘
+
+Every phase ends with a CHECKPOINT — verify direction before continuing.
+```
+
+### Key Techniques
+
+- **Incremental verification** — After each task, immediately check results. If problems found, adjust your prompts — **don't let AI self-correct** (it will rationalize errors instead of fixing them)
+- **Structured documents** — All intermediate results saved as searchable files. AI doesn't need to remember what happened before — just reads documents to continue working
+- **Error isolation** — One subtask failure doesn't affect others. Easy to locate and fix issues without cascading damage
+- **Checkpoint design** — Every phase boundary has a verification gate. Ensures the project doesn't drift off course
+
+### Three Tips for Anyone Replicating This
+
+1. **Learn to decompose tasks** — Break big problems into small ones. AI handles one deterministic task at a time.
+2. **Learn to design prompts with clear I/O** — Every prompt needs explicit input/output definitions. Don't let AI guess your intent.
+3. **Learn to verify results** — AI output needs your judgment. This is not a burden — **it's your core competitive advantage.**
+
+> "AI is ready to be your 'second-year grad student.' Are you ready to be the 'commander'?"
+
 ## Practical Guidance for Researchers
 
 ### Using Feynman or Similar Research Agents
