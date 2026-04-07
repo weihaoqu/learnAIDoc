@@ -3,7 +3,7 @@ title: "AI in Education — Teacher's Factory, Not Student's Cheat Tool"
 date: 2026-03-24
 category: AI Education
 tags: [ai-education, teaching, teacher-training, pedagogy, claude, empowerment]
-related: ["Learning in the AI Era: Amplify Your Thinking, Don't Outsource It", "MIT Professor's NotebookLM Grading System — 47 Essays in 12 Minutes", "Anthropic Academy — 13 Free AI Courses with Certificates", "Frustration Shifts Upward — How AI Coding Changes What's Hard", "AI Mastery Games — Teaching AI Literacy Through Interactive Games"]
+related: ["Learning in the AI Era: Amplify Your Thinking, Don't Outsource It", "MIT Professor's NotebookLM Grading System — 47 Essays in 12 Minutes", "Anthropic Academy — 13 Free AI Courses with Certificates", "Frustration Shifts Upward — How AI Coding Changes What's Hard", "AI Mastery Games — Teaching AI Literacy Through Interactive Games", "OpenMAIC: Tsinghua's Multi-Agent AI Classroom"]
 icon: "👩‍🏫"
 image: "/assets/images/ai-education-teacher-factory.png"
 ---
