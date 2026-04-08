@@ -34,5 +34,7 @@ wiki_categories:
     icon: "🔬"
   - name: Tools
     icon: "🛠️"
+  - name: Creative
+    icon: "🎨"
   - name: Programming
     icon: "💻"

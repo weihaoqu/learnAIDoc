@@ -1,7 +1,7 @@
 ---
 title: "Voice-Pro — Local AI Dubbing, Translation, and Voice Cloning in One Tool"
 date: 2026-03-24
-category: AI Research
+category: Creative
 tags: [voice-cloning, dubbing, translation, open-source, whisper, tts, video, speech-recognition]
 related: ["Seedance 2.0: ByteDance's AI Video Generator with Native Audio"]
 icon: "🎙️"

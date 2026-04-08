@@ -1,7 +1,7 @@
 ---
 title: "MoneyPrinterTurbo — Keyword to Short Video in Minutes"
 date: 2026-03-24
-category: AI Research
+category: Creative
 tags: [video-generation, automation, open-source, content-creation, tts, subtitles, short-video]
 related: ["Seedance 2.0: ByteDance's AI Video Generator with Native Audio", "Voice-Pro — Local AI Dubbing, Translation, and Voice Cloning in One Tool", "Accio Work — One Person + AI Agents = Entire Business"]
 icon: "🎬"
