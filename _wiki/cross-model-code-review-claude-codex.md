@@ -308,3 +308,71 @@ Total: 8 issues caught that Claude's self-review missed.
 Cross-model review is a harness mechanism. It maps to **Pillar 2 (Architectural Constraints)** — instead of asking the model to follow a "review your own code" prompt (which it can ignore or apply with the same blind spots), you enforce review through a structurally different system. Code enforcement > prompt suggestions.
 
 The codex-plugin-cc makes this **zero-friction** — no terminal switching, no copy-paste, no workflow interruption. The cross-model review thesis now has an official tool.
+
+## Evolution: From 2-Agent to 4-Agent Consensus Review
+
+The next step beyond Claude + Codex pairing: **4 parallel agents with iterative consensus**. A custom `/cross-review` skill orchestrates Claude Code, Codex, CodeRabbit, and an Integration Impact agent — all reviewing the same PR in parallel, then exchanging opinions and cross-validating until they agree.
+
+*Source: [硅谷陈源博士 on Weibo](https://weibo.com/) (2026-04)*
+
+```
+        PR #251
+           │
+           ▼
+  /cross-review launches 4 agents in parallel
+           │
+    ┌──────┼──────┬──────────┬─────────────┐
+    ▼      ▼      ▼          ▼              ▼
+┌────────┐ ┌────┐ ┌────────┐ ┌──────────────┐
+│ Claude │ │Codex│ │CodeRabbit│ │  Integration │
+│ Code   │ │     │ │         │ │  Impact     │
+│(full   │ │(caller│ │(integra-│ │ (versions,  │
+│ review)│ │analysis)│tion chk)│ │  CI, build) │
+└────┬───┘ └───┬─┘ └────┬────┘ └──────┬──────┘
+     │         │         │            │
+     └─────────┴─────────┴────────────┘
+                       │
+                       ▼
+         Exchange opinions → Cross-validate
+                       │
+                       ▼
+         Up to 3 rounds until consensus
+                       │
+                       ▼
+         ┌─────────────────────────────────┐
+         │ Confirmed Issues (2+ reviewers) │
+         │ Integration Findings             │
+         │ Dismissed Findings (with why)   │
+         └─────────────────────────────────┘
+```
+
+### What Each Agent Brings
+
+| Agent | Specialty |
+|---|---|
+| **Claude Code** | Full code review — logic, patterns, best practices |
+| **Codex** | Consumer/caller analysis — who uses this code and how |
+| **CodeRabbit** | Integration checks — API contracts, backward compat |
+| **Integration Impact** | Cross-cutting analysis — versions, CI, build, .gitignore |
+
+### The Output: Three Categories
+
+1. **Confirmed Issues** — agreed by 2+ reviewers, with severity (Critical/Major/Minor/Info)
+2. **Integration Findings** — cross-cutting impact the individual reviewers missed
+3. **Dismissed Findings** — what the consensus rejected, with justification (e.g., "Docker is a system dependency, not a Flox package")
+
+### The Real Insight
+
+> "The value isn't in three independent opinions — it's in the **mutual validation through iterative discussion**."
+
+A single reviewer's opinion is cheap. Four independent reviewers give you breadth but leave you to resolve conflicts yourself. **Iterative consensus** forces the reviewers to confront each other's findings: false positives get dismissed with reasons, genuine issues get confirmed by cross-checking, and cross-cutting impacts emerge that no single reviewer would have seen.
+
+### How It Compares
+
+| Approach | Agents | Cost | Value |
+|---|---|---|---|
+| Self-review | 1 | 1x | Low (same blind spots) |
+| Cross-model (Claude + Codex) | 2 | 2x | High (different reasoning patterns) |
+| 4-agent consensus | 4 | ~5x (3 rounds) | Highest (mutual validation) |
+
+Use single cross-model for daily work. Use 4-agent consensus for **high-stakes PRs** — release branches, security-sensitive code, architectural changes. The cost is worth it when a missed bug costs more than the review tokens.
