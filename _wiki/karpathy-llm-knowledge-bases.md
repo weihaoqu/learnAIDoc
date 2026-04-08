@@ -98,11 +98,36 @@ Karpathy emphasized these when praising Farzapedia (a personal Wikipedia built f
 
 > "This approach puts 'you' in full control. The data is yours. In Universal formats. Explicit and inspectable. Use whatever AI you want over it."
 
-## Farzapedia — A Real Example
+## Real-World Examples
+
+### Farzapedia — Personal Wiki
 
 Developer Farza fed 2,500 entries from his diary, Apple Notes, and iMessage conversations into this workflow. Result: **400 detailed articles** covering friends, startups, research areas, and favorite animes — a personal Wikipedia with backlinks and cross-references.
 
 The key insight: this isn't just note organization. The LLM creates **synthesized knowledge** — connecting dots across sources that you'd never connect manually.
+
+### Buffett Letters Knowledge Base — Domain Wiki
+
+A different flavor of the same pattern: [Warren Buffett Shareholder Letters Knowledge Base](https://buffett-letters-eir.pages.dev/) organizes **70 years of Berkshire Hathaway shareholder letters** into a structured, queryable knowledge base.
+
+| Metric | Count |
+|---|---|
+| **Shareholder letters** | 98 |
+| **Core investment concepts** | 49 |
+| **Company case studies** | 61 |
+| **Key investor profiles** | 7 |
+| **Original passages** | 4,726+ |
+
+The site structures content across four views: letters overview, core concept interpretations, company case studies, and key investor profiles. Each passage is cross-referenced by year, theme, and company — turning 70 years of scattered wisdom into a single queryable artifact.
+
+**Why this matters:** This is what a **domain-specific knowledge base** looks like done well. Unlike Farzapedia (personal), this shows the pattern applied to a public domain corpus. The same architecture works for:
+
+- Academic research papers (your field's key authors across decades)
+- Legal case archives (precedents organized by topic)
+- Historical documents (diaries, letters, memos)
+- Technical documentation (API specs, RFCs, design docs)
+
+The endgame: someone noted this could "distill a Buffett financial advisor" from the knowledge base — i.e., fine-tune an LLM on the structured corpus. This is exactly what Karpathy hinted at with synthetic data generation from your knowledge base.
 
 ## TimYang's Practical Implementation
 
