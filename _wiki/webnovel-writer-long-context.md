@@ -131,7 +131,51 @@ Even if you never write fiction, the patterns here apply to any long-running AI 
 
 These are the same principles behind [harness engineering](/learnAIDoc/wiki/claude%20code/harness-engineering-agents/) and [Karpathy's LLM Knowledge Bases](/learnAIDoc/wiki/ai%20research/karpathy-llm-knowledge-bases/). The web novel is just a concrete application of the general pattern.
 
+## Case Study: 《探花书房》 — Full Novel in One Session
+
+I used the webnovel-writer skill to build a complete **48,000-word literary novella** from concept to polished PDF ebook, mostly overnight.
+
+### Setup
+
+The seed was two WeChat screenshots — a Doubao AI prediction about a friend's future girlfriend: she'd be named Lin Wan, from Suzhou, they'd meet at a bookshop called 探花书房 on Nanshizi Street in late autumn 2026 over a Pingjiang Road postcard.
+
+The challenge: the skill is designed for web novel tropes (systems, power levels, face-slapping). I needed to adapt it for **literary fiction** with no golden finger, no antagonist, no power system — just two quiet people slowly falling for each other in Suzhou.
+
+### What Actually Happened
+
+| Step | What | How |
+|---|---|---|
+| **Init** | `/webnovel-init` deep mode | Collected story seed, adapted all web-novel fields for literary fiction (金手指=无, 反派=无). Custom creative constraints: zero conflict, dialogue restraint, Suzhou real-location details per chapter |
+| **Chapter 1** | Full `/webnovel-write` pipeline | Context Agent → Draft → 3 parallel review agents (consistency/continuity/OOC, score: 92/100) → Anti-AI polish → Data Agent → Git commit |
+| **Chapters 2-12** | `RemoteTrigger` scheduled agents | Two triggers: 12:20 AM (write all remaining) and 5:20 AM (check + continue). Went to sleep, woke up to 12 finished chapters |
+| **Review** | Two fast-reader agents in parallel | Ch1-6 and Ch7-12 reviewed simultaneously. Both rated **A overall**. Found 3 micro-issues |
+| **Polish** | Targeted edits | Ch8 ending de-lectured, Ch9 over-reflection trimmed, Ch10 expanded |
+| **Ebook** | Cover + PDF | `baoyu-cover-image` generated watercolor cover → `mdpdf` converted styled markdown → `pypdf` merged cover page. 156-page PDF with title page, epigraph, TOC, volume dividers, colophon |
+
+### Architecture Lessons
+
+- **Literary fiction stretches the framework**: "爽点规划" and "反派分层" are wasted on literary fiction, but the core pipeline (context → draft → review → polish → data) works for any genre
+- **OOC checker caught real issues**: Flagged Lin Wan being too proactive in Ch1 and Qing's emotional progression exceeding the "noticed, not attracted" boundary — both valid
+- **Overnight writing via RemoteTrigger**: The pipeline is autonomous enough for 11 unattended chapters
+- **Anti-AI check is critical for literary prose**: Template-ness that's acceptable in web novels is fatal in literary fiction
+
+### Final Numbers
+
+| Metric | Value |
+|---|---|
+| Words | 48,145 |
+| Chapters | 12 |
+| Quality | A (both reviewers) |
+| Ch1 review score | 92/100 |
+| Git commits | 16 |
+| PDF pages | 156 |
+| Time (Ch1, manual) | ~45 min |
+| Time (Ch2-12, overnight) | autonomous |
+
+**Project:** [weihaoqu/tanhua-bookshop](https://github.com/weihaoqu/tanhua-bookshop)
+
 ## Links
 
 - **GitHub:** [lingfengQAQ/webnovel-writer](https://github.com/lingfengQAQ/webnovel-writer)
+- **Case Study:** [weihaoqu/tanhua-bookshop](https://github.com/weihaoqu/tanhua-bookshop)
 - **Version:** v5.5.4
