@@ -72,3 +72,51 @@ Works with Claude Code, Cursor, Windsurf, GitHub Copilot — any agent that read
 ## Why This Matters
 
 This turns "design taste" from a subjective skill into **a replicable dependency**. Independent developers who can't afford a design director can now produce brand-quality UI by referencing a curated `.md` file. It's the design equivalent of importing a library.
+
+## Companion Approach: taste-skill (Claude Code Skills Bundle)
+
+Where **Awesome DESIGN.md** gives you specific brand styles to match (Linear, Apple, etc.), [leonxlnx/taste-skill](https://github.com/leonxlnx/taste-skill) takes the **general aesthetic principles** approach — a bundle of 7 installable Claude Code skills that teach AI design taste without being tied to a specific brand.
+
+*Source: [默庵·超级个体 on Weibo](https://weibo.com/) (2026-04)*
+
+### The 7 Skills
+
+| Skill | What It Does |
+|---|---|
+| **taste-skill** | Main design skill — layout, typography, colors, spacing, motion |
+| **redesign-skill** | Audits and fixes design problems in existing projects |
+| **soft-skill** | Expensive-looking UIs with premium fonts, whitespace, spring animations |
+| **output-skill** | Prevents lazy AI outputs — no placeholder comments, no half-finished blocks |
+| **minimalist-skill** | Editorial interfaces à la Notion and Linear — monochrome, crisp borders |
+| **brutalist-skill** | (Beta) Swiss typography + CRT terminal aesthetics |
+| **stitch-skill** | Google Stitch-compatible semantic rules — includes DESIGN.md export |
+
+### Install
+
+```bash
+npx skills add https://github.com/Leonxlnx/taste-skill
+```
+
+Works with Claude Code, Cursor, Antigravity — any tool that reads `SKILL.md` files.
+
+### The Three Dials
+
+`taste-skill` exposes 3 adjustable settings (1-10 scale):
+
+- **DESIGN_VARIANCE** — how experimental the layout should be
+- **MOTION_INTENSITY** — how much animation to add
+- **VISUAL_DENSITY** — how much content per screen
+
+This makes it more flexible than brand-specific DESIGN.md files — you can dial in taste without committing to one style.
+
+### Which to Use When
+
+| Situation | Tool |
+|---|---|
+| "Build me a dashboard that looks like Linear" | Awesome DESIGN.md (Linear file) |
+| "Make this generic AI UI look premium" | taste-skill + redesign-skill |
+| "I want a specific aesthetic (minimalist/brutalist)" | taste-skill variant |
+| "Stop Claude from writing lazy code" | output-skill |
+| "Export semantic design rules for Google Stitch" | stitch-skill |
+
+Use both together: `DESIGN.md` for brand identity + `taste-skill` for general polish and output quality.
