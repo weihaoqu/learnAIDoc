@@ -109,13 +109,33 @@ The same patterns apply to any multi-model AI pipeline:
 4. **Persistent memory enables iteration** — Without cross-session memory, every run starts from scratch. The ONNX vector store is lightweight but sufficient.
 5. **Quality supervision must be automated** — The Supervision layer catches inconsistencies that would otherwise require human review. This is the difference between "demo quality" and "production quality."
 
-## Case Study: 探花书房 → Short Drama
+## Case Study: 探花书房 → Short Drama (Completed)
 
-We plan to use Toonflow to convert our AI-written literary novella [《探花书房》](https://github.com/weihaoqu/tanhua-bookshop) (48,000 words, 12 chapters) into a short drama pilot. The novel was created entirely using the [webnovel-writer](/learnAIDoc/wiki/creative/webnovel-writer-long-context/) Claude Code skill — making this an end-to-end AI creative pipeline: **idea → novel → video**.
+We used Toonflow to convert our AI-written literary novella [《探花书房》](https://github.com/weihaoqu/tanhua-bookshop) (48,000 words, 12 chapters) into a 3-episode short drama with 16-frame storyboard. The novel was created entirely using the [webnovel-writer](/learnAIDoc/wiki/creative/webnovel-writer-long-context/) Claude Code skill — making this an end-to-end AI creative pipeline: **idea → novel → video**.
 
-Pipeline: Novel text → Toonflow character extraction → Script (Ch1-3) → Storyboard → Video pilot episode
+### Pipeline Results
 
-*Case study results will be added after completion.*
+| Step | Tool | Model | Result |
+|---|---|---|---|
+| Event extraction | Toonflow | Gemini 2.5 Flash | 3 chapters → characters + plot events |
+| Script generation | Toonflow | GPT-4o | 3 episode scripts with scene breakdowns |
+| Character design | baoyu-image-gen | Gemini 3 Pro Image | 2 character sheets from real photos |
+| Storyboard art | baoyu-image-gen (batch) | Gemini 3 Pro Image | 16 frames, Chinese watercolor anime style |
+| Director review | Toonflow Production Agent | GPT-4o | B+ rating, passed supervision |
+
+### Practical Lessons
+
+1. **Gemini + Vercel AI SDK tool calling is fragile** — Toonflow's Script Agent failed repeatedly with Gemini due to TypeValidationError in streaming tool call responses. Switched to OpenAI for reliable tool calling.
+2. **Toonflow's DB has undocumented tables** — `o_scriptAssets`, `o_assetsRole2Audio`, `memories` tables were missing and had to be created manually. The init script has a SQLite bug that silently skips table creation.
+3. **Bypass vendor image generation** — Toonflow's built-in image generation through vendor `imageRequest` is unreliable with Google. Direct batch generation via `baoyu-image-gen` was faster and more reliable (16 frames in ~5 minutes).
+4. **The three-layer agent system works** — Decision/Execution/Supervision agents caught real issues (missing assets, pacing problems). The B+ score was earned, not inflated.
+5. **Total cost: under $1** — $0.50 OpenAI (scripts) + $0 Google free tier (event extraction + images). Far cheaper than the $12-57/episode estimate.
+
+### 3 Episodes Produced
+
+- **EP01**: 姑苏初遇，心动萌芽 (First meeting at the bookshop)
+- **EP02**: 故地重游，情愫渐浓 (Return visit, deepening feelings)
+- **EP03**: 情归所向，真心觉醒 (Emotional awakening on Pingjiang Road)
 
 ## Links
 
