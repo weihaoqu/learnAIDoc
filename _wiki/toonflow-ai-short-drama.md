@@ -3,7 +3,7 @@ title: "Toonflow — The AI Factory That Turns Novels Into Short Dramas"
 date: 2026-04-10
 category: Creative
 tags: [video-generation, ai-agents, creative-writing, open-source, docker, pipeline, novel-to-video, chinese, agent-orchestration]
-related: ["WebNovel Writer — How AI Writes 2M+ Word Novels Without Forgetting", "Harness Engineering — The Real Bottleneck Isn't the Model"]
+related: ["WebNovel Writer — How AI Writes 2M+ Word Novels Without Forgetting", "Harness Engineering — The Real Bottleneck Isn't the Model", "Novel to Multimedia Pipeline — From Chapter Draft to Douyin in One Session"]
 icon: "🎬"
 image: "/assets/images/toonflow-ai-short-drama.png"
 ---
