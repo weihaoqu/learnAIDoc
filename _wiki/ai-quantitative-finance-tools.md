@@ -1,0 +1,69 @@
+---
+title: "AI Quant Tools — Kronos and Midas for Financial Market Research"
+date: 2026-04-13
+category: AI Research
+tags: [finance, quantitative, time-series, alpha-research, llm, open-source, trading]
+related: []
+icon: "📈"
+image: "/assets/images/ai-quantitative-finance-tools.png"
+---
+
+Two open-source AI tools targeting quantitative finance research: **Kronos**, a foundation model for financial time series (AAAI 2026), and **Midas**, an LLM-powered Alpha signal discovery framework with dual-loop architecture. Both represent the trend of bringing foundation model capabilities into specialized financial domains.
+
+*Source: [Kronos Paper (AAAI 2026)](https://arxiv.org/abs/2025.11.10) | [Midas GitHub](https://github.com/Billy1900/Midas)*
+
+## Kronos — Financial Time Series Foundation Model
+
+A decoder-only time series model built on GHQ/CV (Causal Transformer Block) architecture, designed specifically for financial market language.
+
+| Detail | Value |
+|--------|-------|
+| Published | AAAI 2026 |
+| Architecture | Decoder-only TSM with tokenizer + causal transformer |
+| Focus | Financial time series prediction |
+| Languages | Multi-language documentation (EN, DE, ES, FR, JP, KR, PT, RU, ZH) |
+
+The model treats financial data as a "language" — price sequences become token sequences, and the causal transformer predicts future patterns from historical context.
+
+## Midas — LLM-Powered Alpha Research Framework
+
+An end-to-end quantitative research platform that integrates signal discovery, backtesting, and monitoring into one framework.
+
+```
+┌──────────────────────────────────────────┐
+│           DUAL-LOOP ARCHITECTURE          │
+│                                          │
+│  Offline Loop          Online Loop       │
+│  ┌──────────┐         ┌──────────┐      │
+│  │ LLM as   │         │ Monitor  │      │
+│  │ "Quant   │         │ feature  │      │
+│  │ Researcher"│        │ decay +  │      │
+│  │ discovers │         │ trigger  │      │
+│  │ new Alpha │         │ kill     │      │
+│  │ signals   │         │ switch   │      │
+│  └──────────┘         └──────────┘      │
+│       ↓                    ↑             │
+│  Knowledge base: learns from every       │
+│  failure and success                     │
+└──────────────────────────────────────────┘
+```
+
+### Key Features
+- **Dual-loop**: offline LLM discovers signals + online monitors feature decay and triggers kill switches
+- **LLM-driven feature proposals**: supports DSL expressions for fast validation and generation
+- **Multi-agent evaluation**: covers IC, half-life, transaction costs, simulated compliance across 6 dimensions
+- **Knowledge persistence**: auto-records learnings, threshold configs, and feature state
+- **Supports OpenAI/Anthropic**: CLI for rapid deployment, only needs a `compute(expression)` interface
+- **Install**: `pip install -e .` with synthetic data demo included, no API key needed to start
+
+## How LearnAI Team Could Use This
+
+- **Teaching AI applications in finance** — Both tools illustrate how foundation models extend beyond NLP into domain-specific applications. Good case studies for an "AI Applications" course module.
+- **Time series research** — Kronos's approach of treating financial data as language connects to broader time series forecasting methods applicable to any sequential data.
+- **Agent architecture example** — Midas's dual-loop (discovery + monitoring) and multi-agent evaluation are transferable patterns for any domain requiring continuous AI monitoring.
+
+## Real-World Use Cases
+
+1. **Quantitative research teams** — Midas automates the tedious cycle of signal discovery → backtest → monitor → replace decayed signals
+2. **Academic finance research** — Kronos provides a pre-trained foundation model for financial time series experiments
+3. **Algorithmic trading firms** — The dual-loop architecture ensures signals are monitored in production and automatically flagged when they decay
