@@ -3,7 +3,7 @@ title: "claude.nagdy.me — Learn Claude Code by Doing, Not Reading"
 date: 2026-04-13
 category: AI Education
 tags: [claude-code, learning, interactive, tutorial, beginner, hooks, skills, mcp, free]
-related: ["Claude Code Cheatsheet — Everything in One Place", "Anthropic Academy — Free Claude Courses"]
+related: ["Claude Code Cheatsheet — Everything in One Place", "Anthropic Academy — Free Claude Courses", "AI Learning Roadmap 2026 — Best Courses, Certs & YouTube Channels"]
 icon: "📚"
 image: "/assets/images/claude-nagdy-interactive-learning.png"
 ---

@@ -3,7 +3,7 @@ title: "MetaGPT — The AI Software Company That Runs on One Prompt"
 date: 2026-04-13
 category: AI Research
 tags: [agents, multi-agent, metagpt, open-source, prd, software-engineering, one-person-company, framework]
-related: ["Anthropic Managed Agents — Decoupling the Brain from the Hands", "Agentic AI Engineer Roadmap 2026 — Eight Pillars from Prompt to Production"]
+related: ["Anthropic Managed Agents — Decoupling the Brain from the Hands", "Agentic AI Engineer Roadmap 2026 — Eight Pillars from Prompt to Production", "Meta Harness — The Agent That Optimizes Its Own Scaffolding (Stanford/MIT)", "Hermes Agent — The Self-Improving AI Agent That Learns From Experience"]
 icon: "🏢"
 image: "/assets/images/metagpt-foundation-agents.png"
 ---

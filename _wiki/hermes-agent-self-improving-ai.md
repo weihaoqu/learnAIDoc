@@ -3,7 +3,7 @@ title: "Hermes Agent — The Self-Improving AI Agent That Learns From Experience
 date: 2026-04-13
 category: AI Research
 tags: [agents, self-improving, nous-research, open-source, model-agnostic, memory, skills, automation]
-related: ["Anthropic Managed Agents — Decoupling the Brain from the Hands", "Harness Engineering — The Real Bottleneck Isn't the Model"]
+related: ["Anthropic Managed Agents — Decoupling the Brain from the Hands", "Harness Engineering — The Real Bottleneck Isn't the Model", "Meta Harness — The Agent That Optimizes Its Own Scaffolding (Stanford/MIT)", "MetaGPT — The AI Software Company That Runs on One Prompt"]
 icon: "🔮"
 image: "/assets/images/hermes-agent-self-improving-ai.png"
 ---

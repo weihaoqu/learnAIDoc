@@ -3,7 +3,7 @@ title: "Fireworks Tech Graph — Natural Language to Architecture Diagrams in Cl
 date: 2026-04-13
 category: Skills & Plugins
 tags: [claude-code, skill, diagrams, architecture, svg, visualization, multi-agent, open-source]
-related: ["Taste Skill — Teaching AI Agents Design Taste for Frontend Code"]
+related: ["Taste Skill — Teaching AI Agents Design Taste for Frontend Code", "ui.sh — Tailwind Creator's Design Toolkit for AI Coding Agents"]
 icon: "🎆"
 image: "/assets/images/fireworks-tech-graph-diagrams.png"
 ---

@@ -3,7 +3,7 @@ title: "Seedance 2.0: ByteDance's AI Video Generator with Native Audio"
 date: 2026-02-08
 category: Creative
 tags: [ai, video, generative-ai, bytedance, multimedia]
-related: []
+related: ["InfiniteTalk — Unlimited-Length AI Talking Videos from a Single Photo"]
 icon: "🎬"
 image: "/assets/images/seedance-2.jpg"
 ---

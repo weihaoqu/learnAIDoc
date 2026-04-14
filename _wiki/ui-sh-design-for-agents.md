@@ -3,7 +3,7 @@ title: "ui.sh — Tailwind Creator's Design Toolkit for AI Coding Agents"
 date: 2026-04-13
 category: Tools
 tags: [ui-design, tailwind, claude-code, cursor, codex, frontend, adam-wathan, ai-coding]
-related: ["Taste Skill — Teaching AI Agents Design Taste for Frontend Code", "Awesome DESIGN.md — Install Design Taste Into Your AI Coding Agent"]
+related: ["Taste Skill — Teaching AI Agents Design Taste for Frontend Code", "Awesome DESIGN.md — Install Design Taste Into Your AI Coding Agent", "Markdown Viewer Skills — 9,500 Icons and 14 Diagram Types for AI Agents", "Fireworks Tech Graph — Natural Language to Architecture Diagrams in Claude Code", "Pretext & Refero — Tools to Fix AI's Frontend Problem"]
 icon: "🖌️"
 image: "/assets/images/ui-sh-design-for-agents.png"
 ---

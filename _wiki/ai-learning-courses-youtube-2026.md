@@ -3,7 +3,7 @@ title: "AI Learning Roadmap 2026 — Best Courses, Certs & YouTube Channels"
 date: 2026-03-31
 category: AI Education
 tags: [ai-education, courses, youtube, certificates, learning, deeplearning-ai, google, microsoft, harvard]
-related: []
+related: ["claude-howto — The Visual Learning Path from Slash Commands to Agent Orchestration", "claude.nagdy.me — Learn Claude Code by Doing, Not Reading"]
 icon: "🎓"
 image: "/assets/images/ai-learning-courses-youtube-2026.png"
 ---

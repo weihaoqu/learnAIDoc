@@ -3,7 +3,7 @@ title: "Resumes Are Dead — Your .claude/ Folder Is Your New Career Card"
 date: 2026-04-05
 category: AI Education
 tags: [career, hiring, interview, claude-code, resume, ai-education, junior-developer, job-market, portfolio]
-related: ["Frustration Shifts Upward — How AI Coding Changes What's Hard", "A Lawyer Beat 500 Developers — Problem Definition Is the New Coding", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure"]
+related: ["Frustration Shifts Upward — How AI Coding Changes What's Hard", "A Lawyer Beat 500 Developers — Problem Definition Is the New Coding", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Career-Ops — The AI Job Search System That Landed a Head of Applied AI Role"]
 icon: "💼"
 image: "/assets/images/resume-dead-claude-folder-career.png"
 ---

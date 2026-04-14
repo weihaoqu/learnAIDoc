@@ -3,7 +3,7 @@ title: "TurboQuant — Former Google Engineer Reverse-Engineers Google's Algorit
 date: 2026-04-05
 category: AI Research
 tags: [llm, inference, kv-cache, compression, llama-cpp, claude-code, local-ai, gpu, open-source, google]
-related: ["Karpathy's MicroGPT — A Complete GPT in 200 Lines of Pure Python"]
+related: ["Karpathy's MicroGPT — A Complete GPT in 200 Lines of Pure Python", "AI Quant Tools — Kronos and Midas for Financial Market Research"]
 icon: "⚡"
 image: "/assets/images/turboquant-reverse-engineer-google.png"
 ---

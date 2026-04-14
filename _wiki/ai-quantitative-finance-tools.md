@@ -3,7 +3,7 @@ title: "AI Quant Tools — Kronos and Midas for Financial Market Research"
 date: 2026-04-13
 category: AI Research
 tags: [finance, quantitative, time-series, alpha-research, llm, open-source, trading]
-related: []
+related: ["TurboQuant — Former Google Engineer Reverse-Engineers Google's Algorithm in 36 Hours with Claude"]
 icon: "📈"
 image: "/assets/images/ai-quantitative-finance-tools.png"
 ---
