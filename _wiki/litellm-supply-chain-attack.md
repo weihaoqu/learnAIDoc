@@ -3,7 +3,7 @@ title: "litellm Supply Chain Attack: How a Poisoned PyPI Package Nearly Compromi
 date: 2026-03-26
 category: AI Research
 tags: [security, supply-chain, litellm, pypi, karpathy, dependencies, credentials, trivy, teampcp]
-related: []
+related: ["How AI Agents Cheat Benchmarks — Berkeley's Wake-Up Call"]
 icon: "🚨"
 image: "/assets/images/litellm-supply-chain-attack.png"
 ---
