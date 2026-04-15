@@ -126,6 +126,20 @@ This directly supports the harness engineering thesis: the value is in the syste
 
 CC Unpacked itself is a teaching method. Studying a system's internals builds deeper understanding than just using it. The same philosophy behind [MicroGPT](/learnAIDoc/wiki/karpathy-microgpt/) (understand by rebuilding) and [Claw Code](/learnAIDoc/wiki/claw-code-python-rewrite/) (understand by porting).
 
+## See Also: "Inside Claude Code" E-Book
+
+**[Inside Claude Code](https://y-agent.github.io/inside-claude-code/)** is a free online e-book that provides another deep dive into Claude Code's internals, based on the leaked source analysis. It covers:
+
+- **Bird's Eye Architecture** — High-level overview of how the system fits together
+- **End-to-End Workflow** — From user input to agent response
+- **Agent Loop & Query Engine** — The core execution cycle
+- **Agent SDK & Structured I/O** — How tools and structured data flow through the system
+
+The site includes the actual source code alongside explanations, making it useful for reading code and analysis side-by-side. If CC Unpacked is the interactive visual explorer, Inside Claude Code is the structured textbook companion — both derived from the same source, presented differently.
+
+*Source: [y-agent.github.io/inside-claude-code](https://y-agent.github.io/inside-claude-code/) | [蚁工厂 Weibo](https://weibo.com)*
+
 ## Links
 
 - **CC Unpacked:** [ccunpacked.dev](https://ccunpacked.dev/)
+- **Inside Claude Code:** [y-agent.github.io/inside-claude-code](https://y-agent.github.io/inside-claude-code/)

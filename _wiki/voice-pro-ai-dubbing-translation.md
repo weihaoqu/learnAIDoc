@@ -100,3 +100,27 @@ The zero-shot voice cloning (clone from a short audio sample) is the most powerf
 - Potentially be misused for impersonation
 
 For educators: this is an excellent case study for AI ethics discussions — the same technology that enables accessibility (translating lectures) also enables deepfakes.
+
+## See Also: MOSS-TTS-Nano — Tiny TTS That Runs on CPU
+
+**[MOSS-TTS-Nano](https://github.com/OpenMOSS/MOSS-TTS-Nano)** (released April 2026) is a 0.1B-parameter open-source TTS model from MOSI.AI and the OpenMOSS team. Unlike Voice-Pro which bundles a full pipeline, MOSS-TTS-Nano is a standalone text-to-speech engine designed for lightweight deployment.
+
+| Feature | MOSS-TTS-Nano | Edge-TTS (in Voice-Pro) |
+|---------|--------------|------------------------|
+| Parameters | 0.1B | Cloud-based |
+| Runs on | **CPU only** (4 cores) | Requires internet |
+| Languages | Chinese, English, Japanese, Korean, Arabic + more | 100+ languages |
+| Audio quality | 48kHz stereo | 24kHz mono |
+| Voice cloning | Yes (streaming) | No |
+| Privacy | Fully local | Cloud (Microsoft) |
+| Cost | Free | Free |
+
+Why it matters: MOSS-TTS-Nano proves you can get high-quality multilingual TTS at 48kHz stereo from a model small enough to run on a laptop CPU — no GPU, no cloud, no API key. For anyone building local-first voice pipelines (audiobooks, narration, accessibility), this is a compelling alternative to Edge-TTS when privacy matters or internet isn't available.
+
+```bash
+# Quick start
+pip install moss-tts-nano
+python -m moss_tts_nano.infer --text "Hello world" --output hello.wav
+```
+
+*Source: [GitHub](https://github.com/OpenMOSS/MOSS-TTS-Nano) | [Demo](https://openmoss.github.io/MOSS-TTS-Nano-Demo/)*
