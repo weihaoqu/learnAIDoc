@@ -3,7 +3,7 @@ title: "Cross-Model Code Review — Why Claude Can't Catch Its Own Bugs"
 date: 2026-03-24
 category: Claude Code
 tags: [claude-code, codex, code-review, multi-model, ai-coding, testing, bugs, codex-plugin-cc, adversarial-review]
-related: ["Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code Auto Mode — The Middle Path for Permissions", "Frustration Shifts Upward — How AI Coding Changes What's Hard", "oh-my-claudecode — Multi-AI Orchestration Plugin for Claude Code"]
+related: ["Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code Auto Mode — The Middle Path for Permissions", "Frustration Shifts Upward — How AI Coding Changes What's Hard", "oh-my-claudecode — Multi-AI Orchestration Plugin for Claude Code", "Codex + Claude Code for Research — A Practical Tutorial"]
 icon: "🔍"
 image: "/assets/images/cross-model-code-review-claude-codex.png"
 ---
