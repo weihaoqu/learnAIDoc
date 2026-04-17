@@ -5,7 +5,7 @@ category: Claude Code Basics
 redirect_from:
   - "/wiki/claude code/claude-code-rewind/"
 tags: [claude-code, cli, productivity, undo, workflow]
-related: ["Claude Code Power User Tips"]
+related: ["Claude Code Power User Tips", "Claude Code Session Management & 1M Context — The Official Decision Framework"]
 icon: "⏪"
 image: "/assets/images/claude-code-rewind.jpg"
 ---
