@@ -2,6 +2,8 @@
 title: "Browser Use CLI 2.0 — AI Browser Automation via Direct CDP"
 date: 2026-03-24
 category: Skills & Plugins
+redirect_from:
+  - "/wiki/skills & plugins/browser-use-cli-automation/"
 tags: [browser-automation, cdp, claude-code, open-source, testing, qa, chrome]
 related: ["Claude Code Power User Tips", "Claude Code Auto Mode — The Middle Path for Permissions"]
 icon: "🌐"

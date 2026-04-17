@@ -1,7 +1,9 @@
 ---
 title: "The Secret of Great Prompts: Fewer Words, Better Results"
 date: 2026-03-26
-category: AI Research
+category: Prompting & Writing
+redirect_from:
+  - "/wiki/ai research/shortest-prompt-lines-that-work/"
 tags: [prompting, claude, minimal-prompts, reddit, chain-of-thought, role-prompting, efficiency]
 related: ["7 Framework Prompts That Turn Claude into a Thinking Partner", "Three Hidden Instructions That Stop Claude from Hallucinating", "Five Core Learning Prompts — From Memorization to Mastery", "Bilingual Prompting — Why Mixing Chinese and English Unlocks Better AI Output"]
 icon: "✂️"

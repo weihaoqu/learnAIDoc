@@ -1,7 +1,9 @@
 ---
 title: "Claude Code Plugins & Marketplace"
 date: 2026-02-13
-category: Claude Code
+category: Claude Code Basics
+redirect_from:
+  - "/wiki/claude code/claude-code-plugins/"
 tags: [claude-code, cli, plugins, mcp, skills, extensibility]
 related: ["Claude Code Skills & Resources", "Claude Code Custom Agents", "Understand Anything — Turn Codebases Into Interactive Knowledge Graphs", "Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture"]
 icon: "🔌"

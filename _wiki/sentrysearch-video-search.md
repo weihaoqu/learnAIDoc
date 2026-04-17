@@ -1,7 +1,9 @@
 ---
 title: "SentrySearch — Natural Language Search Over Video Footage"
 date: 2026-04-01
-category: Tools
+category: Skills & Plugins
+redirect_from:
+  - "/wiki/tools/sentrysearch-video-search/"
 tags: [video-search, multimodal, embeddings, gemini, qwen, dashcam, semantic-search, vector-database, open-source]
 related: ["Vision Agents: Real-Time AI with Multimodal Models"]
 icon: "🎥"

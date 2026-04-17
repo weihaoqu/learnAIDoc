@@ -2,6 +2,8 @@
 title: "Prompt Master — Write Accurate Prompts for Any AI Tool, Zero Waste"
 date: 2026-03-22
 category: Skills & Plugins
+redirect_from:
+  - "/wiki/skills & plugins/prompt-master-skill/"
 tags: [claude-code, prompting, midjourney, dall-e, stable-diffusion, ai-tools, skill, prompt-engineering]
 related: ["Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "Claude Certified Architect — Anthropic's First Official AI Certification", "Best Claude Code Plugins"]
 icon: "🎯"

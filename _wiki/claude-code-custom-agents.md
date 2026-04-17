@@ -1,7 +1,9 @@
 ---
 title: "Claude Code Custom Agents"
 date: 2026-02-13
-category: Claude Code
+category: Claude Code Basics
+redirect_from:
+  - "/wiki/claude code/claude-code-custom-agents/"
 tags: [claude-code, cli, agents, customization]
 related: ["Claude Code Agent Teams vs Subagents", "Claude Code Power User Tips"]
 icon: "🤖"

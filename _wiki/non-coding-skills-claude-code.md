@@ -2,6 +2,8 @@
 title: "Non-Coding Skills for Claude Code — Automating Business & Life"
 date: 2026-03-17
 category: Skills & Plugins
+redirect_from:
+  - "/wiki/skills & plugins/non-coding-skills-claude-code/"
 tags: [claude-code, skills, automation, business, video-editing, personal-workflows, skill-design]
 related: ["Claude Code Skills: Resources & Repos", "Skill Seekers: Auto-Generate Claude Skills", "Karpathy Skills — Four Rules That Fix LLM Coding's Worst Habits"]
 icon: "🧩"

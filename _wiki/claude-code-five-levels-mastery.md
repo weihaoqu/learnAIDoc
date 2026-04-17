@@ -1,7 +1,9 @@
 ---
 title: "The Five Levels of Claude Code — From Prompting to Orchestration"
 date: 2026-03-24
-category: Claude Code
+category: Claude Code Engineering
+redirect_from:
+  - "/wiki/claude code/claude-code-five-levels-mastery/"
 tags: [claude-code, mastery, levels, skills, orchestration, worktrees, context-engineering, harness-engineering]
 related: ["Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code: Agent Teams vs Subagents", "Claude Code Source Analysis — What Makes It Work & How to Actually Learn From It"]
 icon: "🪜"

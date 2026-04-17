@@ -1,7 +1,9 @@
 ---
 title: "Claude Code Source Analysis — What Makes It Work & How to Actually Learn From It"
 date: 2026-04-01
-category: Claude Code
+category: Claude Code Engineering
+redirect_from:
+  - "/wiki/claude code/claude-code-source-analysis-learning/"
 tags: [claude-code, architecture, source-code, harness, prompt-cache, subagents, learning-methodology, reverse-engineering, open-source]
 related: ["CC Unpacked — Visual Guide to Claude Code's Internals", "Claw Code — Clean-Room Python Rewrite of Claude Code's Agent Harness", "The Five Levels of Claude Code — From Prompting to Orchestration"]
 icon: "🔬"

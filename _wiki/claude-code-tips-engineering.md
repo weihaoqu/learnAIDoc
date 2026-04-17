@@ -1,7 +1,9 @@
 ---
 title: "Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture"
 date: 2026-03-22
-category: Claude Code
+category: Claude Code Engineering
+redirect_from:
+  - "/wiki/claude code/claude-code-tips-engineering/"
 tags: [claude-code, tips, context-management, skills, hooks, subagents, engineering-practices, prompt-caching]
 related: ["Claude Code Power User Tips", "Claude Code: Isolate Heavy Tasks with context: fork", "Claude Code Plugins & Marketplace", "Claude Certified Architect — Anthropic's First Official AI Certification", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure"]
 icon: "🧠"

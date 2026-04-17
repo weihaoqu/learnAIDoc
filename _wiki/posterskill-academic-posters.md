@@ -1,7 +1,9 @@
 ---
 title: "Posterskill — AI-Generated Academic Conference Posters from Your Paper"
 date: 2026-03-22
-category: AI Education
+category: Skills & Plugins
+redirect_from:
+  - "/wiki/ai education/posterskill-academic-posters/"
 tags: [claude-code, academic, poster, research, overleaf, latex, education]
 related: ["Claude Code Skills: Resources & Repos", "Create Custom Course Materials with Claude", "Claude-Prism — Local-First Academic Writing Workspace with AI"]
 icon: "📊"

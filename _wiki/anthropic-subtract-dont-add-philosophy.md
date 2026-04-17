@@ -1,7 +1,9 @@
 ---
 title: "Don't Make Too Many Decisions for AI — Anthropic's 3 Core Development Philosophies"
 date: 2026-04-08
-category: Claude Code
+category: Claude Code Engineering
+redirect_from:
+  - "/wiki/claude code/anthropic-subtract-dont-add-philosophy/"
 tags: [claude-code, anthropic, chris-olah, development-philosophy, harness-engineering, skills, context-management, agents, bitter-lesson]
 related: ["Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code Source Analysis — What Makes It Work & How to Actually Learn From It", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure"]
 icon: "➖"

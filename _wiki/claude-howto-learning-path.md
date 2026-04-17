@@ -1,7 +1,9 @@
 ---
 title: "claude-howto — The Visual Learning Path from Slash Commands to Agent Orchestration"
 date: 2026-04-13
-category: Claude Code
+category: Claude Code Basics
+redirect_from:
+  - "/wiki/claude code/claude-howto-learning-path/"
 tags: [claude-code, learning, tutorial, templates, mermaid, skills, hooks, mcp, open-source]
 related: ["claude.nagdy.me — Learn Claude Code by Doing, Not Reading", "Claude Code Cheatsheet — Everything in One Place", "AI Learning Roadmap 2026 — Best Courses, Certs & YouTube Channels", "Claude Code from Source — The Architecture Book That Treats Claude Code Like an OS"]
 icon: "📘"

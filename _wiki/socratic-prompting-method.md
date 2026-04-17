@@ -1,7 +1,9 @@
 ---
 title: "Socratic Prompting — Ask Questions, Don't Give Instructions"
 date: 2026-04-13
-category: AI Education
+category: AI for Teaching
+redirect_from:
+  - "/wiki/ai education/socratic-prompting-method/"
 tags: [prompting, socratic-method, technique, reasoning, chain-of-thought, teaching, best-practices, education]
 related: ["Seven Framework Prompts — Claude as a Thinking Partner"]
 icon: "🤔"

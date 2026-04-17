@@ -1,7 +1,9 @@
 ---
 title: "AI Fluency Index: Why Your Best Prompts Might Lead to Your Worst Work"
 date: 2026-03-04
-category: AI Education
+category: AI for Teaching
+redirect_from:
+  - "/wiki/ai education/ai-fluency-index/"
 tags: [ai-fluency, education, anthropic, research, critical-thinking, prompting]
 related: ["Claude Use Cases Directory", "Learning in the AI Era: Amplify Your Thinking, Don't Outsource It"]
 icon: "🎓"

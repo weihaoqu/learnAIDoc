@@ -1,7 +1,9 @@
 ---
 title: "Agent Framework Explosion — Superpowers, DeerFlow, NOMAD & TradingAgents"
 date: 2026-04-01
-category: AI Research
+category: AI for Research
+redirect_from:
+  - "/wiki/ai research/agent-framework-weekly-hot-four/"
 tags: [agents, frameworks, superpowers, deerflow, nomad, trading-agents, github, multi-agent, bytedance, open-source]
 related: ["Claude Code: Agent Teams vs Subagents", "oh-my-claudecode — Multi-AI Orchestration Plugin for Claude Code", "Claude Code Source Analysis — What Makes It Work & How to Actually Learn From It"]
 icon: "🏆"

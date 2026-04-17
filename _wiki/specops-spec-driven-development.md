@@ -1,7 +1,9 @@
 ---
 title: "SpecOps — Spec-Driven Development with AI Coding Agents"
 date: 2026-04-17
-category: Claude Code
+category: Claude Code Workflows
+redirect_from:
+  - "/wiki/claude code/specops-spec-driven-development/"
 tags: [specops, spec-driven, ai-coding, claude-code, development-workflow, requirements, design-docs]
 related: ["Harness Engineering — The Real Bottleneck Isn't the Model", "Karpathy Skills — Four Rules That Fix LLM Coding's Worst Habits"]
 icon: "📋"

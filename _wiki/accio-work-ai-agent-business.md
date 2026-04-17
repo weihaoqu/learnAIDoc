@@ -1,7 +1,9 @@
 ---
 title: "Accio Work — One Person + AI Agents = Entire Business"
 date: 2026-03-24
-category: AI Research
+category: Industry & Trends
+redirect_from:
+  - "/wiki/ai research/accio-work-ai-agent-business/"
 tags: [ai-agents, business, alibaba, solopreneur, e-commerce, automation, agentic-business]
 related: ["Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "Harness Engineering — The Real Bottleneck Isn't the Model"]
 icon: "🏢"

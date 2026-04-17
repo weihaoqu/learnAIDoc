@@ -1,7 +1,9 @@
 ---
 title: "Meta Harness — The Agent That Optimizes Its Own Scaffolding (Stanford/MIT)"
 date: 2026-04-13
-category: AI Research
+category: AI for Research
+redirect_from:
+  - "/wiki/ai research/meta-harness-self-optimizing-agent/"
 tags: [agents, harness-engineering, stanford, mit, self-improving, optimization, research-paper, terminal-bench, open-source]
 related: ["Harness Engineering — The Real Bottleneck Isn't the Model", "Anthropic Managed Agents — Decoupling the Brain from the Hands", "Agentic AI Engineer Roadmap 2026 — Eight Pillars from Prompt to Production", "MetaGPT — The AI Software Company That Runs on One Prompt", "Hermes Agent — The Self-Improving AI Agent That Learns From Experience"]
 icon: "🔬"

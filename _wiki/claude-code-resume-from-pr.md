@@ -1,7 +1,9 @@
 ---
 title: "Claude Code: Resume Sessions from a PR"
 date: 2026-02-08
-category: Claude Code
+category: Claude Code Workflows
+redirect_from:
+  - "/wiki/claude code/claude-code-resume-from-pr/"
 tags: [claude-code, cli, git, collaboration, async]
 related: ["Claude Code Power User Tips"]
 icon: "🔗"

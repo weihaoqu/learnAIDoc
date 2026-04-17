@@ -8,11 +8,15 @@ url: "https://weihaoqu.github.io"
 markdown: kramdown
 highlighter: rouge
 
+# Plugins
+plugins:
+  - jekyll-redirect-from
+
 # Collections for wiki-style organization
 collections:
   wiki:
     output: true
-    permalink: /wiki/:categories/:title/
+    permalink: /wiki/:title/
 
 # Default front matter
 defaults:
@@ -24,17 +28,23 @@ defaults:
 
 # Categories for organizing entries
 wiki_categories:
-  - name: AI Education
-    icon: "🎓"
-  - name: Claude Code
+  - name: Claude Code Basics
     icon: "🖥️"
+  - name: Claude Code Engineering
+    icon: "⚙️"
+  - name: Claude Code Workflows
+    icon: "🔄"
   - name: Skills & Plugins
     icon: "🔌"
-  - name: AI Research
+  - name: AI for Research
     icon: "🔬"
-  - name: Tools
-    icon: "🛠️"
-  - name: Creative
+  - name: AI for Teaching
+    icon: "🎓"
+  - name: Learning Resources
+    icon: "📚"
+  - name: Prompting & Writing
+    icon: "✍️"
+  - name: Creative & Media
     icon: "🎨"
-  - name: Programming
-    icon: "💻"
+  - name: Industry & Trends
+    icon: "📊"

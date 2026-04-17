@@ -1,7 +1,9 @@
 ---
 title: "Vibe Marketing: The Step Most Founders Skip"
 date: 2026-02-08
-category: AI Research
+category: Industry & Trends
+redirect_from:
+  - "/wiki/ai research/vibe-marketing/"
 tags: [ai, marketing, vibe-coding, startup, automation, strategy, product-management]
 related: ["Claude Use Cases Directory", "Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era"]
 icon: "📣"

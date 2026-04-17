@@ -1,7 +1,9 @@
 ---
 title: "Domain Experts Shipping Products with Claude Code — Stories from the Trenches"
 date: 2026-04-01
-category: Claude Code
+category: Claude Code Basics
+redirect_from:
+  - "/wiki/claude code/claude-code-non-programmers-shipping/"
 tags: [claude-code, non-programmers, domain-experts, use-cases, vibe-coding, real-world, reddit, mcp]
 related: ["The Five Levels of Claude Code — From Prompting to Orchestration", "Frustration Shifts Upward — How AI Coding Changes What's Hard", "Harness Engineering — The Real Bottleneck Isn't the Model"]
 icon: "🚀"

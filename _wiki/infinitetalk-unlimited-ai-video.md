@@ -1,7 +1,9 @@
 ---
 title: "InfiniteTalk — Unlimited-Length AI Talking Videos from a Single Photo"
 date: 2026-04-13
-category: Tools
+category: Creative & Media
+redirect_from:
+  - "/wiki/tools/infinitetalk-unlimited-ai-video/"
 tags: [video-generation, lip-sync, ai-video, open-source, talking-head, dubbing, avatar, wan2.1]
 related: ["Toonflow — The AI Factory That Turns Novels Into Short Dramas", "Novel to Multimedia Pipeline — From Chapter Draft to Douyin in One Session", "Seedance 2.0: ByteDance's AI Video Generator with Native Audio"]
 icon: "🗣️"

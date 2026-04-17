@@ -1,7 +1,9 @@
 ---
 title: "Claude Code Hooks"
 date: 2026-02-13
-category: Claude Code
+category: Claude Code Engineering
+redirect_from:
+  - "/wiki/claude code/claude-code-hooks/"
 tags: [claude-code, cli, hooks, automation, workflow]
 related: ["Claude Code Power User Tips", "Claude Code Plugins & Marketplace", "Harness Engineering — The Real Bottleneck Isn't the Model"]
 icon: "🪝"

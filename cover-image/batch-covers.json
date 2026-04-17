@@ -1,0 +1,40 @@
+{
+  "jobs": 5,
+  "tasks": [
+    {
+      "id": "cc-cheatsheet",
+      "promptFiles": ["cc-cheatsheet/prompts/cover.md"],
+      "image": "cc-cheatsheet/cover.png",
+      "ar": "16:9",
+      "quality": "2k"
+    },
+    {
+      "id": "ai-learning-roadmap",
+      "promptFiles": ["ai-learning-roadmap/prompts/cover.md"],
+      "image": "ai-learning-roadmap/cover.png",
+      "ar": "16:9",
+      "quality": "2k"
+    },
+    {
+      "id": "pretext-refero",
+      "promptFiles": ["pretext-refero/prompts/cover.md"],
+      "image": "pretext-refero/cover.png",
+      "ar": "16:9",
+      "quality": "2k"
+    },
+    {
+      "id": "knowledge-work-plugins",
+      "promptFiles": ["knowledge-work-plugins/prompts/cover.md"],
+      "image": "knowledge-work-plugins/cover.png",
+      "ar": "16:9",
+      "quality": "2k"
+    },
+    {
+      "id": "feynman-research",
+      "promptFiles": ["feynman-research/prompts/cover.md"],
+      "image": "feynman-research/cover.png",
+      "ar": "16:9",
+      "quality": "2k"
+    }
+  ]
+}

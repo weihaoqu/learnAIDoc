@@ -1,7 +1,9 @@
 ---
 title: "Claude Code /handover: Never Lose Context Between Sessions"
 date: 2026-02-08
-category: Claude Code
+category: Claude Code Workflows
+redirect_from:
+  - "/wiki/claude code/claude-code-handover-skill/"
 tags: [claude-code, cli, skills, hooks, team, workflow]
 related: ["Claude Code Power User Tips", "Claude Code: Share Team Knowledge with @ Imports in CLAUDE.md"]
 icon: "📋"

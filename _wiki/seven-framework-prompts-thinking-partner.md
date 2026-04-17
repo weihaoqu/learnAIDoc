@@ -1,7 +1,9 @@
 ---
 title: "7 Framework Prompts That Turn Claude into a Thinking Partner"
 date: 2026-03-26
-category: AI Research
+category: Prompting & Writing
+redirect_from:
+  - "/wiki/ai research/seven-framework-prompts-thinking-partner/"
 tags: [claude, prompting, thinking-partner, karpathy, frameworks, meta-prompting, first-principles, system-thinking]
 related: ["Three Hidden Instructions That Stop Claude from Hallucinating", "Five Core Learning Prompts — From Memorization to Mastery", "AI Research & Thinking Toolkit: 13 Power Prompts"]
 icon: "🧠"

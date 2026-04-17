@@ -1,7 +1,9 @@
 ---
 title: "WebNovel Writer — How AI Writes 2M+ Word Novels Without Forgetting"
 date: 2026-04-08
-category: Creative
+category: Creative & Media
+redirect_from:
+  - "/wiki/creative/webnovel-writer-long-context/"
 tags: [creative-writing, claude-code, long-context, rag, entity-graph, chinese, open-source, novel, skill]
 related: ["Karpathy's LLM Knowledge Bases — Building a Personal Wiki with AI", "Supermemory — The Memory API That Makes AI Actually Remember You", "Harness Engineering — The Real Bottleneck Isn't the Model", "Novel to Multimedia Pipeline — From Chapter Draft to Douyin in One Session"]
 icon: "📖"

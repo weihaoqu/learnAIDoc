@@ -1,7 +1,9 @@
 ---
 title: "Claude Code Custom Status Lines"
 date: 2026-02-13
-category: Claude Code
+category: Claude Code Basics
+redirect_from:
+  - "/wiki/claude code/claude-code-statusline/"
 tags: [claude-code, cli, customization, workflow]
 related: ["Claude Code Power User Tips", "Claude Code Session Stats & Usage"]
 icon: "📊"

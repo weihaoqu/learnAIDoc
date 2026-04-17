@@ -1,7 +1,9 @@
 ---
 title: "Claude Code Auto Mode — The Middle Path for Permissions"
 date: 2026-03-24
-category: Claude Code
+category: Claude Code Basics
+redirect_from:
+  - "/wiki/claude code/claude-code-auto-mode/"
 tags: [claude-code, permissions, auto-mode, safety, classifier, workflow]
 related: ["Claude Code Sandbox Mode", "Claude Code Power User Tips", "Harness Engineering — The Real Bottleneck Isn't the Model"]
 icon: "🤖"

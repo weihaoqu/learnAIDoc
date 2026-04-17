@@ -1,7 +1,9 @@
 ---
 title: "Obsidian CLI + Claude Code: Your Second Brain as Context"
 date: 2026-02-24
-category: Claude Code
+category: Claude Code Workflows
+redirect_from:
+  - "/wiki/claude code/obsidian-cli-claude-code/"
 tags: [claude-code, obsidian, workflow, context, thinking, productivity]
 related: ["Claude Code Power User Tips", "Obsidian Web Clipper — AI-Powered Web Capture That Actually Organizes Itself", "kepano/obsidian-skills — Agent Skills That Let AI Edit Your Vault"]
 icon: "🧠"

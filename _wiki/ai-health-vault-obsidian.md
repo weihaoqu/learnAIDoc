@@ -1,7 +1,9 @@
 ---
 title: "AI Health Vault — Private Family Health Management with Obsidian + Claude"
 date: 2026-04-02
-category: Tools
+category: Skills & Plugins
+redirect_from:
+  - "/wiki/tools/ai-health-vault-obsidian/"
 tags: [obsidian, health, claude-code, skills, privacy, templates, family, apple-watch, medical-records]
 related: []
 icon: "🏥"

@@ -1,7 +1,9 @@
 ---
 title: "Autoresearch: 100 Autonomous ML Experiments Overnight"
 date: 2026-03-12
-category: AI Research
+category: AI for Research
+redirect_from:
+  - "/wiki/ai research/autoresearch-autonomous-ml/"
 tags: [autoresearch, machine-learning, claude-code, karpathy, automation, research, optimization, skills]
 related: ["Claude Code /loop: Scheduled Prompts on Autopilot", "How Anthropic Teams Use Claude Code", "Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "alphaXiv MCP — Semantic ArXiv Search Directly in Claude Code"]
 icon: "🔬"

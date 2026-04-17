@@ -1,7 +1,9 @@
 ---
 title: "Agentic AI Engineer Roadmap 2026 — Eight Pillars from Prompt to Production"
 date: 2026-04-13
-category: AI Research
+category: Learning Resources
+redirect_from:
+  - "/wiki/ai research/agentic-ai-engineer-roadmap-2026/"
 tags: [agents, ai-engineering, roadmap, rag, langgraph, production, career, python, multi-agent]
 related: ["Anthropic Managed Agents — Decoupling the Brain from the Hands", "Hermes Agent — The Self-Improving AI Agent That Learns From Experience"]
 icon: "🗺️"

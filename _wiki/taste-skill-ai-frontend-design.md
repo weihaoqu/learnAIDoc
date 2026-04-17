@@ -2,6 +2,8 @@
 title: "Taste Skill — Teaching AI Agents Design Taste for Frontend Code"
 date: 2026-04-13
 category: Skills & Plugins
+redirect_from:
+  - "/wiki/skills & plugins/taste-skill-ai-frontend-design/"
 tags: [claude-code, frontend, design, skill, ui-ux, open-source, cursor, google-stitch]
 related: ["Awesome DESIGN.md — 30+ Design Systems Condensed Into Markdown", "Markdown Viewer Skills — 9,500 Icons and 14 Diagram Types for AI Agents"]
 icon: "🎨"

@@ -1,7 +1,9 @@
 ---
 title: "Karpathy's MicroGPT — A Complete GPT in 200 Lines of Pure Python"
 date: 2026-04-01
-category: AI Education
+category: Learning Resources
+redirect_from:
+  - "/wiki/ai education/karpathy-microgpt/"
 tags: [karpathy, gpt, transformer, education, from-scratch, python, assembly, microgpt, autograd, attention]
 related: ["Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "TensorTonic — Learn Machine Learning by Implementing 200+ Algorithms from Scratch", "LLM Architecture Gallery — Visual Reference for Every Major Model"]
 icon: "🔬"

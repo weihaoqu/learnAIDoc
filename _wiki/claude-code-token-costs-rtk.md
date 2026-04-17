@@ -1,7 +1,9 @@
 ---
 title: "Claude Code Token Costs: The Hidden Tax and How rtk Cuts It by 80%"
 date: 2026-03-26
-category: Claude Code
+category: Claude Code Engineering
+redirect_from:
+  - "/wiki/claude code/claude-code-token-costs-rtk/"
 tags: [claude-code, tokens, costs, rtk, context-window, optimization, cli-proxy, billing]
 related: ["Claude Code Context Management and CLAUDE.md Practices", "Claude Code Session Stats and Cost Tracking"]
 icon: "💰"

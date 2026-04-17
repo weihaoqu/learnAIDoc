@@ -1,7 +1,9 @@
 ---
 title: "Learning in the AI Era: Amplify Your Thinking, Don't Outsource It"
 date: 2026-03-13
-category: AI Education
+category: AI for Teaching
+redirect_from:
+  - "/wiki/ai education/learning-effectively-ai-era/"
 tags: [learning, education, ai-fluency, critical-thinking, notebooklm, self-learning, study]
 related: ["AI Fluency Index: Why Your Best Prompts Might Lead to Your Worst Work", "How AI Impacts Skill Formation", "Five Core Learning Prompts — From Memorization to Mastery", "MIT Professor's NotebookLM Grading System — 47 Essays in 12 Minutes", "OpenMAIC: Tsinghua's Multi-Agent AI Classroom"]
 icon: "🧠"

@@ -2,6 +2,8 @@
 title: "Markdown Viewer Skills — 9,500 Icons and 14 Diagram Types for AI Agents"
 date: 2026-04-13
 category: Skills & Plugins
+redirect_from:
+  - "/wiki/skills & plugins/markdown-viewer-skills-diagrams/"
 tags: [claude-code, skill, diagrams, plantuml, visualization, markdown, icons, cloud-architecture, open-source]
 related: ["Fireworks Tech Graph — Natural Language to Architecture Diagrams in Claude Code", "ui.sh — Tailwind Creator's Design Toolkit for AI Coding Agents", "Taste Skill — Teaching AI Agents Design Taste for Frontend Code", "Pretext & Refero — Tools to Fix AI's Frontend Problem"]
 icon: "📊"

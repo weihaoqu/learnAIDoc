@@ -1,7 +1,9 @@
 ---
 title: "AI Brain Fry — Why Deeper AI Use Makes You Less Productive, Not More"
 date: 2026-04-06
-category: AI Education
+category: AI for Teaching
+redirect_from:
+  - "/wiki/ai education/ai-brain-fry-cognitive-fatigue/"
 tags: [ai-education, productivity, cognitive-fatigue, brain-fry, bcg-study, burnout, ai-tools, workplace, research]
 related: ["Frustration Shifts Upward — How AI Coding Changes What's Hard", "Learning in the AI Era: Amplify Your Thinking, Don't Outsource It"]
 icon: "🧠"

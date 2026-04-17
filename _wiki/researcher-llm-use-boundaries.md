@@ -1,7 +1,9 @@
 ---
 title: "What Researchers Should (and Shouldn't) Use LLMs For"
 date: 2026-04-17
-category: AI Education
+category: AI for Teaching
+redirect_from:
+  - "/wiki/ai education/researcher-llm-use-boundaries/"
 tags: [research, llm-use, academic, boundaries, best-practices, scientific-computing, ai-education]
 related: ["Claude Code as Research Infrastructure — From Chatbot to AI Research Team", "Codex + Claude Code for Research — A Practical Tutorial"]
 icon: "🎯"

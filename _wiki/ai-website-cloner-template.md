@@ -1,7 +1,9 @@
 ---
 title: "AI Website Cloner — Reverse-Engineer Any Site Into Clean Next.js Code"
 date: 2026-04-06
-category: Tools
+category: Skills & Plugins
+redirect_from:
+  - "/wiki/tools/ai-website-cloner-template/"
 tags: [website-cloning, next-js, reverse-engineering, claude-code, ai-coding, frontend, tailwind, shadcn]
 related: ["Gstack — Garry Tan's AI Software Factory for Claude Code", "Awesome DESIGN.md — Install Design Taste Into Your AI Coding Agent"]
 icon: "🔄"

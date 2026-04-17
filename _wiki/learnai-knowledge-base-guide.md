@@ -1,7 +1,9 @@
 ---
 title: "Building a Personal Knowledge Base — The LearnAI Workflow Guide"
 date: 2026-04-05
-category: AI Education
+category: Learning Resources
+redirect_from:
+  - "/wiki/ai education/learnai-knowledge-base-guide/"
 tags: [knowledge-base, obsidian, workflow, karpathy, wiki, claude-code, skills, research, guide]
 related: ["Karpathy's LLM Knowledge Bases — Building a Personal Wiki with AI"]
 icon: "📚"

@@ -1,7 +1,9 @@
 ---
 title: "Awesome DESIGN.md — Install Design Taste Into Your AI Coding Agent"
 date: 2026-04-06
-category: Tools
+category: Skills & Plugins
+redirect_from:
+  - "/wiki/tools/awesome-design-md/"
 tags: [design-system, ui, ai-coding, claude-code, cursor, markdown, frontend, open-source]
 related: ["Gstack — Garry Tan's AI Software Factory for Claude Code", "Pretext, Refero & UI Tools — Visual Intelligence for Claude Code", "Taste Skill — Teaching AI Agents Design Taste for Frontend Code"]
 icon: "🎨"

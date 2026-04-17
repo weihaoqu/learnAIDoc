@@ -1,7 +1,9 @@
 ---
 title: "Claude Code Session Stats & Usage"
 date: 2024-02-05
-category: Claude Code
+category: Claude Code Basics
+redirect_from:
+  - "/wiki/claude code/claude-code-session-stats/"
 tags: [claude-code, cli, productivity]
 icon: "📊"
 image: "/assets/images/claude-code-stats.jpg"

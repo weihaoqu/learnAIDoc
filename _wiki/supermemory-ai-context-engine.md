@@ -1,7 +1,9 @@
 ---
 title: "Supermemory — The Memory API That Makes AI Actually Remember You"
 date: 2026-04-05
-category: Tools
+category: Skills & Plugins
+redirect_from:
+  - "/wiki/tools/supermemory-ai-context-engine/"
 tags: [memory, ai-agents, context, api, mcp, open-source, rag, personalization, claude-code]
 related: ["Beads: Graph-Based Memory for AI Coding Agents", "Karpathy's LLM Knowledge Bases — Building a Personal Wiki with AI"]
 icon: "🧠"

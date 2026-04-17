@@ -1,7 +1,9 @@
 ---
 title: "Career-Ops — The AI Job Search System That Landed a Head of Applied AI Role"
 date: 2026-04-13
-category: Tools
+category: Industry & Trends
+redirect_from:
+  - "/wiki/tools/career-ops-ai-job-search/"
 tags: [claude-code, job-search, resume, career, automation, skill, open-source, interview-prep]
 related: ["Claude Code Cheatsheet — Everything in One Place", "Resumes Are Dead — Your .claude/ Folder Is Your New Career Card"]
 icon: "💼"

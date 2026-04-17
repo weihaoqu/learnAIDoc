@@ -2,6 +2,8 @@
 title: "Follow Builders: AI Digest Skill That Tracks Real Builders, Not Influencers"
 date: 2026-03-26
 category: Skills & Plugins
+redirect_from:
+  - "/wiki/skills & plugins/follow-builders-ai-digest-skill/"
 tags: [claude-code, skills, ai-news, content-curation, builders, x-twitter, podcasts, telegram, discord]
 related: ["Claude Code Skills & Resources: Nine Skill Types Taxonomy", "Claude Code Best Plugins: 53 Reality Check"]
 icon: "📡"

@@ -1,7 +1,9 @@
 ---
 title: "Claude Code Sandbox Mode"
 date: 2026-02-13
-category: Claude Code
+category: Claude Code Basics
+redirect_from:
+  - "/wiki/claude code/claude-code-sandbox/"
 tags: [claude-code, cli, security, sandboxing]
 related: ["Claude Code Power User Tips", "Claude Code Auto Mode — The Middle Path for Permissions"]
 icon: "🔒"

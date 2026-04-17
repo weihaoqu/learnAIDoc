@@ -1,7 +1,9 @@
 ---
 title: "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure"
 date: 2026-03-22
-category: Claude Code
+category: Claude Code Engineering
+redirect_from:
+  - "/wiki/claude code/claude-code-context-claudemd-practices/"
 tags: [claude-code, context-management, claude-md, cost-control, citadel, planning, best-practices]
 related: ["Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "Claude Code: Isolate Heavy Tasks with context: fork", "Harness Engineering — The Real Bottleneck Isn't the Model"]
 icon: "🏗️"

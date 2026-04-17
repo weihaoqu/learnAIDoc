@@ -1,7 +1,9 @@
 ---
 title: "Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era"
 date: 2026-03-22
-category: AI Research
+category: Industry & Trends
+redirect_from:
+  - "/wiki/ai research/karpathy-end-of-coding/"
 tags: [karpathy, coding-agents, autoresearch, microgpt, education, ai-education, skill-issue, ai-workflow, no-priors]
 related: ["Autoresearch: 100 Autonomous ML Experiments Overnight", "Gstack — Garry Tan's AI Software Factory for Claude Code", "Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "TensorTonic — Learn Machine Learning by Implementing 200+ Algorithms from Scratch", "Frustration Shifts Upward — How AI Coding Changes What's Hard"]
 icon: "🧪"

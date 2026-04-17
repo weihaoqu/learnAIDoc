@@ -1,7 +1,9 @@
 ---
 title: "Novel to Multimedia Pipeline — From Chapter Draft to Douyin in One Session"
 date: 2026-04-12
-category: Creative
+category: Creative & Media
+redirect_from:
+  - "/wiki/creative/novel-to-multimedia-pipeline/"
 tags: [creative-writing, edge-tts, audiobook, douyin, video-generation, playwright, automation, chinese, pipeline, claude-code]
 related: ["WebNovel Writer — How AI Writes 2M+ Word Novels Without Forgetting", "Toonflow — The AI Factory That Turns Novels Into Short Dramas"]
 icon: "🎙️"

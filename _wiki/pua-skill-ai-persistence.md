@@ -2,6 +2,8 @@
 title: "PUA Skill — Force Your AI to Stop Being Lazy and Actually Debug"
 date: 2026-03-22
 category: Skills & Plugins
+redirect_from:
+  - "/wiki/skills & plugins/pua-skill-ai-persistence/"
 tags: [claude-code, debugging, productivity, skill, ai-behavior, humor, engineering-culture]
 related: ["Gstack — Garry Tan's AI Software Factory for Claude Code", "Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "Autoresearch: 100 Autonomous ML Experiments Overnight"]
 icon: "🔥"

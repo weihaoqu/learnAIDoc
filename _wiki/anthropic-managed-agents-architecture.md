@@ -1,7 +1,9 @@
 ---
 title: "Anthropic Managed Agents — Decoupling the Brain from the Hands"
 date: 2026-04-13
-category: AI Research
+category: AI for Research
+redirect_from:
+  - "/wiki/ai research/anthropic-managed-agents-architecture/"
 tags: [anthropic, agents, architecture, claude-code, infrastructure, open-source, api, systems-design]
 related: ["Harness Engineering — The Real Bottleneck Isn't the Model"]
 icon: "🧠"

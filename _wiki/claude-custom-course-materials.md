@@ -1,7 +1,9 @@
 ---
 title: "Create Custom Course Materials with Claude"
 date: 2026-02-13
-category: AI Education
+category: AI for Teaching
+redirect_from:
+  - "/wiki/ai education/claude-custom-course-materials/"
 tags: [claude, education, latex, course-materials, teaching]
 related: ["Build Interactive Diagram Tools with Claude", "Posterskill — AI-Generated Academic Conference Posters from Your Paper", "Claude-Prism — Local-First Academic Writing Workspace with AI"]
 icon: "📚"

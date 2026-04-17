@@ -1,7 +1,9 @@
 ---
 title: "kepano/obsidian-skills — Agent Skills That Let AI Edit Your Vault"
 date: 2026-04-17
-category: Tools
+category: Skills & Plugins
+redirect_from:
+  - "/wiki/tools/kepano-obsidian-skills-agents/"
 tags: [obsidian, agent-skills, claude-code, codex, vault-automation, kepano, canvas, knowledge-management]
 related: ["Obsidian CLI + Claude Code: Your Second Brain as Context", "Obsidian Web Clipper — AI-Powered Web Capture That Actually Organizes Itself"]
 icon: "🗃️"

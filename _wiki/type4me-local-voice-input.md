@@ -1,7 +1,9 @@
 ---
 title: "Type4Me & Voice-Input-Src: Local Voice Input Tools for macOS"
 date: 2026-03-26
-category: AI Research
+category: Skills & Plugins
+redirect_from:
+  - "/wiki/ai research/type4me-local-voice-input/"
 tags: [voice-input, speech-to-text, local-ai, sherpaonnx, macos, privacy, dictation, llm, vibe-coding, open-source]
 related: ["Voice-Pro: Local AI Dubbing and Voice Cloning Tool"]
 icon: "🎙️"

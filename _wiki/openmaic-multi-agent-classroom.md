@@ -1,7 +1,9 @@
 ---
 title: "OpenMAIC: Tsinghua's Multi-Agent AI Classroom"
 date: 2026-04-07
-category: AI Education
+category: AI for Teaching
+redirect_from:
+  - "/wiki/ai education/openmaic-multi-agent-classroom/"
 tags: [ai-education, multi-agent, llm, tsinghua, classroom, langgraph, open-source]
 related: ["AI in Education — Teacher's Factory, Not Student's Cheat Tool", "AI Tools for High-Engagement Learning", "Learning in the AI Era: Amplify Your Thinking, Don't Outsource It"]
 icon: "🎓"

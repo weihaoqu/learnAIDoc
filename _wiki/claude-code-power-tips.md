@@ -1,7 +1,9 @@
 ---
 title: "Claude Code Power User Tips"
 date: 2024-02-05
-category: Claude Code
+category: Claude Code Engineering
+redirect_from:
+  - "/wiki/claude code/claude-code-power-tips/"
 tags: [claude-code, cli, productivity, workflow]
 related: ["Claude Code Session Stats & Usage", "Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture"]
 icon: "⚡"

@@ -1,7 +1,9 @@
 ---
 title: "Claude Code /loop: Scheduled Prompts on Autopilot"
 date: 2026-03-08
-category: Claude Code
+category: Claude Code Workflows
+redirect_from:
+  - "/wiki/claude code/claude-code-loop-command/"
 tags: [claude-code, cli, scheduling, automation, loop, cron]
 related: ["Claude Code Power User Tips", "Claude Code Hooks"]
 icon: "🔄"

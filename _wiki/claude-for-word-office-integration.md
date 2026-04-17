@@ -1,7 +1,9 @@
 ---
 title: "Claude for Word — AI Edits With Native Track Changes, SaaS Trembles"
 date: 2026-04-13
-category: Tools
+category: Skills & Plugins
+redirect_from:
+  - "/wiki/tools/claude-for-word-office-integration/"
 tags: [claude, microsoft-office, word, track-changes, legal, saas, document-editing, anthropic]
 related: ["Anthropic Managed Agents — Decoupling the Brain from the Hands"]
 icon: "📝"

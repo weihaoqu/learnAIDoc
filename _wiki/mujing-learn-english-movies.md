@@ -1,7 +1,9 @@
 ---
 title: "MuJing (幕境) — Learn English Vocabulary Through Movies and Real Context"
 date: 2026-04-06
-category: AI Education
+category: Learning Resources
+redirect_from:
+  - "/wiki/ai education/mujing-learn-english-movies/"
 tags: [english-learning, vocabulary, movies, subtitles, open-source, desktop-app, immersive-learning, language]
 related: ["AI Tools for High-Engagement Learning", "AI Mastery Games — Teaching AI Literacy Through Interactive Games", "AI in Education — Teacher's Factory, Not Student's Cheat Tool"]
 icon: "🎬"

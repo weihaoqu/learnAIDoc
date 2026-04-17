@@ -1,7 +1,9 @@
 ---
 title: "How AI Agents Cheat Benchmarks — Berkeley's Wake-Up Call"
 date: 2026-03-17
-category: AI Research
+category: AI for Research
+redirect_from:
+  - "/wiki/ai research/ai-agent-benchmark-cheating/"
 tags: [ai-safety, benchmarks, reward-hacking, evaluation, swe-bench, agents, security]
 related: ["litellm Supply Chain Attack: How a Poisoned PyPI Package Nearly Compromised the AI Ecosystem", "Five Questions for Critical Paper Reading — The Cambridge Method with Claude", "Claude Code Sandbox Mode"]
 icon: "🎭"

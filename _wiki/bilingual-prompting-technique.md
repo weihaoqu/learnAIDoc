@@ -1,7 +1,9 @@
 ---
 title: "Bilingual Prompting — Why Mixing Chinese and English Unlocks Better AI Output"
 date: 2026-04-13
-category: AI Education
+category: Learning Resources
+redirect_from:
+  - "/wiki/ai education/bilingual-prompting-technique/"
 tags: [prompting, bilingual, multilingual, latent-space, reasoning, technique, chinese, research]
 related: ["Socratic Prompting — Ask Questions, Don't Give Instructions", "The Secret of Great Prompts: Fewer Words, Better Results"]
 icon: "🌐"

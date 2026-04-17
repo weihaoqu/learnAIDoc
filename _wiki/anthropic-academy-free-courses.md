@@ -1,7 +1,9 @@
 ---
 title: "Anthropic Academy — 13 Free AI Courses with Certificates"
 date: 2026-03-22
-category: AI Education
+category: Learning Resources
+redirect_from:
+  - "/wiki/ai education/anthropic-academy-free-courses/"
 tags: [anthropic, education, certification, claude, mcp, ai-fluency, courses, free]
 related: ["Claude Certified Architect — Anthropic's First Official AI Certification", "AI Mastery Games — Teaching AI Literacy Through Interactive Games"]
 icon: "🎓"

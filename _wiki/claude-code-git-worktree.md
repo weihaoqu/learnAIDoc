@@ -1,7 +1,9 @@
 ---
 title: "Claude Code Git Worktree: Parallel Agents Without Conflicts"
 date: 2026-02-24
-category: Claude Code
+category: Claude Code Workflows
+redirect_from:
+  - "/wiki/claude code/claude-code-git-worktree/"
 tags: [claude-code, git, worktree, parallel, workflow, productivity]
 related: ["Claude Code Agent Teams vs Subagents", "Claude Code Power User Tips"]
 icon: "🌳"

@@ -1,7 +1,9 @@
 ---
 title: "MIT Professor's NotebookLM Grading System — 47 Essays in 12 Minutes"
 date: 2026-03-22
-category: AI Education
+category: AI for Teaching
+redirect_from:
+  - "/wiki/ai education/notebooklm-grading-education-paradox/"
 tags: [notebooklm, grading, education, academic-integrity, ai-education, teaching, feedback]
 related: ["Learning in the AI Era: Amplify Your Thinking, Don't Outsource It", "How AI Impacts Skill Formation", "Turn Claude Code into Claude Teacher"]
 icon: "📝"

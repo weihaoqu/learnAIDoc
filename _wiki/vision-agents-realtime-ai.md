@@ -1,7 +1,9 @@
 ---
 title: "Vision Agents: Real-Time AI That Watches, Listens, and Understands Video"
 date: 2026-02-08
-category: AI Research
+category: AI for Research
+redirect_from:
+  - "/wiki/ai research/vision-agents-realtime-ai/"
 tags: [ai, agents, vision, video, mobile, real-time]
 related: []
 icon: "👁️"

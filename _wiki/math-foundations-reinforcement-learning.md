@@ -1,7 +1,9 @@
 ---
 title: "Mathematical Foundations of Reinforcement Learning — Free Textbook by Shiyu Zhao"
 date: 2026-04-17
-category: AI Education
+category: Learning Resources
+redirect_from:
+  - "/wiki/ai education/math-foundations-reinforcement-learning/"
 tags: [reinforcement-learning, textbook, mathematics, free-resource, machine-learning, education, westlake-university]
 related: []
 icon: "📐"

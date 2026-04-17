@@ -1,7 +1,9 @@
 ---
 title: "Turn Claude Code into Claude Teacher"
 date: 2024-02-05
-category: AI Education
+category: AI for Teaching
+redirect_from:
+  - "/wiki/ai education/claude-teacher-setup/"
 tags: [claude-code, learning, documentation]
 related: ["Claude Code Power User Tips", "How AI Impacts Skill Formation"]
 icon: "👨‍🏫"

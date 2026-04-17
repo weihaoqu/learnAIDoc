@@ -2,6 +2,8 @@
 title: "Understand Anything — Turn Codebases Into Interactive Knowledge Graphs"
 date: 2026-03-22
 category: Skills & Plugins
+redirect_from:
+  - "/wiki/skills & plugins/understand-anything-plugin/"
 tags: [claude-code, plugin, knowledge-graph, codebase-analysis, onboarding, visualization, multi-agent]
 related: ["Claude Code Plugins & Marketplace", "Best Claude Code Plugins", "Beads: Graph-Based Memory for AI Coding Agents"]
 icon: "🗺️"

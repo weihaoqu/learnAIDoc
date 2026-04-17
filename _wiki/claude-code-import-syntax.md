@@ -1,7 +1,9 @@
 ---
 title: "Claude Code: Share Team Knowledge with @ Imports in CLAUDE.md"
 date: 2026-02-08
-category: Claude Code
+category: Claude Code Basics
+redirect_from:
+  - "/wiki/claude code/claude-code-import-syntax/"
 tags: [claude-code, cli, team, claude-md, configuration]
 related: ["Claude Code Power User Tips"]
 icon: "📎"

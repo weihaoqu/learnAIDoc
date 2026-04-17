@@ -1,7 +1,9 @@
 ---
 title: "Karpathy Skills — Four Rules That Fix LLM Coding's Worst Habits"
 date: 2026-04-13
-category: Claude Code
+category: Claude Code Engineering
+redirect_from:
+  - "/wiki/claude code/karpathy-skills-claude-code/"
 tags: [claude-code, karpathy, claude-md, guidelines, coding-quality, best-practices, open-source, skill]
 related: ["Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Harness Engineering — The Real Bottleneck Isn't the Model"]
 icon: "🧹"

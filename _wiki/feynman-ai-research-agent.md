@@ -1,7 +1,9 @@
 ---
 title: "Feynman AI Research Agent & Claude as Lab Partner — Promise and Pitfalls"
 date: 2026-03-31
-category: AI Research
+category: AI for Research
+redirect_from:
+  - "/wiki/ai research/feynman-ai-research-agent/"
 tags: [ai-research, feynman, agents, literature-review, physics, hallucination, academic, reproducibility]
 related: ["Claude Code as Research Infrastructure — From Chatbot to AI Research Team", "AI Agents for Academic Research & Writing — From KatmerCode to the Nature Playbook", "Paper2Code: Turn ArXiv Papers into Citation-Anchored Code"]
 icon: "🔬"

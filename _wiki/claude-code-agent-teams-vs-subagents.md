@@ -1,7 +1,9 @@
 ---
 title: "Claude Code: Agent Teams vs Subagents"
 date: 2026-02-08
-category: Claude Code
+category: Claude Code Engineering
+redirect_from:
+  - "/wiki/claude code/claude-code-agent-teams-vs-subagents/"
 tags: [claude-code, cli, agents, multi-agent, productivity]
 related: ["Claude Code Power User Tips", "Harness Engineering — The Real Bottleneck Isn't the Model", "Agent Framework Explosion — Superpowers, DeerFlow, NOMAD & TradingAgents"]
 icon: "🤝"

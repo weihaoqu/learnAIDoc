@@ -1,7 +1,9 @@
 ---
 title: "Pull Requests (PR): What They Are and How to Use Them in Claude Code"
 date: 2026-03-08
-category: Programming
+category: Learning Resources
+redirect_from:
+  - "/wiki/programming/pull-requests-explained/"
 tags: [git, github, pull-request, code-review, claude-code, collaboration]
 related: ["Claude Code Power User Tips", "How Anthropic Teams Use Claude Code"]
 icon: "🔀"

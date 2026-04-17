@@ -1,7 +1,9 @@
 ---
 title: "Claude Code Cheat Sheet, Everything-Claude-Code & Claude How-To — Complete Reference Kit"
 date: 2026-03-31
-category: Claude Code
+category: Claude Code Engineering
+redirect_from:
+  - "/wiki/claude code/claude-code-cheatsheet-everything/"
 tags: [claude-code, cheatsheet, reference, configuration, agents, skills, mcp, shortcuts, tutorial, visual-guide, learning-path]
 related: ["Claude Code Power User Tips", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "The Five Levels of Claude Code — From Prompting to Orchestration"]
 icon: "📋"

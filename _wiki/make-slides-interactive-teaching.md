@@ -2,6 +2,8 @@
 title: "Make Slides: AI-Powered Interactive Teaching Slides"
 date: 2026-04-14
 category: Skills & Plugins
+redirect_from:
+  - "/wiki/skills & plugins/make-slides-interactive-teaching/"
 tags: [claude-code, skills, teaching, slides, canvas, interactive, education, html]
 related: ["Skill Seekers: Auto-Generate Claude Skills", "Claude Code Power User Tips", "AI Tools for High-Engagement Learning", "AI in Education — Teacher's Factory, Not Student's Cheat Tool"]
 icon: "🎓"

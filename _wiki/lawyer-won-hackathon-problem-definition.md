@@ -1,7 +1,9 @@
 ---
 title: "A Lawyer Beat 500 Developers — Problem Definition Is the New Coding"
 date: 2026-03-24
-category: AI Education
+category: Learning Resources
+redirect_from:
+  - "/wiki/ai education/lawyer-won-hackathon-problem-definition/"
 tags: [hackathon, anthropic, problem-definition, vibe-coding, domain-expertise, ai-education, career]
 related: ["Frustration Shifts Upward — How AI Coding Changes What's Hard", "Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "Accio Work — One Person + AI Agents = Entire Business"]
 icon: "⚖️"

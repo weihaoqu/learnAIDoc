@@ -2,6 +2,8 @@
 title: "Beads: Graph-Based Memory for AI Coding Agents"
 date: 2026-02-08
 category: Skills & Plugins
+redirect_from:
+  - "/wiki/skills & plugins/beads-graph-memory-for-agents/"
 tags: [ai, agents, memory, graph, git, claude-code]
 related: ["Claude Code: Agent Teams vs Subagents", "Claude Code Power User Tips", "Understand Anything — Turn Codebases Into Interactive Knowledge Graphs"]
 icon: "📿"

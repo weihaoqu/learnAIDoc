@@ -1,7 +1,9 @@
 ---
 title: "Claude Auto Mode Unlock — Using Auto Mode with Any API Provider"
 date: 2026-04-13
-category: Claude Code
+category: Claude Code Basics
+redirect_from:
+  - "/wiki/claude code/claude-auto-mode-unlock/"
 tags: [claude-code, auto-mode, openrouter, aws-bedrock, binary-patch, hack, third-party-api]
 related: ["Claude Code Auto Mode — The Shift+Tab Workflow That Changes Everything"]
 icon: "🔓"

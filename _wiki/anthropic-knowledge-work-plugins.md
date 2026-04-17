@@ -1,7 +1,9 @@
 ---
 title: "Anthropic Knowledge Work Plugins — Role-Based AI That Works Like Your Team"
 date: 2026-03-31
-category: Claude Code
+category: Claude Code Engineering
+redirect_from:
+  - "/wiki/claude code/anthropic-knowledge-work-plugins/"
 tags: [claude-code, plugins, knowledge-work, roles, anthropic, enterprise, mcp, organization]
 related: ["Claude Code as Research Infrastructure — From Chatbot to AI Research Team", "Harness Engineering — The Real Bottleneck Isn't the Model"]
 icon: "🏢"

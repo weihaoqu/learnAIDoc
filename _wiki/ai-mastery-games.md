@@ -1,7 +1,9 @@
 ---
 title: "AI Mastery Games — Teaching AI Literacy Through Interactive Games"
 date: 2026-04-04
-category: AI Education
+category: AI for Teaching
+redirect_from:
+  - "/wiki/ai education/ai-mastery-games/"
 tags: [ai-literacy, gamification, teaching, interactive-games, ai-education, hallucination-detection, prompt-engineering, critical-thinking]
 related: ["AI in Education — Teacher's Factory, Not Student's Cheat Tool", "AI Tools for High-Engagement Learning", "Anthropic Academy — 13 Free AI Courses with Certificates"]
 icon: "🎮"

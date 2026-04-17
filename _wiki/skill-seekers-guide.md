@@ -2,6 +2,8 @@
 title: "Skill Seekers: Auto-Generate Claude Skills"
 date: 2024-02-05
 category: Skills & Plugins
+redirect_from:
+  - "/wiki/skills & plugins/skill-seekers-guide/"
 tags: [claude-code, skills, automation, scraping]
 related: ["Claude Code Skills: Resources & Repos", "Claude Code Power User Tips", "Non-Coding Skills for Claude Code — Automating Business & Life"]
 icon: "🤖"

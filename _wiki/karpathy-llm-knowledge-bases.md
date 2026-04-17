@@ -1,7 +1,9 @@
 ---
 title: "Karpathy's LLM Knowledge Bases — Building a Personal Wiki with AI"
 date: 2026-04-03
-category: AI Research
+category: AI for Research
+redirect_from:
+  - "/wiki/ai research/karpathy-llm-knowledge-bases/"
 tags: [karpathy, knowledge-base, obsidian, wiki, personal-ai, markdown, rag-alternative, farzapedia, llm]
 related: ["Karpathy: End of Coding and the Loopy Era of AI"]
 icon: "🧠"

@@ -2,6 +2,8 @@
 title: "Ralph: Autonomous Development Loop for Claude Code"
 date: 2026-02-08
 category: Skills & Plugins
+redirect_from:
+  - "/wiki/skills & plugins/ralph-autonomous-dev-loop/"
 tags: [claude-code, cli, automation, agents, workflow]
 related: ["Claude Code Power User Tips", "Beads: Graph-Based Memory for AI Coding Agents"]
 icon: "🔄"

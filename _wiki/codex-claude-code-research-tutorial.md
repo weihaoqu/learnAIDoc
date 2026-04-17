@@ -1,7 +1,9 @@
 ---
 title: "Codex + Claude Code for Research — A Practical Tutorial"
 date: 2026-04-16
-category: Claude Code
+category: Claude Code Workflows
+redirect_from:
+  - "/wiki/claude code/codex-claude-code-research-tutorial/"
 tags: [claude-code, codex, research-workflow, formal-verification, program-analysis, adversarial-review, coq, rocq, type-systems, pcsat, relational-verification]
 related: ["Cross-Model Code Review — Why Claude Can't Catch Its Own Bugs", "Claude Code as Research Infrastructure — From Chatbot to AI Research Team", "Harness Engineering — The Real Bottleneck Isn't the Model"]
 icon: "🔬"

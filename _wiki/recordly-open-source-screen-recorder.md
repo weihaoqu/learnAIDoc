@@ -1,7 +1,9 @@
 ---
 title: "Recordly — Open-Source Screen Recorder & Editor for Product Demos"
 date: 2026-04-09
-category: Creative
+category: Creative & Media
+redirect_from:
+  - "/wiki/creative/recordly-open-source-screen-recorder/"
 tags: [screen-recording, video-editing, open-source, mac, windows, linux, product-demos, tutorials, open-source]
 related: ["MoneyPrinterTurbo — Keyword to Short Video in Minutes", "Voice-Pro — Local AI Dubbing, Translation, and Voice Cloning in One Tool"]
 icon: "🎥"

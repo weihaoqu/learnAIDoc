@@ -1,7 +1,9 @@
 ---
 title: "Anthropic's Automated Alignment Researchers — Claude Beats Humans 4x at AI Safety Research"
 date: 2026-04-15
-category: AI Research
+category: AI for Research
+redirect_from:
+  - "/wiki/ai research/anthropic-automated-alignment-researchers/"
 tags: [anthropic, alignment, ai-safety, claude, autonomous-research, weak-to-strong, scalable-oversight]
 related: ["How AI Agents Cheat Benchmarks — Berkeley's Wake-Up Call"]
 icon: "🔬"

@@ -2,6 +2,8 @@
 title: "Baoyu YouTube Transcript — Extract Clean Subtitles, No API Key"
 date: 2026-03-24
 category: Skills & Plugins
+redirect_from:
+  - "/wiki/skills & plugins/baoyu-youtube-transcript-skill/"
 tags: [claude-code, youtube, transcript, subtitles, skill, innertube, markdown]
 related: ["Claude Code Skills: Resources & Repos", "Voice-Pro — Local AI Dubbing, Translation, and Voice Cloning in One Tool"]
 icon: "📺"
