@@ -3,7 +3,7 @@ title: "Obsidian Web Clipper — AI-Powered Web Capture That Actually Organizes 
 date: 2026-04-15
 category: Tools
 tags: [obsidian, web-clipper, browser-extension, ai, knowledge-management, productivity, chrome]
-related: ["Obsidian CLI — Command-Line Access to Your Vault from Claude Code"]
+related: ["Obsidian CLI — Command-Line Access to Your Vault from Claude Code", "kepano/obsidian-skills — Agent Skills That Let AI Edit Your Vault"]
 icon: "✂️"
 image: "/assets/images/obsidian-web-clipper-ai.png"
 ---

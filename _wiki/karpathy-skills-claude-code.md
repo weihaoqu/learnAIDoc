@@ -8,9 +8,9 @@ icon: "🧹"
 image: "/assets/images/karpathy-skills-claude-code.png"
 ---
 
-Andrej Karpathy identified three ways LLMs fail at coding: they **assume silently** (guess what you mean and barrel forward), **overcomplicate** (1000 lines when 100 would do), and **cause collateral damage** (touch code you didn't ask them to). **andrej-karpathy-skills** distills these observations into four CLAUDE.md rules that fix the behavior directly. 23k stars, one file, instant improvement.
+Andrej Karpathy identified three ways LLMs fail at coding: they **assume silently** (guess what you mean and barrel forward), **overcomplicate** (1000 lines when 100 would do), and **cause collateral damage** (touch code you didn't ask them to). **andrej-karpathy-skills** distills these observations into four CLAUDE.md rules that fix the behavior directly. 40k+ stars (as of April 2026), one file, instant improvement.
 
-*Source: [GitHub — forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) (23.3k stars) | [Karpathy's original observations](https://x.com/karpathy)*
+*Source: [GitHub — forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) (40k+ stars) | [Karpathy's original observations](https://x.com/karpathy)*
 
 ## The Four Rules
 
