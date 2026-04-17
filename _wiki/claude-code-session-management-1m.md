@@ -3,7 +3,7 @@ title: "Claude Code Session Management & 1M Context — The Official Decision Fr
 date: 2026-04-17
 category: Claude Code Engineering
 tags: [claude-code, session-management, context-window, compact, rewind, subagents, context-rot, 1m-context]
-related: ["Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Claude Code: Agent Teams vs Subagents", "Claude Code /rewind — Undo Without Losing Context"]
+related: ["Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Claude Code: Agent Teams vs Subagents", "Claude Code /rewind — Undo Without Losing Context", "Opus 4.7 Thinking Effort — The Official Guide to Getting the Most from Claude Code"]
 icon: "🧭"
 image: "/assets/images/claude-code-session-management-1m.png"
 ---
