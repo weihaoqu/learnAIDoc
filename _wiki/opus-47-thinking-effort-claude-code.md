@@ -2,7 +2,7 @@
 title: "Opus 4.7 Thinking Effort — The Official Guide to Getting the Most from Claude Code"
 date: 2026-04-17
 category: Claude Code Engineering
-tags: [claude-code, opus-4-7, thinking-effort, xhigh, adaptive-thinking, performance, configuration, best-practices]
+tags: [claude-code, opus-4-7, thinking-effort, xhigh, adaptive-thinking, performance, configuration, best-practices, auto-mode, focus-mode, verification]
 related: ["Claude Code Session Management & 1M Context — The Official Decision Framework", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure"]
 icon: "🧠"
 image: "/assets/images/opus-47-thinking-effort-claude-code.png"
@@ -10,7 +10,7 @@ image: "/assets/images/opus-47-thinking-effort-claude-code.png"
 
 Anthropic published an official best-practices guide for using Opus 4.7 with Claude Code. The biggest change from Opus 4.6: **adaptive thinking** replaces fixed thinking budgets. The model decides when to think deeply and when to respond quickly — but you can steer it with effort levels and prompt phrasing. The default `xhigh` effort is the sweet spot for most work, but knowing when to dial up or down is the real skill.
 
-*Source: [Best Practices for Using Claude Opus 4.7 with Claude Code](https://claude.com/blog/best-practices-for-using-claude-opus-4-7-with-claude-code) (Anthropic, April 2026)*
+*Source: [Best Practices for Using Claude Opus 4.7 with Claude Code](https://claude.com/blog/best-practices-for-using-claude-opus-4-7-with-claude-code) (Anthropic, April 2026) | [bcherny on X — Opus 4.7 tips](https://x.com/bcherny/status/2044847848035156457) | [宝玉xp on Weibo](https://weibo.com/)*
 
 ## The Effort Level Table
 
@@ -131,6 +131,62 @@ Opus 4.7 spawns fewer subagents by default. If you want parallel work, spell it 
 "Use subagents to run these 3 searches in parallel"
 "Delegate the test run to a subagent"
 ```
+
+## New Features in Opus 4.7
+
+Beyond thinking effort, Opus 4.7 introduces several workflow features that change how you interact with Claude Code. Community tips compiled from [bcherny on X](https://x.com/bcherny/status/2044847848035156457) and [宝玉xp on Weibo](https://weibo.com/).
+
+### Auto Mode
+
+Opus 4.7 is built for long-running autonomous tasks. The new **Auto mode** lets Claude assess command safety and auto-approve safe operations — no more constant permission prompts.
+
+```
+Before (4.6): constant "Allow?" prompts → you babysit
+After (4.7):  Auto mode → Claude judges safety, auto-approves safe commands
+```
+
+If you don't like full Auto mode, use **fewer-permission-prompts** — Claude scans your command history, finds safe commands you've always approved, and suggests adding them to your allow list:
+
+```
+/fewer-permission-prompts
+```
+
+### Recaps
+
+For long-running tasks, Opus 4.7 can auto-generate **recaps** — summaries of what Claude has done, what's complete, and what's next. Useful when you step away for hours and come back:
+
+```
+"Recap what you've done and what's left"
+```
+
+### Focus Mode (CLI)
+
+For CLI users: **Focus mode** hides intermediate steps and shows only the final result. If you trust Claude and don't want to watch every tool call:
+
+```
+claude --focus
+```
+
+This is the opposite of verbose mode — you see the conclusion, not the journey. Good for tasks where you just want the output.
+
+### /go — Custom Execute Skill
+
+`/go` is a custom skill that triggers Claude to auto-execute with three steps:
+1. Use bash, browser, or computer use for end-to-end self-testing
+2. Run `/simplify` (code simplification)
+3. Submit a PR
+
+Boris (Anthropic) says the most common prompt pattern is now: **"Claude 去做某某事, 然后 /go"** — tell Claude what to do, then let it execute autonomously.
+
+### Verification — More Important Than Ever
+
+With Opus 4.7's increased autonomy, **verifying output is critical**. The model is more proactive, so:
+
+- For backend work: make sure Claude knows how to start your dev server, then run end-to-end tests
+- For frontend work: use the Chromium browser extension to give Claude visual verification
+- For desktop apps: use computer use functionality
+
+> "自我验证非常重要。因为这样一来，当你回来检查任务时，你就确切地知道这些代码是真实可用的。"
 
 ## How to Structure Tasks for Opus 4.7
 
