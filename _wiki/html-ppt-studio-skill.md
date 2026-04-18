@@ -3,7 +3,7 @@ title: "HTML PPT Studio — AI-Powered Presentation Skill for Claude Code"
 date: 2026-04-17
 category: Skills & Plugins
 tags: [presentations, slides, html, agent-skills, claude-code, teaching, ppt, themes]
-related: ["Claude Code Skills: Resources & Repos", "Non-Coding Skills for Claude Code — Automating Business & Life"]
+related: ["Claude Code Skills: Resources & Repos", "Non-Coding Skills for Claude Code — Automating Business & Life", "Make Slides: AI-Powered Interactive Teaching Slides"]
 icon: "📊"
 image: "/assets/images/html-ppt-studio-skill.png"
 ---
@@ -148,17 +148,40 @@ A                       Demo animation on current slide
 - **Iframe isolation** — Showcase pages use `<iframe>` per slide so multiple themes render side-by-side without CSS collisions.
 - **PNG export** — `./scripts/render.sh` uses headless Chrome to render any slide or deck to PNG.
 
-## Compared to Alternatives
+## HTML PPT Studio vs Make Slides
+
+If you're a teacher, you should also know about [Make Slides](/learnAIDoc/wiki/make-slides-interactive-teaching/) — a Claude Code skill built specifically for interactive teaching. Here's how they compare:
+
+| Factor | HTML PPT Studio | Make Slides |
+|---|---|---|
+| **Optimized for** | General presentations | Teaching (interactive lectures) |
+| **Interactivity** | Decorative animations (47 FX) | Step-through walkthroughs with Prev/Next |
+| **Pedagogy** | None — generic design | Built-in rules (one idea/slide, state before prove, Canvas over ASCII) |
+| **Themes** | 36 | 1 (dark slate) |
+| **Presenter mode** | Yes (speaker scripts, timer) | No |
+| **Input types** | Natural language prompt | PPTX, PDF, topic, existing HTML |
+| **Quality control** | None | 5-agent review |
+| **Proven scale** | New (April 2026) | 79+ decks across 5 courses |
+| **Best for** | Pitch decks, tech talks, reports, social media | CS lectures with algorithms, proofs, automata |
+
+**When to use which:**
+- Need a themed pitch deck or conference talk → **HTML PPT Studio**
+- Need step-through algorithm animation or interactive playground → **[Make Slides](/learnAIDoc/wiki/make-slides-interactive-teaching/)**
+- Need presenter mode with speaker scripts → **HTML PPT Studio**
+- Need pedagogically structured lecture with Canvas walkthroughs → **Make Slides**
+
+## Compared to Other Alternatives
 
 | Tool | Output | Build step | Themes | Presenter mode |
 |---|---|---|---|---|
 | **HTML PPT Studio** | Static HTML | None | 36 | Yes (magnetic cards) |
+| **Make Slides** | Static HTML | None | 1 | No |
 | frontend-slides | Static HTML | None | Fewer | No |
 | Slidev | Vue-based HTML | Yes (npm) | Community | Yes |
 | ppt-agent-skills | PPTX | Yes | Limited | N/A |
 | reveal.js (manual) | Static HTML | Optional | ~10 built-in | Yes |
 
-HTML PPT Studio's advantage is the combination of breadth (36 themes, 31 layouts, 47 animations) with zero-config AgentSkill installation.
+HTML PPT Studio's advantage is the combination of breadth (36 themes, 31 layouts, 47 animations) with zero-config AgentSkill installation. Make Slides' advantage is deep interactivity and pedagogical rigor.
 
 Sources:
 - [GitHub — lewislulu/html-ppt-skill](https://github.com/lewislulu/html-ppt-skill)

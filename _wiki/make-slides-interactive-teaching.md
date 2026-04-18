@@ -5,7 +5,7 @@ category: Skills & Plugins
 redirect_from:
   - "/wiki/skills & plugins/make-slides-interactive-teaching/"
 tags: [claude-code, skills, teaching, slides, canvas, interactive, education, html]
-related: ["Skill Seekers: Auto-Generate Claude Skills", "Claude Code Power User Tips", "AI Tools for High-Engagement Learning", "AI in Education — Teacher's Factory, Not Student's Cheat Tool"]
+related: ["Skill Seekers: Auto-Generate Claude Skills", "Claude Code Power User Tips", "AI Tools for High-Engagement Learning", "AI in Education — Teacher's Factory, Not Student's Cheat Tool", "HTML PPT Studio — AI-Powered Presentation Skill for Claude Code"]
 icon: "🎓"
 image: "/assets/images/make-slides-interactive-teaching.png"
 ---
@@ -170,6 +170,27 @@ git add . && git commit && git push
 # EC2 / any static host
 scp deck-enhanced.html user@server:/path/to/slides/
 ```
+
+## Make Slides vs HTML PPT Studio
+
+Both are Claude Code skills that generate HTML slide decks, but they solve different problems:
+
+| Factor | Make Slides | HTML PPT Studio |
+|---|---|---|
+| **Optimized for** | Teaching (interactive lectures) | General presentations |
+| **Interactivity** | Step-through walkthroughs, playgrounds | Decorative animations |
+| **Pedagogy** | Built-in rules (one idea/slide, state before prove) | None |
+| **Themes** | 1 (dark slate) | 36 (cyberpunk to academic) |
+| **Presenter mode** | No | Yes (speaker scripts, timer) |
+| **Input types** | PPTX, PDF, topic, existing HTML | Natural language prompt |
+| **Quality control** | 5-agent review | None |
+| **Best for** | CS lectures with algorithms, proofs, automata | Pitch decks, tech talks, reports |
+
+**When to use which:**
+- Need step-through algorithm animation or interactive playground → **Make Slides**
+- Need a quick pitch deck, conference talk, or themed presentation → **[HTML PPT Studio](/learnAIDoc/wiki/html-ppt-studio-skill/)**
+- Need a lecture with Canvas walkthroughs and pedagogical structure → **Make Slides**
+- Need presenter mode with speaker scripts → **HTML PPT Studio**
 
 ## Scale
 
