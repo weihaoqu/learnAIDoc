@@ -96,16 +96,48 @@ Rules let you auto-apply templates based on the URL pattern:
 
 This means clipping a paper from arXiv automatically creates a properly formatted research note, while clipping a YouTube video creates a video note — zero manual formatting.
 
+## Proven Pipeline: Clipper → Claude Code → Wiki Post
+
+We tested this end-to-end and it works. Here's the exact workflow:
+
+```
+Browser                     Obsidian Vault                Claude Code
+┌──────────────┐  Clipper   ┌──────────────┐   /mywiki   ┌──────────┐
+│ See article  │───────────▶│ inbox/       │────────────▶│ Wiki     │
+│ or paper     │  1-click   │ clipped.md   │  path ref   │ entry    │
+│              │            │ (with meta)  │             │ + cover  │
+└──────────────┘            └──────────────┘             │ + push   │
+                                                         └──────────┘
+```
+
+### Setup (one-time)
+
+1. Install Web Clipper from [Chrome Web Store](https://chromewebstore.google.com/detail/obsidian-web-clipper/cnjifjpddelmedmihgijeibhnjfabmlf)
+2. In clipper settings → Default template → set **Note location** to `inbox`
+3. Done — clips now save to `~/Documents/Obsidian Vault/inbox/`
+
+### Daily workflow
+
+1. See interesting content → click Clipper (or `Shift+Cmd+O`) → "Add to Obsidian"
+2. In Claude Code, say: `/mywiki "/Users/oreo/Documents/Obsidian Vault/inbox/{title}.md"`
+   - Or just: "I clipped something about X, make a wiki post"
+3. Claude reads the clipped note, does deep research, drafts the entry, generates cover, cross-links, commits, pushes, and saves an Obsidian note — all automated
+
+### Real example
+
+Clipped [Seeing like an agent](https://claude.com/blog/seeing-like-an-agent) → saved to `inbox/` → Claude Code ran `/mywiki` → published as [wiki entry](/learnAIDoc/wiki/seeing-like-an-agent-tool-design/) with cover image, cross-links, and Obsidian note in under 3 minutes.
+
 ## How LearnAI Team Could Use This
 
+- **Clipper → Wiki pipeline** — See something interesting? Clip it, tell Claude Code, wiki post appears. Tested and working.
 - **Research workflow** — Clip papers, blog posts, and documentation into a structured research vault with auto-tagging
 - **Course material collection** — Students can clip and organize resources for each course module
-- **Knowledge base building** — Pair with obsidian-cli for a capture (clipper) → organize (CLI) → publish (wiki) pipeline
 - **Literature review** — Clip papers with the AI summarizer to quickly build annotated bibliographies
 - **Teaching** — Show students a professional knowledge management workflow: capture → organize → connect → create
 
 ## Real-World Use Cases
 
+- **Clipper → Claude Code → Wiki** — the proven pipeline for turning web content into published wiki entries
 - **Researchers** building literature databases from web sources
 - **Students** organizing course materials and readings
 - **Content creators** collecting inspiration and reference material

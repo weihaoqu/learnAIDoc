@@ -68,6 +68,16 @@ Create a `Personal Workflow.md` with your coding preferences, languages, and rul
 | `/today` | Turn scattered notes into prioritized daily plans |
 | `/graduate` | Extract actionable insights from messy daily notes |
 
+## The Full Pipeline: Clipper → CLI → Wiki
+
+With Web Clipper saving to `inbox/` and Claude Code's `/mywiki` skill, the CLI becomes the bridge in a proven end-to-end workflow:
+
+```
+Web Clipper (capture) → CLI (read into context) → /mywiki (publish)
+```
+
+Example: Clipped an Anthropic blog post → CLI reads the clipped note's content and metadata → `/mywiki` researches, drafts, generates a cover image, cross-links related entries, commits, and pushes — all from one command. See the [Web Clipper entry](/learnAIDoc/wiki/obsidian-web-clipper-ai/) for setup details.
+
 ## Why This Matters
 
 The bottom line: **one paragraph about who you are and what you're working on today is more valuable to the agent than gigabytes of old project code.** Obsidian isn't a file viewer for your code — it's a journal for your brain. Claude Code becomes a thinking partner, not just a code generator.

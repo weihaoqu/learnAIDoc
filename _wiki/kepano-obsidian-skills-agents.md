@@ -137,8 +137,19 @@ The agent combines **obsidian-cli** (to search and read) with **obsidian-markdow
 
 This chains all three pipeline layers: Web Clipper captured the articles, CLI reads them into context, and Agent Skills produce a structured canvas with `[[wikilinks]]` back to the clipped notes.
 
+### 5. Clip-to-Wiki Pipeline (Proven)
+
+The full pipeline from browser to published wiki entry, tested end-to-end:
+
+```
+Browser → Clipper → inbox/clipped.md → Claude Code /mywiki → Wiki post
+```
+
+Real example: Clipped [Seeing like an agent](https://claude.com/blog/seeing-like-an-agent) blog post → saved to `inbox/` → ran `/mywiki` on the clipped note → published [wiki entry](/learnAIDoc/wiki/seeing-like-an-agent-tool-design/) with cover, cross-links, and Obsidian note. The clipped note's frontmatter (`source`, `title`, `tags`) feeds directly into the wiki pipeline — no manual reformatting needed.
+
 ## How LearnAI Team Could Use This
 
+- **Clip-to-Wiki publishing** — See an interesting paper or blog post → clip it → tell Claude Code → wiki entry is researched, drafted, published, and cross-linked automatically. Proven workflow.
 - **Course material vault**: Use agent skills to auto-generate `.canvas` concept maps for each lecture topic, linking to related readings, assignments, and student FAQ notes
 - **Research knowledge graph**: After clipping papers with Web Clipper, have the agent create Base views that track paper metadata (authors, venue, year, citations) and Canvas files showing citation relationships
 - **Student project tracking**: Create a `.base` file per course that pulls frontmatter from student project notes — status, grade, feedback date — giving a live dashboard without leaving Obsidian
