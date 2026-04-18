@@ -5,7 +5,7 @@ category: Skills & Plugins
 redirect_from:
   - "/wiki/tools/kepano-obsidian-skills-agents/"
 tags: [obsidian, agent-skills, claude-code, codex, vault-automation, kepano, canvas, knowledge-management]
-related: ["Obsidian CLI + Claude Code: Your Second Brain as Context", "Obsidian Web Clipper — AI-Powered Web Capture That Actually Organizes Itself"]
+related: ["Obsidian CLI + Claude Code: Your Second Brain as Context", "Obsidian Web Clipper — AI-Powered Web Capture That Actually Organizes Itself", "Obsidian Visual Skills Pack — Generate Excalidraw, Mermaid & Canvas Diagrams from Text"]
 icon: "🗃️"
 image: "/assets/images/kepano-obsidian-skills-agents.png"
 ---
