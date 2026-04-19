@@ -5,7 +5,7 @@ category: Claude Code Workflows
 redirect_from:
   - "/wiki/claude code/claude-code-research-infrastructure/"
 tags: [claude-code, research, multi-agent, academic, claude-md, skills, personas]
-related: ["Claude Code: Agent Teams vs Subagents", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "The Five Levels of Claude Code — From Prompting to Orchestration", "Claude-Prism — Local-First Academic Writing Workspace with AI", "AI Agents for Academic Research & Writing — From KatmerCode to the Nature Playbook", "What Researchers Should (and Shouldn't) Use LLMs For"]
+related: ["Claude Code: Agent Teams vs Subagents", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "The Five Levels of Claude Code — From Prompting to Orchestration", "Claude-Prism — Local-First Academic Writing Workspace with AI", "AI Agents for Academic Research & Writing — From KatmerCode to the Nature Playbook", "What Researchers Should (and Shouldn't) Use LLMs For", "Building a Research KB — Zotero + Obsidian + Claude Code"]
 icon: "🔬"
 image: "/assets/images/claude-code-research-infrastructure.png"
 ---
