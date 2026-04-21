@@ -3,7 +3,7 @@ title: "Obsidian Visual Skills Pack — Generate Excalidraw, Mermaid & Canvas Di
 date: 2026-04-17
 category: Skills & Plugins
 tags: [obsidian, excalidraw, mermaid, canvas, diagrams, visualization, agent-skills, claude-code, teaching, research]
-related: ["kepano/obsidian-skills — Agent Skills That Let AI Edit Your Vault", "Obsidian Web Clipper — AI-Powered Web Capture That Actually Organizes Itself"]
+related: ["kepano/obsidian-skills — Agent Skills That Let AI Edit Your Vault", "Obsidian Web Clipper — AI-Powered Web Capture That Actually Organizes Itself", "Independent Thinking in the Age of AI — Visual PKM and 4D Knowledge"]
 icon: "🎨"
 image: "/assets/images/obsidian-visual-skills-diagrams.png"
 ---
