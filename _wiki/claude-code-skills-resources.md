@@ -5,7 +5,7 @@ category: Claude Code Workflows
 redirect_from:
   - "/wiki/claude code/claude-code-skills-resources/"
 tags: [claude-code, skills, resources, github]
-related: ["Claude Code Power User Tips", "Last 30 Days Skill", "mdpdf: Markdown to PDF with Claude Code", "Gstack — Garry Tan's AI Software Factory for Claude Code", "Posterskill — AI-Generated Academic Conference Posters from Your Paper", "Non-Coding Skills for Claude Code — Automating Business & Life"]
+related: ["Claude Code Power User Tips", "Last 30 Days Skill", "mdpdf: Markdown to PDF with Claude Code", "Gstack — Garry Tan's AI Software Factory for Claude Code", "Posterskill — AI-Generated Academic Conference Posters from Your Paper", "Non-Coding Skills for Claude Code — Automating Business & Life", "Anti-AI Exam Designer — A Claude Code Skill for AI-Resistant Exams"]
 icon: "🔗"
 image: "/assets/images/claude-code-resources.jpg"
 ---
