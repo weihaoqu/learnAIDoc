@@ -167,8 +167,177 @@ Compress FIND. Key risk: integration failures, not literature gaps.
 | Autoresearch for ideation | Hill-climbing on bad metrics | Use for execution only |
 | Never record rejections | Forget why you didn't try X | Update state file each stage |
 
-## The Origin Story
+## Case Study: FormalDP — How This Workflow Saved Weeks
 
-This workflow was distilled from the FormalDP project — an attempt to formally verify differential privacy sensitivity properties using PCSAT/CHC solvers. The original plan targeted 5 "easy" properties (histogram, clipped sum sensitivity bounds). Three parallel review agents — peer review, tool comparison, and encoding research — ran in the background for ~15 minutes total. The peer review agent's critique ("you're verifying trivially true things") completely reframed the project from "verify easy lemmas" to "introduce a new CHC encoding pattern for the delete metric." Codex independently confirmed this pivot and proposed an additional research framing (proof-producing certification) that neither Claude nor the human had considered.
+This workflow was distilled from a real research session. Here is the full timeline showing each stage in action, what went right, what went wrong, and how each tool contributed.
 
-Total time spent on JUDGE + VERIFY: ~30 minutes. Value: avoided weeks pursuing the wrong research direction, and discovered a stronger contribution.
+### The Project
+
+**Goal:** Formalize components of the STOC 2025 paper "Privately Evaluating Untrusted Black-Box Functions" (Linder, Raskhodnikova, Smith, Steinke) using PCSAT/CHC constraint solvers.
+
+**Context:** We had a mature CHC pipeline with 82+ verified encodings for relational array properties. We'd already verified histogram sensitivity=2, CDF sensitivity=m-1, and clipped sum sensitivity=B under the replace metric. The question: can we extend this to the paper's new concepts (down sensitivity, inverse loss, privacy wrappers)?
+
+### Stage 0: FORMULATE (~15 min)
+
+```
+Hypothesis: We can use PCSAT/CHC to verify sensitivity properties
+            from the black-box DP paper.
+Success:    At least one non-trivial property verified (sat) with triple-probe.
+Falsify:    If PCSAT can't express delete-metric neighbors, pivot to Lean.
+Cost:       ~2 weeks of encoding work if wrong direction.
+```
+
+**What happened:** We read the 58-page paper, identified the key concepts (down sensitivity, inverse loss function, monotonization, privacy wrappers), and mapped each to "can CHC handle this?"
+
+**Tool used:** `Read` (PDF pages), `WebFetch` (blog posts on down sensitivity and inverse sensitivity), `/query-kb` (searched personal knowledge base for CHC and DP entries).
+
+### Stage 1: FIND (~30 min)
+
+Three search agents ran in parallel:
+
+| Agent | Search Focus | Result |
+|---|---|---|
+| Agent 1 | Down sensitivity, inverse sensitivity, black-box DP | 15 papers on sensitivity mechanisms |
+| Agent 2 | Formal verification of DP (CHC, HMC, LightDP, ShadowDP) | 20 papers on DP verification tools |
+| Agent 3 | Most recent papers (2024-2026) citing the target paper | 12 recent papers including SampCert, Durfee 2025 |
+
+**Total: 36 papers across 6 clusters.** Key finding: no existing tool formally verifies down sensitivity or inverse loss properties via CHC. This confirmed a genuine gap.
+
+**Tools used:** Three parallel `Agent` subagents with `WebSearch` + `WebFetch`.
+
+### First Plan (Before JUDGE)
+
+Based on FIND results, we built an initial to-do list:
+
+| # | Target | What |
+|---|---|---|
+| P1 | Delete-metric encoding | Single-hole alignment for k=1 |
+| P2 | Histogram down sensitivity ≤ 1 | Simple bin count under deletion |
+| P3 | Clipped sum down sensitivity ≤ B | Already have replace-metric version |
+| P4 | Average down sensitivity | Multiply out division |
+| P5 | Inverse loss sensitivity 1 (Lemma 3.4) | For specific monotone f |
+
+**Codex consultation #1:** Asked Codex to independently assess feasibility. Codex accepted the overall direction but flagged three corrections:
+- Lemma 3.4 requires **monotone f** — average is NOT valid
+- Single-hole alignment is better than two-counter async for k=1
+- Subset-witness product is best for general k
+
+We accepted all three corrections. The plan looked solid. We were ready to start encoding.
+
+**Then we ran the JUDGE stage.**
+
+### Stage 2: JUDGE — The Pivot (~15 min)
+
+Three review agents ran in parallel (background):
+
+**Agent 1: Hostile Peer Review (Reviewer #2)**
+
+The reviewer destroyed our plan. Key excerpts:
+
+> **M1:** "The five proposed targets are among the simplest lemmas in the paper. Histogram bin count has delete sensitivity 1 — this is a one-sentence observation. When the hand proof takes 6 lines and the machine encoding takes 80+ lines of .clp, the burden-of-proof question inverts."
+
+> **M2:** "Verifying building blocks while leaving wrappers unverified is like verifying addition and claiming you verified a compiler. The building blocks are the part nobody doubts."
+
+> **M4:** "If you instantiate f = count_above_threshold for the inverse loss, then sensitivity 1 reduces to verifying bin count sensitivity, which is already Target 1. This is circular."
+
+Verdict: **MAJOR REVISION.** The reviewer suggested completely different targets: Lemma 4.2 (interleaving of stabilization), Lemma D.4 (offset interleaving), and reframing the encoding pattern itself as the contribution.
+
+**Agent 2: Tool Comparison**
+
+Confirmed PCSAT is the right tool for loop-program sensitivity, but independently concluded that Lemma 3.4's general statement needs Lean 4, not PCSAT. Also confirmed HMC, LightDP, ShadowDP solve fundamentally different problems.
+
+**Agent 3: Encoding Research**
+
+Found that the single-hole alignment is sound (universal quantification of `h` is correct), discovered that the three-case split collapses to two cases (before/after deletion are identical), and confirmed no existing CHC benchmark handles asymmetric-size relational properties.
+
+**Total time for JUDGE: ~15 minutes.** The three agents ran in parallel in the background.
+
+### The Pivot
+
+The JUDGE stage completely changed our direction:
+
+| Before JUDGE | After JUDGE |
+|---|---|
+| 5 easy sensitivity bounds | Structural lemmas (4.2, D.4) |
+| "We verified 5 lemmas" | "We introduce a new CHC encoding pattern" |
+| Lemma 3.4 for one specific f | Lemma 3.4 generically in Lean |
+| Target: DP venue (PETS, CSF) | Target: verification venue (VMCAI, CAV) |
+
+### Stage 3: VERIFY — Codex Confirms the Pivot (~10 min)
+
+We presented three research framings to Codex for independent assessment:
+
+- **Framing A:** First CHC encoding for delete-metric sensitivity (VMCAI)
+- **Framing B:** Machine-verified building blocks for black-box DP (CSF/PETS)
+- **Framing C:** Operationalize set-theoretic DP proofs as CHC (POPL/PLDI)
+
+Codex's response:
+- **Endorsed Framing A** — "can stand alone if encoding theorem is clean"
+- **Rejected Framing C for POPL/PLDI** — "overreaches technically and editorially"
+- **Proposed Framing D** (new!) — "Proof-producing certification: CHC certificates → Lean checker → compose with SampCert" — this directly addresses the "gap between building blocks and wrapper" criticism
+
+**Nobody — not Claude, not the human — had thought of Framing D.** It emerged from the VERIFY stage because Codex approached the problem from a different angle.
+
+### Final Consensus
+
+| Framing | Venue | Status | Dependencies |
+|---|---|---|---|
+| **A: Delete-metric CHC encoding** | VMCAI | Start here | None |
+| **D: Certification + SampCert bridge** | CAV short | After A | Blocked by A |
+| **B: Application story** | Workshop | After A+D | Blocked by A, D |
+| **C: Set-theoretic lemmas** | VMCAI/CAV | Side quest | Lemma D.4 only |
+
+### Stage 5: MONITOR (Ongoing)
+
+Set up 4 scheduled remote agents:
+
+| Time (ET) | Agent | Job |
+|---|---|---|
+| 12:00am | Research monitor | Scan for new papers on down sensitivity, CHC |
+| 4:00am | Overnight worker | Execute to-do items with verification requirement |
+| 5:00am | Deep-dive | Research encoding strategies for current priority |
+| 10:00am | Morning briefer | Daily priority + new developments + blockers |
+
+Each agent has a **verification rule**: cross-reference findings before saving, mark unverified claims.
+
+### Stage 6: RECORD
+
+All decisions were recorded in:
+- **Project memory:** `~/.claude/projects/.../memory/project_blackbox_dp_paper.md` — tracks framings, consensus, corrections
+- **Feedback memory:** `~/.claude/projects/.../memory/feedback_research_workflow.md` — captures the workflow itself for future reuse
+- **Design doc:** `docs/plans/2026-04-24-formalization-plan.md` — the full formalization plan with encoding sketches
+
+### Timeline Summary
+
+```
+11:00pm  FORMULATE: Read paper, define hypothesis          15 min
+11:15pm  FIND: 3 parallel search agents → 36 papers        30 min
+11:45pm  First plan: 5 targets (P1-P5)                     10 min
+11:55pm  Codex #1: feasibility check → 3 corrections       10 min
+12:05am  JUDGE: 3 parallel review agents                   15 min
+         ├── Reviewer #2: "targets are trivially true"
+         ├── Tool comparison: "use Lean for Lemma 3.4"
+         └── Encoding research: "2 cases not 3, j is redundant"
+12:20am  Pivot: completely revised direction                10 min
+12:30am  VERIFY: Codex #2 reviews 3 framings               10 min
+         └── Endorses A, rejects C for POPL, proposes D
+12:40am  Final consensus: 4 framings with execution order   5 min
+12:45am  MONITOR: Set up 4 scheduled agents                10 min
+12:55am  RECORD: Update memory, write design doc            15 min
+─────────────────────────────────────────────────────────────────
+Total: ~2 hours from paper to validated research plan
+```
+
+### What Would Have Happened WITHOUT the Workflow
+
+Without the JUDGE stage, we would have spent 1-2 weeks encoding histogram and clipped sum sensitivity under the delete metric — properties that are "one-sentence observations" according to Reviewer #2. We would have gotten `sat` from PCSAT, celebrated, written up 5 verified lemmas, submitted to a venue, and received the exact same hostile review... except 2 weeks later, with sunk cost making it harder to pivot.
+
+The workflow cost ~30 extra minutes (JUDGE + VERIFY) and redirected the entire project toward a stronger contribution before a single line of `.clp` was written.
+
+### Lessons Learned
+
+1. **The JUDGE stage paid for itself 100x.** Four minutes of hostile peer review prevented weeks of wrong-direction work.
+2. **Codex proposed something nobody else thought of.** Framing D (proof-producing certification) emerged because Codex approached from a different angle than Claude.
+3. **The first plan is usually wrong.** Our 5-target plan looked solid after FIND + Codex #1. It took JUDGE to reveal it was targeting trivially true properties.
+4. **Parallel agents are cheap insurance.** Three background agents running for 15 minutes found: wrong targets, wrong tool for one subproblem, simpler encoding than planned.
+5. **Record rejected alternatives.** We rejected Framing C for POPL/PLDI, but recorded why — so future-us doesn't waste time re-exploring that path.
