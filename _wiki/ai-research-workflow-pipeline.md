@@ -341,3 +341,48 @@ The workflow cost ~30 extra minutes (JUDGE + VERIFY) and redirected the entire p
 3. **The first plan is usually wrong.** Our 5-target plan looked solid after FIND + Codex #1. It took JUDGE to reveal it was targeting trivially true properties.
 4. **Parallel agents are cheap insurance.** Three background agents running for 15 minutes found: wrong targets, wrong tool for one subproblem, simpler encoding than planned.
 5. **Record rejected alternatives.** We rejected Framing C for POPL/PLDI, but recorded why — so future-us doesn't waste time re-exploring that path.
+
+## How to Use This Workflow in Your Own Projects
+
+The workflow lives at `~/.claude/RESEARCH_WORKFLOW.md` — a global file accessible from any Claude Code project.
+
+### Quick Start (say this at the start of a session)
+
+```
+Follow the research workflow in ~/.claude/RESEARCH_WORKFLOW.md
+```
+
+That's it. Claude will read the file and follow the full pipeline.
+
+### Common Prompts for Specific Stages
+
+| Scenario | What to say |
+|---|---|
+| **New paper/topic** | `I want to explore [paper/topic]. Follow ~/.claude/RESEARCH_WORKFLOW.md — start from FORMULATE.` |
+| **Already have a plan** | `Here's my plan: [plan]. Run the JUDGE stage from ~/.claude/RESEARCH_WORKFLOW.md — peer review, tool comparison, deep dive, all in parallel.` |
+| **Just need hostile review** | `Run a hostile Reviewer #2 on this plan: [plan]. Be brutal.` |
+| **Set up monitoring** | `Set up the MONITOR stage from ~/.claude/RESEARCH_WORKFLOW.md for this project.` |
+| **Check with Codex** | `Run the VERIFY stage — ask Codex if it agrees with this direction.` |
+| **Start execution loop** | `Run the EXECUTE stage — set up autoresearch for [metric].` |
+
+### Make It Automatic (No Prompt Needed)
+
+Add one line to any project's `CLAUDE.md` file:
+
+```markdown
+# Research Workflow
+Follow ~/.claude/RESEARCH_WORKFLOW.md for all research tasks.
+```
+
+Every session in that project will follow the pipeline by default — no need to remember to ask.
+
+### Adapting for Different Research Types
+
+Add the profile to your `CLAUDE.md`:
+
+```markdown
+# Research Workflow
+Follow ~/.claude/RESEARCH_WORKFLOW.md with the THEORY-HEAVY profile.
+```
+
+Available profiles: `THEORY-HEAVY` (critique-heavy, light execution), `EMPIRICAL-HEAVY` (early exploration, heavy monitoring), `ENGINEERING-HEAVY` (compressed FIND, heavy execution).
