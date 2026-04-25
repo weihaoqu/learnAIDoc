@@ -1,7 +1,7 @@
 ---
 title: "AI-Assisted Research Workflow: Formulate → Find → Judge → Verify → Execute → Monitor → Record"
 date: 2026-04-24
-category: AI
+category: AI for Research
 tags: [research-workflow, claude-code, codex, feynman, autoresearch, peer-review, research-methodology, scheduled-agents]
 related: ["AutoResearch: Autonomous ML Experiment Paradigm", "Feynman AI Research Agent", "Karpathy End of Coding", "Codex + Claude Code Research Tutorial"]
 icon: "🔬"
