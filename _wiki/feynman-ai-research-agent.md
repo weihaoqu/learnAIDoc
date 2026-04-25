@@ -5,7 +5,7 @@ category: AI for Research
 redirect_from:
   - "/wiki/ai research/feynman-ai-research-agent/"
 tags: [ai-research, feynman, agents, literature-review, physics, hallucination, academic, reproducibility]
-related: ["Claude Code as Research Infrastructure — From Chatbot to AI Research Team", "AI Agents for Academic Research & Writing — From KatmerCode to the Nature Playbook", "Paper2Code: Turn ArXiv Papers into Citation-Anchored Code"]
+related: ["Claude Code as Research Infrastructure — From Chatbot to AI Research Team", "AI Agents for Academic Research & Writing — From KatmerCode to the Nature Playbook", "Paper2Code: Turn ArXiv Papers into Citation-Anchored Code", "AI-Assisted Research Workflow: Formulate → Find → Judge → Verify → Execute → Monitor → Record"]
 icon: "🔬"
 image: "/assets/images/feynman-ai-research-agent.png"
 ---
