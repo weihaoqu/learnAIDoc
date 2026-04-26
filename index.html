@@ -44,6 +44,42 @@ title: Home
       {% endfor %}
     </div>
 
+    <!-- Latest Entries -->
+    {% assign latest_entries = site.wiki | sort: "date" | reverse %}
+    <section class="latest-section" id="latest">
+      <div class="category-header">
+        <div class="category-label">
+          <span class="category-icon">🆕</span>
+          <h2 class="category-name">Latest Entries</h2>
+        </div>
+        <span class="category-count">Newest additions</span>
+      </div>
+      <div class="card-grid">
+        {% for entry in latest_entries limit:10 %}
+        <a href="{{ entry.url | relative_url }}" class="entry-card" style="animation-delay: {{ forloop.index | times: 0.04 }}s">
+          <div class="card-image-wrapper">
+            {% if entry.image %}
+            <img src="{{ entry.image | relative_url }}" alt="{{ entry.title }}" class="card-image" loading="lazy">
+            {% else %}
+            <div class="card-placeholder" data-category="{{ entry.category }}">
+              {% if entry.icon %}{{ entry.icon }}{% else %}📄{% endif %}
+            </div>
+            {% endif %}
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">{{ entry.title }}</h3>
+            <div class="card-meta">
+              {% if entry.tags.first %}
+              <span class="card-tag">{{ entry.tags.first }}</span>
+              {% endif %}
+              <span class="card-date">{{ entry.date | date: "%b %d" }}</span>
+            </div>
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+    </section>
+
     {% for cat in site.wiki_categories %}
     {% assign cat_entries = site.wiki | where: "category", cat.name | sort: "date" | reverse %}
     {% if cat_entries.size > 0 %}
@@ -96,6 +132,7 @@ title: Home
 function filterByCategory(category) {
   var sections = document.querySelectorAll('.category-section');
   var buttons = document.querySelectorAll('.filter-btn');
+  var latestSection = document.querySelector('.latest-section');
 
   buttons.forEach(function(btn) {
     btn.classList.remove('active');
@@ -103,6 +140,8 @@ function filterByCategory(category) {
       btn.classList.add('active');
     }
   });
+
+  if (latestSection) latestSection.style.display = 'none';
 
   sections.forEach(function(section) {
     if (section.getAttribute('data-category') === category) {
@@ -125,12 +164,15 @@ document.querySelectorAll('.filter-btn').forEach(function(btn) {
     buttons.forEach(function(b) { b.classList.remove('active'); });
     this.classList.add('active');
 
+    var latestSection = document.querySelector('.latest-section');
     if (filter === 'all') {
+      if (latestSection) latestSection.style.display = '';
       sections.forEach(function(s) {
         s.style.display = '';
         s.style.animation = 'fadeSlideIn 0.3s ease forwards';
       });
     } else {
+      if (latestSection) latestSection.style.display = 'none';
       sections.forEach(function(s) {
         if (s.getAttribute('data-category') === filter) {
           s.style.display = '';
