@@ -80,6 +80,45 @@ title: Home
       </div>
     </section>
 
+    <!-- Popular / Editor's Picks -->
+    {% assign popular_slugs = "harness-engineering-agents,karpathy-skills-claude-code,cross-model-code-review-claude-codex,ai-research-workflow-pipeline,learnai-knowledge-base-guide,karpathy-llm-knowledge-bases,socratic-prompting-method" | split: "," %}
+    <section class="popular-section" id="popular">
+      <div class="category-header">
+        <div class="category-label">
+          <span class="category-icon">⭐</span>
+          <h2 class="category-name">Popular</h2>
+        </div>
+        <span class="category-count">Editor's picks</span>
+      </div>
+      <div class="card-grid">
+        {% for slug in popular_slugs %}
+        {% assign entry = site.wiki | where: "slug", slug | first %}
+        {% if entry %}
+        <a href="{{ entry.url | relative_url }}" class="entry-card" style="animation-delay: {{ forloop.index | times: 0.04 }}s">
+          <div class="card-image-wrapper">
+            {% if entry.image %}
+            <img src="{{ entry.image | relative_url }}" alt="{{ entry.title }}" class="card-image" loading="lazy">
+            {% else %}
+            <div class="card-placeholder" data-category="{{ entry.category }}">
+              {% if entry.icon %}{{ entry.icon }}{% else %}📄{% endif %}
+            </div>
+            {% endif %}
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">{{ entry.title }}</h3>
+            <div class="card-meta">
+              {% if entry.tags.first %}
+              <span class="card-tag">{{ entry.tags.first }}</span>
+              {% endif %}
+              <span class="card-date">{{ entry.date | date: "%b %d" }}</span>
+            </div>
+          </div>
+        </a>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+
     {% for cat in site.wiki_categories %}
     {% assign cat_entries = site.wiki | where: "category", cat.name | sort: "date" | reverse %}
     {% if cat_entries.size > 0 %}
@@ -133,6 +172,7 @@ function filterByCategory(category) {
   var sections = document.querySelectorAll('.category-section');
   var buttons = document.querySelectorAll('.filter-btn');
   var latestSection = document.querySelector('.latest-section');
+  var popularSection = document.querySelector('.popular-section');
 
   buttons.forEach(function(btn) {
     btn.classList.remove('active');
@@ -142,6 +182,7 @@ function filterByCategory(category) {
   });
 
   if (latestSection) latestSection.style.display = 'none';
+  if (popularSection) popularSection.style.display = 'none';
 
   sections.forEach(function(section) {
     if (section.getAttribute('data-category') === category) {
@@ -165,14 +206,17 @@ document.querySelectorAll('.filter-btn').forEach(function(btn) {
     this.classList.add('active');
 
     var latestSection = document.querySelector('.latest-section');
+    var popularSection = document.querySelector('.popular-section');
     if (filter === 'all') {
       if (latestSection) latestSection.style.display = '';
+      if (popularSection) popularSection.style.display = '';
       sections.forEach(function(s) {
         s.style.display = '';
         s.style.animation = 'fadeSlideIn 0.3s ease forwards';
       });
     } else {
       if (latestSection) latestSection.style.display = 'none';
+      if (popularSection) popularSection.style.display = 'none';
       sections.forEach(function(s) {
         if (s.getAttribute('data-category') === filter) {
           s.style.display = '';
