@@ -75,3 +75,17 @@ The `SKILL.md` file tells Claude what the tool does, how to launch it, and what 
 
 - **Claude Code** installed (`npm install -g @anthropic-ai/claude-code`)
 - **Node.js** 18+ (`node --version` to check)
+
+## How LearnAI Team Could Use This
+
+- **Course material conversion** — Convert Markdown lesson notes, handouts, and workshop guides into polished PDFs for students.
+- **Skill-sharing example** — Use mdpdf as a simple case study for how Claude Code skills can be packaged, installed, and shared.
+- **Documentation workflow** — Draft in Markdown, preview locally, and export PDFs without leaving Claude Code.
+- **Research handouts** — Turn AI tool writeups, experiment notes, or reading guides into printable PDFs.
+
+## Real-World Use Cases
+
+1. **Workshop handouts** — Convert Markdown workshop notes into PDFs before class.
+2. **Client-ready documentation** — Turn internal Markdown docs into shareable PDF deliverables.
+3. **Research summaries** — Export literature notes, experiment reports, and project briefs as PDFs.
+4. **Skill distribution demo** — Study mdpdf as a compact example of a shareable Claude Code skill.
