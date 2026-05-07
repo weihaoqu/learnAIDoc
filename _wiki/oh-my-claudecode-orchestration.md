@@ -157,3 +157,19 @@ OMC represents the **orchestration layer thesis**: the value isn't in any single
 | One-shot execution | Verify/fix loops until complete |
 | Generic Claude | 32 specialized domain agents |
 | Manual cost tracking | Smart model routing saves 30-50% |
+
+## How LearnAI Team Could Use This
+
+- **Parallel documentation work** — Split research, drafting, review, and polish across specialized agents while keeping a shared execution pipeline.
+- **Course tooling experiments** — Prototype LearnAI teaching utilities with staged plan, implementation, verification, and fix loops.
+- **Research/code review** — Ask Codex, Gemini, and Claude for separate reviews of the same codebase or paper, then synthesize findings.
+- **Reusable team skills** — Capture recurring LearnAI workflows as `.omc/skills/` files for future agent reuse.
+- **Long-running automation** — Use rate-limit resume and notifications for jobs that need to finish without constant terminal monitoring.
+
+## Real-World Use Cases
+
+- **Engineering teams** coordinating multi-agent implementation and verification work inside Claude Code.
+- **Researchers** comparing model perspectives on code, experiments, or paper drafts.
+- **Educators** building teaching demos, course infrastructure, and review materials with staged agent workflows.
+- **Solo developers** using autopilot or Ralph mode for end-to-end feature work with verify/fix loops.
+- **AI operations teams** standardizing reusable skills, provider routing, and completion notifications across projects.
