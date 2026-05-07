@@ -124,6 +124,18 @@ This is the missing chapter in most AI courses. Everyone teaches *how* to use AI
 
 The [harness engineering thesis](/learnAIDoc/wiki/claude%20code/harness-engineering-agents/) argues that **constraining the solution space increases output quality**. AI Brain Fry is the human equivalent: constraining your tool usage increases your cognitive quality. The same principle — less is more — applies to both agents and humans.
 
+## How LearnAI Team Could Use This
+
+- Teach AI workflow design as a cognitive-load problem, not just a tool-adoption problem.
+- Encourage learners to pick a small, deliberate AI stack and define when each tool should be used.
+- Add exercises where students compare output quality before and after reducing tool switching and verification load.
+
+## Real-World Use Cases
+
+- A teacher limits students to one AI assistant during a research assignment, then requires source verification as a separate step.
+- A manager audits team AI usage and removes redundant tools that create review overhead without replacing existing work.
+- A learner batches AI interactions into focused sessions instead of keeping multiple assistants open throughout the day.
+
 ## Links
 
 - **HBR article:** [When Using AI Leads to "Brain Fry"](https://hbr.org/2026/03/when-using-ai-leads-to-brain-fry)

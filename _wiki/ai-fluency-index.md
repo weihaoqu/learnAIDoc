@@ -12,7 +12,7 @@ image: "/assets/images/ai-fluency-index.png"
 
 Anthropic's 2026 Education Report introduces the **AI Fluency Index** — a 4D framework (24 behaviors, 11 observable) based on 9,830 conversations analyzed. The key finding: being good at prompting doesn't mean you're good at working with AI. The most fluent users treat AI as a thought partner to *augment* their work, not just delegate it.
 
-*Source: [Anthropic AI Fluency Index](https://www.anthropic.com/research/AI-fluency-index) | Related paper: [How AI Changes Skill Formation (arXiv)](https://arxiv.org/pdf/2601.20245v1)*
+*Source: [Anthropic AI Fluency Index](https://www.anthropic.com/research/AI-fluency-index) | Related paper: [How AI Impacts Skill Formation (arXiv)](https://arxiv.org/pdf/2601.20245v1)*
 
 ![Level Up Your AI Fluency](/learnAIDoc/assets/images/ai-fluency-index-infographic.png)
 
@@ -57,6 +57,18 @@ What fluent users do differently:
 1. **Stay in the conversation** — Treat the first response as a start. Ask follow-ups and push back on parts that don't feel right.
 2. **Question polished outputs** — When it looks "perfect," pause. Ask: Is this accurate? Is anything missing? Does the reasoning hold up?
 3. **Set the terms of collaboration** — Tell the AI how to interact. Give explicit instructions like "Push back if wrong" or "Walk me through reasoning."
+
+## How LearnAI Team Could Use This
+
+- Build AI fluency checks into faculty training: require users to ask for reasoning, identify missing context, and revise outputs before accepting them.
+- Use polished AI outputs as review exercises: have instructors and learners critique generated lesson plans, rubrics, code, or documents for accuracy and gaps.
+- Model "collaboration settings" in prompts: teach users to ask AI to push back, surface uncertainty, and explain assumptions.
+
+## Real-World Use Cases
+
+- A teacher uses Claude to draft a lesson plan, then asks it to identify missing context, explain its instructional choices, and revise for a specific student group.
+- A curriculum designer reviews an AI-generated rubric by asking for weak points, hidden assumptions, and alignment with learning objectives.
+- A student treats the first AI answer as a draft, follows up with clarifying questions, and checks the reasoning before using it in an assignment.
 
 ## Why This Matters
 

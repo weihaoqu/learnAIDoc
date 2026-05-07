@@ -52,7 +52,7 @@ Teacher readiness: ████░░░░░░░░░░░░░░░░ 
 
 The article's observation: many educators' attitude toward new technology is **resistance and fear**. Some can't do basic computer operations. AI is a supercar already racing, but most "drivers" are still learning to open the door.
 
-## What Teachers Can Build With AI
+## Real-World Use Cases
 
 When teachers — not students — wield AI:
 
@@ -102,7 +102,7 @@ The comments distilled two camps:
 
 The synthesis: **AI is "poison" for shortcuts, but "wings" for innovation** — and which one it becomes depends entirely on who's using it and how they were trained.
 
-## For Q's LAI Research
+## How LearnAI Team Could Use This
 
 This framing has direct implications:
 
