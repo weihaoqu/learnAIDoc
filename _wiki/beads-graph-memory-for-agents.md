@@ -12,6 +12,8 @@ image: "/assets/images/beads-graph-memory.jpg"
 
 Today I learned about [Beads](https://github.com/steveyegge/beads) — a distributed, git-backed graph issue tracker built specifically for AI coding agents. Instead of flat markdown files for memory, it gives agents a structured dependency graph so they can manage complex, long-running tasks without losing context.
 
+*Source: [Beads GitHub Repository](https://github.com/steveyegge/beads)*
+
 ## The Problem with Markdown Memory
 
 Tools like CLAUDE.md and todo lists store agent memory as flat text. This works for simple tasks, but breaks down when:
@@ -113,3 +115,17 @@ When multiple agents (or agent teams) work on the same project:
 - Tasks are simple and sequential
 - You're working solo on short sessions
 - The overhead of a graph tracker isn't justified
+
+## How LearnAI Team Could Use This
+
+- **Agent workflow curriculum** — Use Beads to teach why long-running AI work needs structured memory, dependencies, and task readiness instead of flat todo lists.
+- **Multi-agent demos** — Show students how dependency graphs and atomic claiming prevent duplicated work when several agents operate in parallel.
+- **Capstone project management** — Have learners model project plans as graph-backed issues so AI agents can pick unblocked tasks programmatically.
+- **Tooling comparison exercises** — Compare CLAUDE.md, markdown todos, GitHub Issues, and Beads to clarify when graph memory is worth the overhead.
+
+## Real-World Use Cases
+
+- **AI coding teams:** Coordinate multiple agents across dependent implementation tasks without editing the same memory file.
+- **Long-horizon refactors:** Track blockers, subtasks, and decisions across sessions that span days or weeks.
+- **Open-source maintenance:** Keep issue state versioned with the repository while preserving a git-backed audit trail.
+- **Agent orchestration:** Let agents call `bd ready` to choose the next unblocked task automatically.

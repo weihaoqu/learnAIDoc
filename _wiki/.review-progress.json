@@ -1,7 +1,7 @@
 {
   "total": 162,
-  "reviewed": 31,
-  "lastRun": "2026-05-07T07:39:00Z",
+  "reviewed": 34,
+  "lastRun": "2026-05-07T07:59:00Z",
   "entries": {
     "accio-work-ai-agent-business.md": {
       "status": "reviewed",
@@ -314,34 +314,34 @@
       "obsidianNote": "created"
     },
     "beads-graph-memory-for-agents.md": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "reviewed",
+      "attempts": 1,
       "startedAt": null,
-      "reviewedAt": null,
-      "verdict": null,
-      "fixCount": 0,
+      "reviewedAt": "2026-05-07T07:55:00Z",
+      "verdict": "NEEDS_FIXES",
+      "fixCount": 2,
       "lastError": null,
-      "obsidianNote": "pending"
+      "obsidianNote": "created"
     },
     "bilingual-prompting-technique.md": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "reviewed",
+      "attempts": 1,
       "startedAt": null,
-      "reviewedAt": null,
-      "verdict": null,
+      "reviewedAt": "2026-05-07T07:57:00Z",
+      "verdict": "CLEAN",
       "fixCount": 0,
       "lastError": null,
-      "obsidianNote": "pending"
+      "obsidianNote": "exists"
     },
     "boris-cherny-claude-code-philosophy.md": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "reviewed",
+      "attempts": 1,
       "startedAt": null,
-      "reviewedAt": null,
-      "verdict": null,
+      "reviewedAt": "2026-05-07T07:59:00Z",
+      "verdict": "CLEAN",
       "fixCount": 0,
       "lastError": null,
-      "obsidianNote": "pending"
+      "obsidianNote": "exists"
     },
     "browser-use-cli-automation.md": {
       "status": "pending",
