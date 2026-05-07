@@ -182,3 +182,4 @@ Users in the community report using obsidian-skills for:
 ## Bottom Line
 
 obsidian-skills is the missing write layer for AI-powered Obsidian workflows. Web Clipper captures, CLI reads, and now Agent Skills edit — completing the loop. The fact that these come from Obsidian's own CEO means they track the canonical file formats as Obsidian evolves. If you use Obsidian as your knowledge base and Claude Code as your agent, install these skills — they turn "dump Markdown into a folder" into "maintain a structured, interlinked knowledge system."
+<\!-- REVIEW-TODO: [source_links] kepano-obsidian-skills: Xiaohongshu source link is generic (https://www.xiaohongshu.com/) — find specific 哈哈du post URL or remove -->

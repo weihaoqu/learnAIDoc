@@ -158,6 +158,20 @@ The assembly port surfaced bugs that would never appear in Python:
 
 MicroGPT reveals that LLMs perform no magic — they're a big math function mapping input tokens to a probability distribution over the next token. Understanding these 200 lines gives you genuine insight into how ChatGPT works. The SNES port proves the point further: if a 1990 game console can run a transformer, the mechanism really is just arithmetic.
 
+## How LearnAI Team Could Use This
+
+- **Transformer fundamentals lesson** — Use MicroGPT as a readable from-scratch walkthrough before students move to PyTorch or larger model codebases.
+- **Autograd teaching module** — Have learners trace one forward and backward pass through the custom `Value` class to understand how gradients flow.
+- **Architecture comparison lab** — Compare MicroGPT's tiny GPT-style stack against production LLM diagrams to separate mechanism from scale.
+- **Systems thinking exercise** — Use the SNES-GPT port to show how model execution depends on arithmetic, memory layout, and hardware constraints.
+
+## Real-World Use Cases
+
+1. **AI education workshops** — Instructors can teach the full training loop without hiding mechanics behind tensor libraries.
+2. **Debugging intuition for LLM engineers** — Practitioners can inspect attention, loss, sampling, and optimizer behavior in a minimal codebase.
+3. **Hardware-aware ML demos** — The SNES port is a concrete example for lessons on quantization, fixed-point math, and constrained inference.
+4. **From-scratch study groups** — Learners can reimplement or modify one component at a time: tokenizer, autograd, attention, optimizer, or sampler.
+
 ## Links
 
 - **MicroGPT blog post:** [karpathy.github.io/2026/02/12/microgpt](https://karpathy.github.io/2026/02/12/microgpt/)
