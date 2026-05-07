@@ -98,6 +98,13 @@ Run reviews back and forth between models:
 | Code Review | Codex 5.4 | Catches bugs Claude misses |
 | Security Audit | Either (cross-review) | Different model = fresh eyes |
 
+## How LearnAI Team Could Use This
+
+- **AI coding curriculum** — teach students why self-review and self-written tests can miss semantic bugs
+- **Workflow demos** — show Claude-as-implementer and Codex-as-reviewer as a practical multi-model pattern
+- **Assessment design** — require adversarial review notes alongside generated code submissions
+- **Team engineering practice** — use cross-model review as a lightweight review gate for internal prototypes
+
 ## For Educators
 
 This has direct implications for teaching software engineering:
@@ -164,6 +171,13 @@ Claude Code session
 No separate runtime — wraps your machine's global `codex` binary with existing auth and config.
 
 ---
+
+## Real-World Use Cases
+
+- **Production code review** — run a different model over AI-generated diffs before merge
+- **Security-sensitive PRs** — use adversarial review for auth, data handling, and error-path risks
+- **Teaching code quality** — demonstrate why green tests are not the same as correct behavior
+- **Architecture review** — have a second model challenge plans before implementation starts
 
 ## Real-World Walkthrough: Building a REST API with Cross-Model Review
 
@@ -378,3 +392,4 @@ A single reviewer's opinion is cheap. Four independent reviewers give you breadt
 | 4-agent consensus | 4 | ~5x (3 rounds) | Highest (mutual validation) |
 
 Use single cross-model for daily work. Use 4-agent consensus for **high-stakes PRs** — release branches, security-sensitive code, architectural changes. The cost is worth it when a missed bug costs more than the review tokens.
+<\!-- REVIEW-TODO: [source_links] cross-model-code-review: Weibo source link is generic (https://weibo.com) — find specific 爱可可-爱生活 post URL -->

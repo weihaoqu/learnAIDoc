@@ -97,3 +97,17 @@ Minute 15-20: Formulate your own position on the paper
 This method is particularly valuable for teaching critical thinking in courses that assign paper reading. Instead of asking students to "summarize the paper," assign the five questions as the reading response format. The questions work across disciplines — from biology to political science to computer science.
 
 Consider pairing with Anthropic's [AI Fluency for Educators](https://anthropic.skilljar.com/) course for integrating Claude responsibly into classroom workflows.
+
+## How LearnAI Team Could Use This
+
+- **Paper-reading workshops** — turn the five questions into a repeatable classroom activity for research literacy
+- **Prompt library module** — add the template as a reusable prompt for students reviewing papers with Claude
+- **Graduate-skills accelerator** — use the method to teach assumptions, limitations, and missing references explicitly
+- **Research coaching** — help learners move from summaries to defensible critiques of academic work
+
+## Real-World Use Cases
+
+- **Journal clubs** — structure discussion around evidence, assumptions, context, debate, and missing citations
+- **Literature reviews** — identify gaps and overlooked counter-evidence before writing a synthesis
+- **Thesis supervision** — help students defend why a paper's claims do or do not follow from its methods
+- **Peer review practice** — train reviewers to critique limitations instead of only summarizing contributions
