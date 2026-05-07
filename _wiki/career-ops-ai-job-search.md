@@ -31,7 +31,7 @@ A-F Evaluation (10 weighted dimensions)
 
 **Human-in-the-loop by design** — it automates analysis, not decisions. It never auto-submits applications. The creator read every report before applying.
 
-## The 14 Skill Modes
+## Skill Modes
 
 | Command | What It Does |
 |---------|-------------|

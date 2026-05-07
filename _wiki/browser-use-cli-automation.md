@@ -81,7 +81,14 @@ The screenshot in the original post shows Claude Code using browser-use to:
 | **Managed browser** | Launch a controlled instance | Testing, CI/CD |
 | **Cloud parallel** | Run multiple browsers in parallel | Batch operations, scraping |
 
-## Use Cases
+## How LearnAI Team Could Use This
+
+- **AI workflow labs** — Demonstrate authenticated browser automation using a running Chrome session instead of a separate test profile.
+- **QA and debugging practice** — Let students inspect live pages, console output, and UI state through an AI coding agent.
+- **Agent-tooling workshops** — Compare direct CDP, managed browser, and cloud-parallel modes as examples of tool design tradeoffs.
+- **Responsible automation lessons** — Discuss why authenticated browser access needs clear user intent, scoped tasks, and careful handling of private sessions.
+
+## Real-World Use Cases
 
 | Use Case | How |
 |----------|-----|
