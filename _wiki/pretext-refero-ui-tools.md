@@ -10,6 +10,8 @@ icon: "🎨"
 image: "/assets/images/pretext-refero-ui-tools.png"
 ---
 
+*Source: [Pretext GitHub](https://github.com/chenglou/pretext) | [Pretext Demo](https://chenglou.me/pretext) | [Pretext npm](https://www.npmjs.com/package/@chenglou/pretext)*
+
 ## The Problem: AI Can Write Code, But the Result Still Looks Off
 
 AI coding assistants generate functional frontends quickly, but two persistent gaps remain: **text layout performance** and **design authenticity**. Browsers have always been slow at measuring text, and AI-generated UIs tend to converge on a bland, recognizable "AI aesthetic." Two tools from the Chinese dev community address each gap directly.
@@ -173,6 +175,18 @@ Together, they represent a practical answer to the question: *How do we make AI-
 | Ship | Both | Fast text layout + authentic design = production-ready |
 
 ---
+
+## How LearnAI Team Could Use This
+
+- Use Pretext as a case study for performance-aware AI frontend work — why DOM reads and text measurement can bottleneck text-heavy apps.
+- Use Refero to support UI prompting workshops by giving students real interface references to compare against generic AI-generated layouts.
+- Audit AI-generated UI for performance and design authenticity before shipping.
+
+## Real-World Use Cases
+
+- Building fast chat, document, or feed interfaces that need to measure text before rendering.
+- Teaching AI-assisted frontend development with real visual references instead of generic style prompts.
+- Auditing AI-generated UI for performance and design authenticity before shipping.
 
 ## Links
 

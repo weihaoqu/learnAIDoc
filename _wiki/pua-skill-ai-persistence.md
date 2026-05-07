@@ -94,7 +94,7 @@ Behind the memes, PUA Skill implements three legitimate engineering patterns:
 2. **Anti-pattern detection** — auto-triggering on the five lazy patterns is essentially a behavioral linter for AI
 3. **Verification enforcement** — "close the loop" means every claim must be backed by evidence (build output, test results). This is the same principle as [formal verification](/learnAIDoc/wiki/ai/claude-code-tips-engineering/) and [TDD](/learnAIDoc/wiki/ai/karpathy-end-of-coding/)
 
-## For Teaching
+## How LearnAI Team Could Use This
 
 This skill is a surprisingly good **teaching tool for debugging culture**:
 
@@ -102,6 +102,12 @@ This skill is a surprisingly good **teaching tool for debugging culture**:
 - **The escalation levels teach systematic debugging** — L0→L4 mirrors how experienced engineers approach problems: trust first, then systematically narrow down
 - **"Close the loop" teaches verification** — students learn that "it works" isn't enough without evidence
 - **The humor makes it memorable** — students will remember "3.25 performance review" longer than "always verify your fixes"
+
+## Real-World Use Cases
+
+- Teaching students to debug with evidence instead of guessing or blaming the environment.
+- Using the checklist as a rubric for AI coding agent behavior during labs and project work.
+- Improving agent workflows by requiring logs, tests, hypothesis changes, and proof before calling a task done.
 
 ## Further Reading
 
