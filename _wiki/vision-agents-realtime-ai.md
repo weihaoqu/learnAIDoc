@@ -68,7 +68,7 @@ Requires Stream API credentials (free tier: 333,000 participant minutes/month).
 
 **Other:** Twilio (phone calls), TurboPuffer (RAG/vector search), HeyGen (avatars), Decart (video styling)
 
-## Real-World Examples
+## Real-World Use Cases
 
 ### Golf Coach
 Combines **YOLO pose detection** with **Gemini Live** — the agent watches your swing through the phone camera, analyzes body position frame-by-frame, and gives real-time coaching feedback through voice.
@@ -103,3 +103,9 @@ Uses **Decart's Mirage model** — transforms video frames in real-time with art
 - Static image analysis (just use an LLM vision API directly)
 - Offline processing (this is built for real-time streaming)
 - Text-only agents (overkill if you don't need video/audio)
+
+## How LearnAI Team Could Use This
+
+- Build demos that show students how multimodal agents combine video, audio, tools, and reasoning.
+- Use the golf-coach or accessibility patterns as project prompts for real-time AI app lessons.
+- Compare when to use real-time video agents versus simpler static image or text-only AI workflows.

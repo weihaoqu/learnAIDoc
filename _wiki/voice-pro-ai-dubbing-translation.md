@@ -84,7 +84,7 @@ start.bat        # Launch web interface
 | Storage | 20GB+ |
 | Python | 3.10.15 |
 
-## Use Cases
+## Real-World Use Cases
 
 | Who | How They Use It |
 |-----|----------------|
@@ -102,6 +102,12 @@ The zero-shot voice cloning (clone from a short audio sample) is the most powerf
 - Potentially be misused for impersonation
 
 For educators: this is an excellent case study for AI ethics discussions — the same technology that enables accessibility (translating lectures) also enables deepfakes.
+
+## How LearnAI Team Could Use This
+
+- Create a localization workflow for course videos, tutorials, and short-form learning clips.
+- Use the tool as a hands-on example of local-first AI media pipelines.
+- Build an ethics lesson around consent, disclosure, and misuse risks in voice cloning.
 
 ## See Also: MOSS-TTS-Nano — Tiny TTS That Runs on CPU
 

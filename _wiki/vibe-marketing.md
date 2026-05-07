@@ -122,7 +122,13 @@ A [YC founder shared](https://martech.org/the-vibe-marketing-manifesto/) how the
 
 *Source: [Product Management on the AI Exponential](https://claude.com/blog/product-management-on-the-ai-exponential) | [The Vibe Marketing Manifesto](https://martech.org/the-vibe-marketing-manifesto/) | [Vibe Marketing Skills for Claude](https://www.thevibemarketer.com/skills) | [PM Skills Framework](https://github.com/deanpeters/Product-Manager-Skills)*
 
-## For AI Education
+## Real-World Use Cases
+
+- **Startup launch** — Build the marketing playbook while the AI-built product is still being developed.
+- **Market research** — Feed Claude competitor pages, reviews, transcripts, and community threads to uncover positioning gaps.
+- **Product management** — Use demos, prototypes, and model-release reviews to shorten planning cycles.
+
+## How LearnAI Team Could Use This
 
 These examples demonstrate a crucial distinction for students: **AI as tool vs AI as thinking partner**.
 
