@@ -10,9 +10,9 @@ icon: "📘"
 image: "/assets/images/claude-howto-learning-path.png"
 ---
 
-Claude Code's official docs describe features individually. **claude-howto** teaches you how to combine them into production workflows. 10 progressive modules, 119 copy-paste templates, Mermaid diagrams showing internals, self-assessment quizzes, and EPUB offline support. 26k stars, the #1 trending GitHub repo for Claude Code learning.
+Claude Code's official docs describe features individually. **claude-howto** teaches you how to combine them into production workflows. 10 progressive modules, 119 copy-paste templates, Mermaid diagrams showing internals, self-assessment quizzes, and EPUB offline support. 31k+ stars, a highly visible GitHub repo for Claude Code learning.
 
-*Source: [GitHub — luongnv89/claude-howto](https://github.com/luongnv89/claude-howto) (26.1k stars) | [Learning Roadmap](https://github.com/luongnv89/claude-howto/blob/main/LEARNING-ROADMAP.md)*
+*Source: [GitHub — luongnv89/claude-howto](https://github.com/luongnv89/claude-howto) (31k+ stars) | [Learning Roadmap](https://github.com/luongnv89/claude-howto/blob/main/LEARNING-ROADMAP.md)*
 
 ## The 10-Module Learning Path
 
@@ -40,7 +40,7 @@ Claude Code's official docs describe features individually. **claude-howto** tea
 | Learning path | Flat reference | Progressive 3-level roadmap |
 | Self-assessment | None | 8-question quiz → starting level |
 | Offline | No | EPUB build included |
-| Languages | English | EN, Vietnamese, Chinese, Ukrainian |
+| Languages | English | EN, Vietnamese, Chinese, Ukrainian, Japanese |
 
 ## 119 Templates by Category
 

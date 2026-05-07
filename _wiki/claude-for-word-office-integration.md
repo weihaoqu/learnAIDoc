@@ -10,7 +10,7 @@ icon: "📝"
 image: "/assets/images/claude-for-word-office-integration.png"
 ---
 
-Claude now lives inside Microsoft Word. Not as a chatbot sidebar that generates text you copy-paste — as a collaborator that makes **native tracked changes**. Deletions in red, insertions in green, reviewable in Word's built-in Review pane. Accept or reject each edit exactly like markup from a human co-author. Combined with Claude for Excel and PowerPoint (shared context across all three), this completes Anthropic's Office takeover — and sent $285 billion in SaaS market cap evaporating in 48 hours.
+Claude now lives inside Microsoft Word. Not as a chatbot sidebar that generates text you copy-paste — as a collaborator that makes **native tracked changes**. Deletions in red, insertions in green, reviewable in Word's built-in Review pane. Accept or reject each edit exactly like markup from a human co-author. Combined with Claude for Excel and PowerPoint (shared context across all three), this expands Anthropic's Office footprint. Separately, Claude Cowork/plugin announcements triggered a reported $285 billion SaaS-market selloff, making this Word add-in part of a broader investor debate about AI replacing vertical SaaS workflows.
 
 *Source: [Claude Help Center](https://support.claude.com/en/articles/14465370-use-claude-for-word) | [smithstephen.com Analysis](https://www.smithstephen.com/p/claude-for-word-gives-lawyers-native) | [AI for Lawyers: The SaaS-pocalypse](https://aiforlawyers.substack.com/p/the-saas-pocalypse-what-claude-cowork)*
 
@@ -40,16 +40,16 @@ Every edit is a **real Word revision** — not a suggestion bubble, not a separa
 | **Semantic navigation** | Finds thematic matches, not just keyword search |
 | **Template filling** | Inherits document styles when populating templates |
 | **Cross-app context** | Sees what's open in Word, Excel, and PowerPoint simultaneously |
-| **Model selection** | Choose Sonnet 4.6 or Opus 4.6 per task |
+| **Model selection** | Choose among the currently available Claude for Word models, including Opus 4.7, Opus 4.6, and Sonnet 4.6 |
 
 ## Availability
 
 | Detail | Status |
 |--------|--------|
-| Plans | Team ($25/seat/mo), Enterprise |
+| Plans | Pro, Max, Team, Enterprise |
 | Platforms | Mac, Windows, Word for Web |
 | Not supported | iPad, Android, Word 2016/2019 |
-| File formats | .docx and .docm only |
+| File formats | .docx; save legacy .doc files as .docx first |
 
 ## The SaaS Market Impact
 
