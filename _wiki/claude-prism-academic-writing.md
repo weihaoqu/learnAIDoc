@@ -96,13 +96,20 @@ Browse the [K-Dense Scientific Skills](https://github.com/K-Dense-AI/claude-scie
 
 **Key tradeoff:** Claude-Prism lacks real-time collaboration (Overleaf's killer feature). For solo writing and research, Claude-Prism is superior. For co-authoring with students or colleagues, you'd still need Overleaf.
 
-## For Teaching and Students
+## How LearnAI Team Could Use This
 
 - **Thesis writing tool** — students get AI assistance, templates, and Zotero integration in one app
 - **Capture & Ask for paper reading** — students can screenshot any part of a paper and ask Claude to explain it. Perfect for literature review courses
 - **Scientific skills as learning scaffolds** — domain-specific skills teach students the vocabulary and methods of their field
 - **Version history teaches git thinking** — automatic snapshots introduce version control concepts without the git CLI learning curve
 - **Free and open source** — no cost barrier for students
+
+## Real-World Use Cases
+
+1. **Solo manuscript drafting** — Researchers write LaTeX papers locally with AI help while keeping project files on disk.
+2. **Literature review workflows** — Students use Capture & Ask to inspect equations, figures, and methods while reading PDFs.
+3. **Thesis project organization** — Graduate students combine Zotero, templates, Git snapshots, and exports in one writing workspace.
+4. **STEM course writing labs** — Instructors introduce reproducible academic writing with local files, citations, and version history.
 
 ## Further Reading
 

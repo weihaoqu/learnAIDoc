@@ -83,3 +83,19 @@ You end up with:
 - A record of lessons learned (your own spaced-repetition material)
 - Deeper understanding through the act of explanation
 - A resource you can revisit when working on similar projects
+
+## How LearnAI Team Could Use This
+
+- **Student project documentation** — Ask students to maintain a personalized explanation file alongside their code so technical decisions become visible.
+- **AI-assisted tutoring** — Use the setup to make Claude Code explain architecture, bugs, and tradeoffs while students build.
+- **Capstone reflection** — Require the generated learning file as part of project submissions to capture lessons learned.
+- **Instructor review aid** — Teachers can inspect the explanation file to see whether students understand the implementation, not just whether it runs.
+
+## Real-World Use Cases
+
+1. **Junior developer onboarding** — New engineers get plain-language explanations of a codebase as they work.
+2. **Personal learning journal** — Developers build a durable record of bugs, fixes, patterns, and decisions across projects.
+3. **Code review preparation** — Teams use the explanation file to clarify why major implementation choices were made.
+4. **Self-study projects** — Learners turn every Claude Code session into structured technical notes they can revisit later.
+
+<!-- REVIEW-TODO: [source_links] No source line present — add Claude Code CLAUDE.md workflow pattern docs link -->
