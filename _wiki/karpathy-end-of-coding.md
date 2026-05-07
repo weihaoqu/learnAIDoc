@@ -172,3 +172,17 @@ This podcast is essential viewing for anyone studying CS or AI. Here's what stud
 - [Podcast Transcript](https://podscripts.co/podcasts/no-priors-artificial-intelligence-technology-startups/andrej-karpathy-on-code-agents-autoresearch-and-the-loopy-era-of-ai)
 - [Karpathy's "I've never felt this much behind" post](https://x.com/karpathy/status/2004607146781278521)
 - [Blockchain News: 10 Key Insights](https://blockchain.news/ainews/karpathy-on-coding-agents-autoresearch-and-open-vs-closed-models-10-key-insights-and-2026-ai-market-analysis)
+
+## How LearnAI Team Could Use This
+
+- Add agent orchestration labs where students manage multiple coding agents across branches.
+- Use AutoResearch-style assignments to teach experiment design, measurement, and review.
+- Teach prompt, memory, and CLAUDE.md design as explicit engineering skills.
+- Assess students on reviewing agent-generated PRs, not only writing code manually.
+
+## Real-World Use Cases
+
+1. Software teams use multiple coding agents to implement, test, and document features in parallel.
+2. ML researchers run autonomous experiment loops to search for training improvements.
+3. CS instructors redesign assignments around agent supervision and code review.
+4. Students use MicroGPT-style examples to understand model internals before extending them with agents.

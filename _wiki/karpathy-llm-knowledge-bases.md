@@ -100,7 +100,7 @@ Karpathy emphasized these when praising Farzapedia (a personal Wikipedia built f
 
 > "This approach puts 'you' in full control. The data is yours. In Universal formats. Explicit and inspectable. Use whatever AI you want over it."
 
-## Real-World Examples
+## Real-World Use Cases
 
 ### Farzapedia — Personal Wiki
 
@@ -321,7 +321,7 @@ This approach has particular potential for academic research workflows:
 | **Cost** | Free (your time) | API costs (~$5-20/month for active research) |
 | **Risk** | None | LLM may hallucinate — always verify citations |
 
-## LAI Team: Build Your Own Knowledge Base — TODO Checklist
+## How LearnAI Team Could Use This
 
 A practical checklist for the LAI research team to build a personal or team knowledge base following Karpathy's approach:
 
