@@ -12,7 +12,7 @@ image: "/assets/images/ui-sh-design-for-agents.png"
 
 AI coding agents generate functional UIs, but the results look generic. **ui.sh** is Adam Wathan's answer — the creator of Tailwind CSS built a design toolkit specifically for AI coding agents. Describe what you want, get multiple visual design options, then let your coding agent build the one you pick. It bridges the gap between "AI can code" and "AI can design well."
 
-*Source: [ui.sh](https://ui.sh/) | [Adam Wathan on X](https://x.com/adamwathan/status/2028874190061736410) | [early.tools listing](https://www.early.tools/uish)*
+*Source: [ui.sh](https://ui.sh/) | [Adam Wathan on X](https://x.com/adamwathan/status/2028874190061736410) | [early.tools listing](https://www.early.tools/uish) | [DevClass: Tailwind Labs layoffs](https://devclass.com/2026/01/08/tailwind-labs-lays-off-75-percent-of-its-engineers-thanks-to-brutal-impact-of-ai/)*
 
 ## What It Does
 

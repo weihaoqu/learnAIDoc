@@ -89,7 +89,7 @@ Supports **incremental updates** — only re-analyzes files that changed since t
 
 Also works on Codex, OpenCode, OpenClaw, Cursor, and Antigravity — see the [GitHub README](https://github.com/Lum1104/Understand-Anything#-multi-platform-installation) for platform-specific instructions.
 
-## Practical Use Cases
+## Real-World Use Cases
 
 | Scenario | Command | What You Get |
 |---|---|---|
@@ -99,6 +99,12 @@ Also works on Codex, OpenCode, OpenClaw, Cursor, and Antigravity — see the [Gi
 | Need to understand auth flow | `/understand-chat How does authentication work?` | Plain-English walkthrough grounded in actual code |
 | Onboarding a new hire | `/understand-onboard` | Auto-generated guide with key code paths |
 | Exploring unfamiliar module | `/understand-explain src/payments/stripe.ts` | Deep-dive with dependencies and explanations |
+
+## How LearnAI Team Could Use This
+
+- **Codebase onboarding labs** — Students run `/understand` on unfamiliar repos, then use the dashboard to explain architecture and dependency paths.
+- **Research software documentation** — Generate living maps for internal tools so new contributors understand modules faster.
+- **PR review teaching** — Use `/understand-diff` to show students how small code changes affect broader systems.
 
 ## How It Compares
 

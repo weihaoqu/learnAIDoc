@@ -53,11 +53,11 @@ Or via Docker — see [installation docs](https://unsloth.ai/docs/get-started/fi
 
 **Democratization of fine-tuning.** Before Unsloth, fine-tuning LLMs required deep ML expertise, expensive GPUs, and complex scripts. Now a no-code UI lets anyone with a consumer GPU create custom models from their own data.
 
-**Not just another inference tool.** The Weibo post makes an important distinction: Unsloth isn't "LM Studio with training." It's a unified training + inference + export pipeline. Train a model, test it, export it as GGUF, and deploy — all in one interface.
+**Not just another inference tool.** Coverage of Unsloth Studio makes an important distinction: Unsloth isn't "LM Studio with training." It's a unified training + inference + export pipeline. Train a model, test it, export it as GGUF, and deploy — all in one interface.
 
 **QLoRA's real impact.** The 70% VRAM reduction isn't marketing — it's the practical result of 4-bit quantized LoRA fine-tuning. This means research labs with limited GPU budgets (like university labs) can train models that were previously only accessible to well-funded teams.
 
-## For Teaching and Students
+## How LearnAI Team Could Use This
 
 | Use Case | How |
 |---|---|
@@ -68,6 +68,12 @@ Or via Docker — see [installation docs](https://unsloth.ai/docs/get-started/fi
 | **Dataset creation exercise** | Students prepare PDFs → auto-generate training data → fine-tune → evaluate |
 
 **Connection to LAI:** Can students who fine-tune their own models develop better intuition for how LLMs work? Unsloth's no-code approach makes this experiment feasible at scale.
+
+## Real-World Use Cases
+
+1. **Domain-specific assistants** — Fine-tune small models on company docs, support tickets, or course material for local deployment.
+2. **Budget research labs** — Run LoRA/QLoRA experiments on consumer NVIDIA GPUs instead of renting large cloud clusters.
+3. **Private data workflows** — Train and test local models without uploading sensitive datasets to hosted fine-tuning services.
 
 ## Further Reading
 
