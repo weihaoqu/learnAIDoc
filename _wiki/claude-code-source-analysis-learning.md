@@ -282,6 +282,20 @@ The [tvytlx/claude-code-deep-dive](https://github.com/tvytlx/claude-code-deep-di
 
 > "These methods don't need to be perfect from day one. Add one layer at a time — each layer makes the agent more stable."
 
+## How LearnAI Team Could Use This
+
+- Use the source analysis as a teaching resource for agent architecture literacy — how the model API call is ~1% and the harness is ~99%.
+- Run source-reading workshops where team members trace a specific feature through the codebase.
+- Evaluate agent architectures by comparing Claude Code's patterns against student-built or open-source alternatives.
+
+## Real-World Use Cases
+
+- Understanding how Claude Code's tool loop works before building custom skills or hooks.
+- Using the 5 agent design patterns as a checklist when reviewing agent system designs.
+- Learning from the "untrustworthy contractor" metaphor when designing permission and safety boundaries.
+
+<!-- REVIEW-TODO: [source_links] Two Weibo source links are generic (https://weibo.com/) — find specific 宝玉 xp and 爱可可-爱生活 post URLs -->
+
 ## Links
 
 - **Raschka's full analysis:** [Claude Code's Real Secret Sauce](https://sebastianraschka.com/blog/2026/claude-code-secret-sauce.html)

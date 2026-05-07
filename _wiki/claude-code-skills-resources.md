@@ -12,6 +12,8 @@ image: "/assets/images/claude-code-resources.jpg"
 
 A curated list of resources for finding, creating, and managing Claude Code skills.
 
+*Source: [Claude Code Skills docs](https://code.claude.com/docs/en/skills) | [Anthropic Skills best practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices) | linked repositories and directories below*
+
 ## Official Documentation
 
 ### Introduction & Advanced
@@ -141,6 +143,18 @@ A [community taxonomy](https://x.com/trq212/status/2033949937936085378) classifi
 > "Skills are powerful and flexible tools, but still early stage. Treat these as a collection of useful tips, not an authoritative guide. The best way to understand skills is to start, experiment, and see what works."
 
 ---
+
+## How LearnAI Team Could Use This
+
+- Discover existing skills before building new ones — check marketplaces and community lists first.
+- Use the official skill creation docs and frameworks to build LearnAI-specific skills (wiki generation, course review, research synthesis).
+- Evaluate skills by the 9-type taxonomy to ensure the team has coverage across workflow needs.
+
+## Real-World Use Cases
+
+- Finding and installing research-focused skills (literature review, citation management, paper analysis).
+- Creating custom team skills for recurring workflows (wiki entry generation, exam auditing, slide creation).
+- Browsing community skill directories for inspiration before building from scratch.
 
 ## Quick Reference
 

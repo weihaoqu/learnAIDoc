@@ -12,7 +12,7 @@ image: "/assets/images/claude-code-statusline.png"
 
 Custom status lines show up right below the composer in Claude Code, letting you display model, directory, remaining context, cost, and pretty much anything else you want to see while you work.
 
-*Source: [Claude Code creator Boris shares 12 ways that most people don't know about](https://www.reddit.com/r/ClaudeAI/comments/1r2b5xk/claude_code_creator_boris_shares_12_ways_that/)*
+*Source: [Claude Code status line configuration](https://docs.anthropic.com/en/docs/claude-code/statusline) | [Claude Code creator Boris shares 12 ways that most people don't know about](https://www.reddit.com/r/ClaudeAI/comments/1r2b5xk/claude_code_creator_boris_shares_12_ways_that/)*
 
 ## Getting Started
 
@@ -68,6 +68,18 @@ printf "[$MODEL] %s | %s | Context: ${PCT}%% | \$%.2f" \
   }
 }
 ```
+
+## How LearnAI Team Could Use This
+
+- Share a standard statusline template across the team showing git branch, model, cost, and context usage.
+- Use statusline as a teaching tool to make Claude Code's internal state visible to students during demos.
+- Monitor context growth and cost in real-time during long wiki review or documentation sessions.
+
+## Real-World Use Cases
+
+- Displaying git branch + model + token cost at a glance during multi-worktree parallel sessions.
+- Adding custom indicators (e.g., current project name, review progress) to the status bar.
+- Using statusline data to decide when to compact, switch models, or start a new session.
 
 ## Why This Matters
 
