@@ -179,6 +179,18 @@ Idea: [paste]"
 
 **Why it matters:** Without this, AI behaves like a yes-man. With it, Claude actively pushes back on weak thinking — which is exactly what you need from a collaborator.
 
+## How LearnAI Team Could Use This
+
+- Use the seven frameworks as reusable prompt patterns for curriculum planning, lesson design, research briefs, and internal reviews.
+- Turn the Meta Prompt Optimizer into a checklist for improving workshop prompts before publishing.
+- Use the Thinking Partner prompt during content reviews to surface weak assumptions before learners see the material.
+
+## Real-World Use Cases
+
+- A teacher uses System Decomposition to turn a broad AI lesson idea into a structured module plan.
+- A product team uses the Research Brief Generator to map a new AI tool category before deciding what to build.
+- A learner uses First Principles Builder to understand transformers, embeddings, or evaluation metrics from the ground up.
+
 ## How These Work Together
 
 ```

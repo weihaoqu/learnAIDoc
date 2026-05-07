@@ -64,6 +64,18 @@ Point out what I'm avoiding. Tell me the opportunity cost."
 
 The balance: ask for honesty, not hostility.
 
+## How LearnAI Team Could Use This
+
+- Teach these short lines as compact modifiers learners can add to almost any prompt.
+- Use "Be honest, not agreeable" as a default review stance for lesson drafts, rubrics, and AI-generated explanations.
+- Include the context warning in workshops so learners understand why copied prompts often fail.
+
+## Real-World Use Cases
+
+- A student adds "Assume I am wrong. Show me where." before submitting an argument or solution.
+- A content creator uses "If you don't know exactly, say UNKNOWN." when fact-checking claims.
+- A team lead uses "Stop agreeing" carefully during planning to surface risks without turning feedback hostile.
+
 ## The Counterintuitive Truth About Viral Prompts
 
 A key insight from the thread that most people miss:

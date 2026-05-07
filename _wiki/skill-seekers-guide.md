@@ -92,6 +92,20 @@ Skill Seekers has a built-in Model Context Protocol (MCP) server. Once set up, j
 
 > "Generate a config for this GitHub repo and package it."
 
+## How LearnAI Team Could Use This
+
+- Convert frequently referenced AI tool documentation into reusable Claude Skills for lesson development.
+- Package internal guides as skills so team members can query them consistently inside Claude Code.
+- Use the unified docs-plus-code workflow to check whether training examples drift from current source code.
+
+## Real-World Use Cases
+
+- A curriculum designer turns React, Tailwind, or OpenAI docs into a Claude Skill before writing a module.
+- A developer packages a project repo and docs so Claude can answer implementation questions with local context.
+- A training team converts PDF manuals into searchable skills for workshops and support material.
+
+<!-- REVIEW-TODO: [source_links] No source line present — add PyPI or GitHub URL -->
+
 ## Quick Reference
 
 | Command | Purpose |

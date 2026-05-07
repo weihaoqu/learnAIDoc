@@ -1,7 +1,7 @@
 {
   "total": 162,
-  "reviewed": 142,
-  "lastRun": "2026-05-07T20:14:00Z",
+  "reviewed": 145,
+  "lastRun": "2026-05-07T20:34:00Z",
   "entries": {
     "accio-work-ai-agent-business.md": {
       "status": "reviewed",
@@ -1424,34 +1424,34 @@
       "obsidianNote": "exists"
     },
     "seven-framework-prompts-thinking-partner.md": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "reviewed",
+      "attempts": 1,
       "startedAt": null,
-      "reviewedAt": null,
-      "verdict": null,
-      "fixCount": 0,
+      "reviewedAt": "2026-05-07T20:30:00Z",
+      "verdict": "NEEDS_FIXES",
+      "fixCount": 2,
       "lastError": null,
-      "obsidianNote": "pending"
+      "obsidianNote": "exists"
     },
     "shortest-prompt-lines-that-work.md": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "reviewed",
+      "attempts": 1,
       "startedAt": null,
-      "reviewedAt": null,
-      "verdict": null,
-      "fixCount": 0,
+      "reviewedAt": "2026-05-07T20:32:00Z",
+      "verdict": "NEEDS_FIXES",
+      "fixCount": 2,
       "lastError": null,
-      "obsidianNote": "pending"
+      "obsidianNote": "exists"
     },
     "skill-seekers-guide.md": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "reviewed",
+      "attempts": 1,
       "startedAt": null,
-      "reviewedAt": null,
-      "verdict": null,
-      "fixCount": 0,
+      "reviewedAt": "2026-05-07T20:34:00Z",
+      "verdict": "NEEDS_FIXES",
+      "fixCount": 2,
       "lastError": null,
-      "obsidianNote": "pending"
+      "obsidianNote": "exists"
     },
     "socratic-prompting-method.md": {
       "status": "pending",
