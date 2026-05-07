@@ -110,7 +110,7 @@ val_bpb on our tiny language model.
 - Don't try distributed training
 ```
 
-## Use Cases
+## Real-World Use Cases
 
 ### Hyperparameter Search
 Let the agent systematically explore learning rates, batch sizes, warmup schedules, and weight decay overnight.
@@ -199,7 +199,7 @@ One practitioner turned this into a reusable pattern ([ref](https://x.com/itsole
 
 The changelog becomes the most valuable output — it records what works and what doesn't for that specific skill. When better models come out, hand the changelog to the new agent and it continues optimizing from where the last one left off.
 
-### For Teaching
+## How LearnAI Team Could Use This
 
 This pattern teaches students a fundamental concept: **anything with a measurable outcome can be optimized automatically**. The human's job is defining what "good" means (the rubric), not doing the optimization manually. This connects directly to:
 

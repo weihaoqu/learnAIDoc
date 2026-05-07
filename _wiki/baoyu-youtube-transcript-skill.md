@@ -97,7 +97,13 @@ InnerTube API:
 
 InnerTube is YouTube's internal API for fetching subtitle/caption data. It's publicly accessible (YouTube's own player uses it) but has no official documentation. The skill wraps this into a clean interface.
 
-## Usage in Workflows
+## How LearnAI Team Could Use This
+
+- Turn YouTube lectures, conference talks, tutorials, and Chinese/English AI commentary videos into searchable study notes and wiki drafts.
+- Build lesson materials from public video sources while preserving timestamps for review and citation.
+- Extract transcripts for translation workflows — English lectures → Chinese notes for bilingual learners.
+
+## Real-World Use Cases
 
 This skill is particularly powerful when combined with other tools:
 
@@ -119,3 +125,4 @@ npx skills add jimliu/baoyu-skills --skill baoyu-youtube-transcript
 /plugin
 # Search for baoyu-skills or utility-skills
 ```
+<\!-- REVIEW-TODO: [source_links] Weibo source link is generic (https://weibo.com) — find specific 宝玉 xp post URL and add specific repo/marketplace link -->

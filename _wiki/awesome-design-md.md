@@ -122,3 +122,18 @@ This makes it more flexible than brand-specific DESIGN.md files — you can dial
 | "Export semantic design rules for Google Stitch" | stitch-skill |
 
 Use both together: `DESIGN.md` for brand identity + `taste-skill` for general polish and output quality.
+
+## How LearnAI Team Could Use This
+
+- Use Awesome DESIGN.md as a fast way to prototype course dashboards, internal tools, and demo apps with a consistent visual direction.
+- Ask students to compare outputs with and without a DESIGN.md file to understand how written design constraints shape AI-generated interfaces.
+- Build branded LearnAI microsites by referencing curated design systems.
+
+## Real-World Use Cases
+
+- Build branded dashboards or admin panels with Claude Code, Cursor, or Windsurf.
+- Redesign generic AI-generated pages using a known product aesthetic like Linear, Apple, or Stripe.
+- Teach students how design systems translate into concrete UI decisions.
+- Create consistent prototypes before investing in a full design system.
+
+<!-- REVIEW-TODO: [source_links] Weibo source for taste-skill section is generic (https://weibo.com/) — find specific 默庵·超级个体 post URL -->
