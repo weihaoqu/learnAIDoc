@@ -1,7 +1,7 @@
 {
   "total": 162,
-  "reviewed": 145,
-  "lastRun": "2026-05-07T20:34:00Z",
+  "reviewed": 148,
+  "lastRun": "2026-05-07T20:54:00Z",
   "entries": {
     "accio-work-ai-agent-business.md": {
       "status": "reviewed",
@@ -1454,34 +1454,34 @@
       "obsidianNote": "exists"
     },
     "socratic-prompting-method.md": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "reviewed",
+      "attempts": 1,
       "startedAt": null,
-      "reviewedAt": null,
-      "verdict": null,
+      "reviewedAt": "2026-05-07T20:50:00Z",
+      "verdict": "CLEAN",
       "fixCount": 0,
       "lastError": null,
-      "obsidianNote": "pending"
+      "obsidianNote": "exists"
     },
     "specops-spec-driven-development.md": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "reviewed",
+      "attempts": 1,
       "startedAt": null,
-      "reviewedAt": null,
-      "verdict": null,
+      "reviewedAt": "2026-05-07T20:52:00Z",
+      "verdict": "CLEAN",
       "fixCount": 0,
       "lastError": null,
-      "obsidianNote": "pending"
+      "obsidianNote": "exists"
     },
     "supermemory-ai-context-engine.md": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "reviewed",
+      "attempts": 1,
       "startedAt": null,
-      "reviewedAt": null,
-      "verdict": null,
-      "fixCount": 0,
+      "reviewedAt": "2026-05-07T20:54:00Z",
+      "verdict": "NEEDS_FIXES",
+      "fixCount": 2,
       "lastError": null,
-      "obsidianNote": "pending"
+      "obsidianNote": "exists"
     },
     "taste-skill-ai-frontend-design.md": {
       "status": "pending",
