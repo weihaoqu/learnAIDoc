@@ -32,7 +32,7 @@ User: "I want to sell outdoor camping gear to the US market"
 │ + demand │ + pricing│ + brand  │ + images│
 └──────────┴──────────┴──────────┴────────┘
          ↓
-Complete online store live in ~30 minutes
+Market analysis, product selection, store design, and listing completed in ~30 minutes
 ```
 
 | Capability | What the Agents Handle |
@@ -44,6 +44,12 @@ Complete online store live in ~30 minutes
 | **CRM** | Customer communication, follow-ups |
 
 All handled in one conversation — no switching between tools.
+
+## Real-World Use Cases
+
+- **Solo e-commerce launch:** A founder can test a product idea by generating market analysis, product selection, store design, and listings in one workflow.
+- **Cross-border sourcing:** Small businesses can use agents to match suppliers, compare pricing, and support procurement negotiations.
+- **Operations automation:** Merchants can delegate repeatable work such as listing updates, marketing content, customer follow-ups, and inventory monitoring.
 
 ## The "Super Individual" Trend
 
@@ -79,3 +85,9 @@ This is the business-operations equivalent of what Claude Code did for software 
 3. **The bottleneck shifts upward** (from "how to do it" to "what's worth doing")
 
 For educators: this is a concrete example of AI agents transforming roles beyond technical fields — relevant to business students, entrepreneurship programs, and anyone studying AI's economic impact.
+
+## How LearnAI Team Could Use This
+
+- Use Accio Work as a non-coding example of agentic workflows for business, entrepreneurship, and operations audiences.
+- Build a classroom discussion around how roles change when one person coordinates specialized AI agents instead of managing a human team.
+- Compare Accio Work with general assistants like ChatGPT or Claude to show why domain data, permissions, and workflow integration matter for practical AI adoption.
