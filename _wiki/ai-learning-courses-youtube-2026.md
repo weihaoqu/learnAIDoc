@@ -79,7 +79,16 @@ There has never been more free, high-quality AI education available than right n
 
 ---
 
-## Sources
+## How LearnAI Team Could Use This
 
-- 爱可可-爱生活 (Weibo) — Curated generative AI learning paths with certificates
-- 张岱橙 (Weibo, 2026-03-30) — Best YouTube channels for learning AI in 2026
+- Build this into an onboarding roadmap for new team members who need AI fundamentals, tool fluency, and ongoing research awareness.
+- Use the course table to recommend role-specific learning tracks: teachers, builders, researchers, and curriculum designers.
+- Convert the YouTube channel list into a shared watch-and-discuss rotation for weekly team learning.
+
+## Real-World Use Cases
+
+- **Teacher onboarding:** Give instructors a sequenced AI literacy path before they design AI-assisted assignments.
+- **Student advising:** Recommend beginner, intermediate, or advanced tracks based on a learner's current math and coding background.
+- **Team learning program:** Pair short courses with weekly YouTube paper or tool discussions to keep the curriculum current.
+
+*Source: 爱可可-爱生活 (Weibo) — curated generative AI learning paths with certificates | 张岱橙 (Weibo, 2026-03-30) — best YouTube channels for learning AI in 2026*

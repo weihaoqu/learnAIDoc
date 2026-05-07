@@ -5,14 +5,14 @@ category: Skills & Plugins
 redirect_from:
   - "/wiki/tools/ai-health-vault-obsidian/"
 tags: [obsidian, health, claude-code, skills, privacy, templates, family, apple-watch, medical-records]
-related: []
+related: ["Claude Code Hooks — Automate Your Workflow with Event-Driven Scripts", "Non-Coding Superpowers — 50 Things Claude Code Can Do That Aren't Programming"]
 icon: "🏥"
 image: "/assets/images/ai-health-vault-obsidian.png"
 ---
 
 Your parents' medical reports are scattered across hospitals. Nobody tracks medication changes or follow-up dates. Commercial health apps want your data on their servers. **AI Health Vault** solves this with a different approach: an Obsidian vault with templates, prompts, and 8 Claude Code skills that turn your local folder into a private, AI-powered health archive for your whole family.
 
-*Source: [GitHub — runesleo/ai-health-vault](https://github.com/runesleo/ai-health-vault) | [Xiaohongshu post](https://www.xiaohongshu.com/)*
+*Source: [GitHub — runesleo/ai-health-vault](https://github.com/runesleo/ai-health-vault)*
 
 ## Why This Exists
 
@@ -110,6 +110,19 @@ This isn't a complex engineering project — it's **8 well-crafted prompts + a f
 1. **Skills as the product** — The entire value is in the Claude Code skills and Obsidian templates. No backend, no database, no deployment. This is what "software is prompts" looks like in practice.
 2. **Family-scale AI** — Most AI tools target individual productivity. This targets family health — a use case where data privacy and long-term continuity matter more than features.
 3. **Obsidian as platform** — Shows Obsidian's potential as more than a note-taking app: with the right templates + AI skills, it becomes a domain-specific application.
+
+## How LearnAI Team Could Use This
+
+- Build an internal privacy-first health-record demo showing how local vaults, templates, and AI skills can become a practical domain app.
+- Use the project as a case study for prompt-packaged workflows: skills, folder structure, and repeatable outputs instead of a traditional SaaS backend.
+- Adapt the pattern for other sensitive-document workflows such as insurance, elder care, school records, or legal paperwork where local-first storage matters.
+
+## Real-World Use Cases
+
+- Adult children organizing parents' checkups, medication lists, follow-up dates, and doctor-visit notes in one local vault.
+- Families comparing lab reports over time to spot changes worth discussing with a clinician.
+- Caregivers preparing concise visit summaries and question lists before appointments.
+- Privacy-conscious users extracting structured notes from medical reports without storing a full health history in a commercial app.
 
 ## Links
 

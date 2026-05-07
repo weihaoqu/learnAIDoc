@@ -68,3 +68,17 @@ As AI moves from "doing" to "proposing," humans must move from "doing" to "super
 
 ### Sustainable Expertise
 Long-term professional development depends on maintaining expertise amid AI proliferation. Learn high-engagement interaction patterns (like Conceptual Inquiry) rather than mere prompt engineering for output.
+
+## How LearnAI Team Could Use This
+
+- Design AI literacy activities that require learners to explain, debug, and revise AI-generated work rather than simply accept it.
+- Build reflection checkpoints into AI-assisted assignments: What did the AI suggest? Why does it work? What alternatives were considered?
+- Teach interaction patterns explicitly, contrasting high-engagement uses like conceptual inquiry with low-engagement delegation.
+- Emphasize code reading, debugging, and verification as core AI-era skills, not secondary technical details.
+
+## Real-World Use Cases
+
+- **Coding bootcamps:** Require students to annotate AI-generated code and explain each design choice before submission.
+- **Teacher professional development:** Use the study to frame AI as a coaching tool rather than an answer-production tool.
+- **Workplace training:** Pair AI-assisted productivity tasks with independent debugging and review exercises.
+- **Curriculum design:** Create assignments where learners first attempt a task independently, then use AI for targeted feedback or conceptual clarification.
