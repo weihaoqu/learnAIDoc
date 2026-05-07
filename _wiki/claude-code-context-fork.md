@@ -12,6 +12,8 @@ image: "/assets/images/claude-code-context-fork.jpg"
 
 Today I learned you can add `context: fork` to a Claude Code skill so it runs in a completely isolated subagent — with its own context window. It does the work, returns a summary, and your main conversation stays clean.
 
+*Source: [Claude Code Skills Documentation](https://code.claude.com/docs/en/skills)*
+
 ## The Problem
 
 Some tasks produce massive output — deep research, large test runs, code analysis across dozens of files. Running these inline floods your main conversation's context window with verbose intermediate results you don't need to see.
@@ -52,7 +54,13 @@ The `agent` field controls which subagent runs the forked skill:
 | `Plan` | Planning before implementation | Inherited | Read-only |
 | `general-purpose` | Tasks needing both analysis and edits | Inherited | All tools |
 
-## Practical Examples
+## How LearnAI Team Could Use This
+
+- Use forked skills for heavy research tasks (literature review, codebase analysis) that would flood the main session.
+- Build forked PR summary skills that analyze diffs in isolation and return concise change summaries.
+- Create forked security scan skills that audit code without polluting the main conversation with verbose findings.
+
+## Real-World Use Cases
 
 ### Deep Codebase Research
 

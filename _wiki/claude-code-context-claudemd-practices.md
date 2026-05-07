@@ -280,6 +280,20 @@ your-project/
 
 Configure once, benefit every session. The more structured your `.claude/` directory, the more reliable and consistent Claude's output becomes.
 
+## How LearnAI Team Could Use This
+
+- Prune shared CLAUDE.md files using the Boris template: keep under 100 lines, move specifics to sub-folder files.
+- Move deterministic rules into hooks instead of prompt instructions — code enforcement over prompt suggestions.
+- Use the three-role architecture (Researcher → Planner → Executor) for complex documentation and wiki update tasks.
+- Audit CLAUDE.md quarterly: delete rules you can't remember writing, convert verbose instructions into 3-word imperatives.
+
+## Real-World Use Cases
+
+- Running `claude-md-management` plugin to audit and prune bloated CLAUDE.md files across projects.
+- Setting up Citadel-style agent routing to use cheaper models for simple tasks and Opus for complex reasoning.
+- Converting project-specific rules from global CLAUDE.md into sub-folder `.claude/CLAUDE.md` files that only load in context.
+- Using hooks for deterministic enforcement (formatting, commit messages, security checks) instead of relying on prompt compliance.
+
 ## Key Takeaway
 
 The article's closing line sums it up: using AI coding tools well isn't about finding the perfect configuration — it's about **understanding how the tool works, then building systems that flow with it**.

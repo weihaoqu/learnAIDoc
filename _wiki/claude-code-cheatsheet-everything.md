@@ -173,7 +173,7 @@ You installed Claude Code, ran a few prompts — now what? The official docs des
 
 Total: ~11-13 hours for the full path, but you get value in 15 minutes.
 
-### What You Can Build
+## Real-World Use Cases
 
 | Use Case | Features Combined |
 |---|---|
@@ -213,6 +213,13 @@ cp -r 03-skills/code-review ~/.claude/skills/
 ```
 
 ---
+
+## How LearnAI Team Could Use This
+
+- Use the cheat sheet as a quick-reference handout for Claude Code onboarding workshops.
+- Fork the everything-claude-code repo as a starting template for team-standardized CLAUDE.md, skills, and MCP configs.
+- Assign Claude How-To modules as progressive homework for new team members learning agent workflows.
+- Build a shared team CLAUDE.md using the Boris template pattern from the everything repo.
 
 ## How to Use These Resources
 
