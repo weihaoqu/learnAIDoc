@@ -94,15 +94,19 @@ Claude uses Playwright under the hood to measure image aspect ratios, auto-optim
 | Formatting specs | Conference instructions URL | Asked if missing |
 | Logos | Auto-downloaded from your website | Auto |
 
-## Why This Matters for Academics and Students
+## How LearnAI Team Could Use This
 
-**For researchers:** Conference poster deadlines are always tight. This turns a multi-hour layout task into a 15-minute refinement session. You focus on content decisions (what to emphasize, what to cut), not pixel-pushing.
+- **Research methods courses** — have students generate and refine posters from papers they are already writing.
+- **Poster design workshops** — teach visual hierarchy, column proportions, whitespace, and figure selection through hands-on editing.
+- **AI collaboration studies** — observe the loop of AI-generated draft, human layout edits, JSON feedback, and Claude refinement.
+- **Conference prep support** — help students and researchers move from paper draft to poster draft faster.
 
-**For students:** First-time poster presentations are intimidating. Posterskill generates a professional-looking draft automatically — students learn poster design by refining an AI-generated starting point rather than staring at a blank canvas.
+## Real-World Use Cases
 
-**For courses:** Could be integrated into research methods courses where students present findings. The interactive editing teaches layout principles (column proportions, visual hierarchy, whitespace) through hands-on manipulation.
-
-**For AI education research:** Demonstrates the "AI as collaborator" model — the AI generates a draft, the human refines it through an iterative feedback loop (edit in browser → copy JSON → Claude refines → repeat). This is exactly the kind of human-AI collaboration workflow that LAI research can study.
+- **Researchers** — turn a completed paper into a print-ready poster draft before a deadline.
+- **Graduate students** — get a professional starting point for first-time poster presentations.
+- **Course instructors** — integrate poster creation into project-based research classes.
+- **Academic labs** — standardize poster workflows while preserving manual control over final content and layout.
 
 ## Further Reading
 

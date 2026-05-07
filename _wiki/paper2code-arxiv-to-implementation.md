@@ -118,6 +118,20 @@ The `walkthrough.ipynb` is especially useful: it maps "paper paragraph → corre
 - **Students** learning how papers translate into implementations
 - **Reviewers** checking if a paper's described method is internally consistent
 
+## How LearnAI Team Could Use This
+
+- **Paper-to-code labs** — have students generate implementations, then audit which details were specified versus inferred.
+- **Research reproducibility demos** — compare generated code against official repositories to teach implementation gaps.
+- **Critical reading practice** — use ambiguity labels to show where papers leave out operational details.
+- **Course project scaffolding** — help students bootstrap runnable baselines from assigned ArXiv papers.
+
+## Real-World Use Cases
+
+- **Research engineers** — quickly turn papers into inspectable prototype implementations.
+- **ML teams** — evaluate whether a new method is worth deeper reproduction work.
+- **Peer reviewers** — check whether a method description is complete enough to implement.
+- **Graduate students** — learn how equations, architecture descriptions, and hyperparameters map into code.
+
 ## Related: PaperCoder (Academic Research)
 
 A separate academic project called [PaperCoder](https://arxiv.org/abs/2504.17192) (arXiv 2504.17192) also tackles paper-to-code generation using a multi-agent framework with planning, analysis, and generation stages. It achieves strong results on the PaperBench benchmark. While different from this Claude Code skill, both address the same fundamental reproducibility challenge.
