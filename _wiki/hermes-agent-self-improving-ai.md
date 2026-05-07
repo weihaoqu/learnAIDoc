@@ -10,9 +10,9 @@ icon: "🔮"
 image: "/assets/images/hermes-agent-self-improving-ai.png"
 ---
 
-Most AI agents do what you tell them. **Hermes Agent** does what you tell it, then learns how it did it, writes a reusable skill, and gets faster next time. Built by Nous Research (64k+ GitHub stars, MIT licensed), it's the first widely-adopted agent with a genuine self-improvement loop — task execution → skill extraction → skill refinement → persistent memory. The key distinction from tools like OpenClaw: "OpenClaw is you directing it; Hermes gets smarter on its own."
+Most AI agents do what you tell them. **Hermes Agent** does what you tell it, then learns how it did it, writes a reusable skill, and gets faster next time. Built by Nous Research (136k+ GitHub stars, MIT licensed), it's the first widely-adopted agent with a genuine self-improvement loop — task execution → skill extraction → skill refinement → persistent memory. The key distinction from tools like OpenClaw: "OpenClaw is you directing it; Hermes gets smarter on its own."
 
-*Source: [GitHub — NousResearch/hermes-agent](https://github.com/nousresearch/hermes-agent) (64.2k stars) | [Official Docs](https://hermes-agent.nousresearch.com/docs/) | [NxCode Complete Guide](https://www.nxcode.io/resources/news/hermes-agent-complete-guide-self-improving-ai-2026)*
+*Source: [GitHub — NousResearch/hermes-agent](https://github.com/nousresearch/hermes-agent) (136k stars) | [Official Docs](https://hermes-agent.nousresearch.com/docs/) | [NxCode Complete Guide](https://www.nxcode.io/resources/news/hermes-agent-complete-guide-self-improving-ai-2026)*
 
 ## How Self-Improvement Works
 
@@ -75,7 +75,7 @@ Most AI agents do what you tell them. **Hermes Agent** does what you tell it, th
 | Dimension | Hermes Agent | OpenClaw | Claude Code |
 |-----------|-------------|----------|-------------|
 | **Philosophy** | Self-improving autonomy | Breadth of integration | Anthropic's native CLI |
-| **Stars** | 64k | 345k | N/A (proprietary) |
+| **Stars** | 136k | 358k | N/A (proprietary) |
 | **Self-improvement** | Autonomous skill creation | Manual curation | Project memory (CLAUDE.md) |
 | **Models** | 200+ (any provider) | Multi-model | Claude only |
 | **Platforms** | 15+ messaging channels | 6 channels | CLI only |
@@ -96,12 +96,12 @@ Migrates: persona files, memory, skills, messaging configs, API keys, workspace 
 
 - **Self-evaluation is unreliable** — "It always thinks it did a good job. ALWAYS." (Reddit, 107 upvotes)
 - **Auto-skills can overwrite manual ones** — User-created skills may be modified by the agent's refinement loop
-- **Only 6 releases** — Less mature than OpenClaw's 82 releases
+- **Fast-moving release history** — The project is evolving quickly, so setup details and limitations may change between releases
 - **Smaller ecosystem** — Fewer integrations and community tools than OpenClaw
 
 ## How LearnAI Team Could Use This
 
-- **Research assistant that learns** — Set up Hermes for a research project. Over weeks, it learns your paper search patterns, citation style, and analysis preferences. The 40% speed gain on repeated tasks is real for literature review workflows.
+- **Research assistant that learns** — Set up Hermes for a research project. Over weeks, it learns your paper search patterns, citation style, and analysis preferences. The claimed 40% speed gain on repeated tasks could be useful for literature review workflows if it holds in LearnAI's usage.
 - **Course content automation** — A Hermes agent that generates quiz questions, formats slides, or creates code examples. It learns your course style and gets better each semester.
 - **Student project mentor** — Deploy on Discord/Slack for a course channel. Students ask questions, the agent learns common misconceptions and builds skills to address them proactively.
 - **Cross-platform teaching** — Same agent accessible via Telegram (students), Slack (TAs), and CLI (instructor). Conversation continuity across all channels.

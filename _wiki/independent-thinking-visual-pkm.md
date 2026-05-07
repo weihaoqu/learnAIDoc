@@ -3,7 +3,7 @@ title: "Independent Thinking in the Age of AI — Visual PKM and 4D Knowledge"
 date: 2026-04-20
 category: AI Education
 tags: [visual-thinking, pkm, obsidian, excalidraw, critical-thinking, ai-agency, note-taking, cognitive-science]
-related: ["Learning Effectively in the AI Era", "Obsidian Visual Skills — Interactive Diagrams with Claude Code", "Critical Paper Reading — Five Questions That Actually Work", "kepano/obsidian-skills — Agent Skills That Let AI Edit Your Vault"]
+related: ["Obsidian Visual Skills Pack — Generate Excalidraw, Mermaid & Canvas Diagrams from Text", "Five Questions for Critical Paper Reading — The Cambridge Method with Claude", "kepano/obsidian-skills — Agent Skills That Let AI Edit Your Vault"]
 icon: "🧠"
 image: "/assets/images/independent-thinking-visual-pkm.png"
 ---

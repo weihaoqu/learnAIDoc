@@ -8,9 +8,9 @@ icon: "📊"
 image: "/assets/images/html-ppt-studio-skill.png"
 ---
 
-HTML PPT Studio is an AgentSkill that turns Claude Code into a full presentation design tool. One install command gives you **36 themes**, **31 page layouts**, **47 animations** (27 CSS + 20 canvas FX), **15 full-deck templates**, and a **presenter mode** with speaker scripts and timer — all pure static HTML/CSS/JS with zero build step. 922+ stars on GitHub (and climbing fast since launch on April 15, 2026).
+HTML PPT Studio is an AgentSkill that turns Claude Code into a full presentation design tool. One install command gives you **36 themes**, **31 page layouts**, **47 animations** (27 CSS + 20 canvas FX), **15 full-deck templates**, and a **presenter mode** with speaker scripts and timer — all pure static HTML/CSS/JS with zero build step. 2.9k+ stars on GitHub (and climbing fast since launch on April 15, 2026).
 
-*Source: [GitHub — lewislulu/html-ppt-skill](https://github.com/lewislulu/html-ppt-skill) (922+ stars, MIT license) | Originally surfaced via Xiaohongshu post by @冰雨学AI*
+*Source: [GitHub — lewislulu/html-ppt-skill](https://github.com/lewislulu/html-ppt-skill) (2.9k+ stars, MIT license) | Originally surfaced via Xiaohongshu post by @冰雨学AI*
 
 ## Why This Matters
 
