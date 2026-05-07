@@ -81,3 +81,18 @@ Total: ~50 minutes to go from "I've heard of this" to "I understand the structur
 ## For Educators
 
 These prompts can be assigned as homework. Instead of "read Chapter 3 and summarize," try: "Use these five prompts on Chapter 3's topic, then write a one-page reflection on what surprised you." Students engage with the *structure* of knowledge, not just its surface.
+
+## How LearnAI Team Could Use This
+
+- **Course assignments** — Turn passive reading into active field-mapping homework: students identify mental models, expert disagreements, and prerequisite chains before class discussion.
+- **Research onboarding** — Give new LearnAI contributors a repeatable prompt sequence for quickly understanding unfamiliar domains.
+- **Office hours and tutoring** — Use the blind-spot prompt to diagnose where a learner's explanation is shallow or missing prerequisites.
+- **Curriculum design** — Use the knowledge-map prompt to sequence modules from prerequisites to advanced follow-up topics.
+
+## Real-World Use Cases
+
+1. **Self-study plan creation** — Map prerequisites and next topics before committing weeks to a course.
+2. **Exam preparation** — Understanding-test questions reveal whether students can transfer concepts instead of reciting definitions.
+3. **Professional upskilling** — Engineers entering a new field identify expert mental models and live disagreements.
+4. **Teacher lesson planning** — Turn a chapter into discussion prompts, misconception checks, and extension topics.
+5. **Research literature entry** — Use disagreement and blind-spot prompts to locate open questions and contested assumptions.

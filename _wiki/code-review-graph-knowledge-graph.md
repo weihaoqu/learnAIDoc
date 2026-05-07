@@ -12,7 +12,7 @@ image: "/assets/images/code-review-graph-knowledge-graph.png"
 
 Every time you ask Claude Code to review changes, it re-reads your entire codebase — burning tokens, hitting context limits, and sometimes hallucinating about files it barely scanned. **Code Review Graph** solves this by parsing your codebase into a persistent knowledge graph with Tree-sitter, then exposing it via MCP. When files change, it traces the blast radius — callers, dependents, tests — and feeds only the relevant files to your AI. Average token reduction: **8.2x**. On monorepos: up to **49x**.
 
-*Source: [GitHub — tirth8205/code-review-graph](https://github.com/tirth8205/code-review-graph) (9.5k stars) | [code-review-graph.com](https://code-review-graph.com)*
+*Source: [GitHub — tirth8205/code-review-graph](https://github.com/tirth8205/code-review-graph) (15.6k stars) | [code-review-graph.com](https://code-review-graph.com)*
 
 ## How It Works
 
@@ -43,11 +43,11 @@ Three core mechanisms:
 
 **Caveat:** Small single-file edits in small packages (Express) can show 0.7x — graph overhead exceeds raw file size.
 
-## 19 Supported Languages
+## 23 Supported Languages
 
-Python, TypeScript/TSX, JavaScript, Vue, Go, Rust, Java, Scala, C#, Ruby, Kotlin, PHP, C, C++, Swift, Dart, Solidity, Lua, R + Jupyter/Databricks notebooks.
+Python, TypeScript/TSX, JavaScript, Vue, Svelte, Go, Rust, Java, Scala, C#, Ruby, Kotlin, PHP, C/C++, Swift, Dart, Solidity, Lua, R, Perl, Zig, PowerShell, Julia + Jupyter/Databricks notebooks.
 
-## 22 MCP Tools
+## 28 MCP Tools
 
 | Category | Tools |
 |----------|-------|
