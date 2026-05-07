@@ -91,3 +91,17 @@ Want to learn English from *Spider-Man*?
 | Migaku | Browser extension for any video | $10/mo | No |
 
 MuJing's advantage: **you use your own content**, it works completely offline, and it's free. The tradeoff is it's desktop-only and requires you to source your own media.
+
+## How LearnAI Team Could Use This
+
+- **Language-learning demos** — Use MuJing to show how authentic media becomes structured vocabulary practice.
+- **AI education examples** — Compare context-rich study workflows against isolated flashcard memorization.
+- **Workshop activities** — Have learners import a short clip, extract vocabulary, and build a study routine.
+- **Curriculum design** — Adapt the contextual-learning pattern for other subjects where examples matter more than definitions.
+
+## Real-World Use Cases
+
+- **English learners** studying vocabulary from movies, TV shows, and subtitles they enjoy.
+- **Teachers** preparing vocabulary lists from assigned videos or reading materials.
+- **Self-study students** practicing listening, spelling, and review offline on desktop.
+- **Exam prep learners** filtering extracted words by CET-4, CET-6, GRE, or core vocabulary levels.

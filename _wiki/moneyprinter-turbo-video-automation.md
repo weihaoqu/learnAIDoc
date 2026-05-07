@@ -96,3 +96,17 @@ This tool embodies the same pattern as Accio Work for business: **AI handles pro
 | Review final output | Compose everything together |
 
 For daily content creators — especially those producing 1-3 short videos per day — this eliminates hours of repetitive production work. The bottleneck shifts from "how to make videos" to "what videos are worth making."
+
+## How LearnAI Team Could Use This
+
+- **Short-form lesson production** — Turn AI tool explainers, workshop recaps, and glossary topics into draft short videos for review.
+- **Content operations training** — Use the pipeline as a case study for separating human editorial judgment from automated production.
+- **Multilingual outreach** — Generate first-pass narrated clips for different learner audiences.
+- **Automation curriculum** — Demonstrate how LLMs, stock media, TTS, subtitles, and composition tools chain into one workflow.
+
+## Real-World Use Cases
+
+- **Solo creators** producing daily TikTok, Shorts, or Douyin videos from topic lists.
+- **Marketing teams** generating rough cuts for campaign ideas before handing finalists to editors.
+- **Educators** turning lesson summaries into captioned explainer clips.
+- **Indie builders** creating quick product update videos without a full editing workflow.
