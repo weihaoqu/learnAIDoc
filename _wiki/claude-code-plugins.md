@@ -70,6 +70,18 @@ The most practical advice from community discussions:
 | **Remove 80% of tools you're not using** | Too many tools makes Claude confused (Vercel learned this the hard way) |
 | **Read the official docs first** | Community posts often contain errors |
 
+## How LearnAI Team Could Use This
+
+- Package repeatable Claude Code setup as a private plugin marketplace: approved MCP servers, skills, hooks, and agents for course production, documentation review, and research workflows.
+- New team members open a project and inherit the same toolchain instead of manually copying local config.
+- Keep security-sensitive hooks and permissions consistent across team projects.
+
+## Real-World Use Cases
+
+- Publish a LearnAI internal marketplace with standard review, docs, and research plugins.
+- Bundle onboarding tools so contributors get the right skills and MCPs automatically.
+- Distribute custom slash commands for team-specific workflows (e.g., `/review-wiki`, `/mywiki`).
+
 ## Why This Matters
 
 Plugins turn Claude Code from a single-purpose CLI into an extensible platform. Instead of each developer manually configuring MCPs, writing custom hooks, or sharing skills via copy-paste, plugins provide a standardized install-and-go experience. The team marketplace feature is especially powerful for onboarding — new developers get the full toolchain just by opening the project.

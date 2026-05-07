@@ -12,6 +12,8 @@ image: "/assets/images/claude-code-power-tips.jpg"
 
 A collection of advanced tips and workflows for getting more out of Claude Code.
 
+<!-- REVIEW-TODO: [source_links] No source line present — add primary Claude Code documentation and/or original discussion links -->
+
 ## Permissions & Setup
 
 ### Pre-allow Permissions
@@ -276,6 +278,19 @@ bind-key -n M-3 select-window -t 2
 ```
 
 Now `Alt+1`, `Alt+2`, `Alt+3` jump between tasks instantly.
+
+## How LearnAI Team Could Use This
+
+- Turn these power-user practices into a shared operating playbook: default permissions, CLAUDE.md learning rules, plan-mode requirements for complex edits.
+- Standardize reviewer prompts for docs and code across the team.
+- Use tmux/statusline conventions for running parallel documentation and review sessions.
+
+## Real-World Use Cases
+
+- Standardize safe Claude Code permissions for LearnAI repos.
+- Use learning-mode CLAUDE.md rules when onboarding into unfamiliar codebases.
+- Run separate Claude sessions for documentation, implementation, and review tasks.
+- Use specialized CLIs such as `bq`, `aws`, or `gcloud` for data and infrastructure work.
 
 ## CLI Tool Integration
 

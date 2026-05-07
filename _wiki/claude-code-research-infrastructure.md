@@ -182,6 +182,20 @@ It scans the directory, infers the project type from existing files (`.clp` → 
 
 The biggest win isn't any single persona — it's the **compound effect**. When CLAUDE.md remembers your project state, personas know how to review your specific domain, and you can run three agents while thinking about the next experiment — you're operating at a fundamentally different pace.
 
+## How LearnAI Team Could Use This
+
+- Adapt this model into a reusable research and documentation infrastructure: CLAUDE.md files for project memory, persona commands for review/editing/literature work.
+- Run parallel sessions for audits, synthesis, and publishing workflows.
+- Bootstrap new research projects with repeatable templates and commands.
+
+## Real-World Use Cases
+
+- Maintain project-specific CLAUDE.md files for LearnAI research, docs, and course repos.
+- Use reviewer/editor/lit-scout personas to improve articles before publication.
+- Run parallel Claude Code sessions for code audit, source verification, and summary drafting.
+
+<!-- REVIEW-TODO: [source_links] Weibo source link is generic (https://weibo.com) — find specific 爱可可-爱生活 post URL -->
+
 ## Getting Started
 
 1. **Create a CLAUDE.md** for your research project — or use `/research-setup` to bootstrap one from a template
