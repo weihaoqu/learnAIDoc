@@ -221,3 +221,17 @@ Every phase ends with a CHECKPOINT — verify direction before continuing.
 ```
 
 For academic faculty: this is the emerging workflow. AI handles volume; you supply direction and verification. The professor who caught Claude's fabrications didn't need less expertise — he needed *more*. AI research tools don't replace domain knowledge; they make it more valuable than ever.
+
+## How LearnAI Team Could Use This
+
+- **Research workflow training** — Teach students how to decompose research projects into verifiable AI-assisted subtasks.
+- **Literature review support** — Use Feynman-style agents to build citation-grounded paper maps before seminars or projects.
+- **Replication assignments** — Have students audit or reproduce selected papers with Docker-isolated code execution.
+- **Faculty research acceleration** — Use agents for first-pass synthesis, code scaffolding, and draft generation while keeping expert verification mandatory.
+
+## Real-World Use Cases
+
+1. **Academic labs** — Speed up literature review, experiment planning, and reproducibility checks.
+2. **Graduate research** — Break thesis or paper work into small AI-assisted tasks with checkpoints.
+3. **Industry R&D** — Evaluate papers before deciding whether to implement or benchmark new methods.
+4. **Scientific writing** — Generate structured drafts while preserving human review for claims, citations, and statistics.
