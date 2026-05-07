@@ -1,0 +1,1627 @@
+{
+  "total": 162,
+  "reviewed": 4,
+  "lastRun": "2026-05-07T04:25:00Z",
+  "entries": {
+    "accio-work-ai-agent-business.md": {
+      "status": "reviewed",
+      "attempts": 1,
+      "startedAt": null,
+      "reviewedAt": "2026-05-07T03:55:00Z",
+      "verdict": "NEEDS_FIXES",
+      "fixCount": 3,
+      "lastError": null,
+      "obsidianNote": "created"
+    },
+    "addy-osmani-agent-skills.md": {
+      "status": "reviewed",
+      "attempts": 1,
+      "startedAt": null,
+      "reviewedAt": "2026-05-07T04:15:00Z",
+      "verdict": "NEEDS_FIXES",
+      "fixCount": 3,
+      "lastError": null,
+      "obsidianNote": "created"
+    },
+    "agent-framework-weekly-hot-four.md": {
+      "status": "reviewed",
+      "attempts": 1,
+      "startedAt": null,
+      "reviewedAt": "2026-05-07T04:20:00Z",
+      "verdict": "NEEDS_FIXES",
+      "fixCount": 6,
+      "lastError": null,
+      "obsidianNote": "created"
+    },
+    "agentic-ai-engineer-roadmap-2026.md": {
+      "status": "reviewed",
+      "attempts": 1,
+      "startedAt": null,
+      "reviewedAt": "2026-05-07T04:25:00Z",
+      "verdict": "NEEDS_FIXES",
+      "fixCount": 3,
+      "lastError": null,
+      "obsidianNote": "created"
+    },
+    "agents-with-taste-design-skills.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "ai-agent-academic-research-writing.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "ai-agent-benchmark-cheating.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "ai-brain-fry-cognitive-fatigue.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "ai-education-teacher-factory.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "ai-fluency-index.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "ai-health-vault-obsidian.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "ai-impacts-skill-formation.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "ai-learning-courses-youtube-2026.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "ai-learning-tools.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "ai-mastery-games.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "ai-quantitative-finance-tools.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "ai-research-thinking-toolkit.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "ai-research-tools-landscape.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "ai-research-workflow-pipeline.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "ai-website-cloner-template.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "alphaxiv-mcp-arxiv-search.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "anthropic-academy-free-courses.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "anthropic-automated-alignment-researchers.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "anthropic-knowledge-work-plugins.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "anthropic-managed-agents-architecture.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "anthropic-subtract-dont-add-philosophy.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "anthropic-teams-use-claude-code.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "anti-ai-exam-skill.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "autoresearch-autonomous-ml.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "awesome-design-md.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "baoyu-youtube-transcript-skill.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "beads-graph-memory-for-agents.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "bilingual-prompting-technique.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "boris-cherny-claude-code-philosophy.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "browser-use-cli-automation.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "career-ops-ai-job-search.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "caveman-token-compression.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "ccunpacked-claude-code-internals.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-auto-mode-unlock.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-certified-architect.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-agent-teams-vs-subagents.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-auto-mode.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-best-plugins.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-cheatsheet-everything.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-context-claudemd-practices.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-context-fork.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-custom-agents.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-five-levels-mastery.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-from-source-book.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-git-worktree.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-handover-skill.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-hooks.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-import-syntax.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-loop-command.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-non-programmers-shipping.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-plugins.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-power-tips.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-research-infrastructure.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-resume-from-pr.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-rewind.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-route-to-cheaper-models.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-sandbox.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-session-management-1m.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-session-stats.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-skills-resources.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-source-analysis-learning.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-statusline.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-tips-engineering.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-code-token-costs-rtk.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-custom-course-materials.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-for-word-office-integration.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-howto-learning-path.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-interactive-diagram-tools.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-nagdy-interactive-learning.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-prism-academic-writing.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-teacher-setup.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-three-hidden-quality-prompts.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claude-use-cases-directory.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "claw-code-python-rewrite.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "code-review-graph-knowledge-graph.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "codex-claude-code-research-tutorial.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "core-learning-prompts-deep-understanding.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "critical-paper-reading-five-questions.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "cross-model-code-review-claude-codex.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "elatoai-voice-esp32.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "feynman-ai-research-agent.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "fireworks-tech-graph-diagrams.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "follow-builders-ai-digest-skill.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "frustration-shifts-upward-ai-coding.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "gbrain-agent-memory.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "github-pages-google-sheets-survey.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "godogen-ai-game-dev.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "gstack-ai-software-factory.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "harness-engineering-agents.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "hermes-agent-self-improving-ai.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "html-ppt-studio-skill.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "independent-thinking-visual-pkm.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "infinitetalk-unlimited-ai-video.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "karpathy-end-of-coding.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "karpathy-llm-knowledge-bases.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "karpathy-microgpt.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "karpathy-skills-claude-code.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "kepano-obsidian-skills-agents.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "last30days-skill.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "lawyer-won-hackathon-problem-definition.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "learnai-knowledge-base-guide.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "learning-effectively-ai-era.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "litellm-supply-chain-attack.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "llm-architecture-gallery.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "make-slides-interactive-teaching.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "markdown-viewer-skills-diagrams.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "math-foundations-reinforcement-learning.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "mdpdf-skill.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "meta-harness-self-optimizing-agent.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "metagpt-foundation-agents.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "moneyprinter-turbo-video-automation.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "mujing-learn-english-movies.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "non-coding-skills-claude-code.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "notebooklm-grading-education-paradox.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "novel-to-multimedia-pipeline.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "obsidian-cli-claude-code.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "obsidian-visual-skills-diagrams.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "obsidian-web-clipper-ai.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "oh-my-claudecode-orchestration.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "openmaic-multi-agent-classroom.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "openshorts-ai-video-platform.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "opus-47-thinking-effort-claude-code.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "paper2code-arxiv-to-implementation.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "pixelle-video-engine.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "posterskill-academic-posters.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "pretext-refero-ui-tools.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "prompt-master-skill.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "pua-skill-ai-persistence.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "pull-requests-explained.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "ralph-autonomous-dev-loop.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "recordly-open-source-screen-recorder.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "research-kb-zotero-obsidian.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "researcher-llm-use-boundaries.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "resume-dead-claude-folder-career.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "seedance-2-ai-video.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "seeing-like-an-agent-tool-design.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "sentrysearch-video-search.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "seven-framework-prompts-thinking-partner.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "shortest-prompt-lines-that-work.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "skill-seekers-guide.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "socratic-prompting-method.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "specops-spec-driven-development.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "supermemory-ai-context-engine.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "taste-skill-ai-frontend-design.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "tensortonic-learn-ml-code.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "timesfm-25-time-series-forecasting.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "toonflow-ai-short-drama.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "turboquant-reverse-engineer-google.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "type4me-local-voice-input.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "ui-sh-design-for-agents.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "understand-anything-plugin.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "unsloth-studio-llm-training.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "vibe-marketing.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "vision-agents-realtime-ai.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "voice-pro-ai-dubbing-translation.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "webnovel-writer-long-context.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    },
+    "yao-bayesian-decision-skill.md": {
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "reviewedAt": null,
+      "verdict": null,
+      "fixCount": 0,
+      "lastError": null,
+      "obsidianNote": "pending"
+    }
+  }
+}

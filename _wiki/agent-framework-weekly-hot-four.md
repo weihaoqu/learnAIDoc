@@ -5,12 +5,12 @@ category: AI for Research
 redirect_from:
   - "/wiki/ai research/agent-framework-weekly-hot-four/"
 tags: [agents, frameworks, superpowers, deerflow, nomad, trading-agents, github, multi-agent, bytedance, open-source]
-related: ["Claude Code: Agent Teams vs Subagents", "oh-my-claudecode — Multi-AI Orchestration Plugin for Claude Code", "Claude Code Source Analysis — What Makes It Work & How to Actually Learn From It"]
+related: ["Harness Engineering — The Real Bottleneck Isn't the Model", "Agentic AI Engineer Roadmap 2026 — Eight Pillars from Prompt to Production", "AI Agents for Academic Research & Writing — From KatmerCode to the Nature Playbook", "Claude Code: Agent Teams vs Subagents", "oh-my-claudecode — Multi-AI Orchestration Plugin for Claude Code"]
 icon: "🏆"
 image: "/assets/images/agent-framework-weekly-hot-four.png"
 ---
 
-The week of March 20-26, 2026 saw an unprecedented explosion in AI agent frameworks on GitHub. Four projects dominated the trending charts, collectively gaining **55,000+ stars in a single week**. Each represents a different philosophy of what agents should do — from disciplined software development to deep research to offline survival to financial trading.
+The week of March 20-26, 2026 saw an unprecedented explosion in AI agent frameworks on GitHub. Four projects dominated the trending charts, collectively gaining **54,000+ stars in a single week**. Each represents a different philosophy of what agents should do — from disciplined software development to deep research to offline survival to financial trading.
 
 *Source: [星探AI — Agent Weekly Hot List](https://www.xiaohongshu.com/) | [旭哥AI笔记 — DeerFlow 2.0](https://www.xiaohongshu.com/) | [Superpowers on GitHub](https://github.com/obra/superpowers) | [DeerFlow on GitHub](https://github.com/bytedance/deer-flow) | [Project NOMAD on GitHub](https://github.com/Crosstalk-Solutions/project-nomad) | [TradingAgents on GitHub](https://github.com/TauricResearch/TradingAgents)*
 
@@ -111,7 +111,7 @@ make docker-start              # Launch with Docker
 
 ## #3 NOMAD — Offline Survival AI
 
-**Creator:** Chris Sherwood (Crosstalk Solutions) | **License:** Open Source | **Stars:** 13K+
+**Creator:** Chris Sherwood (Crosstalk Solutions) | **License:** Apache-2.0 | **Stars:** 13K+
 
 Project N.O.M.A.D is the most unusual entry — a self-contained, offline survival computer. It bundles local AI, 99.6GB of Wikipedia, and critical tools into a Docker-based system that works with zero internet.
 
@@ -131,7 +131,7 @@ In a world increasingly dependent on cloud AI, NOMAD asks: *what if the cloud is
 
 ## #4 TradingAgents — Wall Street in a Repo
 
-**Creator:** Tauric Research | **License:** Open Source
+**Creator:** Tauric Research | **License:** Apache-2.0
 
 TradingAgents simulates a professional trading firm using LLM-powered agents with specialized roles:
 
@@ -154,7 +154,7 @@ TradingAgents simulates a professional trading firm using LLM-powered agents wit
 └─────────────────────────────────────────┘
 ```
 
-Supports multi-provider LLM backends (OpenAI, Google, Anthropic, xAI, OpenRouter, Ollama), backtesting with historical data, and a five-tier rating scale for trade recommendations.
+Supports multi-provider LLM backends (OpenAI, Google, Anthropic, xAI, OpenRouter, Ollama), backtesting with historical data, and a five-tier rating scale for trade recommendations. Treat it as a research and simulation framework, not financial, investment, or trading advice.
 
 ## What This Wave Tells Us
 
@@ -181,3 +181,20 @@ NOMAD's 13K+ star surge shows genuine demand for AI that works without internet 
 - **NOMAD:** [github.com/Crosstalk-Solutions/project-nomad](https://github.com/Crosstalk-Solutions/project-nomad)
 - **TradingAgents:** [github.com/TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents)
 - **DeerFlow 2.0 coverage:** [byteiota.com](https://byteiota.com/deerflow-2-0-bytedance-ai-agent-framework-hits-1-github/)
+
+## How LearnAI Team Could Use This
+
+- Use Superpowers-style workflows as a template for coding-agent lesson plans: brainstorm, plan, test, review, and finish branches deliberately.
+- Use DeerFlow as a case study for long-horizon research agents with planning, memory, sandboxes, and messaging surfaces.
+- Use NOMAD to discuss local-first AI, offline knowledge bases, and resilience for low-connectivity environments.
+- Use TradingAgents as a cautionary finance-agent example focused on simulation, research, evaluation, and risk controls rather than investment advice.
+
+## Real-World Use Cases
+
+- **Software teams:** Enforce repeatable agent development workflows with planning, TDD, review, and branch hygiene.
+- **Research and content teams:** Coordinate long-running research, report generation, data analysis, and presentation drafts.
+- **Field and offline deployments:** Run local AI plus offline reference libraries where internet access is unreliable or unavailable.
+- **Finance education and research:** Simulate multi-agent market analysis for backtesting and decision-process study, with clear non-advice disclaimers.
+
+<!-- REVIEW-TODO: [source_links] Xiaohongshu source links are generic (https://www.xiaohongshu.com/), not specific post URLs — find actual posts or remove -->
+<!-- REVIEW-TODO: [source_links] Weekly-star leaderboard figures need verifiable archive source (Star History / GitHub Trending snapshot) -->

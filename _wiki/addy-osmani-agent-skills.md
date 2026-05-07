@@ -8,7 +8,7 @@ icon: "🛠"
 image: "/assets/images/addy-osmani-agent-skills.png"
 ---
 
-Addy Osmani (Google Chrome engineering lead) packaged senior engineering practices into 20 SKILL.md files that AI coding agents can follow. The insight: AI agents naturally take shortcuts — skipping specs, tests, and security reviews. These skills enforce the discipline that experienced engineers bring to every project. With ~17.2k GitHub stars, it's become the reference implementation for how to encode engineering culture into agent workflows.
+Addy Osmani (Google Chrome engineering lead) packaged senior engineering practices into 20 core skills that AI coding agents can follow. The insight: AI agents naturally take shortcuts — skipping specs, tests, and security reviews. These skills enforce the discipline that experienced engineers bring to every project. Its rapid GitHub adoption has made it a reference implementation for encoding engineering culture into agent workflows.
 
 *Source: [GitHub - addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | [Weibo discussion by 马力AI和商业思维](https://weibo.com)*
 
@@ -93,8 +93,11 @@ The skills draw heavily from *Software Engineering at Google*:
 /plugin marketplace add addyosmani/agent-skills
 /plugin install agent-skills@addy-agent-skills
 
-# Cursor / Gemini CLI / Windsurf / Copilot
-npx skills add addyosmani/agent-skills
+# Gemini CLI
+gemini skills install https://github.com/addyosmani/agent-skills.git --path skills
+
+# Cursor / Windsurf / Copilot
+# Follow the repo's tool-specific setup docs for rules, agent definitions, or instructions files.
 
 # Manual (any agent)
 git clone https://github.com/addyosmani/agent-skills.git
@@ -115,3 +118,4 @@ Skills are plain Markdown — any agent accepting system prompts can use them.
 - **Open source projects** — standardize contribution quality regardless of agent used
 - **Junior developers** — learn senior-level practices by reading the skill files
 - **Code review** — the reviewer agent persona provides structured, opinionated feedback
+<\!-- REVIEW-TODO: [source_links] Weibo source link is generic (https://weibo.com), not a specific post URL — find actual post or remove -->

@@ -10,9 +10,9 @@ icon: "🗺️"
 image: "/assets/images/agentic-ai-engineer-roadmap-2026.png"
 ---
 
-In a field where everyone is chasing the newest model release, the "Roadmap to Become an Agentic AI Engineer in 2026" by Lamhot Siagian takes a different stance: **the core competitiveness of an agent engineer isn't in prompt writing — it's in building deterministic systems on top of probabilistic foundations**. The book identifies 8 pillars, from Python engineering foundations to production observability. It's a survival guide, not a tech checklist.
+In a field where everyone is chasing the newest model release, the "Roadmap to Become an Agentic AI Engineer in 2026" by Lamhot Siagian takes a different stance: **the core competitiveness of an agent engineer isn't in prompt writing — it's in building deterministic systems on top of probabilistic foundations**. The roadmap identifies 8 pillars, from Python engineering foundations to production observability. It's a survival guide, not a tech checklist.
 
-*Source: [Google Drive PDF](https://drive.google.com/file/d/1JkNUDOztGVX7LLbMgkiOr0vffBLg8PeU/view) | Lamhot Siagian — AI/ML Engineer, ex-Apple, ex-HP | Shared via Weibo @爱可可-爱生活*
+*Source: [Google Drive PDF](https://drive.google.com/file/d/1JkNUDOztGVX7LLbMgkiOr0vffBLg8PeU/view) | Lamhot Siagian — AI/ML Engineer, ex-Apple, ex-HP | Shared via Weibo @爱可可-爱生活; add original post URL/date if available.*
 
 ## The 8 Pillars
 
@@ -42,7 +42,7 @@ Stop treating LLMs as magic black boxes. They're **probabilistic reasoning engin
 
 2026's trend: linear chains → stateful graphs.
 
-- **LangGraph** became the production default because it models agents as **state machines** — with cycles, human-in-the-loop, and backtracking
+- **LangGraph-style graph orchestration** is increasingly common in production agent systems because it models agents as **state machines** — with cycles, human-in-the-loop, and backtracking
 - The biggest anti-pattern: copying demo code directly. The real architecture is your state model, data contracts, and safety rules — frameworks are just implementation tools
 
 ### 4. Agent Long-Term Memory
