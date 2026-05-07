@@ -144,6 +144,20 @@ With gstack's sprint process, a student can ship production-quality features wit
 | First open source contribution | `/review` + `/ship` | Code review standards + PR etiquette |
 | Interview prep portfolio | `/plan-eng-review` + `/ship` + `/document-release` | Architecture thinking + documentation |
 
+## How LearnAI Team Could Use This
+
+- **Teach professional AI-assisted software workflows** — use the sprint sequence to show students how planning, review, QA, shipping, and retrospectives fit together.
+- **Create role-based coding labs** — assign students to compare `/plan-eng-review`, `/review`, `/qa`, and `/ship` outputs on the same project.
+- **Model agent orchestration** — demonstrate how specialist skills reduce vague prompting and make AI coding work more inspectable.
+- **Portfolio coaching** — help learners turn side projects into reviewed, tested, documented PR-based work.
+
+## Real-World Use Cases
+
+- **Startup feature development** — structure fast product iteration from idea review through PR and deployment.
+- **Code review and QA** — catch production bugs, browser issues, and missing regression tests before shipping.
+- **Hackathons and capstones** — give small teams a repeatable process for scoping, building, testing, and documenting work.
+- **Engineering enablement** — standardize AI coding practices across teams using shared slash commands and safety guardrails.
+
 ## How It Compares to Generic Claude Code
 
 | Aspect | Generic Claude Code | With Gstack |

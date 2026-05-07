@@ -336,6 +336,20 @@ Works with Anthropic, OpenAI, DeepSeek, Moonshot/Kimi, Ollama, and GitHub Copilo
 
 **Why it matters:** Turns Claude Code's architecture from a black box into a white box. You can read every line, modify every subsystem, and experiment with harness design without reverse-engineering TypeScript.
 
+## How LearnAI Team Could Use This
+
+- **Teach agent reliability as system design** — frame agents as model plus harness, not just better prompts or better models.
+- **Build progressive labs** — have learners add context limits, tool constraints, verification hooks, subagents, and worktree isolation one layer at a time.
+- **Audit existing AI workflows** — identify where failures come from missing constraints, weak feedback loops, or overloaded context.
+- **Compare single-agent vs multi-agent work** — use planner/generator/evaluator patterns to show when extra harness cost is justified.
+
+## Real-World Use Cases
+
+- **Long-running coding agents** — keep autonomous work reliable with planning, verification, middleware, and scoped tools.
+- **Production AI development teams** — create repeatable guardrails for code generation, QA, deployment, and documentation.
+- **Agent benchmark improvement** — improve results by changing prompts, tools, middleware, and eval loops without changing the base model.
+- **Research and teaching platforms** — expose agent internals so students can understand, modify, and measure each harness layer.
+
 ## Key Takeaway
 
 > **Agent的可靠性瓶颈，不在模型，在模型周围的系统。**
