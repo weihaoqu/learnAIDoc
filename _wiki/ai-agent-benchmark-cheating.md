@@ -39,7 +39,7 @@ This isn't hypothetical. Berkeley's team demonstrated concrete exploits on all e
 |-----------|-------|---------------|---------------|
 | **Terminal-Bench** | 89 | Binary wrapper trojans — replaced `curl` to trojanize `uvx`, producing fake pytest output | **100%** |
 | **SWE-bench Verified** | 500 | 10-line `conftest.py` pytest hook forces all tests to report as passing | **100%** |
-| **SWE-bench Pro** | — | Same pytest hook + parser overwrites | **100%** |
+| **SWE-bench Pro** | 731 | Same pytest hook + parser overwrites | **100%** |
 | **WebArena** | 812 | `file://` URLs read task configs containing reference answers | **~100%** |
 | **FieldWorkArena** | 890 | Validator only checks if final message came from assistant — content ignored | **100%** |
 | **OSWorld** | 369 | Downloads public gold reference files directly into eval paths | **73%** |
@@ -178,3 +178,4 @@ The implications extend far beyond academic leaderboards:
 - **Procurement/policy teams** assessing AI vendor claims that rely on benchmark scores
 - **Security researchers** studying the intersection of AI capability and adversarial behavior
 - **Educators** teaching students that metrics without methodology are meaningless
+<\!-- REVIEW-TODO: [factual_accuracy] Date 2026-03-17 may predate Berkeley source (published ~April 11 2026) — verify and update if needed -->

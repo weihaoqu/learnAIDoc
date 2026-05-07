@@ -201,6 +201,23 @@ ds --here
 
 DeepScientist's core insight: **failed experiments are knowledge too**. Most tools discard failed paths. DeepScientist preserves them with full traces, so you (or your advisor) can see why approach A failed and why approach B worked.
 
+## How LearnAI Team Could Use This
+
+- Build a research-writing workflow template for LearnAI docs: literature search, citation verification, draft polishing, and peer-review checks before publication.
+- Use KatmerCode-style slash commands as a model for internal AI documentation agents that produce structured, source-linked reports.
+- Turn the Nature playbook into team guidance: AI may improve clarity, structure, and feedback quality, but authors remain responsible for claims, citations, and judgment.
+- Use DeepScientist-style experiment preservation for AI tool evaluations so failed trials, prompts, and benchmark notes remain auditable.
+
+## Real-World Use Cases
+
+| Use Case | How It Works | Why It Matters |
+|---|---|---|
+| Literature review sprint | Search papers, map citation networks, and identify gaps before drafting | Speeds up topic exploration while keeping source review explicit |
+| Manuscript polishing | Author writes the argument first, then uses AI for clarity and coherence | Improves readability without outsourcing scholarly judgment |
+| Pre-submission review | Run peer-review and citation-verification checks before submitting | Catches weak sections, missing evidence, and broken references earlier |
+| Advisor or lab reporting | Generate daily reading notes and experiment summaries from a shared workspace | Makes research progress easier to inspect and discuss |
+| Tool evaluation | Preserve failed and successful experiment branches when testing AI research tools | Creates an audit trail for what worked, what failed, and why |
+
 ## Other Tools in the Ecosystem
 
 | Tool | Focus | Key Feature |
@@ -220,3 +237,4 @@ DeepScientist's core insight: **failed experiments are knowledge too**. Most too
 - **Nature article:** [Three ways ChatGPT helps me in my academic writing](https://www.nature.com/articles/d41586-024-01042-3)
 - **HN discussion:** [Show HN: KatmerCode](https://news.ycombinator.com/item?id=47479462)
 - **XDA coverage:** [Claude Code inside Obsidian](https://www.xda-developers.com/claude-code-inside-obsidian-and-it-was-eye-opening/)
+<\!-- REVIEW-TODO: [source_links] Xiaohongshu source link is generic (https://www.xiaohongshu.com/), not a specific post URL — find actual 哈泰利 post or remove -->

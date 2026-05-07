@@ -3,12 +3,12 @@ title: "Agents with Taste — Encoding Design Judgment as Skill Files"
 date: 2026-04-26
 category: Skills & Plugins
 tags: [design-engineering, skills, ui-design, animations, claude-code, taste, emil-kowalski]
-related: []
+related: ["Taste Skill — Teaching AI Agents Design Taste for Frontend Code", "Awesome DESIGN.md — Install Design Taste Into Your AI Coding Agent", "ui.sh — Tailwind Creator's Design Toolkit for AI Coding Agents", "Addy Osmani's agent-skills — Senior Engineering Practices as SKILL.md Files"]
 icon: "🎨"
 image: "/assets/images/agents-with-taste-design-skills.png"
 ---
 
-Emil Kowalski argues that the hardest part of UI quality isn't code — it's aesthetic judgment. His solution: encode design taste into skill files that coding agents can follow. Instead of hoping AI "gets it," you describe the rules explicitly and hand them to your agent. The skill has ~985 GitHub stars and has spawned a movement of designers packaging their judgment for AI.
+Emil Kowalski argues that the hardest part of UI quality isn't code — it's aesthetic judgment. His solution: encode design taste into skill files that coding agents can follow. Instead of hoping AI "gets it," you describe the rules explicitly and hand them to your agent. The skill has more than 1,000 GitHub stars and has inspired adjacent projects that package design judgment for AI agents.
 
 *Source: [Agents with Taste (article)](https://emilkowal.ski/ui/agents-with-taste) | [emilkowalski/skill (GitHub)](https://github.com/emilkowalski/skill) | [Emil's X thread](https://x.com/emilkowalski/status/2013613078240198929)*
 
