@@ -103,7 +103,7 @@ Feature-flagged, env-gated, or commented out — stuff in the source that hasn't
 
 **Kairos** and **Auto-Dream** are the most interesting for research — they suggest Anthropic is working on agents that learn across sessions and consolidate knowledge autonomously.
 
-## Why This Matters for Teaching
+## How LearnAI Team Could Use This
 
 ### Agent Architecture Literacy
 
@@ -139,7 +139,14 @@ CC Unpacked itself is a teaching method. Studying a system's internals builds de
 
 The site includes the actual source code alongside explanations, making it useful for reading code and analysis side-by-side. If CC Unpacked is the interactive visual explorer, Inside Claude Code is the structured textbook companion — both derived from the same source, presented differently.
 
-*Source: [y-agent.github.io/inside-claude-code](https://y-agent.github.io/inside-claude-code/) | [蚁工厂 Weibo](https://weibo.com)*
+Additional source: [y-agent.github.io/inside-claude-code](https://y-agent.github.io/inside-claude-code/)
+
+## Real-World Use Cases
+
+1. **Teaching agent loops** — Use the 11-step visualization to explain how a coding assistant moves from prompt handling into tool execution.
+2. **Architecture walkthroughs** — Have students inspect the treemap to understand the non-model systems around an AI agent.
+3. **Tooling audits** — Compare Claude Code's tool categories against student-built agent harnesses to identify missing capabilities.
+4. **Reverse-engineering exercises** — Use the site as a case study in learning from production software structure without treating the model call as the whole product.
 
 ## Links
 
