@@ -80,6 +80,19 @@ Hooks are shell commands configured in `settings.json` that execute in response 
 
 Hooks don't replace permissions or sandboxing — they add a programmable layer on top. You might use permissions to block `rm -rf`, sandbox to restrict file access, and hooks to log everything that happens.
 
+## How LearnAI Team Could Use This
+
+- Use hooks to log Claude Code activity, route approval requests, and enforce project checks during team development sessions.
+- Set up PreToolUse hooks for safety checks on destructive operations in shared repos.
+- Use Stop hooks for automatic context handoff and session logging.
+
+## Real-World Use Cases
+
+- Route risky permission requests to a team approval channel.
+- Log file edits and shell commands for audit trails.
+- Run validation scripts after tool calls.
+- Trigger continuation checks when a Claude Code session stops early.
+
 ## Why This Matters
 
 Hooks make Claude Code programmable at the workflow level. Instead of just configuring what Claude can and can't do, you can build automated workflows around Claude's behavior — approval flows, audit trails, auto-continuation, and custom integrations with your team's tools.

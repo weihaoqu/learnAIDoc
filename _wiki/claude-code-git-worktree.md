@@ -77,7 +77,13 @@ isolation: worktree
 ---
 ```
 
-## Practical Examples
+## How LearnAI Team Could Use This
+
+- Run parallel Claude Code sessions for docs updates, course fixes, and feature experiments without overwriting each other's local changes.
+- Use worktrees for A/B testing different approaches to the same wiki entry or course material.
+- Teach students the worktree pattern as a real-world parallel development workflow.
+
+## Real-World Use Cases
 
 ### Example 1: Fix a Bug While a Feature Is In Progress
 
@@ -145,3 +151,4 @@ Before worktrees, running multiple Claude Code sessions on the same repo meant t
 - **Safe experimentation** — Try risky changes without affecting your main working copy
 - **Faster batch operations** — Subagents divide and conquer across isolated copies
 - **Clean context separation** — Each worktree has its own branch and changes
+<\!-- REVIEW-TODO: [source_links] Weibo source link is generic (https://weibo.com/) — find specific AIGCLINK post URL -->

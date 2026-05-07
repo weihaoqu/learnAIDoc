@@ -156,7 +156,13 @@ You get two ways to generate handovers:
 | `/handover` | Any time you want | Type the command manually |
 | PreCompact hook | Context window about to fill up | Fires automatically |
 
-## Real-Life Workflow
+## How LearnAI Team Could Use This
+
+- Use `/handover` at the end of documentation, curriculum, and engineering sessions so the next session resumes with decisions, open tasks, and touched files already captured.
+- Ensure continuity across team members working on the same wiki or course project.
+- Teach students the handover pattern as a professional practice for AI-assisted workflows.
+
+## Real-World Use Cases
 
 ### Solo: Multi-Day Feature Work
 
