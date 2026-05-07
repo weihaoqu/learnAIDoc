@@ -5,7 +5,7 @@ category: Claude Code Engineering
 redirect_from:
   - "/wiki/claude code/claude-code-tips-engineering/"
 tags: [claude-code, tips, context-management, skills, hooks, subagents, engineering-practices, prompt-caching]
-related: ["Claude Code Power User Tips", "Claude Code: Isolate Heavy Tasks with context: fork", "Claude Code Plugins & Marketplace", "Claude Certified Architect — Anthropic's First Official AI Certification", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure"]
+related: ["Claude Code Power User Tips", "Claude Code: Isolate Heavy Tasks with context: fork", "Claude Code Plugins & Marketplace", "Claude Certified Architect — Anthropic's First Official AI Certification", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Boris Cherny on Claude Code — Origin Story, Product Philosophy & the End of Manual Coding"]
 icon: "🧠"
 image: "/assets/images/claude-code-tips-engineering.png"
 ---

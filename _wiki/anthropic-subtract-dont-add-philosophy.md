@@ -5,7 +5,7 @@ category: Claude Code Engineering
 redirect_from:
   - "/wiki/claude code/anthropic-subtract-dont-add-philosophy/"
 tags: [claude-code, anthropic, chris-olah, development-philosophy, harness-engineering, skills, context-management, agents, bitter-lesson]
-related: ["Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code Source Analysis — What Makes It Work & How to Actually Learn From It", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure"]
+related: ["Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code Source Analysis — What Makes It Work & How to Actually Learn From It", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Boris Cherny on Claude Code — Origin Story, Product Philosophy & the End of Manual Coding"]
 icon: "➖"
 image: "/assets/images/anthropic-subtract-dont-add-philosophy.png"
 ---
