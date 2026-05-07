@@ -78,6 +78,19 @@ Web Clipper (capture) → CLI (read into context) → /mywiki (publish)
 
 Example: Clipped an Anthropic blog post → CLI reads the clipped note's content and metadata → `/mywiki` researches, drafts, generates a cover image, cross-links related entries, commits, and pushes — all from one command. See the [Web Clipper entry](/learnAIDoc/wiki/obsidian-web-clipper-ai/) for setup details.
 
+## How LearnAI Team Could Use This
+
+- Keep project context, editorial standards, and course-development decisions in Obsidian so Claude Code works from durable team knowledge.
+- Use daily notes to capture workshop observations, learner questions, and content gaps, then graduate them into wiki entries or lesson updates.
+- Maintain reusable instruction files for publishing, research, and curriculum workflows.
+
+## Real-World Use Cases
+
+- Developers loading architecture notes before asking Claude Code to modify a project.
+- Writers turning messy daily notes into structured drafts or action lists.
+- Research teams preserving rationale, hypotheses, and decisions across long-running projects.
+- Knowledge workers using Obsidian as transparent memory instead of relying on opaque chat history.
+
 ## Why This Matters
 
 The bottom line: **one paragraph about who you are and what you're working on today is more valuable to the agent than gigabytes of old project code.** Obsidian isn't a file viewer for your code — it's a journal for your brain. Claude Code becomes a thinking partner, not just a code generator.

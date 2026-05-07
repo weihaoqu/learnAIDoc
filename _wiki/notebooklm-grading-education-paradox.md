@@ -71,6 +71,19 @@ A math professor in the comments shared a revealing story: a colleague across th
 The practical principle:
 > **"The core of education was never about changing the assignment. It's about helping students see what they're missing. AI happens to be good at exactly that."**
 
+## How LearnAI Team Could Use This
+
+- Turn long-form student submissions, reflections, or project writeups into rubric-grounded feedback drafts for instructors to review.
+- Build a repeatable feedback workflow for LearnAI workshops: upload rubric, exemplars, course materials, and learner work, then ask NotebookLM to identify gaps.
+- Use the workflow internally to evaluate LearnAI documentation drafts against editorial standards before publication.
+
+## Real-World Use Cases
+
+- Instructors grading essay batches while preserving human review of final marks.
+- Teaching assistants generating first-pass feedback tied to a course rubric.
+- Bootcamp teams reviewing project reflections and recommending targeted remediation.
+- Curriculum designers checking whether assignments produce evidence of intended learning outcomes.
+
 ## Practical Setup
 
 For educators who want to try this:

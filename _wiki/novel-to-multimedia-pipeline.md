@@ -215,6 +215,19 @@ The skill contains:
 - Playwright publishing workflow
 - Description template
 
+## How LearnAI Team Could Use This
+
+- Convert LearnAI tutorials or case studies into audio/video formats for mobile-first learners.
+- Package repeatable publishing workflows as Claude Code skills for consistent media asset production.
+- Prototype short-form course promotion clips from existing markdown lessons.
+
+## Real-World Use Cases
+
+- Webnovel authors turning chapters into audiobooks and vertical videos.
+- Educators repurposing lesson notes into narrated shorts or long-form mobile videos.
+- Content teams batch-producing platform-specific posts from one canonical markdown source.
+- Solo creators using semi-automated publishing while keeping manual approval before release.
+
 ## What's Next
 
 | Enhancement | Difficulty | Impact |
