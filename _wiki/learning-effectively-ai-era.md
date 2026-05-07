@@ -90,7 +90,7 @@ Prompt AI to find flaws in your reasoning, generate harder problems, or explain 
 ### 5. Iterate, Don't Accept
 85.7% of effective AI conversations involve iteration. Never accept the first response as final. Push back, ask follow-ups, and verify against your own understanding.
 
-## What This Means for learnAI
+## How LearnAI Team Could Use This
 
 This wiki exists because learning in the AI era requires a new kind of literacy. It's not about mastering prompts — it's about mastering **how you think with AI**:
 
@@ -100,3 +100,9 @@ This wiki exists because learning in the AI era requires a new kind of literacy.
 - The goal isn't efficiency — it's **durable knowledge**
 
 The students and professionals who thrive won't be the ones who use AI the most. They'll be the ones who use it the most **intentionally**.
+
+## Real-World Use Cases
+
+- Students can use AI to diagnose weak concepts from past mistakes before exams.
+- Instructors can design AI-supported assignments that reward explanation, iteration, and independent reasoning.
+- Professional learners can compress study time while preserving durable understanding through active recall and verification.

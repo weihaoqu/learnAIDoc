@@ -111,3 +111,15 @@ Karpathy used this incident to reinforce his growing skepticism of dependency cu
 His recommendation: increasingly prefer using LLMs to **generate simple functionality as code** rather than importing external dependencies. When it's simple enough and possible, write it yourself — or have your AI write it — instead of adding another link to the supply chain.
 
 > "Classical software engineering would have you believe that dependencies are good (we're building pyramids from bricks), but this has to be re-evaluated."
+
+## How LearnAI Team Could Use This
+
+- Add dependency-risk checks to internal AI tooling reviews before adopting new packages.
+- Use the incident as a training example for supply-chain security in AI workflows.
+- Build guidance for pinning versions, auditing transitive dependencies, and rotating exposed credentials after suspected compromise.
+
+## Real-World Use Cases
+
+- Engineering teams can audit whether compromised litellm versions were installed directly or transitively.
+- Security teams can use the incident to update credential rotation and CI/CD incident-response playbooks.
+- AI product teams can reassess dependency policies for LLM gateways, agent frameworks, and developer tools.

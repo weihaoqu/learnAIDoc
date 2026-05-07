@@ -69,3 +69,15 @@ These form a complete learning stack: **Gallery** (see architectures) → **Book
 - [Hacker News Discussion (101K views)](https://news.ycombinator.com/item?id=47388676)
 - [Adafruit Coverage](https://blog.adafruit.com/2026/03/16/visual-reference-lets-you-trace-every-major-llm-architecture-decision-from-gpt-2-to-today/)
 - [Hyperion Consulting: Strategic Resource](https://hyperion-consulting.io/en/insights/llm-architecture-gallery-a-strategic-resource-for-enterprise-ai-decision-makers)
+
+## How LearnAI Team Could Use This
+
+- Use the gallery as a visual anchor in lessons on transformer evolution and model design tradeoffs.
+- Create comparison exercises where learners explain why architectures moved from dense attention to GQA, MoE, or hybrid designs.
+- Pair architecture diagrams with implementation labs using LLMs from Scratch or fine-tuning exercises.
+
+## Real-World Use Cases
+
+- Educators can use the poster to teach architecture differences across GPT, Llama, Qwen, Gemma, DeepSeek, and other model families.
+- AI teams can compare model design choices when selecting architectures for latency, context length, or deployment constraints.
+- Learners can use the diagrams as references while implementing attention, normalization, and decoder blocks from scratch.
