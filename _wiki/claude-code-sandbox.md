@@ -54,3 +54,18 @@ You can combine both: pre-allow common commands via permissions, while the sandb
 - macOS — Supported now
 - Linux — Supported now
 - Windows — Coming soon
+
+## How LearnAI Team Could Use This
+
+- **Student safety:** Use sandbox mode when students let Claude Code run shell commands in assignments, so accidental writes stay bounded to the project.
+- **Workshop demos:** Demonstrate `/sandbox` before autonomous coding exercises to model safer defaults.
+- **Research/code reviews:** Enable sandboxing when inspecting unfamiliar repositories or running generated commands.
+
+## Real-World Use Cases
+
+| Scenario | Why sandbox helps |
+|---|---|
+| Running generated shell commands | Limits accidental access outside the project |
+| Inspecting an unfamiliar repo | Reduces risk from unexpected scripts or tool calls |
+| Student coding assignments | Keeps edits and reads scoped to assignment files |
+| Pairing sandbox with permissions | Allows smoother automation while preserving OS-level boundaries |

@@ -5,6 +5,7 @@ category: Claude Code Basics
 redirect_from:
   - "/wiki/claude code/claude-code-session-stats/"
 tags: [claude-code, cli, productivity]
+related: ["Claude Code Session Management & 1M Context — The Official Decision Framework", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Claude Code Power User Tips"]
 icon: "📊"
 image: "/assets/images/claude-code-stats.jpg"
 ---
@@ -56,3 +57,20 @@ Check `/cost` periodically during long sessions to stay aware of usage.
 - `/clear` - Start fresh conversation (resets context)
 - `/compact` - Compress conversation history
 - `/config` - View and modify settings
+
+## How LearnAI Team Could Use This
+
+- **Teaching cost awareness:** Have students run `/cost` during longer Claude Code sessions so token usage becomes visible.
+- **Workshop facilitation:** Use `/usage` or `/stats` checkpoints during demos to explain how long sessions grow.
+- **Project budgeting:** Encourage LAI project teams to monitor cost before and after compaction or model switches.
+
+## Real-World Use Cases
+
+| Scenario | Command | Example |
+|---|---|---|
+| Checking spend during a long debugging session | `/cost` | Verify cost before continuing another round of tests |
+| Understanding why a session is getting expensive | `/usage` | Inspect token growth and cache behavior |
+| Deciding whether to compact | `/stats` or `/usage` | Check whether context has grown enough to justify `/compact` |
+| Teaching model tradeoffs | `/model` plus `/cost` | Compare simple edits on Haiku/Sonnet/Opus-style model tiers |
+
+<!-- REVIEW-TODO: [source_links] No source line present — add Claude Code slash commands documentation link -->
