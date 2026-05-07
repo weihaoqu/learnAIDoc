@@ -1,7 +1,7 @@
 {
   "total": 162,
-  "reviewed": 25,
-  "lastRun": "2026-05-07T06:54:00Z",
+  "reviewed": 28,
+  "lastRun": "2026-05-07T07:19:00Z",
   "entries": {
     "accio-work-ai-agent-business.md": {
       "status": "reviewed",
@@ -254,34 +254,34 @@
       "obsidianNote": "created"
     },
     "anthropic-subtract-dont-add-philosophy.md": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "reviewed",
+      "attempts": 1,
       "startedAt": null,
-      "reviewedAt": null,
-      "verdict": null,
-      "fixCount": 0,
+      "reviewedAt": "2026-05-07T07:15:00Z",
+      "verdict": "NEEDS_FIXES",
+      "fixCount": 2,
       "lastError": null,
-      "obsidianNote": "pending"
+      "obsidianNote": "created"
     },
     "anthropic-teams-use-claude-code.md": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "reviewed",
+      "attempts": 1,
       "startedAt": null,
-      "reviewedAt": null,
-      "verdict": null,
-      "fixCount": 0,
+      "reviewedAt": "2026-05-07T07:17:00Z",
+      "verdict": "NEEDS_FIXES",
+      "fixCount": 2,
       "lastError": null,
-      "obsidianNote": "pending"
+      "obsidianNote": "created"
     },
     "anti-ai-exam-skill.md": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "reviewed",
+      "attempts": 1,
       "startedAt": null,
-      "reviewedAt": null,
-      "verdict": null,
-      "fixCount": 0,
+      "reviewedAt": "2026-05-07T07:19:00Z",
+      "verdict": "NEEDS_FIXES",
+      "fixCount": 2,
       "lastError": null,
-      "obsidianNote": "pending"
+      "obsidianNote": "created"
     },
     "autoresearch-autonomous-ml.md": {
       "status": "pending",

@@ -178,9 +178,22 @@ Practical questions to ask about any AI framework you build:
 6. **Dead code audit** — What compensation mechanisms were added for older models that are no longer needed?
 7. **The recurring question** — What can I stop doing?
 
+## How LearnAI Team Could Use This
+
+- Audit LearnAI agent workflows for unnecessary wrappers, long prompts, and stale safety layers that may now reduce model performance.
+- Convert rarely used instructions into on-demand skills so course-building, research, and documentation agents keep context lean.
+- Review high-risk automations separately from reversible local work, using specialized tools only where confirmation or auditability matters.
+
+## Real-World Use Cases
+
+- Refactoring an AI course-building harness by replacing narrow tools with a smaller set of general-purpose tools.
+- Turning long team prompt manuals into skill files that load only when needed.
+- Running quarterly dead-code audits on agent workflows as Claude/Codex model capabilities improve.
+
 ## Links
 
 - **The Bitter Lesson** — [Rich Sutton](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) (the foundational essay this philosophy builds on)
 - **Chris Olah** — [Anthropic co-founder, Transformer Circuits researcher](https://colah.github.io/)
 - **Lance Martin** — LangChain/Anthropic engineer
 - **BrowseComp benchmark** — Web browsing evaluation for agents
+<\!-- REVIEW-TODO: [source_links] Weibo source link is generic (https://weibo.com/) — find specific 默庵·超级个体 post URL and add direct Anthropic blog post link -->

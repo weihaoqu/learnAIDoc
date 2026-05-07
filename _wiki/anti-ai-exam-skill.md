@@ -155,6 +155,18 @@ This skill was built in a single Claude Code session, demonstrating the full wor
 
 **Total session time:** Design (brainstorming + plan) → implementation → review → publish, all in one conversation.
 
+## How LearnAI Team Could Use This
+
+- Create an internal assessment-design checklist for AI-resistant quizzes, coding exams, and project rubrics.
+- Use the skill to audit LearnAI course assessments before release, especially where students could paste questions directly into chatbots.
+- Teach instructors to design assessments around local context, class-specific notation, oral corrections, and required intermediate reasoning.
+
+## Real-World Use Cases
+
+- Auditing a CS database midterm for questions that AI can answer using standard textbook assumptions.
+- Generating alternate exam versions with watermark constants and grading flags for copied or AI-generated answers.
+- Building rubrics that reward class-specific reasoning rather than generic final answers.
+
 ## Philosophy
 
 These strategies are **not "gotcha" traps**. They reward students who attend class, read carefully, and understand the material. Every trap has a straightforward correct answer for the prepared student. The goal is to make AI answers *detectably wrong* — shifting the cost-benefit away from cheating.

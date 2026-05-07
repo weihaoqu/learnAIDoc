@@ -86,3 +86,15 @@ File a GitHub issue ("fix padding on login button") → Claude detects it, analy
 | Incident diagnosis | 15 minutes | 5 minutes |
 | Design implementation | 1 week of back-and-forth | Two 30-minute calls |
 | Feature autonomy | — | 70% autonomous code generation |
+
+## How LearnAI Team Could Use This
+
+- Build Claude Code playbooks for LearnAI operations: docs updates, course asset generation, analytics cleanup, and lightweight internal tools.
+- Use screenshot-based debugging for no-code or low-code team members working with dashboards, LMS tools, and automation platforms.
+- Adopt verification loops for repeatable work: branch first, let Claude implement, then require tests, lint, screenshots, or human review before keeping the result.
+
+## Real-World Use Cases
+
+- Turning support tickets or content requests into GitHub issues that Claude drafts into pull requests.
+- Letting non-engineering staff produce small scripts, dashboards, or course utilities from plain-language requirements.
+- Running several Claude attempts in parallel for medium-sized refactors, then keeping the cleanest passing version.
