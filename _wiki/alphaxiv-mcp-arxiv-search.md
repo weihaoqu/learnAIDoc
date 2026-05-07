@@ -96,7 +96,21 @@ Claude analyzes implementation details
 
 alphaXiv MCP is the easiest to set up (one command, no self-hosting) and the only one with embedding search built in.
 
-## For Your Research Areas, Q
+## How LearnAI Team Could Use This
+
+- **Build faster literature reviews** — combine semantic, keyword, and agentic search when preparing AI education or coding-agent research briefs.
+- **Track AI education research** — monitor papers on AI-assisted learning, assessment, tutoring, and classroom coding agents.
+- **Support student research projects** — help learners find related work even when they do not know the exact academic terminology.
+
+## Real-World Use Cases
+
+| Scenario | Description |
+|---|---|
+| **Literature reviews** | Find conceptually related papers beyond exact keyword matches. |
+| **Reading lists** | Generate dependency graphs that show what to read first in a new subfield. |
+| **Paper-to-code review** | Pull paper text and linked repositories into Claude Code for implementation analysis. |
+
+## For LearnAI Research Areas
 
 | Research Area | How alphaXiv MCP Helps |
 |---|---|

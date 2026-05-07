@@ -60,13 +60,19 @@ claude --chrome
 
 Works with **12+ agents**: Claude Code (recommended, Opus 4.6), GitHub Copilot, Cursor, Windsurf, Gemini CLI, Cline, Roo Code, Continue, Amazon Q, Augment Code, Aider, Codex CLI.
 
-## Use Cases
+## Real-World Use Cases
 
 | Scenario | Description |
 |----------|-------------|
 | **Platform migration** | WordPress/Webflow/Squarespace → Next.js |
 | **Source code recovery** | Rebuild a live site when source code is lost |
 | **Learning** | Study how production sites structure their layouts and interactions |
+
+## How LearnAI Team Could Use This
+
+- **Rebuild legacy LearnAI pages** — migrate older pages or prototypes into maintainable Next.js components.
+- **Create reference implementations** — study high-quality education, documentation, and tool sites to improve LearnAI UI patterns.
+- **Prototype course microsites** — quickly generate first-pass layouts from approved reference sites, then rewrite copy and branding for LearnAI.
 
 ## Ethical Note
 
