@@ -153,3 +153,15 @@ Combined:       Both sides optimized                → significant cost + quota
 ```
 
 Use both together for automated pipelines. For interactive work, rtk alone is usually enough — you probably *want* Claude's explanations when you're learning.
+
+## How LearnAI Team Could Use This
+
+- Teach token cost literacy as part of AI engineering practice.
+- Use rtk examples to show how tool output affects agent performance and budget.
+- Build classroom exercises where students compare raw versus compressed command output.
+
+## Real-World Use Cases
+
+- Reducing token burn during test-heavy coding sessions.
+- Keeping long Claude Code sessions usable on medium or large repositories.
+- Teaching teams to monitor and compress noisy CLI output before it enters agent context.

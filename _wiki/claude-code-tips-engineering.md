@@ -131,7 +131,13 @@ Hook       →  "After every Edit on *.rs,              (enforcement)
 | `Subagents` | Need isolated context for a task | No boundary constraints (fan-out chaos) |
 | `Plugins` | Need to distribute skills/hooks/MCP | Treating plugins as runtime primitives |
 
-## Why Students Should Use These Resources
+## Real-World Use Cases
+
+- Teaching students how to manage Claude Code context budgets during multi-file projects.
+- Building class demos around hooks, skills, subagents, and verification loops.
+- Creating team workflows for agent-assisted software engineering assignments.
+
+## How LearnAI Team Could Use This
 
 These two resources are a masterclass in **understanding how AI agent systems actually work** — not just using them, but understanding the engineering behind them:
 

@@ -45,3 +45,15 @@ Claude collapses this into minutes:
 - **Iterative refinement** — Ask for specific additions (practice problems, margin notes, summaries) without starting over
 
 This is especially powerful for educators who know their content deeply but don't want to spend time on typesetting and layout.
+
+## How LearnAI Team Could Use This
+
+- Help instructors convert rough notes into polished course handouts.
+- Prototype AI-supported workflows for lesson preparation and worksheet generation.
+- Compare Claude-generated LaTeX materials with human-authored versions for teaching quality.
+
+## Real-World Use Cases
+
+- Turning handwritten lecture notes into printable PDF handouts.
+- Creating problem sets, study guides, and worked examples from a syllabus.
+- Refreshing old course materials with clearer structure, callout boxes, and LaTeX formatting.
