@@ -12,6 +12,8 @@ image: "/assets/images/ai-learning-tools.jpg"
 
 Tools that shift AI from a "crutch" to a "lever" for deep understanding—implementing high-engagement learning patterns.
 
+*Source: [DeepTutor](https://github.com/HKUDS/DeepTutor) | [PageLM](https://github.com/CaviraOSS/pagelm) | [Frontend-Slides](https://github.com/zarazhangrui/frontend-slides) | [PDF3MD](https://github.com/murtaza-nasir/pdf3md)*
+
 ## Why This Matters
 
 Research shows that *how* you interact with AI determines learning outcomes. These tools are designed to keep you cognitively engaged rather than passively consuming AI output.
@@ -73,3 +75,15 @@ Simplifies the conversion of PDF files to Markdown or Word for easier editing an
 | PDF3MD | Content Portability | Convert PDFs for use in other tools |
 
 These tools support the principle: **stay cognitively engaged, even when AI assists**.
+
+## How LearnAI Team Could Use This
+
+- Turn internal PDFs, papers, and notes into interactive study flows using PageLM and DeepTutor.
+- Use Frontend-Slides to create visual explainers for AI concepts, workflows, and architecture reviews.
+- Convert source materials with PDF3MD so they can be reused across docs, quizzes, and learning experiments.
+
+## Real-World Use Cases
+
+- A learner converts a research paper into Markdown, generates quizzes, and reviews weak areas through flashcards.
+- An instructor builds an interactive knowledge base from course readings before a workshop.
+- A team creates animated HTML slides to explain an AI system design during onboarding.

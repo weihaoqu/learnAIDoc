@@ -81,6 +81,18 @@ The **student profile** page gives learners their own radar chart, progression o
 | Data | JSONL file store (no database) |
 | Deploy | AWS EC2 + Docker |
 
+## How LearnAI Team Could Use This
+
+- Use AI Mastery Games as a low-friction practice layer after AI literacy lessons, letting learners apply concepts like hallucination detection, prompt evaluation, ethics, and AI security through short game sessions.
+- Review dashboard skill-gap data to identify which concepts need reteaching across a class or cohort.
+- Use individual student profiles to recommend targeted practice games based on weak dimensions such as Ethics, Critical Thinking, or Prompting.
+
+## Real-World Use Cases
+
+- **AI literacy workshops:** Run selected games as hands-on stations for teachers, students, or staff learning how AI systems fail.
+- **Classroom formative assessment:** Use game scores to see whether learners can identify hallucinations, bias, prompt injection, and ethical tradeoffs before moving to larger projects.
+- **Professional development:** Let educators experience common AI risks through play, then connect each game mechanic to classroom policy, assignment design, and student guidance.
+
 ## Try It
 
 - **Play:** [monmouthaiteaching.com/ai-games](https://monmouthaiteaching.com/ai-games)
