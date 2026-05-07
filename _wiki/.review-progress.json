@@ -1,7 +1,7 @@
 {
   "total": 162,
-  "reviewed": 76,
-  "lastRun": "2026-05-07T12:49:00Z",
+  "reviewed": 79,
+  "lastRun": "2026-05-07T13:09:00Z",
   "entries": {
     "accio-work-ai-agent-business.md": {
       "status": "reviewed",
@@ -764,34 +764,34 @@
       "obsidianNote": "created"
     },
     "claude-three-hidden-quality-prompts.md": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "reviewed",
+      "attempts": 1,
       "startedAt": null,
-      "reviewedAt": null,
-      "verdict": null,
-      "fixCount": 0,
+      "reviewedAt": "2026-05-07T13:05:00Z",
+      "verdict": "NEEDS_FIXES",
+      "fixCount": 2,
       "lastError": null,
-      "obsidianNote": "pending"
+      "obsidianNote": "created"
     },
     "claude-use-cases-directory.md": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "reviewed",
+      "attempts": 1,
       "startedAt": null,
-      "reviewedAt": null,
-      "verdict": null,
-      "fixCount": 0,
+      "reviewedAt": "2026-05-07T13:07:00Z",
+      "verdict": "NEEDS_FIXES",
+      "fixCount": 2,
       "lastError": null,
-      "obsidianNote": "pending"
+      "obsidianNote": "created"
     },
     "claw-code-python-rewrite.md": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "reviewed",
+      "attempts": 1,
       "startedAt": null,
-      "reviewedAt": null,
-      "verdict": null,
-      "fixCount": 0,
+      "reviewedAt": "2026-05-07T13:09:00Z",
+      "verdict": "NEEDS_FIXES",
+      "fixCount": 2,
       "lastError": null,
-      "obsidianNote": "pending"
+      "obsidianNote": "created"
     },
     "code-review-graph-knowledge-graph.md": {
       "status": "pending",

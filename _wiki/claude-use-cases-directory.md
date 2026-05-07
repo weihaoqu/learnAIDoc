@@ -66,3 +66,16 @@ Most people use Claude for a narrow set of tasks they already know. This directo
 - [Claude Use Cases Directory](https://claude.com/resources/use-cases)
 - [Claude API Documentation](https://docs.anthropic.com/en/docs)
 - [Claude Code Official Docs](https://code.claude.com/docs/en/how-claude-code-works)
+
+## How LearnAI Team Could Use This
+
+- Mine the directory for reusable workflow patterns when designing new skills or wiki entries.
+- Use as curriculum material: students explore use cases and identify which Claude features each one requires.
+- Expand the team's prompt library by adapting documented use cases to LearnAI-specific contexts.
+
+## Real-World Use Cases
+
+- Educators creating course materials from the "Education" category examples.
+- Analysts adapting the "Research" workflows for data synthesis and report generation.
+- Teams preparing presentations using the "Productivity" use case templates.
+- Students exploring the directory to discover what's possible with Claude beyond chat.

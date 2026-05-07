@@ -101,3 +101,18 @@ He noted that different tools have different strengths: "Codex is better at reas
 1. **Harness > Model** — The value isn't in Claude's weights, it's in how the harness orchestrates tools, manages context, and enforces quality. Now that architecture is open for study.
 2. **AI building AI tools** — The entire rewrite was done through AI orchestration (OmX + Codex), demonstrating that agent systems can now reverse-engineer and reimplement other agent systems.
 3. **Community velocity** — 50K stars in 2 hours signals massive demand for open, inspectable agent infrastructure.
+
+## How LearnAI Team Could Use This
+
+- Study the Claw Code architecture as a teaching resource for agent orchestration patterns.
+- Compare Claude Code (TypeScript) and Claw Code (Python) implementations to understand framework design tradeoffs.
+- Use as a base for building custom agent harnesses for research or course-specific workflows.
+
+## Real-World Use Cases
+
+- Agent framework education: students trace how a tool call flows through the harness.
+- Prototyping custom agent loops with Python instead of TypeScript.
+- Open-source harness experimentation: fork and modify without Claude Code's binary constraints.
+- Runtime architecture comparison exercises in systems design courses.
+
+<!-- REVIEW-TODO: [source_links] WSJ citation uses LinkedIn short URL (lnkd.in) — replace with direct WSJ article URL or archived citation -->

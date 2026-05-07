@@ -114,3 +114,16 @@ Beyond the three core instructions, Anthropic's docs list additional techniques:
 The surprising part isn't that these instructions exist — it's that they've been publicly documented all along, yet almost no one uses them. The original poster noted: "I've been using Claude for a year and never found this page. These should be on the front page."
 
 The deeper lesson: **the gap between mediocre and excellent AI output is often just 2-3 lines of system prompt** that most users never write.
+
+## How LearnAI Team Could Use This
+
+- Add the three hallucination-reduction instructions to shared CLAUDE.md templates for research and documentation projects.
+- Use as a teaching example: show students how 2-3 lines of system prompt dramatically change output quality.
+- Build citation-checking workflows that require Claude to flag uncertainty and cite sources.
+
+## Real-World Use Cases
+
+- Literature reviews where every claim needs a verifiable source.
+- Policy summaries that must distinguish established facts from AI interpretation.
+- Course material QA: catch unsupported claims before publishing.
+- Customer support knowledge bases where accuracy is critical.
