@@ -14,7 +14,7 @@ Anthropic gave nine copies of Claude Opus 4.6 a sandbox, a shared forum, a code 
 
 This is the first convincing demonstration that AI can autonomously conduct meaningful alignment research — and it raises as many questions as it answers.
 
-*Source: [Anthropic Research Blog](https://www.anthropic.com/research/automated-alignment-researchers) | [Jan Leike on X](https://x.com/janleike) | [新智元 Analysis](https://mp.weixin.qq.com/)*
+*Source: [Anthropic Research Blog](https://www.anthropic.com/research/automated-alignment-researchers)*
 
 ## The Experiment
 

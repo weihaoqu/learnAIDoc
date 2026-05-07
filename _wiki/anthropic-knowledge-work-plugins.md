@@ -21,7 +21,7 @@ The key insight, as the source commentary puts it:
 > "以前大家在调 prompt，现在开始调组织结构"
 > Before everyone was tuning prompts, now they're tuning organizational structure.
 
-**Source:** Weibo post by Simon的白日梦 (2026-03-31)
+**Source:** [Anthropic knowledge-work-plugins GitHub repository](https://github.com/anthropics/knowledge-work-plugins) | Weibo post by Simon的白日梦 (2026-03-31)
 
 ---
 
@@ -41,7 +41,7 @@ The first batch covers eleven professional roles:
 | 8 | **Data** | SQL queries, statistical analysis, dashboard creation, data exploration |
 | 9 | **Enterprise Search** | Cross-system search, knowledge retrieval, document discovery |
 | 10 | **Bio Research** | Literature review, experiment planning, data analysis for life sciences |
-| 11 | **Plugin Manager** | Install, configure, and manage other plugins |
+| 11 | **Cowork Plugin Management** | Create, install, configure, and manage other plugins |
 
 ---
 
@@ -127,3 +127,17 @@ This pulls all eleven plugins. You can also install individual plugins by specif
 5. Distribute via your org's plugin registry or direct Git URL
 
 The entire customization process is editing text files. No compilation, no deployment pipeline, no infrastructure changes.
+
+## How LearnAI Team Could Use This
+
+- **Role-specific teaching assistants** — Build plugins for course design, student support, research help, and content review so Claude follows LearnAI workflows instead of generic assistant behavior.
+- **Internal knowledge workflows** — Encode LearnAI terminology, wiki standards, review checklists, and publishing steps as skills and slash commands.
+- **Tool-connected operations** — Use MCP connectors to let role plugins work across docs, issue trackers, calendars, and team communication tools with scoped permissions.
+- **Student-facing examples** — Use the plugin structure as a concrete lesson on how AI systems move from prompt engineering to organizational design.
+
+## Real-World Use Cases
+
+- **Enterprise teams** — Customize role plugins for sales, support, finance, legal, marketing, and product workflows.
+- **Education teams** — Create reusable plugins for curriculum planning, assignment review, student advising, and knowledge-base maintenance.
+- **Research organizations** — Package literature review, experiment planning, data analysis, and reporting workflows into repeatable Claude roles.
+- **Operations teams** — Standardize recurring work such as meeting prep, task triage, status updates, and cross-system search.
