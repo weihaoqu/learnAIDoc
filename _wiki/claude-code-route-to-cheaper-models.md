@@ -115,3 +115,17 @@ This cuts the research cost to nearly nothing while keeping full capability for 
 | `~/.claude/agents/` | Personal — available across all projects |
 
 Monitor your spending with `/cost` inside any session.
+
+## How LearnAI Team Could Use This
+
+- Use cheap read-only subagents for wiki audits, source checks, link checks, and cross-file documentation searches.
+- Reserve stronger models for final edits and judgment-heavy rewrites.
+- Split large codebase exploration from implementation to reduce Claude Code costs.
+
+## Real-World Use Cases
+
+- Run parallel read-only audits across multiple wiki categories.
+- Search source files and related entries before updating documentation.
+- Use Haiku subagents for repetitive grep/glob tasks that don't need reasoning.
+
+<!-- REVIEW-TODO: [source_links] No source line present — add Claude Code docs link -->

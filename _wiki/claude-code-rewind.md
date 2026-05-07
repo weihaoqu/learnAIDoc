@@ -38,6 +38,20 @@ When you select a checkpoint, you get four options:
 - **Not a Git replacement.** Checkpoints are session-level undo, not permanent history. Keep using Git for commits and branches.
 - **External edits aren't captured.** Manual edits you make outside Claude Code won't appear in checkpoints.
 
+## How LearnAI Team Could Use This
+
+- Use `/rewind` during documentation and code sessions to recover from bad edits while preserving useful discussion context.
+- Branch a session before trying risky restructuring or refactoring.
+- Summarize long sessions after a stable checkpoint to recover context space.
+
+## Real-World Use Cases
+
+- Revert a failed documentation rewrite while keeping the useful planning discussion.
+- Undo generated code changes after tests fail without losing the debugging trail.
+- Summarize a long session after a stable checkpoint to recover context space.
+
+<!-- REVIEW-TODO: [source_links] No source line present — add Claude Code docs link -->
+
 ## Pro Tip
 
 Combine `/rewind` with `claude --continue --fork-session` to preserve your original session and try an entirely different approach on a copy.

@@ -50,7 +50,15 @@ Developer B (afternoon):
 
 Developer B doesn't need to re-explain anything. Claude has the full history of what Developer A discussed, tried, and decided.
 
-## Real-Life Workflows
+## How LearnAI Team Could Use This
+
+- Use `claude --from-pr` when handing off Claude Code work tied to a pull request, especially for documentation updates and review fixes.
+- Preserve prior decisions across multi-day implementation tasks.
+- Enable async collaboration where one person starts and another continues from the PR context.
+
+<!-- REVIEW-TODO: [source_links] No source line present — add Claude Code docs link -->
+
+## Real-World Use Cases
 
 ### Multi-Day Solo Work
 
