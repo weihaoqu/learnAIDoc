@@ -58,6 +58,21 @@ Suite of specialized review agents. Covers test coverage, error handling, type d
 - More thorough than a single pass
 - Each agent focuses on one thing and does it well
 
+## How LearnAI Team Could Use This
+
+- Use Superpowers for planning larger documentation or codebase updates before editing.
+- Use Frontend Design and Playground for visual explainers, demos, and interactive learning assets.
+- Use PR Review Toolkit before publishing changes that affect shared docs or examples.
+
+## Real-World Use Cases
+
+- **Superpowers:** Plan and verify a multi-page wiki refresh.
+- **Frontend Design:** Polish a learner-facing demo page or dashboard.
+- **Code Simplifier:** Clean up generated helper scripts after they pass tests.
+- **Playground:** Build a one-file interactive explainer for a concept map or data workflow.
+- **Claude in Chrome:** Test a logged-in web workflow or clean up browser-based tasks.
+- **PR Review Toolkit:** Run focused review passes before merging docs or tooling changes.
+
 ## Tips
 
 - **Stack skills:** Combine multiple plugins based on your workflow. Superpowers for planning, Frontend Design for UI, PR Review when done.

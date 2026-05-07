@@ -116,6 +116,18 @@ Create an agent team: one teammate on frontend, one on backend, one on tests.
 - Frequent back-and-forth with you is needed
 - Work is sequential and shares a lot of context
 
+## How LearnAI Team Could Use This
+
+- Use subagents for focused documentation review, source checking, and single-entry cleanup.
+- Reserve agent teams for parallel work across docs, examples, and QA when coordination overhead is justified.
+- Teach the tradeoff: subagents = cheap isolation, teams = expensive parallelism with communication.
+
+## Real-World Use Cases
+
+- Split a large docs update into research, editing, and QA tracks using agent teams.
+- Run security, performance, and test-review perspectives in parallel on a complex PR.
+- Use a subagent to inspect related wiki entries before editing the current page.
+
 ## Limitations
 
 **Subagents:**

@@ -100,4 +100,18 @@ Anthropic's recommendation: **use auto mode in isolated environments**. It reduc
 
 ## The Harness Engineering Connection
 
+## How LearnAI Team Could Use This
+
+- Use auto mode for low-risk documentation maintenance, formatting cleanup, and link checks in trusted repos.
+- Keep manual approval or sandboxed runs for broad file rewrites, publishing workflows, and credentials-adjacent work.
+- Teach the classifier as an example of harness engineering: middleware between intent and execution.
+
+## Real-World Use Cases
+
+- Let Claude update multiple wiki entries while blocking destructive commands.
+- Run repetitive linting and formatting tasks without approving every safe shell command.
+- Use auto mode during long documentation cleanup sessions while staying out of full skip-permissions mode.
+
+## The Harness Engineering Connection
+
 Auto mode is a textbook example of **harness engineering** in action — it's a middleware layer (the classifier) sitting between the model's intent and the actual execution. It embodies Pillar 2 (Architectural Constraints: code enforcement > prompt suggestions) and Pillar 6 (Modular Middleware: removable as models improve). As models get better at self-regulating, this classifier layer could eventually be removed.
