@@ -78,13 +78,20 @@ For an educator, this is a different design point than tools like NotebookLM or 
 
 The MAIC research line has been deployed at Tsinghua since **July 2024**, starting with two courses for 500+ students and now validated with 700+ students across two years of iteration. This is rare for an "AI classroom" — most are demos. The published paper in JCST 2026 makes this one of the more credible academic-to-production handoffs in AI education.
 
-## Why It's Relevant to LAI Work
+## How LearnAI Team Could Use This
 
-For Q's research lens (AI-assisted education, formal verification pedagogy), OpenMAIC is interesting on three axes:
+For LearnAI's research lens (AI-assisted education, formal verification pedagogy), OpenMAIC is interesting on three axes:
 
-1. **Multi-agent peer modeling** — the "AI classmate" idea is a clean operationalization of social learning theory. Useful as a baseline to compare against any custom LAI agent design.
-2. **Open architecture** — LangGraph director + 28 action types is a reusable scaffold. You could fork it to plug in domain-specific agents (e.g., a "type-checker classmate" for a PL course).
-3. **Export to PPTX/HTML** — generated lessons aren't trapped in the platform. This matters if you want to use OpenMAIC as a *content generator* rather than a runtime.
+1. **Multi-agent peer modeling** — the "AI classmate" idea is a clean operationalization of social learning theory. Useful as a baseline to compare against any custom LearnAI agent design.
+2. **Open architecture** — LangGraph director + 28 action types is a reusable scaffold. The team could fork it to plug in domain-specific agents (e.g., a "type-checker classmate" for a PL course).
+3. **Export to PPTX/HTML** — generated lessons aren't trapped in the platform. This matters if LearnAI wants to use OpenMAIC as a *content generator* rather than a runtime.
+
+## Real-World Use Cases
+
+- **University instructors** — turn lecture notes or PDFs into interactive classroom simulations with teacher narration, peer questions, quizzes, and whiteboard work.
+- **Online course teams** — generate MOOC-style lessons with more social dynamics than static video.
+- **AI education researchers** — study how multi-agent peer modeling changes engagement, misconception repair, and learning outcomes.
+- **Technical training teams** — export generated classes to PPTX or standalone HTML for reuse in workshops and internal courses.
 
 ## Getting Started
 
