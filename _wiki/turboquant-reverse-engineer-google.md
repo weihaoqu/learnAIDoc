@@ -103,6 +103,18 @@ With TurboQuant, the hardware requirements for running large models drop dramati
 
 This matters for privacy-sensitive applications (medical, legal, financial) where sending data to cloud APIs isn't an option.
 
+## How LearnAI Team Could Use This
+
+- Use TurboQuant as a case study in AI-assisted paper implementation: reading a paper, building a minimal prototype, and validating results.
+- Teach KV-cache memory pressure with concrete numbers before and after compression.
+- Show where human expertise still matters when Claude helps with C, GPU kernels, and low-level debugging.
+
+## Real-World Use Cases
+
+- Run larger local LLMs or longer contexts on consumer Apple Silicon and NVIDIA hardware.
+- Reduce memory cost for privacy-sensitive local AI workflows in legal, medical, or research settings.
+- Prototype and benchmark inference optimizations before integrating into llama.cpp-style runtimes.
+
 ## Links
 
 - **GitHub:** [TheTom/turboquant_plus](https://github.com/TheTom/turboquant_plus)

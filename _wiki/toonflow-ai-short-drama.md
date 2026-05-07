@@ -139,6 +139,18 @@ We used Toonflow to convert our AI-written literary novella [《探花书房》]
 - **EP02**: 故地重游，情愫渐浓 (Return visit, deepening feelings)
 - **EP03**: 情归所向，真心觉醒 (Emotional awakening on Pingjiang Road)
 
+## How LearnAI Team Could Use This
+
+- Study Toonflow as a reference architecture for multi-agent creative pipelines: decision, execution, and supervision layers.
+- Use the novel-to-video workflow as a demo path for LearnAI content production.
+- Turn the documented failure points into training material on tool-calling reliability and vendor abstraction.
+
+## Real-World Use Cases
+
+- Convert AI-written webnovel chapters into short-drama pilots or Douyin/TikTok storyboard packages.
+- Prototype visual treatments for IP development before hiring a full production team.
+- Teach agent orchestration using a concrete media pipeline with structured intermediate outputs.
+
 ## Links
 
 - **GitHub:** [HBAI-Ltd/Toonflow-app](https://github.com/HBAI-Ltd/Toonflow-app)

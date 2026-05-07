@@ -131,3 +131,17 @@ make install  # Copy to /Applications
 ```
 
 A reproducibility guarantee: clone the source repo, run `make build`, get an identical app. The full build process is documented in a public asciinema recording.
+
+## How LearnAI Team Could Use This
+
+- Use Type4Me as a practical example of local-first AI tooling combining offline speech recognition with optional LLM cleanup.
+- Demonstrate voice-driven editing workflows for documentation, note-taking, and prompt iteration.
+- Compare Type4Me with Voice-Input-Src/Dist to teach building a product vs open-sourcing a reproducible prompt.
+
+## Real-World Use Cases
+
+- Dictate notes, drafts, and messages on macOS without sending raw audio to cloud services.
+- Select existing text and use voice commands to summarize, rewrite, translate, or format it through an LLM.
+- Build specialized voice-input workflows for bilingual writing, meeting notes, coding prompts, and documentation.
+
+<!-- REVIEW-TODO: [source_links] type4me: Weibo source link is generic (https://weibo.com/) — find specific 宝玉 xp post URL -->
