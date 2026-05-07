@@ -1,7 +1,7 @@
 {
   "total": 162,
-  "reviewed": 139,
-  "lastRun": "2026-05-07T19:54:00Z",
+  "reviewed": 142,
+  "lastRun": "2026-05-07T20:14:00Z",
   "entries": {
     "accio-work-ai-agent-business.md": {
       "status": "reviewed",
@@ -1394,34 +1394,34 @@
       "obsidianNote": "exists"
     },
     "seedance-2-ai-video.md": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "reviewed",
+      "attempts": 1,
       "startedAt": null,
-      "reviewedAt": null,
-      "verdict": null,
-      "fixCount": 0,
+      "reviewedAt": "2026-05-07T20:10:00Z",
+      "verdict": "NEEDS_FIXES",
+      "fixCount": 2,
       "lastError": null,
-      "obsidianNote": "pending"
+      "obsidianNote": "exists"
     },
     "seeing-like-an-agent-tool-design.md": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "reviewed",
+      "attempts": 1,
       "startedAt": null,
-      "reviewedAt": null,
-      "verdict": null,
+      "reviewedAt": "2026-05-07T20:12:00Z",
+      "verdict": "CLEAN",
       "fixCount": 0,
       "lastError": null,
-      "obsidianNote": "pending"
+      "obsidianNote": "exists"
     },
     "sentrysearch-video-search.md": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "reviewed",
+      "attempts": 1,
       "startedAt": null,
-      "reviewedAt": null,
-      "verdict": null,
-      "fixCount": 0,
+      "reviewedAt": "2026-05-07T20:14:00Z",
+      "verdict": "NEEDS_FIXES",
+      "fixCount": 2,
       "lastError": null,
-      "obsidianNote": "pending"
+      "obsidianNote": "exists"
     },
     "seven-framework-prompts-thinking-partner.md": {
       "status": "pending",

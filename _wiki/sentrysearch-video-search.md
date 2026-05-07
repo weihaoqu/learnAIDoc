@@ -118,7 +118,13 @@ sentrysearch search "accident" --overlay
 
 Displays speed, GPS location, timestamp, and road name on the clip. Requires Tesla firmware 2025.44.25+ with HW3+.
 
-## Use Cases Beyond Dashcams
+## How LearnAI Team Could Use This
+
+- **Multimodal search demos** — Show how video and text can be embedded into a shared retrieval space without captioning every frame.
+- **Privacy-first AI workflows** — Compare Gemini cloud indexing with local Qwen3-VL indexing for sensitive footage.
+- **Student projects** — Build small video-search assignments around lecture clips, lab recordings, or public-domain footage.
+
+## Real-World Use Cases
 
 | Use Case | Search Query Example |
 |---|---|
@@ -141,3 +147,4 @@ The underlying technique — multimodal embedding without intermediate text — 
 
 - **GitHub:** [github.com/ssrajadh/sentrysearch](https://github.com/ssrajadh/sentrysearch)
 - **Claude Code skill:** [clawhub.ai/ssrajadh/natural-language-video-search](https://clawhub.ai/ssrajadh/natural-language-video-search)
+<!-- REVIEW-TODO: [source_links] sentrysearch: Weibo source link is generic (https://weibo.com/) — find specific 宝玉 xp post URL -->

@@ -85,7 +85,13 @@ Free tier available for testing. Volume discounts for heavy usage.
 
 **In short:** Seedance 2.0 leads on audio integration and narrative coherence. Sora leads on visual creativity. Kling is fastest. Runway is simplest for quick prototyping.
 
-## Practical Use Cases
+## How LearnAI Team Could Use This
+
+- **AI video curriculum** — Use Seedance 2.0 as a case study for native audio-video generation, multimodal prompting, and multi-shot narratives.
+- **Creative prototyping** — Compare draft-at-low-resolution workflows against final 2K rendering for cost-aware production exercises.
+- **Tool comparison labs** — Evaluate Seedance against Sora, Runway, and Kling on audio, coherence, latency, and API access.
+
+## Real-World Use Cases
 
 - **Marketing videos** — Feed a product description + product photos → get a polished video ad with voiceover
 - **Multilingual content** — Generate one video, output in multiple languages with lip-synced dialogue
@@ -110,3 +116,4 @@ Currently available on Dreamina (Chinese version, requires Douyin account). Expa
 - Real-time generation
 - Interactive choose-your-own-adventure video
 - Persistent AI avatars across videos
+<!-- REVIEW-TODO: [source_links] seedance-2-ai-video: No source line present — add Seedance website or ByteDance announcement URL -->
