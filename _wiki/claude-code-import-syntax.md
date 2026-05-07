@@ -12,6 +12,8 @@ image: "/assets/images/claude-code-imports.jpg"
 
 Today I learned CLAUDE.md supports `@` imports to pull in content from other files — including home directory paths. This lets teams share coding standards from a central repo while keeping personal preferences local.
 
+*Source: [Claude Code Docs — Memory imports](https://docs.anthropic.com/en/docs/claude-code/memory#imports)*
+
 ## Basic Syntax
 
 Use `@path/to/file` anywhere in your CLAUDE.md:
@@ -153,3 +155,15 @@ Result: Claude loads all four levels of standards in one import chain.
 - **First-time approval** — Claude shows a one-time dialog when a project first uses imports. If declined, imports stay disabled for that project.
 - **Check what's loaded** — run `/memory` in a session to see all loaded files including imports
 - **Relative paths resolve from the importing file**, not the working directory
+
+## How LearnAI Team Could Use This
+
+- Keep shared Claude Code standards in a central LearnAI repo and import them into each project CLAUDE.md.
+- Put course-specific, content QA, and publishing rules in separate imported files so Claude loads the right context per workspace.
+- Let each team member keep private local preferences in CLAUDE.local.md while still inheriting the same team standards.
+
+## Real-World Use Cases
+
+- Shared team standards imported via `@~/team-standards/code-review.md` across all project repos.
+- Course-specific rules in `@./course-rules.md` that only load in that course workspace.
+- Personal preferences in `CLAUDE.local.md` that override team defaults without editing shared files.

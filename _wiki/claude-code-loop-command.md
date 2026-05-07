@@ -72,7 +72,13 @@ Under the hood, Claude uses three tools:
 
 A session can hold up to **50 scheduled tasks** at once.
 
-## Practical Examples
+## How LearnAI Team Could Use This
+
+- Poll publishing jobs, site builds, and broken-link checks while a Claude Code session stays open.
+- Schedule recurring checks on PRs that update lessons, wiki entries, or assets.
+- Use short-lived loops during launches to monitor deploy status, CI, and content QA without creating permanent automation.
+
+## Real-World Use Cases
 
 ### Poll a Deployment
 
