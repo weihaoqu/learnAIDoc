@@ -104,3 +104,18 @@ Use to overcome personal bias and simplify high-level concepts for teaching or d
 6. **Use #07** to challenge your own assumptions
 
 This keeps you cognitively engaged while AI handles the systematic analysis.
+
+## How LearnAI Team Could Use This
+
+- Turn workshop notes, research excerpts, and team discussions into structured briefs before curriculum planning.
+- Use contradiction finding and picky review prompts to stress-test lesson claims, rubric language, and AI literacy guidance.
+- Convert complex AI concepts into mental models that can be reused in LearnAI teaching materials.
+
+## Real-World Use Cases
+
+- Reviewing an AI policy memo for unsupported claims before publication.
+- Turning messy interview notes into a research brief with evidence and counterarguments.
+- Stress-testing a grant proposal or curriculum rationale before stakeholder review.
+- Creating classroom-ready explanations of technical concepts such as model evaluation or hallucination.
+
+<!-- REVIEW-TODO: [source_links] No source line present — add original source URL or attribution -->

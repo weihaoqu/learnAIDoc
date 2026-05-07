@@ -342,6 +342,18 @@ The workflow cost ~30 extra minutes (JUDGE + VERIFY) and redirected the entire p
 4. **Parallel agents are cheap insurance.** Three background agents running for 15 minutes found: wrong targets, wrong tool for one subproblem, simpler encoding than planned.
 5. **Record rejected alternatives.** We rejected Framing C for POPL/PLDI, but recorded why — so future-us doesn't waste time re-exploring that path.
 
+## How LearnAI Team Could Use This
+
+The LearnAI team can apply this pipeline when deciding which AI research topics, tutorials, or tool workflows deserve deeper investment. Use FORMULATE to define the learning or research objective, FIND to collect papers and prior LearnAI notes, JUDGE to stress-test whether the direction is actually valuable, VERIFY to confirm with independent sources or tools, EXECUTE to build the artifact, MONITOR to track updates, and RECORD to preserve decisions for future contributors.
+
+## Real-World Use Cases
+
+- Evaluating whether a new paper is worth turning into a LearnAI tutorial or implementation guide.
+- Stress-testing a research plan before spending weeks building experiments or formal encodings.
+- Comparing AI research tools such as Claude Code, Codex, Feynman skills, and autoresearch for a specific project.
+- Setting up scheduled monitoring for fast-moving paper areas, benchmarks, or tool releases.
+- Recording rejected directions so future LearnAI contributors do not repeat already-invalidated work.
+
 ## How to Use This Workflow in Your Own Projects
 
 The workflow lives at `~/.claude/RESEARCH_WORKFLOW.md` — a global file accessible from any Claude Code project.
