@@ -5,7 +5,7 @@ category: Claude Code Basics
 redirect_from:
   - "/wiki/claude code/claude-code-custom-agents/"
 tags: [claude-code, cli, agents, customization]
-related: ["Claude Code Agent Teams vs Subagents", "Claude Code Power User Tips"]
+related: ["Claude Code: Agent Teams vs Subagents", "Claude Code Power User Tips"]
 icon: "🤖"
 image: "/assets/images/claude-code-custom-agents.png"
 ---
@@ -59,3 +59,15 @@ Different tasks benefit from different default behaviors. Instead of re-explaini
 | **Custom agent** | Changing the overall persona, workflow, and tool preferences |
 
 Think of CLAUDE.md as "what to know about this project" and agents as "how to behave in general." They work together — your agent defines the baseline behavior, and CLAUDE.md layers on project context.
+
+## How LearnAI Team Could Use This
+
+- **Role-specific course agents** — Create default agents for curriculum design, code review, research synthesis, and student support.
+- **Reusable teaching workflows** — Encode preferred review steps and explanation style once instead of repeating them in every Claude Code session.
+- **Team consistency** — Pair a shared agent with project-level CLAUDE.md files so team members get consistent behavior across repositories.
+
+## Real-World Use Cases
+
+1. **Course development** — Launch Claude Code with a curriculum-focused agent when drafting lessons, exercises, and rubrics.
+2. **Codebase review** — Use a reviewer agent that prioritizes tests, security, and maintainability before suggesting edits.
+3. **Research documentation** — Use a synthesis agent that structures notes into source-backed wiki entries.

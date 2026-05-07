@@ -110,3 +110,15 @@ The key: **mandatory architectural boundaries are more durable than soft style s
 | Level 3 (Context) | Pillar 1: Context Architecture |
 | Level 4 (Infrastructure) | Pillar 2: Architectural Constraints |
 | Level 5 (Orchestration) | Pillar 4: Subagent Firewalls + Pillar 6: Modular Middleware |
+
+## How LearnAI Team Could Use This
+
+- **Skill progression framework** — Use the five levels as a rubric for teaching Claude Code from basic prompting through orchestration.
+- **Curriculum diagnostics** — Map learners to a level based on failure modes: weak prompts, drifting execution, context overload, missing verification, or orchestration complexity.
+- **Team operating model** — Turn Level 4 and 5 practices into internal standards for hooks, quality gates, worktrees, and multi-agent coordination.
+
+## Real-World Use Cases
+
+1. **Student assessment** — Identify whether a learner needs prompt practice, planning habits, context engineering, or infrastructure automation.
+2. **Engineering onboarding** — Teach new team members how Claude Code usage matures from single-session prompting to managed multi-agent workflows.
+3. **Workflow audits** — Use the levels to find where a team is overusing prompts when it needs automated checks or orchestration.
