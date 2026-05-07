@@ -133,6 +133,20 @@ Even if you never write fiction, the patterns here apply to any long-running AI 
 
 These are the same principles behind [harness engineering](/learnAIDoc/wiki/claude%20code/harness-engineering-agents/) and [Karpathy's LLM Knowledge Bases](/learnAIDoc/wiki/ai%20research/karpathy-llm-knowledge-bases/). The web novel is just a concrete application of the general pattern.
 
+## How LearnAI Team Could Use This
+
+- **Long-context curriculum** — use the project as a concrete example of RAG, entity graphs, and structured memory for multi-session AI work.
+- **Agent workflow demos** — teach plan/write/review loops as a reusable pattern for research, documentation, and coding agents.
+- **Creative AI labs** — let students compare naive long-form generation against retrieval-backed, metadata-constrained generation.
+- **Quality evaluation practice** — adapt the momentum and consistency checks into rubrics for evaluating AI-generated artifacts.
+
+## Real-World Use Cases
+
+- **Long-form fiction production** — maintain continuity across hundreds of chapters and millions of words.
+- **Research report drafting** — retrieve relevant prior notes while preserving entity, claim, and citation consistency.
+- **Legal or policy drafting** — track obligations, actors, definitions, and contradictions across large document sets.
+- **Game or worldbuilding bibles** — keep characters, locations, factions, timelines, and unresolved plot threads consistent.
+
 ## Case Study: 《探花书房》 — Full Novel in One Session
 
 I used the webnovel-writer skill to build a complete **48,000-word literary novella** from concept to polished PDF ebook, mostly overnight.
