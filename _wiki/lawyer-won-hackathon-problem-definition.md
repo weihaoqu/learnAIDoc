@@ -10,7 +10,7 @@ icon: "⚖️"
 image: "/assets/images/lawyer-won-hackathon-problem-definition.png"
 ---
 
-Thirteen thousand people applied. Five hundred developers got in. A **California personal injury attorney** took first place at Anthropic's Opus 4.6 hackathon. Not because he learned JavaScript — because he understood California housing code better than anyone else. The other winners: a cardiologist, a road technician from Uganda, an electronic musician, a fencer. **Not a single traditional developer among the top finishers.** The bottleneck has officially shifted: defining the problem is now more valuable than writing the code.
+Thirteen thousand people applied. Five hundred developers got in. A **California personal injury attorney** took first place at Anthropic's Opus 4.6 hackathon. Not because he learned JavaScript — because he understood California housing code better than anyone else. The other winners: a cardiologist, a road technician from Uganda, an electronic musician, a fencer. **Reportedly, the top finishers came from non-traditional software backgrounds.** The bottleneck has officially shifted: defining the problem is now more valuable than writing the code.
 
 *Source: [2nd Order Thinkers: Every Hackathon Winner Studied](https://www.2ndorderthinkers.com/p/a-lawyer-just-beat-500-developers) | [Tibo on X: Non-tech people dominated](https://x.com/tibo_maker/status/2028780078688047581) | [Reddit: It Makes Sense](https://reddit.com/r/PromptEngineering/comments/1rzyg5k/a_lawyer_won_anthropics_hackathon_it_makes_sense) | [Medium: Anthropic Hackathon Results](https://kotrotsos.medium.com/anthropic-hackathon-results-b13f8466296e)*
 
@@ -77,3 +77,15 @@ When your company hires a "technical person," they may not be a traditional prog
 ## English Is the New Programming Language
 
 As one observer put it: **"English is officially the most powerful programming language."** The hackathon proved that natural language — when used by someone who deeply understands a domain — produces better software than traditional coding by someone who doesn't understand the problem.
+
+## How LearnAI Team Could Use This
+
+- Teach AI literacy as problem definition, not only tool operation or coding syntax.
+- Build exercises where domain experts specify workflows and AI turns those specifications into working prototypes.
+- Use this story to explain why interdisciplinary teams can outperform purely technical teams in AI-native product work.
+
+## Real-World Use Cases
+
+- A lawyer creates a permit-review assistant from local housing code expertise.
+- A clinician prototypes a workflow tool based on firsthand knowledge of patient care bottlenecks.
+- A teacher builds curriculum software by precisely describing classroom constraints and assessment needs.

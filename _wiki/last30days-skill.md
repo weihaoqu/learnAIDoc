@@ -12,6 +12,8 @@ image: "/assets/images/last30days-skill.jpg"
 
 A Claude Code skill that aggregates recent discussions from Reddit and X (Twitter) to research any topic. Great for "priming" Claude with current trends before tackling a task.
 
+*Source: [last30days-skill GitHub repository](https://github.com/mvanhorn/last30days-skill)*
+
 ## Prerequisites
 
 - **Claude Code**: Paid user (terminal-based interface)
@@ -118,3 +120,15 @@ Surfaces patterns like "ADA" or "the three Ps" with real examples.
 ## Why This Matters
 
 This tool implements the **"priming before prompting"** workflow—giving Claude current context before asking it to create. Instead of relying on training data that may be months old, you inject the latest community knowledge.
+
+## How LearnAI Team Could Use This
+
+- Prime Claude Code with current community sentiment before drafting wiki entries, lesson plans, or demos.
+- Research fast-moving AI tool trends from Reddit and X before deciding what to document.
+- Generate fresher prompt examples for LearnAI workshops and internal playbooks.
+
+## Real-World Use Cases
+
+- Research what builders are saying about a new AI tool before creating a LearnAI wiki page.
+- Compare Reddit and X discussions around a prompt pattern before teaching it.
+- Collect recent examples for outreach, image generation, product research, or trend analysis.

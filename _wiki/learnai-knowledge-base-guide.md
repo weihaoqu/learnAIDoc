@@ -136,7 +136,7 @@ This is the **biggest upgrade** over a traditional wiki — you can ask complex 
 
 Research outputs → feed into `/mywiki` for wiki entries.
 
-## Use Case Scenarios
+## Real-World Use Cases
 
 ### Scenario A: "I Saw Something Interesting on Social Media"
 
@@ -250,6 +250,12 @@ claude
 # 5. Health check
 > /lint-kb
 ```
+
+## How LearnAI Team Could Use This
+
+- Use `/mywiki` to turn screenshots, links, and research notes into reviewed public wiki entries.
+- Use `/query-kb` before meetings, classes, or content planning to synthesize what the team already knows.
+- Use `/lint-kb` monthly to catch stale links, weak cross-links, contradictions, and missing coverage.
 
 ## Links
 
