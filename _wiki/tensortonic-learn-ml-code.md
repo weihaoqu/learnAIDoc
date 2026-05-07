@@ -47,7 +47,7 @@ The platform makes this concrete:
 - **Math is visual** — interactive visualizations make linear algebra and calculus intuitive, not abstract
 - **Papers become code** — reading a Transformer paper is one thing; implementing multi-head attention from the equations is another
 
-## For Your Courses, Q
+## How LearnAI Team Could Use This
 
 ### Direct Use Cases
 
@@ -74,6 +74,15 @@ TensorTonic is a natural complement to the LAI thesis. Research questions it ena
 - How does interactive math visualization compare to traditional lecture for building ML intuition?
 - Can TensorTonic problem completion predict success in agent orchestration tasks?
 - What's the minimum "implement from scratch" experience needed before students can effectively use library abstractions?
+
+## Real-World Use Cases
+
+| Use Case | How TensorTonic Helps |
+|---|---|
+| **Intro AI/ML courses** | Assign browser-based implementation problems for linear regression, gradient descent, k-means, and neural network basics. |
+| **Advanced ML courses** | Use the research paper track for Transformer attention, DDPM diffusion, BERT, ResNet, and GAN components. |
+| **Math for CS** | Use interactive ML Math modules as supplementary visual material for linear algebra, probability, and information theory. |
+| **Capstone preparation** | Have students implement core algorithms before relying on library abstractions in larger projects. |
 
 ## Similar Resources
 
