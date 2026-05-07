@@ -294,3 +294,17 @@ The complete working implementation is available at: [weihaoqu/cs305-feedback](h
 | `apps_script.js` | Google Apps Script backend (paste into Sheet) |
 | `qr_flyer.html` | QR code generator for all groups |
 | `SETUP.md` | Step-by-step setup instructions |
+
+## How LearnAI Team Could Use This
+
+- **Course feedback collection** — run custom surveys for AI literacy workshops, demo days, and classroom pilots without paid survey tools.
+- **Research data capture** — support IRB-friendly consent-first flows that write directly to a controlled Google Sheet.
+- **Reusable teaching template** — give faculty a deployable pattern for QR-code surveys, reflection forms, and project evaluations.
+- **Student projects** — teach static-site deployment, lightweight serverless workflows, and practical data collection in one example.
+
+## Real-World Use Cases
+
+- **Classroom demo days** — collect peer feedback from students scanning group-specific QR codes.
+- **Workshops and conferences** — gather session evaluations with custom branding and mobile-first forms.
+- **Small research studies** — collect anonymous consent and feedback data without running a backend server.
+- **Community events** — replace generic Google Forms with tailored forms while keeping responses in Google Sheets.

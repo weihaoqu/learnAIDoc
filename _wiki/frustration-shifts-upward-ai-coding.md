@@ -69,3 +69,17 @@ This has direct implications for CS education. The traditional curriculum front-
 - **Specification writing** — How do you clearly define what to build?
 
 The skills that used to come from years of experience now need to be explicitly taught, because students won't develop them organically through manual coding practice.
+
+## How LearnAI Team Could Use This
+
+- **Curriculum design** — shift AI-coding instruction from syntax completion toward architecture, debugging, and trade-off reasoning.
+- **Workshop framing** — help learners understand why AI removes some coding friction while exposing harder system-design questions sooner.
+- **Assessment design** — evaluate students on specifications, diagnosis, and architectural justification instead of only implementation output.
+- **Faculty development** — give instructors language for explaining why AI-assisted coding still requires deep technical judgment.
+
+## Real-World Use Cases
+
+- **Junior developer onboarding** — teams can pair AI coding tools with architecture reviews so new developers learn system boundaries, not just code generation.
+- **CS classrooms** — instructors can ask students to critique AI-generated designs before implementing features.
+- **Engineering training** — bootcamps can teach debugging, observability, and design review as core AI-era skills.
+- **Project planning** — teams can use AI to accelerate prototypes while explicitly budgeting time for integration and architecture decisions.
