@@ -171,6 +171,13 @@ git add . && git commit && git push
 scp deck-enhanced.html user@server:/path/to/slides/
 ```
 
+## How LearnAI Team Could Use This
+
+- **Interactive lecture upgrades** — Convert existing CS and AI course decks into browser-based lessons with Canvas walkthroughs and checkpoint quizzes.
+- **Faculty slide production** — Give instructors a repeatable Claude Code workflow for turning PPTX, PDF, or topic outlines into teachable HTML decks.
+- **Theory-heavy courses** — Use step-through visualizations for automata, algorithms, proofs, data structures, and finance concepts.
+- **Course website publishing** — Deploy self-contained HTML decks to GitHub Pages without a build pipeline.
+
 ## Make Slides vs HTML PPT Studio
 
 Both are Claude Code skills that generate HTML slide decks, but they solve different problems:
@@ -191,6 +198,14 @@ Both are Claude Code skills that generate HTML slide decks, but they solve diffe
 - Need a quick pitch deck, conference talk, or themed presentation → **[HTML PPT Studio](/learnAIDoc/wiki/html-ppt-studio-skill/)**
 - Need a lecture with Canvas walkthroughs and pedagogical structure → **Make Slides**
 - Need presenter mode with speaker scripts → **HTML PPT Studio**
+
+## Real-World Use Cases
+
+1. **CS lectures** — Turn static algorithm and automata slides into step-by-step visual explanations.
+2. **Exam review** — Build challenge quizzes and interactive walkthroughs around common misconceptions.
+3. **Professional training** — Convert internal training PDFs into single-file interactive web lessons.
+4. **Remote teaching** — Publish self-contained decks that work in a browser without student setup.
+5. **Concept demos** — Use Canvas playgrounds for data structures, state machines, proofs, and simulations.
 
 ## Scale
 
