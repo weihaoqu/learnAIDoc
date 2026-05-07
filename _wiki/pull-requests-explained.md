@@ -117,7 +117,7 @@ Once set up, reviewers can mention `@claude` in any PR comment to request analys
 
 The [PR Review Toolkit](/wiki/Tools/claude-code-best-plugins/) uses specialized agents — one for test coverage, one for error handling, one for type design, one for code quality. More thorough than a single review pass.
 
-## Real-Life PR Examples
+## Real-World Use Cases
 
 ### Bug Fix PR
 
@@ -164,6 +164,12 @@ Changes: 3 files, 180 lines
 New guide covering API key setup, OAuth flow, and JWT token refresh.
 Includes code examples in Python, JavaScript, and curl.
 ```
+
+## How LearnAI Team Could Use This
+
+- Use PRs for every wiki/content change so edits get reviewed before publishing.
+- Ask Claude Code to draft PR summaries, test notes, and reviewer checklists from the git diff.
+- Use PR reviews to catch broken links, missing sources, inconsistent front matter, and unclear examples.
 
 ## PR Best Practices
 

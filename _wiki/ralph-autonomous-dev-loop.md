@@ -12,6 +12,8 @@ image: "/assets/images/ralph-dev-loop.jpg"
 
 Today I learned about [Ralph](https://github.com/frankbria/ralph-claude-code) — a framework that wraps Claude Code in an autonomous development loop. You give it a task list, and it runs Claude Code repeatedly — executing, tracking progress, and continuing — until the project is done or it hits a safety limit.
 
+*Source: [GitHub — frankbria/ralph-claude-code](https://github.com/frankbria/ralph-claude-code)*
+
 ## The Problem Ralph Solves
 
 Normally with Claude Code, you prompt → Claude works → you review → you prompt again. For large tasks (build a feature, fix 20 bugs, implement a spec), this manual loop is tedious. You're just feeding it the next task over and over.
@@ -90,7 +92,7 @@ All Ralph files live in `.ralph/`, keeping your project root clean:
 
 The flow: `PROMPT.md` (what to build) → `specs/` (details) → `fix_plan.md` (tasks) → `AGENT.md` (how to build/test)
 
-## Real-Life Workflow Example
+## Real-World Use Cases
 
 Say you have a product requirements doc and want Claude to implement it autonomously:
 
@@ -113,6 +115,12 @@ Ralph loops through Claude Code sessions. Each iteration:
 - Ralph checks what's done and loops again
 
 You watch via the tmux monitoring dashboard. When all tasks in `fix_plan.md` are checked off and Claude signals completion, Ralph stops.
+
+## How LearnAI Team Could Use This
+
+- Use Ralph to work through long documentation cleanup lists where each task is explicit and testable.
+- Convert PRDs or wiki improvement plans into `.ralph/fix_plan.md` so Claude Code iterates through them.
+- Keep human review on publishing decisions, factual claims, and design/content judgment calls.
 
 ## Safety & Limits
 

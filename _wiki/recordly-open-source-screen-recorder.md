@@ -43,6 +43,13 @@ Screen recording software is either expensive (ScreenFlow, Camtasia — $100+) o
 | **Auto subtitles** | Timeline-synced captions |
 | **Export** | MP4 and GIF with customizable quality, frame rate, size |
 
+## Real-World Use Cases
+
+- Product demo videos for new AI tools or workflows.
+- Tutorial clips showing step-by-step setup or configuration.
+- Bug reports with annotated cursor movement, zooms, and captions.
+- Social clips exported as GIF or MP4 for quick sharing.
+
 ## Platform Support
 
 | OS | Version | Notes |
@@ -61,6 +68,12 @@ yay -S recordly-bin
 ```
 
 Source build requires standard dev tools plus platform-specific dependencies.
+
+## How LearnAI Team Could Use This
+
+- Record short product walkthroughs, wiki tutorials, and feature demos for LearnAI readers.
+- Edit cursor zooms, captions, and framing inside one open-source workflow before publishing.
+- Use `.recordly` project files to keep demos reusable when UI copy or steps change.
 
 ## Why This Matters
 
