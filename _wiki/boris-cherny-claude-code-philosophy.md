@@ -3,7 +3,7 @@ title: "Boris Cherny on Claude Code — Origin Story, Product Philosophy & the E
 date: 2026-05-06
 category: Claude Code Engineering
 tags: [claude-code, boris-cherny, anthropic, product-philosophy, latent-demand, bitter-lesson, plan-mode, multi-quad, safety, co-work]
-related: ["Don't Make Too Many Decisions for AI — Anthropic's 3 Core Development Philosophies", "Claude Code Tips — From the Engineering Trenches", "Claude Code Source Analysis — What Makes It Work & How to Actually Learn From It", "The Five Levels of Claude Code — From Prompting to Orchestration"]
+related: ["Don't Make Too Many Decisions for AI — Anthropic's 3 Core Development Philosophies", "Claude Code Tips — From the Engineering Trenches", "Claude Code Source Analysis — What Makes It Work & How to Actually Learn From It", "The Five Levels of Claude Code — From Prompting to Orchestration", "Building /review-wiki — A Batch AI Quality Pipeline from Scratch"]
 icon: "🎙️"
 image: "/assets/images/boris-cherny-claude-code-philosophy.png"
 ---

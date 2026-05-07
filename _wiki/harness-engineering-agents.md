@@ -5,7 +5,7 @@ category: Claude Code Engineering
 redirect_from:
   - "/wiki/claude code/harness-engineering-agents/"
 tags: [harness-engineering, agents, claude-code, reliability, context-engineering, middleware, subagents, architecture]
-related: ["Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Claude Code: Agent Teams vs Subagents", "Claude Code Hooks", "Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "Anthropic Managed Agents — Decoupling the Brain from the Hands", "SpecOps — Spec-Driven Development with AI Coding Agents", "Seeing Like an Agent — How Anthropic Designs Tools for Claude Code"]
+related: ["Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Claude Code: Agent Teams vs Subagents", "Claude Code Hooks", "Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "Anthropic Managed Agents — Decoupling the Brain from the Hands", "SpecOps — Spec-Driven Development with AI Coding Agents", "Seeing Like an Agent — How Anthropic Designs Tools for Claude Code", "Building /review-wiki — A Batch AI Quality Pipeline from Scratch"]
 icon: "🏇"
 image: "/assets/images/harness-engineering-agents.png"
 ---
