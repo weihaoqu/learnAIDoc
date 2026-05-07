@@ -121,6 +121,20 @@ Instead of a GitHub profile with toy projects, the new portfolio might look like
 3. **Automated workflows** — commands and hooks showing process maturity
 4. **Verified AI output** — projects with tests proving the student can evaluate AI work
 
+## How LearnAI Team Could Use This
+
+- **Career readiness modules** — Have students build and explain a project-specific `CLAUDE.md` as evidence of engineering judgment.
+- **Portfolio reviews** — Evaluate whether students can document AI collaboration workflows, verification habits, and domain constraints.
+- **AI coding workshops** — Use the `.claude/` folder as a concrete artifact for teaching spec-writing, review discipline, and safe delegation.
+- **Employer conversations** — Translate hiring-market changes into curriculum: students need to show how they direct and verify AI-generated work.
+
+## Real-World Use Cases
+
+- **Junior developer portfolio** — A candidate shares repos with `CLAUDE.md`, tests, and custom commands showing collaboration with coding agents.
+- **Mock technical interview** — Students walk through how they spec features, review AI output, and prove correctness with tests.
+- **Capstone project setup** — Teams define shared AI rules, commands, and review workflows before implementation begins.
+- **Career coaching** — Advisors help students turn AI-assisted projects into evidence of process maturity and engineering judgment.
+
 ## The Counterargument
 
 To be fair: Nav Toor's framing is deliberately provocative. Resumes aren't literally dead — hiring processes are slow to change, and most companies still use traditional screening. But the *direction* is clear: the ability to collaborate with AI is becoming more important than the ability to write code alone. Whether that shows up as a `.claude/` folder or some other artifact, the signal employers want is changing.
