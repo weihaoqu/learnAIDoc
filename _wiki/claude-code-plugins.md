@@ -5,7 +5,7 @@ category: Claude Code Basics
 redirect_from:
   - "/wiki/claude code/claude-code-plugins/"
 tags: [claude-code, cli, plugins, mcp, skills, extensibility]
-related: ["Claude Code Skills & Resources", "Claude Code Custom Agents", "Understand Anything — Turn Codebases Into Interactive Knowledge Graphs", "Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture"]
+related: ["Claude Code Skills & Resources", "Claude Code Custom Agents", "Understand Anything — Turn Codebases Into Interactive Knowledge Graphs", "Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "Claude Code Environment Replication — Portable Setup Across Machines"]
 icon: "🔌"
 image: "/assets/images/claude-code-plugins.png"
 ---

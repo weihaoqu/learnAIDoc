@@ -5,7 +5,7 @@ category: Claude Code Engineering
 redirect_from:
   - "/wiki/claude code/claude-code-hooks/"
 tags: [claude-code, cli, hooks, automation, workflow]
-related: ["Claude Code Power User Tips", "Claude Code Plugins & Marketplace", "Harness Engineering — The Real Bottleneck Isn't the Model"]
+related: ["Claude Code Power User Tips", "Claude Code Plugins & Marketplace", "Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code Environment Replication — Portable Setup Across Machines"]
 icon: "🪝"
 image: "/assets/images/claude-code-hooks.png"
 ---
