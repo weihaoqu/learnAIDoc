@@ -14,6 +14,56 @@ A power user's Claude Code setup is far more than the CLI binary — it's 14 plu
 
 *Source: [Anatomy of the .claude/ Folder](https://blog.dailydoseofds.com/p/anatomy-of-the-claude-folder) | [Official Claude Code Skills Docs](https://code.claude.com/docs/en/skills) | [Dotfiles + Claude Code (Sablonniere)](https://www.hsablonniere.com/dotfiles-claude-code-my-tiny-config-workshop--95d5fr/) | [Claude Directory Reference](https://www.claudedirectory.org/how-to/claude-folder)*
 
+## Quick Start — Replicate in 3 Steps
+
+```
+SOURCE MACHINE                    TARGET MACHINE
+──────────────                    ──────────────
+Step 1: Export                    Step 2: Bootstrap
+  bash ~/.claude/                   bash claude-code-bootstrap.sh
+    claude-code-export.sh
+        │                         Step 3: Install plugins
+        │  ~/claude-code-export/    (open Claude Code, paste
+        └──── copy via USB/SCP ──►   plugin commands from
+             AirDrop/Dropbox         bootstrap output)
+```
+
+**Step 1 — Export (on source machine):**
+```bash
+bash ~/.claude/claude-code-export.sh
+# Creates ~/claude-code-export/ with 20 portable files (~132K)
+```
+
+**Step 2 — Bootstrap (on target machine):**
+```bash
+# Prerequisites: install Claude Code CLI first
+npm install -g @anthropic-ai/claude-code
+
+# Copy the export folder to the new machine, then:
+bash claude-code-bootstrap.sh
+# Installs config, fixes paths, checks dependencies
+```
+
+**Step 3 — Install plugins (inside Claude Code on target machine):**
+```bash
+# The bootstrap script prints these commands — paste them into Claude Code:
+/plugin install frontend-design@claude-plugins-official
+/plugin install superpowers@claude-plugins-official
+# ... (14 total — full list printed by bootstrap)
+/reload-plugins
+```
+
+**Step 4 — Post-bootstrap auth:**
+```bash
+codex login              # Authenticate Codex CLI
+rtk gain                 # Verify RTK is working
+# MCP servers (Calendar, Gmail, etc.) will prompt on first use
+```
+
+That's it. Full environment replicated.
+
+---
+
 ## The Core Problem
 
 Claude Code stores everything under `~/.claude/`. Some of it is portable config you want on every machine. Most of it is runtime data you don't. Knowing which is which saves hours of debugging "why doesn't my new laptop have my skills."
@@ -243,11 +293,13 @@ The full script source lives at `~/.claude/claude-code-export.sh` and `~/.claude
 
 ### Paths in settings.json
 
-The RTK hook path in `settings.json` is absolute (`/Users/oreo/.claude/hooks/rtk-rewrite.sh`). On a new machine with a different username, update it:
+The RTK hook path in `settings.json` is absolute (e.g., `/Users/oreo/.claude/hooks/rtk-rewrite.sh`). The bootstrap script **automatically rewrites** these paths to match your new `$HOME` using `jq` (or `sed` as fallback). If you skip the bootstrap and copy `settings.json` manually, you'll need to fix paths yourself:
 
 ```bash
-# Fix absolute paths after bootstrap
-sed -i '' "s|/Users/oreo|$HOME|g" ~/.claude/settings.json
+# Only needed if you skip the bootstrap script:
+jq --arg old "/Users/oreo" --arg new "$HOME" \
+  'walk(if type == "string" then gsub($old; $new) else . end)' \
+  ~/.claude/settings.json > /tmp/settings.json && mv /tmp/settings.json ~/.claude/settings.json
 ```
 
 ### Plugin Versions Drift
