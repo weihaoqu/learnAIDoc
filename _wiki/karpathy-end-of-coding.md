@@ -58,7 +58,7 @@ Karpathy compares it to his PhD days feeling nervous when GPUs were idle — now
 
 The bigger vision: a **SETI-at-Home for AI research** — distributed human judgment and compute applied to problems no single lab can fully explore. Agents as research collaborators, not just code writers.
 
-See also: [Autoresearch wiki entry](/learnAIDoc/wiki/ai/autoresearch-autonomous-ml/) for technical setup details.
+See also: [Autoresearch wiki entry](/learnAIDoc/wiki/autoresearch-autonomous-ml/) for technical setup details.
 
 ## MicroGPT: 243 Lines of Pure Python
 

@@ -107,10 +107,10 @@ A 12-lesson course that teaches Claude Code internals by building a complete AI 
 
 The interactive platform at [learn.shareai.run](https://learn.shareai.run) provides a visual learning experience (recommended over just reading the repo). Chinese README available at [README-zh.md](https://github.com/shareAI-lab/learn-claude-code/blob/main/README-zh.md).
 
-**Why this matters:** After completing this course, you understand what Claude Code is actually doing under the hood — Agent Loop, Tool system, Skills, Subagents — not just how to use it. This maps directly to the [Claude Certified Architect](/learnAIDoc/wiki/ai/claude-certified-architect/) exam domains.
+**Why this matters:** After completing this course, you understand what Claude Code is actually doing under the hood — Agent Loop, Tool system, Skills, Subagents — not just how to use it. This maps directly to the [Claude Certified Architect](/learnAIDoc/wiki/claude-certified-architect/) exam domains.
 
 ### Anthropic Academy (Free)
-[anthropic.skilljar.com](https://anthropic.skilljar.com/) — 13 free courses including the 8.1-hour "Building with the Claude API" flagship course. See [Claude Certified Architect entry](/learnAIDoc/wiki/ai/claude-certified-architect/) for details.
+[anthropic.skilljar.com](https://anthropic.skilljar.com/) — 13 free courses including the 8.1-hour "Building with the Claude API" flagship course. See [Claude Certified Architect entry](/learnAIDoc/wiki/claude-certified-architect/) for details.
 
 ---
 

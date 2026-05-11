@@ -104,7 +104,7 @@ Before writing any prompt, the skill extracts:
 
 **Prompt engineering as a teachable skill:** This tool makes the implicit explicit. Students can see *why* a prompt works — the 9 dimensions, the routing logic, the token audit. It's prompt engineering made systematic rather than artisanal.
 
-**Cross-tool awareness:** Students learn that "prompting" isn't one skill — it's a family of skills that vary by tool. Understanding these differences is directly relevant to the [Claude Certified Architect](/learnAIDoc/wiki/ai/claude-certified-architect/) exam (20% prompt engineering weight).
+**Cross-tool awareness:** Students learn that "prompting" isn't one skill — it's a family of skills that vary by tool. Understanding these differences is directly relevant to the [Claude Certified Architect](/learnAIDoc/wiki/claude-certified-architect/) exam (20% prompt engineering weight).
 
 **Credit conservation:** Students on limited API budgets benefit most from first-attempt accuracy.
 

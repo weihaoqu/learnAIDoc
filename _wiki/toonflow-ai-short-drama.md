@@ -63,7 +63,7 @@ This is the most interesting part from an engineering perspective:
 
 Each layer can use different models. The Decision layer benefits from a strong reasoning model (Claude, GPT-4o), while the Execution layer can use faster/cheaper models for bulk generation.
 
-**Persistent Agent Memory**: Agents maintain context across sessions using local ONNX vector retrieval — similar to how [WebNovel Writer](/learnAIDoc/wiki/creative/webnovel-writer-long-context/) uses RAG-over-chapters.
+**Persistent Agent Memory**: Agents maintain context across sessions using local ONNX vector retrieval — similar to how [WebNovel Writer](/learnAIDoc/wiki/webnovel-writer-long-context/) uses RAG-over-chapters.
 
 ## Supported AI Providers
 
@@ -113,7 +113,7 @@ The same patterns apply to any multi-model AI pipeline:
 
 ## Case Study: 探花书房 → Short Drama (Completed)
 
-We used Toonflow to convert our AI-written literary novella [《探花书房》](https://github.com/weihaoqu/tanhua-bookshop) (48,000 words, 12 chapters) into a 3-episode short drama with 16-frame storyboard. The novel was created entirely using the [webnovel-writer](/learnAIDoc/wiki/creative/webnovel-writer-long-context/) Claude Code skill — making this an end-to-end AI creative pipeline: **idea → novel → video**.
+We used Toonflow to convert our AI-written literary novella [《探花书房》](https://github.com/weihaoqu/tanhua-bookshop) (48,000 words, 12 chapters) into a 3-episode short drama with 16-frame storyboard. The novel was created entirely using the [webnovel-writer](/learnAIDoc/wiki/webnovel-writer-long-context/) Claude Code skill — making this an end-to-end AI creative pipeline: **idea → novel → video**.
 
 ### Pipeline Results
 

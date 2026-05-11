@@ -40,7 +40,7 @@ No setup. No local environment. No pip install. Just open the browser and start 
 
 ## Why This Philosophy Matters
 
-TensorTonic follows the same philosophy as [Karpathy's MicroGPT](/learnAIDoc/wiki/ai/karpathy-end-of-coding/) — understanding the algorithm matters even when you stop writing it by hand. In the agent era, the engineers who understand *what* the algorithm does are the ones who can effectively direct agents to build with it.
+TensorTonic follows the same philosophy as [Karpathy's MicroGPT](/learnAIDoc/wiki/karpathy-end-of-coding/) — understanding the algorithm matters even when you stop writing it by hand. In the agent era, the engineers who understand *what* the algorithm does are the ones who can effectively direct agents to build with it.
 
 The platform makes this concrete:
 - **Implement, don't import** — you write `gradient_descent()` from scratch, not `from sklearn import`
@@ -60,7 +60,7 @@ The platform makes this concrete:
 
 ### Pedagogical Value
 
-- **Active learning** — implementing > reading > watching. Research consistently shows this ([AI Fluency Index](/learnAIDoc/wiki/ai/ai-fluency-index/) findings apply here)
+- **Active learning** — implementing > reading > watching. Research consistently shows this ([AI Fluency Index](/learnAIDoc/wiki/ai-fluency-index/) findings apply here)
 - **Immediate feedback** — browser IDE validates in milliseconds, tightening the learning loop
 - **Gamification** — streaks and leaderboards drive engagement without requiring instructor effort
 - **No infrastructure burden** — browser-based means no lab setup, no conda environments, no "it works on my machine"

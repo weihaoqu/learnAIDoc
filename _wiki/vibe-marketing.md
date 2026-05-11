@@ -135,4 +135,4 @@ These examples demonstrate a crucial distinction for students: **AI as tool vs A
 - **Tool mode:** "Claude, research competitor X" → gets a summary (useful but shallow)
 - **Partner mode:** "Claude, here are 8 competitor pages. What do successful players understand that customers never say out loud?" → gets strategic insight
 
-Teaching students to ask the right questions — not just use the right tools — is exactly what [LAI research](/learnAIDoc/wiki/ai/karpathy-end-of-coding/) should measure. The YC founder's example could be a case study in an AI literacy course.
+Teaching students to ask the right questions — not just use the right tools — is exactly what [LAI research](/learnAIDoc/wiki/karpathy-end-of-coding/) should measure. The YC founder's example could be a case study in an AI literacy course.

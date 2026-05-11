@@ -115,7 +115,7 @@ Once set up, reviewers can mention `@claude` in any PR comment to request analys
 
 ### The PR Review Toolkit Plugin
 
-The [PR Review Toolkit](/wiki/Tools/claude-code-best-plugins/) uses specialized agents — one for test coverage, one for error handling, one for type design, one for code quality. More thorough than a single review pass.
+The [PR Review Toolkit](/learnAIDoc/wiki/claude-code-best-plugins/) uses specialized agents — one for test coverage, one for error handling, one for type design, one for code quality. More thorough than a single review pass.
 
 ## Real-World Use Cases
 

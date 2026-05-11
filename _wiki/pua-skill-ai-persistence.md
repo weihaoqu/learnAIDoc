@@ -92,7 +92,7 @@ Behind the memes, PUA Skill implements three legitimate engineering patterns:
 
 1. **Structured debugging methodology** — the 7-point checklist at L3 is a real debugging framework: read errors carefully → check logs → verify assumptions → test hypotheses → trace to root cause
 2. **Anti-pattern detection** — auto-triggering on the five lazy patterns is essentially a behavioral linter for AI
-3. **Verification enforcement** — "close the loop" means every claim must be backed by evidence (build output, test results). This is the same principle as [formal verification](/learnAIDoc/wiki/ai/claude-code-tips-engineering/) and [TDD](/learnAIDoc/wiki/ai/karpathy-end-of-coding/)
+3. **Verification enforcement** — "close the loop" means every claim must be backed by evidence (build output, test results). This is the same principle as [formal verification](/learnAIDoc/wiki/claude-code-tips-engineering/) and [TDD](/learnAIDoc/wiki/karpathy-end-of-coding/)
 
 ## How LearnAI Team Could Use This
 

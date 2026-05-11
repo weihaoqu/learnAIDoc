@@ -27,7 +27,7 @@ Without AI:                          With AI (wrong way):
 
 AI gives polished, confident answers instantly. That feels productive — but **the struggle IS the learning**. When you skip the struggle, you skip the skill formation.
 
-Research backs this up: students who delegate coding to AI score **17% lower** on evaluations than those who wrestle with problems themselves ([How AI Impacts Skill Formation](/wiki/AI/how-ai-impacts-skill-formation/)). The biggest gap? **Debugging** — because the control group was forced to resolve errors independently.
+Research backs this up: students who delegate coding to AI score **17% lower** on evaluations than those who wrestle with problems themselves ([How AI Impacts Skill Formation](/learnAIDoc/wiki/ai-impacts-skill-formation/)). The biggest gap? **Debugging** — because the control group was forced to resolve errors independently.
 
 ## The Right Way: AI as Learning Amplifier
 
@@ -59,7 +59,7 @@ Using tools like NotebookLM + Zotero, the student organized materials into inter
 
 ## High-Learning vs Low-Learning AI Patterns
 
-From the [AI Fluency Index](/wiki/AI/ai-fluency-index/), we know that how you interact with AI determines whether you learn or just "offload":
+From the [AI Fluency Index](/learnAIDoc/wiki/ai-fluency-index/), we know that how you interact with AI determines whether you learn or just "offload":
 
 | Pattern | What it looks like | Learning outcome |
 |---------|-------------------|-----------------|

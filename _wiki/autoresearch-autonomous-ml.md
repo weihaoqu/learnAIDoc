@@ -203,9 +203,9 @@ The changelog becomes the most valuable output — it records what works and wha
 
 This pattern teaches students a fundamental concept: **anything with a measurable outcome can be optimized automatically**. The human's job is defining what "good" means (the rubric), not doing the optimization manually. This connects directly to:
 
-- [Formal verification](/learnAIDoc/wiki/tools/claude-code-tips-engineering/) — defining correctness criteria, then automating verification
-- [TDD](/learnAIDoc/wiki/ai/karpathy-end-of-coding/) — tests as automated success criteria
-- The [Claude Certified Architect](/learnAIDoc/wiki/ai/claude-certified-architect/) exam's emphasis on verification loops
+- [Formal verification](/learnAIDoc/wiki/claude-code-tips-engineering/) — defining correctness criteria, then automating verification
+- [TDD](/learnAIDoc/wiki/karpathy-end-of-coding/) — tests as automated success criteria
+- The [Claude Certified Architect](/learnAIDoc/wiki/claude-certified-architect/) exam's emphasis on verification loops
 
 ## Who Made This
 
