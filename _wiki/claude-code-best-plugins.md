@@ -12,7 +12,7 @@ image: "/assets/images/claude-code-best-plugins.png"
 
 A curated list of the most useful Claude Code plugins, based on community recommendations. Install any of these with `/plugin`.
 
-*Source: [@DeFiMinty on X](https://x.com/DeFiMinty/status/2021677256515498292)*
+*Source: [@DeFiMinty on X](https://x.com/DeFiMinty/status/2021677256515498292) | May 2026 update: [火星狂飙 on Douyin — Top 10 Must-Install Skills](https://www.douyin.com/)*
 
 ## 1. Superpowers
 
@@ -57,6 +57,39 @@ Suite of specialized review agents. Covers test coverage, error handling, type d
 
 - More thorough than a single pass
 - Each agent focuses on one thing and does it well
+
+## May 2026 Update — 火星狂飙's Top 10 Skills List
+
+A second curated list surfaced on Douyin from 火星狂飙 in early May 2026 — three months after @DeFiMinty's original. Different angle: heavier on workflow automation and skill creation, lighter on UI polish. The overlap with the February list points to the long-tail favorites; the new entries reflect what's emerged since.
+
+| # | Skill | What It Does (per the list) | Existing Wiki Coverage |
+|---|-------|--------------|------------------------|
+| 1 | **Superpowers** | Multi-skill bundle: brainstorming, TDD, planning. The all-rounder. | (in this entry) |
+| 2 | **Planning with Files** | Split long plans into multiple files; preserve context across compaction | — |
+| 3 | **UI UX Pro Max** | UI/UX-focused skill bundle (the list claims many sub-skills + a curated best-practice library) | See: *Pretext & Refero — Tools to Fix AI's Frontend Problem* |
+| 4 | **Code Review** | Multi-agent parallel review; orchestrated reviewer agents | See: *Cross-Model Code Review — Why Claude Can't Catch Its Own Bugs* |
+| 5 | **Code Simplifier** | Refactor without functional change, after a feature works | (in this entry) |
+| 6 | **Webapp Testing** | Playwright-based automated browser testing as a skill | — |
+| 7 | **Ralph Loop** | Autonomous dev loop — agent keeps iterating on a bug until fixed | See: *Ralph: Autonomous Development Loop for Claude Code* |
+| 8 | **MCP Builder** | Scaffold for a new MCP server, with examples | — |
+| 9 | **PPTX** | Direct .pptx generation; handles common format edge cases | See: *HTML PPT Studio — AI-Powered Presentation Skill for Claude Code*, *Make Slides: AI-Powered Interactive Teaching Slides*, *open-slide — The Slide Framework Built for AI Coding Agents* |
+| 10 | **Skill Creator** | Build new skills with the official template + test framework | See: *Claude Code Skills: Resources & Repos* |
+
+> Numbers and "sub-skill counts" above come from 火星狂飙's list — they're the creator's framing, not independently verified.
+
+### What the Two Lists Agree On
+
+Superpowers and Code Simplifier appear on both lists. Worth a look for any new Claude Code setup.
+
+### What's New in May
+
+- **Skill Creator** showing up as a recommended skill is a meta-shift — building skills is itself becoming a skill.
+- **Webapp Testing** + **MCP Builder** reflect Claude Code's expansion past pure code authoring into infrastructure and testing automation.
+- **Planning with Files** is a response to context-window pressure — the same need that drove the rise of `/loop` and subagents.
+
+### Picking from Both Lists
+
+If you can only install 5, candidates worth trying first: Superpowers, Code Simplifier, PR Review Toolkit, Frontend Design (or UI UX Pro Max), and one of Skill Creator / MCP Builder depending on what you build.
 
 ## How LearnAI Team Could Use This
 

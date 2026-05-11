@@ -12,7 +12,7 @@ image: "/assets/images/harness-engineering-agents.png"
 
 If 2025 was the year of the agent, 2026 is the year of the **harness**. The hottest concept in AI agent development right now: the reliability bottleneck of AI agents isn't the model — it's the system *around* the model. Harness engineering is the discipline of designing environments, constraints, and feedback loops that make agents reliably useful. The metaphor: the model is the engine, but without a steering wheel and brakes, you can't reach the destination.
 
-*Source: [Anthropic: Effective Harnesses for Long-Running Agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) | [Anthropic: Harness Design for Long-Running Apps](https://www.anthropic.com/engineering/harness-design-long-running-apps) | [HumanLayer: Skill Issue — Harness Engineering](https://www.humanlayer.dev/blog/skill-issue-harness-engineering-for-coding-agents) | [learn-claude-code (30K+ stars)](https://github.com/shareAI-lab/learn-claude-code) | [NxCode: Complete Guide](https://www.nxcode.io/resources/news/harness-engineering-complete-guide-ai-agent-codex-2026)*
+*Source: [Anthropic: Effective Harnesses for Long-Running Agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) | [Anthropic: Harness Design for Long-Running Apps](https://www.anthropic.com/engineering/harness-design-long-running-apps) | [HumanLayer: Skill Issue — Harness Engineering](https://www.humanlayer.dev/blog/skill-issue-harness-engineering-for-coding-agents) | [learn-claude-code (30K+ stars)](https://github.com/shareAI-lab/learn-claude-code) | [NxCode: Complete Guide](https://www.nxcode.io/resources/news/harness-engineering-complete-guide-ai-agent-codex-2026) | [Learn Harness Engineering (walkinglabs course)](https://walkinglabs.github.io/learn-harness-engineering/) | [Weibo highlight by 蚂工厂](https://weibo.com)*
 
 ## What Is LangChain?
 
@@ -306,6 +306,52 @@ The design space doesn't shrink as models improve — it **migrates**. Intention
 | **Runtimes & Implementations** | 8 | SWE-agent, Claude Agent SDK, reference harnesses |
 
 Scope rule: only includes resources that address **harness design, context management, evaluation, runtime control, or reliability-critical primitives** — not generic agent tooling.
+
+## Learn Harness Engineering — walkinglabs's Structured Course
+
+In May 2026, the walkinglabs team (same authors as the Awesome list) shipped a structured course on harness engineering, freely available with English, Chinese, Vietnamese, Korean, and Russian translations. It is one of the more cohesive available curricula on harness engineering — a 12-lecture sequence organized like a coding bootcamp, sitting between "harness theory" and "harness practice."
+
+- **Site:** [walkinglabs.github.io/learn-harness-engineering](https://walkinglabs.github.io/learn-harness-engineering/) (English, Chinese, Vietnamese, Korean, Russian)
+- **Chinese version:** [/zh/](https://walkinglabs.github.io/learn-harness-engineering/zh/)
+- **Audience:** Engineers working with Codex, Claude Code, or any AI coding agent in production scenarios
+
+### Three Learning Paths
+
+| Path | Content | Use |
+|------|---------|-----|
+| **讲义 / Lectures** | 12 theoretical modules | Build the mental model |
+| **项目 / Projects** | Hands-on labs | Practice the patterns in real repos |
+| **资料库 / Resources** | Reusable templates + code | Drop into your own projects (AGENTS.md, feature_list.json, etc.) |
+
+### The 12 Lecture Themes
+
+1. Why capable models still fail at reliable execution
+2. Defining harness engineering — fundamentals
+3. The repository as the single source of truth
+4. Task isolation and initialization phases
+5. Preventing premature "task complete" declarations
+6. End-to-end testing and observability for agents
+7. Session state management
+8. Constraint design — prompt vs code-level
+9. Context management — the inverted-U sweet spot
+10. Verification loops — when to trust the agent's "done"
+11. Multi-agent coordination patterns
+12. Knowing when to remove harness as models improve
+
+### Project 01: Prompt-Driven vs. Rule-Driven
+
+The first hands-on lab — directly comparable to Pillar 2 of this entry. Two implementations of the same agent task: one steered by prompt instructions, one steered by coded rules (linters, hooks, type checks). Students measure failure rate. The lab's punchline lines up with the Vercel finding: prompt suggestions degrade across sessions; coded constraints don't.
+
+### Why This Course Matters
+
+Most harness-engineering content is still fragmented across Anthropic blog posts, X threads, and conference talks. walkinglabs's course is a systematic curriculum that treats harness engineering as a teachable discipline. Combined with their Awesome list (the reading library) and the broader open-source harness reference implementations (like OpenHarness, below), there's now a coherent learn-by-doing stack:
+
+```
+walkinglabs + community stack:
+├── awesome-harness-engineering    ← what to read
+├── learn-harness-engineering      ← how to learn (this course)
+└── OpenHarness (HKUDS, separate)  ← reference implementation to read the code of
+```
 
 ## OpenHarness (oh) — Open-Source Agent Harness in Python
 

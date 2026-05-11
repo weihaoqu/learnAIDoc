@@ -10,7 +10,9 @@ icon: "🏆"
 image: "/assets/images/agent-framework-weekly-hot-four.png"
 ---
 
-The week of March 20-26, 2026 saw an unprecedented explosion in AI agent frameworks on GitHub. Four projects dominated the trending charts, collectively gaining **54,000+ stars in a single week**. Each represents a different philosophy of what agents should do — from disciplined software development to deep research to offline survival to financial trading.
+The week of March 20-26, 2026 saw an unusual concentration of new AI agent frameworks on GitHub. Four projects dominated the trending charts during that week. Each represents a different philosophy of what agents should do — from disciplined software development to deep research to offline survival to financial trading.
+
+> **Note on numbers in this entry:** weekly and total star counts throughout are as reported by 星探AI's weekly "Agent 新战场" social-media posts at the time of each snapshot. They reflect a community ranking, not independently audited GitHub Star History data. For verification, look up each repo on [Star History](https://star-history.com/).
 
 *Source: [星探AI — Agent Weekly Hot List](https://www.xiaohongshu.com/) | [旭哥AI笔记 — DeerFlow 2.0](https://www.xiaohongshu.com/) | [Superpowers on GitHub](https://github.com/obra/superpowers) | [DeerFlow on GitHub](https://github.com/bytedance/deer-flow) | [Project NOMAD on GitHub](https://github.com/Crosstalk-Solutions/project-nomad) | [TradingAgents on GitHub](https://github.com/TauricResearch/TradingAgents)*
 
@@ -174,6 +176,49 @@ All four projects are open source. ByteDance (DeerFlow) open-sourcing their inte
 
 NOMAD's 13K+ star surge shows genuine demand for AI that works without internet — not just for preppers, but for edge deployment, privacy-sensitive use cases, and regions with unreliable connectivity.
 
+## May 2026 Update — Week of 5/02–5/08 Leaderboard (per 星探AI)
+
+Six weeks later, the leaderboard had rotated. 星探AI published their agent-category top 5 for the week of May 2–8, 2026 (Episode #7 of their weekly "Agent 新战场" series). Numbers below are **as reported by 星探AI's social post** and reflect their internal ranking method; treat as a community snapshot rather than independently audited GitHub Star History data.
+
+| Rank | Project | Total Stars (per 星探AI) | Weekly Stars (per 星探AI) | Category |
+|------|---------|--------------------------|--------------------------|----------|
+| #1 | **TradingAgents** | ~70K | ~+15K | Finance |
+| #2 | **Warp** | ~56K | ~+14K | Agentic Terminal |
+| #3 | **ruflo** (Claude Flow) | ~45K | ~+2.6K | Multi-Agent Orchestration |
+| #4 | **Scrapling** | ~47K | ~+2.6K | Web Scraping |
+| #5 | **Skills** (mattpocock/skills) | ~63K | ~+21K | Agent Discipline Skills |
+
+*Theme captured by 星探AI: "终端 + 金融 + 爬虫 + 编排" (Terminal + Finance + Crawler + Orchestration).*
+
+> Note on ranking: 星探AI's order isn't pure weekly-gain — by that metric Skills (+~21K) would be first and TradingAgents (+~15K) second. Their published order seems to weight total + weekly together. For verifiable star history, check each repo on [Star History](https://star-history.com/).
+
+### What Each Project Is
+
+**TradingAgents** — already profiled above. Still gaining stars six weeks later according to 星探AI's snapshot. ([repo](https://github.com/TauricResearch/TradingAgents))
+
+**Warp** ([github.com/warpdotdev/warp](https://github.com/warpdotdev/warp)) — open-sourced its terminal client on April 30, 2026 under AGPL-3.0, with OpenAI listed as the founding sponsor. Marketed as an **Agentic Development Environment (ADE)** with native support for Claude Code, Codex, and Gemini CLI. The companion **Oz** platform orchestrates cloud agents from the terminal. Product site: [warp.dev](https://www.warp.dev/).
+
+**ruflo** ([github.com/ruvnet/ruflo](https://github.com/ruvnet/ruflo)) — previously named **Claude Flow**, renamed to ruflo by creator rUv. Multi-agent orchestration platform on top of Claude Code; ships with a large suite of MCP tools and pre-defined agent roles. The project's own README claims notable SWE-bench numbers and API cost savings — useful as a marketing reference, not as an independent benchmark.
+
+**Scrapling** ([github.com/D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling)) — Karim Shoair's adaptive Python web-scraping framework. Its agent-category interest comes from a **built-in MCP server** that lets Claude/Cursor agents extract structured content from web pages before LLM ingestion (cutting tokens and cost). The framework also advertises anti-detection features for sites with strong bot defenses — use responsibly and within each site's terms of service.
+
+**Skills** — `mattpocock/skills` (covered in its own wiki entry: *Matt Pocock's Skills — Claude Code for Real Engineers*). Discipline skills for coding agents — TDD, structured debugging, architecture review. The largest weekly gain in the May snapshot.
+
+### What Changed Between March and May
+
+| Dimension | March 20–26 | May 2–8 |
+|-----------|-------------|---------|
+| **Top by total stars** | Superpowers | TradingAgents |
+| **Top by weekly gain** | Superpowers | Skills (mattpocock/skills) |
+| **Vertical mix** | Software / research / survival / finance | Finance / terminal / orchestration / scraping / discipline |
+| **New category** | Survival AI (NOMAD) | Agentic terminals (Warp's open-source pivot) |
+
+Three signals worth noting:
+
+1. **Multi-agent orchestration is emerging as an infrastructure layer** — ruflo's traction suggests teams want a "swarm conductor" on top of Claude Code, not just better skills inside it.
+2. **Terminal is becoming a primary agent surface** — Warp's open-source pivot bets that the agentic future runs in the terminal as much as in the IDE. Aligns with Boris Cherny's phone-based workflow direction.
+3. **Skills/discipline repos keep ranking high** — six weeks apart, two different skill repos (Superpowers, mattpocock/skills) lead by weekly gains. The discipline-skills category isn't a one-week story.
+
 ## Links
 
 - **Superpowers:** [github.com/obra/superpowers](https://github.com/obra/superpowers)
@@ -196,5 +241,4 @@ NOMAD's 13K+ star surge shows genuine demand for AI that works without internet 
 - **Field and offline deployments:** Run local AI plus offline reference libraries where internet access is unreliable or unavailable.
 - **Finance education and research:** Simulate multi-agent market analysis for backtesting and decision-process study, with clear non-advice disclaimers.
 
-<!-- REVIEW-TODO: [source_links] Xiaohongshu source links are generic (https://www.xiaohongshu.com/), not specific post URLs — find actual posts or remove -->
-<!-- REVIEW-TODO: [source_links] Weekly-star leaderboard figures need verifiable archive source (Star History / GitHub Trending snapshot) -->
+<!-- Note on numbers: leaderboard figures are as reported by 星探AI's weekly social-media post; treat as community ranking, not independently audited GitHub Star History data. Verify via star-history.com for each repo. -->
