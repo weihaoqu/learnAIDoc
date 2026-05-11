@@ -8,9 +8,9 @@ icon: "🖌️"
 image: "/assets/images/gpt-image-2-ink-style-slide-prompt.png"
 ---
 
-A reusable, slot-filled prompt template that turns GPT Image 2 into a reliable producer of **水墨 (ink-wash) style slide-deck images** — surfaced by a Chinese AI-tools community in May 2026. Instead of describing what you want in prose ("make it look Chinese, ink-painting-style, with text on the left"), you fill in seven structured fields (Title / Key Points / Visual Elements / Layout / Hierarchy / Continuity Note) and the agent — typically Codex or Claude Code orchestrating GPT Image 2 — produces a coherent multi-page deck where every slide visually belongs to the same family. The pattern generalizes: it's the image-gen parallel to Thariq Shihipar's HTML-is-an-interface thesis.
+A reusable, slot-filled prompt template for **水墨 (ink-wash) style slide-deck images** generated through GPT Image 2 — surfaced by a Chinese AI-tools community in May 2026. Instead of describing what you want in prose ("make it look East-Asian, ink-painting-style, with text on the left"), you fill in six structured fields plus implicit mood tags (Title / Key Points / Visual Elements / Layout / Hierarchy / Continuity Note + Mood) and the agent — typically Codex or Claude Code orchestrating GPT Image 2 — produces multi-page decks where pages share a visual family. Note the aesthetic vocabulary is pan-East-Asian: 水墨 (ink-wash) is a Chinese painting tradition, while Ensō and wabi-sabi are Japanese aesthetic concepts; the template's "Visual Elements" field mixes them deliberately. The pattern generalizes: it's the image-gen parallel to Thariq Shihipar's HTML-is-an-interface thesis.
 
-*Source: [Weibo post by 宝玉 xp on GPT Image 2 水墨风格 Slides/PPT prompt template](https://weibo.com) | Companion entry: [The Unreasonable Effectiveness of HTML](./unreasonable-effectiveness-html-claude-code.md)*
+*Source: Weibo post by 宝玉 xp on a GPT Image 2 水墨风格 Slides/PPT prompt template (May 2026; specific post URL not preserved). Companion entry: [The Unreasonable Effectiveness of HTML](./unreasonable-effectiveness-html-claude-code.md)*
 
 ## The Template
 
@@ -55,17 +55,17 @@ Continuity Note:
 
 Drop the template into Claude Code or Codex, ask the agent to fill each field per slide based on your outline, then pipe the filled prompt to GPT Image 2 (or any comparable image model). The slot structure is what makes the multi-page output coherent.
 
-## The Seven Fields, Explained
+## The Six Fields (plus Mood Tags), Explained
 
 | Field | Purpose |
 |-------|---------|
 | **Title** | The slide's headline. Becomes the visual anchor. |
 | **Key Points** | 3 bullet items — keeps the slide scannable, gives the image model anchor concepts for any text it renders. |
-| **Visual Elements** | The aesthetic vocabulary. Naming Ensō, wabi-sabi, mist-grey effects, ink-wash motifs gives the model design language instead of vague "make it look Chinese." |
+| **Visual Elements** | The aesthetic vocabulary. Naming specific motifs (ink-wash mountains, rice-paper texture, mist-grey effects, plus Japanese-borrowed terms like Ensō and wabi-sabi) gives the model concrete design language instead of vague "make it look East-Asian." |
 | **Layout Preference** | The compositional rule (split / centered / left-aligned with whitespace). Constrains where text and image-elements go. |
 | **Text Hierarchy** | Serif specs (Display Serif for headlines, Body Serif for body). Keeps typography on-brand across pages. |
 | **Continuity Note** | The cross-page contract — same background color hex codes, same seal placement, same texture. This is the slide-deck equivalent of a CSS stylesheet. |
-| (implicit) **Mood tags** | Quiet / Restrained / Wabi-Sabi / Contemporary East-Asian Luxury — high-signal style anchors the model can lock onto. |
+| **Mood tags** (implicit, embedded in Visual Elements) | Quiet / Restrained / Wabi-Sabi / Contemporary East-Asian Luxury — high-signal style anchors the model can lock onto. |
 
 ## Why This Pattern Works
 
@@ -75,11 +75,11 @@ Four reasons, each generalizable to other image-output workflows:
 Filling a slot is easier for both humans and agents than writing a paragraph of art direction. A coding agent like Claude Code can deterministically fill the template from a content outline (per slide); a human refining one slide doesn't need to rewrite the whole prompt.
 
 ### 2. Visual Language Made Explicit
-"Make it look Chinese" → the model picks something generic / clichéd.
-"Textured rice paper background, Ensō circles, red ink seal, wabi-sabi mood" → the model picks specific, on-tradition visual primitives. The vocabulary is the bridge between intent and output.
+"Make it look East-Asian" → the model picks something generic / clichéd.
+"Textured rice paper background, ink-wash motifs, red ink seal, wabi-sabi mood" → the model picks specific visual primitives. Worth noting: the vocabulary here mixes traditions — 水墨 and rice-paper texture are Chinese; Ensō and wabi-sabi are Japanese. Be explicit about which tradition (or that you're mixing them) to control the output.
 
 ### 3. Continuity Contract = Design System
-The single hardest thing about AI-generated multi-page decks is **page-to-page coherence**. The "Continuity Note" field is a per-page contract: same #F5F0E8 background, same seal in the lower-right, same texture. The result looks like one designer made the deck, not ten.
+A common failure mode in AI-generated multi-page decks is **page-to-page coherence drift**. The "Continuity Note" field is a per-page contract: same #F5F0E8 background, same seal in the lower-right, same texture. With it, the deck reads as cohesive rather than as a stack of unrelated images.
 
 ### 4. Output Is a Working Artifact, Not a One-Shot Image
 A 10-page deck produced from this template can be edited, re-skinned, re-purposed. Same pattern as Thariq's HTML thesis: structured prompts → artifacts you can keep using, not pretty pictures you discard.
@@ -114,9 +114,9 @@ The seven-field skeleton stays the same; only the vocabulary changes.
 3. Ask: "For each slide in OUTLINE, fill the template fields,
    producing N filled prompts."
 4. Pipe each filled prompt to your image model
-   (GPT Image 2, Imagen, Midjourney with /describe, etc.).
-5. The Continuity Note field is the magic — ensures slide N
-   visually matches slide N-1.
+   (GPT Image 2, Imagen, Midjourney via /imagine, etc.).
+5. The Continuity Note field is the load-bearing piece — it's
+   what keeps slide N visually consistent with slide N-1.
 ```
 
 For full automation, wrap it as a Claude Code skill (`generate-ink-deck/SKILL.md`) with the template as a `references/template.md` file and a `scripts/generate.ts` that pipes filled prompts to your image API.
@@ -131,12 +131,12 @@ For full automation, wrap it as a Claude Code skill (`generate-ink-deck/SKILL.md
 
 ## Real-World Use Cases
 
-- **Course materials with cohesive aesthetic** — every lecture deck in a series looks like one designer made it, without hiring one designer.
-- **Brand-aligned content production** — marketing teams define their visual vocabulary once, then auto-generate hundreds of social-tile / blog-header / pitch-slide variants on the same template.
-- **Conference talks / internal presentations** — a single slot-filled prompt + outline = a 20-slide deck in 30 minutes; the Continuity Note is what makes it look professional, not auto-generated.
+- **Course materials with cohesive aesthetic** — lecture decks in a series end up visually consistent without manual designer review on every page.
+- **Brand-aligned content production** — marketing teams define their visual vocabulary once, then generate variants of social tiles, blog headers, and pitch slides on the same template.
+- **Conference talks / internal presentations** — a slot-filled prompt + outline produces a workable slide deck quickly; the Continuity Note is what keeps it from looking auto-generated.
 - **Cross-language localization** — keep visual identity constant while swapping the text content per language. The continuity contract handles the look; the slot fills handle the content.
 - **Rapid design exploration** — iterate aesthetic by swapping the Visual Elements field (water-color, brutalist, vaporwave, …) without rewriting the rest of the prompt.
-- **AI-design teaching** — concrete primary-source artifact for showing students that "prompt engineering" includes designing the prompt's *shape*, not just its words.
+- **AI-design teaching** — a concrete artifact for showing students that "prompt engineering" includes designing the prompt's *shape*, not just its words.
 
 ## Links
 
