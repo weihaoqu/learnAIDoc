@@ -45,7 +45,7 @@ The closing reminder: **deterministic orchestration is only half the battle.** I
 
 ## Why This Lands
 
-The thesis isn't new. [Anthropic's harness-engineering posts](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) make a related argument; the Vercel finding cited in [Harness Engineering](./harness-engineering-agents.md) (Pillar 2) — that removing ~80% of tools made agents faster and more reliable — points the same way. What this essay adds is **a memorable framing**:
+The thesis isn't new. [Anthropic's harness-engineering posts](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) make a related argument; the Vercel finding cited in [Harness Engineering](/learnAIDoc/wiki/harness-engineering-agents/) (Pillar 2) — that removing ~80% of tools made agents faster and more reliable — points the same way. What this essay adds is **a memorable framing**:
 
 | Framing | Effect |
 |---------|--------|
@@ -58,7 +58,7 @@ The harness-engineering literature is detailed and technical; this essay condens
 
 ## How It Slots into the Harness Engineering Picture
 
-This entry is a narrow companion to [Harness Engineering — The Real Bottleneck Isn't the Model](./harness-engineering-agents.md). That entry's Pillar 2 ("Architectural Constraints — Code Rules > Prompt Suggestions") makes the same point at length. The bearblog essay is a short, single-thesis version of it.
+This entry is a narrow companion to [Harness Engineering — The Real Bottleneck Isn't the Model](/learnAIDoc/wiki/harness-engineering-agents/). That entry's Pillar 2 ("Architectural Constraints — Code Rules > Prompt Suggestions") makes the same point at length. The bearblog essay is a short, single-thesis version of it.
 
 ```
 ┌─ Harness Engineering (the full system)
@@ -144,5 +144,5 @@ In the second version, the "MANDATORY: run tests" rule isn't a prompt — it's a
 ## Links
 
 - **Brian's essay:** [Agents Need Control Flow, Not More Prompts](https://bsuh.bearblog.dev/agents-need-control-flow/) — bsuh.bearblog.dev
-- **Companion entry:** [Harness Engineering — The Real Bottleneck Isn't the Model](./harness-engineering-agents.md) (Pillar 2 is the long-form version of Brian's thesis)
-- **Related reading:** [Seeing Like an Agent — How Anthropic Designs Tools for Claude Code](./seeing-like-an-agent-tool-design.md), [SpecOps — Spec-Driven Development with AI Coding Agents](./specops-spec-driven-development.md)
+- **Companion entry:** [Harness Engineering — The Real Bottleneck Isn't the Model](/learnAIDoc/wiki/harness-engineering-agents/) (Pillar 2 is the long-form version of Brian's thesis)
+- **Related reading:** [Seeing Like an Agent — How Anthropic Designs Tools for Claude Code](/learnAIDoc/wiki/seeing-like-an-agent-tool-design/), [SpecOps — Spec-Driven Development with AI Coding Agents](/learnAIDoc/wiki/specops-spec-driven-development/)

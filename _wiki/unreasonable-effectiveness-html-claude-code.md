@@ -73,7 +73,7 @@ Thariq's implicit response in the examples: these are valid concerns for **persi
 
 ## Beyond HTML: Output Format Engineering as a General Pattern
 
-The HTML thesis generalizes. Choosing the right output container is a first-class prompt-engineering decision — and visual formats follow the same logic. For a parallel pattern in image-generation, see the companion entry [GPT Image 2 水墨风 Slide Prompt — Structured Template for Ink-Wash Style Slides](./gpt-image-2-ink-style-slide-prompt.md): same principle (structured slots → workable artifact), different medium (image instead of HTML).
+The HTML thesis generalizes. Choosing the right output container is a first-class prompt-engineering decision — and visual formats follow the same logic. For a parallel pattern in image-generation, see the companion entry [GPT Image 2 水墨风 Slide Prompt — Structured Template for Ink-Wash Style Slides](/learnAIDoc/wiki/gpt-image-2-ink-style-slide-prompt/): same principle (structured slots → workable artifact), different medium (image instead of HTML).
 
 The meta-lesson: **choose the output format that matches the artifact's lifecycle.** HTML for interactive work. Structured visual prompts for designed assets. Markdown for one-shot reading. The wrong default costs a workflow.
 
@@ -109,4 +109,4 @@ Three ways teams are adopting Thariq's pattern:
 - **Simon Willison's writeup:** [simonwillison.net](https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html/)
 - **html-artifacts skill:** [github.com/dogum/html-artifacts](https://github.com/dogum/html-artifacts)
 - **HN discussion:** [news.ycombinator.com/item?id=48071940](https://news.ycombinator.com/item?id=48071940)
-- **Companion entry:** [How Anthropic Uses Skills — Thariq's 9-Category Framework & the Gotchas Pattern](./anthropic-skills-thariq-framework.md)
+- **Companion entry:** [How Anthropic Uses Skills — Thariq's 9-Category Framework & the Gotchas Pattern](/learnAIDoc/wiki/anthropic-skills-thariq-framework/)

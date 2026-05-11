@@ -10,7 +10,7 @@ image: "/assets/images/gpt-image-2-ink-style-slide-prompt.png"
 
 A reusable, slot-filled prompt template for **水墨 (ink-wash) style slide-deck images** generated through GPT Image 2 — surfaced by a Chinese AI-tools community in May 2026. Instead of describing what you want in prose ("make it look East-Asian, ink-painting-style, with text on the left"), you fill in six structured fields plus implicit mood tags (Title / Key Points / Visual Elements / Layout / Hierarchy / Continuity Note + Mood) and the agent — typically Codex or Claude Code orchestrating GPT Image 2 — produces multi-page decks where pages share a visual family. Note the aesthetic vocabulary is pan-East-Asian: 水墨 (ink-wash) is a Chinese painting tradition, while Ensō and wabi-sabi are Japanese aesthetic concepts; the template's "Visual Elements" field mixes them deliberately. The pattern generalizes: it's the image-gen parallel to Thariq Shihipar's HTML-is-an-interface thesis.
 
-*Source: Weibo post by 宝玉 xp on a GPT Image 2 水墨风格 Slides/PPT prompt template (May 2026; specific post URL not preserved). Companion entry: [The Unreasonable Effectiveness of HTML](./unreasonable-effectiveness-html-claude-code.md)*
+*Source: Weibo post by 宝玉 xp on a GPT Image 2 水墨风格 Slides/PPT prompt template (May 2026; specific post URL not preserved). Companion entry: [The Unreasonable Effectiveness of HTML](/learnAIDoc/wiki/unreasonable-effectiveness-html-claude-code/)*
 
 ## The Template
 
@@ -89,7 +89,7 @@ A 10-page deck produced from this template can be edited, re-skinned, re-purpose
 | Output target | Anti-pattern | Structured pattern |
 |---------------|--------------|--------------------|
 | Documents | One-shot Markdown report | Interactive HTML artifacts (see *Unreasonable Effectiveness of HTML*) |
-| Slide decks / images | "Make it look pretty" prose | This template's seven structured slots |
+| Slide decks / images | "Make it look pretty" prose | This template's six structured slots + mood tags |
 | Code | "Just write the function" | SKILL.md with Gotchas + structured references (see *Anthropic Uses Skills — Thariq's 9-Category Framework*) |
 
 The meta-rule: **the format of your prompt should match the format of your output.** Want a coherent multi-page deck? Use a slot-filled prompt. Want an interactive workspace? Ask for HTML. Want a reliable skill? Ship it as a folder, not a paragraph.
@@ -104,7 +104,7 @@ The template generalizes far beyond 水墨. Swap the **Visual Elements** field f
 - **Documentary / National Geographic:** muted earth tones, photographic textures, gold-section margins
 - **Whiteboard sketch:** rough hand-drawn lines, marker textures, deliberate imperfection
 
-The seven-field skeleton stays the same; only the vocabulary changes.
+The six-field skeleton stays the same; only the vocabulary changes.
 
 ## How to Operate It from Claude Code / Codex
 
@@ -127,7 +127,7 @@ For full automation, wrap it as a Claude Code skill (`generate-ink-deck/SKILL.md
 - **Slide-design lab** — students take the same outline, generate one deck with prose prompts and one with the slot template, then compare cross-page coherence. Quantifiable lesson on prompt structure.
 - **Cross-cultural design module** — teach the difference between cliché ("make it look Chinese") and informed vocabulary (Ensō, wabi-sabi, mist-grey, rice-paper texture). Useful both for design ethics and for prompt-engineering precision.
 - **Skill creation exercise** — wrap the template as a Claude Code SKILL.md with proper Gotchas. Students learn skill-design and prompt-engineering in one assignment.
-- **Output-format engineering curriculum** — pair this entry with [The Unreasonable Effectiveness of HTML](./unreasonable-effectiveness-html-claude-code.md). Same meta-lesson, two media: choose structure that matches artifact lifecycle.
+- **Output-format engineering curriculum** — pair this entry with [The Unreasonable Effectiveness of HTML](/learnAIDoc/wiki/unreasonable-effectiveness-html-claude-code/). Same meta-lesson, two media: choose structure that matches artifact lifecycle.
 
 ## Real-World Use Cases
 
@@ -140,6 +140,6 @@ For full automation, wrap it as a Claude Code skill (`generate-ink-deck/SKILL.md
 
 ## Links
 
-- **Companion entry:** [The Unreasonable Effectiveness of HTML — Thariq's Case for Output Format Engineering](./unreasonable-effectiveness-html-claude-code.md) — same principle, different medium
-- **Related — slide-output skills:** [HTML PPT Studio](./html-ppt-studio-skill.md), [Make Slides](./make-slides-interactive-teaching.md), [open-slide](./open-slide-agent-native-presentations.md)
-- **Related — prompt engineering:** [Prompt Master](./prompt-master-skill.md), [Agents with Taste](./agents-with-taste-design-skills.md)
+- **Companion entry:** [The Unreasonable Effectiveness of HTML — Thariq's Case for Output Format Engineering](/learnAIDoc/wiki/unreasonable-effectiveness-html-claude-code/) — same principle, different medium
+- **Related — slide-output skills:** [HTML PPT Studio](/learnAIDoc/wiki/html-ppt-studio-skill/), [Make Slides](/learnAIDoc/wiki/make-slides-interactive-teaching/), [open-slide](/learnAIDoc/wiki/open-slide-agent-native-presentations/)
+- **Related — prompt engineering:** [Prompt Master](/learnAIDoc/wiki/prompt-master-skill/), [Agents with Taste](/learnAIDoc/wiki/agents-with-taste-design-skills/)
