@@ -3,7 +3,7 @@ title: "AI Engineering from Scratch — Rohit Ghumare's 416-Lesson Math-to-MCP C
 date: 2026-05-10
 category: Learning Resources
 tags: [ai-engineering, curriculum, learning, open-source, mit-license, from-scratch, math, ml, deep-learning, llm, agents, mcp, multimodal, claude-code, skills, rohit-ghumare]
-related: ["Agentic AI Engineer Roadmap 2026 — Eight Pillars from Prompt to Production", "Stanford CS336 — Language Modeling from Scratch", "TensorTonic — Learn ML Through Code", "Karpathy microGPT — Build a GPT from Scratch", "AI Learning Courses on YouTube 2026", "Math Foundations for Reinforcement Learning", "Claude Code Skills: Resources & Repos", "Karpathy: End of Coding — The 100-Line Programs Era"]
+related: ["Agentic AI Engineer Roadmap 2026 — Eight Pillars from Prompt to Production", "Stanford CS336 — Language Modeling from Scratch: The Complete Free LLM Curriculum", "TensorTonic — Learn Machine Learning by Implementing 200+ Algorithms from Scratch", "Karpathy's MicroGPT — A Complete GPT in 200 Lines of Pure Python", "AI Learning Roadmap 2026 — Best Courses, Certs & YouTube Channels", "Mathematical Foundations of Reinforcement Learning — Free Textbook by Shiyu Zhao", "Claude Code Skills: Resources & Repos", "Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era"]
 icon: "📚"
 image: "/assets/images/ai-engineering-from-scratch-curriculum.png"
 ---

@@ -3,7 +3,7 @@ title: "The Unreasonable Effectiveness of HTML — Thariq's Case for Output Form
 date: 2026-05-10
 category: Claude Code Engineering
 tags: [claude-code, html, output-format, thariq-shihipar, markdown, interactive-artifacts, prompt-engineering, gpt-image-2, slide-design, anthropic]
-related: ["How Anthropic Uses Skills — Thariq's 9-Category Framework & the Gotchas Pattern", "Seeing Like an Agent — How Anthropic Designs Tools for Claude Code", "HTML PPT Studio — AI-Powered Presentation Skill for Claude Code", "Make Slides: AI-Powered Interactive Teaching Slides", "Open Slide — Agent-Native Presentations", "Claude Interactive Diagram Tools", "Markdown Viewer Skills & Diagrams"]
+related: ["How Anthropic Uses Skills — Thariq's 9-Category Framework & the Gotchas Pattern", "Seeing Like an Agent — How Anthropic Designs Tools for Claude Code", "HTML PPT Studio — AI-Powered Presentation Skill for Claude Code", "Make Slides: AI-Powered Interactive Teaching Slides", "open-slide — The Slide Framework Built for AI Coding Agents", "Build Interactive Diagram Tools with Claude", "Markdown Viewer Skills — 9,500 Icons and 14 Diagram Types for AI Agents"]
 icon: "🌐"
 image: "/assets/images/unreasonable-effectiveness-html-claude-code.png"
 ---
@@ -153,4 +153,4 @@ Three ways teams are adopting Thariq's pattern:
 - **Simon Willison's writeup:** [simonwillison.net](https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html/)
 - **html-artifacts skill:** [github.com/dogum/html-artifacts](https://github.com/dogum/html-artifacts)
 - **HN discussion:** [news.ycombinator.com/item?id=48071940](https://news.ycombinator.com/item?id=48071940)
-- **Companion entry:** [How Anthropic Uses Skills — Thariq's 9-Category Framework](./anthropic-skills-thariq-framework.md)
+- **Companion entry:** [How Anthropic Uses Skills — Thariq's 9-Category Framework & the Gotchas Pattern](./anthropic-skills-thariq-framework.md)

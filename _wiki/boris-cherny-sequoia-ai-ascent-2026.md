@@ -3,7 +3,7 @@ title: "Boris Cherny at Sequoia AI Ascent 2026 — Phone PRs, /loop Workflows & 
 date: 2026-05-10
 category: Claude Code Engineering
 tags: [claude-code, boris-cherny, anthropic, sequoia, ai-ascent, loops, cron, phone-coding, cross-functional, saas-disruption, printing-press, future-of-coding]
-related: ["Boris Cherny on Claude Code — Origin Story, Product Philosophy & the End of Manual Coding", "How Anthropic Teams Use Claude Code", "Claude Code Loop Command — Run a Prompt on a Schedule", "Karpathy: End of Coding — The 100-Line Programs Era", "Frustration Shifts Upward — AI Coding's Real Bottleneck", "Anthropic Knowledge-Work Plugins — Beyond Coding", "Harness Engineering — The Real Bottleneck Isn't the Model"]
+related: ["Boris Cherny on Claude Code — Origin Story, Product Philosophy & the End of Manual Coding", "How Anthropic Teams Use Claude Code", "Claude Code /loop: Scheduled Prompts on Autopilot", "Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "Frustration Shifts Upward — How AI Coding Changes What's Hard", "Anthropic Knowledge Work Plugins — Role-Based AI That Works Like Your Team", "Harness Engineering — The Real Bottleneck Isn't the Model"]
 icon: "🎤"
 image: "/assets/images/boris-cherny-sequoia-ai-ascent-2026.png"
 ---
