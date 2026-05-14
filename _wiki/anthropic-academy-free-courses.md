@@ -5,7 +5,7 @@ category: Learning Resources
 redirect_from:
   - "/wiki/ai education/anthropic-academy-free-courses/"
 tags: [anthropic, education, certification, claude, mcp, ai-fluency, courses, free]
-related: ["Claude Certified Architect — Anthropic's First Official AI Certification", "AI Mastery Games — Teaching AI Literacy Through Interactive Games"]
+related: ["Claude Certified Architect — Anthropic's First Official AI Certification", "AI Mastery Games — Teaching AI Literacy Through Interactive Games", "Claude Code 101 — Anthropic's Official Onboarding Course"]
 icon: "🎓"
 image: "/assets/images/anthropic-academy-free-courses.png"
 ---
