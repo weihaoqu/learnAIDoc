@@ -164,18 +164,21 @@ The pattern generalizes: pick a topic, list specimens, list parts, write each Re
 
 The single most important rule: **AI does the writing, humans do the editing.** Never paste AI output into production without reading every line.
 
-## Cost Sketch
+## Cost Sketch & The Cost-Conscious Recipe
 
 | Item | Cost |
 |---|---|
 | Gemini PDF extraction (free tier) | ~$0 |
 | 6 Nano Banana Pro thumbnail images | ~$0.30–$0.60 |
-| AI image-to-3D (skip if procedural) | $5–$30 |
+| AI image-to-3D (optional) | $5–$30 |
 | Claude Code time | Subscription |
 | Vercel hosting | $0 (free hobby tier) |
-| **Total to first deploy** | **~$1–$30** (mostly $0 if you go full procedural) |
+| **Per-topic procedural total** | **under $1** |
+| **Per-topic with AI image-to-3D** | **~$10–$30** |
 
-A 5-pack curriculum (5 domains × 6 specimens each) costs roughly **$5–$150** in API spend and **50–100 hours** of work, mostly iteration.
+For most faculty: **procedural-first is the right call.** A 5-pack curriculum (5 domains × 6 specimens each) lands at **under $5 total** if you stick to procedural geometry + AI thumbnails only. Reserve AI image-to-3D for hero specimens where naturalistic appearance carries the educational weight (a hemoglobin molecule, a galaxy) — and only if a department budget absorbs the $5-$30 per model.
+
+The honest verdict after building both example packs: **AI image-to-3D rarely earns its keep for mechanical, abstract, or diagrammatic topics.** Procedural R3F primitives give complete control over labels, scale, and active-part highlighting at zero API cost. Use the budget for thumbnails (which are hard to fake procedurally) and skip AI 3D until you have a specific hero specimen that needs it.
 
 ## Pitfalls (Pre-Empts From Building the Reference)
 
