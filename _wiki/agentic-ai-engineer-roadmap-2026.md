@@ -5,7 +5,7 @@ category: Learning Resources
 redirect_from:
   - "/wiki/ai research/agentic-ai-engineer-roadmap-2026/"
 tags: [agents, ai-engineering, roadmap, rag, langgraph, production, career, python, multi-agent]
-related: ["Anthropic Managed Agents — Decoupling the Brain from the Hands", "Hermes Agent — The Self-Improving AI Agent That Learns From Experience"]
+related: ["Anthropic Managed Agents — Decoupling the Brain from the Hands", "Hermes Agent — The Self-Improving AI Agent That Learns From Experience", "What is Agentic Engineering? A Teaching Primer"]
 icon: "🗺️"
 image: "/assets/images/agentic-ai-engineer-roadmap-2026.png"
 ---

@@ -1,0 +1,1012 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agentic Engineering · One Request, Five Layers</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style>
+  :root {
+    --ink: #1f3445;
+    --muted: #5b7a8c;
+    --line: #cfe0ea;
+    --steel: #5b89a6;
+    --steel-deep: #3f6e8c;
+    --pale: #e7f0f5;
+    --accent: #c97b5a;
+    --accent-bright: #e08c63;
+    --ok: #5da079;
+  }
+  html, body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+  .mono { font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace; }
+  body {
+    background:
+      radial-gradient(ellipse 800px 600px at 20% 0%, rgba(91,137,166,0.10), transparent),
+      radial-gradient(ellipse 800px 700px at 90% 100%, rgba(201,123,90,0.08), transparent),
+      linear-gradient(180deg, #f6fafd 0%, #e9f1f7 100%);
+    min-height: 100vh;
+    color: var(--ink);
+    letter-spacing: -0.005em;
+  }
+
+  /* Glassmorphism card */
+  .glass {
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(12px) saturate(150%);
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+    border: 1px solid rgba(255,255,255,0.6);
+    box-shadow:
+      0 1px 2px rgba(31,52,69,0.05),
+      0 8px 24px rgba(31,52,69,0.06);
+  }
+  .glass-solid {
+    background: rgba(255,255,255,0.92);
+    border: 1px solid var(--line);
+    box-shadow: 0 1px 2px rgba(31,52,69,0.05), 0 8px 24px rgba(31,52,69,0.06);
+  }
+
+  /* Component tiles */
+  .tile {
+    background: rgba(255,255,255,0.85);
+    border: 1.5px solid rgba(207,224,234,0.8);
+    border-radius: 16px;
+    padding: 18px 14px 14px;
+    text-align: center;
+    transition: all 280ms cubic-bezier(0.4,0,0.2,1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .tile::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, transparent 40%, rgba(255,255,255,0.4) 50%, transparent 60%);
+    transform: translateX(-100%);
+    transition: transform 600ms;
+    pointer-events: none;
+  }
+  .tile.active::before { transform: translateX(100%); }
+  .tile .icon-wrap {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--pale), #f6fafd);
+    border: 1px solid rgba(91,137,166,0.18);
+    color: var(--steel-deep);
+    transition: all 280ms;
+  }
+  .tile .icon-wrap svg { width: 22px; height: 22px; stroke-width: 2; }
+  .tile .name {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--ink);
+  }
+  .tile .name-cn {
+    color: var(--muted);
+    font-size: 0.82rem;
+    font-weight: 500;
+    margin-top: 1px;
+  }
+  .tile .role {
+    margin-top: 8px;
+    font-size: 0.78rem;
+    color: var(--muted);
+    line-height: 1.4;
+    min-height: 2.4em;
+  }
+  .tile.active {
+    border-color: var(--accent);
+    background: linear-gradient(180deg, #ffffff 0%, #fff4ee 100%);
+    transform: translateY(-4px);
+    box-shadow:
+      0 10px 30px rgba(201,123,90,0.25),
+      0 2px 4px rgba(201,123,90,0.10);
+  }
+  .tile.active .icon-wrap {
+    background: linear-gradient(135deg, var(--accent), var(--accent-bright));
+    color: #fff;
+    border-color: transparent;
+    box-shadow: 0 4px 12px rgba(201,123,90,0.35);
+  }
+  .tile.done {
+    border-color: rgba(93,160,121,0.55);
+    background: linear-gradient(180deg, #ffffff 0%, #f0f8f3 100%);
+  }
+  .tile.done .icon-wrap {
+    background: linear-gradient(135deg, var(--ok), #74b58e);
+    color: #fff;
+    border-color: transparent;
+  }
+  .tile.done .checkmark {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--ok);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(93,160,121,0.35);
+    animation: pop 360ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  }
+  .tile .checkmark svg { width: 12px; height: 12px; stroke-width: 3; }
+  @keyframes pop {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  /* Token */
+  .token {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, var(--accent-bright), var(--accent));
+    box-shadow:
+      0 0 0 4px rgba(201,123,90,0.20),
+      0 4px 12px rgba(201,123,90,0.35);
+    z-index: 5;
+    transition: left 750ms cubic-bezier(0.4, 0.0, 0.2, 1),
+                top 750ms cubic-bezier(0.4, 0.0, 0.2, 1),
+                opacity 200ms;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .token.visible { opacity: 1; }
+
+  /* Trace log */
+  .trace-log {
+    background: linear-gradient(180deg, #1f3445 0%, #2a4660 100%);
+    color: #e7f0f5;
+    border-radius: 14px;
+    padding: 16px 18px;
+    font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+    font-size: 0.82rem;
+    line-height: 1.7;
+    min-height: 210px;
+    max-height: 260px;
+    overflow-y: auto;
+    box-shadow: inset 0 2px 8px rgba(0,0,0,0.15);
+  }
+  .trace-log::-webkit-scrollbar { width: 6px; }
+  .trace-log::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 3px; }
+  .trace-log .label {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgba(231,240,245,0.55);
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .trace-log .line {
+    opacity: 0;
+    transform: translateX(-8px);
+    transition: opacity 250ms, transform 250ms;
+    padding: 2px 0;
+  }
+  .trace-log .line.in { opacity: 1; transform: translateX(0); }
+  .trace-log .line .tag {
+    display: inline-block;
+    width: 1.7em;
+    color: #93c5fd;
+    font-weight: 700;
+  }
+  .trace-log .line.t-prompt .tag { color: #fcd34d; }
+  .trace-log .line.t-agent .tag { color: #93c5fd; }
+  .trace-log .line.t-llm .tag { color: #c4b5fd; }
+  .trace-log .line.t-mcp .tag { color: #6ee7b7; }
+  .trace-log .line.t-tool .tag { color: #fbbf24; }
+  .trace-log .line.t-user .tag { color: #f87171; }
+
+  /* Buttons */
+  .btn {
+    appearance: none;
+    border: 1px solid var(--line);
+    background: rgba(255,255,255,0.9);
+    color: var(--ink);
+    padding: 9px 14px;
+    border-radius: 10px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 160ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    font-family: inherit;
+  }
+  .btn:hover {
+    background: var(--pale);
+    border-color: var(--steel);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(91,137,166,0.15);
+  }
+  .btn:active { transform: translateY(0); }
+  .btn:disabled { opacity: 0.45; cursor: not-allowed; }
+  .btn.primary {
+    background: linear-gradient(135deg, var(--steel-deep), var(--steel));
+    color: #fff;
+    border-color: var(--steel-deep);
+    box-shadow: 0 4px 12px rgba(63,110,140,0.25);
+  }
+  .btn.primary:hover {
+    background: linear-gradient(135deg, #345e7c, #6b9bb5);
+    box-shadow: 0 6px 16px rgba(63,110,140,0.35);
+  }
+  .btn svg { width: 16px; height: 16px; stroke-width: 2.2; }
+
+  /* Speed slider */
+  input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 6px;
+    border-radius: 3px;
+    background: var(--line);
+    outline: none;
+    width: 100%;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--steel-deep);
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(63,110,140,0.4);
+    transition: transform 120ms;
+  }
+  input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.15); }
+  input[type="range"]::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--steel-deep);
+    cursor: pointer;
+    border: none;
+  }
+
+  /* Caption */
+  .caption-box {
+    background: rgba(255,255,255,0.85);
+    border: 1.5px solid rgba(207,224,234,0.8);
+    border-radius: 12px;
+    padding: 14px 18px;
+    transition: all 250ms;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .caption-box.live {
+    border-color: var(--accent);
+    background: linear-gradient(135deg, #fff4ee, #ffffff);
+    box-shadow: 0 4px 14px rgba(201,123,90,0.20);
+  }
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-bright));
+    color: #fff;
+    font-size: 0.72rem;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(201,123,90,0.3);
+  }
+
+  /* Detail cards */
+  .detail-card {
+    background: rgba(255,255,255,0.92);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 22px;
+    transition: all 280ms;
+    position: relative;
+    overflow: hidden;
+  }
+  .detail-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--steel-deep), var(--steel));
+    transition: background 280ms;
+  }
+  .detail-card.focus {
+    border-color: var(--accent);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(201,123,90,0.20);
+  }
+  .detail-card.focus::before {
+    background: linear-gradient(90deg, var(--accent), var(--accent-bright));
+  }
+  .detail-card .card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .detail-card .card-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 11px;
+    background: linear-gradient(135deg, var(--steel-deep), var(--steel));
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 280ms;
+  }
+  .detail-card .card-icon svg { width: 22px; height: 22px; stroke-width: 2; }
+  .detail-card.focus .card-icon {
+    background: linear-gradient(135deg, var(--accent), var(--accent-bright));
+  }
+  .detail-card .card-titles {
+    line-height: 1.15;
+  }
+  .detail-card .card-titles .num-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    background: var(--pale);
+    color: var(--steel-deep);
+    padding: 1px 7px;
+    border-radius: 4px;
+    font-weight: 700;
+    margin-right: 6px;
+  }
+  .detail-card.focus .card-titles .num-badge {
+    background: var(--accent);
+    color: #fff;
+  }
+  .detail-card h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+  }
+  .detail-card .cn-name {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin: 3px 0 0;
+    font-style: italic;
+  }
+  .detail-card dl dt {
+    font-weight: 700;
+    color: var(--steel-deep);
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .detail-card dl dt:first-child { margin-top: 0; }
+  .detail-card dl dd {
+    margin: 0;
+    line-height: 1.55;
+    color: var(--ink);
+    font-size: 0.92rem;
+  }
+  .detail-card dl dd ul { margin: 6px 0 0; padding-left: 22px; }
+  .detail-card dl dd li { margin: 2px 0; }
+  .example-box {
+    display: block;
+    margin-top: 6px;
+    padding: 10px 14px;
+    background: linear-gradient(135deg, var(--pale), #f6fafd);
+    border-left: 3px solid var(--steel);
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+    font-size: 0.82rem;
+    color: var(--ink);
+    line-height: 1.5;
+  }
+  .fail-cue {
+    color: var(--muted);
+    font-style: italic;
+    font-size: 0.88rem;
+  }
+
+  /* Section heading */
+  .section-heading {
+    text-align: center;
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 40px 0 8px;
+    letter-spacing: -0.015em;
+  }
+  .section-sub {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.96rem;
+    margin: 0 auto 24px;
+    max-width: 580px;
+  }
+
+  /* Summary block */
+  .summary {
+    background: linear-gradient(135deg, #ffffff 0%, #f6fafd 100%);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 26px 32px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 1.65;
+    font-size: 1.02rem;
+    box-shadow: 0 8px 24px rgba(31,52,69,0.05);
+  }
+  .summary strong { color: var(--steel-deep); font-weight: 700; }
+  .summary .accent-w { color: var(--accent); font-weight: 700; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    font-size: 0.78rem;
+    color: var(--muted);
+    padding: 24px 8px 8px;
+  }
+  .kbd {
+    display: inline-block;
+    padding: 2px 7px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-bottom-width: 2px;
+    border-radius: 4px;
+    font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+    font-size: 0.74rem;
+    color: var(--ink);
+    margin: 0 2px;
+  }
+
+  @media (max-width: 1000px) {
+    .grid-5 { grid-template-columns: repeat(5, minmax(100px, 1fr)) !important; gap: 10px !important; }
+    .tile { padding: 12px 6px 10px; }
+    .tile .icon-wrap { width: 36px; height: 36px; }
+    .tile .name { font-size: 0.95rem; }
+    .lower { grid-template-columns: 1fr !important; }
+  }
+</style>
+</head>
+<body>
+<div class="max-w-7xl mx-auto px-7 py-8">
+
+  <!-- Header -->
+  <header class="text-center mb-6">
+    <h1 class="text-3xl md:text-4xl font-bold tracking-tight">
+      Agentic Engineering
+      <span class="text-[color:var(--accent)]">·</span>
+      One Request, Five Layers
+    </h1>
+    <p class="mt-3 text-[15px] text-[color:var(--muted)] max-w-2xl mx-auto leading-relaxed">
+      An <em>agentic system</em> turns a single user query into a dozen-plus orchestrated steps across five cooperating layers.
+      Press <strong>Play</strong> to watch one request flow through, then read the detailed component cards below.
+    </p>
+  </header>
+
+  <!-- Stage -->
+  <div id="stage" class="glass rounded-2xl p-6 md:p-7 mb-3 relative">
+    <div id="components" class="grid grid-5 grid-cols-5 gap-5 relative z-10">
+
+      <div class="tile" data-id="prompt">
+        <div class="icon-wrap"><i data-lucide="message-square-text"></i></div>
+        <div class="name">Prompt</div>
+        <div class="name-cn">提示词</div>
+        <div class="role">Instruction &amp; control</div>
+      </div>
+      <div class="tile" data-id="agent">
+        <div class="icon-wrap"><i data-lucide="bot"></i></div>
+        <div class="name">Agent</div>
+        <div class="name-cn">智能体</div>
+        <div class="role">Decide, dispatch, remember</div>
+      </div>
+      <div class="tile" data-id="llm">
+        <div class="icon-wrap"><i data-lucide="brain-circuit"></i></div>
+        <div class="name">LLM</div>
+        <div class="name-cn">大模型</div>
+        <div class="role">Cognition engine</div>
+      </div>
+      <div class="tile" data-id="mcp">
+        <div class="icon-wrap"><i data-lucide="network"></i></div>
+        <div class="name">MCP</div>
+        <div class="name-cn">协议</div>
+        <div class="role">Tool/agent connection</div>
+      </div>
+      <div class="tile" data-id="tools">
+        <div class="icon-wrap"><i data-lucide="wrench"></i></div>
+        <div class="name">Tools</div>
+        <div class="name-cn">工具</div>
+        <div class="role">Limbs &amp; senses</div>
+      </div>
+
+    </div>
+    <div id="token" class="token"></div>
+  </div>
+
+  <!-- Caption strip -->
+  <div id="caption" class="caption-box mb-4">
+    <span class="text-[color:var(--muted)] text-sm">Press <span class="kbd">Play</span> or <span class="kbd">→</span> to begin. Click any component card below to focus on it.</span>
+  </div>
+
+  <!-- Trace + Controls -->
+  <div class="lower grid grid-cols-[1fr_280px] gap-4 mb-8">
+    <div id="trace" class="trace-log">
+      <span class="label">Trace log</span>
+    </div>
+    <div class="glass-solid rounded-2xl p-4 flex flex-col gap-3">
+      <div class="text-[11px] uppercase tracking-widest text-[color:var(--muted)] font-semibold">Controls</div>
+      <button id="play" class="btn primary"><i data-lucide="play"></i><span id="play-label">Play</span></button>
+      <button id="step" class="btn"><i data-lucide="skip-forward"></i>Step</button>
+      <button id="replay" class="btn"><i data-lucide="rotate-ccw"></i>Replay</button>
+      <div class="flex flex-col gap-1.5">
+        <label for="speed" class="text-xs text-[color:var(--muted)] font-medium">Auto-play speed</label>
+        <input type="range" id="speed" min="600" max="3000" value="1500" step="100">
+        <div class="flex justify-between text-[10px] text-[color:var(--muted)] uppercase tracking-wider"><span>Fast</span><span>Slow</span></div>
+      </div>
+      <div class="text-center text-sm text-[color:var(--muted)] pt-2 border-t border-[color:var(--line)]">
+        Step <strong id="step-num" class="text-[color:var(--ink)]">0</strong> / <strong id="step-total">0</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== DETAIL CARDS ===== -->
+  <h2 class="section-heading">The Five Components Explained</h2>
+  <p class="section-sub">The active component is highlighted as the animation plays. Click any card to read it in isolation.</p>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+    <div class="detail-card" data-id="prompt">
+      <div class="card-header">
+        <div class="card-icon"><i data-lucide="message-square-text"></i></div>
+        <div class="card-titles">
+          <h3><span class="num-badge">01</span>Prompt</h3>
+          <p class="cn-name">提示词 — instruction &amp; control</p>
+        </div>
+      </div>
+      <dl>
+        <dt>Role</dt>
+        <dd>The instruction layer. The <em>"communication language"</em> and <em>"operations manual"</em> between the user and the LLM — sets role, task, available tools, and the expected output shape.</dd>
+        <dt>Concrete example</dt>
+        <dd>
+          <span class="example-box">You are a travel-planning expert. Use the web-search tool to find Beijing's weather for the next 3 days, and recommend indoor and outdoor activities.</span>
+        </dd>
+        <dt>Engineering question</dt>
+        <dd>Are your prompts versioned, reproducible, and traceable to behavior changes — or hand-edited every time?</dd>
+        <dt>When it fails</dt>
+        <dd class="fail-cue">Vague prompts produce vague tool choice and hallucinated answers. Look here first when the agent confidently asserts false facts.</dd>
+      </dl>
+    </div>
+
+    <div class="detail-card" data-id="agent">
+      <div class="card-header">
+        <div class="card-icon"><i data-lucide="bot"></i></div>
+        <div class="card-titles">
+          <h3><span class="num-badge">02</span>Agent</h3>
+          <p class="cn-name">智能体 — decision &amp; execution center</p>
+        </div>
+      </div>
+      <dl>
+        <dt>Role</dt>
+        <dd>The orchestrator. Not the brain itself — it <em>uses</em> the LLM to think, then decides, dispatches, remembers, and verifies. Three jobs:
+          <ul>
+            <li><strong>Planning</strong> (规划) — break complex tasks into steps</li>
+            <li><strong>Memory</strong> (记忆) — preserve context across turns</li>
+            <li><strong>Tool use</strong> (工具调用) — pick when/which tool</li>
+          </ul>
+        </dd>
+        <dt>Concrete example</dt>
+        <dd>Claude Code, AutoGPT, ChatGPT's Advanced Data Analysis mode, custom agents on the OpenAI/Anthropic SDK.</dd>
+        <dt>Engineering question</dt>
+        <dd>Is the plan inspectable? When the agent picks the wrong tool, can you tell <em>why</em> — or is it a black box?</dd>
+        <dt>When it fails</dt>
+        <dd class="fail-cue">Most "agent runtime" failures live here: missing timeouts, no retry path, runaway loops, memory leaks. Cost overruns usually trace back to this layer.</dd>
+      </dl>
+    </div>
+
+    <div class="detail-card" data-id="llm">
+      <div class="card-header">
+        <div class="card-icon"><i data-lucide="brain-circuit"></i></div>
+        <div class="card-titles">
+          <h3><span class="num-badge">03</span>LLM</h3>
+          <p class="cn-name">大模型 — cognition engine</p>
+        </div>
+      </div>
+      <dl>
+        <dt>Role</dt>
+        <dd>The cognition layer — language understanding, reasoning, classification, generation. Analogous to the human brain: capable of thinking but with no senses or hands of its own.</dd>
+        <dt>Concrete examples</dt>
+        <dd>Claude, GPT-4/5, DeepSeek, Qwen, Llama, Gemini.</dd>
+        <dt>Engineering question</dt>
+        <dd>When you swap the LLM (Claude → GPT, etc.), what breaks in your system that <em>shouldn't</em> be model-specific?</dd>
+        <dt>When it fails</dt>
+        <dd class="fail-cue">Hallucinations, non-determinism, reasoning errors. Set temperature, cache prompts, use a smaller/cheaper model for routing decisions.</dd>
+      </dl>
+    </div>
+
+    <div class="detail-card" data-id="mcp">
+      <div class="card-header">
+        <div class="card-icon"><i data-lucide="network"></i></div>
+        <div class="card-titles">
+          <h3><span class="num-badge">04</span>MCP</h3>
+          <p class="cn-name">Model Context Protocol — connection standard</p>
+        </div>
+      </div>
+      <dl>
+        <dt>Role</dt>
+        <dd>The protocol boundary between agent/runtime and external tools or data. Officially a <code class="mono text-sm">host → client → server</code> architecture over JSON-RPC; servers expose tools/resources/prompts; clients discover and invoke them.</dd>
+        <dt>Why it exists</dt>
+        <dd>Solves the "tools aren't interchangeable" problem. Authors publish to one spec; compatible clients can discover and invoke compatible servers.</dd>
+        <dt>Engineering question</dt>
+        <dd>Are your tool boundaries explicit and least-privilege, or did you grant broad access "just to get it working"?</dd>
+        <dt>When it fails</dt>
+        <dd class="fail-cue">Auth, version mismatches, transport timeouts, schema drift. MCP makes operations <em>explicit</em> but doesn't itself guarantee safe use — still need human-in-the-loop for sensitive actions.</dd>
+      </dl>
+    </div>
+
+    <div class="detail-card" data-id="tools">
+      <div class="card-header">
+        <div class="card-icon"><i data-lucide="wrench"></i></div>
+        <div class="card-titles">
+          <h3><span class="num-badge">05</span>Tools</h3>
+          <p class="cn-name">工具 — limbs &amp; senses</p>
+        </div>
+      </div>
+      <dl>
+        <dt>Role</dt>
+        <dd>The action layer. The LLM by itself is <em>"pure thought"</em>: it doesn't know today's weather, can't run code, and can't read your database. Tools let the system <em>act</em>.</dd>
+        <dt>Categories of tool</dt>
+        <dd>
+          <ul>
+            <li><strong>Web search</strong> — fetch fresh info</li>
+            <li><strong>Code execution</strong> — run code, return result</li>
+            <li><strong>Database query</strong> — retrieve data</li>
+            <li><strong>API call</strong> — talk to other services</li>
+          </ul>
+        </dd>
+        <dt>Engineering question</dt>
+        <dd>When a tool call fails, does the agent recover gracefully, retry intelligently, or hand the raw error back to the user?</dd>
+        <dt>When it fails</dt>
+        <dd class="fail-cue">External outages, rate limits, schema changes. The fix often lives at the Agent layer (retry/fallback policy), not the Tool itself.</dd>
+      </dl>
+    </div>
+
+  </div>
+
+  <!-- Summary -->
+  <div class="summary">
+    <span class="text-xs uppercase tracking-widest text-[color:var(--muted)] font-semibold mb-2 block">One-line summary</span>
+    Prompts spark intent &middot; the <strong>LLM</strong> provides cognition &middot;
+    the <strong>Agent</strong> decides and dispatches &middot; <strong>MCP</strong> standardizes the connection &middot;
+    <strong>Tools</strong> execute in reality.
+    <br>
+    <span class="text-[15px] text-[color:var(--muted)] block mt-2">
+      The five together form the loop that lets AI both <span class="accent-w">think</span> and <span class="accent-w">act</span>.
+    </span>
+  </div>
+
+  <div class="footer">
+    Self-contained teaching artifact &middot;
+    <span class="kbd">Space</span> play/pause &middot;
+    <span class="kbd">→</span> step &middot;
+    <span class="kbd">R</span> replay
+  </div>
+
+</div>
+
+<script>
+(() => {
+  // Initialize lucide icons
+  if (window.lucide) lucide.createIcons();
+
+  const steps = [
+    { from: 'user', to: 'prompt',
+      caption: 'A user query arrives, framed by the Prompt layer.',
+      traceTag: 'P',
+      traceText: 'user → prompt: "Plan a 3-day Beijing trip with indoor + outdoor options."',
+      activate: 'prompt', tClass: 't-prompt' },
+    { from: 'prompt', to: 'agent',
+      caption: 'The Agent receives the framed request and prepares to plan.',
+      traceTag: 'A',
+      traceText: 'prompt → agent: receive query, load memory, prepare planning',
+      activate: 'agent', done: 'prompt', tClass: 't-agent' },
+    { from: 'agent', to: 'llm',
+      caption: 'The Agent calls the LLM to reason about how to handle the request.',
+      traceTag: 'L',
+      traceText: 'agent → llm: "Given this query + tools, propose a plan."',
+      activate: 'llm', tClass: 't-llm' },
+    { from: 'llm', to: 'agent',
+      caption: 'The LLM returns a plan; the Agent now knows it must call a tool.',
+      traceTag: 'A',
+      traceText: 'llm → agent: plan = [search_web("Beijing weather 3-day"), recommend_activities(...)]',
+      activate: 'agent', done: 'llm', tClass: 't-agent' },
+    { from: 'agent', to: 'mcp',
+      caption: 'The Agent dispatches a tool call through the MCP layer.',
+      traceTag: 'M',
+      traceText: 'agent → mcp: invoke search_web with arg "Beijing weather May 15–17 2026"',
+      activate: 'mcp', done: 'agent', tClass: 't-mcp' },
+    { from: 'mcp', to: 'tools',
+      caption: 'MCP routes the call to the matching tool (web search).',
+      traceTag: 'T',
+      traceText: 'mcp → tool: routed to search_web v1.2 (timeout=10s)',
+      activate: 'tools', done: 'mcp', tClass: 't-tool' },
+    { from: 'tools', to: 'mcp',
+      caption: 'The tool executes and returns its result.',
+      traceTag: 'M',
+      traceText: 'tool → mcp: ok, 3 results returned (188 ms)',
+      activate: 'mcp', done: 'tools', tClass: 't-mcp' },
+    { from: 'mcp', to: 'agent',
+      caption: 'The Agent receives the result and decides what to do next.',
+      traceTag: 'A',
+      traceText: 'mcp → agent: tool result delivered; agent verifies output shape',
+      activate: 'agent', done: 'mcp', tClass: 't-agent' },
+    { from: 'agent', to: 'llm',
+      caption: 'The Agent calls the LLM again to synthesize a user-facing answer.',
+      traceTag: 'L',
+      traceText: 'agent → llm: "Synthesize an answer using the tool result."',
+      activate: 'llm', tClass: 't-llm' },
+    { from: 'llm', to: 'agent',
+      caption: 'The LLM returns the final synthesized response.',
+      traceTag: 'A',
+      traceText: 'llm → agent: drafted final answer with weather + activity recommendations',
+      activate: 'agent', done: 'llm', tClass: 't-agent' },
+    { from: 'agent', to: 'user',
+      caption: 'The Agent returns the final answer to the user. One request — many orchestrated calls.',
+      traceTag: 'U',
+      traceText: 'agent → user: final answer delivered. Trace: 10 internal events for 1 query.',
+      done: 'agent', tClass: 't-user' }
+  ];
+
+  const $ = (id) => document.getElementById(id);
+  const stage = $('stage');
+  const trace = $('trace');
+  const caption = $('caption');
+  const token = $('token');
+  const playBtn = $('play');
+  const playLabel = $('play-label');
+  const stepBtn = $('step');
+  const replayBtn = $('replay');
+  const speedInput = $('speed');
+  const stepNumEl = $('step-num');
+  const stepTotalEl = $('step-total');
+  stepTotalEl.textContent = steps.length;
+
+  let idx = 0;
+  let playing = false;
+  let timer = null;
+
+  function setPlayIcon(state) {
+    // state: 'play' | 'pause' | 'done'
+    const iconEl = playBtn.querySelector('[data-lucide], svg');
+    const lab = playLabel;
+    if (!iconEl || !lab) return;
+    const newIcon = document.createElement('i');
+    if (state === 'play') { newIcon.setAttribute('data-lucide', 'play'); lab.textContent = 'Play'; }
+    else if (state === 'pause') { newIcon.setAttribute('data-lucide', 'pause'); lab.textContent = 'Pause'; }
+    else if (state === 'done') { newIcon.setAttribute('data-lucide', 'check'); lab.textContent = 'Done'; }
+    iconEl.replaceWith(newIcon);
+    if (window.lucide) lucide.createIcons();
+  }
+
+  function focusCard(id) {
+    document.querySelectorAll('.detail-card').forEach(c => {
+      c.classList.toggle('focus', c.dataset.id === id);
+    });
+  }
+  function clearCardFocus() {
+    document.querySelectorAll('.detail-card').forEach(c => c.classList.remove('focus'));
+  }
+
+  function center(id) {
+    if (id === 'user') {
+      const sr = stage.getBoundingClientRect();
+      const pr = stage.querySelector('.tile[data-id="prompt"]').getBoundingClientRect();
+      return { x: pr.left - sr.left - 22, y: pr.top - sr.top + pr.height / 2 };
+    }
+    const el = stage.querySelector(`.tile[data-id="${id}"]`);
+    if (!el) return null;
+    const er = el.getBoundingClientRect();
+    const sr = stage.getBoundingClientRect();
+    return { x: er.left - sr.left + er.width / 2, y: er.top - sr.top + er.height / 2 };
+  }
+
+  function moveTokenTo(toId, initial = false) {
+    const c = center(toId);
+    if (!c) return;
+    if (initial) {
+      token.style.transition = 'none';
+      token.style.left = (c.x - 10) + 'px';
+      token.style.top = (c.y - 10) + 'px';
+      requestAnimationFrame(() => { token.style.transition = ''; });
+      return;
+    }
+    token.style.left = (c.x - 10) + 'px';
+    token.style.top = (c.y - 10) + 'px';
+  }
+
+  function setActive(id) {
+    document.querySelectorAll('.tile').forEach(el => {
+      if (el.dataset.id === id) el.classList.add('active');
+    });
+    focusCard(id);
+  }
+  function setDone(id) {
+    const el = stage.querySelector(`.tile[data-id="${id}"]`);
+    if (el) {
+      el.classList.remove('active');
+      el.classList.add('done');
+      // add checkmark if not present
+      if (!el.querySelector('.checkmark')) {
+        const cm = document.createElement('div');
+        cm.className = 'checkmark';
+        cm.innerHTML = '<i data-lucide="check"></i>';
+        el.appendChild(cm);
+        if (window.lucide) lucide.createIcons();
+      }
+    }
+  }
+  function clearStates() {
+    document.querySelectorAll('.tile').forEach(el => {
+      el.classList.remove('active', 'done');
+      const cm = el.querySelector('.checkmark');
+      if (cm) cm.remove();
+    });
+    clearCardFocus();
+  }
+
+  function addTraceLine(step) {
+    const div = document.createElement('div');
+    div.className = `line ${step.tClass}`;
+    div.innerHTML = `<span class="tag">${step.traceTag}</span> ${step.traceText}`;
+    trace.appendChild(div);
+    requestAnimationFrame(() => div.classList.add('in'));
+    trace.scrollTop = trace.scrollHeight;
+  }
+
+  function setCaption(text) {
+    caption.innerHTML = '';
+    if (idx > 0) {
+      const pill = document.createElement('span');
+      pill.className = 'pill';
+      pill.innerHTML = `<i data-lucide="arrow-right" style="width:11px;height:11px;stroke-width:3;"></i>Step ${idx}`;
+      caption.appendChild(pill);
+      if (window.lucide) lucide.createIcons();
+    }
+    caption.appendChild(document.createTextNode(' ' + text));
+    caption.classList.add('live');
+    setTimeout(() => caption.classList.remove('live'), 800);
+  }
+
+  function executeStep() {
+    if (idx >= steps.length) return false;
+    const s = steps[idx];
+    moveTokenTo(s.to);
+    token.classList.add('visible');
+    if (s.activate) setActive(s.activate);
+    if (s.done) setDone(s.done);
+    addTraceLine(s);
+    setCaption(s.caption);
+    idx++;
+    stepNumEl.textContent = idx;
+    if (idx === steps.length) {
+      setTimeout(() => token.classList.remove('visible'), 1400);
+      setTimeout(() => {
+        document.querySelectorAll('.tile').forEach(el => {
+          if (!el.classList.contains('done')) {
+            el.classList.add('done');
+            if (!el.querySelector('.checkmark')) {
+              const cm = document.createElement('div');
+              cm.className = 'checkmark';
+              cm.innerHTML = '<i data-lucide="check"></i>';
+              el.appendChild(cm);
+              if (window.lucide) lucide.createIcons();
+            }
+          }
+        });
+      }, 800);
+    }
+    return idx < steps.length;
+  }
+
+  function startPlay() {
+    playing = true;
+    setPlayIcon('pause');
+    const tick = () => {
+      if (!playing) return;
+      const more = executeStep();
+      if (more) timer = setTimeout(tick, parseInt(speedInput.value, 10));
+      else stopPlay();
+    };
+    tick();
+  }
+  function stopPlay() {
+    playing = false;
+    if (timer) clearTimeout(timer);
+    if (idx >= steps.length) {
+      setPlayIcon('done');
+      playBtn.disabled = true;
+    } else {
+      setPlayIcon('play');
+    }
+  }
+  function reset() {
+    if (timer) clearTimeout(timer);
+    playing = false;
+    idx = 0;
+    stepNumEl.textContent = 0;
+    clearStates();
+    trace.innerHTML = '<span class="label">Trace log</span>';
+    token.classList.remove('visible');
+    playBtn.disabled = false;
+    setPlayIcon('play');
+    caption.innerHTML = '<span class="text-[color:var(--muted)] text-sm">Press <span class="kbd">Play</span> or <span class="kbd">→</span> to begin. Click any component card below to focus on it.</span>';
+    moveTokenTo('user', true);
+  }
+
+  function bindFocusClick(selector) {
+    document.querySelectorAll(selector).forEach(el => {
+      el.addEventListener('click', () => {
+        const id = el.dataset.id;
+        if (!id) return;
+        clearCardFocus();
+        focusCard(id);
+        if (el.classList.contains('tile')) {
+          const targetCard = document.querySelector(`.detail-card[data-id="${id}"]`);
+          if (targetCard) targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      });
+    });
+  }
+  bindFocusClick('.tile');
+  bindFocusClick('.detail-card');
+
+  window.addEventListener('load', () => {
+    setTimeout(() => moveTokenTo('user', true), 80);
+  });
+  window.addEventListener('resize', () => {
+    const active = document.querySelector('.tile.active');
+    const done = [...document.querySelectorAll('.tile.done')].pop();
+    const target = active?.dataset.id || done?.dataset.id || 'user';
+    moveTokenTo(target, true);
+  });
+
+  playBtn.addEventListener('click', () => {
+    if (idx >= steps.length) return;
+    if (playing) { stopPlay(); setPlayIcon('play'); }
+    else startPlay();
+  });
+  stepBtn.addEventListener('click', () => {
+    if (playing) stopPlay();
+    if (idx < steps.length) {
+      executeStep();
+      if (idx >= steps.length) stopPlay();
+    }
+  });
+  replayBtn.addEventListener('click', reset);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.target.tagName === 'INPUT') return;
+    if (e.code === 'Space') { e.preventDefault(); playBtn.click(); }
+    else if (e.code === 'ArrowRight') { e.preventDefault(); stepBtn.click(); }
+    else if (e.key === 'r' || e.key === 'R') { replayBtn.click(); }
+  });
+})();
+</script>
+</body>
+</html>
