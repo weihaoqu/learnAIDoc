@@ -5,7 +5,7 @@ category: Claude Code Basics
 redirect_from:
   - "/wiki/claude code/claude-code-non-programmers-shipping/"
 tags: [claude-code, non-programmers, domain-experts, use-cases, vibe-coding, real-world, reddit, mcp]
-related: ["The Five Levels of Claude Code — From Prompting to Orchestration", "Frustration Shifts Upward — How AI Coding Changes What's Hard", "Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code 101 — Anthropic's Official Onboarding Course"]
+related: ["The Five Levels of Claude Code — From Prompting to Orchestration", "Frustration Shifts Upward — How AI Coding Changes What's Hard", "Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code 101 — Anthropic's Official Onboarding Course", "grill-me — When AI Interviews You Before Writing Code"]
 icon: "🚀"
 image: "/assets/images/claude-code-non-programmers-shipping.png"
 ---

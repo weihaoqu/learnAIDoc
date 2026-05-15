@@ -3,12 +3,12 @@ title: "Matt Pocock's Skills — Claude Code for Real Engineers"
 date: 2026-05-09
 category: Skills & Plugins
 tags: [claude-code, skills, engineering-practices, tdd, debugging, architecture, open-source, matt-pocock]
-related: ["Addy Osmani's agent-skills — Senior Engineering Practices as SKILL.md Files", "Agents with Taste — Encoding Design Judgment as Skill Files", "Claude Code Skills: Resources & Repos"]
+related: ["Addy Osmani's agent-skills — Senior Engineering Practices as SKILL.md Files", "Agents with Taste — Encoding Design Judgment as Skill Files", "Claude Code Skills: Resources & Repos", "grill-me — When AI Interviews You Before Writing Code"]
 icon: "🐷"
 image: "/assets/images/matt-pocock-skills-real-engineers.png"
 ---
 
-Matt Pocock's Skills repo hit #1 on GitHub Trending and reached 64k+ stars in its first weeks — with a minimal CLAUDE.md coordination file. The repo packages senior engineering practices (structured debugging, TDD, architecture review, requirements grilling) as composable SKILL.md files that any coding agent can use. The philosophy: AI agents are powerful but undisciplined — these skills add the engineering rigor that turns raw code generation into production-grade software.
+Matt Pocock's Skills repo hit #1 on GitHub Trending and reached 82k+ stars in its first weeks — with a minimal CLAUDE.md coordination file. The repo packages senior engineering practices (structured debugging, TDD, architecture review, requirements grilling) as composable SKILL.md files that any coding agent can use. The philosophy: AI agents are powerful but undisciplined — these skills add the engineering rigor that turns raw code generation into production-grade software.
 
 *Source: [GitHub — mattpocock/skills](https://github.com/mattpocock/skills) | [Matt Pocock](https://www.totaltypescript.com/)*
 
@@ -121,6 +121,6 @@ Three reasons:
 
 ## Links
 
-- **GitHub:** [mattpocock/skills](https://github.com/mattpocock/skills) (64k+ stars)
+- **GitHub:** [mattpocock/skills](https://github.com/mattpocock/skills) (82k+ stars)
 - **Install:** `npx skills@latest add mattpocock/skills`
 - **Matt Pocock:** Creator of [Total TypeScript](https://www.totaltypescript.com/)
