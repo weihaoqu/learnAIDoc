@@ -5,7 +5,7 @@ category: AI for Research
 redirect_from:
   - "/wiki/ai research/autoresearch-autonomous-ml/"
 tags: [autoresearch, machine-learning, claude-code, karpathy, automation, research, optimization, skills]
-related: ["Claude Code /loop: Scheduled Prompts on Autopilot", "How Anthropic Teams Use Claude Code", "Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "alphaXiv MCP — Semantic ArXiv Search Directly in Claude Code", "AI-Assisted Research Workflow: Formulate → Find → Judge → Verify → Execute → Monitor → Record"]
+related: ["Claude Code /loop: Scheduled Prompts on Autopilot", "How Anthropic Teams Use Claude Code", "Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "alphaXiv MCP — Semantic ArXiv Search Directly in Claude Code", "AI-Assisted Research Workflow: Formulate → Find → Judge → Verify → Execute → Monitor → Record", "Awesome-Auto-Research-Tools — A Curated Map of Automated-Science Projects"]
 icon: "🔬"
 image: "/assets/images/autoresearch.png"
 ---

@@ -3,7 +3,7 @@ title: "AI Research Tools Landscape: FARS vs AutoResearch vs ARIS vs Elicit"
 date: 2026-04-26
 category: AI for Research
 tags: [ai-research, automation, fars, autoresearch, aris, elicit, deep-research, autonomous-agents]
-related: ["Autoresearch: 100 Autonomous ML Experiments Overnight"]
+related: ["Autoresearch: 100 Autonomous ML Experiments Overnight", "Awesome-Auto-Research-Tools — A Curated Map of Automated-Science Projects"]
 icon: "🔬"
 image: "/assets/images/ai-research-tools-landscape.png"
 ---

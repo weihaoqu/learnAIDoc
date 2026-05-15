@@ -3,7 +3,7 @@ title: "AI-Assisted Research Workflow: Formulate → Find → Judge → Verify �
 date: 2026-04-24
 category: AI for Research
 tags: [research-workflow, claude-code, codex, feynman, autoresearch, peer-review, research-methodology, scheduled-agents]
-related: ["AutoResearch: Autonomous ML Experiment Paradigm", "Feynman AI Research Agent", "Karpathy End of Coding", "Codex + Claude Code Research Tutorial"]
+related: ["AutoResearch: Autonomous ML Experiment Paradigm", "Feynman AI Research Agent", "Karpathy End of Coding", "Codex + Claude Code Research Tutorial", "Awesome-Auto-Research-Tools — A Curated Map of Automated-Science Projects"]
 icon: "🔬"
 image: "/assets/images/ai-research-workflow-pipeline.png"
 ---
