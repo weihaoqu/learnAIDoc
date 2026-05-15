@@ -3,7 +3,7 @@ title: "Agents Need Control Flow — Brian's Case for Code Over Prompts"
 date: 2026-05-11
 category: Claude Code Engineering
 tags: [agents, control-flow, reliability, prompt-engineering, determinism, software-engineering, validation, harness-engineering]
-related: ["Harness Engineering — The Real Bottleneck Isn't the Model", "Seeing Like an Agent — How Anthropic Designs Tools for Claude Code", "SpecOps — Spec-Driven Development with AI Coding Agents", "Anthropic Managed Agents — Decoupling the Brain from the Hands", "Karpathy Skills — Four Rules That Fix LLM Coding's Worst Habits", "Frustration Shifts Upward — How AI Coding Changes What's Hard", "What is Agentic Engineering? A Teaching Primer"]
+related: ["Harness Engineering — The Real Bottleneck Isn't the Model", "Seeing Like an Agent — How Anthropic Designs Tools for Claude Code", "SpecOps — Spec-Driven Development with AI Coding Agents", "Anthropic Managed Agents — Decoupling the Brain from the Hands", "Karpathy Skills — Four Rules That Fix LLM Coding's Worst Habits", "Frustration Shifts Upward — How AI Coding Changes What's Hard", "What is Agentic Engineering? A Teaching Primer", "Beyond /goal — The Orchestrator + Headless Pattern for Long-Running Claude Sessions"]
 icon: "🔀"
 image: "/assets/images/agents-need-control-flow.png"
 ---

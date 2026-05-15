@@ -5,7 +5,7 @@ category: Claude Code Engineering
 redirect_from:
   - "/wiki/claude code/claude-code-context-claudemd-practices/"
 tags: [claude-code, context-management, claude-md, cost-control, citadel, planning, best-practices]
-related: ["Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "Claude Code: Isolate Heavy Tasks with context: fork", "Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code Session Management & 1M Context — The Official Decision Framework", "Claude Code 101 — Anthropic's Official Onboarding Course", "grill-me — When AI Interviews You Before Writing Code"]
+related: ["Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "Claude Code: Isolate Heavy Tasks with context: fork", "Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code Session Management & 1M Context — The Official Decision Framework", "Claude Code 101 — Anthropic's Official Onboarding Course", "grill-me — When AI Interviews You Before Writing Code", "Beyond /goal — The Orchestrator + Headless Pattern for Long-Running Claude Sessions"]
 icon: "🏗️"
 image: "/assets/images/claude-code-context-claudemd-practices.png"
 ---

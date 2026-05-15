@@ -5,7 +5,7 @@ category: Skills & Plugins
 redirect_from:
   - "/wiki/skills & plugins/ralph-autonomous-dev-loop/"
 tags: [claude-code, cli, automation, agents, workflow]
-related: ["Claude Code Power User Tips", "Beads: Graph-Based Memory for AI Coding Agents"]
+related: ["Claude Code Power User Tips", "Beads: Graph-Based Memory for AI Coding Agents", "Beyond /goal — The Orchestrator + Headless Pattern for Long-Running Claude Sessions"]
 icon: "🔄"
 image: "/assets/images/ralph-dev-loop.jpg"
 ---
