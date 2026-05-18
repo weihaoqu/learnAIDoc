@@ -5,7 +5,7 @@ category: Claude Code Engineering
 redirect_from:
   - "/wiki/claude code/claude-code-context-fork/"
 tags: [claude-code, cli, skills, subagents, context-management]
-related: ["Claude Code: Agent Teams vs Subagents", "Claude Code Power User Tips", "Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure"]
+related: ["Claude Code: Agent Teams vs Subagents", "Claude Code Power User Tips", "Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "codegraph — Pre-Indexed Knowledge Graph That Cuts Claude Code's Tool Calls 92%"]
 icon: "🍴"
 image: "/assets/images/claude-code-context-fork.jpg"
 ---
