@@ -5,7 +5,7 @@ category: Claude Code Workflows
 redirect_from:
   - "/wiki/claude code/cross-model-code-review-claude-codex/"
 tags: [claude-code, codex, code-review, multi-model, ai-coding, testing, bugs, codex-plugin-cc, adversarial-review]
-related: ["Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code Auto Mode — The Middle Path for Permissions", "Frustration Shifts Upward — How AI Coding Changes What's Hard", "oh-my-claudecode — Multi-AI Orchestration Plugin for Claude Code", "Codex + Claude Code for Research — A Practical Tutorial"]
+related: ["Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code Auto Mode — The Middle Path for Permissions", "Frustration Shifts Upward — How AI Coding Changes What's Hard", "oh-my-claudecode — Multi-AI Orchestration Plugin for Claude Code", "Codex + Claude Code for Research — A Practical Tutorial", "Codex Orange Book — 花叔's Bilingual Codex Reference"]
 icon: "🔍"
 image: "/assets/images/cross-model-code-review-claude-codex.png"
 ---
