@@ -5,7 +5,7 @@ category: Skills & Plugins
 redirect_from:
   - "/wiki/skills & plugins/paper2code-arxiv-to-implementation/"
 tags: [claude-code, skill, arxiv, paper-reproduction, research, code-generation, citation-anchoring]
-related: ["alphaXiv MCP — Semantic ArXiv Search Directly in Claude Code", "AI Agents for Academic Research & Writing — From KatmerCode to the Nature Playbook", "Feynman AI Research Agent & Claude as Lab Partner — Promise and Pitfalls", "Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era"]
+related: ["alphaXiv MCP — Semantic ArXiv Search Directly in Claude Code", "AI Agents for Academic Research & Writing — From KatmerCode to the Nature Playbook", "Feynman AI Research Agent & Claude as Lab Partner — Promise and Pitfalls", "Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "Paper-Code Joint Analysis & Contract-Driven Skill Design"]
 icon: "📄"
 image: "/assets/images/paper2code-arxiv-to-implementation.png"
 ---

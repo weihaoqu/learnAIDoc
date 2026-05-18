@@ -3,7 +3,7 @@ title: "Building a Research KB — Zotero + Obsidian + Claude Code"
 date: 2026-04-19
 category: AI for Research
 tags: [zotero, obsidian, knowledge-base, research, academic, workflow, claude-code, literature-review]
-related: ["Karpathy's LLM Knowledge Bases — Building a Personal Wiki with AI", "Claude Code as Research Infrastructure", "AlphaXiv MCP — Semantic ArXiv Search for Claude Code"]
+related: ["Karpathy's LLM Knowledge Bases — Building a Personal Wiki with AI", "Claude Code as Research Infrastructure", "AlphaXiv MCP — Semantic ArXiv Search for Claude Code", "Paper-Code Joint Analysis & Contract-Driven Skill Design"]
 icon: "📚"
 image: "/assets/images/research-kb-zotero-obsidian.png"
 ---

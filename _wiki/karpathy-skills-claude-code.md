@@ -5,7 +5,7 @@ category: Claude Code Engineering
 redirect_from:
   - "/wiki/claude code/karpathy-skills-claude-code/"
 tags: [claude-code, karpathy, claude-md, guidelines, coding-quality, best-practices, open-source, skill]
-related: ["Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Harness Engineering — The Real Bottleneck Isn't the Model", "grill-me — When AI Interviews You Before Writing Code"]
+related: ["Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Harness Engineering — The Real Bottleneck Isn't the Model", "grill-me — When AI Interviews You Before Writing Code", "Paper-Code Joint Analysis & Contract-Driven Skill Design"]
 icon: "🧹"
 image: "/assets/images/karpathy-skills-claude-code.png"
 ---
