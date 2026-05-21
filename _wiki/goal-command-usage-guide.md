@@ -14,7 +14,9 @@ This entry is a **usage mechanics guide** for `/goal` in Claude Code — what it
 
 ## Not a keyboard shortcut — a persistent goal mechanism
 
-Most people encounter `/goal` and treat it like a `/clear` or `/compact` — a convenience command. It isn't. `/goal` activates a **persistent goal loop**: you declare a completion condition, and Claude keeps planning and executing across turns until a separate evaluator model judges the condition satisfied. The agent doesn't stop between turns to wait for you; it loops.
+Most people encounter `/goal` and treat it like a `/clear` or `/compact` — a convenience command. It isn't. According to the source post, `/goal` activates a **persistent goal loop**: you declare a completion condition, and Claude keeps planning and executing across turns until a completion check judges the condition satisfied. The agent doesn't stop between turns to wait for you; it loops.
+
+> **Note:** The mechanics described in this entry (persistent goal loop, evaluator model, `/pause` behavior) are sourced from a community post (Weibo, 无疆AI, 2026-05-18), not from Anthropic's official Claude Code documentation. Treat the specific implementation details as illustrative of intent rather than verified API behavior. Always cross-check against the current [Claude Code docs](https://docs.anthropic.com/en/docs/claude-code) for authoritative command syntax.
 
 This changes the fundamental collaboration model. Without `/goal`, every multi-turn interaction requires you to re-establish context. With `/goal`, the agent holds the target in memory and auto-sequences toward it. The shift is from "chat with an AI" to "assign a task to an agent."
 
@@ -72,7 +74,7 @@ Note: `/pause` suspends execution but preserves the goal state — useful when y
      new endpoints documented with examples, and no broken links.
 ```
 
-When done, clear with `/goal clear document update` to signal completion explicitly. The agent will verify against the stated conditions before declaring done.
+When done, clear with `/goal clear` to reset the goal state. The agent will verify against the stated conditions before declaring done.
 
 ### 2. File management and verification
 

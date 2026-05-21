@@ -8,7 +8,9 @@ icon: "🎨"
 image: "/assets/images/designprompts-dev-ai-design-styles.png"
 ---
 
-**designprompts.dev** is a curated prompt library positioned as the "AI-era frontend design aesthetics encyclopedia" (AI时代的前端设计美学宝典). It collects 30+ distinct design styles — each paired with fine-tuned prompts you can paste directly into AI coding tools or image generators — covering everything from Bauhaus geometric minimalism to Vapor Wave retro-futurism to SaaS dashboard grids. The core promise: skip the prompt engineering and get a production-quality aesthetic instantly.
+**designprompts.dev** is a curated prompt library described (in the source post) as the "AI-era frontend design aesthetics encyclopedia" (AI时代的前端设计美学宝典). It collects 30+ distinct design styles — each paired with prompts you can paste directly into AI coding tools or image generators — covering everything from Bauhaus geometric minimalism to Vapor Wave retro-futurism to SaaS dashboard grids. The core promise: skip the prompt engineering and get a production-quality aesthetic instantly.
+
+> **Note:** The "30+" style count and the Chinese-language branding are from a community Weibo post (欧巴颧AI, May 2026), not from the site itself. The actual style count and site copy may differ. Verify at [designprompts.dev](https://www.designprompts.dev) before citing specific numbers.
 
 *Source: Weibo post by 欧巴颧AI (May 2026) | Site: designprompts.dev*
 
@@ -81,4 +83,4 @@ This encoding work is what designprompts.dev has already done for you.
 - **Prompt fidelity varies by tool** — The same prompt produces different results in Midjourney vs. Claude Code vs. GPT Image 2. The prompts are tuned for AI in general; you may need to adjust syntax for your specific tool.
 - **This is a reference, not a design system** — designprompts.dev gives you the aesthetic vocabulary; it doesn't generate components, manage tokens, or export design systems. Pair it with your actual toolchain.
 - **Updated periodically** — The site adds new styles as AI design trends evolve. Worth revisiting quarterly.
-- **Similar resources to compare:** Awesome-ChatGPT-Prompts (general), UI-Prompt-Engineering repositories on GitHub, and the visual prompt sections inside Midjourney's documentation all serve adjacent needs.
+- **Similar resources to compare:** Awesome-ChatGPT-Prompts (general), various UI/design-prompt collections on GitHub (search "UI prompt" or "design prompt"), and the visual prompt sections inside Midjourney's documentation all serve adjacent needs. No single canonical "UI-Prompt-Engineering" repository dominates the space — browse and compare.

@@ -10,11 +10,11 @@ image: "/assets/images/vibe-coding-beginners-guide.png"
 
 **Vibe Coding 新手指南** (vibecoding.waytomaster.com) is a free, open-source introductory guide aimed at non-technical readers who want to understand the fundamentals of vibe coding — the practice of building software by describing intent to AI tools rather than writing code manually. It covers basic concepts, terminology, and enough technical grounding to help non-technical readers make sense of what's happening when engineers use tools like Cursor, Claude Code, or Replit Agent to build from natural language.
 
-*Source: Weibo post by 蚁工厂 (Ant Factory, 山东, May 2026) | Site: vibecoding.waytomaster.com*
+*Source: Weibo post by 蚁工厂 (Ant Factory, 山东, May 2026) | Site: vibecoding.waytomaster.com (links to GitHub repo tmwgsicp/vibecoding-for-beginners — a small community-authored Chinese beginner guide, not an official or authoritative source)*
 
 ## What "vibe coding" actually means
 
-The term was coined and popularized in early 2025 to describe a shift in how software gets built: instead of writing every line deliberately, a developer (or non-developer) describes *what they want* in natural language, and an AI tool generates, edits, and debugs the code. The human's job becomes directing, reviewing, and iterating — not typing.
+The term was coined by Andrej Karpathy (AI researcher, OpenAI co-founder, former Tesla AI director) on February 2, 2025 in a widely-shared post, and quickly spread to describe a shift in how software gets built: instead of writing every line deliberately, a developer (or non-developer) describes *what they want* in natural language, and an AI tool generates, edits, and debugs the code. The human's job becomes directing, reviewing, and iterating — not typing.
 
 "Vibe" captures the informal, intuition-driven nature of the interaction: you describe the feel and function you want, the AI handles the syntax. Critics note this produces code that works but may be hard to maintain; proponents argue it dramatically lowers the barrier to building and accelerates prototyping.
 

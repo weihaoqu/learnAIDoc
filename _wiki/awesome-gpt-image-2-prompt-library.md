@@ -1,5 +1,5 @@
 ---
-title: "Awesome GPT Image 2 Prompt Library — 2,000+ Prompts with Live Preview for 16 Scenarios"
+title: "Awesome GPT Image 2 Prompt Library — 7,000+ Prompts with Live Preview for 16 Scenarios"
 date: 2026-05-19
 category: AI Tools & Workflows
 tags: [gpt-image-2, image-generation, prompt-library, prompts, open-source, visual-design, multilingual, e-commerce, illustration, brand-design, portrait]
@@ -8,13 +8,13 @@ icon: "🖼️"
 image: "/assets/images/awesome-gpt-image-2-prompt-library.png"
 ---
 
-**Awesome GPT Image 2 Prompt Library** by [YouMind-OpenLab](https://github.com/YouMind-OpenLab/awesome-gpt-image-2) is a community-curated collection of 2,000+ high-quality prompts purpose-built for GPT Image 2 (OpenAI's image generation model), each paired with a live preview of the generated output. The library covers 16 distinct scenario categories — portrait photography, e-commerce product shots, illustration, film-grade stills, brand design, and more — and supports 16 languages. The companion web app at youmind.com/gpt-image-2-prompts lets you browse, filter, and copy prompts directly from the browser on desktop or mobile.
+**Awesome GPT Image 2 Prompt Library** by [YouMind-OpenLab](https://github.com/YouMind-OpenLab/awesome-gpt-image-2) is a community-curated collection of 7,000+ high-quality prompts (as of May 2026; the gallery launched with 2,000+ and grows daily) purpose-built for GPT Image 2 (OpenAI's image generation model, released April 21, 2026), each paired with a live preview of the generated output. The library is licensed CC BY 4.0 and updated daily via GitHub Actions. It covers 16 distinct scenario categories — portrait photography, e-commerce product shots, illustration, film-grade stills, brand design, and more — and supports 16 languages. The companion web app at youmind.com/gpt-image-2-prompts lets you browse, filter, and copy prompts directly from the browser on desktop or mobile.
 
 *Source: Weibo post by 爱可可-爱生活 (May 2026) | GitHub: github.com/YouMind-OpenLab/awesome-gpt-image-2 | Demo: youmind.com/gpt-image-2-prompts*
 
 ## Why a dedicated prompt library for GPT Image 2
 
-GPT Image 2 (released April 2025) has qualitatively different prompt sensitivity compared to earlier image models. It responds more directly to structured, descriptive prompts and handles multi-element compositions with unusual fidelity. But it also has distinct failure modes: vague prompts produce generic output, and the wrong vocabulary for a style produces technically correct but aesthetically wrong results.
+GPT Image 2 (released April 21, 2026; the predecessor gpt-image-1 launched April 23, 2025) has qualitatively different prompt sensitivity compared to earlier image models. It responds more directly to structured, descriptive prompts and handles multi-element compositions with unusual fidelity. But it also has distinct failure modes: vague prompts produce generic output, and the wrong vocabulary for a style produces technically correct but aesthetically wrong results.
 
 A curated library with real output previews solves the calibration problem: instead of iterating blind, you can see what the model actually does with a specific prompt, then adapt.
 
@@ -38,7 +38,7 @@ The 16 scenario categories (as described in the source post) span:
 
 | Feature | Detail |
 |---|---|
-| **2,000+ prompts with previews** | Each prompt shows what it actually produces — no guessing |
+| **7,000+ prompts with previews** | Each prompt shows what it actually produces — no guessing (count as of May 2026; updated daily) |
 | **Dynamic parameters** | Prompts use template slots (style, subject, lighting) that you fill in for your specific use case |
 | **Style switching** | Browse by aesthetic or scenario; switch between prompt variants for the same scene |
 | **Scene expansion** | Some prompts are tagged for "expandable" multi-frame scenes |
@@ -50,7 +50,7 @@ The 16 scenario categories (as described in the source post) span:
 
 The existing wiki entry — [GPT Image 2 水墨风 Slide Prompt](/learnAIDoc/wiki/gpt-image-2-ink-style-slide-prompt/) — covers a specific, highly structured prompt *template* for ink-wash style academic slides. That entry is about one aesthetic workflow engineered for Codex + Claude Code slide pipelines.
 
-This entry is about the *general prompt library* — 2,000+ prompts across 16 scenarios for general-purpose GPT Image 2 usage. They serve different needs:
+This entry is about the *general prompt library* — 7,000+ prompts across 16 scenarios for general-purpose GPT Image 2 usage. They serve different needs:
 - **Going to make slides?** → Ink-wash entry gives you the exact template
 - **Exploring what GPT Image 2 can do?** → This library is the starting point
 
@@ -76,5 +76,5 @@ This entry is about the *general prompt library* — 2,000+ prompts across 16 sc
 - **GPT Image 2 requires API access** — The prompts work with the OpenAI API (gpt-image-2 model); API calls are not free. Budget accordingly for large batches.
 - **Prompts are calibrated for GPT Image 2 specifically** — They may produce different results with Stable Diffusion, Midjourney, or Flux. The vocabulary and structure are tuned for this model's training distribution.
 - **Preview images show the model's output, not guaranteed output** — Image generation has variance; the preview is a representative sample, not a deterministic result.
-- **Community-maintained quality variance** — A 2,000-entry library has entries of varying quality. High-starred prompts are generally more reliable; newer or low-starred entries may need iteration.
+- **Community-maintained quality variance** — A 7,000+ entry library has entries of varying quality. High-starred prompts are generally more reliable; newer or low-starred entries may need iteration.
 - **16-language coverage is uneven** — Core scenarios are well-covered; niche categories may only have English prompts with machine-translated labels.

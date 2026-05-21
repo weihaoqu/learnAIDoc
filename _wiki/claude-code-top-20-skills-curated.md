@@ -19,11 +19,11 @@ These are the baseline skills that change how Claude Code feels to use — spann
 | # | Skill | What It Does |
 |---|-------|--------------|
 | 1 | **Planning with Files** | Turns open-ended writing or coding tasks into structured file-based plans so Claude always knows what the next step is — keeps long sessions on track |
-| 2 | **Superpowers** | A suite of 20+ Claude Code-specific skills curated as a single pack; the brainstorming and TDD variants are the standout entries |
+| 2 | **Superpowers** | A suite of Claude Code-specific skills curated as a single pack (14 skills in v5, including brainstorming, TDD, systematic-debugging, and subagent-driven-development); the brainstorming and TDD variants are the standout entries |
 | 3 | **Code Review** | Spins up parallel AI agent reviewers with confidence filtering so you get higher-signal review comments and fewer redundant pings |
 | 4 | **Webapp Testing** | Playwright-powered browser test harness; turns "run the test suite" into a single repeatable baseline command |
 | 5 | **Code Simplifier** | Scans changed code for unnecessary complexity and restructures it — useful after any major feature push |
-| 6 | **UI UX Pro Max** | 67 heuristics plus 161 design principles packed into a single reviewable skill; covers accessibility, clarity, and responsible UI patterns |
+| 6 | **UI UX Pro Max** | 99 UX guidelines, 50 styles, 97 color palettes, 57 font pairings, and 25 chart types across 9 technology stacks packed into a single reviewable skill; covers accessibility, clarity, and responsible UI patterns |
 | 7 | **MCP Builder** | Generates a working MCP (Model Context Protocol) server from a description without requiring an internet connection during build |
 | 8 | **Ralph Loop** | Runs Claude in a continuous hook-driven loop — Claude calls tools, observes the result, and self-corrects until the task is complete |
 | 9 | **PPTX** | Generates real `.pptx` files directly, bypassing the limitations of generating slide content as Markdown or HTML |
@@ -31,7 +31,7 @@ These are the baseline skills that change how Claude Code feels to use — spann
 
 ## The 10 Advanced Skills (进阶十大)
 
-These skills assume you're past the setup phase and working on non-trivial codebases or complex multi-step workflows. Each addresses a specific pain point in the professional development lifecycle.
+These skills assume you're past the setup phase and working on non-trivial codebases or complex multi-step workflows. Each addresses a specific pain point in the professional development lifecycle. **Note:** The names in this section are the curator's descriptive labels — they could not be independently verified as installable skill names in public registries. Use them as a conceptual map of useful capabilities and verify availability before installing.
 
 | # | Skill | What It Does |
 |---|-------|--------------|
@@ -80,7 +80,7 @@ This is a **navigation map**, not a specification. The curator's intent is to he
 
 ## Important Things to Know
 
-**This is a community list, not official documentation.** The source is a community educator's curation post, not Anthropic's official skill rankings. The skills themselves may evolve, and some names may refer to skills in the oh-my-claudecode ecosystem, the Superpowers pack, or standalone community repos — check the marketplace for current availability.
+**This is a community list, not official documentation.** The source is a community educator's curation post, not Anthropic's official skill rankings. The Essential 10 includes skills that are verifiably installable (Superpowers, oh-my-claudecode's ralph, ui-ux-pro-max, pptx). The Advanced 10 names (Repo Cartographer, Context Pack, Test Pilot, Debug Radar, Refactor Lens, API Stitcher, Migration Buddy, Docs Whisperer, Prompt Harness, Ship Checklist) could not be independently verified as named installable skills in public registries as of this writing — they may be the curator's descriptive categories, skills available under different names, or skills not yet publicly indexed. Treat the Advanced 10 as a conceptual map of useful capability categories, not a confirmed install list. Check the oh-my-claudecode marketplace and the Claude plugin directory for current availability before installing.
 
 **Skill quality varies.** Community skills range from production-grade to experimental. The Essential 10 on this list have proven track records (Superpowers and oh-my-claudecode skills in particular are actively maintained), but always review a skill's source before installing it in a production workflow.
 
