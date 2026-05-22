@@ -220,17 +220,23 @@ rsync -av ~/Desktop/claude-export/ USERNAME@NEW-MAC-IP:~/claude-export/
 # Option C: AirDrop — Finder → right-click ~/Desktop/claude-export → Share → AirDrop
 ```
 
-### Step 3 — Install Claude Code on the new Mac
+### Step 3 — Install prerequisites on the new Mac
 
 ```bash
-# Install Node if needed
-brew install node
+# Install Homebrew (macOS package manager — skip if already installed)
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# Install Claude Code
+# Install core tools
+brew install node git jq gh ffmpeg
+```
+
+### Step 4 — Install Claude Code
+
+```bash
 npm install -g @anthropic-ai/claude-code
 ```
 
-### Step 4 — Run the bootstrap script
+### Step 5 — Run the bootstrap script
 
 ```bash
 # If transferred via Dropbox:
@@ -245,7 +251,7 @@ The bootstrap script:
 - Rewrites absolute paths from `/Users/oreo` to your new `$HOME` automatically
 - **Prints all `/plugin install` commands at the end** — copy and run those next
 
-### Step 5 — Install plugins (from bootstrap output)
+### Step 6 — Install plugins (from bootstrap output)
 
 Open Claude Code and run the plugin commands the bootstrap script printed. They look like:
 
@@ -267,18 +273,25 @@ Open Claude Code and run the plugin commands the bootstrap script printed. They 
 /reload-plugins
 ```
 
-### Step 6 — Install npm tools
+### Step 7 — Install npm tools + RTK
 
 ```bash
-# oh-my-claudecode (orchestration layer — run omc setup to wire CLAUDE.md)
+# oh-my-claudecode (orchestration layer)
 npm install -g oh-my-claudecode
 omc setup
 
-# Your spec interview tool
+# Spec interview tool
 npm install -g @weihaoqu/project-spec-interviewer-skill
+
+# Codex CLI
+npm install -g @openai/codex
+
+# RTK (token-saving proxy)
+brew install rust && cargo install rtk
+# or: download binary from https://github.com/rust-lang/rtk/releases
 ```
 
-### Step 7 — Restore custom skills
+### Step 8 — Restore custom skills
 
 ```bash
 # Copy the .md skill files exported in Step 1b
@@ -288,22 +301,10 @@ cp ~/Dropbox/claude-export/skills/*.md ~/.claude/skills/ 2>/dev/null || true
 # rsync -av ~/Dropbox/claude-export/skills/ ~/.claude/skills/
 ```
 
-### Step 8 — Authenticate Codex
+### Step 9 — Authenticate Codex
 
 ```bash
 codex login
-```
-
-### Step 9 — Install system dependencies
-
-```bash
-# RTK (token-saving proxy)
-cargo install rtk
-# or download binary from GitHub releases if cargo isn't available
-
-# Common tools
-brew install git jq gh ffmpeg
-npm install -g @openai/codex
 ```
 
 ### Step 10 — Let Dropbox sync your projects
