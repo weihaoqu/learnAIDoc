@@ -3,7 +3,7 @@ title: "Paper-Code Joint Analysis & Contract-Driven Skill Design"
 date: 2026-05-17
 category: Skills & Plugins
 tags: [codex, skills, paper-code-mapping, contract-driven-design, reusable-skills, schema-versioning, research-workflow, paper-reproduction, c-narcissus, methodology]
-related: ["Paper2Code: Turn ArXiv Papers into Citation-Anchored Code", "academic-research-skills — Imbad0202's 4-Skill Claude Code Pipeline for Academic Research", "AI-Assisted Research Workflow: Formulate → Find → Judge → Verify → Execute → Monitor → Record", "Building a Research KB — Zotero + Obsidian + Claude Code", "How Anthropic Uses Skills — Thariq's 9-Category Framework & the Gotchas Pattern", "Karpathy Skills — Four Rules That Fix LLM Coding's Worst Habits", "AI Agents for Academic Research & Writing — From KatmerCode to the Nature Playbook"]
+related: ["Paper2Code: Turn ArXiv Papers into Citation-Anchored Code", "academic-research-skills — Imbad0202's 4-Skill Claude Code Pipeline for Academic Research", "AI-Assisted Research Workflow: Formulate → Find → Judge → Verify → Execute → Monitor → Record", "Building a Research KB — Zotero + Obsidian + Claude Code", "How Anthropic Uses Skills — Thariq's 9-Category Framework & the Gotchas Pattern", "Karpathy Skills — Four Rules That Fix LLM Coding's Worst Habits", "AI Agents for Academic Research & Writing — From KatmerCode to the Nature Playbook", "Five Questions for Critical Paper Reading — The Cambridge Method with Claude"]
 icon: "📜"
 image: "/assets/images/paper-code-joint-analysis-contract-driven.png"
 ---

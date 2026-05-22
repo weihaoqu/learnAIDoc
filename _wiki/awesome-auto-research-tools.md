@@ -3,7 +3,7 @@ title: "Awesome-Auto-Research-Tools — A Curated Map of Automated-Science Proje
 date: 2026-05-14
 category: AI for Research
 tags: [ai-research, awesome-list, github, automation, deep-research, ai-scientist, autoresearch, claude-code, deepscientist, internagent, bilingual, cc0]
-related: ["AI Research Tools Landscape: FARS vs AutoResearch vs ARIS vs Elicit", "Autoresearch: 100 Autonomous ML Experiments Overnight", "Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "AI-Assisted Research Workflow: Formulate → Find → Judge → Verify → Execute → Monitor → Record"]
+related: ["AI Research Tools Landscape: FARS vs AutoResearch vs ARIS vs Elicit", "Autoresearch: 100 Autonomous ML Experiments Overnight", "Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "AI-Assisted Research Workflow: Formulate → Find → Judge → Verify → Execute → Monitor → Record", "Feynman AI Research Agent & Claude as Lab Partner — Promise and Pitfalls", "academic-research-skills — Imbad0202's 4-Skill Claude Code Pipeline for Academic Research"]
 icon: "🗺️"
 image: "/assets/images/awesome-auto-research-tools.png"
 ---

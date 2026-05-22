@@ -5,7 +5,7 @@ category: AI for Research
 redirect_from:
   - "/wiki/ai education/claude-prism-academic-writing/"
 tags: [academic, latex, writing, claude, zotero, research, education, python, open-source]
-related: ["Posterskill — AI-Generated Academic Conference Posters from Your Paper", "Create Custom Course Materials with Claude", "Claude Certified Architect — Anthropic's First Official AI Certification", "alphaXiv MCP — Semantic ArXiv Search Directly in Claude Code", "Five Questions for Critical Paper Reading — The Cambridge Method with Claude", "AI Agents for Academic Research & Writing — From KatmerCode to the Nature Playbook"]
+related: ["Posterskill — AI-Generated Academic Conference Posters from Your Paper", "Create Custom Course Materials with Claude", "Claude Certified Architect — Anthropic's First Official AI Certification", "alphaXiv MCP — Semantic ArXiv Search Directly in Claude Code", "Five Questions for Critical Paper Reading — The Cambridge Method with Claude", "AI Agents for Academic Research & Writing — From KatmerCode to the Nature Playbook", "Nature Skills — 9-Skill Claude Code Bundle for Academic Writing at Nature Standards", "PaperSpine — Motivation-Driven Paper Writing Skill Suite for Codex and Claude Code"]
 icon: "✍️"
 image: "/assets/images/claude-prism-academic-writing.png"
 ---

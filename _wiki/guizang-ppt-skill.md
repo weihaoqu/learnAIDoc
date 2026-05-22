@@ -3,7 +3,7 @@ title: "guizang-ppt-skill — The Cross-Agent HTML Slide Generation Skill"
 date: 2026-05-21
 category: AI Tools & Workflows
 tags: [html-slides, presentation, agent-skill, model-agnostic, claude-code, cursor, codex, vibe-coding, open-source, slides]
-related: ["HTML PPT Studio — AI-Powered Presentation Skill for Claude Code", "GPT Image 2 水墨风 Slide Prompt — Structured Template for Ink-Wash Style Slides", "open-slide — The Slide Framework Built for AI Coding Agents", "Claude Code 必装/进阶十大 Skill — A Community-Curated Map of 20 Power Skills"]
+related: ["HTML PPT Studio — AI-Powered Presentation Skill for Claude Code", "GPT Image 2 水墨风 Slide Prompt — Structured Template for Ink-Wash Style Slides", "open-slide — The Slide Framework Built for AI Coding Agents", "Claude Code 必装/进阶十大 Skill — A Community-Curated Map of 20 Power Skills", "AI Slide Generation with Claude Code — Tool Comparison & Guide"]
 icon: "📊"
 image: "/assets/images/guizang-ppt-skill.png"
 ---

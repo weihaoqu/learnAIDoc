@@ -3,7 +3,7 @@ title: "Claude Code 101 — Anthropic's Official Onboarding Course"
 date: 2026-05-14
 category: Learning Resources
 tags: [claude-code, anthropic, anthropic-academy, beginner, course, free, certificate, claude-md, explore-plan-code-commit, mcp, subagents, skills, hooks]
-related: ["Anthropic Academy — 13 Free AI Courses with Certificates", "Boris Cherny on Claude Code — Origin Story, Product Philosophy & the End of Manual Coding", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Domain Experts Shipping Products with Claude Code — Stories from the Trenches", "The Five Levels of Claude Code — From Prompting to Orchestration", "Codex Orange Book — 花叔's Bilingual Codex Reference"]
+related: ["Anthropic Academy — 13 Free AI Courses with Certificates", "Boris Cherny on Claude Code — Origin Story, Product Philosophy & the End of Manual Coding", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Domain Experts Shipping Products with Claude Code — Stories from the Trenches", "The Five Levels of Claude Code — From Prompting to Orchestration", "Codex Orange Book — 花叔's Bilingual Codex Reference", "Start Here — AI Agents & Claude Code for Beginners"]
 icon: "🎓"
 image: "/assets/images/claude-code-101.png"
 ---

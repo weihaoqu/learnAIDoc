@@ -3,7 +3,7 @@ title: "HTML PPT Studio — AI-Powered Presentation Skill for Claude Code"
 date: 2026-04-17
 category: Skills & Plugins
 tags: [presentations, slides, html, agent-skills, claude-code, teaching, ppt, themes]
-related: ["Claude Code Skills: Resources & Repos", "Non-Coding Skills for Claude Code — Automating Business & Life", "Make Slides: AI-Powered Interactive Teaching Slides"]
+related: ["Claude Code Skills: Resources & Repos", "Non-Coding Skills for Claude Code — Automating Business & Life", "Make Slides: AI-Powered Interactive Teaching Slides", "AI Slide Generation with Claude Code — Tool Comparison & Guide"]
 icon: "📊"
 image: "/assets/images/html-ppt-studio-skill.png"
 ---

@@ -5,7 +5,7 @@ category: Skills & Plugins
 redirect_from:
   - "/wiki/skills & plugins/make-slides-interactive-teaching/"
 tags: [claude-code, skills, teaching, slides, canvas, interactive, education, html]
-related: ["Skill Seekers: Auto-Generate Claude Skills", "Claude Code Power User Tips", "AI Tools for High-Engagement Learning", "AI in Education — Teacher's Factory, Not Student's Cheat Tool", "HTML PPT Studio — AI-Powered Presentation Skill for Claude Code", "Anti-AI Exam Designer — A Claude Code Skill for AI-Resistant Exams"]
+related: ["Skill Seekers: Auto-Generate Claude Skills", "Claude Code Power User Tips", "AI Tools for High-Engagement Learning", "AI in Education — Teacher's Factory, Not Student's Cheat Tool", "HTML PPT Studio — AI-Powered Presentation Skill for Claude Code", "Anti-AI Exam Designer — A Claude Code Skill for AI-Resistant Exams", "AI Slide Generation with Claude Code — Tool Comparison & Guide"]
 icon: "🎓"
 image: "/assets/images/make-slides-interactive-teaching.png"
 ---
