@@ -183,61 +183,164 @@ project-spec-interviewer-skill
 
 ## Mac Migration: Clone This Setup to a New Machine
 
-Q has pre-built export/bootstrap scripts for exactly this case.
+Pre-built export/bootstrap scripts handle the heavy lifting. Follow these steps in order — every command is copy-paste ready.
 
-### Step 1 — Export from the old Mac
+### Step 1 — Export config from the old Mac
 
 ```bash
 bash ~/.claude/claude-code-export.sh ~/Desktop/claude-export
 ```
 
-This copies: `CLAUDE.md`, `RTK.md`, `RESEARCH_WORKFLOW.md`, `settings.json`, custom commands, templates, hooks.
+Exports: `CLAUDE.md`, `RTK.md`, `RESEARCH_WORKFLOW.md`, `settings.json`, custom commands, agents, hooks, templates, memory index.
 
-### Step 2 — Transfer the export
+### Step 1b — Export custom skills (optional but recommended)
+
+Your custom skill `.md` files are NOT included in the export above. Copy them separately:
 
 ```bash
-# Via Dropbox (if already synced)
-cp -r ~/Desktop/claude-export ~/Dropbox/claude-export
+mkdir -p ~/Desktop/claude-export/skills
 
-# Via rsync over SSH (if both Macs on same network)
-rsync -av ~/Desktop/claude-export/ new-mac-username@new-mac-ip:~/claude-export/
+# Custom skill files you wrote (curriculum-designer, research-kb, etc.)
+cp ~/.claude/skills/*.md ~/Desktop/claude-export/skills/ 2>/dev/null || echo "no .md skills"
 
-# Via AirDrop: open Finder, right-click ~/Desktop/claude-export, Share > AirDrop
+# If you want ALL skill packages too (~200 dirs, potentially large):
+# rsync -av --exclude='*.pyc' ~/.claude/skills/ ~/Desktop/claude-export/skills/
 ```
 
-### Step 3 — Bootstrap on the new Mac
+### Step 2 — Transfer to the new Mac
 
 ```bash
-# Install Claude Code first
-npm install -g @anthropic-ai/claude-code
+# Option A: Via Dropbox (recommended — syncs automatically)
+cp -r ~/Desktop/claude-export ~/Dropbox/claude-export
+# Wait for Dropbox to sync, then continue on the new Mac
 
-# Bootstrap from export
+# Option B: Via rsync over SSH (both Macs on same network)
+rsync -av ~/Desktop/claude-export/ USERNAME@NEW-MAC-IP:~/claude-export/
+
+# Option C: AirDrop — Finder → right-click ~/Desktop/claude-export → Share → AirDrop
+```
+
+### Step 3 — Install Claude Code on the new Mac
+
+```bash
+# Install Node if needed
+brew install node
+
+# Install Claude Code
+npm install -g @anthropic-ai/claude-code
+```
+
+### Step 4 — Run the bootstrap script
+
+```bash
+# If transferred via Dropbox:
+bash ~/Dropbox/claude-export/claude-code-bootstrap.sh ~/Dropbox/claude-export
+
+# If transferred via rsync/AirDrop:
 bash ~/claude-export/claude-code-bootstrap.sh ~/claude-export
 ```
 
-### Step 4 — Reinstall plugins
+The bootstrap script:
+- Copies CLAUDE.md, settings.json, hooks, commands, agents into `~/.claude/`
+- Rewrites absolute paths from `/Users/oreo` to your new `$HOME` automatically
+- **Prints all `/plugin install` commands at the end** — copy and run those next
+
+### Step 5 — Install plugins (from bootstrap output)
+
+Open Claude Code and run the plugin commands the bootstrap script printed. They look like:
+
+```
+# In Claude Code:
+/plugin marketplace add openai/codex-plugin-cc
+/plugin marketplace add jimliu/baoyu-skills
+/plugin marketplace add Lum1104/Understand-Anything
+/plugin marketplace add kepano/obsidian-skills
+/plugin marketplace add lingfengQAQ/webnovel-writer
+
+/plugin install ai-generation-skills@baoyu-skills
+/plugin install utility-skills@baoyu-skills
+/plugin install obsidian@obsidian-skills
+/plugin install codex@openai-codex
+/plugin install understand-anything@understand-anything
+/plugin install webnovel-writer@webnovel-writer-marketplace
+
+/reload-plugins
+```
+
+### Step 6 — Install npm tools
 
 ```bash
-# oh-my-claudecode (the most important)
+# oh-my-claudecode (orchestration layer — run omc setup to wire CLAUDE.md)
 npm install -g oh-my-claudecode
 omc setup
 
-# project-spec-interviewer-skill
+# Your spec interview tool
 npm install -g @weihaoqu/project-spec-interviewer-skill
 ```
 
-### Step 5 — Sync Dropbox projects
+### Step 7 — Restore custom skills
 
-If your wiki, research KB, and project files are in Dropbox — they sync automatically to the new Mac once Dropbox is installed. No extra steps.
+```bash
+# Copy the .md skill files exported in Step 1b
+cp ~/Dropbox/claude-export/skills/*.md ~/.claude/skills/ 2>/dev/null || true
 
-### What's NOT exported (and why)
+# If you also exported full skill packages, restore them:
+# rsync -av ~/Dropbox/claude-export/skills/ ~/.claude/skills/
+```
 
-| Item | How to handle |
-|------|--------------|
-| `~/.claude/skills/` | Reinstall skills as needed — most are self-contained skill packages |
-| `~/.claude/projects/` | Per-project memory — copy if you want history, skip if starting fresh |
-| `~/.claude/history.jsonl` | Session history — copy for archival reference, not required |
-| API keys | Re-enter manually (never copy `.env` or key files across machines) |
+### Step 8 — Authenticate Codex
+
+```bash
+codex login
+```
+
+### Step 9 — Install system dependencies
+
+```bash
+# RTK (token-saving proxy)
+cargo install rtk
+# or download binary from GitHub releases if cargo isn't available
+
+# Common tools
+brew install git jq gh ffmpeg
+npm install -g @openai/codex
+```
+
+### Step 10 — Let Dropbox sync your projects
+
+Install Dropbox on the new Mac, sign in, and wait for `~/Dropbox/` to sync. Your wiki (`learnAIDoc/`), research KB, and all project files appear automatically — no manual copying needed.
+
+### Post-Bootstrap Checklist
+
+```bash
+# Verify RTK works
+rtk gain
+
+# Check oh-my-claudecode health
+omc doctor
+
+# Verify hooks fire (run any git command in Claude Code)
+git status
+
+# Update API keys file with new machine's keys
+open ~/.claude/api_keys.md
+```
+
+Then open Claude Code and:
+- [ ] Run `/goal` with a small test task (confirms /goal + hooks work)
+- [ ] Run `project-spec-interviewer-skill` (confirms npm tool works)
+- [ ] Test one Codex command: `echo "hello" | codex exec --model gpt-5.5 --ephemeral -`
+- [ ] Set up MCP servers (Google Calendar, Gmail, Drive) if needed
+
+### What is NOT migrated by the export script
+
+| Item | Why not | How to handle |
+|------|---------|--------------|
+| `~/.claude/skills/*.md` | Custom files, not third-party | Step 1b + Step 7 above |
+| `~/.claude/skills/` packages | Too large, reinstall on demand | rsync if you want all of them |
+| `~/.claude/projects/` | Per-project memory | Copy if you want history; skip to start fresh |
+| `~/.claude/history.jsonl` | Session logs, 1.6MB+ | Copy for archival; not needed for function |
+| API keys | Never copy across machines | Re-enter manually in api_keys.md |
 
 ---
 
