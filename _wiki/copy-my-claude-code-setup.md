@@ -213,6 +213,10 @@ cp ~/.claude/skills/*.md ~/Desktop/claude-export/skills/ 2>/dev/null || echo "no
 # Option A: Via Dropbox (recommended — syncs automatically)
 cp -r ~/Desktop/claude-export ~/Dropbox/claude-export
 # Wait for Dropbox to sync, then continue on the new Mac
+# ⚠️ Dropbox Smart Sync warning: files may show in Finder but not be downloaded yet.
+# Force download on the new Mac before running the bootstrap:
+#   brctl download ~/Dropbox/claude-export  (if using iCloud-style Dropbox)
+#   or: open ~/Dropbox/claude-export in Finder → select all → right-click → "Make Available Offline"
 
 # Option B: Via rsync over SSH (both Macs on same network)
 rsync -av ~/Desktop/claude-export/ USERNAME@NEW-MAC-IP:~/claude-export/
