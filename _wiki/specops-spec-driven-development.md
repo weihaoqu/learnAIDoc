@@ -5,7 +5,7 @@ category: Claude Code Workflows
 redirect_from:
   - "/wiki/claude code/specops-spec-driven-development/"
 tags: [specops, spec-driven, ai-coding, claude-code, development-workflow, requirements, design-docs]
-related: ["Harness Engineering — The Real Bottleneck Isn't the Model", "Karpathy Skills — Four Rules That Fix LLM Coding's Worst Habits", "Using /goal for Wiki Management — Spec-Driven Autonomous Wiki Sessions"]
+related: ["Harness Engineering — The Real Bottleneck Isn't the Model", "Karpathy Skills — Four Rules That Fix LLM Coding's Worst Habits", "Using /goal for Wiki Management — Spec-Driven Autonomous Wiki Sessions", "project-spec-interviewer-skill — Interactive Terminal Interview That Writes Your spec.md"]
 icon: "📋"
 image: "/assets/images/specops-spec-driven-development.png"
 ---

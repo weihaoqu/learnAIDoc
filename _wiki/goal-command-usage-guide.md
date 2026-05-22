@@ -3,7 +3,7 @@ title: "/goal 使用指南 — The Visual Playbook for Claude Code's Persistent 
 date: 2026-05-19
 category: Claude Code Engineering
 tags: [claude-code, slash-goal, persistent-goals, codex, workflow, command-guide, agentic-engineering, visual-guide]
-related: ["Beyond /goal — The Orchestrator + Headless Pattern for Long-Running Claude Sessions", "What is Agentic Engineering? A Teaching Primer", "Claude Code 101 — Anthropic's Official Onboarding Course", "Harness Engineering — The Real Bottleneck Isn't the Model", "Using /goal for Wiki Management — Spec-Driven Autonomous Wiki Sessions"]
+related: ["Beyond /goal — The Orchestrator + Headless Pattern for Long-Running Claude Sessions", "What is Agentic Engineering? A Teaching Primer", "Claude Code 101 — Anthropic's Official Onboarding Course", "Harness Engineering — The Real Bottleneck Isn't the Model", "Using /goal for Wiki Management — Spec-Driven Autonomous Wiki Sessions", "project-spec-interviewer-skill — Interactive Terminal Interview That Writes Your spec.md"]
 icon: "🎯"
 image: "/assets/images/goal-command-usage-guide.png"
 ---

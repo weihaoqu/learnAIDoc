@@ -3,7 +3,7 @@ title: "Using /goal for Wiki Management — Spec-Driven Autonomous Wiki Sessions
 date: 2026-05-22
 category: Claude Code Engineering
 tags: [claude-code, slash-goal, wiki, spec-driven, workflow, autonomous-agents, agentic-engineering, productivity, knowledge-base]
-related: ["/goal 使用指南 — The Visual Playbook for Claude Code's Persistent Goal Mechanism", "Beyond /goal — The Orchestrator + Headless Pattern for Long-Running Claude Sessions", "SpecOps — AI-Assisted Spec Writing for Claude Code Projects", "Claude Code 101 — Anthropic's Official Onboarding Course", "Start Here — AI Agents & Claude Code for Beginners"]
+related: ["/goal 使用指南 — The Visual Playbook for Claude Code's Persistent Goal Mechanism", "Beyond /goal — The Orchestrator + Headless Pattern for Long-Running Claude Sessions", "SpecOps — AI-Assisted Spec Writing for Claude Code Projects", "Claude Code 101 — Anthropic's Official Onboarding Course", "Start Here — AI Agents & Claude Code for Beginners", "project-spec-interviewer-skill — Interactive Terminal Interview That Writes Your spec.md"]
 icon: "🎯"
 image: "/assets/images/goal-wiki-management-workflow.png"
 ---
@@ -52,7 +52,15 @@ The other risk is context window exhaustion. A 10-entry batch can push 80K+ toke
 
 ## Step 1: Write spec.md before opening Claude Code
 
-The interview takes 5-10 minutes and produces a `spec.md` you can drop into the session. Run it with `/oh-my-claudecode:planner` or conduct it yourself:
+The interview takes 5-10 minutes and produces a `spec.md` you can drop into the session. Use **[project-spec-interviewer-skill](/learnAIDoc/wiki/project-spec-interviewer-skill/)** — an interactive terminal CLI that asks you the right questions and writes the spec file:
+
+```bash
+npm install -g @weihaoqu/project-spec-interviewer-skill
+project-spec-interviewer-skill
+# → spec.md written to current directory
+```
+
+No flags needed — just answer the questions. If you prefer to write the spec manually, here are the questions to cover:
 
 **Questions to answer before writing the spec:**
 - Which screenshots/sources are you processing?
