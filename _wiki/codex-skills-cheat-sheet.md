@@ -1,441 +1,518 @@
 ---
-title: "Codex Skills Cheat Sheet — When to Use Your Installed Skill Stack"
-date: 2026-05-22
+title: "Personal AI Skill Cheat Sheet — When to Use Each Skill"
+date: 2026-05-24
 category: Skills & Plugins
-tags: [codex, skills, plugins, workflow, testing, security, research, writing]
-related: ["grill-me — When AI Interviews You Before Writing Code", "Matt Pocock's Skills — Claude Code for Real Engineers", "Best Claude Code Plugins", "Claude Code Skills: Resources & Repos", "Cross-Model Code Review — Why Claude Can't Catch Its Own Bugs"]
+tags: [codex, claude-code, skills, plugins, workflow, testing, security, finance, hardware, writing, mcp, codegraph, react-doctor, paperspine, openai-skills, voidful]
+related: ["Codex + Claude Code Skill Repos: May 23 Batch", "CodeGraph: Local Code Knowledge Graph that Cuts Token Usage", "Claude Code Skills: Resources & Repos", "grill-me — When AI Interviews You Before Writing Code", "Cross-Model Code Review — Why Claude Can't Catch Its Own Bugs"]
 icon: "🧭"
 image: "/assets/images/codex-skills-cheat-sheet.png"
 ---
 
-This is the operating manual for the Codex skills installed in Q's local `~/.codex/skills` folder. Think of a skill as a task-specific playbook: Codex may infer relevant skills in some environments, but the reliable path is to invoke the skill explicitly with `$skill-name` or by saying `Use skill-name`.
+> **Updated 2026-05-24**: incorporates the May 23 install batch — CodeGraph MCP, react-doctor, the full `openai/skills` curated catalog (39 skills incl. figma/notion/deploy stacks), the PaperSpine paper-writing suite (1 skill on Codex via `dist/codex/`, 7 skills on Claude Code via `dist/claude/skills/`), and the complete `voidful/academic-skills` set (paper-reading/review/writing + experiment-design + idea-generation + proof-writer + professor-fit-analyser).
 
-*Sources: [OpenAI: Plugins and skills](https://openai.com/academy/codex-plugins-and-skills/) | [ComposioHQ/awesome-codex-skills](https://github.com/ComposioHQ/awesome-codex-skills) | [mattpocock/skills](https://github.com/mattpocock/skills) | [trailofbits/skills](https://github.com/trailofbits/skills) | [voidful/academic-skills](https://github.com/voidful/academic-skills) | [RoggeOhta/awesome-codex-cli](https://github.com/RoggeOhta/awesome-codex-cli)*
+This is Q's personal router for the Codex and Claude Code skill stack. A skill is a task-specific playbook: it tells the agent when to slow down, what workflow to follow, what files or tools to inspect, and what quality bar to satisfy.
+
+The reliable pattern is to name the skill explicitly, with invocation adjusted to the runtime:
+
+- **Codex**: `Use diagnose...`, `Use $tdd...`, or `Use kicad...`
+- **Claude Code**: use a slash command when the installed plugin exposes one, such as `/tdd`; otherwise use plain language, such as `use tdd`.
+
+*Sources and referenced repos: [OpenAI skills catalog](https://github.com/openai/skills) | [Claude Code skills docs](https://docs.claude.com/en/docs/claude-code/skills) | [Agent Skills open standard](https://agentskills.io) | [ComposioHQ/awesome-codex-skills](https://github.com/ComposioHQ/awesome-codex-skills) | [mattpocock/skills](https://github.com/mattpocock/skills) | [trailofbits/skills](https://github.com/trailofbits/skills) | [aklofas/kicad-happy](https://github.com/aklofas/kicad-happy) | [anthropics/financial-services](https://github.com/anthropics/financial-services) | [Imbad0202/academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) | [voidful/academic-skills](https://github.com/voidful/academic-skills) | [WUBING2023/PaperSpine](https://github.com/WUBING2023/PaperSpine) | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | [millionco/react-doctor](https://github.com/millionco/react-doctor)*
+
+## Operational legend
+
+Not every item in the skill stack behaves the same way.
+
+| Category | What it means | Q's rule |
+|---|---|---|
+| Plain skill folder | A `SKILL.md` workflow the agent can read and follow | Safe to invoke by name after install |
+| Claude native plugin | May include slash commands, hooks, MCP servers, and subagents | Inspect before enabling because it can change agent behavior |
+| MCP connector or app automation | Talks to external services through credentials or local tools | Use only when the relevant account, CLI, or token is ready |
+| External-tool skill | Assumes CLIs such as Playwright, CodeQL, Semgrep, KiCad, or GitHub CLI | Verify the tool exists before trusting the workflow |
+| Reference repo | Curated list or documentation, not an installable skill | Treat as research material |
+
+Before first use of any third-party skill, review `SKILL.md`, scripts, hooks, and MCP/plugin manifests. Re-verify this page after installing, removing, or replacing skills because the stack will drift.
+
+## The mental model
+
+Use skills as phase controls, not as a giant menu. Pick the skill that matches the current kind of work.
+
+```text
+Unclear goal
+    |
+    v
+grill-me / grill-with-docs
+    |
+    v
+create-plan / to-prd / to-issues
+    |
+    v
+tdd / diagnose / prototype
+    |
+    v
+webapp-testing / semgrep / codeql / fuzzing
+    |
+    v
+differential-review / insecure-defaults / supply-chain-risk-auditor
+    |
+    v
+changelog-generator / content-research-writer / handoff
+```
+
+Three rules make the stack usable:
+
+1. **Name the skill explicitly when you care.** Do not hope the agent guesses the right workflow.
+2. **Use one skill per phase.** `zoom-out`, `diagnose`, and `differential-review` are sequential tools, not one combined prompt.
+3. **Treat third-party skills as operational instructions.** They can tell agents to run commands, use tools, or trust sources. Keep project rules and human review in charge.
+
+## Daily default stack
+
+Use this smaller set before reaching for the full catalog.
+
+| Work state | Default skill | Why |
+|---|---|---|
+| Fuzzy requirement | `grill-with-docs` | Converts intent into concrete decisions grounded in project language |
+| Unknown codebase area | `zoom-out` | Builds a module/data-flow map before edits |
+| Bug or regression | `diagnose` | Forces reproduction and hypothesis ranking |
+| Behavior change | `tdd` | Locks desired behavior into tests before implementation hardens |
+| Frontend or local app | `webapp-testing` | Proves the result through browser behavior, screenshots, and logs |
+| Before commit or handoff | `differential-review` | Reviews the actual diff for regressions and missing tests |
+| Structural codebase question ("where is X called", "what breaks if I change Y") | `codegraph_*` MCP tools | Pre-indexed knowledge graph; replaces grep/Read storms |
+| Finished a React feature | `react-doctor` | Skill nudges the agent to run `npx react-doctor@latest --verbose --diff`, which scores 0–100 and flags regressions |
+| Research or publishable note | `content-research-writer` | Keeps claims sourced and audience-fit |
 
 ## Quick chooser
 
-Use this table when you know the job but not the skill name.
-
-| Situation | Use this skill | Ask Codex like this |
+| Situation | Use this skill | Ask like this |
 |---|---|---|
-| A web UI needs manual verification | `webapp-testing` | `Use webapp-testing to verify the main flow on localhost:3000.` |
-| A bug is vague, flaky, or hard to isolate | `diagnose` | `Use diagnose on this failing test and build a repro loop before fixing.` |
-| You do not understand a module yet | `zoom-out` | `Use zoom-out and map the relevant modules, callers, and data flow.` |
-| A plan is underspecified | `grill-me` | `Use grill-me to stress-test this plan one question at a time.` |
-| Architecture feels shallow or tangled | `improve-codebase-architecture` | `Use improve-codebase-architecture and propose deepening opportunities.` |
-| You changed auth, crypto, external calls, or business logic | `differential-review` | `Use differential-review on my current git diff.` |
-| Config might fail open in production | `insecure-defaults` | `Use insecure-defaults to audit env vars, secrets, and permissive defaults.` |
-| GitHub Actions runs AI agents | `agentic-actions-auditor` | `Use agentic-actions-auditor on .github/workflows.` |
-| Dependencies may be abandoned or takeover-prone | `supply-chain-risk-auditor` | `Use supply-chain-risk-auditor to audit this project's dependencies.` |
-| Starting or modernizing Python code | `modern-python` | `Use modern-python to set up uv, ruff, ty, pytest, and security hooks.` |
-| Turning commits into release notes | `changelog-generator` | `Use changelog-generator for commits since v1.2.0.` |
-| Writing a sourced article or tutorial | `content-research-writer` | `Use content-research-writer to outline, research, and cite this article.` |
-| Looking for research ideas | `idea-generation` | `Use idea-generation to brainstorm research ideas in this area.` |
-| Designing experiments | `experiment-design` | `Use experiment-design to plan baselines, ablations, metrics, and compute budget.` |
-| Evaluating an advisor or lab | `professor-fit-analyzer` (`professor-fit-analyser` folder) | `Use professor-fit-analyzer on this professor profile and my background.` |
-| Writing or checking a proof | `proof-writer` | `Use proof-writer to formalize and prove this theorem in LaTeX.` |
+| The idea is fuzzy | `grill-me` | `Use grill-me to stress-test this plan one question at a time.` |
+| The plan must match project docs | `grill-with-docs` | `Use grill-with-docs and challenge this against our domain language.` |
+| You need a short execution plan | `create-plan` | `Use create-plan for this coding task.` |
+| You need a PRD or tickets | `to-prd`, `to-issues` | `Use to-issues and break this into tracer-bullet tickets.` |
+| You are lost in a codebase | `zoom-out` | `Use zoom-out and map modules, callers, and data flow before edits.` |
+| A bug is vague or flaky | `diagnose` | `Use diagnose. Build a deterministic repro loop before fixing.` |
+| You want test-first development | `tdd` | `Use tdd with red-green-refactor.` |
+| A frontend needs proof | `webapp-testing` | `Use webapp-testing on localhost and capture screenshots/logs.` |
+| A diff needs risk review | `differential-review` | `Use differential-review on the current git diff.` |
+| Structural code question on a TS/Python/Rust repo | `codegraph` MCP | `Use codegraph_context to map the persistence layer in this codebase.` |
+| React code quality check | `react-doctor` | `Use react-doctor to score the current diff and flag regressions.` |
+| Need to design or generate Figma artifacts | `figma`, `figma-use`, `figma-generate-design` | `Use figma-generate-design to build this screen from the spec.` |
+| Need to ship a small site quickly | `vercel-deploy` / `netlify-deploy` / `cloudflare-deploy` / `render-deploy` | `Use vercel-deploy and walk me through shipping this Next.js app.` |
+| Config may fail open | `insecure-defaults` | `Use insecure-defaults before deployment.` |
+| Dependencies may be risky | `supply-chain-risk-auditor` | `Use supply-chain-risk-auditor on direct dependencies.` |
+| You need a financial model | `dcf-model`, `lbo-model`, `3-statement-model`, `comps-analysis` | `Use dcf-model to build a valuation model from these assumptions.` |
+| You need PCB or BOM work | `kicad`, `bom`, `datasheets`, distributor skills | `Use kicad and bom to inspect this KiCad project.` |
+| You need research writing | `academic-research-suite`, `content-research-writer` | `Use academic-research-suite to plan this literature review.` |
+| You need release notes | `changelog-generator` | `Use changelog-generator for commits since the last tag.` |
+| You need a handoff | `handoff` | `Use handoff to compress this session for another agent.` |
 
-## How skills fit together
+## Normal coding workflow
 
-Skills work best as a workflow, not as isolated magic words. Pick one skill for the current phase, then switch when the phase changes.
+Use these for everyday software work.
 
-```text
-New codebase or unfamiliar area
-        |
-        v
-   zoom-out
-        |
-        v
-grill-me or improve-codebase-architecture
-        |
-        v
-implementation
-        |
-        v
-webapp-testing or diagnose
-        |
-        v
-differential-review / insecure-defaults / supply-chain-risk-auditor
-```
-
-The mental model:
-
-| Phase | Goal | Best skill |
+| Skill | Best for | Do not use when |
 |---|---|---|
-| Understand | Build the map before touching code | `zoom-out` |
-| Decide | Force hidden requirements into the open | `grill-me` |
-| Design | Find better seams and deeper modules | `improve-codebase-architecture` |
-| Prove behavior | Make the app/test fail or pass deterministically | `webapp-testing`, `diagnose` |
-| Review risk | Catch regressions, bad defaults, and dependency risk | Trail of Bits security skills |
-| Explain or publish | Turn work into changelogs, articles, or research notes | Composio writing skills |
+| `zoom-out` | Understanding unfamiliar modules, callers, data flow, vocabulary | The edit is obvious and local |
+| `grill-me` | Requirement discovery and pre-mortems | You do not want questions |
+| `grill-with-docs` | Same as `grill-me`, but grounded in repo docs and domain terms | The repo has no stable project docs |
+| `create-plan` | Fast implementation plan | You need deep ambiguity resolution |
+| `to-prd` | Turning a conversation into a product spec | You only need a bug fix |
+| `to-issues` | Breaking a plan into implementation tickets | You are not using issues or task files |
+| `triage` | Classifying bugs/features and next actions | You need tool-specific issue fetching; use `issue-triage` |
+| `prototype` | Trying risky architecture or UI directions cheaply | You need production-ready code now |
+| `tdd` | Feature work or bug fixes where behavior can be tested | UI-only exploration or throwaway sketches |
+| `diagnose` | Bugs, flakiness, performance regressions | Cosmetic edits or obvious typos |
+| `improve-codebase-architecture` | Deep module/seam refactors | Hotfixes |
+| `codebase-migrate` | Broad multi-file migration | Small isolated refactors |
+| `setup-pre-commit` | Husky/lint-staged/typecheck/test hooks | Repos that already have a deliberate hook setup |
+| `git-guardrails-claude-code` | Blocking dangerous git commands in Claude Code | If you need to push/reset intentionally |
+| `modern-python` | `uv`, `ruff`, `ty`, `pytest`, modern scripts/CLIs | Projects intentionally using older tooling |
+| `webapp-testing` | Playwright verification for local web apps | Backend-only debugging |
+| `react-doctor` | After React feature work or bug fixes; before commit. Run `npx react-doctor@latest --verbose --diff` (or via CI) to get a 0–100 score and regression check | Non-React projects (use generic lint/test instead) |
+| `playwright`, `playwright-interactive` | Browser-automation work or web-scraping flows | Static HTML sites with no DOM interaction |
+| `screenshot` | Capturing the live page state for diff/QA evidence | When you only need URL fetches |
+| `define-goal` | Locking the success criteria of a multi-step task before starting | Trivial one-step requests |
+| `migrate-to-codex` | Porting an agent setup from Claude Code into a Codex-friendly form | Greenfield Codex projects |
 
-## Everyday coding flow
-
-### `zoom-out`
-
-Use this first when you are lost. It asks Codex to go up a layer of abstraction and map modules, callers, and vocabulary instead of immediately editing files.
-
-Good prompts:
-
-```text
-Use zoom-out on the auth flow. I want a map before we change anything.
-```
-
-```text
-Use zoom-out to explain how slide generation moves from upload to rendered output.
-```
-
-Use it when:
-
-- You are new to a repository.
-- A file has too many callers.
-- You suspect a bug lives in system flow, not a single function.
-- You need a diagram or module map before coding.
-
-Avoid it when:
-
-- The change is obvious and local.
-- You already have a failing test and just need a fix loop; use `diagnose` instead.
-
-### `grill-me`
-
-Use this when the request is underdefined. The skill asks one question at a time, gives a recommended answer, and keeps going until the plan is concrete.
-
-Good prompts:
+For a normal feature, the default flow is:
 
 ```text
-Use grill-me to stress-test this plan before we implement it:
-[paste plan]
+grill-with-docs
+    -> create-plan
+        -> tdd
+            -> webapp-testing
+                -> differential-review
 ```
+
+For a bug, use:
 
 ```text
-Use grill-me on this new wiki feature. Ask one question at a time and recommend defaults.
+zoom-out
+    -> diagnose
+        -> tdd
+            -> differential-review
 ```
 
-Use it when:
+## Security and review
 
-- You are about to build a feature but requirements feel fuzzy.
-- You want a pre-mortem before implementation.
-- You are designing a course, paper outline, workflow, or architecture.
+Security skills are review aids, not proof of safety. Static analysis, fuzzing, and scanners need build context, dependencies, and human validation.
 
-Avoid it when:
+| Skill | Use when |
+|---|---|
+| `differential-review` | Reviewing a PR, commit, or current diff for regressions and security risk |
+| `c-review` | Auditing C/C++ memory safety, integer overflows, races, daemon/service code |
+| `insecure-defaults` | Searching config/auth/deployment for fail-open defaults |
+| `agentic-actions-auditor` | GitHub Actions runs AI agents or accepts attacker-controlled events |
+| `supply-chain-risk-auditor` | Dependencies may be abandoned, takeover-prone, or high-impact |
+| `fp-check` | A finding needs true-positive / false-positive verification |
+| `variant-analysis` | One bug is known and you want related instances |
+| `semgrep` | High-signal static analysis or custom rule testing |
+| `codeql` | Interprocedural dataflow/taint analysis |
+| `sarif-parsing` | Processing scanner output into useful findings |
+| `semgrep-rule-creator` | Writing a custom Semgrep rule |
+| `semgrep-rule-variant-creator` | Porting a Semgrep rule across languages |
+| `sharp-edges` | Finding dangerous APIs, insecure ergonomics, footguns |
+| `spec-to-code-compliance` | Comparing implementation against whitepaper/spec/docs |
+| `gh-cli` | Force authenticated GitHub CLI workflows instead of ad hoc unauthenticated fetches |
+| `security-best-practices` | OpenAI-curated checklist of secure-by-default settings before shipping |
+| `security-ownership-map` | Build a map of who owns which security-sensitive surfaces |
+| `security-threat-model` | Structured threat-modeling pass on a repo or feature |
 
-- You need speed more than clarity.
-- The task is a tiny mechanical edit.
-- You do not want to answer questions.
-
-### `diagnose`
-
-Use this for bugs. Its core rule is: build a fast, deterministic feedback loop before hypothesizing. That loop can be a failing test, curl script, CLI fixture, Playwright script, replayed trace, or throwaway harness.
-
-Good prompts:
+Good prompt:
 
 ```text
-Use diagnose. This test is flaky; build a loop that reproduces it before changing code.
+Use differential-review on my current git diff. Prioritize auth, crypto, validation, external calls, missing tests, and blast radius.
 ```
+
+## Fuzzing and test depth
+
+Use fuzzing skills when ordinary unit tests are too example-driven.
+
+| Skill | Use when |
+|---|---|
+| `property-based-testing` | You can state invariants stronger than examples |
+| `aflpp` | Multi-core C/C++ fuzzing |
+| `libfuzzer` | LLVM-native C/C++ fuzzing |
+| `cargo-fuzz` | Rust fuzzing |
+| `atheris` | Python or Python C-extension fuzzing |
+| `ruzzy` | Ruby fuzzing |
+| `harness-writing` | Creating or improving fuzz targets |
+| `coverage-analysis` | Measuring whether fuzzers reach meaningful code |
+| `fuzzing-dictionary` | Parser/protocol/file-format fuzzing needs tokens |
+| `fuzzing-obstacles` | Checksums, global state, or guards block fuzzing |
+| `mutation-testing` | Tests pass but may not assert the right behavior |
+| `genotoxic` | Mutation testing plus graph-based triage |
+| `ossfuzz` | Continuous fuzzing for open-source projects |
+| `testing-handbook-generator` | Generating new security-testing skills from handbook patterns |
+
+Typical loop:
 
 ```text
-Use diagnose on this production-only error. Start by identifying what artifact we need to reproduce it.
+harness-writing
+    -> aflpp/libfuzzer/cargo-fuzz/atheris
+        -> coverage-analysis
+            -> fuzzing-obstacles
+                -> fp-check
 ```
 
-Use it when:
+## Crypto, protocols, and blockchain
 
-- Something is broken, slow, flaky, or throwing.
-- You are tempted to guess the root cause.
-- You need a regression test after the fix.
+| Skill | Use when |
+|---|---|
+| `constant-time-analysis` | Reviewing crypto code for secret-dependent branches, divisions, lookups |
+| `constant-time-testing` | Testing timing side-channel assumptions |
+| `zeroize-audit` | Checking that secrets are erased and not optimized away |
+| `wycheproof` | Validating crypto code against known edge-case vectors |
+| `vector-forge` | Generating mutation-driven crypto/protocol test vectors |
+| `crypto-protocol-diagram` | Extracting protocol message flows into diagrams |
+| `mermaid-to-proverif` | Turning protocol diagrams into ProVerif models |
+| `algorand-vulnerability-scanner` | Algorand / TEAL / PyTeal audits |
+| `cairo-vulnerability-scanner` | StarkNet / Cairo audits |
+| `cosmos-vulnerability-scanner` | Cosmos SDK, IBC, CosmWasm, chain-halt risk |
+| `solana-vulnerability-scanner` | Solana / Anchor audits |
+| `substrate-vulnerability-scanner` | Substrate / Polkadot pallet audits |
+| `ton-vulnerability-scanner` | TON / FunC audits |
+| `token-integration-analyzer` | Weird ERC/token integration behavior |
+| `guidelines-advisor` | Smart-contract best practices and architecture review |
+| `secure-workflow-guide` | Trail of Bits secure development workflow |
+| `code-maturity-assessor` | Security maturity scorecard |
 
-Avoid it when:
+## Code graph and audit context
 
-- The issue is just a missing import or typo.
-- You cannot access enough evidence to build any loop; in that case, first ask for logs, HAR files, screenshots, traces, or exact reproduction steps.
+Use these when review quality depends on structure, not just text diff.
 
-### `improve-codebase-architecture`
+| Skill | Use when |
+|---|---|
+| `codegraph_*` MCP tools | Symbol lookups, call graphs, blast-radius queries on an indexed repo (per-project `.codegraph/` required) |
+| `trailmark` | Build/query multi-language source graphs |
+| `trailmark-summary` | Quick structural overview |
+| `trailmark-structural` | Full graph preanalysis: hotspots, taint, blast radius |
+| `diagramming-code` | Generate Mermaid diagrams from code graphs |
+| `graph-evolution` | Compare structural changes across commits |
+| `audit-context-building` | Line-by-line context before vulnerability hunting |
+| `audit-augmentation` | Map external SARIF/audit findings onto graph nodes |
+| `entry-point-analyzer` | Enumerate state-changing smart contract entry points |
+| `dimensional-analysis` | Track units, dimensions, decimal scaling |
+| `dwarf-expert` | DWARF debug format or parser work |
+| `burpsuite-project-parser` | Search `.burp` projects and proxy history |
+| `firebase-apk-scanner` | Android APK Firebase misconfiguration checks |
+| `devcontainer-setup` | Create isolated Claude Code devcontainers |
+| `seatbelt-sandboxer` | Generate macOS Seatbelt sandbox profiles |
 
-Use this for architecture review, not quick refactors. It looks for shallow modules, poor locality, bad seams, and places where a deeper module would make tests and maintenance easier.
+### CodeGraph rule of thumb (May 23 install)
 
-Good prompts:
+CodeGraph is the only **manually-configured stdio MCP server** currently wired into both `~/.claude.json` and `~/.codex/config.toml` (plugins or connectors may add their own tools separately). Steering text lives in `~/.claude/CLAUDE.md` and `~/.codex/AGENTS.md`. Use it for **structural** questions, not literal text search.
+
+| Question | Tool |
+|---|---|
+| "Where is X defined?" / "Find symbol named X" | `codegraph_search` |
+| "What calls function Y?" | `codegraph_callers` |
+| "What does Y call?" | `codegraph_callees` |
+| "What would break if I changed Z?" | `codegraph_impact` |
+| "Show me Y's signature / source / docstring" | `codegraph_node` |
+| "Give me focused context for a task/area" | `codegraph_context` |
+| "See several related symbols' source at once" | `codegraph_explore` |
+| "What files exist under path/" | `codegraph_files` |
+| "Is the index healthy?" | `codegraph_status` |
+
+Indexed projects as of 2026-05-24 (verified by `ls ~/Desktop/*/.codegraph/`): `learnai-3d-studio` only. Run `codegraph init -i` in any other project to enable. If `.codegraph/` doesn't exist, the MCP returns "not initialized" — for literal text search use `rg` instead, for structural queries ask the user whether to initialize CodeGraph.
+
+## Financial modeling, spreadsheets, and decks
+
+These came from Anthropic's financial-services skill folders. Some are finance-specific; others are general spreadsheet or presentation utilities.
+
+Finance-specific modeling:
+
+| Skill | Use when |
+|---|---|
+| `3-statement-model` | Populate income statement, balance sheet, cash flow model templates |
+| `dcf-model` | Build discounted cash flow valuation models |
+| `lbo-model` | Complete LBO model templates |
+| `comps-analysis` | Comparable company analysis and valuation multiples |
+| `competitive-analysis` | Competitive landscape / market positioning decks |
+| `ib-check-deck` | Investment banking deck QC |
+
+General spreadsheet and deck utilities:
+
+| Skill | Use when |
+|---|---|
+| `audit-xls` | Spreadsheet formula/model audit, finance or otherwise |
+| `clean-data-xls` | Normalize messy spreadsheet data |
+| `xlsx-author` | Generate `.xlsx` files headlessly |
+| `deck-refresh` | Update deck numbers while preserving formatting |
+| `pptx-author` | Generate `.pptx` files headlessly |
+| `ppt-template-creator` | Turn a PowerPoint template into a reusable skill |
+
+Example:
 
 ```text
-Use improve-codebase-architecture on the slide export pipeline. Generate candidates only; do not edit code yet.
+Use audit-xls to check this model for formula errors, balance sheet balance, cash tie-out, hardcodes, and logic sanity.
 ```
+
+## Figma and UI design assistance
+
+These came from the May 23 `openai/skills/.curated/` install. Use them when the artifact is a Figma file, a design system, or screens generated from spec.
+
+| Skill | Use when |
+|---|---|
+| `figma` | General Figma operations (read/inspect existing files) |
+| `figma-use` | Open and operate on a specific Figma file by id/URL |
+| `figma-generate-design` | Turn a written spec into a draft Figma layout |
+| `figma-generate-library` | Build a component library (variants, properties, tokens) from a brief |
+| `figma-create-design-system-rules` | Codify spacing, color, type tokens as a design system |
+| `figma-create-new-file` | Bootstrap an empty Figma file with naming/structure |
+| `figma-implement-design` | Translate a Figma frame into actual React/HTML code |
+| `figma-code-connect-components` | Wire Figma components to code via Figma Code Connect |
+
+Pair with `brand-guidelines`, `theme-factory`, or `canvas-design` for visual polish.
+
+## Hardware, KiCad, PCB, and BOM
+
+Use the KiCad stack when the artifact is electrical, not software.
+
+| Skill | Use when |
+|---|---|
+| `kicad` | Inspect KiCad schematics, PCB, nets, footprints, symbols |
+| `bom` | Orchestrate bill of materials work |
+| `datasheets` | Extract component specs from PDFs |
+| `digikey`, `mouser`, `lcsc`, `element14` | Source parts, prices, stock, datasheets |
+| `jlcpcb`, `pcbway` | Manufacturing and assembly preparation |
+| `emc` | EMC pre-compliance risk review |
+| `spice` | Simulate detected subcircuits |
+| `kidoc` | Generate engineering and manufacturing docs |
+
+Example:
 
 ```text
-Use improve-codebase-architecture to find modules that are shallow wrappers.
+Use kicad, bom, datasheets, and emc to review this PCB before fabrication. Start with schematic/PCB consistency, then BOM risk, then EMC risks.
 ```
 
-Use it when:
+## Writing, research, docs, and media
 
-- You feel every change requires touching too many files.
-- There are abstractions that do not buy leverage.
-- Tests are hard because behavior is split across many small pieces.
+### Academic and research stack (May 23 expansion)
 
-Avoid it when:
+**Three different academic pipelines now coexist**, with different shapes:
 
-- You need a hotfix.
-- You cannot afford an architecture conversation.
-- The project has no stable behavior yet; first make it work and test it.
+- **`academic-research-suite`** (Imbad0202): one Codex-native adapter / root skill that internally routes through "select-topic → literature → write → review → revise → finalize" workflows. Best when you want a single skill to dispatch the full pipeline.
+- **PaperSpine** (WUBING2023): orchestrator + 6 specialized sub-skills (Claude side only — Codex only got the single `paper-spine` orchestrator from `dist/codex/`). Best when you want explicit motivation-driven scaffolding.
+- **voidful/academic-skills**: 7 standalone persona-heavy skills (some default to Traditional Chinese with character personas). Best when you want a specific narrow tool, e.g. "explain this paper" or "draft a proof."
 
-## Testing and release notes
-
-### `webapp-testing`
-
-Use this for local web apps. It prefers native Python Playwright scripts, waits for `networkidle` on dynamic apps, and can use `scripts/with_server.py` to manage one or more local servers.
-
-Good prompts:
-
-```text
-Use webapp-testing to verify the login-to-export flow on localhost:3000. Capture screenshots and console errors.
-```
-
-```text
-Use webapp-testing with a dev server. First run the helper with --help, then write a minimal Playwright check.
-```
-
-Use it when:
-
-- You need to prove a UI flow works.
-- You need screenshots, browser logs, or DOM inspection.
-- A frontend bug only appears after JavaScript renders.
-
-Avoid it when:
-
-- The app is pure static HTML and direct file inspection is enough.
-- The issue is backend-only; use `diagnose` with a curl or CLI loop.
-
-### `changelog-generator`
-
-Use this only for changelogs and release notes. It turns git commits into user-facing categories like features, improvements, fixes, breaking changes, and security notes.
-
-Good prompts:
-
-```text
-Use changelog-generator for commits since v2.4.0. Keep it user-facing and ignore internal refactors unless they changed behavior.
-```
-
-```text
-Use changelog-generator to write this week's product update from git history.
-```
-
-Use it when:
-
-- You are preparing a release.
-- You need customer-facing release notes.
-- You want to translate technical commits into plain language.
-
-Avoid it when:
-
-- You are writing a normal article or tutorial; use `content-research-writer`.
-- The git history is messy and you have no product context; provide context first.
-
-## Security review
-
-### `differential-review`
-
-Use this on diffs, PRs, or commits. It is risk-first: auth, crypto, value transfer, validation removal, external calls, and security-sensitive refactors get deeper review than comments or UI-only changes. The skill expects to produce a markdown report, not just a quick chat summary.
-
-Good prompts:
-
-```text
-Use differential-review on my current git diff. Focus on auth, external calls, and missing tests.
-```
-
-```text
-Use differential-review between main and this branch. Write the report to a markdown file.
-```
-
-Use it when:
-
-- You changed security-sensitive code.
-- You need a second-pass review before commit.
-- You want blast radius and test coverage called out explicitly.
-
-Avoid it when:
-
-- You only need style cleanup.
-- The change is greenfield scaffolding, docs-only, formatting-only, or linting-only.
-- You need a full application penetration test; this is diff review, not runtime testing.
-
-### `insecure-defaults`
-
-Use this to find fail-open defaults: fallback secrets, default credentials, permissive CORS, weak crypto choices, debug flags, or environment variables that quietly fall back to unsafe values.
-
-Good prompts:
-
-```text
-Use insecure-defaults to audit config, auth, env var handling, Docker, and deployment files.
-```
-
-```text
-Use insecure-defaults before deployment. Distinguish test fixtures from production-reachable defaults.
-```
-
-Use it when:
-
-- Preparing a deployment.
-- Reviewing config management.
-- Auditing auth, crypto, API keys, or environment variables.
-
-Avoid it when:
-
-- You only care about known CVEs; use dependency scanners too.
-- The file is clearly a docs example, test fixture, or template.
-
-### `agentic-actions-auditor`
-
-Use this when a repository has GitHub Actions workflows that run AI agents such as Claude Code Action, Gemini CLI, OpenAI Codex, or GitHub AI Inference. It focuses on prompt injection paths, attacker-controlled event data, dangerous sandbox settings, wildcard user allowlists, and AI output passed into shell/eval paths.
-
-Good prompts:
-
-```text
-Use agentic-actions-auditor on this repo's .github/workflows. Report risks only; do not modify workflows.
-```
-
-```text
-Use agentic-actions-auditor on owner/repo and check pull_request_target, issue_comment, env intermediaries, and sandbox settings.
-```
-
-Use it when:
-
-- CI runs coding agents.
-- External contributors can trigger workflows.
-- You see `pull_request_target`, `issue_comment`, agent prompts, or broad tool permissions.
-
-Avoid it when:
-
-- The repo has no AI-agent workflows.
-- The CI system is not GitHub Actions.
-- You need runtime exploitation testing; this is static analysis guidance.
-
-### `supply-chain-risk-auditor`
-
-Use this to assess dependency takeover risk: single maintainers, stale projects, low popularity, risky features, past CVEs, missing security contacts, and questionable alternatives. It is not a replacement for `npm audit`, `pip-audit`, or other vulnerability scanners.
-
-Good prompts:
-
-```text
-Use supply-chain-risk-auditor to assess direct dependencies and produce a risk report.
-```
-
-```text
-Use supply-chain-risk-auditor before this security engagement. Focus on abandoned or single-maintainer packages.
-```
-
-Use it when:
-
-- You are preparing a security review.
-- You are deciding whether to trust a package.
-- You need a qualitative dependency health report.
-
-Avoid it when:
-
-- You only need license compliance.
-- You need active vulnerability scanning.
-- You cannot use `gh` or provide repository URLs for dependencies.
-
-## Python projects
-
-### `modern-python`
-
-Use this when starting or modernizing Python projects. It prefers `uv`, `ruff`, `ty`, `pytest`, dependency groups, `uv run`, and modern security hooks.
-
-Good prompts:
-
-```text
-Use modern-python to set up this new Python CLI with uv, ruff, ty, pytest, and pyproject.toml.
-```
-
-```text
-Use modern-python to migrate this small script from requirements.txt to PEP 723 inline metadata.
-```
-
-Use it when:
-
-- Creating a Python project or package.
-- Writing standalone scripts with dependencies.
-- Migrating from older tooling, if you want that migration.
-
-Avoid it when:
-
-- The project intentionally uses Poetry, pip-tools, mypy, or pyright and you want to preserve that.
-- The project must support Python below 3.11.
-- Python is not central to the repo.
-
-## Writing and research
-
-### `content-research-writer`
-
-Use this for sourced prose: blog posts, tutorials, case studies, educational notes, and documentation with citations. It is a writing partner: outline, research, hook, draft, section feedback, and polish.
-
-Good prompts:
-
-```text
-Use content-research-writer to outline a tutorial on Codex skills, then research sources and propose citations.
-```
-
-```text
-Use content-research-writer to review this section for flow, clarity, and source support.
-```
-
-Use it when:
-
-- Writing public-facing educational content.
-- Adding citations and examples.
-- Improving hooks, structure, or section flow.
-
-Avoid it when:
-
-- You are generating release notes from commits; use `changelog-generator`.
-- You need academic proof writing; use `proof-writer`.
-
-### Academic skills
-
-The voidful academic skills are useful, but be explicit about output language. `professor-fit-analyzer` explicitly defaults to Traditional Chinese and switches to English when you write in English; `proof-writer` says explanations use Traditional Chinese. `idea-generation` and `experiment-design` are mostly written in Chinese, so request English if that is what you want.
-
-| Skill | Use when | Good prompt |
+| Skill | Platform availability | Use when |
 |---|---|---|
-| `idea-generation` | You need research directions or a 1-page proposal | `Use idea-generation in English. Generate 10 candidate ideas, search for novelty, then converge to 2.` |
-| `experiment-design` | You need baselines, ablations, metrics, and compute planning | `Use experiment-design in English. Turn this hypothesis into baselines, ablations, metrics, and budget.` |
-| `proof-writer` | You need a formal theorem/proof workflow | `Use proof-writer in English. Extract the theorem assumptions, choose a strategy, and write LaTeX.` |
-| `professor-fit-analyzer` | You need to evaluate an advisor/lab from public evidence. Local folder: `professor-fit-analyser`. | `Use professor-fit-analyzer in English. Here is the professor site and my background.` |
+| `academic-research-suite` | Codex (Imbad0202) | One-shot dispatcher for the full research → write → review → revise pipeline |
+| `paper-spine` | Codex + Claude | Orchestrate the PaperSpine pipeline for motivation-driven paper writing |
+| `paper-spine-intake` | Claude only | Capture goal, audience, venue, and source materials at the start of a paper |
+| `paper-spine-research` | Claude only | Survey strong examples and download reference materials before drafting |
+| `paper-spine-rewrite` | Claude only | Restructure existing draft sections around a revised motivation |
+| `paper-spine-build` | Claude only | Assemble manuscript units with explicit rationale per section |
+| `paper-spine-latex` | Claude only | LaTeX-safe rewriting and macro/citation hygiene |
+| `paper-spine-audit` | Claude only | Final pass — check argument flow, evidence coverage, and unit consistency |
+| `paper-reading` | Codex + Claude (voidful) | Read papers conversationally — **defaults to Traditional Chinese with a centenarian-aunt persona**; pass `--lang en` or override style in prompt for English |
+| `paper-review` | Codex + Claude (voidful) | Structured peer review of a paper with checklist |
+| `paper-writing` | Codex + Claude (voidful) | Draft a section of a paper from outline + sources |
+| `experiment-design` | Codex + Claude (voidful) | Plan an experiment with hypotheses, conditions, and measures |
+| `idea-generation` | Codex + Claude (voidful) | Brainstorm research directions in a structured way |
+| `proof-writer` | Codex + Claude (voidful) | Mathematical proof drafting → LaTeX — **defaults to Traditional Chinese persona**; override in prompt for English/formal academic voice |
+| `professor-fit-analyser` | Codex + Claude (voidful) | Score fit between a student profile and a target professor's lab |
+| `content-research-writer` | Both | Sourced article, tutorial, or case-study drafting (general, not academic) |
 
-Good research stack:
+The academic stack is best when the output needs research structure or formal venue conventions. The general writing stack below is best when the output needs audience fit, citations, or polish without paper-format constraints.
+
+### General writing, comms, and media
+
+| Skill | Use when |
+|---|---|
+| `paperjsx` | Generate PPTX/DOCX/XLSX/PDF artifacts from structured JSON |
+| `brand-guidelines` | Apply OpenAI/Codex visual style to artifacts |
+| `theme-factory` | Apply or create reusable visual themes |
+| `canvas-design` | Static visual designs, posters, art-like assets |
+| `changelog-generator` | User-facing release notes from commits |
+| `internal-comms` | Leadership updates, status reports, FAQs, internal announcements |
+| `email-draft-polish` | Emails, replies, cold outreach, escalation tone |
+| `meeting-notes-and-actions` | Meeting summaries, decisions, owner-tagged action items |
+| `meeting-insights-analyzer` | Communication-pattern feedback from transcripts |
+| `tailored-resume-generator` | Resume tailoring to a job description |
+| `speech`, `transcribe` | Speech synthesis or transcription tasks |
+
+## Ops, integrations, and production debugging
+
+| Skill | Use when |
+|---|---|
+| `connect` | Connect Codex to external apps through Composio |
+| `connect-apps` | Connect Claude to external apps through Composio |
+| `mcp-builder` | Build or evaluate MCP servers |
+| `datadog-logs` | Query Datadog logs from the shell |
+| `sentry`, `sentry-triage` | Sentry workflow + pull events and map stack frames to source |
+| `langsmith-fetch` | Fetch LangSmith traces for agent debugging |
+| `deploy-pipeline` | Stripe, Supabase, Vercel style deploy coordination |
+| `vercel-deploy` | Ship Next.js / static / serverless to Vercel |
+| `netlify-deploy` | Ship JAMstack / static / serverless to Netlify |
+| `cloudflare-deploy` | Ship Workers / Pages / Workers KV / R2 to Cloudflare |
+| `render-deploy` | Ship containerized / managed apps to Render |
+| `aws-deploy` | EC2 + Docker + auto-HTTPS + GitHub Actions push-to-deploy |
+| `pr-review-ci-fix` | PR review plus CI-fix loop |
+| `gh-address-comments`, `gh-fix-ci` | Targeted GitHub PR-comment resolution and CI failure repair |
+| `issue-triage` | Linear/Jira backlog triage through CLI workflows |
+| `linear` | Linear-specific issue/project automation |
+| `gh-cli` | Authenticated GitHub workflows |
+| `chatgpt-apps` | Build a ChatGPT app (Apps SDK) |
+| `cli-creator` | Bootstrap a new CLI tool with sensible defaults |
+| `aspnet-core`, `winui-app` | Generate .NET projects (web API and Windows app respectively) |
+| `hatch-pet` | Python project bootstrapping with `hatch` |
+| `jupyter-notebook` | Jupyter notebook task work |
+| `openai-docs` | Look up OpenAI API references inline |
+| `yeet` | Quick one-shot "just do it" prompt skill |
+
+Use these only when the relevant CLI, credentials, or service access exists. **Important**: a skill folder by itself does NOT grant OAuth/API access — `vercel-deploy`, `netlify-deploy`, `linear`, `sentry`, etc. only tell the agent *how* to use the corresponding CLI; you must still install the CLI and authenticate it (`vercel login`, `gh auth login`, etc.) before the agent can act.
+
+## Utility skills
+
+| Skill | Use when |
+|---|---|
+| `file-organizer` | Rename, dedupe, and organize folders |
+| `invoice-organizer` | Sort receipts/invoices for tax or bookkeeping |
+| `spreadsheet-formula-helper` | Excel/Google Sheets formulas and pivots |
+| `video-downloader` | Download YouTube/video assets |
+| `slack-gif-creator` | Animated Slack GIFs or emoji-like assets |
+| `image-enhancer` | Improve or transform images |
+| `raffle-winner-picker` | Fair random winner selection |
+| `caveman` | Ultra-brief communication mode |
+| `handoff` | Compress current context for another session |
+| `write-a-skill` | Create a new skill |
+| `skill-share` | Share a skill with a team |
+| `skill-improver` | Review and improve skill quality |
+| `designing-workflow-skills` | Design multi-step workflow skills |
+
+## What Q should use most
+
+| Rank | Skill | Why |
+|---|---|---|
+| 1 | `grill-with-docs` | Turns fuzzy intent into a grounded spec. |
+| 2 | `zoom-out` | Prevents editing before understanding. |
+| 3 | `diagnose` | Stops guess-and-check debugging. |
+| 4 | `tdd` | Forces behavior into tests before code settles. |
+| 5 | `webapp-testing` | Gives visible proof that frontend behavior works. |
+| 6 | `differential-review` | Catches high-risk regressions before commit. |
+| 7 | `content-research-writer` | Converts learning into publishable notes. |
+| 8 | `academic-research-suite` | Handles research-shaped work better than generic prompting. |
+
+For teaching and LearnAI work, the highest-leverage pattern is:
 
 ```text
-idea-generation
-    -> experiment-design
-        -> proof-writer
-            -> content-research-writer
+content-research-writer
+    -> theme-factory / canvas-design
+        -> webapp-testing
+            -> differential-review
 ```
 
-Use this when:
-
-- You are moving from a vague research direction to an experiment plan.
-- You need to prove a claim before writing the paper around it.
-- You are deciding whether a professor or lab is a good fit.
-
-Avoid it when:
-
-- You need a quick summary of a paper; this install intentionally skipped the heavier `paper-reading` route.
-- You need verified citations; ask Codex to browse and cite sources explicitly.
-
-## Prompt recipes
-
-Copy these as starting points.
+For research and paper work:
 
 ```text
-Use zoom-out first. I am unfamiliar with this code path. Map the modules, callers, data flow, and likely change points. Do not edit code yet.
+academic-research-suite
+    -> content-research-writer
+        -> proof-writer or experiment-design if needed
+```
+
+For security coursework:
+
+```text
+zoom-out
+    -> trailmark-summary
+        -> semgrep/codeql
+            -> fp-check
+                -> differential-review
+```
+
+## Deferred or special-case skills
+
+Some useful items were intentionally not treated as ordinary skill-folder installs:
+
+- **Composio app automations**: the `composio-skills/*` set claims 1000+ app integrations / actions (per upstream). Install only when you need a specific app.
+- **Claude native plugins**: some repos add slash commands, hooks, MCP servers, or agents. Ask before installing those because they change more than skill discovery.
+- **`awesome-codex-cli`** and **`awesome-codex-skills`**: reference lists only; no `SKILL.md` to install.
+- **Existing `pdf` in Claude Code**: left untouched on the Claude side because it already existed and did not match the pinned OpenAI curated copy. The Codex side uses the OpenAI curated `pdf`.
+- **`rohitg00/agentmemory`**: explicitly skipped. The MCP-plus-12-hooks footprint conflicted with the file-based auto-memory system already in place. See [CodeGraph entry](codegraph-token-cutting-indexer.md) for the parallel decision on a more focused MCP install.
+- **`aklofas/kicad-happy` (full Claude/Codex plugin + GitHub Action)**: not enabled. The generic `kicad` skill folder is installed and covers most workflows, but the kicad-happy native plugin (with hooks + Action) is intentionally off pending real PCB work.
+- **Asen pack** (`prompt-optimizer`, `deep-interview`, `ralplan`, `ultraqa`, `ai-slop-cleaner`, `visual-verdict`): 5 of 6 names overlap with skills exposed by the `oh-my-claudecode` plugin currently loaded (verifiable via `omc-reference` or by inspecting `~/.claude/plugins/cache/omc/`). `prompt-optimizer` corresponds to OMC's `prompt-master`. Asen originals were not separately installed pending a side-by-side comparison.
+
+### MCP servers currently active
+
+| MCP | Where wired | Auto-loaded steering |
+|---|---|---|
+| `codegraph` | `~/.claude.json` + `~/.codex/config.toml` | `~/.claude/CLAUDE.md` + `~/.codex/AGENTS.md` (lines marked `<!-- CODEGRAPH_START/END -->`) |
+
+To disable: `codegraph uninstall` (removes both MCP entries and the steering blocks).
+
+## How to ask the agent
+
+Use direct invocation language:
+
+```text
+Use diagnose. Reproduce the bug with the fastest deterministic loop, rank hypotheses, and only fix after the loop proves the failure.
 ```
 
 ```text
-Use grill-me to interview me about this feature plan one question at a time. For each question, give your recommended answer before waiting for mine.
-```
-
-```text
-Use diagnose. Reproduce the bug with the fastest deterministic loop you can build, rank 3-5 hypotheses, then fix only after the loop proves the failure.
-```
-
-```text
-Use webapp-testing. Start the local server if needed, run a Playwright check, capture console errors, and verify the user-visible flow.
+Use grill-with-docs. Challenge this plan against the repo's domain language and write down the decisions that should become docs.
 ```
 
 ```text
@@ -443,40 +520,11 @@ Use differential-review on the current git diff. Prioritize auth, crypto, valida
 ```
 
 ```text
-Use insecure-defaults. Search production-reachable config and auth code for fail-open defaults, then separate real findings from test fixtures and docs examples.
+Use kicad and bom on this KiCad project. Check schematic/PCB consistency, BOM completeness, datasheet gaps, and manufacturing risks.
 ```
 
 ```text
-Use supply-chain-risk-auditor. Identify direct dependencies with takeover or abandonment risk, and suggest safer alternatives when useful.
+Use academic-research-suite. Goal: turn this rough topic into a literature-review plan with missing-evidence checklist.
 ```
 
-```text
-Use content-research-writer. Create an outline, research sources, add citations, and critique each section for clarity and flow.
-```
-
-```text
-Use changelog-generator for commits since the last tag. Write customer-facing release notes and ignore internal-only churn unless it changed behavior.
-```
-
-## A few practical rules
-
-1. **Name the skill explicitly when you care.** Codex may infer relevant skills in some environments, but `$diagnose` or `Use diagnose...` is clearer than hoping the right playbook triggers.
-2. **One skill per phase.** Do not ask for `zoom-out`, `diagnose`, and `differential-review` all at once. Use them sequentially.
-3. **Treat security skills as review aids.** They surface risks and reports; they do not replace tests, scanners, threat modeling, or deployment checks.
-4. **Avoid skill hoarding.** `awesome-codex-cli` is useful as an index, but installing every skill creates noise and supply-chain risk.
-5. **Restart after installing.** Codex needs a restart or new session before newly installed skills reliably appear.
-6. **Keep project instructions in charge.** `AGENTS.md` still defines repo-specific rules. Skills should refine the workflow, not override project safety gates.
-
-## What Q should use most often
-
-For day-to-day Codex work, start with these five:
-
-| Rank | Skill | Why it earns the slot |
-|---|---|---|
-| 1 | `zoom-out` | Prevents editing before understanding. |
-| 2 | `grill-me` | Turns vague intentions into a real spec. |
-| 3 | `diagnose` | Stops guess-and-check debugging. |
-| 4 | `webapp-testing` | Gives visible proof that frontend behavior works. |
-| 5 | `differential-review` | Catches security-sensitive regressions before commit. |
-
-The rest are situational: `modern-python` for Python setup, `insecure-defaults` before deploys, `supply-chain-risk-auditor` before trusting dependencies, `content-research-writer` and `changelog-generator` for publishing, and the academic skills when the task is research-shaped.
+The pattern is simple: name the skill, state the artifact, state the quality bar, and state whether edits are allowed.
