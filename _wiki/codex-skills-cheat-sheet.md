@@ -15,7 +15,7 @@ This is Q's personal router for the Codex and Claude Code skill stack. A skill i
 The reliable pattern is to name the skill explicitly, with invocation adjusted to the runtime:
 
 - **Codex**: `Use diagnose...`, `Use $tdd...`, or `Use kicad...`
-- **Claude Code**: use a slash command when the installed plugin exposes one, such as `/tdd`; otherwise use plain language, such as `use tdd`.
+- **Claude Code**: use `/skill-name` for any user-invocable skill or plugin command (both skill folders AND plugins can register slash commands); otherwise use plain language ("use tdd") for skills the agent auto-routes to.
 
 *Sources and referenced repos: [OpenAI skills catalog](https://github.com/openai/skills) | [Claude Code skills docs](https://docs.claude.com/en/docs/claude-code/skills) | [Agent Skills open standard](https://agentskills.io) | [ComposioHQ/awesome-codex-skills](https://github.com/ComposioHQ/awesome-codex-skills) | [mattpocock/skills](https://github.com/mattpocock/skills) | [trailofbits/skills](https://github.com/trailofbits/skills) | [aklofas/kicad-happy](https://github.com/aklofas/kicad-happy) | [anthropics/financial-services](https://github.com/anthropics/financial-services) | [Imbad0202/academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) | [voidful/academic-skills](https://github.com/voidful/academic-skills) | [WUBING2023/PaperSpine](https://github.com/WUBING2023/PaperSpine) | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | [millionco/react-doctor](https://github.com/millionco/react-doctor)*
 
@@ -489,19 +489,41 @@ Some useful items were intentionally not treated as ordinary skill-folder instal
 
 - **Composio app automations**: the `composio-skills/*` set claims 1000+ app integrations / actions (per upstream). Install only when you need a specific app.
 - **Claude native plugins**: some repos add slash commands, hooks, MCP servers, or agents. Ask before installing those because they change more than skill discovery.
-- **`awesome-codex-cli`** and **`awesome-codex-skills`**: reference lists only; no `SKILL.md` to install.
+- **`awesome-codex-cli`** (RoggeOhta): reference list only; curates 150+ tools/skills/subagents/plugins but does not itself ship installable skill folders.
+- **`awesome-codex-skills`** (ComposioHQ): **NOT just a reference list** — it ships installable skill folders and a `skill-installer/` Python script. The Q installation already uses this installer at `~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py`. Browse the README and `python3 install-skill-from-github.py --repo ... --path ... --name ...` to add individual skills.
 - **Existing `pdf` in Claude Code**: left untouched on the Claude side because it already existed and did not match the pinned OpenAI curated copy. The Codex side uses the OpenAI curated `pdf`.
 - **`rohitg00/agentmemory`**: explicitly skipped. The MCP-plus-12-hooks footprint conflicted with the file-based auto-memory system already in place. See [CodeGraph entry](codegraph-token-cutting-indexer.md) for the parallel decision on a more focused MCP install.
-- **`aklofas/kicad-happy` (full Claude/Codex plugin + GitHub Action)**: not enabled. The generic `kicad` skill folder is installed and covers most workflows, but the kicad-happy native plugin (with hooks + Action) is intentionally off pending real PCB work.
-- **Asen pack** (`prompt-optimizer`, `deep-interview`, `ralplan`, `ultraqa`, `ai-slop-cleaner`, `visual-verdict`): 5 of 6 names overlap with skills exposed by the `oh-my-claudecode` plugin currently loaded (verifiable via `omc-reference` or by inspecting `~/.claude/plugins/cache/omc/`). `prompt-optimizer` corresponds to OMC's `prompt-master`. Asen originals were not separately installed pending a side-by-side comparison.
+- **`aklofas/kicad-happy` (full Claude/Codex plugin + GitHub Action)**: the **skill folders** (`kicad`, `bom`, `datasheets`, `spice`, `emc`, `jlcpcb`, `pcbway`, `digikey`, `mouser`, `lcsc`, `element14`, `kidoc`) ARE installed and usable — visible in the Hardware/KiCad section above. The kicad-happy **native plugin** (with hooks + GitHub Action) is intentionally NOT enabled, pending real PCB work.
+- **Asen pack** mapping to currently-loaded equivalents:
+
+| Asen original | Currently loaded equivalent |
+|---|---|
+| `prompt-optimizer` | `prompt-master` (separate skill, not OMC) |
+| `deep-interview` | `oh-my-claudecode:deep-interview` |
+| `ralplan` | `oh-my-claudecode:ralplan` |
+| `ultraqa` | `oh-my-claudecode:ultraqa` |
+| `ai-slop-cleaner` | `oh-my-claudecode:ai-slop-cleaner` |
+| `visual-verdict` | `oh-my-claudecode:visual-verdict` |
+
+So **5 of 6** map to OMC; `prompt-optimizer` maps to a separate `prompt-master` skill. Asen originals were not separately installed pending a side-by-side comparison.
 
 ### MCP servers currently active
 
+**User-level (loads in every session)**:
+
 | MCP | Where wired | Auto-loaded steering |
 |---|---|---|
-| `codegraph` | `~/.claude.json` + `~/.codex/config.toml` | `~/.claude/CLAUDE.md` + `~/.codex/AGENTS.md` (lines marked `<!-- CODEGRAPH_START/END -->`) |
+| `codegraph` | `~/.claude.json` (`mcpServers`) + `~/.codex/config.toml` (`[mcp_servers.codegraph]`) | `~/.claude/CLAUDE.md` + `~/.codex/AGENTS.md` (lines marked `<!-- CODEGRAPH_START/END -->`) |
 
-To disable: `codegraph uninstall` (removes both MCP entries and the steering blocks).
+**Project-level Claude MCPs** (per `~/.claude.json` → `projects.<path>.mcpServers`, as of 2026-05-24):
+
+| Project path | MCP server |
+|---|---|
+| `~/Documents/Obsidian Vault/n8n` | `n8n-mcp` |
+| `~/Desktop/ai skill to document` | `alphaxiv` |
+| `~/Dropbox/cs310` | `project-spec-interviewer` |
+
+To disable CodeGraph: run `codegraph uninstall` (verify the `CODEGRAPH_START/END` blocks are gone from `~/.claude/CLAUDE.md` and `~/.codex/AGENTS.md` after — CLI removes the MCP entries reliably; the steering-block cleanup is worth diffing).
 
 ## How to ask the agent
 
