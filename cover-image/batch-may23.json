@@ -1,0 +1,23 @@
+{
+  "jobs": 2,
+  "tasks": [
+    {
+      "id": "codegraph",
+      "promptFiles": ["codegraph-indexer/prompts/cover.md"],
+      "image": "codegraph-indexer/cover.png",
+      "provider": "google",
+      "model": "gemini-3-pro-image-preview",
+      "ar": "16:9",
+      "quality": "2k"
+    },
+    {
+      "id": "skill-repos",
+      "promptFiles": ["codex-skill-repos-may23/prompts/cover.md"],
+      "image": "codex-skill-repos-may23/cover.png",
+      "provider": "google",
+      "model": "gemini-3-pro-image-preview",
+      "ar": "16:9",
+      "quality": "2k"
+    }
+  ]
+}
