@@ -177,6 +177,7 @@ project-spec-interviewer-skill
 | Entry | What you'll get |
 |-------|----------------|
 | **[Claude Code /handover — Never Lose Context Between Sessions](/learnAIDoc/wiki/claude-code-handover-skill/)** | The /handover skill: end-of-session memory export so the next session picks up exactly where you left off. |
+| **[progress.md Handoff — A Scripted Codex ⇄ Claude Code Workflow](/learnAIDoc/wiki/progress-md-codex-handoff/)** | Cross-agent handoff: a tracked `progress.md` log + `/checkpoint` and `/resume` slash commands that work identically in Claude Code and Codex. Use when you alternate sessions between the two agents. |
 | **[Meta Harness — The Agent That Optimizes Its Own Scaffolding](/learnAIDoc/wiki/meta-harness-self-optimizing-agent/)** | Stanford/MIT approach: the agent rewrites its own CLAUDE.md after each session. |
 
 ---
@@ -305,6 +306,34 @@ cp ~/Dropbox/claude-export/skills/*.md ~/.claude/skills/ 2>/dev/null || true
 # rsync -av ~/Dropbox/claude-export/skills/ ~/.claude/skills/
 ```
 
+### Step 8b — Migrate the progress.md handoff skills
+
+If you use the [progress.md Handoff workflow](/learnAIDoc/wiki/progress-md-codex-handoff/), there are **two halves** that need to travel:
+
+**Half 1 — User-level skill directories that back the handoff workflow (one-time per machine).** These are SKILL.md files inside named subdirectories (`~/.codex/skills/checkpoint/SKILL.md`, etc.), NOT top-level `.md` files — Step 1b's `*.md` glob misses them. Copy the whole directories explicitly:
+
+```bash
+# On the old Mac — add to your export
+mkdir -p ~/Desktop/claude-export/skills-tree/{codex,claude}
+cp -R ~/.codex/skills/checkpoint  ~/Desktop/claude-export/skills-tree/codex/
+cp -R ~/.codex/skills/resume      ~/Desktop/claude-export/skills-tree/codex/
+cp -R ~/.claude/skills/checkpoint ~/Desktop/claude-export/skills-tree/claude/
+cp -R ~/.claude/skills/resume     ~/Desktop/claude-export/skills-tree/claude/
+
+# On the new Mac — restore (after Dropbox/rsync transfer)
+mkdir -p ~/.codex/skills ~/.claude/skills
+cp -R ~/Dropbox/claude-export/skills-tree/codex/*  ~/.codex/skills/
+cp -R ~/Dropbox/claude-export/skills-tree/claude/* ~/.claude/skills/
+```
+
+After this, the `/checkpoint` and `/resume` slash commands resolve in any project on the new Mac **that also has the per-project handoff files from Half 2** — both halves are required.
+
+**Half 2 — Per-project handoff files (already in `git`).** The script `scripts/agent-handoff.sh`, the project-level Claude Code slash command files `.claude/commands/checkpoint.md` and `.claude/commands/resume.md`, `AGENTS.md`, and the live `progress.md` log all live inside each repo and are tracked. They come with `git clone` — nothing extra to install per-project. To add the workflow to a NEW project, copy these 5 files from any existing project that uses it, commit them, and you're done.
+
+(Note on terminology: the project-level `.claude/commands/*.md` files and the user-level `~/.{codex,claude}/skills/<name>/SKILL.md` files are two different mechanisms that both surface the same `/checkpoint` and `/resume` UX. Project-level files take precedence in projects that have them; user-level skills are the cross-project fallback.)
+
+The wiki entry has a Quick Reference section if you forget the daily-use commands: https://weihaoqu.github.io/learnAIDoc/wiki/progress-md-codex-handoff/
+
 ### Step 9 — Authenticate Codex
 
 ```bash
@@ -343,6 +372,7 @@ Then open Claude Code and:
 |------|---------|--------------|
 | `~/.claude/skills/*.md` | Custom files, not third-party | Step 1b + Step 7 above |
 | `~/.claude/skills/` packages | Too large, reinstall on demand | rsync if you want all of them |
+| `~/.codex/skills/` | Out of scope for the Claude-Code-focused export script | Mirror the `~/.claude/skills/` migration manually, or use Step 8b for the specific handoff skills |
 | `~/.claude/projects/` | Per-project memory | Copy if you want history; skip to start fresh |
 | `~/.claude/history.jsonl` | Session logs, 1.6MB+ | Copy for archival; not needed for function |
 | API keys | Never copy across machines | Re-enter manually in api_keys.md |
