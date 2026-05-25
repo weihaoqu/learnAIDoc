@@ -3,7 +3,7 @@ title: "Copy My Claude Code Setup — The LearnAI Agent Stack From Scratch"
 date: 2026-05-22
 category: Claude Code Engineering
 tags: [claude-code, setup, agent-harness, plugins, skills, goal, codex, oh-my-claudecode, migration, beginner-guide, workflow, spec-driven, agentic-engineering]
-related: ["Claude Code 101 — Anthropic's Official Onboarding Course", "Harness Engineering — The Real Bottleneck Isn't the Model", "oh-my-claudecode — Multi-AI Orchestration Plugin for Claude Code", "/goal 使用指南 — The Visual Playbook for Claude Code's Persistent Goal Mechanism", "Cross-Model Code Review — Why Claude Can't Catch Its Own Bugs", "project-spec-interviewer-skill — Interactive Terminal Interview That Writes Your spec.md", "Start Here — AI Agents & Claude Code for Beginners"]
+related: ["Claude Code 101 — Anthropic's Official Onboarding Course", "Harness Engineering — The Real Bottleneck Isn't the Model", "oh-my-claudecode — Multi-AI Orchestration Plugin for Claude Code", "/goal 使用指南 — The Visual Playbook for Claude Code's Persistent Goal Mechanism", "Cross-Model Code Review — Why Claude Can't Catch Its Own Bugs", "project-spec-interviewer-skill — Interactive Terminal Interview That Writes Your spec.md", "Start Here — AI Agents & Claude Code for Beginners", "progress.md Handoff — A Scripted Codex ⇄ Claude Code Workflow"]
 icon: "🛠️"
 image: "/assets/images/copy-my-claude-code-setup.png"
 ---
