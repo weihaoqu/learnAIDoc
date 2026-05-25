@@ -233,6 +233,20 @@ Either side can pick up. The log shows you the whole evolution. If you DO checkp
 
 The whole workflow is two slash commands. Everything else is plumbing.
 
+### To install the workflow in a NEW project (one command)
+
+From the project's root directory:
+
+```bash
+bash ~/.claude/skills/checkpoint/install.sh
+```
+
+That copies the 4 handoff files into the project (`scripts/agent-handoff.sh`, `.claude/commands/checkpoint.md`, `.claude/commands/resume.md`, and `AGENTS.md` if absent), adds two `.gitignore` entries, and prints what to do next. Idempotent — safe to re-run. The installer refuses to overwrite an existing `AGENTS.md`; if you have one, it tells you what to append manually. The `~/.codex/skills/checkpoint/install.sh` mirror does the same thing from Codex.
+
+Source path defaults to `~/Desktop/learnai-course`; override with `PROGRESS_HANDOFF_SRC=/path/to/source` if the canonical repo lives elsewhere on your machine.
+
+After install, the next two slash commands work in that project.
+
 ### To checkpoint and stop (from EITHER agent)
 
 Just type:

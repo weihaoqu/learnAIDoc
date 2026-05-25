@@ -328,7 +328,16 @@ cp -R ~/Dropbox/claude-export/skills-tree/claude/* ~/.claude/skills/
 
 After this, the `/checkpoint` and `/resume` slash commands resolve in any project on the new Mac **that also has the per-project handoff files from Half 2** — both halves are required.
 
-**Half 2 — Per-project handoff files (already in `git`).** The script `scripts/agent-handoff.sh`, the project-level Claude Code slash command files `.claude/commands/checkpoint.md` and `.claude/commands/resume.md`, `AGENTS.md`, and the live `progress.md` log all live inside each repo and are tracked. They come with `git clone` — nothing extra to install per-project. To add the workflow to a NEW project, copy these 5 files from any existing project that uses it, commit them, and you're done.
+**Half 2 — Per-project handoff files (already in `git` for projects that have it).** The script `scripts/agent-handoff.sh`, the project-level Claude Code slash command files `.claude/commands/checkpoint.md` and `.claude/commands/resume.md`, `AGENTS.md`, and the live `progress.md` log all live inside each repo and are tracked. For projects that already have the workflow, they come with `git clone` — nothing to install. For a NEW project (or one you didn't `git clone`), use the one-command installer:
+
+```bash
+cd /path/to/new/project
+bash ~/.claude/skills/checkpoint/install.sh
+```
+
+That copies the 4 files (script + 2 slash commands + AGENTS.md if absent) and adds two `.gitignore` entries. Idempotent and safe to re-run. Existing `AGENTS.md` is never overwritten — if you have one, the installer tells you what to append manually. `~/.codex/skills/checkpoint/install.sh` is the mirror for running from Codex. Source path defaults to `~/Desktop/learnai-course` (the canonical repo); override with `PROGRESS_HANDOFF_SRC=/path/to/source` if you keep it elsewhere.
+
+`progress.md` is NOT copied by the installer — it's created on your first `/checkpoint` in that project.
 
 (Note on terminology: the project-level `.claude/commands/*.md` files and the user-level `~/.{codex,claude}/skills/<name>/SKILL.md` files are two different mechanisms that both surface the same `/checkpoint` and `/resume` UX. Project-level files take precedence in projects that have them; user-level skills are the cross-project fallback.)
 
