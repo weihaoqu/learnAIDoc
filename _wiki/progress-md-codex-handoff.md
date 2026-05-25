@@ -229,6 +229,78 @@ You:  /resume
 
 Either side can pick up. The log shows you the whole evolution. If you DO checkpoint before committing, that's fine too — but the next session will see HEAD ≠ entry.HEAD and AGENTS.md tells the agent to flag that conflict to you before editing.
 
+## Quick Reference — what to type today
+
+The whole workflow is two slash commands. Everything else is plumbing.
+
+### To checkpoint and stop (from EITHER agent)
+
+Just type:
+
+```
+/checkpoint
+```
+
+The agent will compose the summary from current conversation context, run the script with the correct writer label (`checkpoint claude` from Claude Code, `checkpoint codex` from Codex), and stop.
+
+If you want to write the summary yourself:
+
+```
+/checkpoint summary: <one-paragraph summary of what changed, what's next, off-limits>
+```
+
+### To resume (from EITHER agent)
+
+Just type:
+
+```
+/resume
+```
+
+The agent runs the script, reads the top entry of `progress.md`, reads `CLAUDE.md` and `AGENTS.md`, summarizes the state in ≤6 bullets, and asks for the next objective.
+
+### To switch between agents
+
+End of Claude Code session:
+
+```
+1. (in chat) "Commit."          Claude commits.
+2. (in chat) "Push."            Claude pushes (with your explicit OK).
+3. (in chat) "/checkpoint"      Claude writes a checkpoint entry. Close the terminal.
+```
+
+Start of Codex session (in a new terminal):
+
+```
+cd /path/to/repo
+codex "Run /resume and continue."
+```
+
+Codex picks up from the top entry. Same shape in reverse to come back to Claude Code.
+
+### The minimum viable session
+
+```
+/resume                # at start
+... do work ...
+"Commit." → "Push."    # if applicable
+/checkpoint            # at end
+```
+
+Three keystrokes (effectively two slash commands) bracket every session. Skip neither.
+
+### Three guardrails that prevent the common failures
+
+| Failure | Guardrail |
+|---|---|
+| Next session edits files the previous session intentionally left dirty | List "off-limits files" in your checkpoint summary |
+| Next session pushes work that wasn't ready | Say "Push status: unpushed" or "Push: only with Q's explicit approval" in the entry |
+| Two sessions conflict because both think they're authoritative | The agent label (`checkpoint claude` vs `checkpoint codex`) makes the writer visible — you can see in `progress.md` and `git log` who wrote what |
+
+### One mental model to keep in your head
+
+**The repo is the shared memory.** Both agents read git state plus one file (`progress.md`). Whatever isn't in those two places doesn't exist between sessions. Treat your conversation history as ephemeral — anything you want to survive the switch goes into the checkpoint.
+
 ## Three bugs the audit caught
 
 The first cut of the script had three real bugs that any cross-agent handoff script will hit. Worth knowing before you reinvent this:
