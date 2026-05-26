@@ -3,7 +3,7 @@ title: "Copy My Claude Code Setup — The LearnAI Agent Stack From Scratch"
 date: 2026-05-22
 category: Claude Code Engineering
 tags: [claude-code, setup, agent-harness, plugins, skills, goal, codex, oh-my-claudecode, migration, beginner-guide, workflow, spec-driven, agentic-engineering]
-related: ["Claude Code 101 — Anthropic's Official Onboarding Course", "Harness Engineering — The Real Bottleneck Isn't the Model", "oh-my-claudecode — Multi-AI Orchestration Plugin for Claude Code", "/goal 使用指南 — The Visual Playbook for Claude Code's Persistent Goal Mechanism", "Cross-Model Code Review — Why Claude Can't Catch Its Own Bugs", "project-spec-interviewer-skill — Interactive Terminal Interview That Writes Your spec.md", "Start Here — AI Agents & Claude Code for Beginners", "progress.md Handoff — A Scripted Codex ⇄ Claude Code Workflow"]
+related: ["New-Mac Migration — Codex + Claude Code + checkpoint/resume in 90 Minutes", "Claude Code 101 — Anthropic's Official Onboarding Course", "Harness Engineering — The Real Bottleneck Isn't the Model", "oh-my-claudecode — Multi-AI Orchestration Plugin for Claude Code", "/goal 使用指南 — The Visual Playbook for Claude Code's Persistent Goal Mechanism", "Cross-Model Code Review — Why Claude Can't Catch Its Own Bugs", "project-spec-interviewer-skill — Interactive Terminal Interview That Writes Your spec.md", "Start Here — AI Agents & Claude Code for Beginners", "progress.md Handoff — A Scripted Codex ⇄ Claude Code Workflow"]
 icon: "🛠️"
 image: "/assets/images/copy-my-claude-code-setup.png"
 ---
@@ -326,7 +326,7 @@ cp -R ~/Dropbox/claude-export/skills-tree/codex/*  ~/.codex/skills/
 cp -R ~/Dropbox/claude-export/skills-tree/claude/* ~/.claude/skills/
 ```
 
-After this, the `/checkpoint` and `/resume` slash commands resolve in any project on the new Mac **that also has the per-project handoff files from Half 2** — both halves are required.
+After this, in Claude Code the `/checkpoint` and `/resume` slash commands resolve in any project on the new Mac **that also has the per-project handoff files from Half 2** — both halves are required. In Codex the same workflow is reachable by typing the bare trigger words `checkpoint` / `resume` (no slash; Codex doesn't honor user-defined slash commands — the skill activates on those trigger phrases from its description and `AGENTS.md`).
 
 **Half 2 — Per-project handoff files (already in `git` for projects that have it).** The script `scripts/agent-handoff.sh`, the project-level Claude Code slash command files `.claude/commands/checkpoint.md` and `.claude/commands/resume.md`, `AGENTS.md`, and the live `progress.md` log all live inside each repo and are tracked. For projects that already have the workflow, they come with `git clone` — nothing to install. For a NEW project (or one you didn't `git clone`), use the one-command installer:
 
@@ -339,7 +339,7 @@ That copies the 4 files (script + 2 slash commands + AGENTS.md if absent) and ad
 
 `progress.md` is NOT copied by the installer — it's created on your first `/checkpoint` in that project.
 
-(Note on terminology: the project-level `.claude/commands/*.md` files and the user-level `~/.{codex,claude}/skills/<name>/SKILL.md` files are two different mechanisms that both surface the same `/checkpoint` and `/resume` UX. Project-level files take precedence in projects that have them; user-level skills are the cross-project fallback.)
+(Note on terminology: `.claude/commands/checkpoint.md` is a Claude Code project-level slash command (gives you `/checkpoint` inside that project). `~/.claude/skills/checkpoint/SKILL.md` is a Claude Code user-level skill (also reachable as `/checkpoint` from any project — the cross-project fallback). `~/.codex/skills/checkpoint/SKILL.md` is a Codex skill — but Codex doesn't expose user skills as slash commands, it activates them on trigger phrases like `checkpoint`, `save context`, `wrap up` listed in the skill's description and in `AGENTS.md`. So the Claude-side install gives you a slash command; the Codex-side install gives you a triggered skill. Both invoke the same `scripts/agent-handoff.sh`.)
 
 The wiki entry has a Quick Reference section if you forget the daily-use commands: https://weihaoqu.github.io/learnAIDoc/wiki/progress-md-codex-handoff/
 

@@ -3,7 +3,7 @@ title: "progress.md Handoff — A Scripted Codex ⇄ Claude Code Workflow"
 date: 2026-05-25
 category: Claude Code Workflows
 tags: [codex, claude-code, handoff, progress-md, workflow, agents-md, multi-agent, slash-commands, automation, git, project-memory]
-related: ["Claude Code + Codex Handoff Workflow — Switching Models Without Losing Context", "Claude Code /handover: Never Lose Context Between Sessions", "Codex + Claude Code for Research — A Practical Tutorial", "Copy My Claude Code Setup — The LearnAI Agent Stack From Scratch"]
+related: ["New-Mac Migration — Codex + Claude Code + checkpoint/resume in 90 Minutes", "Claude Code + Codex Handoff Workflow — Switching Models Without Losing Context", "Claude Code /handover: Never Lose Context Between Sessions", "Codex + Claude Code for Research — A Practical Tutorial", "Copy My Claude Code Setup — The LearnAI Agent Stack From Scratch"]
 icon: "🔄"
 image: "/assets/images/progress-md-codex-handoff.png"
 ---
@@ -231,7 +231,9 @@ Either side can pick up. The log shows you the whole evolution. If you DO checkp
 
 ## Quick Reference — what to type today
 
-The whole workflow is two slash commands. Everything else is plumbing.
+The whole workflow is two slash commands in Claude Code (or two trigger words in Codex — see caveat below). Everything else is plumbing.
+
+> **Codex caveat:** Codex's TUI doesn't honor user-defined slash commands — only its built-in slashes (`/model`, `/init`, etc.). In Codex, type the trigger word **without** the leading slash: `checkpoint`, `resume`, `save context`, `wrap up`, `pick up where we left off`. The skill description and `AGENTS.md` both list these phrases, and Codex activates the same `scripts/agent-handoff.sh` workflow off them. Every example below shows the slash form (Claude Code); strip the slash when running in Codex.
 
 ### To install the workflow in a NEW project (one command)
 
