@@ -1,7 +1,7 @@
 ---
 title: "All Agentic Architectures — 17+ Runnable Jupyter Notebook Implementations"
 date: 2026-05-21
-category: Learning & Education
+category: Learning Resources
 tags: [ai-agents, architecture, langchain, langgraph, jupyter, hands-on, multi-agent, react, reflection, tool-calling, learning-path]
 related: ["7 Agent Architectures — From Single Agent to Enterprise Graph Workflows", "AI Agent Primer — The Ladder Workflow for Reliable Multi-Step Reasoning", "12-Factor Agents — Engineering Principles for Production AI Agents", "MetaGPT — The AI Software Company That Runs on One Prompt"]
 icon: "🗺️"

@@ -1,7 +1,7 @@
 ---
 title: "Why I Don't Vibe Code — Jacob Harr's Defense of Friction and Essential Complexity"
 date: 2026-05-21
-category: Learning & Education
+category: Industry & Trends
 tags: [vibe-coding, essential-complexity, software-engineering, ai-ethics, friction, deliberate-practice, cs-education, abstraction]
 related: ["Vibe Coding 新手指南 — The Open-Source Primer for Non-Technical AI-Assisted Development", "Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "10 Lessons from Six Months of Agentic Coding", "What is Agentic Engineering? A Teaching Primer"]
 icon: "🧱"

@@ -1,7 +1,7 @@
 ---
 title: "DeepClaude — Run Claude Code with DeepSeek V4 Pro for 17x Less"
 date: 2026-05-08
-category: Claude Code
+category: Claude Code Basics
 tags: [claude-code, deepseek, cost-optimization, open-source, proxy, alternative-backend]
 related: ["Caveman — Token Compression for AI Coding Agents", "Claude Code Session Management & 1M Context — The Official Decision Framework"]
 icon: "💰"

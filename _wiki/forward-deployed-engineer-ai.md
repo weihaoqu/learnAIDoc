@@ -1,7 +1,7 @@
 ---
 title: "Forward Deployed Engineer — AI时代的新岗位: On-Site Coder, Architect, and Consultant in One"
 date: 2026-05-19
-category: AI Careers & Roles
+category: Industry & Trends
 tags: [fde, forward-deployed-engineer, career, solutions-architect, enterprise-ai, claude-code, on-site-engineer, ai-roles, vibe-coding, technical-consulting]
 related: ["What is Agentic Engineering? A Teaching Primer", "Harness Engineering — The Real Bottleneck Isn't the Model", "Beyond /goal — The Orchestrator + Headless Pattern for Long-Running Claude Sessions"]
 icon: "🚀"

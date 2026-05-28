@@ -1,7 +1,7 @@
 ---
 title: "progress.md Handoff — A Scripted Codex ⇄ Claude Code Workflow"
 date: 2026-05-25
-category: Claude Code Workflows
+category: Agent Setup & Migration
 tags: [codex, claude-code, handoff, progress-md, workflow, agents-md, multi-agent, slash-commands, automation, git, project-memory]
 related: ["New-Mac Migration — Codex + Claude Code + checkpoint/resume in 90 Minutes", "Claude Code + Codex Handoff Workflow — Switching Models Without Losing Context", "Claude Code /handover: Never Lose Context Between Sessions", "Codex + Claude Code for Research — A Practical Tutorial", "Copy My Claude Code Setup — The LearnAI Agent Stack From Scratch"]
 icon: "🔄"

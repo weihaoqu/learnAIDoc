@@ -1,7 +1,7 @@
 ---
 title: "ML HW-SW Codesign / Efficient AI — 13 Free Lecture Pages on ML-Hardware-Software Co-Design"
 date: 2026-05-19
-category: Learning & Education
+category: Learning Resources
 tags: [efficient-ai, ml-systems, hardware-software-codesign, pruning, quantization, compression, lecture-series, free, deep-learning, pytorch]
 related: ["How to Train Your GPT — Interactive ML Textbook for Building a 151M-Parameter LLM from Zero", "Paper-Code Joint Analysis & Contract-Driven Skill Design", "Anthropic Academy — 13 Free Claude Courses, 12-Week Roadmap"]
 icon: "⚡"

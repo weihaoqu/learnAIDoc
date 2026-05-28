@@ -1,7 +1,7 @@
 ---
 title: "AI Agent Primer — The Vocabulary Ladder and 18-Step Workflow"
 date: 2026-05-12
-category: AI Learning
+category: Learning Resources
 tags: [ai-agent, primer, vocabulary, glossary, onboarding, learnai, token, prompt, context, skill, mcp, harness, agent, llm]
 related: ["What is Agentic Engineering? A Teaching Primer", "Harness Engineering — The Real Bottleneck Isn't the Model", "Agents Need Control Flow — Brian's Case for Code Over Prompts", "Seeing Like an Agent — How Anthropic Designs Tools for Claude Code", "Anthropic Managed Agents — Decoupling the Brain from the Hands", "7 Agent Architectures — From Single Agent to Enterprise Graph Workflows", "LLM Architecture Gallery — Visual Reference for Every Major Model", "Agentic AI Engineer Roadmap 2026 — Eight Pillars from Prompt to Production", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Prompt Master — Write Accurate Prompts for Any AI Tool, Zero Waste", "The Secret of Great Prompts: Fewer Words, Better Results", "Caveman — Token Compression for AI Coding Agents", "alphaXiv MCP — Semantic ArXiv Search Directly in Claude Code", "How Anthropic Uses Skills — Thariq's 9-Category Framework & the Gotchas Pattern", "Claude Code Skills: Resources & Repos", "Addy Osmani's agent-skills — Senior Engineering Practices as SKILL.md Files", "Matt Pocock's Skills — Claude Code for Real Engineers", "Karpathy Skills — Four Rules That Fix LLM Coding's Worst Habits", "Start Here — AI Agents & Claude Code for Beginners"]
 icon: "🧭"

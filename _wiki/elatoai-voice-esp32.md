@@ -1,7 +1,7 @@
 ---
 title: "ElatoAI — Realtime Voice AI on ESP32"
 date: 2026-04-26
-category: AI Research
+category: Creative & Media
 tags: [voice-ai, esp32, iot, hardware, edge-computing, realtime, speech-to-speech]
 related: ["Voice-Pro — Local AI Dubbing, Translation, and Voice Cloning in One Tool"]
 icon: "🔊"

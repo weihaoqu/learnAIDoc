@@ -1,7 +1,7 @@
 ---
 title: "Start Here — AI Agents & Claude Code for Beginners"
 date: 2026-05-21
-category: AI Learning
+category: Learning Resources
 tags: [beginner, agents, claude-code, learning-path, onboarding, agentic-engineering, vibe-coding, roadmap, hub]
 related: ["What is Agentic Engineering? A Teaching Primer", "Vibe Coding 新手指南 — The Open-Source Primer for Non-Technical AI-Assisted Development", "Claude Code 101 — Anthropic's Official Onboarding Course", "AI Agent Primer — The Vocabulary Ladder and 18-Step Workflow", "Agentic AI Engineer Roadmap 2026 — Eight Pillars from Prompt to Production"]
 icon: "🚀"

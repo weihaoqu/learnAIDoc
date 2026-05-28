@@ -1,7 +1,7 @@
 ---
 title: "Awesome GPT Image 2 Prompt Library — 7,000+ Prompts with Live Preview for 16 Scenarios"
 date: 2026-05-19
-category: AI Tools & Workflows
+category: Creative & Media
 tags: [gpt-image-2, image-generation, prompt-library, prompts, open-source, visual-design, multilingual, e-commerce, illustration, brand-design, portrait]
 related: ["GPT Image 2 水墨风 Slide Prompt — Structured Template for Ink-Wash Style Slides", "ImageLens — Chrome Extension That Extracts AI-Editable Prompts from Any Web Image", "designprompts.dev — 30+ Curated AI Design Styles with One-Click Prompts for Frontend Engineers", "Prompt Master — Write Accurate Prompts for Any AI Tool, Zero Waste"]
 icon: "🖼️"

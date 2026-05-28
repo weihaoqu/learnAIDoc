@@ -1,7 +1,7 @@
 ---
 title: "Godogen — Prompt-to-Game Pipeline for Godot and Bevy"
 date: 2026-04-26
-category: Tools
+category: Skills & Plugins
 tags: [game-development, godot, bevy, claude-code, codex, ai-game-gen, autonomous-agents]
 related: ["AI Mastery Games — Teaching AI Literacy Through Interactive Games", "Claude Code Custom Agents", "Claude Code: Agent Teams vs Subagents"]
 icon: "🎮"

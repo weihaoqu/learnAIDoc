@@ -1,7 +1,7 @@
 ---
 title: "Caveman — Token Compression for AI Coding Agents"
 date: 2026-04-26
-category: Tools
+category: Skills & Plugins
 tags: [token-optimization, claude-code, codex, cursor, prompt-compression, cost-saving, skills]
 related: ["Claude Code Token Costs: The Hidden Tax and How rtk Cuts It by 80%", "Claude Code Skills: Resources & Repos", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure"]
 icon: "🪨"

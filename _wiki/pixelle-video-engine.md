@@ -1,7 +1,7 @@
 ---
 title: "Pixelle-Video — AI Fully Automated Short Video Engine"
 date: 2026-04-26
-category: Tools
+category: Creative & Media
 tags: [video-generation, ai-video, short-video, automation, tts, content-creation]
 related: ["OpenShorts — Open Source AI Video Platform", "Novel to Multimedia Pipeline — From Chapter Draft to Douyin in One Session"]
 icon: "🎬"

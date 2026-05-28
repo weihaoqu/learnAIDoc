@@ -1,7 +1,7 @@
 ---
 title: "How to Train Your GPT — Interactive ML Textbook for Building a 151M-Parameter LLM from Zero"
 date: 2026-05-19
-category: Learning & Education
+category: Learning Resources
 tags: [llm, machine-learning, transformer, jupyter-notebook, interactive, open-source, gpt, llama, pytorch, fine-tuning, lora, moe, education, from-scratch]
 related: ["Paper-Code Joint Analysis & Contract-Driven Skill Design", "Autoresearch: 100 Autonomous ML Experiments Overnight", "Claude Code 101 — Anthropic's Official Onboarding Course", "Anthropic Academy — 13 Free Claude Courses, 12-Week Roadmap"]
 icon: "📚"

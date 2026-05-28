@@ -1,7 +1,7 @@
 ---
 title: "Nature Skills — 9-Skill Claude Code Bundle for Academic Writing at Nature Standards"
 date: 2026-05-21
-category: AI Tools & Workflows
+category: AI for Research
 tags: [claude-code, skills, academic-writing, nature, paper-writing, bilingual, pptx, figure, citation, pubmed, arxiv, reviewer-response, shanghai-jiao-tong, open-source, mit]
 related: ["Academic Research Skills for Claude Code — From Search to Final Draft", "PaperSpine — Motivation-Driven Paper Writing Skill for Codex and Claude Code", "MATLAB MCP — Connect Claude Code to Your Local MATLAB Environment", "Posterskill — AI-Generated Academic Conference Posters from Your Paper", "AI Agents for Academic Research & Writing — From KatmerCode to the Nature Playbook", "Claude-Prism — Local-First Academic Writing Workspace with AI"]
 icon: "🔬"

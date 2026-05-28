@@ -1,7 +1,7 @@
 ---
 title: "Codex + Claude Code Skill Repos: May 23 Batch"
 date: 2026-05-23
-category: AI Coding Tools
+category: Skills & Plugins
 tags: [codex, claude-code, skills, awesome-list, marketplace, openai-skills, mattpocock, trailofbits, anthropics-financial-services, voidful, paperspine, imbad0202]
 related: ["CodeGraph: Local Code Knowledge Graph that Cuts Token Usage", "academic-research-skills — Imbad0202's 4-Skill Claude Code Pipeline for Academic Research", "Claude Code Skills: Resources & Repos", "How Anthropic Uses Skills — Thariq's 9-Category Framework & the Gotchas Pattern"]
 icon: "📚"

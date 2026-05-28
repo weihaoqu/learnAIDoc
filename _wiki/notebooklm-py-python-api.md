@@ -1,7 +1,7 @@
 ---
 title: "notebooklm-py — Unofficial Python API for Google NotebookLM Automation"
 date: 2026-05-21
-category: AI Tools & Workflows
+category: Skills & Plugins
 tags: [notebooklm, python, api, automation, research, audio-summary, mindmap, google, unofficial, cli, content-generation]
 related: ["NotebookLM's Grading Paradox — When AI Feedback Looks Right But Teaches Wrong", "academic-research-skills — Imbad0202's 4-Skill Claude Code Pipeline for Academic Research", "Building a Research KB — Zotero + Obsidian + Claude Code"]
 icon: "🔌"

@@ -1,7 +1,7 @@
 ---
 title: "Math-To-Manim — AI-Automated LaTeX-to-Animation Pipeline"
 date: 2026-05-21
-category: AI Tools & Workflows
+category: Creative & Media
 tags: [manim, animation, math-education, latex, ai-automation, visualization, 3blue1brown, python, video-generation]
 related: ["Make Slides: AI-Powered Interactive Teaching Slides", "open-slide — The Slide Framework Built for AI Coding Agents", "MIT 6.5940 — Song Han's TinyML & Efficient Deep Learning Course", "ML HW-SW Codesign / Efficient AI — 13 Free Lecture Pages on ML-Hardware-Software Co-Design", "AI Slide Generation with Claude Code — Tool Comparison & Guide"]
 icon: "🎬"

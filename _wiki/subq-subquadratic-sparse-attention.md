@@ -1,7 +1,7 @@
 ---
 title: "SubQ — The First Subquadratic LLM: 12M Token Context at 5% of Opus Cost"
 date: 2026-05-08
-category: AI Research
+category: AI for Research
 tags: [llm-architecture, attention, sparse-attention, subquadratic, long-context, efficiency, transformer-alternative]
 related: ["Claude Code Session Management & 1M Context — The Official Decision Framework", "Caveman — Token Compression for AI Coding Agents"]
 icon: "🔬"

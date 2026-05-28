@@ -1,7 +1,7 @@
 ---
 title: "html-anything — Claude Outputs Any Document Type as a Self-Contained HTML File, Zero Config"
 date: 2026-05-19
-category: AI Tools & Workflows
+category: Skills & Plugins
 tags: [html, claude-code, ai-tools, template, document-generation, open-source, sse-streaming, no-api-key, npm, agent-cli, multi-format]
 related: ["The Unreasonable Effectiveness of HTML — Thariq's Case for Output Format Engineering", "What is Agentic Engineering? A Teaching Primer", "Prompt Master — Write Accurate Prompts for Any AI Tool, Zero Waste", "grill-me — When AI Interviews You Before Writing Code"]
 icon: "🌐"

@@ -1,7 +1,7 @@
 ---
 title: "GBrain — Garry Tan's Persistent Agent Memory System"
 date: 2026-04-26
-category: AI Research
+category: AI for Research
 tags: [agent-memory, knowledge-graph, gbrain, garry-tan, openclaw, hermes, rag, skills]
 related: ["codegraph — Pre-Indexed Knowledge Graph That Cuts Claude Code's Tool Calls 92%", "Code Review Graph — Turn Your Codebase Into a Knowledge Graph, Cut Tokens 8x"]
 icon: "🧠"

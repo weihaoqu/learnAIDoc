@@ -1,7 +1,7 @@
 ---
 title: "AI Slide Generation with Claude Code — Tool Comparison & Guide"
 date: 2026-05-21
-category: AI Tools & Workflows
+category: Creative & Media
 tags: [slides, presentations, html-slides, claude-code, agent-skills, teaching, ppt, manim, animation, open-source, hub]
 related: ["HTML PPT Studio — AI-Powered Presentation Skill for Claude Code", "guizang-ppt-skill — The Cross-Agent HTML Slide Generation Skill", "Make Slides: AI-Powered Interactive Teaching Slides", "open-slide — The Slide Framework Built for AI Coding Agents", "GPT Image 2 水墨风 Slide Prompt — Structured Template for Ink-Wash Style Slides", "Math-To-Manim — AI-Automated LaTeX-to-Animation Pipeline"]
 icon: "📊"

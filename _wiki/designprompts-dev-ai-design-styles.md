@@ -1,7 +1,7 @@
 ---
 title: "designprompts.dev — 30+ Curated AI Design Styles with One-Click Prompts for Frontend Engineers"
 date: 2026-05-19
-category: AI Tools & Workflows
+category: Creative & Media
 tags: [design, frontend, prompts, ai-design, visual-styles, bauhaus, steampunk, vapor-wave, saas-design, ui-ux, no-code, creative-ai]
 related: ["UI UX Pro Max — 67 Heuristics + 161 Design Principles for AI-Driven Interface Review", "GPT Image 2 水墨风 Slide Prompt — Structured Template for Ink-Wash Style Slides", "ImageLens — Chrome Extension That Extracts AI-Editable Prompts from Any Web Image", "Prompt Master — Write Accurate Prompts for Any AI Tool, Zero Waste"]
 icon: "🎨"

@@ -1,7 +1,7 @@
 ---
 title: "Claude Code Environment Replication — Portable Setup Across Machines"
 date: 2026-05-10
-category: Claude Code
+category: Agent Setup & Migration
 redirect_from:
   - "/wiki/claude code/claude-code-environment-replication/"
 tags: [claude-code, setup, dotfiles, plugins, skills, hooks, environment, replication, portable-config]

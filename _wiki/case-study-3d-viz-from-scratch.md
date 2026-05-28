@@ -1,7 +1,7 @@
 ---
 title: "Case Study: Building a 3D Specimen Viewer from Scratch — Every Prompt I Used, in Order"
 date: 2026-05-14
-category: AI Learning
+category: Learning Resources
 tags: [case-study, tutorial, teaching-mode, claude-code, cell-architecture-studio, simple-machines, build-from-scratch, prompt-engineering, 3d-visualization, react-three-fiber, codex, gemini, ai-collaboration]
 related: ["Building CAS-Style 3D Knowledge Visualizations — From a PDF to a Deployed Specimen Viewer", "The Unreasonable Effectiveness of HTML — Thariq's Case for Output Format Engineering", "AI Agent Primer — The Vocabulary Ladder and 18-Step Workflow", "AI Engineering from Scratch — Rohit Ghumare's 416-Lesson Math-to-MCP Curriculum", "Codex + Claude Code for Research — A Practical Tutorial", "Cross-Model Code Review — Why Claude Can't Catch Its Own Bugs"]
 icon: "🏗️"

@@ -1,7 +1,7 @@
 ---
 title: "12-Factor Agents — Engineering Principles for Production AI"
 date: 2026-05-21
-category: AI Engineering
+category: Learning Resources
 tags: [ai-agents, engineering, architecture, production-ai, design-patterns, control-flow, error-handling, modular-design, framework-agnostic]
 related: ["7 Agent Architectures — From Single Agent to Enterprise Graph Workflows", "Harness Engineering — The Real Bottleneck Isn't the Model", "AI Agent Primer — The Vocabulary Ladder and 18-Step Workflow", "What is Agentic Engineering? A Teaching Primer"]
 icon: "🏗️"

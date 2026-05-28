@@ -1,7 +1,7 @@
 ---
 title: "GPT Image 2 水墨风 Slide Prompt — Structured Template for Ink-Wash Style Slides"
 date: 2026-05-11
-category: AI Tools & Workflows
+category: Creative & Media
 tags: [gpt-image-2, image-generation, prompt-template, slide-design, ink-wash, 水墨, wabi-sabi, visual-design, codex, claude-code, agent-orchestration]
 related: ["The Unreasonable Effectiveness of HTML — Thariq's Case for Output Format Engineering", "HTML PPT Studio — AI-Powered Presentation Skill for Claude Code", "Make Slides: AI-Powered Interactive Teaching Slides", "open-slide — The Slide Framework Built for AI Coding Agents", "Prompt Master — Write Accurate Prompts for Any AI Tool, Zero Waste", "Agents with Taste — Encoding Design Judgment as Skill Files", "AI Slide Generation with Claude Code — Tool Comparison & Guide"]
 icon: "🖌️"

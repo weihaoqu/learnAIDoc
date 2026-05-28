@@ -1,7 +1,7 @@
 ---
 title: "7 Agent Architectures — From Single Agent to Enterprise Graph Workflows"
 date: 2026-05-08
-category: AI Research
+category: Learning Resources
 tags: [ai-agents, architecture, multi-agent, react, router, blackboard, graph-workflow, design-patterns]
 related: ["Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code: Agent Teams vs Subagents", "Agentic AI Engineer Roadmap 2026 — Eight Pillars from Prompt to Production"]
 icon: "🏗️"

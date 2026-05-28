@@ -1,7 +1,7 @@
 ---
 title: "baoyu-comic — Turn Any Knowledge Into a Manga"
 date: 2026-05-21
-category: AI Tools & Workflows
+category: Creative & Media
 tags: [comic, manga, visual-learning, skill-files, claude-code, image-generation, educational-content, baoyu, hermes-agent]
 related: ["Claude Code Top 20 Skills — A Curated Map of the Power Skills Ecosystem", "Non-Coding Skills in Claude Code — The Overlooked Half of Agentic AI", "Vibe Coding 新手指南 — The Open-Source Primer for Non-Technical AI-Assisted Development"]
 icon: "🎭"

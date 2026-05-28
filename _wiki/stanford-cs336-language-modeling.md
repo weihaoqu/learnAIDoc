@@ -1,7 +1,7 @@
 ---
 title: "Stanford CS336 — Language Modeling from Scratch: The Complete Free LLM Curriculum"
 date: 2026-05-10
-category: AI Education
+category: Learning Resources
 tags: [stanford, course, llm, transformer, gpu, scaling-laws, alignment, rlhf, moe, triton, free-course]
 related: ["AI Learning Roadmap 2026 — Best Courses, Certs & YouTube Channels", "Agentic AI Engineer Roadmap 2026 — Eight Pillars from Prompt to Production", "SubQ — The First Subquadratic LLM: 12M Token Context at 5% of Opus Cost"]
 icon: "🎓"

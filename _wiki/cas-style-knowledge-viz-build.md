@@ -1,7 +1,7 @@
 ---
 title: "Building CAS-Style 3D Knowledge Visualizations — From a PDF to a Deployed Specimen Viewer"
 date: 2026-05-13
-category: AI Learning
+category: Learning Resources
 tags: [3d-visualization, react-three-fiber, threejs, education, claude-code, gemini, nano-banana-2, meshy, procedural-geometry, cell-architecture-studio, learnai, tutorial]
 related: ["Case Study: Building a 3D Specimen Viewer from Scratch — Every Prompt I Used, in Order", "The Unreasonable Effectiveness of HTML — Thariq's Case for Output Format Engineering", "GPT Image 2 水墨风 Slide Prompt — Structured Template for Ink-Wash Style Slides", "AI Agent Primer — The Vocabulary Ladder and 18-Step Workflow", "AI Engineering from Scratch — Rohit Ghumare's 416-Lesson Math-to-MCP Curriculum", "HTML PPT Studio — AI-Powered Presentation Skill for Claude Code", "Make Slides: AI-Powered Interactive Teaching Slides", "Agents with Taste — Encoding Design Judgment as Skill Files"]
 icon: "🧬"

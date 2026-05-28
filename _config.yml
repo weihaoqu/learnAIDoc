@@ -34,6 +34,8 @@ wiki_categories:
     icon: "⚙️"
   - name: Claude Code Workflows
     icon: "🔄"
+  - name: Agent Setup & Migration
+    icon: "🧳"
   - name: Skills & Plugins
     icon: "🔌"
   - name: AI for Research

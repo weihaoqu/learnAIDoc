@@ -1,7 +1,7 @@
 ---
 title: "Codex Environment Replication — Portable `~/.codex/` Across Machines"
 date: 2026-05-27
-category: Claude Code Engineering
+category: Agent Setup & Migration
 tags: [codex, codex-cli, migration, new-machine, setup, dotfiles, shell-scripts, sed, hooks, secret-hygiene, replication, portable-config, oh-my-claudecode]
 related: ["Claude Code Environment Replication — Portable Setup Across Machines", "New-Mac Migration — Codex + Claude Code + checkpoint/resume in 90 Minutes", "Copy My Codex Setup — Portable AGENTS.md, Skills, Plugins, and Safety Rules", "Claude Code + Codex Handoff Workflow — Switching Models Without Losing Context", "Cross-Model Code Review — Why Claude Can't Catch Its Own Bugs"]
 icon: "🧳"

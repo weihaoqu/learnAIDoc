@@ -1,7 +1,7 @@
 ---
 title: "AI Coding Reliability — Implementation Notes Habit + 12 Engineering Rules"
 date: 2026-05-21
-category: AI Tools & Workflows
+category: Claude Code Engineering
 tags: [ai-coding, reliability, implementation-notes, engineering-rules, claude-code, prompt-engineering, spec, debugging, best-practices, karpathy]
 related: ["SpecOps — Spec-Driven Development with AI Coding Agents", "Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "10 Lessons for Agentic Coding — What Should We Do When Code Is Cheap?"]
 icon: "📝"

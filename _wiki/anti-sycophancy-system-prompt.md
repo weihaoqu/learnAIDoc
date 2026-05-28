@@ -1,7 +1,7 @@
 ---
 title: "Anti-Sycophancy Prompt — Stop AI from Flattering You, Get Accurate Answers"
 date: 2026-05-08
-category: AI Research
+category: Prompting & Writing
 tags: [prompting, sycophancy, claude, chatgpt, claude-md, agents-md, system-prompt, accuracy]
 related: ["Three Hidden Instructions That Stop Claude from Hallucinating", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "7 Framework Prompts That Turn Claude into a Thinking Partner"]
 icon: "🎯"

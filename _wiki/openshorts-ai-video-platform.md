@@ -1,7 +1,7 @@
 ---
 title: "OpenShorts — Open Source AI Video Platform"
 date: 2026-04-26
-category: Tools
+category: Creative & Media
 tags: [video-generation, ai-video, ugc, youtube, self-hosted, content-creation, open-source]
 related: ["Pixelle-Video — AI Fully Automated Short Video Engine"]
 icon: "📹"

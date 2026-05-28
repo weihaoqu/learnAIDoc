@@ -1,7 +1,7 @@
 ---
 title: "Building /review-wiki — A Batch AI Quality Pipeline from Scratch"
 date: 2026-05-07
-category: Claude Code
+category: Claude Code Engineering
 redirect_from:
   - "/wiki/claude code/review-wiki-skill-build-guide/"
 tags: [claude-code, skill, batch-processing, codex, automation, quality-assurance, pipeline, loop, obsidian]
