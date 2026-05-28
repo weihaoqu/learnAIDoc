@@ -194,19 +194,40 @@ bash ~/.claude/claude-code-export.sh ~/Desktop/claude-export
 
 Exports: `CLAUDE.md`, `RTK.md`, `RESEARCH_WORKFLOW.md`, `settings.json`, custom commands, agents, hooks, templates, memory index.
 
-### Step 1b — Export custom skills (optional but recommended)
+### Step 1b — Export custom skills and memory content (gap in the export script)
 
-Your custom skill `.md` files are NOT included in the export above. Copy them separately:
+Your custom skill `.md` files are NOT included in the export above. The same is true for the *content* of `~/.claude/memory/` — `claude-code-export.sh` copies the `MEMORY.md` index but not the `*.md` content files that index points at, so the new machine would have a memory index referencing files that don't exist. Copy both separately:
 
 ```bash
-mkdir -p ~/Desktop/claude-export/skills
+mkdir -p ~/Desktop/claude-export/skills ~/Desktop/claude-export/memory
 
 # Custom skill files you wrote (curriculum-designer, research-kb, etc.)
 cp ~/.claude/skills/*.md ~/Desktop/claude-export/skills/ 2>/dev/null || echo "no .md skills"
 
+# Global memory content files (the MEMORY.md index alone is not enough)
+if [ -d ~/.claude/memory ]; then
+  rsync -a ~/.claude/memory/ ~/Desktop/claude-export/memory/
+else
+  echo "no ~/.claude/memory directory — skipping"
+fi
+
 # If you want ALL skill packages too (~200 dirs, potentially large):
 # rsync -av --exclude='*.pyc' ~/.claude/skills/ ~/Desktop/claude-export/skills/
 ```
+
+On the new Mac, after Step 8 restores skills, also restore the memory content. Use whichever transfer path matches Step 2:
+
+```bash
+mkdir -p ~/.claude/memory
+
+# If transferred via Dropbox:
+rsync -a ~/Dropbox/claude-export/memory/ ~/.claude/memory/
+
+# If transferred via rsync/AirDrop:
+rsync -a ~/claude-export/memory/ ~/.claude/memory/
+```
+
+> **Re-running the export?** `claude-code-export.sh` (Step 1) removes and recreates the export directory when it detects a prior export. That wipes anything Step 1b put there too. If you re-run Step 1, re-run Step 1b right after — don't assume the prior memory/skill copy is still in the bundle.
 
 ### Step 2 — Transfer to the new Mac
 
@@ -380,6 +401,7 @@ Then open Claude Code and:
 | Item | Why not | How to handle |
 |------|---------|--------------|
 | `~/.claude/skills/*.md` | Custom files, not third-party | Step 1b + Step 7 above |
+| `~/.claude/memory/*.md` except `MEMORY.md` | The script copies the `MEMORY.md` index but not the content `.md` files it references | Step 1b (extended) above |
 | `~/.claude/skills/` packages | Too large, reinstall on demand | rsync if you want all of them |
 | `~/.codex/skills/` | Out of scope for the Claude-Code-focused export script | Mirror the `~/.claude/skills/` migration manually, or use Step 8b for the specific handoff skills |
 | `~/.claude/projects/` | Per-project memory | Copy if you want history; skip to start fresh |
