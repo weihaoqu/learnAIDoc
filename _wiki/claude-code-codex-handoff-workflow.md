@@ -3,7 +3,7 @@ title: "Claude Code + Codex Handoff Workflow — Switching Models Without Losing
 date: 2026-05-22
 category: Claude Code Engineering
 tags: [claude-code, codex, handoff, multi-agent, project-memory, workflow, context, stale-context, CLAUDE-md, git, worktree]
-related: ["Cross-Model Code Review — Why Claude Can't Catch Its Own Bugs", "Codex + Claude Code for Research — A Practical Tutorial", "Codex-Maxxing — Jason Liu's Power User Workflow for OpenAI's Codex Agent", "Claude Code /handover: Never Lose Context Between Sessions", "Harness Engineering — The Real Bottleneck Isn't the Model", "progress.md Handoff — A Scripted Codex ⇄ Claude Code Workflow"]
+related: ["Cross-Model Code Review — Why Claude Can't Catch Its Own Bugs", "Codex + Claude Code for Research — A Practical Tutorial", "Codex-Maxxing — Jason Liu's Power User Workflow for OpenAI's Codex Agent", "Claude Code /handover: Never Lose Context Between Sessions", "Harness Engineering — The Real Bottleneck Isn't the Model", "progress.md Handoff — A Scripted Codex ⇄ Claude Code Workflow", "Codex Environment Replication — Portable `~/.codex/` Across Machines"]
 icon: "🔄"
 image: "/assets/images/claude-code-codex-handoff-workflow.png"
 ---

@@ -3,7 +3,7 @@ title: "New-Mac Migration — Codex + Claude Code + checkpoint/resume in 90 Minu
 date: 2026-05-25
 category: Claude Code Engineering
 tags: [claude-code, codex, migration, new-machine, setup, checkpoint, resume, agents-md, claude-md, skills, bootstrap, dropbox, oh-my-claudecode, handoff, multi-agent]
-related: ["Copy My Codex Setup — Portable AGENTS.md, Skills, Plugins, and Safety Rules", "Copy My Claude Code Setup — The LearnAI Agent Stack From Scratch", "progress.md Handoff — A Scripted Codex ⇄ Claude Code Workflow", "Claude Code + Codex Handoff Workflow — Switching Models Without Losing Context", "Codex + Claude Code for Research — A Practical Tutorial"]
+related: ["Copy My Codex Setup — Portable AGENTS.md, Skills, Plugins, and Safety Rules", "Copy My Claude Code Setup — The LearnAI Agent Stack From Scratch", "progress.md Handoff — A Scripted Codex ⇄ Claude Code Workflow", "Claude Code + Codex Handoff Workflow — Switching Models Without Losing Context", "Codex + Claude Code for Research — A Practical Tutorial", "Codex Environment Replication — Portable `~/.codex/` Across Machines", "Claude Code Environment Replication — Portable Setup Across Machines"]
 icon: "🧳"
 image: "/assets/images/new-mac-migration-codex-claude-handoff.png"
 ---
