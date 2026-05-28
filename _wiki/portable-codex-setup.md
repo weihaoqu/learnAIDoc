@@ -10,7 +10,7 @@ image: "/assets/images/codex-skills-cheat-sheet.png"
 
 **A good Codex setup is not just the CLI binary. It is a portable working environment: global `AGENTS.md`, curated skills, selected plugins, hooks, review-gate safety rules, memories, and project-level handoff conventions. Copying it to a new machine should preserve the useful behavior while avoiding secrets, stale sessions, local caches, and machine-specific process state.**
 
-*Source: A local Codex setup inspected on 2026-05-25 (`codex-cli 0.133.0`, 205 user-level Codex skills, calibrated global `AGENTS.md`) | [Personal AI Skill Cheat Sheet](/learnAIDoc/wiki/codex-skills-cheat-sheet/) | [Claude Code + Codex Handoff Workflow](/learnAIDoc/wiki/claude-code-codex-handoff-workflow/)*
+*Source: A local Codex setup inspected on 2026-05-25 and spot-checked against `codex-cli 0.134.0` on 2026-05-27 (~200 user-level Codex skills, calibrated global `AGENTS.md`). Specific version and skill counts drift as Codex publishes new CLI releases and as you install/remove skills, so treat them as rough markers, not exact targets. | [Personal AI Skill Cheat Sheet](/learnAIDoc/wiki/codex-skills-cheat-sheet/) | [Claude Code + Codex Handoff Workflow](/learnAIDoc/wiki/claude-code-codex-handoff-workflow/)*
 
 ## The Mental Model
 
@@ -50,7 +50,7 @@ The useful portable files are:
 On the inspected 2026-05-25 setup, the important portable signal is:
 
 - `~/.codex/AGENTS.md` now contains the calibrated review-gate rule.
-- In that snapshot, `~/.codex/skills/` contains 205 skill directories.
+- In that snapshot, `~/.codex/skills/` contained around 200 skill directories (exact count drifts as you install or remove skills — do not treat as a fixed target).
 - A dated memory entry records the Codex review-gate process-leak lesson; review memories before copying because they can contain private project details and stale or superseded process rules.
 - `~/.claude/skills/` and `~/.agents/skills/` also matter when skills are installed for both Codex and Claude Code.
 
@@ -69,6 +69,7 @@ Do **not** put these in a portable setup archive:
 | `~/.codex/shell_snapshots/` | Machine-specific shell state |
 | `~/.codex/computer-use/` | Machine/app specific |
 | `~/.codex/node_repl/`, `~/.codex/sqlite/` | Runtime scratch/state |
+| `~/.codex/rules/` | Default Codex CLI permission rules; regenerated automatically on first run, not user-authored knowledge |
 | Any copied file with API keys or tokens | Move secrets through the provider's login flow or password manager |
 
 The key principle: **copy instructions and reusable skills, not live state.**
