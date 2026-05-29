@@ -12,6 +12,8 @@ image: "/assets/images/new-mac-migration-codex-claude-handoff.png"
 
 *Source: [Copy My Claude Code Setup]({{ '/wiki/copy-my-claude-code-setup/' | relative_url }}) | [Copy My Codex Setup]({{ '/wiki/portable-codex-setup/' | relative_url }}) | [progress.md Handoff — A Scripted Codex ⇄ Claude Code Workflow]({{ '/wiki/progress-md-codex-handoff/' | relative_url }}) | [AGENTS.md spec (OpenAI Developers)](https://developers.openai.com/codex/guides/agents-md)*
 
+> **Replicating someone else's stack (not your own machine)?** The *mechanics* are general — export → bootstrap → re-add MCP/codegraph → per-repo handoff — but a few values are specific to this setup; substitute your own: **Dropbox** (used here to sync projects/wiki/KB → use your own sync or `git clone`), the **`learnai-course` canonical repo** (the handoff installer's `PROGRESS_HANDOFF_SRC` → point it at your repo), and the **plugin/marketplace list** (→ your plugins). Usernames are rewritten automatically only in a couple of config files (Claude `settings.json`, Codex `config.toml`/`hooks.json`); everything else relies on the final `grep -RIn /Users/oreo ~/.claude ~/.codex` cleanup in Pitfalls.
+
 ## Mental model — three layers, copy only the top two
 
 ```
@@ -45,10 +47,14 @@ Goal: a single archive containing only **behavior + skills + memory**, with secr
 ```bash
 mkdir -p ~/Desktop/transfer
 
-# --- 1a. Claude Code export (uses your existing bootstrap script) ---
+# --- 1a. Claude Code export — CLAUDE.md, settings.json, commands, agents, hooks,
+#         templates, AND global memory (index + content). ---
 bash ~/.claude/claude-code-export.sh ~/Desktop/transfer/claude-export
 
-# --- 1b. Custom Claude skill .md files (NOT included in 1a's glob) ---
+# --- 1b. Custom Claude skill .md files (top-level *.md only; NOT in 1a's glob).
+#         Plugin skills come back via /plugin install; any OTHER directory-style
+#         custom skill (~/.claude/skills/<name>/SKILL.md) you wrote must be copied
+#         as a whole dir, like checkpoint/resume in 1d. ---
 mkdir -p ~/Desktop/transfer/claude-export/skills
 cp ~/.claude/skills/*.md ~/Desktop/transfer/claude-export/skills/ 2>/dev/null || true
 
@@ -103,6 +109,13 @@ Pick one — operationally identical, just different speeds:
 # Homebrew (skip if installed)
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+# Put brew on PATH in THIS shell — a fresh install won't until you reopen the
+# terminal. Check each path explicitly (a failed `eval "$(...)"` returns empty and
+# exits 0, so a `||` chain would NOT fall back to Intel):
+if   [ -x /opt/homebrew/bin/brew ]; then eval "$(/opt/homebrew/bin/brew shellenv)"
+elif [ -x /usr/local/bin/brew    ]; then eval "$(/usr/local/bin/brew shellenv)"
+fi
+
 # Core tools. `perl` ships with current macOS but isn't guaranteed forever —
 # verify with `command -v perl` after install. Your Codex review timeouts
 # depend on it because macOS has no `timeout` binary by default; the alternative
@@ -131,6 +144,9 @@ omc doctor
 
 ```bash
 cd ~
+# If the archive landed in Dropbox/elsewhere, copy it to ~ first (and confirm it
+# fully downloaded — see the Dropbox Smart Sync trap in Phase 2):
+#   cp ~/Dropbox/transfer-YYYYMMDD.tar.gz ~/
 tar -tzf ~/transfer-YYYYMMDD.tar.gz | head -5   # sanity check the archive
 tar -xzf ~/transfer-YYYYMMDD.tar.gz             # extracts to ~/transfer/
 
@@ -139,7 +155,7 @@ bash ~/transfer/claude-export/claude-code-bootstrap.sh ~/transfer/claude-export
 # Rewrites /Users/oreo paths to your new $HOME automatically.
 # Prints a list of /plugin install commands — copy/paste those into Claude Code later.
 
-# --- 4b. Custom Claude skill .md files ---
+# --- 4b. Custom Claude skill .md files (4a already restored global memory) ---
 cp ~/transfer/claude-export/skills/*.md ~/.claude/skills/ 2>/dev/null || true
 
 # --- 4c. Codex user layer ---
@@ -147,6 +163,10 @@ mkdir -p ~/.codex
 rsync -a ~/transfer/codex-export/AGENTS.md ~/.codex/AGENTS.md
 rsync -a ~/transfer/codex-export/skills/   ~/.codex/skills/
 
+# The *.review-me files were excluded from the default archive in Phase 1f (they can
+# hold MCP tokens / private notes). If they're not in ~/transfer, either re-run the
+# Phase 1f tar WITHOUT the --exclude lines, or copy them over separately (AirDrop /
+# encrypted USB), then run the diffs below.
 # --- 4d. Codex quarantined files: diff and merge BY HAND, never copy blindly ---
 diff -u ~/.codex/config.toml  ~/transfer/codex-export/config.toml.review-me  2>/dev/null || true
 diff -u ~/.codex/hooks.json   ~/transfer/codex-export/hooks.json.review-me   2>/dev/null || true
