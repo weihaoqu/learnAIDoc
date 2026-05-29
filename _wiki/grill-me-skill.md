@@ -3,7 +3,7 @@ title: "grill-me — When AI Interviews You Before Writing Code"
 date: 2026-05-14
 category: Skills & Plugins
 tags: [claude-code, codex, skills, planning, matt-pocock, anti-vibe-coding, requirements, rubber-ducking, course-design, anthropic, viral]
-related: ["Matt Pocock's Skills — Claude Code for Real Engineers", "Karpathy Skills — Four Rules That Fix LLM Coding's Worst Habits", "Anthropic Skills — Thariq's Framework for Reusable Capabilities", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Domain Experts Shipping Products with Claude Code — Stories from the Trenches", "Codex Skills Cheat Sheet — When to Use Your Installed Skill Stack"]
+related: ["Matt Pocock's Skills — Claude Code for Real Engineers", "Karpathy Skills — Four Rules That Fix LLM Coding's Worst Habits", "Anthropic Skills — Thariq's Framework for Reusable Capabilities", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Domain Experts Shipping Products with Claude Code — Stories from the Trenches", "Personal AI Skill Cheat Sheet — When to Use Each Skill"]
 icon: "🔥"
 image: "/assets/images/grill-me-skill.png"
 ---

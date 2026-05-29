@@ -6,15 +6,15 @@ rendering: flat-vector
 
 # Content Context
 
-Article title: Codex Skills Cheat Sheet — When to Use Your Installed Skill Stack
+Article title: Personal AI Skill Cheat Sheet — When to Use Each Skill
 
-Content summary: A practical operating manual for choosing and combining installed Codex skills. The article maps user situations to skill names, gives prompt recipes, and shows how skills chain together across understanding, planning, debugging, testing, security review, writing, and research.
+Content summary: A practical operating manual for choosing and combining Q's installed Codex and Claude Code skills. The article maps user situations to skill names, separates runtime invocation patterns, gives prompt recipes, and shows how skills chain together across understanding, planning, debugging, testing, security review, finance, hardware, writing, ops, and research.
 
-Keywords: Codex, skills, cheat sheet, workflow, testing, security review, research, prompt recipes
+Keywords: Codex, Claude Code, skills, cheat sheet, workflow, testing, security review, finance, hardware, research, prompt recipes
 
 # Visual Design
 
-Cover theme: navigational skill map
+Cover theme: personal AI skill routing map
 Type: conceptual
 Palette: cool
 Rendering: flat-vector
@@ -26,7 +26,7 @@ Language: en
 
 # Text Elements
 
-Title: Codex Skills Cheat Sheet
+Title: Personal AI Skill Cheat Sheet
 
 No other readable words, labels, menu text, terminal text, UI text, button text, or code text may appear anywhere in the image. Any command palette or terminal window must use abstract lines, dots, icons, and glyph-like marks only.
 
@@ -41,13 +41,13 @@ Use clean geometric sans-serif typography. Modern, minimal letterforms. Keep all
 # Composition
 
 Type composition:
-- Conceptual layout with a central command palette or terminal window as the anchor.
-- Surround the center with connected skill cards or nodes, each represented by simple icons: bug, compass, shield, browser window, Python mark, document, research flask.
+- Conceptual layout with two connected command surfaces as the anchor: one representing Codex and one representing Claude Code.
+- Surround the center with connected skill cards or nodes, each represented by simple icons: bug, compass, shield, browser window, spreadsheet, circuit board, document, research flask.
 - Use thin connector lines to suggest an operating workflow rather than a chaotic network.
 
 Visual composition:
-- Main visual: a Codex command palette choosing from reusable skill playbooks.
-- Layout: centered command palette on the left-middle, skill nodes arranged in a clean arc to the right and bottom.
+- Main visual: a personal AI command router choosing from reusable skill playbooks across Codex and Claude Code.
+- Layout: centered command palettes on the left-middle, skill nodes arranged in a clean arc to the right and bottom.
 - Decorative: subtle code brackets, checkmarks, flow arrows, and small terminal glyphs.
 
 Color scheme:

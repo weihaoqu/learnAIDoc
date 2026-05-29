@@ -5,7 +5,7 @@ category: Claude Code Basics
 redirect_from:
   - "/wiki/claude code/claude-code-best-plugins/"
 tags: [claude-code, cli, plugins, workflow, productivity]
-related: ["Claude Code Plugins & Marketplace", "Claude Code Power User Tips", "Understand Anything — Turn Codebases Into Interactive Knowledge Graphs", "Gstack — Garry Tan's AI Software Factory for Claude Code", "Prompt Master — Write Accurate Prompts for Any AI Tool, Zero Waste", "Codex Skills Cheat Sheet — When to Use Your Installed Skill Stack"]
+related: ["Claude Code Plugins & Marketplace", "Claude Code Power User Tips", "Understand Anything — Turn Codebases Into Interactive Knowledge Graphs", "Gstack — Garry Tan's AI Software Factory for Claude Code", "Prompt Master — Write Accurate Prompts for Any AI Tool, Zero Waste", "Personal AI Skill Cheat Sheet — When to Use Each Skill"]
 icon: "🔌"
 image: "/assets/images/claude-code-best-plugins.png"
 ---

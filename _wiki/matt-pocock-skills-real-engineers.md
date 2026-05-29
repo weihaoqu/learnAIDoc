@@ -3,7 +3,7 @@ title: "Matt Pocock's Skills — Claude Code for Real Engineers"
 date: 2026-05-09
 category: Skills & Plugins
 tags: [claude-code, skills, engineering-practices, tdd, debugging, architecture, open-source, matt-pocock]
-related: ["Addy Osmani's agent-skills — Senior Engineering Practices as SKILL.md Files", "Agents with Taste — Encoding Design Judgment as Skill Files", "Claude Code Skills: Resources & Repos", "grill-me — When AI Interviews You Before Writing Code", "Codex Skills Cheat Sheet — When to Use Your Installed Skill Stack"]
+related: ["Addy Osmani's agent-skills — Senior Engineering Practices as SKILL.md Files", "Agents with Taste — Encoding Design Judgment as Skill Files", "Claude Code Skills: Resources & Repos", "grill-me — When AI Interviews You Before Writing Code", "Personal AI Skill Cheat Sheet — When to Use Each Skill"]
 icon: "🐷"
 image: "/assets/images/matt-pocock-skills-real-engineers.png"
 ---
