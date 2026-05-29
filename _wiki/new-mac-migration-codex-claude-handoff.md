@@ -179,6 +179,26 @@ claude         # triggers Claude Code auth on first invocation
 
 If either fails: fix the login flow on this machine. Do **not** copy `auth.json` from the old machine — stale credentials produce error messages that look like config bugs but aren't.
 
+## Phase 6.5 — codegraph + MCP servers (per-machine, NOT in the bundle) (10 min)
+
+The bundle carries `settings.json`, but **MCP server definitions live in `~/.claude.json`**, which the export does not copy — and **codegraph is a local index + binary that can't be copied at all**. Re-establish both here so the new machine matches your daily driver:
+
+```bash
+# codegraph — local code knowledge graph exposed as an MCP server
+npm install -g @colbymchenry/codegraph
+
+# Register it as an MCP server. Verified entry (from ~/.claude.json):
+#   "codegraph": { "type": "stdio", "command": "codegraph", "args": ["serve", "--mcp"] }
+# Recent Claude Code also supports the CLI form — use -s user (default scope is
+# local, which would NOT match the user-wide entry above):
+claude mcp add -s user codegraph -- codegraph serve --mcp
+
+# Build the index ONCE PER REPO you work in (sub-millisecond reads after this):
+cd /path/to/repo && codegraph init && codegraph index
+```
+
+The auth-based MCP servers — Google Calendar, Gmail, Google Drive, alphaxiv — re-add and re-authenticate on first use (Claude Code prompts you); auth tokens are never copied between machines. Deep dive: [codegraph — Pre-Indexed Knowledge Graph]({{ '/wiki/codegraph-pre-indexed-claude-code/' | relative_url }}).
+
 ## Phase 7 — Per-repo install of the handoff workflow (5 min per repo)
 
 The user-level checkpoint/resume skills from Phase 5 reach for `scripts/agent-handoff.sh` **inside each repo**. Two cases:

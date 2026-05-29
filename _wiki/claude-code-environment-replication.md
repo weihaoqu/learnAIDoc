@@ -10,7 +10,7 @@ icon: "🔧"
 image: "/assets/images/claude-code-environment-replication.png"
 ---
 
-A power user's Claude Code setup is far more than the CLI binary — it's 14 plugins, 236 skills, 11 custom commands, hooks, agents, templates, global instructions, and MCP server configs. Replicating that environment on a second machine (or recovering after a fresh install) is tedious if done manually. This entry documents the full `~/.claude/` anatomy, identifies what's portable vs. machine-specific, and provides a one-command bootstrap script.
+A power user's Claude Code setup is far more than the CLI binary — it's 15 plugins, 400+ skills, 11 custom commands, hooks, agents, templates, global instructions, and MCP server configs (codegraph plus Google Calendar/Gmail/Drive/alphaxiv). Exact plugin/skill counts drift as you install and remove things — treat the numbers here as a snapshot, not a target. Replicating that environment on a second machine (or recovering after a fresh install) is tedious if done manually. This entry documents the full `~/.claude/` anatomy, identifies what's portable vs. machine-specific, and provides a one-command bootstrap script.
 
 *Source: [Anatomy of the .claude/ Folder](https://blog.dailydoseofds.com/p/anatomy-of-the-claude-folder) | [Official Claude Code Skills Docs](https://code.claude.com/docs/en/skills) | [Dotfiles + Claude Code (Sablonniere)](https://www.hsablonniere.com/dotfiles-claude-code-my-tiny-config-workshop--95d5fr/) | [Claude Directory Reference](https://www.claudedirectory.org/how-to/claude-folder)*
 
@@ -49,7 +49,8 @@ bash claude-code-bootstrap.sh
 # The bootstrap script prints these commands — paste them into Claude Code:
 /plugin install frontend-design@claude-plugins-official
 /plugin install superpowers@claude-plugins-official
-# ... (14 total — full list printed by bootstrap)
+# ... (14 `/plugin install` commands — full list printed by bootstrap; the 15th,
+# oh-my-claudecode, is an npm install — see Step 4)
 /reload-plugins
 ```
 
@@ -57,7 +58,10 @@ bash claude-code-bootstrap.sh
 ```bash
 codex login              # Authenticate Codex CLI
 rtk gain                 # Verify RTK is working
-# MCP servers (Calendar, Gmail, etc.) will prompt on first use
+npm install -g oh-my-claudecode && omc setup   # 15th plugin (orchestration: /goal, agents)
+# MCP servers are NOT copied by the export — re-add them first (see the MCP
+# section below); auth-based servers prompt only after re-adding, and codegraph
+# needs install + a per-repo index.
 ```
 
 That's it. Full environment replicated.
@@ -96,7 +100,7 @@ Claude Code stores everything under `~/.claude/`. Some of it is portable config 
 | `agents/` | Custom agent definitions (e.g., `fast-reader.md`) | Yes |
 | `hooks/` | Hook scripts (e.g., RTK rewrite hook) | Yes |
 | `templates/` | Project templates (e.g., `research-CLAUDE.md`) | Yes |
-| `skills/` | Installed skill files (236 skills from plugins) | Reinstall — tied to plugin versions |
+| `skills/` | Installed skill files (400+ skills from plugins) | Reinstall — tied to plugin versions |
 | `plugins/` | Plugin registry, cache, installed manifests | Reinstall — `settings.json` has the source of truth |
 | `projects/` | Per-project auto-memory (1.6 GB+) | Optional — useful but large |
 | `memory/` | Global auto-memory (MEMORY.md) | Yes — cross-session context |
@@ -216,11 +220,17 @@ After bootstrap, open Claude Code and run:
 /reload-plugins
 ```
 
+**Plus oh-my-claudecode** — the 15th plugin, distributed as an npm package (not a `/plugin install`). In your shell:
+
+```bash
+npm install -g oh-my-claudecode && omc setup
+```
+
 The full script source lives at `~/.claude/claude-code-export.sh` and `~/.claude/claude-code-bootstrap.sh` — they're included in every export bundle so the target machine is self-contained.
 
 ## What's in Q's Actual Setup (Reference Inventory)
 
-### 14 Plugins
+### 15 Plugins
 
 | # | Plugin | Marketplace | Source |
 |---|---|---|---|
@@ -238,6 +248,7 @@ The full script source lives at `~/.claude/claude-code-export.sh` and `~/.claude
 | 12 | understand-anything | understand-anything | GitHub: Lum1104/Understand-Anything |
 | 13 | webnovel-writer | webnovel-writer-marketplace | GitHub: lingfengQAQ/webnovel-writer |
 | 14 | codex | openai-codex | GitHub: openai/codex-plugin-cc |
+| 15 | oh-my-claudecode | omc | Multi-AI orchestration (`/goal`, agents): `npm i -g oh-my-claudecode` + `omc setup` |
 
 ### 11 Custom Commands
 
@@ -286,6 +297,7 @@ The full script source lives at `~/.claude/claude-code-export.sh` and `~/.claude
 | GitHub CLI (gh) | PR/issue management | `brew install gh` |
 | RTK | Token compression (60-90% savings) | `cargo install rtk` or see [rtk-ai/rtk](https://github.com/rtk-ai/rtk) |
 | Codex CLI | Cross-model review (GPT-5.4) | `npm install -g @openai/codex` |
+| codegraph | Local code knowledge graph / MCP server (cuts tool calls) | `npm install -g @colbymchenry/codegraph` |
 | ffmpeg | Video/audio processing | `brew install ffmpeg` |
 | Obsidian | Knowledge management | `brew install --cask obsidian` |
 
@@ -306,9 +318,25 @@ jq --arg old "/Users/oreo" --arg new "$HOME" \
 
 Plugins auto-update from their marketplace. After bootstrapping, your new machine gets the latest versions — which may differ from the source. This is usually fine, but if a skill breaks, check the plugin version with `/plugin list`.
 
-### MCP Servers Need Re-Auth
+### MCP Servers Are Not Captured by the Export — Re-Add Them
 
-MCP servers (Google Calendar, Gmail, Google Drive, alphaxiv) store auth tokens locally. You must re-authenticate on the new machine. Claude Code will prompt you automatically on first use.
+The export script copies `settings.json` but **not `~/.claude.json`, where MCP server definitions live** — so no MCP server crosses to the new machine automatically. Two kinds to restore:
+
+- **Auth-based servers** (Google Calendar, Gmail, Google Drive, alphaxiv) store auth tokens locally. Re-add and re-authenticate on the new machine; Claude Code prompts you on first use.
+- **codegraph** is a **local index + binary**, so it can't be copied at all — install it, register the MCP server, then build the index per repo:
+
+```bash
+npm install -g @colbymchenry/codegraph
+# Register the MCP server. Verified entry from ~/.claude.json:
+#   "codegraph": { "type": "stdio", "command": "codegraph", "args": ["serve", "--mcp"] }
+# Recent Claude Code also supports the CLI form — use -s user (default scope is
+# local, which would NOT match the user-wide entry above):
+#   claude mcp add -s user codegraph -- codegraph serve --mcp
+# Then, once per repo you work in:
+cd /path/to/repo && codegraph init && codegraph index
+```
+
+See [codegraph — Pre-Indexed Knowledge Graph That Cuts Claude Code's Tool Calls 92%](/learnAIDoc/wiki/codegraph-pre-indexed-claude-code/) for why it's worth setting up.
 
 ### Feynman Symlink
 
