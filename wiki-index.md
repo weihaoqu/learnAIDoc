@@ -228,6 +228,7 @@ Total entries: 231
 - [7 Framework Prompts That Turn Claude into a Thinking Partner](/wiki/seven-framework-prompts-thinking-partner/) (2026-03-26)
 - [The Secret of Great Prompts: Fewer Words, Better Results](/wiki/shortest-prompt-lines-that-work/) (2026-03-26)
 - [Anti-Sycophancy Prompt — Stop AI from Flattering You, Get Accurate Answers](/wiki/anti-sycophancy-system-prompt/) (2026-05-08)
+- [Killing AI Slop: avoid-ai-writing + stop-slop](/wiki/removing-ai-slop/) (2026-05-29)
 
 ### Creative & Media
 - [Seedance 2.0: ByteDance's AI Video Generator with Native Audio](/wiki/seedance-2-ai-video/) (2026-02-08)

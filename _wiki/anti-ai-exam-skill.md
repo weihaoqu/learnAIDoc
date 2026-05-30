@@ -5,7 +5,7 @@ category: AI for Teaching
 redirect_from:
   - "/wiki/ai education/anti-ai-exam-skill/"
 tags: [ai-education, academic-integrity, exam-design, claude-code, skills, anti-cheating, teaching, assessment]
-related: ["AI in Education — Teacher's Factory, Not Student's Cheat Tool", "Claude Code Skills: Resources & Repos", "MIT Professor's NotebookLM Grading System — 47 Essays in 12 Minutes", "Make Slides: AI-Powered Interactive Teaching Slides", "Building /review-wiki — A Batch AI Quality Pipeline from Scratch"]
+related: ["AI in Education — Teacher's Factory, Not Student's Cheat Tool", "Claude Code Skills: Resources & Repos", "MIT Professor's NotebookLM Grading System — 47 Essays in 12 Minutes", "Make Slides: AI-Powered Interactive Teaching Slides", "Building /review-wiki — A Batch AI Quality Pipeline from Scratch", "Killing AI Slop: avoid-ai-writing + stop-slop"]
 icon: "🛡️"
 image: "/assets/images/anti-ai-exam-skill.png"
 ---
