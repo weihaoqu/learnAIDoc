@@ -2,7 +2,7 @@
 title: "Killing AI Slop: avoid-ai-writing + stop-slop"
 date: 2026-05-29
 category: Prompting & Writing
-tags: [ai-writing, ai-slop, humanizer, ai-detection, academic-integrity, writing, claude-code, skills]
+tags: [ai-writing, ai-slop, humanizer, ai-detection, academic-integrity, writing, claude-code, skills, case-study]
 related: ["Anti-AI Exam Designer — A Claude Code Skill for AI-Resistant Exams", "PaperSpine — Motivation-Driven Paper Writing Skill Suite for Codex and Claude Code"]
 icon: "🧹"
 image: "/assets/images/removing-ai-slop.png"
@@ -64,6 +64,36 @@ draft
 ```
 
 Or pick by job. Reach for stop-slop on short, punchy copy where you want a hard line and a number. Reach for avoid-ai-writing when you need its context profiles or an in-place file edit. Its integrity-aware framing also suits a piece about academic writing itself.
+
+## Case study: scoring two drafts of the same essay
+
+To see the skills work, we scored a graduate reflection on an education podcast. One draft came from ChatGPT off a short prompt. A second was a human revision built from the same notes. We then ran a stop-slop pass on that revision. Same task, same sources, three different scores on stop-slop's five dimensions. The before and after lines below are representative composites, not verbatim sentences from the essay.
+
+| Draft | Direct | Rhythm | Trust | Authentic | Density | Total |
+|---|---|---|---|---|---|---|
+| ChatGPT, first pass | 4 | 3 | 3 | 2 | 4 | **16/50** |
+| Human revision | 8 | 7 | 8 | 6 | 8 | **37/50** |
+| After a stop-slop pass | 8 | 8 | 9 | 8 | 9 | **42/50** |
+
+The ChatGPT draft failed the way slop usually does. It read as if written from the episode title, not the episode. A generic opener ("rapidly reshaping education"), section stamps ("One major takeaway... Another important theme... Personally..."), list padding, and a narrator at a distance ("the podcast emphasized"). Nothing in it showed the writer had listened.
+
+The human revision already scored well, and its one weak axis carries the lesson: writing that is too polished can read as machine-assisted. Three tells survived careful editing.
+
+**The aphoristic closer**, a line built to sound quotable, often with a lazy extreme.
+- Before: "Careful adoption will *always* beat rushing in."
+- After: "He compares it to crossing a minefield slowly rather than running through."
+
+**The too-perfect seam**, where each section hands to the next in matched parallel.
+- Before: "If bias is about what lives in the data, governance is about who controls it."
+- After: "That raises a second question: who controls the data?"
+
+**The parallel inversion used as a habit.** "Less X than Y" reads fine once and feels engineered by the third time.
+- Before: "I read the policy less as a tripwire than as a diagnosis."
+- After: "Now I treat the policy as a signal a student lacked support, not a trap."
+
+The biggest gain came from something no tell list catches. The revision scored high marks on craft and still felt generic, because it argued about ideas with no person in the room. Two sentences of real experience, a named tool a school adopted in a hurry, lifted authenticity more than any single line edit.
+
+The workflow that produced the 42: score the draft, fix the structural tells, then add the evidence that you were there.
 
 ## Install both
 
