@@ -5,7 +5,7 @@ category: AI for Research
 redirect_from:
   - "/wiki/ai research/ai-agent-benchmark-cheating/"
 tags: [ai-safety, benchmarks, reward-hacking, evaluation, swe-bench, agents, security]
-related: ["litellm Supply Chain Attack: How a Poisoned PyPI Package Nearly Compromised the AI Ecosystem", "Five Questions for Critical Paper Reading — The Cambridge Method with Claude", "Claude Code Sandbox Mode"]
+related: ["litellm Supply Chain Attack: How a Poisoned PyPI Package Nearly Compromised the AI Ecosystem", "Five Questions for Critical Paper Reading — The Cambridge Method with Claude", "Claude Code Sandbox Mode", "Claude Mythos and the Verification Problem in AI Security Claims"]
 icon: "🎭"
 image: "/assets/images/ai-agent-benchmark-cheating.png"
 ---
