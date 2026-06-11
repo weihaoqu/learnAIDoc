@@ -5,7 +5,7 @@ category: Claude Code Basics
 redirect_from:
   - "/wiki/claude code/claude-code-session-stats/"
 tags: [claude-code, cli, productivity]
-related: ["Claude Code Session Management & 1M Context — The Official Decision Framework", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Claude Code Power User Tips"]
+related: ["Claude Code Session Management & 1M Context — The Official Decision Framework", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Claude Code Power User Tips", "Claude Code Token Guard — Audit Unattended Token Burn"]
 icon: "📊"
 image: "/assets/images/claude-code-stats.jpg"
 ---

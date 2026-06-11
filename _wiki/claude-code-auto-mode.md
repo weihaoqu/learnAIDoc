@@ -5,7 +5,7 @@ category: Claude Code Basics
 redirect_from:
   - "/wiki/claude code/claude-code-auto-mode/"
 tags: [claude-code, permissions, auto-mode, safety, classifier, workflow]
-related: ["Claude Code Sandbox Mode", "Claude Code Power User Tips", "Harness Engineering — The Real Bottleneck Isn't the Model"]
+related: ["Claude Code Sandbox Mode", "Claude Code Power User Tips", "Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code Token Guard — Audit Unattended Token Burn"]
 icon: "🤖"
 image: "/assets/images/claude-code-auto-mode.png"
 ---

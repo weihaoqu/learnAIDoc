@@ -3,7 +3,7 @@ title: "Beyond /goal — The Orchestrator + Headless Pattern for Long-Running Cl
 date: 2026-05-15
 category: Claude Code Engineering
 tags: [claude-code, slash-goal, autonomous-agents, orchestrator, headless-mode, context-management, super-skill, github-projects, agentic-engineering, gstack, eric-tech]
-related: ["What is Agentic Engineering? A Teaching Primer", "Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Agents Need Control Flow — Brian's Case for Code Over Prompts", "Gstack — Garry Tan's AI Software Factory for Claude Code", "Autoresearch: 100 Autonomous ML Experiments Overnight", "Ralph — Bun's Autonomous Dev Loop", "Codex Orange Book — 花叔's Bilingual Codex Reference", "Using /goal for Wiki Management — Spec-Driven Autonomous Wiki Sessions"]
+related: ["What is Agentic Engineering? A Teaching Primer", "Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Agents Need Control Flow — Brian's Case for Code Over Prompts", "Gstack — Garry Tan's AI Software Factory for Claude Code", "Autoresearch: 100 Autonomous ML Experiments Overnight", "Ralph — Bun's Autonomous Dev Loop", "Codex Orange Book — 花叔's Bilingual Codex Reference", "Using /goal for Wiki Management — Spec-Driven Autonomous Wiki Sessions", "Claude Code Token Guard — Audit Unattended Token Burn"]
 icon: "🎯"
 image: "/assets/images/goal-orchestrator-headless-pattern.png"
 ---

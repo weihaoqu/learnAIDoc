@@ -3,7 +3,7 @@ title: "gnhf — Good Night, Have Fun: Run AI Agents While You Sleep"
 date: 2026-05-09
 category: Claude Code Workflows
 tags: [claude-code, codex, autonomous-coding, orchestrator, overnight, worktree, multi-agent, cli]
-related: ["Ralph: Autonomous Development Loop for Claude Code", "Harness Engineering — The Real Bottleneck Isn't the Model", "Building /review-wiki — A Batch AI Quality Pipeline from Scratch"]
+related: ["Ralph: Autonomous Development Loop for Claude Code", "Harness Engineering — The Real Bottleneck Isn't the Model", "Building /review-wiki — A Batch AI Quality Pipeline from Scratch", "Claude Code Token Guard — Audit Unattended Token Burn"]
 icon: "🌙"
 image: "/assets/images/gnhf-overnight-agent-orchestrator.png"
 ---

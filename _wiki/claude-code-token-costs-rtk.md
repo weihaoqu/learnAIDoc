@@ -5,7 +5,7 @@ category: Claude Code Engineering
 redirect_from:
   - "/wiki/claude code/claude-code-token-costs-rtk/"
 tags: [claude-code, tokens, costs, rtk, context-window, optimization, cli-proxy, billing]
-related: ["Claude Code Context Management and CLAUDE.md Practices", "Claude Code Session Stats and Cost Tracking"]
+related: ["Claude Code Context Management and CLAUDE.md Practices", "Claude Code Session Stats and Cost Tracking", "Claude Code Token Guard — Audit Unattended Token Burn"]
 icon: "💰"
 image: "/assets/images/claude-code-token-costs-rtk.png"
 ---
