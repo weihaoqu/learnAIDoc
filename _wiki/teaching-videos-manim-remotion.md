@@ -2,15 +2,18 @@
 title: "Teaching Videos with Manim + Remotion — Two Engines for Code-Driven Explainers"
 date: 2026-06-03
 category: Creative & Media
+redirect_from:
+  - "/wiki/math-to-manim-ai-animation/"
+  - "/wiki/creative & media/math-to-manim-ai-animation/"
 tags: [manim, remotion, video, animation, teaching, explainer, python, react, learnai]
-related: ["Remotion Case Study — Animating \"Adding Elements to an Array\""]
+related: ["Remotion Case Study — Animating \"Adding Elements to an Array\"", "Make Slides: AI-Powered Interactive Teaching Slides", "AI Slide Generation with Claude Code — Tool Comparison & Guide", "HTML PPT Studio — AI-Powered Presentation Skill for Claude Code"]
 icon: "🎥"
 image: "/assets/images/teaching-videos-manim-remotion.png"
 ---
 
-**Code-driven video lets you generate teaching explainers the same way you generate slides — from text and code, reproducibly, with no timeline-scrubbing in a video editor. Two complementary engines cover the space: Manim for precise mathematical/algorithmic animation (Python), and Remotion for UI walkthroughs and captioned motion graphics (React). This entry documents both as installed LearnAI skills, when to reach for which, the exact local setup, and how they sit alongside the make-slides interactive decks.**
+**Code-driven video lets you generate teaching explainers the same way you generate slides — from text and code, reproducibly, with no timeline-scrubbing in a video editor. Three layers cover the space: Manim for precise mathematical/algorithmic animation (Python), Math-To-Manim for AI-generated Manim scenes from math or physics prompts, and Remotion for UI walkthroughs and captioned motion graphics (React). This entry documents when to reach for which, the exact local setup, and how they sit alongside the make-slides interactive decks.**
 
-*Source: [Manim Community docs](https://docs.manim.community/) | [Remotion](https://www.remotion.dev/) | [ECC skills repo (MIT)](https://github.com/affaan-m/ECC)*
+*Source: [Manim Community docs](https://docs.manim.community/) | [Remotion](https://www.remotion.dev/) | [ECC skills repo (MIT)](https://github.com/affaan-m/ECC) | [Math-To-Manim on GitHub](https://github.com/HarleyCoops/Math-To-Manim)*
 
 ## Two Engines, Two Jobs
 
@@ -28,6 +31,22 @@ Both turn code into MP4 — but they are good at different things. Pick by what 
 | Reach for it when | "I need to *show the idea* — a heap sift, a BST insert, a recursion tree" | "I need to *show the screen* — annotate the CS205 app, add captions, composite UI" |
 
 Rule of thumb for CS teaching: **Manim for the concept, Remotion for the screen.** They compose — animate a concept in Manim, then composite it with captions and UI in Remotion. When handing a Manim clip to Remotion, align the FPS and resolution between the two, note the Manim output path, and decide up front whether the clip is a full-frame background or an overlay.
+
+## Math-To-Manim: AI on Top of Manim
+
+Math-To-Manim is not a separate animation engine. It is a prompt-to-scene layer that turns a math or physics question into a reasoned visual explanation, then generates Manim code and study-note style artifacts. That makes it useful when the bottleneck is not rendering but designing the teaching sequence.
+
+```
+Question / LaTeX / concept
+        ↓
+Reason through what the learner must see
+        ↓
+Generate Manim scene code
+        ↓
+Render MP4 / inspect generated notes
+```
+
+Use it for formula-heavy concepts, physics explanations, algorithm visualizations, and first drafts of Manim scenes. Still review the generated Python: Manim layout, timing, and mathematical notation often need a human pass before a clip is classroom-ready.
 
 ## Local Setup (what we installed)
 
@@ -101,7 +120,7 @@ Both were vendored (skill folder contents only — no hooks, no MCP, no installe
 - **Pin Manim to Python 3.12**, not the system 3.14 — several of Manim's dependencies do not yet ship 3.14 wheels.
 - **Keep the Remotion project outside Dropbox/iCloud** — its `node_modules` is large and churny; syncing it is painful. Commit source only (`node_modules` in `.gitignore`).
 - **The first Remotion CLI/Studio invocation downloads a pinned headless Chrome** (~93 MB) once, then caches it — so the first `compositions`/`render`/`studio` call is slow, the rest are fast.
-- **Manim ≠ Math-To-Manim.** Manim is the engine you write (or generate) code for; [Math-To-Manim](/learnAIDoc/wiki/math-to-manim-ai-animation/) is a separate AI tool that *generates* Manim code from LaTeX. Either can feed this workflow.
+- **Manim ≠ Math-To-Manim.** Manim is the engine you write or generate code for; Math-To-Manim is a separate AI tool that generates Manim code from prompts, LaTeX, or concept descriptions. Either can feed this workflow.
 - **Start at low quality.** `manim -ql` and Remotion Studio's preview keep the iteration loop fast; only push to high quality once composition and timing are stable.
 
 ---

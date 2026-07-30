@@ -5,12 +5,12 @@ category: Skills & Plugins
 redirect_from:
   - "/wiki/tools/ai-website-cloner-template/"
 tags: [website-cloning, next-js, reverse-engineering, claude-code, ai-coding, frontend, tailwind, shadcn]
-related: ["Gstack — Garry Tan's AI Software Factory for Claude Code", "Awesome DESIGN.md — Install Design Taste Into Your AI Coding Agent"]
+related: ["Gstack — Garry Tan's AI Software Factory for Claude Code", "Agents with Taste — Encoding Design Judgment as Skill Files"]
 icon: "🔄"
 image: "/assets/images/ai-website-cloner-template.png"
 ---
 
-Cloning a website's design used to mean manually inspecting HTML, extracting CSS, downloading assets, then rebuilding component by component. `ai-website-cloner-template` automates this entire process — give it a URL, and AI agents reverse-engineer the site into a clean, modern Next.js codebase.
+Cloning a website's design used to mean manually inspecting HTML, extracting CSS, downloading assets, then rebuilding component by component. `ai-website-cloner-template` automates this process — give it a URL, and AI agents reverse-engineer the site into a clean, modern Next.js codebase.
 
 *Source: [GitHub - JCodesMore/ai-website-cloner-template](https://github.com/JCodesMore/ai-website-cloner-template)*
 
@@ -58,7 +58,7 @@ claude --chrome
 
 ## Supported AI Agents
 
-Works with **12+ agents**: Claude Code (recommended, Opus 4.6), GitHub Copilot, Cursor, Windsurf, Gemini CLI, Cline, Roo Code, Continue, Amazon Q, Augment Code, Aider, Codex CLI.
+The README recommends Claude Code with Opus 4.8 for best results and describes support for a variety of AI coding agents. Treat the agent list and model recommendation as fast-moving: verify the current README before turning this into a workshop handout.
 
 ## Real-World Use Cases
 
@@ -76,4 +76,4 @@ Works with **12+ agents**: Claude Code (recommended, Opus 4.6), GitHub Copilot, 
 
 ## Ethical Note
 
-The project explicitly prohibits phishing, impersonation, or passing off designs as your own. It's meant for legitimate migration, recovery, and learning — not cloning someone else's brand.
+The project explicitly prohibits phishing, impersonation, or passing off designs as your own. Use it for legitimate migration, source-code recovery, learning, and reference implementation work — not cloning someone else's brand or evading license / ownership boundaries.

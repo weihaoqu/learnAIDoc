@@ -5,7 +5,7 @@ category: Claude Code Basics
 redirect_from:
   - "/wiki/claude code/claude-code-statusline/"
 tags: [claude-code, cli, customization, workflow]
-related: ["Claude Code Power User Tips", "Claude Code Session Stats & Usage"]
+
 icon: "📊"
 image: "/assets/images/claude-code-statusline.png"
 ---

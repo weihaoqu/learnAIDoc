@@ -5,7 +5,7 @@ category: Skills & Plugins
 redirect_from:
   - "/wiki/skills & plugins/baoyu-youtube-transcript-skill/"
 tags: [claude-code, youtube, transcript, subtitles, skill, innertube, markdown]
-related: ["Claude Code Skills: Resources & Repos", "Voice-Pro — Local AI Dubbing, Translation, and Voice Cloning in One Tool"]
+related: ["Voice-Pro — Local AI Dubbing, Translation, and Voice Cloning in One Tool"]
 icon: "📺"
 image: "/assets/images/baoyu-youtube-transcript-skill.png"
 ---

@@ -3,7 +3,7 @@ title: "Using /goal for Wiki Management — Spec-Driven Autonomous Wiki Sessions
 date: 2026-05-22
 category: Claude Code Engineering
 tags: [claude-code, slash-goal, wiki, spec-driven, workflow, autonomous-agents, agentic-engineering, productivity, knowledge-base]
-related: ["/goal 使用指南 — The Visual Playbook for Claude Code's Persistent Goal Mechanism", "Beyond /goal — The Orchestrator + Headless Pattern for Long-Running Claude Sessions", "SpecOps — AI-Assisted Spec Writing for Claude Code Projects", "Claude Code 101 — Anthropic's Official Onboarding Course", "Start Here — AI Agents & Claude Code for Beginners", "project-spec-interviewer-skill — Interactive Terminal Interview That Writes Your spec.md"]
+related: ["/goal 使用指南 — The Visual Playbook for Claude Code's Persistent Goal Mechanism", "Beyond /goal — The Orchestrator + Headless Pattern for Long-Running Claude Sessions", "SpecOps — Spec-Driven Development with AI Coding Agents", "Claude Code 101 — Anthropic's Official Onboarding Course", "Start Here — AI Agents & Claude Code for Beginners", "project-spec-interviewer-skill — Interactive Terminal Interview That Writes Your spec.md"]
 icon: "🎯"
 image: "/assets/images/goal-wiki-management-workflow.png"
 ---

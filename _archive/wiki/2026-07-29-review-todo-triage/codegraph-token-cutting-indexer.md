@@ -3,7 +3,7 @@ title: "CodeGraph: Local Code Knowledge Graph that Cuts Token Usage"
 date: 2026-05-23
 category: Skills & Plugins
 tags: [codex, claude-code, mcp, code-indexing, token-optimization, performance, knowledge-graph]
-related: ["Codex + Claude Code Skill Repos: May 23 Batch", "academic-research-skills — Imbad0202's 4-Skill Claude Code Pipeline for Academic Research", "Claude Code Skills: Resources & Repos"]
+related: ["Codex + Claude Code Skill Repos: May 23 Batch", "academic-research-skills — Imbad0202's 4-Skill Claude Code Pipeline for Academic Research"]
 icon: "🕸️"
 image: "/assets/images/codegraph-token-cutting-indexer.png"
 ---

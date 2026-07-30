@@ -3,7 +3,7 @@ title: "Personal AI Skill Cheat Sheet — When to Use Each Skill"
 date: 2026-05-24
 category: Skills & Plugins
 tags: [codex, claude-code, skills, plugins, workflow, testing, security, finance, hardware, writing, mcp, codegraph, react-doctor, paperspine, openai-skills, voidful]
-related: ["Codex + Claude Code Skill Repos: May 23 Batch", "CodeGraph: Local Code Knowledge Graph that Cuts Token Usage", "Claude Code Skills: Resources & Repos", "grill-me — When AI Interviews You Before Writing Code", "Cross-Model Code Review — Why Claude Can't Catch Its Own Bugs"]
+related: ["codegraph — Local Code Knowledge Graph for AI Coding Agents", "grill-me — When AI Interviews You Before Writing Code", "Cross-Model Code Review — Why Claude Can't Catch Its Own Bugs", "PaperSpine — Motivation-Driven Paper Writing Skill Suite for Codex and Claude Code"]
 icon: "🧭"
 image: "/assets/images/codex-skills-cheat-sheet.png"
 ---
@@ -492,7 +492,7 @@ Some useful items were intentionally not treated as ordinary skill-folder instal
 - **`awesome-codex-cli`** (RoggeOhta): reference list only; curates 150+ tools/skills/subagents/plugins but does not itself ship installable skill folders.
 - **`awesome-codex-skills`** (ComposioHQ): **NOT just a reference list** — it ships installable skill folders and a `skill-installer/` Python script. The Q installation already uses this installer at `~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py`. Browse the README and `python3 install-skill-from-github.py --repo ... --path ... --name ...` to add individual skills.
 - **Existing `pdf` in Claude Code**: left untouched on the Claude side because it already existed and did not match the pinned OpenAI curated copy. The Codex side uses the OpenAI curated `pdf`.
-- **`rohitg00/agentmemory`**: explicitly skipped. The MCP-plus-12-hooks footprint conflicted with the file-based auto-memory system already in place. See [CodeGraph entry](codegraph-token-cutting-indexer.md) for the parallel decision on a more focused MCP install.
+- **`rohitg00/agentmemory`**: explicitly skipped. The MCP-plus-12-hooks footprint conflicted with the file-based auto-memory system already in place. See [codegraph](codegraph-pre-indexed-claude-code.md) for the parallel decision on a more focused MCP install.
 - **`aklofas/kicad-happy` (full Claude/Codex plugin + GitHub Action)**: the **skill folders** (`kicad`, `bom`, `datasheets`, `spice`, `emc`, `jlcpcb`, `pcbway`, `digikey`, `mouser`, `lcsc`, `element14`, `kidoc`) ARE installed and usable — visible in the Hardware/KiCad section above. The kicad-happy **native plugin** (with hooks + GitHub Action) is intentionally NOT enabled, pending real PCB work.
 - **Asen pack** mapping to currently-loaded equivalents:
 

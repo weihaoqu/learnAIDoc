@@ -336,7 +336,7 @@ npm install -g @colbymchenry/codegraph
 cd /path/to/repo && codegraph init && codegraph index
 ```
 
-See [codegraph — Pre-Indexed Knowledge Graph That Cuts Claude Code's Tool Calls 92%](/learnAIDoc/wiki/codegraph-pre-indexed-claude-code/) for why it's worth setting up.
+See [codegraph — Local Code Knowledge Graph for AI Coding Agents](/learnAIDoc/wiki/codegraph-pre-indexed-claude-code/) for why it's worth setting up.
 
 ### Feynman Symlink
 

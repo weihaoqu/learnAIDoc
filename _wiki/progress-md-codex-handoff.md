@@ -3,7 +3,7 @@ title: "progress.md Handoff — A Scripted Codex ⇄ Claude Code Workflow"
 date: 2026-05-25
 category: Agent Setup & Migration
 tags: [codex, claude-code, handoff, progress-md, workflow, agents-md, multi-agent, slash-commands, automation, git, project-memory]
-related: ["New-Mac Migration — Codex + Claude Code + checkpoint/resume in 90 Minutes", "Claude Code + Codex Handoff Workflow — Switching Models Without Losing Context", "Claude Code /handover: Never Lose Context Between Sessions", "Codex + Claude Code for Research — A Practical Tutorial", "Copy My Claude Code Setup — The LearnAI Agent Stack From Scratch"]
+related: ["New-Mac Migration — Codex + Claude Code + checkpoint/resume in 90 Minutes", "Claude Code + Codex Handoff Workflow — Switching Models Without Losing Context", "Codex + Claude Code for Research — A Practical Tutorial", "Copy My Claude Code Setup — The LearnAI Agent Stack From Scratch"]
 icon: "🔄"
 image: "/assets/images/progress-md-codex-handoff.png"
 ---
@@ -23,6 +23,12 @@ The v1 workflow was: write a `# Current Handoff` block at the top of `CLAUDE.md`
 | Per-target handoff files multiply | If you patch v1 with `/tmp/learnai_resume_in_codex_latest.md` and `..._claude_latest.md`, you have two snapshots that drift apart and one project name hardcoded into a `/tmp` path. |
 
 v2 inverts the problem: instead of a hand-edited block that may or may not match git state, the script generates a fresh **append-only entry** in `progress.md` every time you stop — and the entry captures the git state automatically.
+
+## Why this replaces ad-hoc `HANDOVER.md`
+
+A manual `/handover` command that writes `HANDOVER.md` is still useful for one-off Claude Code sessions. It is weak as a durable cross-agent workflow because the handover file is hand-written, easy to forget, and disconnected from the actual branch / HEAD / dirty-tree state.
+
+`progress.md` keeps the good part — a readable stop-and-resume note — but makes it harder to lie by accident: the script captures git state automatically, prepends entries instead of overwriting history, and gives both Claude Code and Codex the same `/checkpoint` / `/resume` shape. For multi-day work, this is the canonical version; the old `/handover` page has been folded into this entry and archived.
 
 ## The shape — one log, two slash commands, one script
 
@@ -363,4 +369,4 @@ Sources:
 - [Top AI Agent Standards to Know in 2026 — Agentailor](https://blog.agentailor.com/posts/top-ai-agent-standards-2026)
 - [openai/codex AGENTS.md (GitHub)](https://github.com/openai/codex/blob/main/AGENTS.md)
 - [Claude Code + Codex Handoff Workflow (v1 — wiki)]({{ '/wiki/claude-code-codex-handoff-workflow/' | relative_url }})
-- [Claude Code /handover — generic save-context skill]({{ '/wiki/claude-code-handover-skill/' | relative_url }})
+- Archived predecessor: Claude Code `/handover` as a generic save-context skill. Use `progress.md` for current cross-agent handoff work.

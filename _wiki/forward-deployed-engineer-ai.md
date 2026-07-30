@@ -119,5 +119,5 @@ A critical skill gap to watch: **not all engineers who are good coders are good 
 - **Companion entries in this wiki:**
   - [What is Agentic Engineering? A Teaching Primer](/learnAIDoc/wiki/what-is-agentic-engineering/) — the engineering discipline FDEs are deploying
   - [Harness Engineering — The Real Bottleneck Isn't the Model](/learnAIDoc/wiki/harness-engineering-agents/) — the orchestration layer FDEs commonly build and debug
-  - [Beyond /goal — The Orchestrator + Headless Pattern for Long-Running Claude Sessions](/learnAIDoc/wiki/beyond-goal-orchestrator-headless/) — tooling pattern relevant to FDE productivity
+  - [Beyond /goal — The Orchestrator + Headless Pattern for Long-Running Claude Sessions](/learnAIDoc/wiki/goal-orchestrator-headless-pattern/) — tooling pattern relevant to FDE productivity
   - [Agentic AI Engineer Roadmap 2026 — Eight Pillars from Prompt to Production](/learnAIDoc/wiki/agentic-ai-engineer-roadmap-2026/) — skill-building roadmap adjacent to FDE preparation

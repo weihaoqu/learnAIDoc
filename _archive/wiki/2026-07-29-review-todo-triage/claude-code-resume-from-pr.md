@@ -5,7 +5,7 @@ category: Claude Code Workflows
 redirect_from:
   - "/wiki/claude code/claude-code-resume-from-pr/"
 tags: [claude-code, cli, git, collaboration, async]
-related: ["Claude Code Power User Tips"]
+
 icon: "🔗"
 image: "/assets/images/claude-code-resume-pr.jpg"
 ---

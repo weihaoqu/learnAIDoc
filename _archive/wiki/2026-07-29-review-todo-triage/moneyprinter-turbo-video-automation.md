@@ -5,7 +5,7 @@ category: Creative & Media
 redirect_from:
   - "/wiki/creative/moneyprinter-turbo-video-automation/"
 tags: [video-generation, automation, open-source, content-creation, tts, subtitles, short-video]
-related: ["Seedance 2.0: ByteDance's AI Video Generator with Native Audio", "Voice-Pro — Local AI Dubbing, Translation, and Voice Cloning in One Tool", "Accio Work — One Person + AI Agents = Entire Business"]
+related: ["Accio Work — One Person + AI Agents = Entire Business"]
 icon: "🎬"
 image: "/assets/images/moneyprinter-turbo-video-automation.png"
 ---

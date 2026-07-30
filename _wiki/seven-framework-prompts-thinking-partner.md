@@ -5,7 +5,7 @@ category: Prompting & Writing
 redirect_from:
   - "/wiki/ai research/seven-framework-prompts-thinking-partner/"
 tags: [claude, prompting, thinking-partner, karpathy, frameworks, meta-prompting, first-principles, system-thinking]
-related: ["Three Hidden Instructions That Stop Claude from Hallucinating", "Five Core Learning Prompts — From Memorization to Mastery", "AI Research & Thinking Toolkit: 13 Power Prompts"]
+related: ["Three Hidden Instructions That Stop Claude from Hallucinating", "Five Core Learning Prompts — From Memorization to Mastery"]
 icon: "🧠"
 image: "/assets/images/seven-framework-prompts-thinking-partner.png"
 ---

@@ -5,7 +5,7 @@ category: AI for Research
 redirect_from:
   - "/wiki/ai research/claude-use-cases-directory/"
 tags: [claude, use-cases, productivity, workflow, reference]
-related: ["Build Interactive Diagram Tools with Claude", "Create Custom Course Materials with Claude", "Best Claude Code Plugins"]
+related: ["Build Interactive Diagram Tools with Claude", "Create Custom Course Materials with Claude", "Claude Code Plugins & Marketplace"]
 icon: "📖"
 image: "/assets/images/claude-use-cases-directory.png"
 ---

@@ -1,14 +1,14 @@
 ---
-title: "Godogen — Prompt-to-Game Pipeline for Godot and Bevy"
+title: "Godogen — Prompt-to-Game Pipeline for Godot, Bevy, and Babylon.js"
 date: 2026-04-26
 category: Skills & Plugins
-tags: [game-development, godot, bevy, claude-code, codex, ai-game-gen, autonomous-agents]
+tags: [game-development, godot, bevy, babylonjs, claude-code, codex, ai-game-gen, autonomous-agents]
 related: ["AI Mastery Games — Teaching AI Literacy Through Interactive Games", "Claude Code Custom Agents", "Claude Code: Agent Teams vs Subagents"]
 icon: "🎮"
 image: "/assets/images/godogen-ai-game-dev.png"
 ---
 
-Godogen turns a game description into a working game — autonomously. "Describe a game. Godogen plans it, writes the code, generates assets, runs the engine, checks screenshots, and fixes what looks wrong." Supports both Godot 4 (C#) and Bevy (Rust), works with Claude Code or Codex, and includes a unique frame-grounded self-repair loop that fixes *visual* bugs, not just compilation errors. ~3k GitHub stars.
+Godogen turns a game description into a working game — autonomously. "Describe a game. Godogen plans it, writes the code, generates assets, runs the engine, checks screenshots, and fixes what looks wrong." It supports Godot 4, Bevy, and Babylon.js workflows, works with Claude Code or Codex, and includes a frame-grounded self-repair loop that fixes *visual* bugs, not just compilation errors.
 
 *Source: [GitHub - htdt/godogen](https://github.com/htdt/godogen)*
 
@@ -39,12 +39,11 @@ The key innovation: **frame-grounded self-repair**. Instead of just checking if 
 
 | Engine | Agent | Output |
 |--------|-------|--------|
-| Godot 4 (.NET) | Claude Code | C# project with scenes, scripts, assets |
-| Godot 4 (.NET) | Codex | Same, via Codex agent |
-| Bevy | Claude Code | Rust/Bevy project with code-first scenes |
-| Bevy | Codex | Same, via Codex agent |
+| Godot 4 (.NET) | Claude Code / Codex | C# project with scenes, scripts, assets |
+| Bevy | Claude Code / Codex | Rust/Bevy project with code-first scenes |
+| Babylon.js | Claude Code / Codex | Browser-native 3D game project |
 
-Single `publish.sh` script — engine and agent choice is a publish-time flag, not separate source trees.
+Single `publish.sh` script — engine and agent choice is a publish-time flag, not separate source trees. Current README examples:
 
 ```bash
 ./publish.sh --engine godot --agent claude --out ~/my-game

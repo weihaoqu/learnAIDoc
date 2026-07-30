@@ -3,7 +3,7 @@ title: "MIT 6.5940 — Song Han's TinyML & Efficient Deep Learning Course"
 date: 2026-05-18
 category: Learning Resources
 tags: [tinyml, efficient-deep-learning, mit, song-han, pruning, quantization, neural-architecture-search, mcunet, deep-compression, llm-deployment, edge-ai, model-compression, course, free-resource, awq, smoothquant]
-related: ["Anthropic Academy — 13 Free AI Courses with Certificates", "Codex Orange Book — 花叔's Bilingual Codex Reference", "LLM Architecture Gallery — Visual Reference for Every Major Model", "AI Engineering from Scratch — Karpathy's Build-Your-Own-LLM Curriculum", "AI Learning Courses on YouTube 2026", "Karpathy's LLM Knowledge Bases — Building a Personal Wiki with AI"]
+related: ["Anthropic Academy — 13 Free AI Courses with Certificates", "Codex Orange Book — 花叔's Bilingual Codex Reference", "LLM Architecture Gallery — Visual Reference for Every Major Model", "AI Engineering from Scratch — Rohit Ghumare's 416-Lesson Math-to-MCP Curriculum", "Stanford CS336 — Language Modeling from Scratch: The Complete Free LLM Curriculum", "Karpathy's LLM Knowledge Bases — Building a Personal Wiki with AI"]
 icon: "🔬"
 image: "/assets/images/mit-6-5940-song-han-tinyml-efficient.png"
 ---

@@ -5,7 +5,7 @@ category: Prompting & Writing
 redirect_from:
   - "/wiki/ai research/claude-three-hidden-quality-prompts/"
 tags: [claude, hallucination, prompting, system-prompt, citations, research-mode, quality]
-related: ["AI Research & Thinking Toolkit: 13 Power Prompts", "Five Questions for Critical Paper Reading — The Cambridge Method with Claude", "7 Framework Prompts That Turn Claude into a Thinking Partner", "Claude Mythos and the Verification Problem in AI Security Claims"]
+related: ["Five Questions for Critical Paper Reading — The Cambridge Method with Claude", "7 Framework Prompts That Turn Claude into a Thinking Partner", "Claude Mythos and the Verification Problem in AI Security Claims"]
 icon: "🎯"
 image: "/assets/images/claude-three-hidden-quality-prompts.png"
 ---

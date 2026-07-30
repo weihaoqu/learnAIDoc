@@ -5,7 +5,7 @@ category: AI for Teaching
 redirect_from:
   - "/wiki/ai education/learning-effectively-ai-era/"
 tags: [learning, education, ai-fluency, critical-thinking, notebooklm, self-learning, study]
-related: ["AI Fluency Index: Why Your Best Prompts Might Lead to Your Worst Work", "How AI Impacts Skill Formation", "Five Core Learning Prompts — From Memorization to Mastery", "MIT Professor's NotebookLM Grading System — 47 Essays in 12 Minutes", "OpenMAIC: Tsinghua's Multi-Agent AI Classroom", "Independent Thinking in the Age of AI — Visual PKM and 4D Knowledge"]
+related: ["AI Fluency Index: Why Your Best Prompts Might Lead to Your Worst Work", "Five Core Learning Prompts — From Memorization to Mastery", "MIT Professor's NotebookLM Grading System — 47 Essays in 12 Minutes", "OpenMAIC: Tsinghua's Multi-Agent AI Classroom", "Independent Thinking in the Age of AI — Visual PKM and 4D Knowledge"]
 icon: "🧠"
 image: "/assets/images/learning-effectively-ai-era.png"
 ---
@@ -27,7 +27,7 @@ Without AI:                          With AI (wrong way):
 
 AI gives polished, confident answers instantly. That feels productive — but **the struggle IS the learning**. When you skip the struggle, you skip the skill formation.
 
-Research backs this up: students who delegate coding to AI score **17% lower** on evaluations than those who wrestle with problems themselves ([How AI Impacts Skill Formation](/learnAIDoc/wiki/ai-impacts-skill-formation/)). The biggest gap? **Debugging** — because the control group was forced to resolve errors independently.
+Research backs this up: students who delegate coding to AI score **17% lower** on evaluations than those who wrestle with problems themselves ([Anthropic skill-formation study](https://www.anthropic.com/research/AI-assistance-coding-skills)). The biggest gap? **Debugging** — because the control group was forced to resolve errors independently.
 
 ## The Right Way: AI as Learning Amplifier
 

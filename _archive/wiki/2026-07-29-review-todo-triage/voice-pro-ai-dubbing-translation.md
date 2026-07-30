@@ -5,7 +5,7 @@ category: Creative & Media
 redirect_from:
   - "/wiki/creative/voice-pro-ai-dubbing-translation/"
 tags: [voice-cloning, dubbing, translation, open-source, whisper, tts, video, speech-recognition]
-related: ["Seedance 2.0: ByteDance's AI Video Generator with Native Audio"]
+related: []
 icon: "🎙️"
 image: "/assets/images/voice-pro-ai-dubbing-translation.png"
 ---

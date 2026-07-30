@@ -5,7 +5,7 @@ category: AI for Teaching
 redirect_from:
   - "/wiki/ai education/socratic-prompting-method/"
 tags: [prompting, socratic-method, technique, reasoning, chain-of-thought, teaching, best-practices, education]
-related: ["Seven Framework Prompts — Claude as a Thinking Partner"]
+related: ["7 Framework Prompts That Turn Claude into a Thinking Partner"]
 icon: "🤔"
 image: "/assets/images/socratic-prompting-method.png"
 ---

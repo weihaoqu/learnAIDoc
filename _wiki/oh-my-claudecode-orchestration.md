@@ -5,7 +5,7 @@ category: Skills & Plugins
 redirect_from:
   - "/wiki/skills & plugins/oh-my-claudecode-orchestration/"
 tags: [claude-code, orchestration, multi-agent, plugin, codex, gemini, oh-my-claudecode, teams, parallel]
-related: ["Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code: Agent Teams vs Subagents", "Claw Code — Clean-Room Python Rewrite of Claude Code's Agent Harness", "Agent Framework Explosion — Superpowers, DeerFlow, NOMAD & TradingAgents"]
+related: ["Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code: Agent Teams vs Subagents"]
 icon: "💪"
 image: "/assets/images/oh-my-claudecode-orchestration.png"
 ---

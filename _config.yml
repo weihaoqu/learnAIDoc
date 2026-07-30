@@ -12,6 +12,9 @@ highlighter: rouge
 plugins:
   - jekyll-redirect-from
 
+exclude:
+  - _archive
+
 # Collections for wiki-style organization
 collections:
   wiki:

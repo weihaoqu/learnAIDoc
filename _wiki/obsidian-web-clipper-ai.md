@@ -5,7 +5,7 @@ category: Skills & Plugins
 redirect_from:
   - "/wiki/tools/obsidian-web-clipper-ai/"
 tags: [obsidian, web-clipper, browser-extension, ai, knowledge-management, productivity, chrome]
-related: ["Obsidian CLI — Command-Line Access to Your Vault from Claude Code", "kepano/obsidian-skills — Agent Skills That Let AI Edit Your Vault", "Building a Research KB — Zotero + Obsidian + Claude Code"]
+related: ["Obsidian CLI + Claude Code: Your Second Brain as Context", "kepano/obsidian-skills — Agent Skills That Let AI Edit Your Vault", "Building a Research KB — Zotero + Obsidian + Claude Code"]
 icon: "✂️"
 image: "/assets/images/obsidian-web-clipper-ai.png"
 ---

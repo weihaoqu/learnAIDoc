@@ -10,7 +10,7 @@ image: "/assets/images/image-blaster-3d-audio-generation.png"
 
 Take a single photo, run a Claude-orchestrated workflow, and walk away with an explorable 3D environment, ambient audio, and a downloadable object mesh — in under five minutes in typical runs (actual time varies with API latency and queueing). That is the pitch behind **image-blaster**, an open-source Claude Code skill pipeline that chains World Labs, FAL, GPT Image 2, Hunyuan3D, and ElevenLabs into a single workflow. It is a genuine creative experiment worth knowing about, with some real API costs and rough edges to factor in.
 
-*Source: Weibo post by AI creator 陆玉金, May 2026 (Weibo URL not independently verified; no direct permalink available). Primary verifiable source: GitHub repo [github.com/neilsonnn/image-blaster](https://github.com/neilsonnn/image-blaster)*
+*Source: [neilsonnn/image-blaster GitHub](https://github.com/neilsonnn/image-blaster). Discovery note: Weibo post by AI creator 陆玉金, May 2026, no durable permalink preserved.*
 
 ---
 

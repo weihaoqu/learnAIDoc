@@ -8,11 +8,11 @@ icon: "🛠"
 image: "/assets/images/addy-osmani-agent-skills.png"
 ---
 
-Addy Osmani (Google Chrome engineering lead) packaged senior engineering practices into 20 core skills that AI coding agents can follow. The insight: AI agents naturally take shortcuts — skipping specs, tests, and security reviews. These skills enforce the discipline that experienced engineers bring to every project. Its rapid GitHub adoption has made it a reference implementation for encoding engineering culture into agent workflows.
+Addy Osmani (Google Chrome engineering lead) packaged senior engineering practices into 24 skills that AI coding agents can follow. The insight: AI agents naturally take shortcuts — skipping specs, tests, and security reviews. These skills enforce the discipline that experienced engineers bring to every project. Its rapid GitHub adoption has made it a reference implementation for encoding engineering culture into agent workflows.
 
-*Source: [GitHub - addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | [Weibo discussion by 马力AI和商业思维](https://weibo.com)*
+*Source: [GitHub - addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)*
 
-## The 7 Slash Commands
+## The 8 Slash Commands
 
 Each command maps to a phase of the software development lifecycle:
 
@@ -23,13 +23,15 @@ Each command maps to a phase of the software development lifecycle:
 | `/build` | Build | Implement one slice at a time |
 | `/test` | Verify | Tests are proof, not decoration |
 | `/review` | Review | Improve code health before merge |
+| `/webperf` | Verify | Measure web performance before optimizing |
 | `/code-simplify` | Simplify | Clarity over cleverness |
 | `/ship` | Ship | Faster is safer — deploy to production |
 
-## Six Development Phases, 20 Skills
+## Six Development Phases, 24 Skills
 
 ```
 Phase 1: DEFINE
+├── interview-me
 ├── idea-refine
 └── spec-driven-development
 
@@ -42,7 +44,8 @@ Phase 3: BUILD
 ├── frontend-ui-engineering
 ├── api-and-interface-design
 ├── context-engineering
-└── source-driven-development
+├── source-driven-development
+└── doubt-driven-development
 
 Phase 4: VERIFY
 ├── browser-testing-with-devtools
@@ -59,10 +62,11 @@ Phase 6: SHIP
 ├── ci-cd-and-automation
 ├── deprecation-and-migration
 ├── documentation-and-adrs
+├── observability-and-instrumentation
 └── shipping-and-launch
 ```
 
-Plus 3 specialist agent personas (code-reviewer, test-engineer, security-auditor) and 4 reference checklists.
+Plus a `using-agent-skills` meta-skill, 4 specialist agent personas, and 7 reference checklists.
 
 ## What Makes These Skills Special
 
@@ -118,4 +122,3 @@ Skills are plain Markdown — any agent accepting system prompts can use them.
 - **Open source projects** — standardize contribution quality regardless of agent used
 - **Junior developers** — learn senior-level practices by reading the skill files
 - **Code review** — the reviewer agent persona provides structured, opinionated feedback
-<\!-- REVIEW-TODO: [source_links] Weibo source link is generic (https://weibo.com), not a specific post URL — find actual post or remove -->

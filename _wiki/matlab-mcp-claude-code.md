@@ -3,7 +3,7 @@ title: "MATLAB MCP — Connect Claude Code to Your Local MATLAB Environment"
 date: 2026-05-21
 category: Skills & Plugins
 tags: [matlab, mcp, claude-code, mathworks, scientific-computing, stem, engineering, toolbox, code-execution, static-analysis, go, open-source]
-related: ["AI Coding Reliability — Implementation Notes Habit + 12 Engineering Rules", "Non-Coding Skills in Claude Code — The Overlooked Half of Agentic AI", "Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture"]
+related: ["AI Coding Reliability — Implementation Notes Habit + 12 Engineering Rules", "Non-Coding Skills for Claude Code — Automating Business & Life", "Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture"]
 icon: "⚙️"
 image: "/assets/images/matlab-mcp-claude-code.png"
 ---

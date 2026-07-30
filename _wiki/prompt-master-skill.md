@@ -5,7 +5,7 @@ category: Skills & Plugins
 redirect_from:
   - "/wiki/skills & plugins/prompt-master-skill/"
 tags: [claude-code, prompting, midjourney, dall-e, stable-diffusion, ai-tools, skill, prompt-engineering]
-related: ["Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "Claude Certified Architect — Anthropic's First Official AI Certification", "Best Claude Code Plugins"]
+related: ["Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "Claude Certified Architect — Anthropic's First Official AI Certification", "Claude Code Plugins & Marketplace"]
 icon: "🎯"
 image: "/assets/images/prompt-master-skill.png"
 ---

@@ -5,7 +5,7 @@ category: Learning Resources
 redirect_from:
   - "/wiki/ai education/critical-paper-reading-five-questions/"
 tags: [academic-reading, critical-thinking, claude, research, papers, education, methodology]
-related: ["Three Hidden Instructions That Stop Claude from Hallucinating", "AI Research & Thinking Toolkit: 13 Power Prompts", "Claude-Prism — Local-First Academic Writing Workspace with AI", "alphaXiv MCP — Semantic ArXiv Search Directly in Claude Code", "AI Agents for Academic Research & Writing — From KatmerCode to the Nature Playbook", "Paper-Code Joint Analysis & Contract-Driven Skill Design", "Paper2Code: Turn ArXiv Papers into Citation-Anchored Code"]
+related: ["Three Hidden Instructions That Stop Claude from Hallucinating", "Claude-Prism — Local-First Academic Writing Workspace with AI", "alphaXiv MCP — Semantic ArXiv Search Directly in Claude Code", "AI Agents for Academic Research & Writing — From KatmerCode to the Nature Playbook", "Paper-Code Joint Analysis & Contract-Driven Skill Design", "Paper2Code: Turn ArXiv Papers into Citation-Anchored Code"]
 icon: "📖"
 image: "/assets/images/critical-paper-reading-five-questions.png"
 ---

@@ -3,29 +3,29 @@ title: "AI Slide Generation with Claude Code — Tool Comparison & Guide"
 date: 2026-05-21
 category: Creative & Media
 tags: [slides, presentations, html-slides, claude-code, agent-skills, teaching, ppt, manim, animation, open-source, hub]
-related: ["HTML PPT Studio — AI-Powered Presentation Skill for Claude Code", "guizang-ppt-skill — The Cross-Agent HTML Slide Generation Skill", "Make Slides: AI-Powered Interactive Teaching Slides", "open-slide — The Slide Framework Built for AI Coding Agents", "GPT Image 2 水墨风 Slide Prompt — Structured Template for Ink-Wash Style Slides", "Math-To-Manim — AI-Automated LaTeX-to-Animation Pipeline"]
+related: ["HTML PPT Studio — AI-Powered Presentation Skill for Claude Code", "Make Slides: AI-Powered Interactive Teaching Slides", "open-slide — The Slide Framework Built for AI Coding Agents", "GPT Image 2 水墨风 Slide Prompt — Structured Template for Ink-Wash Style Slides", "Teaching Videos with Manim + Remotion — Two Engines for Code-Driven Explainers"]
 icon: "📊"
 image: "/assets/images/ai-slide-generation-tools.png"
 ---
 
-**This hub maps the six slide generation tools in the LearnAI wiki — from quick HTML decks to animated math videos — with a comparison table, decision guide, and links to each entry. Start here if you need to pick the right tool for your use case.**
+**This hub maps the LearnAI slide and explainer-generation tools — from quick HTML decks to animated math videos — with a comparison table, decision guide, and links to the canonical entries. Start here if you need to pick the right tool for your use case.**
 
-## The Six Tools at a Glance
+## The Tools at a Glance
 
 | Tool | Output | Best for | Agent scope | Themes/styles |
 |------|--------|---------|-------------|--------------|
 | [HTML PPT Studio](/learnAIDoc/wiki/html-ppt-studio-skill/) | Static HTML | Pitch decks, tech talks, social media | Claude Code | 36 themes, 31 layouts, 47 animations |
-| [guizang-ppt-skill](/learnAIDoc/wiki/guizang-ppt-skill/) | Static HTML | Cross-agent portability | Claude Code, Codex, Cursor | Minimal (prompt-driven) |
+| [Guizang PPT Skill](/learnAIDoc/wiki/html-ppt-studio-skill/) | Static HTML | Cross-agent portability, covers, strict visual systems | Claude Code, Codex, Cursor | 2 visual systems |
 | [Make Slides](/learnAIDoc/wiki/make-slides-interactive-teaching/) | Interactive HTML | CS lectures, algorithm walkthroughs | Claude Code | 1 (dark slate, pedagogy-first) |
 | [open-slide](/learnAIDoc/wiki/open-slide-agent-native-presentations/) | HTML | Agent-native iterative editing | Claude Code | Flexible (agent-directed) |
 | [GPT Image 2 水墨风](/learnAIDoc/wiki/gpt-image-2-ink-style-slide-prompt/) | Image-based slides | Ink-wash aesthetic academic slides | GPT Image 2 / CC pipeline | Ink-wash only |
-| [Math-To-Manim](/learnAIDoc/wiki/math-to-manim-ai-animation/) | Animated video (MP4) | LaTeX → animation for math/CS | Claude Code + OpenAI Agents SDK | None (animation-focused) |
+| [Math-To-Manim](/learnAIDoc/wiki/teaching-videos-manim-remotion/) | Animated video (MP4) | Prompt/LaTeX → Manim scene for math/CS | Claude Code + OpenAI Agents SDK | None (animation-focused) |
 
 ## Decision Guide
 
 **"I need slides fast for a talk or course" →** [HTML PPT Studio](/learnAIDoc/wiki/html-ppt-studio-skill/) — broadest theme/layout library, presenter mode with speaker scripts, zero setup
 
-**"I use Codex and Cursor too, not just Claude Code" →** [guizang-ppt-skill](/learnAIDoc/wiki/guizang-ppt-skill/) — explicitly tested across agents, 10K+ stars, cross-agent consistency was the design goal
+**"I use Codex and Cursor too, not just Claude Code" →** [Guizang PPT Skill](/learnAIDoc/wiki/html-ppt-studio-skill/) — cross-agent HTML decks, covers, and strict visual-system guidance
 
 **"I'm teaching CS — algorithms, automata, proofs" →** [Make Slides](/learnAIDoc/wiki/make-slides-interactive-teaching/) — step-through interactivity, pedagogical rules, 5-agent review pipeline, proven across 79+ lecture decks
 
@@ -33,9 +33,9 @@ image: "/assets/images/ai-slide-generation-tools.png"
 
 **"I need beautiful academic slides with an ink-wash aesthetic" →** [GPT Image 2 水墨风](/learnAIDoc/wiki/gpt-image-2-ink-style-slide-prompt/) — structured prompt template for ink-wash style, GPT Image 2 image generation
 
-**"I need to animate a mathematical formula or proof" →** [Math-To-Manim](/learnAIDoc/wiki/math-to-manim-ai-animation/) — LaTeX → Manim → animated MP4; not slides in the traditional sense but the right tool for visual math explanation
+**"I need to animate a mathematical formula or proof" →** [Math-To-Manim / Manim](/learnAIDoc/wiki/teaching-videos-manim-remotion/) — prompt or LaTeX → Manim → animated MP4; not slides in the traditional sense but the right tool for visual math explanation
 
-## What All Six Have in Common
+## What They Have in Common
 
 - All work inside or alongside Claude Code
 - All produce output viewable without proprietary software (HTML or video)
@@ -52,8 +52,8 @@ image: "/assets/images/ai-slide-generation-tools.png"
 ### [HTML PPT Studio](/learnAIDoc/wiki/html-ppt-studio-skill/) — Best all-rounder
 36 themes, 31 layouts, 47 animations (27 CSS + 20 Canvas FX), 15 full-deck templates, presenter mode with speaker scripts and timer. Install: `npx skills add https://github.com/lewislulu/html-ppt-skill`. Claude Code focused, zero-dependency output.
 
-### [guizang-ppt-skill](/learnAIDoc/wiki/guizang-ppt-skill/) — Cross-agent portability
-Self-contained HTML decks. The author explicitly engineered for consistent output across Claude Code, Codex, and Cursor. 10,000+ stars in 25 days (May 2026). Best when your team uses multiple agents.
+### [Guizang PPT Skill](/learnAIDoc/wiki/html-ppt-studio-skill/) — Cross-agent portability
+Self-contained HTML decks and covers. Best when your team uses multiple coding agents and wants a stricter visual system than a generic prompt-driven deck.
 
 ### [Make Slides](/learnAIDoc/wiki/make-slides-interactive-teaching/) — Teaching-first
 Built for CS lectures: step-through interactivity (Prev/Next navigation inside slides), Canvas walkthroughs for algorithm visualization, 5-agent quality review. Proven across 79+ decks at Monmouth University.
@@ -64,8 +64,8 @@ Designed for iterative agent-directed slide creation. In-browser comment inspect
 ### [GPT Image 2 水墨风](/learnAIDoc/wiki/gpt-image-2-ink-style-slide-prompt/) — Aesthetic specialization
 A structured prompt template for generating ink-wash style academic slides using GPT Image 2. Not a general-purpose tool — a specialized aesthetic for researchers who want elegant visual identity in presentations.
 
-### [Math-To-Manim](/learnAIDoc/wiki/math-to-manim-ai-animation/) — Animation pipeline
-Automates the LaTeX → Python animation code → Manim render → MP4 pipeline. Primarily uses OpenAI Agents SDK. Best for embedding animated mathematical explanations in lectures or educational videos, not for building a full slide deck.
+### [Math-To-Manim](/learnAIDoc/wiki/teaching-videos-manim-remotion/) — Animation pipeline
+Automates the prompt/LaTeX → Python animation code → Manim render → MP4 pipeline. Best for embedding animated mathematical explanations in lectures or educational videos, not for building a full slide deck.
 
 ## How LearnAI Team Could Use This Hub
 

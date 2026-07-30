@@ -5,7 +5,7 @@ category: Skills & Plugins
 redirect_from:
   - "/wiki/skills & plugins/browser-use-cli-automation/"
 tags: [browser-automation, cdp, claude-code, open-source, testing, qa, chrome]
-related: ["Claude Code Power User Tips", "Claude Code Auto Mode — The Middle Path for Permissions"]
+related: ["Claude Code Auto Mode — The Middle Path for Permissions"]
 icon: "🌐"
 image: "/assets/images/browser-use-cli-automation.png"
 ---

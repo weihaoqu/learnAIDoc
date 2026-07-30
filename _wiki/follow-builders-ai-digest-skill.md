@@ -5,7 +5,7 @@ category: Skills & Plugins
 redirect_from:
   - "/wiki/skills & plugins/follow-builders-ai-digest-skill/"
 tags: [claude-code, skills, ai-news, content-curation, builders, x-twitter, podcasts, telegram, discord]
-related: ["Claude Code Skills & Resources: Nine Skill Types Taxonomy", "Claude Code Best Plugins: 53 Reality Check"]
+related: ["Personal AI Skill Cheat Sheet — When to Use Each Skill", "Claude Code Plugins & Marketplace"]
 icon: "📡"
 image: "/assets/images/follow-builders-ai-digest-skill.png"
 ---

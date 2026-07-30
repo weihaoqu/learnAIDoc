@@ -5,7 +5,7 @@ category: Learning Resources
 redirect_from:
   - "/wiki/ai education/core-learning-prompts-deep-understanding/"
 tags: [learning, prompting, education, mental-models, critical-thinking, ai-learning]
-related: ["AI Research & Thinking Toolkit: 13 Power Prompts", "Five Questions for Critical Paper Reading — The Cambridge Method with Claude", "Learning in the AI Era: Amplify Your Thinking, Don't Outsource It", "7 Framework Prompts That Turn Claude into a Thinking Partner"]
+related: ["Five Questions for Critical Paper Reading — The Cambridge Method with Claude", "Learning in the AI Era: Amplify Your Thinking, Don't Outsource It", "7 Framework Prompts That Turn Claude into a Thinking Partner"]
 icon: "🧠"
 image: "/assets/images/core-learning-prompts-deep-understanding.png"
 ---

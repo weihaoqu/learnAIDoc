@@ -10,13 +10,13 @@ icon: "📝"
 image: "/assets/images/ai-agent-academic-research-writing.png"
 ---
 
-The gap between "ChatGPT can help me write" and a full AI-powered research pipeline is enormous. Two recent resources bridge it: **KatmerCode**, an Obsidian plugin that puts 8 research-specific AI skills in your writing sidebar, and a **Nature career column** by Dritjon Gruda outlining 3 responsible ways to use LLMs for academic writing. Together, they show both the tooling and the mindset for AI-assisted research in 2026.
+The gap between "ChatGPT can help me write" and a full AI-powered research pipeline is enormous. Two recent resources bridge it: **KatmerCode**, an Obsidian plugin that puts 7 academic research skills and multiple CLI-backed AI providers in your writing sidebar, and a **Nature career column** by Dritjon Gruda outlining 3 responsible ways to use LLMs for academic writing. Together, they show both the tooling and the mindset for AI-assisted research in 2026.
 
-*Source: [KatmerCode on GitHub](https://github.com/hkcanan/katmer-code) (295 stars) | [Gruda, D. "Three ways ChatGPT helps me in my academic writing" — Nature (2024)](https://www.nature.com/articles/d41586-024-01042-3) | [哈泰利 on Xiaohongshu](https://www.xiaohongshu.com/) | [Hacker News discussion](https://news.ycombinator.com/item?id=47479462)*
+*Source: [KatmerCode on GitHub](https://github.com/hkcanan/katmer-code) | [Gruda, D. "Three ways ChatGPT helps me in my academic writing" — Nature (2024)](https://www.nature.com/articles/d41586-024-01042-3) | [Hacker News discussion](https://news.ycombinator.com/item?id=47479462)*
 
 ## KatmerCode: Full Research Pipeline Inside Obsidian
 
-KatmerCode integrates Claude Code as a sidebar panel in Obsidian — specifically designed for researchers who write in their vault and want AI assistance without leaving the editor. It runs Claude Code CLI as a subprocess, supports streaming, tool calls, and inline diff editing.
+KatmerCode integrates CLI-backed AI assistants as a sidebar panel in Obsidian — specifically designed for researchers who write in their vault and want AI assistance without leaving the editor. It supports Claude Code, Gemini, Codex, and Antigravity tabs, plus streaming, tool calls, inline diff editing, and academic research skills.
 
 ```
 ┌─────────────────────────────────────────────────────┐
@@ -24,7 +24,7 @@ KatmerCode integrates Claude Code as a sidebar panel in Obsidian — specificall
 │  ┌──────────────────┐  ┌────────────────────────┐  │
 │  │                  │  │  KatmerCode Sidebar     │  │
 │  │  Your Manuscript │  │  ┌──────────────────┐  │  │
-│  │  (Markdown)      │◄─┤  │ 8 Research Skills│  │  │
+│  │  (Markdown)      │◄─┤  │ 7 Research Skills│  │  │
 │  │                  │  │  │ /lit-search      │  │  │
 │  │  Inline Diffs:   │  │  │ /citation-network│  │  │
 │  │  ~~old~~ new     │  │  │ /research-gap    │  │  │
@@ -32,7 +32,6 @@ KatmerCode integrates Claude Code as a sidebar panel in Obsidian — specificall
 │  └──────────────────┘  │  │ /journal-match   │  │  │
 │                        │  │ /peer-review     │  │  │
 │                        │  │ /cite-verify     │  │  │
-│                        │  │ /report-template │  │  │
 │                        │  └──────────────────┘  │  │
 │                        │         │              │  │
 │                        │         ▼              │  │
@@ -45,9 +44,9 @@ KatmerCode integrates Claude Code as a sidebar panel in Obsidian — specificall
 └─────────────────────────────────────────────────────┘
 ```
 
-### The 8 Research Skills
+### The 7 Academic Skills
 
-Each skill is triggered via slash command and produces structured HTML reports with charts, tables, and interactive elements.
+Each skill is triggered via slash command and can produce structured reports with charts, tables, and interactive elements.
 
 | Skill | What It Does |
 |---|---|
@@ -58,12 +57,11 @@ Each skill is triggered via slash command and produces structured HTML reports w
 | **`/journal-match`** | Analyzes your paper's reference profile to recommend target journals with scope fit and acceptance rate assessments |
 | **`/peer-review`** | Evaluates manuscripts across 8 criteria with radar chart visualization and section-specific feedback |
 | **`/cite-verify`** | Cross-checks every reference against CrossRef, Semantic Scholar, and OpenAlex; flags broken citations, retracted papers, metadata mismatches |
-| **`/report-template`** | Wraps all outputs into a unified, styled HTML report viewable in Obsidian or browser |
 
 ### Setup & Requirements
 
 ```bash
-# Requires Claude Code CLI installed globally
+# Requires at least one supported provider CLI installed globally
 npm install -g @anthropic-ai/claude-code
 
 # Clone and build the plugin
@@ -74,7 +72,7 @@ cd katmer-code && npm install && npm run build
 cp main.js manifest.json styles.css <vault>/.obsidian/plugins/katmer-code/
 ```
 
-**Key detail:** KatmerCode inherits MCP servers from `~/.claude.json` — so if you've configured `paper-search-mcp`, `arxiv-mcp-server`, or `openalex-research-mcp` for your terminal Claude Code, they automatically work in the sidebar too.
+**Key detail:** KatmerCode reads each provider's own CLI and MCP configuration — so Claude, Codex, Gemini, and Antigravity can each keep their native auth, context, and tooling.
 
 ### Important Caveat
 
@@ -237,4 +235,3 @@ DeepScientist's core insight: **failed experiments are knowledge too**. Most too
 - **Nature article:** [Three ways ChatGPT helps me in my academic writing](https://www.nature.com/articles/d41586-024-01042-3)
 - **HN discussion:** [Show HN: KatmerCode](https://news.ycombinator.com/item?id=47479462)
 - **XDA coverage:** [Claude Code inside Obsidian](https://www.xda-developers.com/claude-code-inside-obsidian-and-it-was-eye-opening/)
-<\!-- REVIEW-TODO: [source_links] Xiaohongshu source link is generic (https://www.xiaohongshu.com/), not a specific post URL — find actual 哈泰利 post or remove -->

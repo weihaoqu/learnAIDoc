@@ -5,7 +5,7 @@ category: Skills & Plugins
 redirect_from:
   - "/wiki/skills & plugins/beads-graph-memory-for-agents/"
 tags: [ai, agents, memory, graph, git, claude-code]
-related: ["Claude Code: Agent Teams vs Subagents", "Claude Code Power User Tips", "Understand Anything — Turn Codebases Into Interactive Knowledge Graphs"]
+related: ["Claude Code: Agent Teams vs Subagents", "Understand Anything — Turn Codebases Into Interactive Knowledge Graphs"]
 icon: "📿"
 image: "/assets/images/beads-graph-memory.jpg"
 ---

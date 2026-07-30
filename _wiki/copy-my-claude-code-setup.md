@@ -112,8 +112,8 @@ Skills extend Claude Code with domain-specific capabilities. The LearnAI stack u
 
 | Entry | What you'll get |
 |-------|----------------|
-| **[Claude Code 必装/进阶十大 Skill — Community-Curated Map of 20 Power Skills](/learnAIDoc/wiki/claude-code-top-20-skills-curated/)** | The curated map: which skills to install first and why. |
-| **[Best Claude Code Plugins](/learnAIDoc/wiki/claude-code-best-plugins/)** | Plugin-level additions beyond individual skills. |
+| **[Personal AI Skill Cheat Sheet — When to Use Each Skill](/learnAIDoc/wiki/codex-skills-cheat-sheet/)** | The practical router: which skills to use for planning, debugging, review, testing, writing, and handoff. |
+| **[Claude Code Plugins & Marketplace](/learnAIDoc/wiki/claude-code-plugins/)** | Plugin-level additions beyond individual skills, grounded in the current marketplace model. |
 | **[Non-Coding Skills for Claude Code](/learnAIDoc/wiki/non-coding-skills-claude-code/)** | Skills for writing, research, business ops — not just engineering. |
 | **[Anthropic Knowledge Work Plugins](/learnAIDoc/wiki/anthropic-knowledge-work-plugins/)** | Role-based plugins: researcher, writer, analyst. |
 
@@ -176,7 +176,6 @@ project-spec-interviewer-skill
 
 | Entry | What you'll get |
 |-------|----------------|
-| **[Claude Code /handover — Never Lose Context Between Sessions](/learnAIDoc/wiki/claude-code-handover-skill/)** | The /handover skill: end-of-session memory export so the next session picks up exactly where you left off. |
 | **[progress.md Handoff — A Scripted Codex ⇄ Claude Code Workflow](/learnAIDoc/wiki/progress-md-codex-handoff/)** | Cross-agent handoff: a tracked `progress.md` log + `/checkpoint` and `/resume` slash commands that work identically in Claude Code and Codex. Use when you alternate sessions between the two agents. |
 | **[Meta Harness — The Agent That Optimizes Its Own Scaffolding](/learnAIDoc/wiki/meta-harness-self-optimizing-agent/)** | Stanford/MIT approach: the agent rewrites its own CLAUDE.md after each session. |
 

@@ -5,14 +5,14 @@ category: Claude Code Engineering
 redirect_from:
   - "/wiki/claude code/claude-code-source-analysis-learning/"
 tags: [claude-code, architecture, source-code, harness, prompt-cache, subagents, learning-methodology, reverse-engineering, open-source]
-related: ["CC Unpacked — Visual Guide to Claude Code's Internals", "Claw Code — Clean-Room Python Rewrite of Claude Code's Agent Harness", "The Five Levels of Claude Code — From Prompting to Orchestration", "Boris Cherny on Claude Code — Origin Story, Product Philosophy & the End of Manual Coding"]
+related: ["CC Unpacked — Visual Guide to Claude Code's Internals", "The Five Levels of Claude Code — From Prompting to Orchestration", "Boris Cherny on Claude Code — Origin Story, Product Philosophy & the End of Manual Coding"]
 icon: "🔬"
 image: "/assets/images/claude-code-source-analysis-learning.png"
 ---
 
 When Claude Code's source was accidentally leaked on March 31, 2026, the community immediately started reverse-engineering. Two standout analyses emerged: **Sebastian Raschka** dissected *what* makes Claude Code work (spoiler: it's the harness, not the model), and **宝玉 xp** explained *how* to actually learn from reading source code — a 4-step method applicable to any large open-source project.
 
-*Source: [Sebastian Raschka — Claude Code's Real Secret Sauce](https://sebastianraschka.com/blog/2026/claude-code-secret-sauce.html) | [宝玉 xp on Weibo](https://weibo.com/) (2026-04-01) | [Latent.Space — The Claude Code Source Leak](https://www.latent.space/p/ainews-the-claude-code-source-leak)*
+*Source: [Sebastian Raschka — Claude Code's Real Secret Sauce](https://sebastianraschka.com/blog/2026/claude-code-secret-sauce.html) | [宝玉 — Claude Code 源码泄漏了，但我不打算写源码分析分析文章](https://baoyu.io/blog/2026-04-01/learn-from-open-source) | [Latent.Space — The Claude Code Source Leak](https://www.latent.space/p/ainews-the-claude-code-source-leak)*
 
 ## Part 1: The 6 Architectural Secrets (Raschka's Analysis)
 
@@ -182,7 +182,7 @@ Anthropic's response was notable — Boris Cherny (VP Eng) credited team culture
 
 爱可可-爱生活 distilled the leak into a production-grade agent design philosophy: **don't treat AI as a trustworthy contractor — build audit, rollback, and verification mechanisms as if it will fail.**
 
-*Source: [爱可可-爱生活 on Weibo](https://weibo.com/) (2026-04) | [Reddit discussion](https://reddit.com/r/artificial/comments/1s9jprb/the_claude_code_leak_accidentally_published_the)*
+*Source: [AI可可AI生活 — Claude Code源码泄露揭示了AI Agent 的生产级蓝图](https://news.qq.com/rain/a/20260405A03ESJ00) | [Reddit discussion](https://reddit.com/r/artificial/comments/1s9jprb/the_claude_code_leak_accidentally_published_the)*
 
 ### Pattern 1: Skeptical Memory (怀疑式记忆)
 
@@ -293,8 +293,6 @@ The [tvytlx/claude-code-deep-dive](https://github.com/tvytlx/claude-code-deep-di
 - Understanding how Claude Code's tool loop works before building custom skills or hooks.
 - Using the 5 agent design patterns as a checklist when reviewing agent system designs.
 - Learning from the "untrustworthy contractor" metaphor when designing permission and safety boundaries.
-
-<!-- REVIEW-TODO: [source_links] Two Weibo source links are generic (https://weibo.com/) — find specific 宝玉 xp and 爱可可-爱生活 post URLs -->
 
 ## Links
 

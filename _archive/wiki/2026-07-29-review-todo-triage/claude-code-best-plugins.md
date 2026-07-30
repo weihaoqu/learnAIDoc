@@ -5,7 +5,7 @@ category: Claude Code Basics
 redirect_from:
   - "/wiki/claude code/claude-code-best-plugins/"
 tags: [claude-code, cli, plugins, workflow, productivity]
-related: ["Claude Code Plugins & Marketplace", "Claude Code Power User Tips", "Understand Anything — Turn Codebases Into Interactive Knowledge Graphs", "Gstack — Garry Tan's AI Software Factory for Claude Code", "Prompt Master — Write Accurate Prompts for Any AI Tool, Zero Waste", "Personal AI Skill Cheat Sheet — When to Use Each Skill"]
+related: ["Claude Code Plugins & Marketplace", "Understand Anything — Turn Codebases Into Interactive Knowledge Graphs", "Gstack — Garry Tan's AI Software Factory for Claude Code", "Prompt Master — Write Accurate Prompts for Any AI Tool, Zero Waste", "Personal AI Skill Cheat Sheet — When to Use Each Skill"]
 icon: "🔌"
 image: "/assets/images/claude-code-best-plugins.png"
 ---
@@ -73,7 +73,7 @@ A second curated list surfaced on Douyin from 火星狂飙 in early May 2026 —
 | 7 | **Ralph Loop** | Autonomous dev loop — agent keeps iterating on a bug until fixed | See: *Ralph: Autonomous Development Loop for Claude Code* |
 | 8 | **MCP Builder** | Scaffold for a new MCP server, with examples | — |
 | 9 | **PPTX** | Direct .pptx generation; handles common format edge cases | See: *HTML PPT Studio — AI-Powered Presentation Skill for Claude Code*, *Make Slides: AI-Powered Interactive Teaching Slides*, *open-slide — The Slide Framework Built for AI Coding Agents* |
-| 10 | **Skill Creator** | Build new skills with the official template + test framework | See: *Claude Code Skills: Resources & Repos* |
+| 10 | **Skill Creator** | Build new skills with the official template + test framework | See: *Claude Code Top 20 Skills* |
 
 > Numbers and "sub-skill counts" above come from 火星狂飙's list — they're the creator's framing, not independently verified.
 

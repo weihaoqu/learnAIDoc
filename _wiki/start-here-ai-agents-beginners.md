@@ -57,9 +57,9 @@ Once you've completed these five entries, next steps depend on your goal:
 
 **Teaching AI to students →** [Claude Code for Non-Programmers](/learnAIDoc/wiki/claude-code-non-programmers-shipping/), [Make Slides](/learnAIDoc/wiki/make-slides-interactive-teaching/)
 
-**Building your own agents →** [Harness Engineering](/learnAIDoc/wiki/harness-engineering/), [12-Factor Agents](/learnAIDoc/wiki/12-factor-agents/), [Agents Need Control Flow](/learnAIDoc/wiki/agents-need-control-flow/)
+**Building your own agents →** [Harness Engineering](/learnAIDoc/wiki/harness-engineering-agents/), [12-Factor Agents](/learnAIDoc/wiki/12-factor-agents/), [Agents Need Control Flow](/learnAIDoc/wiki/agents-need-control-flow/)
 
-**Power user Claude Code →** [Claude Code Top 20 Skills](/learnAIDoc/wiki/claude-code-top-20-skills-curated/), [Claude Code Power Tips](/learnAIDoc/wiki/claude-code-power-tips/), [Non-Coding Skills in Claude Code](/learnAIDoc/wiki/non-coding-skills-claude-code/)
+**Power user Claude Code →** [Claude Code Plugins & Marketplace](/learnAIDoc/wiki/claude-code-plugins/), [Claude Code Tips & Context Engineering](/learnAIDoc/wiki/claude-code-tips-engineering/), [Non-Coding Skills in Claude Code](/learnAIDoc/wiki/non-coding-skills-claude-code/)
 
 **Academic research with agents →** See the [Academic Writing Hub entries](/learnAIDoc/wiki/academic-research-skills-imbad0202/)
 

@@ -5,7 +5,7 @@ category: Creative & Media
 redirect_from:
   - "/wiki/tools/infinitetalk-unlimited-ai-video/"
 tags: [video-generation, lip-sync, ai-video, open-source, talking-head, dubbing, avatar, wan2.1]
-related: ["Toonflow — The AI Factory That Turns Novels Into Short Dramas", "Novel to Multimedia Pipeline — From Chapter Draft to Douyin in One Session", "Seedance 2.0: ByteDance's AI Video Generator with Native Audio"]
+related: ["Toonflow — The AI Factory That Turns Novels Into Short Dramas", "Teaching Videos with Manim + Remotion — Two Engines for Code-Driven Explainers"]
 icon: "🗣️"
 image: "/assets/images/infinitetalk-unlimited-ai-video.png"
 ---
@@ -71,7 +71,7 @@ Reference keyframes are strategically preserved to maintain identity and camera 
 - **Multilingual course content** — Dub existing lecture videos into other languages with matching lip sync. One recording, multiple language versions.
 - **Student project demos** — Students can create professional-looking presenter videos for project demos using just a photo and a script (via Edge TTS for audio).
 - **Research presentation prototyping** — Quick prototype of a conference talk video before investing in actual filming. Test delivery and timing.
-- **Connecting to our novel pipeline** — Combine with the webnovel audiobook pipeline: character portrait photo + Edge TTS audio → talking character video for Douyin.
+- **Narrated avatar demos** — Combine a character or instructor portrait with an approved audio script to create talking-head clips for demos or short-form lessons.
 
 ## Real-World Use Cases
 

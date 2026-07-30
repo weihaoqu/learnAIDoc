@@ -5,7 +5,7 @@ category: Learning Resources
 redirect_from:
   - "/wiki/ai education/math-foundations-reinforcement-learning/"
 tags: [reinforcement-learning, textbook, mathematics, free-resource, machine-learning, education, westlake-university]
-related: []
+
 icon: "📐"
 image: "/assets/images/math-foundations-reinforcement-learning.png"
 ---

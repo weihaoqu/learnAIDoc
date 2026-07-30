@@ -4,15 +4,17 @@ date: 2026-04-17
 category: Skills & Plugins
 redirect_from:
   - "/wiki/tools/kepano-obsidian-skills-agents/"
+  - "/wiki/obsidian-visual-skills-diagrams/"
+  - "/wiki/skills & plugins/obsidian-visual-skills-diagrams/"
 tags: [obsidian, agent-skills, claude-code, codex, vault-automation, kepano, canvas, knowledge-management]
-related: ["Obsidian CLI + Claude Code: Your Second Brain as Context", "Obsidian Web Clipper — AI-Powered Web Capture That Actually Organizes Itself", "Obsidian Visual Skills Pack — Generate Excalidraw, Mermaid & Canvas Diagrams from Text"]
+related: ["Obsidian CLI + Claude Code: Your Second Brain as Context", "Obsidian Web Clipper — AI-Powered Web Capture That Actually Organizes Itself", "Independent Thinking in the Age of AI — Visual PKM and 4D Knowledge"]
 icon: "🗃️"
 image: "/assets/images/kepano-obsidian-skills-agents.png"
 ---
 
 Claude Code can read your vault. Obsidian CLI can search it. But neither knows what a `[[wikilink]]` is, how `.base` files work, or that `.canvas` is JSON with a specific schema. **obsidian-skills** fixes that gap — five Agent Skills written by Steph Ango (kepano, CEO of Obsidian) that teach any skills-compatible AI agent the native formats of Obsidian. The result: your agent can create, edit, and organize vault files correctly, not just dump generic Markdown.
 
-*Source: [kepano/obsidian-skills on GitHub](https://github.com/kepano/obsidian-skills) (24.8k stars, MIT) | [哈哈du on Xiaohongshu](https://www.xiaohongshu.com/) | [kepano's announcement on X](https://x.com/kepano/status/2008578873903206895)*
+*Source: [kepano/obsidian-skills on GitHub](https://github.com/kepano/obsidian-skills) (MIT) | [axtonliu/axton-obsidian-visual-skills on GitHub](https://github.com/axtonliu/axton-obsidian-visual-skills) | [kepano's announcement on X](https://x.com/kepano/status/2008578873903206895)*
 
 ## The Full Obsidian AI Pipeline
 
@@ -46,6 +48,25 @@ obsidian-skills is the "write" layer in a three-part pipeline. Each tool handles
 | Capture | Obsidian Web Clipper | Web → Vault | "Obsidian Web Clipper — AI-Powered Web Capture That Actually Organizes Itself" |
 | Read | Obsidian CLI | Vault → Agent context | "Obsidian CLI + Claude Code: Your Second Brain as Context" |
 | Write | obsidian-skills | Agent → Vault | **This entry** |
+
+## Visual Skills Pack: The Draw Layer
+
+Axton Liu's Obsidian Visual Skills Pack belongs next to `obsidian-skills` because it solves the same agent-to-vault problem for diagrams. Instead of teaching Claude only how to write Markdown, Base, and Canvas files, it gives Claude three diagram outputs that remain editable inside or alongside Obsidian.
+
+| Skill | Output | Best for |
+|---|---|---|
+| **Excalidraw diagram** | `.md` with embedded Excalidraw JSON, or `.excalidraw` | Hand-drawn architecture, process, and teaching diagrams |
+| **Mermaid visualizer** | Mermaid code blocks in Markdown | Sequence diagrams, state machines, flowcharts, and version-controlled charts |
+| **Obsidian Canvas creator** | `.canvas` JSON | Mind maps, research landscapes, relationship graphs, and course module maps |
+
+Plugin marketplace install:
+
+```text
+/plugin marketplace add axtonliu/axton-obsidian-visual-skills
+/plugin install obsidian-visual-skills
+```
+
+Use this for diagram generation. Use [Independent Thinking in the Age of AI](/learnAIDoc/wiki/independent-thinking-visual-pkm/) for the broader visual-PKM method: when to think spatially, how to use canvases as maps of content, and how visual notes change your reasoning process.
 
 ## The Five Skills
 
@@ -172,7 +193,7 @@ Users in the community report using obsidian-skills for:
 |---|---|
 | **Repo** | [github.com/kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) |
 | **Author** | Steph Ango (kepano), CEO of Obsidian |
-| **Stars** | 24.8k+ |
+| **Stars** | 43.6k+ |
 | **License** | MIT |
 | **Compatible agents** | Claude Code, Codex CLI, OpenCode |
 | **Spec** | [Agent Skills specification](https://skills.md) |
@@ -182,4 +203,3 @@ Users in the community report using obsidian-skills for:
 ## Bottom Line
 
 obsidian-skills is the missing write layer for AI-powered Obsidian workflows. Web Clipper captures, CLI reads, and now Agent Skills edit — completing the loop. The fact that these come from Obsidian's own CEO means they track the canonical file formats as Obsidian evolves. If you use Obsidian as your knowledge base and Claude Code as your agent, install these skills — they turn "dump Markdown into a folder" into "maintain a structured, interlinked knowledge system."
-<\!-- REVIEW-TODO: [source_links] kepano-obsidian-skills: Xiaohongshu source link is generic (https://www.xiaohongshu.com/) — find specific 哈哈du post URL or remove -->

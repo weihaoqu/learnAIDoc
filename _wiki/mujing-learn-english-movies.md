@@ -5,7 +5,7 @@ category: Learning Resources
 redirect_from:
   - "/wiki/ai education/mujing-learn-english-movies/"
 tags: [english-learning, vocabulary, movies, subtitles, open-source, desktop-app, immersive-learning, language]
-related: ["AI Tools for High-Engagement Learning", "AI Mastery Games — Teaching AI Literacy Through Interactive Games", "AI in Education — Teacher's Factory, Not Student's Cheat Tool"]
+related: ["AI Mastery Games — Teaching AI Literacy Through Interactive Games", "AI in Education — Teacher's Factory, Not Student's Cheat Tool"]
 icon: "🎬"
 image: "/assets/images/mujing-learn-english-movies.png"
 ---

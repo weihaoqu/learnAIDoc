@@ -5,7 +5,7 @@ category: AI for Teaching
 redirect_from:
   - "/wiki/ai education/claude-nagdy-interactive-learning/"
 tags: [claude-code, learning, interactive, tutorial, beginner, hooks, skills, mcp, free]
-related: ["Claude Code Cheatsheet — Everything in One Place", "Anthropic Academy — Free Claude Courses", "AI Learning Roadmap 2026 — Best Courses, Certs & YouTube Channels"]
+related: ["Claude Code Cheat Sheet, Everything-Claude-Code & Claude How-To — Complete Reference Kit", "Anthropic Academy — 13 Free AI Courses with Certificates", "Start Here — AI Agents & Claude Code for Beginners"]
 icon: "📚"
 image: "/assets/images/claude-nagdy-interactive-learning.png"
 ---

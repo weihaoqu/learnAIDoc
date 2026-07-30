@@ -2,15 +2,18 @@
 title: "Agents with Taste — Encoding Design Judgment as Skill Files"
 date: 2026-04-26
 category: Skills & Plugins
+redirect_from:
+  - "/wiki/awesome-design-md/"
+  - "/wiki/tools/awesome-design-md/"
 tags: [design-engineering, skills, ui-design, animations, claude-code, taste, emil-kowalski]
-related: ["Taste Skill — Teaching AI Agents Design Taste for Frontend Code", "Awesome DESIGN.md — Install Design Taste Into Your AI Coding Agent", "ui.sh — Tailwind Creator's Design Toolkit for AI Coding Agents", "Addy Osmani's agent-skills — Senior Engineering Practices as SKILL.md Files"]
+related: ["Taste Skill — Teaching AI Agents Design Taste for Frontend Code", "ui.sh — Tailwind Creator's Design Toolkit for AI Coding Agents", "Addy Osmani's agent-skills — Senior Engineering Practices as SKILL.md Files"]
 icon: "🎨"
 image: "/assets/images/agents-with-taste-design-skills.png"
 ---
 
 Emil Kowalski argues that the hardest part of UI quality isn't code — it's aesthetic judgment. His solution: encode design taste into skill files that coding agents can follow. Instead of hoping AI "gets it," you describe the rules explicitly and hand them to your agent. The skill has more than 1,000 GitHub stars and has inspired adjacent projects that package design judgment for AI agents.
 
-*Source: [Agents with Taste (article)](https://emilkowal.ski/ui/agents-with-taste) | [emilkowalski/skill (GitHub)](https://github.com/emilkowalski/skill) | [Emil's X thread](https://x.com/emilkowalski/status/2013613078240198929)*
+*Source: [Agents with Taste (article)](https://emilkowal.ski/ui/agents-with-taste) | [emilkowalski/skill (GitHub)](https://github.com/emilkowalski/skill) | [Emil's X thread](https://x.com/emilkowalski/status/2013613078240198929) | [VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md)*
 
 ## The Core Insight
 
@@ -83,7 +86,22 @@ As shadcn noted: "Design engineering became about animations and slick demos. In
 
 Kowalski's skill has inspired others to package their expertise:
 - **[design-motion-principles](https://github.com/kylezantos/design-motion-principles)** — Motion audit skill trained on multiple designers (Emil Kowalski, Jakub Krehel, Jhey Tompkins)
+- **[Awesome DESIGN.md](https://github.com/VoltAgent/awesome-design-md)** — A curated library of brand `DESIGN.md` files that agents can read as plain-text design systems
 - The pattern validates that taste is teachable — not to humans in this case, but to agents
+
+## DESIGN.md Brand Files
+
+`awesome-design-md` complements skill-based taste by packaging specific product aesthetics as project-level `DESIGN.md` files. Instead of telling an agent "make this feel like Linear" from memory, you copy a brand file into the repo and instruct the agent to follow it while building UI.
+
+Use it when you need a concrete visual direction:
+
+| Situation | Better fit |
+|---|---|
+| "Match this known brand or product feel" | `DESIGN.md` from `awesome-design-md` |
+| "Improve layout, motion, typography, and polish generally" | Design taste skill |
+| "Enforce a custom product design system" | Your own project `DESIGN.md` plus a design skill |
+
+The practical pattern is: `AGENTS.md` or `CLAUDE.md` tells the agent how to work, while `DESIGN.md` tells it how the interface should look and feel.
 
 ## How LearnAI Team Could Use This
 

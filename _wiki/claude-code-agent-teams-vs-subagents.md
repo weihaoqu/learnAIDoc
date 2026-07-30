@@ -5,7 +5,7 @@ category: Claude Code Engineering
 redirect_from:
   - "/wiki/claude code/claude-code-agent-teams-vs-subagents/"
 tags: [claude-code, cli, agents, multi-agent, productivity]
-related: ["Claude Code Power User Tips", "Harness Engineering — The Real Bottleneck Isn't the Model", "Agent Framework Explosion — Superpowers, DeerFlow, NOMAD & TradingAgents", "Claude Code Session Management & 1M Context — The Official Decision Framework"]
+related: ["Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code Session Management & 1M Context — The Official Decision Framework"]
 icon: "🤝"
 image: "/assets/images/claude-code-agent-teams.jpg"
 ---

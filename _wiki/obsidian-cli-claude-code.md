@@ -5,7 +5,7 @@ category: Claude Code Workflows
 redirect_from:
   - "/wiki/claude code/obsidian-cli-claude-code/"
 tags: [claude-code, obsidian, workflow, context, thinking, productivity]
-related: ["Claude Code Power User Tips", "Obsidian Web Clipper — AI-Powered Web Capture That Actually Organizes Itself", "kepano/obsidian-skills — Agent Skills That Let AI Edit Your Vault"]
+related: ["Obsidian Web Clipper — AI-Powered Web Capture That Actually Organizes Itself", "kepano/obsidian-skills — Agent Skills That Let AI Edit Your Vault"]
 icon: "🧠"
 image: "/assets/images/obsidian-cli-claude-code.png"
 ---

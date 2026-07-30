@@ -5,7 +5,7 @@ category: Claude Code Basics
 redirect_from:
   - "/wiki/claude code/claude-code-import-syntax/"
 tags: [claude-code, cli, team, claude-md, configuration]
-related: ["Claude Code Power User Tips"]
+
 icon: "📎"
 image: "/assets/images/claude-code-imports.jpg"
 ---

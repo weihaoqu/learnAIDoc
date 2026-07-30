@@ -3,7 +3,7 @@ title: "open-slide — The Slide Framework Built for AI Coding Agents"
 date: 2026-05-09
 category: Skills & Plugins
 tags: [slides, presentation, react, claude-code, codex, cursor, ai-coding, open-source, framework]
-related: ["Agents with Taste — Encoding Design Judgment as Skill Files", "Markdown Viewer Skills — 9,500 Icons and 14 Diagram Types for AI Agents", "AI Slide Generation with Claude Code — Tool Comparison & Guide", "guizang-ppt-skill — The Cross-Agent HTML Slide Generation Skill", "HTML PPT Studio — AI-Powered Presentation Skill for Claude Code", "Make Slides: AI-Powered Interactive Teaching Slides"]
+related: ["Agents with Taste — Encoding Design Judgment as Skill Files", "Markdown Viewer Skills — 9,500 Icons and 14 Diagram Types for AI Agents", "AI Slide Generation with Claude Code — Tool Comparison & Guide", "HTML PPT Studio — AI-Powered Presentation Skill for Claude Code", "Make Slides: AI-Powered Interactive Teaching Slides"]
 icon: "🎞️"
 image: "/assets/images/open-slide-agent-native-presentations.png"
 ---

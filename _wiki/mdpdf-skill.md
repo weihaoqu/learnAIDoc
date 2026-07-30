@@ -5,7 +5,7 @@ category: Skills & Plugins
 redirect_from:
   - "/wiki/skills & plugins/mdpdf-skill/"
 tags: [claude-code, skills, markdown, pdf, mdpdf, sharing-skills]
-related: ["Claude Code Skills: Resources & Repos"]
+
 icon: "📄"
 image: "/assets/images/mdpdf-skill.png"
 ---

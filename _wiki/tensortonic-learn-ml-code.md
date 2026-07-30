@@ -5,7 +5,7 @@ category: Learning Resources
 redirect_from:
   - "/wiki/ai education/tensortonic-learn-ml-code/"
 tags: [machine-learning, education, interactive, visualization, algorithms, research-papers, ai-education]
-related: ["Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "AI Tools for High-Engagement Learning", "Learning in the AI Era: Amplify Your Thinking, Don't Outsource It", "LLM Architecture Gallery — Visual Reference for Every Major Model", "Unsloth Studio — Train and Run LLMs Locally with 70% Less Memory"]
+related: ["Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "Learning in the AI Era: Amplify Your Thinking, Don't Outsource It", "LLM Architecture Gallery — Visual Reference for Every Major Model", "Unsloth Studio — Train and Run LLMs Locally with 70% Less Memory"]
 icon: "🧮"
 image: "/assets/images/tensortonic-learn-ml-code.png"
 ---

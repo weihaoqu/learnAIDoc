@@ -5,12 +5,14 @@ category: AI for Teaching
 redirect_from:
   - "/wiki/ai education/claude-teacher-setup/"
 tags: [claude-code, learning, documentation]
-related: ["Claude Code Power User Tips", "How AI Impacts Skill Formation"]
+related: ["Learning in the AI Era: Amplify Your Thinking, Don't Outsource It", "AI in Education — Teacher's Factory, Not Student's Cheat Tool", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure"]
 icon: "👨‍🏫"
 image: "/assets/images/claude-teacher-setup.jpg"
 ---
 
 Transform Claude Code into a personal technical teacher by adding specific instructions to your `CLAUDE.md` file. Every coding project becomes a learning opportunity.
+
+*Source: [Claude Code docs — How Claude remembers your project](https://code.claude.com/docs/en/memory) | [Claude Code best practices — CLAUDE.md](https://code.claude.com/docs/en/best-practices)*
 
 ## The Setup
 
@@ -97,5 +99,3 @@ You end up with:
 2. **Personal learning journal** — Developers build a durable record of bugs, fixes, patterns, and decisions across projects.
 3. **Code review preparation** — Teams use the explanation file to clarify why major implementation choices were made.
 4. **Self-study projects** — Learners turn every Claude Code session into structured technical notes they can revisit later.
-
-<!-- REVIEW-TODO: [source_links] No source line present — add Claude Code CLAUDE.md workflow pattern docs link -->

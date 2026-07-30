@@ -2,15 +2,18 @@
 title: "HTML PPT Studio — AI-Powered Presentation Skill for Claude Code"
 date: 2026-04-17
 category: Skills & Plugins
-tags: [presentations, slides, html, agent-skills, claude-code, teaching, ppt, themes]
-related: ["Claude Code Skills: Resources & Repos", "Non-Coding Skills for Claude Code — Automating Business & Life", "Make Slides: AI-Powered Interactive Teaching Slides", "AI Slide Generation with Claude Code — Tool Comparison & Guide"]
+redirect_from:
+  - "/wiki/guizang-ppt-skill/"
+  - "/wiki/skills & plugins/guizang-ppt-skill/"
+tags: [presentations, slides, html, agent-skills, claude-code, codex, cursor, teaching, ppt, themes, covers]
+related: ["Non-Coding Skills for Claude Code — Automating Business & Life", "Make Slides: AI-Powered Interactive Teaching Slides", "AI Slide Generation with Claude Code — Tool Comparison & Guide", "The Unreasonable Effectiveness of HTML — Thariq's Case for Output Format Engineering"]
 icon: "📊"
 image: "/assets/images/html-ppt-studio-skill.png"
 ---
 
-HTML PPT Studio is an AgentSkill that turns Claude Code into a full presentation design tool. One install command gives you **36 themes**, **31 page layouts**, **47 animations** (27 CSS + 20 canvas FX), **15 full-deck templates**, and a **presenter mode** with speaker scripts and timer — all pure static HTML/CSS/JS with zero build step. 2.9k+ stars on GitHub (and climbing fast since launch on April 15, 2026).
+HTML PPT Studio is an AgentSkill that turns Claude Code into a full presentation design tool. One install command gives you **36 themes**, **31 page layouts**, **47 animations** (27 CSS + 20 canvas FX), **15 full-deck templates**, and a **presenter mode** with speaker scripts and timer — all pure static HTML/CSS/JS with zero build step. It sits in the same family as Guizang PPT Skill: agent-native, text-editable HTML decks instead of proprietary slide files.
 
-*Source: [GitHub — lewislulu/html-ppt-skill](https://github.com/lewislulu/html-ppt-skill) (2.9k+ stars, MIT license) | Originally surfaced via Xiaohongshu post by @冰雨学AI*
+*Source: [GitHub — lewislulu/html-ppt-skill](https://github.com/lewislulu/html-ppt-skill) | [GitHub — op7418/guizang-ppt-skill](https://github.com/op7418/guizang-ppt-skill/blob/main/README.en.md) | [Claude Agent Skills documentation](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/quickstart)*
 
 ## Why This Matters
 
@@ -29,6 +32,23 @@ After install, any Claude Code session can generate presentations from natural l
 > "turn this outline into a pitch deck"
 > "create a 12-slide lecture on memory hierarchies, academic-paper theme"
 ```
+
+## Guizang PPT Skill: Cross-Agent Decks and Covers
+
+Guizang PPT Skill is the better reference when you want the same slide workflow to travel across Claude Code, Codex, Cursor, and similar local coding agents. It generates single-file horizontal HTML decks, deck visuals, and social cover images. Its current README centers two design systems:
+
+| System | Best for | Style |
+|---|---|---|
+| **Style A: editorial magazine / electronic ink** | Narrative talks, opinions, personal salons | Stronger story rhythm and more personal voice |
+| **Style B: Swiss International** | Facts, products, analysis, methods | Grid-locked layouts, high-contrast typography, sharp rectangles |
+
+Install:
+
+```bash
+npx skills add https://github.com/op7418/guizang-ppt-skill --skill guizang-ppt-skill
+```
+
+Why keep it in this page instead of as a separate wiki entry: Guizang and HTML PPT Studio solve the same core problem — agent-generated HTML presentations. The real distinction is workflow emphasis. HTML PPT Studio is stronger as a Claude Code presentation studio with many themes, layouts, animations, and presenter mode. Guizang is stronger when cross-agent portability, visual system discipline, image prompts, screenshot framing, and social-cover output matter.
 
 ## What's in the Box
 
@@ -175,14 +195,16 @@ If you're a teacher, you should also know about [Make Slides](/learnAIDoc/wiki/m
 | Tool | Output | Build step | Themes | Presenter mode |
 |---|---|---|---|---|
 | **HTML PPT Studio** | Static HTML | None | 36 | Yes (magnetic cards) |
+| **Guizang PPT Skill** | Static HTML + cover assets | None | 2 strict visual systems | No dedicated presenter mode |
 | **Make Slides** | Static HTML | None | 1 | No |
 | frontend-slides | Static HTML | None | Fewer | No |
 | Slidev | Vue-based HTML | Yes (npm) | Community | Yes |
 | ppt-agent-skills | PPTX | Yes | Limited | N/A |
 | reveal.js (manual) | Static HTML | Optional | ~10 built-in | Yes |
 
-HTML PPT Studio's advantage is the combination of breadth (36 themes, 31 layouts, 47 animations) with zero-config AgentSkill installation. Make Slides' advantage is deep interactivity and pedagogical rigor.
+HTML PPT Studio's advantage is the combination of breadth (36 themes, 31 layouts, 47 animations) with zero-config AgentSkill installation. Guizang's advantage is cross-agent portability and stricter visual-system guidance. Make Slides' advantage is deep interactivity and pedagogical rigor.
 
 Sources:
 - [GitHub — lewislulu/html-ppt-skill](https://github.com/lewislulu/html-ppt-skill)
+- [GitHub — op7418/guizang-ppt-skill](https://github.com/op7418/guizang-ppt-skill/blob/main/README.en.md)
 - [Claude Agent Skills Documentation](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/quickstart)

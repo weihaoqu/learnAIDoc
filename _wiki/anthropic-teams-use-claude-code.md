@@ -5,7 +5,7 @@ category: Claude Code Engineering
 redirect_from:
   - "/wiki/claude code/anthropic-teams-use-claude-code/"
 tags: [claude-code, anthropic, workflow, productivity, dogfooding, teams]
-related: ["Claude Code Power User Tips", "Best Claude Code Plugins", "Gstack — Garry Tan's AI Software Factory for Claude Code", "Claude Certified Architect — Anthropic's First Official AI Certification"]
+related: ["Claude Code Plugins & Marketplace", "Gstack — Garry Tan's AI Software Factory for Claude Code", "Claude Certified Architect — Anthropic's First Official AI Certification"]
 icon: "🏢"
 image: "/assets/images/anthropic-teams-claude-code.png"
 ---

@@ -2,15 +2,20 @@
 title: "Claude Code Session Management & 1M Context — The Official Decision Framework"
 date: 2026-04-17
 category: Claude Code Engineering
+redirect_from:
+  - "/wiki/claude-code-rewind/"
+  - "/wiki/claude code/claude-code-rewind/"
+  - "/wiki/claude-code-resume-from-pr/"
+  - "/wiki/claude code/claude-code-resume-from-pr/"
 tags: [claude-code, session-management, context-window, compact, rewind, subagents, context-rot, 1m-context]
-related: ["Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Claude Code: Agent Teams vs Subagents", "Claude Code /rewind — Undo Without Losing Context", "Opus 4.7 Thinking Effort — The Official Guide to Getting the Most from Claude Code"]
+related: ["Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Claude Code: Agent Teams vs Subagents", "Opus 4.7 Thinking Effort — The Official Guide to Getting the Most from Claude Code"]
 icon: "🧭"
 image: "/assets/images/claude-code-session-management-1m.png"
 ---
 
 Anthropic published an official guide to session management in Claude Code, written by Thariq Shihipar. The core message: **context management shapes your experience with Claude Code more than most users realize.** Having 1M tokens doesn't mean you should use all of them — context *rot* (attention spreading across stale, irrelevant tokens) degrades quality silently. The most useful part of the post is a decision table that maps every common situation to exactly the right session tool.
 
-*Source: [Claude Code: Session Management and 1M Context](https://claude.com/blog/using-claude-code-session-management-and-1m-context) (Anthropic, April 2026)*
+*Source: [Claude Code: Session Management and 1M Context](https://claude.com/blog/using-claude-code-session-management-and-1m-context) (Anthropic, April 2026) | Claude Code docs: [Manage sessions](https://code.claude.com/docs/en/sessions), [Checkpointing](https://code.claude.com/docs/en/checkpointing), [Common workflows](https://code.claude.com/docs/en/common-workflows)*
 
 ## The Situation Table
 
@@ -20,6 +25,7 @@ This is the centerpiece. Memorize it or pin it next to your terminal.
 |---|---|---|
 | **Same task, context is still relevant** | Continue | Everything in the window is still load-bearing; don't pay to rebuild it |
 | **Claude went down a wrong path** | Rewind (double-Esc) | Keep the useful file reads, drop the failed attempt, re-prompt with what you learned |
+| **Need to continue PR-linked work** | `claude --from-pr <number>` | Opens the session picker filtered to sessions linked to that pull request |
 | **Mid-task but session is bloated with stale debugging/exploration** | `/compact <hint>` | Low effort; Claude decides what mattered. Steer it with instructions if needed |
 | **Starting a genuinely new task** | `/clear` | Zero rot; you control exactly what carries forward |
 | **Next step will generate lots of output you'll only need the conclusion from** | Subagent | Intermediate tool noise stays in the child's context; only the result comes back |
@@ -86,6 +92,8 @@ After:  "Fix the bug" → [bad attempt] → Esc Esc →
         "Fix the bug by changing X, don't touch Y"
 ```
 
+**Limits:** Checkpointing tracks Claude Code's file-editing tools, not arbitrary shell side effects. Treat `/rewind` as session-level undo, not a replacement for Git history.
+
 ### 3. /compact \<hint\>
 
 Triggers a manual compaction. Claude summarizes the session into a compressed brief, keeping what it thinks matters. The optional `<hint>` steers the summary:
@@ -115,6 +123,18 @@ Good subagent tasks:
 - Verification against a spec
 - Documentation generation from git changes
 - Running and analyzing test output
+
+## PR-Linked Resume
+
+When Claude Code creates a pull request with `gh pr create`, the session can be linked to that PR. Later, run:
+
+```bash
+claude --from-pr 42
+```
+
+Claude opens the session picker filtered to sessions associated with PR `42`, restoring the conversation history, tool results, and session state saved locally. You can also paste a GitHub, GitHub Enterprise, GitLab, or Bitbucket PR/MR URL into the `/resume` picker search.
+
+Use this for async collaboration and review fixes: one person starts the implementation, creates the PR, and another resumes the Claude Code context from the PR rather than reconstructing the history manually.
 
 ## When to Start a New Session
 

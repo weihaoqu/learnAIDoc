@@ -5,7 +5,7 @@ category: Claude Code Basics
 redirect_from:
   - "/wiki/claude code/claude-auto-mode-unlock/"
 tags: [claude-code, auto-mode, openrouter, aws-bedrock, binary-patch, hack, third-party-api]
-related: ["Claude Code Auto Mode — The Shift+Tab Workflow That Changes Everything"]
+related: ["Claude Code Auto Mode — The Middle Path for Permissions"]
 icon: "🔓"
 image: "/assets/images/claude-auto-mode-unlock.png"
 ---

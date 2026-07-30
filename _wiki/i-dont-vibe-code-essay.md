@@ -3,7 +3,7 @@ title: "Why I Don't Vibe Code — Jacob Harr's Defense of Friction and Essential
 date: 2026-05-21
 category: Industry & Trends
 tags: [vibe-coding, essential-complexity, software-engineering, ai-ethics, friction, deliberate-practice, cs-education, abstraction]
-related: ["Vibe Coding 新手指南 — The Open-Source Primer for Non-Technical AI-Assisted Development", "Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "10 Lessons from Six Months of Agentic Coding", "What is Agentic Engineering? A Teaching Primer"]
+related: ["Vibe Coding 新手指南 — The Open-Source Primer for Non-Technical AI-Assisted Development", "Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "10 Lessons for Agentic Coding — What Should We Do When Code Is Cheap?", "What is Agentic Engineering? A Teaching Primer"]
 icon: "🧱"
 image: "/assets/images/i-dont-vibe-code-essay.png"
 ---
@@ -126,4 +126,4 @@ Harr's argument is particularly sharp as a counterpoint to the "just prompt it" 
 ## Links
 
 - **Jacob Harr's essay:** [I Don't Vibe Code](https://jacobharr.is/personal/i-dont-vibe-code) — jacobharr.is
-- **Related:** [Vibe Coding 新手指南](/learnAIDoc/wiki/vibe-coding-open-source-primer/), [Karpathy: The End of Coding](/learnAIDoc/wiki/karpathy-end-of-coding/), [10 Lessons from Six Months of Agentic Coding](/learnAIDoc/wiki/10-lessons-agentic-coding/), [What is Agentic Engineering?](/learnAIDoc/wiki/what-is-agentic-engineering/)
+- **Related:** [Vibe Coding 新手指南](/learnAIDoc/wiki/vibe-coding-beginners-guide/), [Karpathy: The End of Coding](/learnAIDoc/wiki/karpathy-end-of-coding/), [10 Lessons for Agentic Coding — What Should We Do When Code Is Cheap?](/learnAIDoc/wiki/ten-lessons-agentic-coding/), [What is Agentic Engineering?](/learnAIDoc/wiki/what-is-agentic-engineering/)

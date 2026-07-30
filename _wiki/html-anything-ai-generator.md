@@ -10,7 +10,7 @@ image: "/assets/images/html-anything-ai-generator.png"
 
 **html-anything** is an open-source, local-first platform (Apache-2.0) that routes a content request through any of its supported AI agent CLIs — Claude Code, Codex, Cursor Agent, Gemini CLI, and others — and returns a single, share-ready HTML file. No API key is required beyond what your chosen agent CLI already uses; the platform runs entirely on your machine. With 75 skill templates spanning 9 deliverable surfaces and real-time SSE streaming so you watch the generation unfold, it collapses the gap between "I have content" and "I have a deliverable."
 
-*Source: Weibo post by 爱可可-爱生活 (May 2026) | GitHub: [github.com/nexu-io/html-anything](https://github.com/nexu-io/html-anything) (Apache-2.0)*
+*Source: [nexu-io/html-anything GitHub](https://github.com/nexu-io/html-anything) (Apache-2.0). Discovery note: Weibo post by 爱可可-爱生活, May 2026.*
 
 ## The core idea
 

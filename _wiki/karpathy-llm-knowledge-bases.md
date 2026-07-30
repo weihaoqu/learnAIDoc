@@ -5,7 +5,7 @@ category: AI for Research
 redirect_from:
   - "/wiki/ai research/karpathy-llm-knowledge-bases/"
 tags: [karpathy, knowledge-base, obsidian, wiki, personal-ai, markdown, rag-alternative, farzapedia, llm]
-related: ["Karpathy: End of Coding and the Loopy Era of AI", "Building a Research KB — Zotero + Obsidian + Claude Code"]
+related: ["Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "Building a Research KB — Zotero + Obsidian + Claude Code"]
 icon: "🧠"
 image: "/assets/images/karpathy-llm-knowledge-bases.png"
 ---

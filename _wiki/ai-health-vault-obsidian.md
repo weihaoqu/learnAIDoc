@@ -5,7 +5,7 @@ category: Skills & Plugins
 redirect_from:
   - "/wiki/tools/ai-health-vault-obsidian/"
 tags: [obsidian, health, claude-code, skills, privacy, templates, family, apple-watch, medical-records]
-related: ["Claude Code Hooks — Automate Your Workflow with Event-Driven Scripts", "Non-Coding Superpowers — 50 Things Claude Code Can Do That Aren't Programming"]
+related: ["Claude Code Hooks", "Non-Coding Skills for Claude Code — Automating Business & Life"]
 icon: "🏥"
 image: "/assets/images/ai-health-vault-obsidian.png"
 ---

@@ -5,7 +5,7 @@ category: AI for Teaching
 redirect_from:
   - "/wiki/ai education/frustration-shifts-upward-ai-coding/"
 tags: [ai-coding, developer-skills, architecture, education, frustration, career]
-related: ["Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "How AI Impacts Skill Formation", "Harness Engineering — The Real Bottleneck Isn't the Model"]
+related: ["Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "Harness Engineering — The Real Bottleneck Isn't the Model"]
 icon: "📈"
 image: "/assets/images/frustration-shifts-upward-ai-coding.png"
 ---

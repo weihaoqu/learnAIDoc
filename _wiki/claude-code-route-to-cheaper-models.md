@@ -5,12 +5,14 @@ category: Claude Code Basics
 redirect_from:
   - "/wiki/claude code/claude-code-route-to-cheaper-models/"
 tags: [claude-code, cli, cost-saving, subagents, haiku]
-related: ["Claude Code: Agent Teams vs Subagents", "Claude Code Power User Tips"]
+related: ["Claude Code: Agent Teams vs Subagents"]
 icon: "💰"
 image: "/assets/images/claude-code-cheaper-models.jpg"
 ---
 
 Today I learned you can dramatically cut Claude Code costs by routing read-only tasks to Haiku via custom subagents — and the real trick is running many of them in parallel.
+
+*Source: [Claude Code docs — Create custom subagents](https://code.claude.com/docs/en/sub-agents) | [Claude API pricing](https://platform.claude.com/docs/en/about-claude/pricing)*
 
 ## The Idea
 
@@ -127,5 +129,3 @@ Monitor your spending with `/cost` inside any session.
 - Run parallel read-only audits across multiple wiki categories.
 - Search source files and related entries before updating documentation.
 - Use Haiku subagents for repetitive grep/glob tasks that don't need reasoning.
-
-<!-- REVIEW-TODO: [source_links] No source line present — add Claude Code docs link -->

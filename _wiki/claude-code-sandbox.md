@@ -5,7 +5,7 @@ category: Claude Code Basics
 redirect_from:
   - "/wiki/claude code/claude-code-sandbox/"
 tags: [claude-code, cli, security, sandboxing]
-related: ["Claude Code Power User Tips", "Claude Code Auto Mode — The Middle Path for Permissions"]
+related: ["Claude Code Auto Mode — The Middle Path for Permissions"]
 icon: "🔒"
 image: "/assets/images/claude-code-sandbox.png"
 ---

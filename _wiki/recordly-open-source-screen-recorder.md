@@ -4,15 +4,15 @@ date: 2026-04-09
 category: Creative & Media
 redirect_from:
   - "/wiki/creative/recordly-open-source-screen-recorder/"
-tags: [screen-recording, video-editing, open-source, mac, windows, linux, product-demos, tutorials, open-source]
-related: ["MoneyPrinterTurbo — Keyword to Short Video in Minutes", "Voice-Pro — Local AI Dubbing, Translation, and Voice Cloning in One Tool"]
+tags: [screen-recording, video-editing, open-source, mac, windows, linux, product-demos, tutorials]
+related: ["Teaching Videos with Manim + Remotion — Two Engines for Code-Driven Explainers", "Remotion Case Study — Animating \"Adding Elements to an Array\""]
 icon: "🎥"
 image: "/assets/images/recordly-open-source-screen-recorder.png"
 ---
 
 Screen recording software is either expensive (ScreenFlow, Camtasia — $100+) or stripped down (OBS for streaming, QuickTime for basics). **Recordly** is a free, open-source alternative that covers the full workflow: record, edit, polish, export — in one app. Product demos, tutorial videos, and software walkthroughs without the subscription.
 
-*Source: [GitHub — webadderall/Recordly](https://github.com/webadderall/Recordly) | [欧巴聊AI on Weibo](https://weibo.com/) (2026-04)*
+*Source: [Recordly official site](https://recordly.dev/) | [GitHub — webadderallorg/Recordly](https://github.com/webadderallorg/Recordly)*
 
 ## What It Does
 
@@ -54,13 +54,13 @@ Screen recording software is either expensive (ScreenFlow, Camtasia — $100+) o
 
 | OS | Version | Notes |
 |---|---|---|
-| **macOS** | 13.0+ (Ventura) | Uses ScreenCaptureKit for native performance |
+| **macOS** | 14.0+ (Sonoma) | Uses ScreenCaptureKit for native performance |
 | **Windows** | 10 Build 19041+ | Native Graphics Capture + WASAPI audio |
 | **Linux** | Modern distros | Electron capture APIs. `yay -S recordly-bin` on Arch |
 
 ## Installation
 
-Grab prebuilt releases from [github.com/webadderall/Recordly/releases](https://github.com/webadderall/Recordly/releases).
+Grab prebuilt releases from [github.com/webadderallorg/Recordly/releases](https://github.com/webadderallorg/Recordly/releases).
 
 Linux (Arch/Manjaro):
 ```bash
@@ -81,11 +81,16 @@ Screen recording is one of those categories where the free tools (OBS, QuickTime
 
 For anyone making product demos, tutorials, or walkthrough videos, this is the first open-source tool that gets the "polished demo aesthetic" right: cursor zooms, motion blur, animated bubbles, rounded corners, and gradient backgrounds — all native to the app, not a plugin ecosystem.
 
+## Extension Marketplace
+
+Current Recordly also has an extension marketplace. Treat extensions like any editor or browser extension: install only what you need, inspect permissions where available, and keep reproducible course/demo workflows documented so a recording can be rebuilt later.
+
 ## License
 
-AGPL 3.0 — free for personal and non-commercial use. Commercial users should verify license compatibility.
+AGPL 3.0. Commercial use is not inherently forbidden, but teams need to understand AGPL source-distribution obligations before embedding or modifying the app in a commercial product.
 
 ## Links
 
-- **GitHub:** [webadderall/Recordly](https://github.com/webadderall/Recordly)
-- **Releases:** [github.com/webadderall/Recordly/releases](https://github.com/webadderall/Recordly/releases)
+- **Site:** [recordly.dev](https://recordly.dev/)
+- **GitHub:** [webadderallorg/Recordly](https://github.com/webadderallorg/Recordly)
+- **Releases:** [github.com/webadderallorg/Recordly/releases](https://github.com/webadderallorg/Recordly/releases)

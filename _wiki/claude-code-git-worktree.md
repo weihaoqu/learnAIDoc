@@ -5,14 +5,14 @@ category: Claude Code Workflows
 redirect_from:
   - "/wiki/claude code/claude-code-git-worktree/"
 tags: [claude-code, git, worktree, parallel, workflow, productivity]
-related: ["Claude Code Agent Teams vs Subagents", "Claude Code Power User Tips"]
+related: ["Claude Code: Agent Teams vs Subagents"]
 icon: "🌳"
 image: "/assets/images/claude-code-git-worktree.png"
 ---
 
 Claude Code now has native Git Worktree support — agents can run in parallel without interfering with each other. Think of it as "opening multiple clones" of your repo, each working independently on different tasks.
 
-*Source: [AIGCLINK on Weibo](https://weibo.com/) (2026-02-21)*
+*Source: [Claude Code docs — Run parallel sessions with worktrees](https://code.claude.com/docs/en/worktrees)*
 
 ## What Is a Git Worktree?
 
@@ -151,4 +151,3 @@ Before worktrees, running multiple Claude Code sessions on the same repo meant t
 - **Safe experimentation** — Try risky changes without affecting your main working copy
 - **Faster batch operations** — Subagents divide and conquer across isolated copies
 - **Clean context separation** — Each worktree has its own branch and changes
-<\!-- REVIEW-TODO: [source_links] Weibo source link is generic (https://weibo.com/) — find specific AIGCLINK post URL -->

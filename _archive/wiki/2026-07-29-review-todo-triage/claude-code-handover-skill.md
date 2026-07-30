@@ -5,7 +5,7 @@ category: Claude Code Workflows
 redirect_from:
   - "/wiki/claude code/claude-code-handover-skill/"
 tags: [claude-code, cli, skills, hooks, team, workflow]
-related: ["Claude Code Power User Tips", "Claude Code: Share Team Knowledge with @ Imports in CLAUDE.md"]
+related: ["Claude Code: Share Team Knowledge with @ Imports in CLAUDE.md"]
 icon: "📋"
 image: "/assets/images/claude-code-handover.jpg"
 ---

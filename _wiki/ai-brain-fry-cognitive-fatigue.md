@@ -122,7 +122,7 @@ This is the missing chapter in most AI courses. Everyone teaches *how* to use AI
 
 ### Connection to Other Wiki Entries
 
-The [harness engineering thesis](/learnAIDoc/wiki/claude%20code/harness-engineering-agents/) argues that **constraining the solution space increases output quality**. AI Brain Fry is the human equivalent: constraining your tool usage increases your cognitive quality. The same principle — less is more — applies to both agents and humans.
+The [harness engineering thesis](/learnAIDoc/wiki/harness-engineering-agents/) argues that **constraining the solution space increases output quality**. AI Brain Fry is the human equivalent: constraining your tool usage increases your cognitive quality. The same principle — less is more — applies to both agents and humans.
 
 ## How LearnAI Team Could Use This
 

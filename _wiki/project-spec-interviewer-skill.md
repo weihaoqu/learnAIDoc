@@ -3,7 +3,7 @@ title: "project-spec-interviewer-skill — Interactive Terminal Interview That W
 date: 2026-05-22
 category: Claude Code Engineering
 tags: [spec-driven, claude-code, slash-goal, interview, spec-md, workflow, npm, open-source, agentic-engineering, project-planning]
-related: ["Using /goal for Wiki Management — Spec-Driven Autonomous Wiki Sessions", "/goal 使用指南 — The Visual Playbook for Claude Code's Persistent Goal Mechanism", "SpecOps — AI-Assisted Spec Writing for Claude Code Projects", "Beyond /goal — The Orchestrator + Headless Pattern for Long-Running Claude Sessions"]
+related: ["Using /goal for Wiki Management — Spec-Driven Autonomous Wiki Sessions", "/goal 使用指南 — The Visual Playbook for Claude Code's Persistent Goal Mechanism", "SpecOps — Spec-Driven Development with AI Coding Agents", "Beyond /goal — The Orchestrator + Headless Pattern for Long-Running Claude Sessions"]
 icon: "📋"
 image: "/assets/images/project-spec-interviewer-skill.png"
 ---

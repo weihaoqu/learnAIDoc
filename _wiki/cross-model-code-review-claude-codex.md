@@ -12,7 +12,7 @@ image: "/assets/images/cross-model-code-review-claude-codex.png"
 
 Sterling Crispin shared a brutal discovery: **Claude Opus 4.6 is an excellent programmer, but consistently produces serious bugs that it cannot find no matter how many times it self-reviews.** The solution? Use a completely different model — OpenAI's Codex CLI (GPT 5.4) — to review every submission, with 4+ review passes. The insight that's making developers rethink AI coding workflows: "passing tests" doesn't mean "no bugs" — it means the AI got really good at writing code that passes tests.
 
-*Source: [爱可可-爱生活 Weibo analysis](https://weibo.com) | [Chandler Nguyen: Dual-Wielding AI Coding Tools](https://chandlernguyen.com/blog/2026/03/13/codex-gpt-5-4-vs-claude-code-opus-4-6-dual-wielding-ai-coding-tools/) | [SmartScope: Automating the Claude × Codex Review Loop](https://smartscope.blog/en/blog/claude-code-codex-review-loop-automation-2026/) | [GitHub: openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc)*
+*Source: [Sterling Crispin on X](https://x.com/sterlingcrispin/status/2035031512123678994) | [Chandler Nguyen: Dual-Wielding AI Coding Tools](https://chandlernguyen.com/blog/2026/03/13/codex-gpt-5-4-vs-claude-code-opus-4-6-dual-wielding-ai-coding-tools/) | [SmartScope: Automating the Claude x Codex Review Loop](https://smartscope.blog/en/blog/claude-code-codex-review-loop-automation-2026/) | [GitHub: openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc)*
 
 ## The Problem: Self-Review Blindness
 
@@ -329,7 +329,7 @@ The codex-plugin-cc makes this **zero-friction** — no terminal switching, no c
 
 The next step beyond Claude + Codex pairing: **4 parallel agents with iterative consensus**. A custom `/cross-review` skill orchestrates Claude Code, Codex, CodeRabbit, and an Integration Impact agent — all reviewing the same PR in parallel, then exchanging opinions and cross-validating until they agree.
 
-*Source: [硅谷陈源博士 on Weibo](https://weibo.com/) (2026-04)*
+*Source: [Yuan Chen, Ph.D. on LinkedIn](https://www.linkedin.com/posts/yuanchen_aicodereview-claudecode-codex-activity-7447456277829652480-z8kC)*
 
 ```
         PR #251
@@ -392,4 +392,3 @@ A single reviewer's opinion is cheap. Four independent reviewers give you breadt
 | 4-agent consensus | 4 | ~5x (3 rounds) | Highest (mutual validation) |
 
 Use single cross-model for daily work. Use 4-agent consensus for **high-stakes PRs** — release branches, security-sensitive code, architectural changes. The cost is worth it when a missed bug costs more than the review tokens.
-<\!-- REVIEW-TODO: [source_links] cross-model-code-review: Weibo source link is generic (https://weibo.com) — find specific 爱可可-爱生活 post URL -->

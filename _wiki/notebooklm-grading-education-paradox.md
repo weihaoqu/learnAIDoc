@@ -5,7 +5,7 @@ category: AI for Teaching
 redirect_from:
   - "/wiki/ai education/notebooklm-grading-education-paradox/"
 tags: [notebooklm, grading, education, academic-integrity, ai-education, teaching, feedback]
-related: ["Learning in the AI Era: Amplify Your Thinking, Don't Outsource It", "How AI Impacts Skill Formation", "Turn Claude Code into Claude Teacher", "Anti-AI Exam Designer — A Claude Code Skill for AI-Resistant Exams"]
+related: ["Learning in the AI Era: Amplify Your Thinking, Don't Outsource It", "Turn Claude Code into Claude Teacher", "Anti-AI Exam Designer — A Claude Code Skill for AI-Resistant Exams"]
 icon: "📝"
 image: "/assets/images/notebooklm-grading-education-paradox.png"
 ---

@@ -5,7 +5,7 @@ category: Learning Resources
 redirect_from:
   - "/wiki/programming/pull-requests-explained/"
 tags: [git, github, pull-request, code-review, claude-code, collaboration]
-related: ["Claude Code Power User Tips", "How Anthropic Teams Use Claude Code"]
+related: ["How Anthropic Teams Use Claude Code"]
 icon: "🔀"
 image: "/assets/images/pull-requests-explained.png"
 ---
@@ -115,7 +115,7 @@ Once set up, reviewers can mention `@claude` in any PR comment to request analys
 
 ### The PR Review Toolkit Plugin
 
-The [PR Review Toolkit](/learnAIDoc/wiki/claude-code-best-plugins/) uses specialized agents — one for test coverage, one for error handling, one for type design, one for code quality. More thorough than a single review pass.
+The [PR Review Toolkit pattern](/learnAIDoc/wiki/claude-code-plugins/) uses specialized agents — one for test coverage, one for error handling, one for type design, one for code quality. More thorough than a single review pass.
 
 ## Real-World Use Cases
 

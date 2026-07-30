@@ -10,13 +10,13 @@ icon: "🔬"
 image: "/assets/images/feynman-ai-research-agent.png"
 ---
 
-Two stories from the same week paint the full picture of AI in research: **Feynman**, an open-source multi-agent system purpose-built for scientific investigation, and a physics professor's brutally honest account of using Claude to reproduce theoretical predictions. Together they answer the question every researcher is asking: *Can AI actually do science?* The answer is yes — spectacularly fast, dangerously confident, and only safe under expert supervision.
+This entry combines two separate lessons that should not be conflated. **Feynman** is a current open-source research agent for paper search, cited research briefs, reviews, audits, drafts, and replication planning. The physics story below is a saved methodology anecdote about supervising LLM-assisted scientific work; it is useful as a caution, but it is not a verified Feynman case study.
 
-*Sources: [Feynman GitHub](https://github.com/getcompanion-ai/feynman) | 爱可可-爱生活 (2026-03-26) | 哈勃观察员 (2026-03-26)*
+*Sources for Feynman tool claims: [Feynman official site](https://www.feynman.is/) | [companion-inc/feynman on GitHub](https://github.com/companion-inc/feynman). The physics anecdote and commander framework were saved from social-source notes without durable permalinks; treat them as methodology prompts, not independently verified reporting.*
 
 ## Feynman: Open-Source AI Research Agent
 
-Feynman is a multi-agent research system that coordinates specialized AI agents through natural language. You describe what you want to investigate; it dispatches the right agents, searches literature, and returns cited results.
+Feynman is a local research agent and science workbench. You can ask it a research question from the terminal, run workflows such as `deepresearch`, `lit`, `rank`, `audit`, `replicate`, or `draft`, or open the local workbench with `feynman serve`. Its official framing is simple: it reads papers, searches the web, writes research drafts, plans experiments, and cites research claims.
 
 ```
 User: /deepresearch "transformer attention mechanisms"
@@ -39,29 +39,32 @@ Cited report with precise references + linked code
 
 | Command | What It Does |
 |---------|-------------|
-| `/deepresearch <topic>` | Full multi-agent deep dive — literature, synthesis, gaps |
-| `/lit <topic>` | Targeted literature search and summary |
-| `/audit <paper ID>` | Critical methodological review of a specific paper |
-| `/replicate <experiment>` | Attempt to reproduce an experiment with code |
+| `feynman "<question>"` | Paper/web search with a cited research brief |
+| `feynman deepresearch <topic>` or `/deepresearch <topic>` | Source-heavy multi-agent investigation with synthesis and verification |
+| `feynman lit <topic>` or `/lit <topic>` | Literature review from paper search and primary sources |
+| `feynman rank <topic>` | PaperRank-style triage for deciding what to read first |
+| `feynman audit <paper-or-item>` or `/audit <item>` | Paper-to-code mismatch audit for reproducibility claims |
+| `feynman replicate <paper-or-claim>` or `/replicate <paper>` | Replication plan; execution is gated on an explicit environment choice |
+| `feynman serve` | Local science workbench for projects, chat, artifacts, notebooks, compute, provenance, and settings |
 
 ### Features at a Glance
 
 | Feature | Details |
 |---------|---------|
-| **Architecture** | Multi-agent on Pi framework |
-| **Literature backend** | AlphaXiv parsing with citation linking |
-| **Interfaces** | Web UI + CLI |
-| **Runtime** | Node.js |
-| **Security** | Docker container isolation for code execution |
-| **Citation policy** | All outputs include precise references — no uncited claims |
-| **Target users** | AI scientists, engineers, research teams |
-| **License** | Open source |
+| **Architecture** | Pi-based runtime with bundled research agents |
+| **Bundled agents** | Researcher, Reviewer, Writer, Verifier |
+| **Interfaces** | Terminal CLI and local science workbench |
+| **Research workflows** | Deep research, literature review, paper ranking, paper/code audit, replication planning, draft generation |
+| **Execution options** | Replication and benchmark workflows require an explicit environment choice; docs mention Docker, Modal, and RunPod-style execution options |
+| **Citation policy** | Research claims are intended to link to papers, docs, or repos with direct URLs |
+| **Target users** | Scientists, engineers, research teams, and students learning auditable research workflows |
+| **License** | MIT |
 
-The design philosophy is right: every claim links back to a source, code links to literature, and experiments link to both. This is what research tooling *should* look like.
+The design direction is the useful part for this wiki: claims should connect to sources, paper claims should connect to code where possible, and experiments should preserve provenance.
 
 ## The Physics Case Study: Claude as Grad Student
 
-A professor gave Claude a task any second-year grad student could handle: reproduce the **Sudarsky shoulder predictions** in particle physics. What followed was a two-week experiment that revealed both the ceiling and the floor of AI-assisted research.
+A saved anecdote described a professor using Claude on a theoretical-physics reproduction task. Because the original durable permalink is not preserved in this repo, use this section as a workflow warning, not as a citable case report. The lesson still matters: LLMs can accelerate computation, drafting, and code scaffolding, but a domain expert has to verify every coefficient, citation, and statistical claim.
 
 ### What Worked — Spectacularly
 
@@ -125,9 +128,9 @@ The professor's final answer to "will physicists lose their jobs?" — **No.** C
 
 ## The Reusable Methodology: From Executor to Commander
 
-超级峰 extracted the professor's approach into a replicable framework. The core shift: **stop being an executor, become a commander.** Don't rely on AI's memory — give it searchable structured documents.
+The saved social notes extracted the professor's approach into a replicable framework. The core shift: **stop being an executor, become a commander.** Don't rely on AI's memory — give it searchable structured documents.
 
-*Source: [超级峰 on Xiaohongshu](https://www.xiaohongshu.com/) (2026-04)*
+*Source note: original social-source summary, 2026-04; durable permalink not preserved. Keep the method if useful, but do not treat the numbers in the anecdote as independently verified facts.*
 
 ### Three Core Principles
 

@@ -3,18 +3,18 @@ title: "notebooklm-py — Unofficial Python API for Google NotebookLM Automation
 date: 2026-05-21
 category: Skills & Plugins
 tags: [notebooklm, python, api, automation, research, audio-summary, mindmap, google, unofficial, cli, content-generation]
-related: ["NotebookLM's Grading Paradox — When AI Feedback Looks Right But Teaches Wrong", "academic-research-skills — Imbad0202's 4-Skill Claude Code Pipeline for Academic Research", "Building a Research KB — Zotero + Obsidian + Claude Code"]
+related: ["MIT Professor's NotebookLM Grading System — 47 Essays in 12 Minutes", "academic-research-skills — Imbad0202's 4-Skill Claude Code Pipeline for Academic Research", "Building a Research KB — Zotero + Obsidian + Claude Code"]
 icon: "🔌"
 image: "/assets/images/notebooklm-py-python-api.png"
 ---
 
 **An unofficial Python library that exposes Google NotebookLM's capabilities as a programmable API — letting you create notebooks, ingest sources, and generate audio summaries, video clips, mindmaps, flashcards, study guides, and research briefings entirely from code, CLI, or AI agent workflows, without touching the NotebookLM web UI.**
 
-*Source: [teng-lin/notebooklm-py (GitHub, May 2026)](https://github.com/teng-lin/notebooklm-py) — shared via Weibo post by 爱可可-爱生活*
+*Source: [teng-lin/notebooklm-py GitHub](https://github.com/teng-lin/notebooklm-py). Discovery note: Weibo post by 爱可可-爱生活, May 2026.*
 
 > **Critical caveat upfront:** This is an **unofficial, community-built library** with no Google endorsement. It reverse-engineers NotebookLM's internal APIs, which means it can break without warning when Google updates the product. Evaluate carefully before building production workflows on top of it. Full risk assessment in the "Important Things to Know" section.
 
-> **How this entry relates to "NotebookLM's Grading Paradox":** The existing wiki entry on NotebookLM covers its *pedagogical* use — specifically, its grading paradox and educational implications. THIS entry is about *programmatic automation* of NotebookLM via Python — a fundamentally different use case targeting developers, researchers, and AI practitioners building pipelines. The two entries are complementary, not redundant.
+> **How this entry relates to the NotebookLM grading entry:** The existing wiki entry on NotebookLM covers its *pedagogical* use — specifically, its grading paradox and educational implications. THIS entry is about *programmatic automation* of NotebookLM via Python — a fundamentally different use case targeting developers, researchers, and AI practitioners building pipelines. The two entries are complementary, not redundant.
 
 ## What notebooklm-py Does
 
@@ -112,5 +112,5 @@ A workflow like this — source ingestion, multi-format generation, export — w
 
 - **GitHub Repo:** [teng-lin/notebooklm-py](https://github.com/teng-lin/notebooklm-py)
 - **Google NotebookLM:** [notebooklm.google.com](https://notebooklm.google.com)
-- **Related pedagogy entry:** [NotebookLM's Grading Paradox — When AI Feedback Looks Right But Teaches Wrong](/learnAIDoc/wiki/notebooklm-grading-education-paradox/)
+- **Related pedagogy entry:** [MIT Professor's NotebookLM Grading System — 47 Essays in 12 Minutes](/learnAIDoc/wiki/notebooklm-grading-education-paradox/)
 - **Research pipeline context:** [Building a Research KB — Zotero + Obsidian + Claude Code](/learnAIDoc/wiki/research-kb-zotero-obsidian/)

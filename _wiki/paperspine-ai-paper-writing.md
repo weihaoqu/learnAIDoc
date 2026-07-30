@@ -3,7 +3,7 @@ title: "PaperSpine — Motivation-Driven Paper Writing Skill Suite for Codex and
 date: 2026-05-21
 category: AI for Research
 tags: [paper-writing, academic-writing, claude-code, codex, latex, manuscript, research-workflow, motivation-driven, evidence-bank, writing-rationale]
-related: ["Academic Research Skills for Claude Code — From Search to Final Draft", "AI Agent Academic Research Writing — Claude-Based Research-to-Paper Pipeline", "Posterskill — AI-Generated Academic Conference Posters from Your Paper", "Nature Skills — 9-Skill Claude Code Bundle for Academic Writing at Nature Standards", "Claude-Prism — Local-First Academic Writing Workspace with AI", "Killing AI Slop: avoid-ai-writing + stop-slop"]
+related: ["academic-research-skills — Imbad0202's 4-Skill Claude Code Pipeline for Academic Research", "AI Agents for Academic Research & Writing — From KatmerCode to the Nature Playbook", "Posterskill — AI-Generated Academic Conference Posters from Your Paper", "Nature Skills — 9-Skill Claude Code Bundle for Academic Writing at Nature Standards", "Claude-Prism — Local-First Academic Writing Workspace with AI", "Killing AI Slop: avoid-ai-writing + stop-slop"]
 icon: "📄"
 image: "/assets/images/paperspine-ai-paper-writing.png"
 ---
@@ -151,4 +151,4 @@ The ideal pipeline for a serious paper: use academic-research-skills to master t
 ## Links
 
 - **GitHub:** [WUBING2023/PaperSpine](https://github.com/WUBING2023/PaperSpine)
-- **Companion entries:** [Academic Research Skills for Claude Code](/learnAIDoc/wiki/academic-research-skills-imbad0202/), [AI Agent Academic Research Writing](/learnAIDoc/wiki/ai-agent-academic-research-writing/), [Posterskill](/learnAIDoc/wiki/posterskill-conference-posters/)
+- **Companion entries:** [Academic Research Skills for Claude Code](/learnAIDoc/wiki/academic-research-skills-imbad0202/), [AI Agent Academic Research Writing](/learnAIDoc/wiki/ai-agent-academic-research-writing/), [Posterskill](/learnAIDoc/wiki/posterskill-academic-posters/)

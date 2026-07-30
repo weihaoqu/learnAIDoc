@@ -5,7 +5,7 @@ category: AI for Research
 redirect_from:
   - "/wiki/ai research/vision-agents-realtime-ai/"
 tags: [ai, agents, vision, video, mobile, real-time]
-related: []
+
 icon: "👁️"
 image: "/assets/images/vision-agents.jpg"
 ---

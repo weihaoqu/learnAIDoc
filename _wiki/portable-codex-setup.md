@@ -3,7 +3,7 @@ title: "Copy My Codex Setup — Portable AGENTS.md, Skills, Plugins, and Safety 
 date: 2026-05-25
 category: Agent Setup & Migration
 tags: [codex, codex-cli, agents-md, skills, plugins, setup, migration, backups, claude-code, safety-rules, review-gate]
-related: ["New-Mac Migration — Codex + Claude Code + checkpoint/resume in 90 Minutes", "Personal AI Skill Cheat Sheet — When to Use Each Skill", "Codex + Claude Code Skill Repos: May 23 Batch", "Claude Code + Codex Handoff Workflow — Switching Models Without Losing Context", "Codex-Maxxing — Jason Liu's Power User Workflow for OpenAI's Codex Agent", "Codex Orange Book — 花叔's Bilingual Codex Reference", "Codex Environment Replication — Portable `~/.codex/` Across Machines"]
+related: ["New-Mac Migration — Codex + Claude Code + checkpoint/resume in 90 Minutes", "Personal AI Skill Cheat Sheet — When to Use Each Skill", "progress.md Handoff — A Scripted Codex ⇄ Claude Code Workflow", "Claude Code + Codex Handoff Workflow — Switching Models Without Losing Context", "Codex-Maxxing — Jason Liu's Power User Workflow for OpenAI's Codex Agent", "Codex Orange Book — 花叔's Bilingual Codex Reference", "Codex Environment Replication — Portable `~/.codex/` Across Machines"]
 icon: "🧰"
 image: "/assets/images/codex-skills-cheat-sheet.png"
 ---

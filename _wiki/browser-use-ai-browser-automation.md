@@ -8,9 +8,9 @@ icon: "🌐"
 image: "/assets/images/browser-use-ai-browser-automation.png"
 ---
 
-Browser-Use is an open-source Python framework that lets AI agents control web browsers autonomously — clicking, typing, scrolling, filling forms, and navigating multi-step workflows from natural language instructions. With 93k+ GitHub stars, it's the most popular AI browser automation tool. It works with Claude, GPT, Gemini, and local models, and ships with a Claude Code skill for direct integration.
+Browser-Use is an open-source Python framework that lets AI agents control web browsers autonomously — clicking, typing, scrolling, filling forms, and navigating multi-step workflows from natural language instructions. It is one of the most visible AI browser automation projects, works with Claude, GPT, Gemini, and local models, and also has a Browser Use CLI path for agent-driven terminal workflows.
 
-*Source: [GitHub — browser-use/browser-use](https://github.com/browser-use/browser-use) | [browser-use.com](https://browser-use.com/) | [Benchmark](https://github.com/browser-use/benchmark)*
+*Source: [GitHub — browser-use/browser-use](https://github.com/browser-use/browser-use) | [browser-use.com](https://browser-use.com/) | [Browser Use CLI docs](https://docs.browser-use.com/open-source/browser-use-cli) | [Releases](https://github.com/browser-use/browser-use/releases) | [Benchmark](https://github.com/browser-use/benchmark)*
 
 ## What It Does
 
@@ -71,17 +71,22 @@ agent = Agent(
 )
 ```
 
-### Scenario 4: CLI Mode (No Code Needed)
+### Scenario 4: Browser Use CLI and Existing-Browser Control
 
 ```bash
-# Interactive browser control from your terminal
-browser-use open https://example.com
-browser-use state              # List all clickable elements
-browser-use click 5            # Click element #5
-browser-use type "search query"
-browser-use screenshot result.png
-browser-use close
+# Check the current docs before copying exact flags.
+browser-use
 ```
+
+The CLI is the part worth preserving from the older standalone "Browser Use CLI 2.0" page. Its key idea is direct browser control from an agent terminal, including the option to connect to a running Chrome/Chromium session through CDP so the agent can work with existing tabs, cookies, logins, extensions, and console state.
+
+| Mode | How it works | Best for |
+|---|---|---|
+| **Existing browser / direct CDP** | Connects to a running Chrome/Chromium instance | Debugging, authenticated dashboards, workflows where your current session matters |
+| **Managed local browser** | Launches a controlled browser profile | Testing, repeatable QA, safer demos |
+| **Hosted cloud browser** | Uses Browser Use's hosted infrastructure | Batch jobs, parallel runs, tasks that benefit from remote browser management |
+
+The old v2 claims about direct CDP being faster and cheaper are directionally useful, but treat exact speed/cost numbers as release-specific. Browser Use has continued to evolve; verify current CLI behavior from the docs and release notes before using it in a workshop or assignment.
 
 ## Supported Models
 
@@ -159,7 +164,8 @@ Natural Language Task
 
 ## Links
 
-- **GitHub:** [browser-use/browser-use](https://github.com/browser-use/browser-use) (93k+ stars)
+- **GitHub:** [browser-use/browser-use](https://github.com/browser-use/browser-use)
 - **Website:** [browser-use.com](https://browser-use.com/)
+- **CLI docs:** [docs.browser-use.com/open-source/browser-use-cli](https://docs.browser-use.com/open-source/browser-use-cli)
 - **Benchmark:** [browser-use/benchmark](https://github.com/browser-use/benchmark)
 - **Claude Code Skill:** Available via GitHub raw URL

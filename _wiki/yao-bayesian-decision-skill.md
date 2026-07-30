@@ -3,7 +3,7 @@ title: "Yao Bayesian Decision Skill — Structured Decision-Making for Claude Co
 date: 2026-04-26
 category: Skills & Plugins
 tags: [decision-making, bayesian, claude-code, skill, reasoning, uncertainty]
-related: []
+
 icon: "🎯"
 image: "/assets/images/yao-bayesian-decision-skill.png"
 ---

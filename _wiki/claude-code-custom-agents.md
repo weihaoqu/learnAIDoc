@@ -5,7 +5,7 @@ category: Claude Code Basics
 redirect_from:
   - "/wiki/claude code/claude-code-custom-agents/"
 tags: [claude-code, cli, agents, customization]
-related: ["Claude Code: Agent Teams vs Subagents", "Claude Code Power User Tips"]
+related: ["Claude Code: Agent Teams vs Subagents"]
 icon: "🤖"
 image: "/assets/images/claude-code-custom-agents.png"
 ---

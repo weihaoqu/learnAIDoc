@@ -5,7 +5,7 @@ category: AI for Teaching
 redirect_from:
   - "/wiki/ai education/openmaic-multi-agent-classroom/"
 tags: [ai-education, multi-agent, llm, tsinghua, classroom, langgraph, open-source]
-related: ["AI in Education — Teacher's Factory, Not Student's Cheat Tool", "AI Tools for High-Engagement Learning", "Learning in the AI Era: Amplify Your Thinking, Don't Outsource It"]
+related: ["AI in Education — Teacher's Factory, Not Student's Cheat Tool", "Learning in the AI Era: Amplify Your Thinking, Don't Outsource It"]
 icon: "🎓"
 image: "/assets/images/openmaic-multi-agent-classroom.png"
 ---

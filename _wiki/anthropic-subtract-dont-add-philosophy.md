@@ -12,7 +12,7 @@ image: "/assets/images/anthropic-subtract-dont-add-philosophy.png"
 
 Chris Olah (Anthropic co-founder) and engineer Lance Martin published a blog post that inverts everything most developers believe about building AI applications. Their thesis: **as models get stronger, developers should continue subtracting, not adding.** Every layer of "protection," every "helpful" framework, every extra function can become a bottleneck that limits the model's real capabilities.
 
-*Source: [默庵·超级个体 on Weibo](https://weibo.com/) (2026-04) analyzing Chris Olah & Lance Martin's Anthropic blog post | Referenced: ["The Bitter Lesson" by Rich Sutton](http://www.incompleteideas.net/IncIdeas/BitterLesson.html)*
+*Source: [Anthropic — Agent Harness Design: 3 Patterns for Harnessing Claude's Intelligence](https://claude.com/blog/harnessing-claudes-intelligence) | Referenced: ["The Bitter Lesson" by Rich Sutton](http://www.incompleteideas.net/IncIdeas/BitterLesson.html)*
 
 ## The Core Thesis
 
@@ -162,7 +162,7 @@ The best framework is one that can **continuously evolve with the model and trim
 
 ## Why This Matters for Harness Engineering
 
-This entry is the **philosophical companion** to [harness engineering](/learnAIDoc/wiki/claude%20code/harness-engineering-agents/). Harness engineering teaches the 6 pillars of reliable agent design. But this entry answers the question the pillars leave open: **as the model improves, which pillars should you remove?**
+This entry is the **philosophical companion** to [harness engineering](/learnAIDoc/wiki/harness-engineering-agents/). Harness engineering teaches the 6 pillars of reliable agent design. But this entry answers the question the pillars leave open: **as the model improves, which pillars should you remove?**
 
 The answer: all the ones that compensated for weaknesses the model no longer has. Test them periodically. Measure their value. Remove the ones that no longer earn their cost.
 
@@ -192,8 +192,8 @@ Practical questions to ask about any AI framework you build:
 
 ## Links
 
+- **Agent Harness Design: 3 Patterns for Harnessing Claude's Intelligence** — [Anthropic](https://claude.com/blog/harnessing-claudes-intelligence)
 - **The Bitter Lesson** — [Rich Sutton](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) (the foundational essay this philosophy builds on)
 - **Chris Olah** — [Anthropic co-founder, Transformer Circuits researcher](https://colah.github.io/)
 - **Lance Martin** — LangChain/Anthropic engineer
 - **BrowseComp benchmark** — Web browsing evaluation for agents
-<\!-- REVIEW-TODO: [source_links] Weibo source link is generic (https://weibo.com/) — find specific 默庵·超级个体 post URL and add direct Anthropic blog post link -->

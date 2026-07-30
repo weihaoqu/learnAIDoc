@@ -12,7 +12,7 @@ image: "/assets/images/claude-code-research-infrastructure.png"
 
 Stop using AI as a chatbot. Start building it into your **research infrastructure**. A presentation from a researcher showed how Claude Code transforms from a conversation partner into a persistent, multi-agent research system: CLAUDE.md as project memory, Skills as domain expert specializations, and parallel AI agent teams that turn a single researcher into the **coordinator of an AI intelligence squad**.
 
-*Source: [ClaudeCodeTools Presentation (PDF)](https://github.com/aspi6246/ClaudeCodeTools/blob/main/Presentations/main.pdf) | [爱可可-爱生活 Weibo analysis](https://weibo.com)*
+*Source: [ClaudeCodeTools Presentation (PDF)](https://github.com/aspi6246/ClaudeCodeTools/blob/main/Presentations/main.pdf) | Claude Code docs: [memory](https://code.claude.com/docs/en/memory), [skills](https://code.claude.com/docs/en/skills), [subagents](https://code.claude.com/docs/en/sub-agents)*
 
 ## The Three Layers
 
@@ -193,8 +193,6 @@ The biggest win isn't any single persona — it's the **compound effect**. When 
 - Maintain project-specific CLAUDE.md files for LearnAI research, docs, and course repos.
 - Use reviewer/editor/lit-scout personas to improve articles before publication.
 - Run parallel Claude Code sessions for code audit, source verification, and summary drafting.
-
-<!-- REVIEW-TODO: [source_links] Weibo source link is generic (https://weibo.com) — find specific 爱可可-爱生活 post URL -->
 
 ## Getting Started
 

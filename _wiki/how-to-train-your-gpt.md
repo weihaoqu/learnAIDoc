@@ -3,7 +3,7 @@ title: "How to Train Your GPT — Interactive ML Textbook for Building a 151M-Pa
 date: 2026-05-19
 category: Learning Resources
 tags: [llm, machine-learning, transformer, jupyter-notebook, interactive, open-source, gpt, llama, pytorch, fine-tuning, lora, moe, education, from-scratch]
-related: ["Paper-Code Joint Analysis & Contract-Driven Skill Design", "Autoresearch: 100 Autonomous ML Experiments Overnight", "Claude Code 101 — Anthropic's Official Onboarding Course", "Anthropic Academy — 13 Free Claude Courses, 12-Week Roadmap"]
+related: ["Paper-Code Joint Analysis & Contract-Driven Skill Design", "Autoresearch: 100 Autonomous ML Experiments Overnight", "Claude Code 101 — Anthropic's Official Onboarding Course", "Anthropic Academy — 13 Free AI Courses with Certificates"]
 icon: "📚"
 image: "/assets/images/how-to-train-your-gpt.png"
 ---
@@ -123,7 +123,7 @@ INPUT SEQUENCE
 - **LoRA and MoE chapters are introductory.** Chapters 10–11 build genuine understanding of what LoRA and MoE are doing, but they are not production fine-tuning guides. For deployment-grade LoRA workflows, follow up with resources like Hugging Face PEFT or Axolotl.
 - **No hosted version — everything runs locally.** There is no Colab link in the README; you clone the repo and run the notebooks yourself. This is intentional (the install is two packages), but instructors who want to run it in a managed lab environment will need to set up their own Jupyter server or containerize it.
 - **Companion resources in this wiki:**
-  - [Paper-Code Joint Analysis & Contract-Driven Skill Design](/learnAIDoc/wiki/paper-code-joint-analysis/) — how to pair a paper (like "Attention Is All You Need") with code like this textbook
-  - [Autoresearch: 100 Autonomous ML Experiments Overnight](/learnAIDoc/wiki/autoresearch-ml-experiments/) — what to do with a working training pipeline once you have one
+  - [Paper-Code Joint Analysis & Contract-Driven Skill Design](/learnAIDoc/wiki/paper-code-joint-analysis-contract-driven/) — how to pair a paper (like "Attention Is All You Need") with code like this textbook
+  - [Autoresearch: 100 Autonomous ML Experiments Overnight](/learnAIDoc/wiki/autoresearch-autonomous-ml/) — what to do with a working training pipeline once you have one
   - [Claude Code 101 — Anthropic's Official Onboarding Course](/learnAIDoc/wiki/claude-code-101/) — pairs well if you want to use Claude Code to extend or debug the notebooks
-  - [Anthropic Academy — 13 Free Claude Courses, 12-Week Roadmap](/learnAIDoc/wiki/anthropic-academy-free-courses/) — broader curriculum context for AI learning resources
+  - [Anthropic Academy — 13 Free AI Courses with Certificates](/learnAIDoc/wiki/anthropic-academy-free-courses/) — broader curriculum context for AI learning resources

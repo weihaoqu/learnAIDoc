@@ -3,7 +3,7 @@ title: "ImageLens — Chrome Extension That Extracts AI-Editable Prompts from An
 date: 2026-05-19
 category: Skills & Plugins
 tags: [chrome-extension, image-analysis, prompt-extraction, gemini-api, open-source, browser-plugin, image-generation, no-cost, visual-design]
-related: ["GPT Image 2 水墨风 Slide Prompt — Structured Template for Ink-Wash Style Slides", "designprompts.dev — 30+ AI Frontend Design Styles with One-Click Prompts", "Prompt Master — Write Accurate Prompts for Any AI Tool, Zero Waste"]
+related: ["GPT Image 2 水墨风 Slide Prompt — Structured Template for Ink-Wash Style Slides", "Awesome GPT Image 2 Prompt Library — 7,000+ Prompts with Live Preview for 16 Scenarios", "Prompt Master — Write Accurate Prompts for Any AI Tool, Zero Waste"]
 icon: "🔍"
 image: "/assets/images/imagelens-chrome-plugin.png"
 ---

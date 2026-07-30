@@ -5,7 +5,7 @@ category: Claude Code Engineering
 redirect_from:
   - "/wiki/claude code/ccunpacked-claude-code-internals/"
 tags: [claude-code, architecture, internals, visualization, agent-loop, tools, commands, reverse-engineering, education]
-related: ["Claw Code — Clean-Room Python Rewrite of Claude Code's Agent Harness", "Harness Engineering — The Real Bottleneck Isn't the Model", "The Five Levels of Claude Code — From Prompting to Orchestration", "Claude Code Cheat Sheet, Everything-Claude-Code & Claude How-To — Complete Reference Kit", "Claude Code Source Analysis — What Makes It Work & How to Actually Learn From It", "Claude Code Environment Replication — Portable Setup Across Machines"]
+related: ["Harness Engineering — The Real Bottleneck Isn't the Model", "The Five Levels of Claude Code — From Prompting to Orchestration", "Claude Code Cheat Sheet, Everything-Claude-Code & Claude How-To — Complete Reference Kit", "Claude Code Source Analysis — What Makes It Work & How to Actually Learn From It", "Claude Code Environment Replication — Portable Setup Across Machines"]
 icon: "🔎"
 image: "/assets/images/ccunpacked-claude-code-internals.png"
 ---
@@ -126,7 +126,7 @@ This directly supports the harness engineering thesis: the value is in the syste
 
 ### Reverse Engineering as Pedagogy
 
-CC Unpacked itself is a teaching method. Studying a system's internals builds deeper understanding than just using it. The same philosophy behind [MicroGPT](/learnAIDoc/wiki/karpathy-microgpt/) (understand by rebuilding) and [Claw Code](/learnAIDoc/wiki/claw-code-python-rewrite/) (understand by porting).
+CC Unpacked itself is a teaching method. Studying a system's internals builds deeper understanding than just using it. The same philosophy behind [MicroGPT](/learnAIDoc/wiki/karpathy-microgpt/) (understand by rebuilding) and [Claw Code](https://github.com/instructkr/claw-code) (understand by porting).
 
 ## See Also: "Inside Claude Code" E-Book
 

@@ -3,14 +3,14 @@ title: "AI-Assisted Research Workflow: Formulate → Find → Judge → Verify �
 date: 2026-04-24
 category: AI for Research
 tags: [research-workflow, claude-code, codex, feynman, autoresearch, peer-review, research-methodology, scheduled-agents]
-related: ["AutoResearch: Autonomous ML Experiment Paradigm", "Feynman AI Research Agent", "Karpathy End of Coding", "Codex + Claude Code Research Tutorial", "Awesome-Auto-Research-Tools — A Curated Map of Automated-Science Projects"]
+related: ["Autoresearch: 100 Autonomous ML Experiments Overnight", "Feynman AI Research Agent & Claude as Lab Partner — Promise and Pitfalls", "Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "Codex + Claude Code for Research — A Practical Tutorial", "Awesome-Auto-Research-Tools — A Curated Map of Automated-Science Projects"]
 icon: "🔬"
 image: "/assets/images/ai-research-workflow-pipeline.png"
 ---
 
 A 7-stage pipeline for AI-assisted academic research that uses Claude, Codex, Feynman skills, autoresearch, and scheduled agents — each at the right moment. Distilled from a real research session where the JUDGE stage (hostile peer review) caught a fundamentally wrong research direction in 4 minutes, saving weeks of wasted work.
 
-*Source: [Karpathy AutoResearch](https://weihaoqu.github.io/learnAIDoc/wiki/autoresearch-autonomous-ml/) | [Feynman AI Research Agent](https://weihaoqu.github.io/learnAIDoc/wiki/feynman-ai-research-agent/) | [Down Sensitivity in DP](https://differentialprivacy.org/down-sensitivity/)*
+*Source: [Karpathy AutoResearch](https://weihaoqu.github.io/learnAIDoc/wiki/autoresearch-autonomous-ml/) | [Feynman AI Research Agent & Claude as Lab Partner — Promise and Pitfalls](https://weihaoqu.github.io/learnAIDoc/wiki/feynman-ai-research-agent/) | [Down Sensitivity in DP](https://differentialprivacy.org/down-sensitivity/)*
 
 ## The Pipeline
 

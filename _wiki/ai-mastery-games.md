@@ -5,7 +5,7 @@ category: AI for Teaching
 redirect_from:
   - "/wiki/ai education/ai-mastery-games/"
 tags: [ai-literacy, gamification, teaching, interactive-games, ai-education, hallucination-detection, prompt-engineering, critical-thinking]
-related: ["AI in Education — Teacher's Factory, Not Student's Cheat Tool", "AI Tools for High-Engagement Learning", "Anthropic Academy — 13 Free AI Courses with Certificates"]
+related: ["AI in Education — Teacher's Factory, Not Student's Cheat Tool", "Anthropic Academy — 13 Free AI Courses with Certificates"]
 icon: "🎮"
 image: "/assets/images/ai-mastery-games.png"
 ---
