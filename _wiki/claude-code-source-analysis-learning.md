@@ -5,7 +5,7 @@ category: Claude Code Engineering
 redirect_from:
   - "/wiki/claude code/claude-code-source-analysis-learning/"
 tags: [claude-code, architecture, source-code, harness, prompt-cache, subagents, learning-methodology, reverse-engineering, open-source]
-related: ["CC Unpacked — Visual Guide to Claude Code's Internals", "The Five Levels of Claude Code — From Prompting to Orchestration", "Claude Code 101 — Anthropic's Official Onboarding Course"]
+related: ["CC Unpacked — Visual Guide to Claude Code's Internals", "The Five Levels of Claude Code — From Prompting to Orchestration", "Claude Code 101 — Anthropic's Official Onboarding Course", "claude-tap — Local Trace Viewer for AI Coding Agents"]
 icon: "🔬"
 image: "/assets/images/claude-code-source-analysis-learning.png"
 ---

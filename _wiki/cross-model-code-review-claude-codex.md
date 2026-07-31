@@ -5,7 +5,7 @@ category: Claude Code Workflows
 redirect_from:
   - "/wiki/claude code/cross-model-code-review-claude-codex/"
 tags: [claude-code, codex, code-review, multi-model, ai-coding, testing, bugs, codex-plugin-cc, adversarial-review]
-related: ["Claude Drafts, Codex Gates — An Interleaved Two-Model Review Loop for Hard Work", "Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "Frustration Shifts Upward — How AI Coding Changes What's Hard", "oh-my-claudecode — Multi-AI Orchestration Plugin for Claude Code", "Codex + Claude Code for Research — A Practical Tutorial", "Codex Orange Book — 花叔's Bilingual Codex Reference", "Personal AI Skill Cheat Sheet — When to Use Each Skill"]
+related: ["Claude Drafts, Codex Gates — An Interleaved Two-Model Review Loop for Hard Work", "Harness Engineering — The Real Bottleneck Isn't the Model", "claude-tap — Local Trace Viewer for AI Coding Agents", "Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "Frustration Shifts Upward — How AI Coding Changes What's Hard", "oh-my-claudecode — Multi-AI Orchestration Plugin for Claude Code", "Codex + Claude Code for Research — A Practical Tutorial", "Codex Orange Book — 花叔's Bilingual Codex Reference", "Personal AI Skill Cheat Sheet — When to Use Each Skill"]
 icon: "🔍"
 image: "/assets/images/cross-model-code-review-claude-codex.png"
 ---

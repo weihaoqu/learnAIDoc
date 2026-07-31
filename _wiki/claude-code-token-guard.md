@@ -3,7 +3,7 @@ title: "Claude Code Token Guard — Audit Unattended Token Burn"
 date: 2026-06-11
 category: Claude Code Engineering
 tags: [claude-code, token-usage, permissions, launchd, security, automation, skills]
-related: ["Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "gnhf — Good Night, Have Fun: Run AI Agents While You Sleep"]
+related: ["Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "claude-tap — Local Trace Viewer for AI Coding Agents", "gnhf — Good Night, Have Fun: Run AI Agents While You Sleep"]
 icon: "🛡️"
 image: "/assets/images/claude-code-token-guard.png"
 ---
