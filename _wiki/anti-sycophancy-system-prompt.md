@@ -10,7 +10,7 @@ image: "/assets/images/anti-sycophancy-system-prompt.png"
 
 AI assistants have a sycophancy problem: they tell you what you want to hear instead of what's true. Users report Claude overusing phrases like "You're absolutely right!" even when correction would be more helpful. This system prompt — designed for CLAUDE.md and AGENTS.md — encourages AI to prioritize factual accuracy over politeness, verify its own claims, and push back when your reasoning has holes.
 
-*Source: [Anthropic — Protecting Wellbeing](https://www.anthropic.com/news/protecting-well-being-of-users) | [Towards Understanding Sycophancy (arXiv)](https://arxiv.org/abs/2310.13548) | [Claude Code Sycophancy Issue #3382](https://github.com/anthropics/claude-code/issues/3382)*
+*Source: [Anthropic — Protecting Wellbeing](https://www.anthropic.com/news/protecting-well-being-of-users) | [Towards Understanding Sycophancy (arXiv)](https://arxiv.org/abs/2310.13548) | [Claude Code Sycophancy Issue #3382](https://github.com/anthropics/claude-code/issues/3382) | [Kai-Fu Lee on X](https://x.com/kaifulee/status/2067524130673467886) | [Kai-Fu Lee on LinkedIn](https://www.linkedin.com/posts/kaifulee_here-is-how-i-minimize-sycophancy-capitulation-activity-7473286026350723072-Irl2)*
 
 ## The Prompt
 
@@ -39,6 +39,48 @@ inform me about morals and ethics unless I specifically ask.
 Make your answers as long and detailed as you possibly can.
 ```
 
+## A Compact Claim-Accounting Version
+
+Inspired by Kai-Fu Lee's July 2026 post about reducing sycophancy and capitulation, this LearnAI version is more explicit about evidence handling than the older generic prompt. Instead of only saying "be blunt" or "do not hallucinate," it asks the model to label claim basis, cap confidence when support is weak, keep symbolic frames inside their frame, and surface uncertainty.
+
+Use this LearnAI version when you want a shorter prompt that forces calibration:
+
+```markdown
+Accuracy beats approval. Challenge weak claims first. Do not reverse position
+after pushback unless there is new evidence or a changed assumption.
+
+For any important claim, mark the basis when useful:
+- [KNOWN] stable background knowledge
+- [SOURCED] supported by a cited source
+- [OBSERVED] seen directly in files, logs, screenshots, or tool output
+- [COMPUTED] calculated from visible data
+- [INFERRED] reasoned from evidence, but not directly observed
+- [FRAME] true inside a model, typology, analogy, or symbolic system
+- [UNKNOWN] not enough evidence
+
+Do not turn a [FRAME] claim into a real-world claim without saying that a
+translation is being made. For medicine, law, finance, safety, citations,
+named entities, dates, and exact numbers, either provide support or say the
+claim is unknown.
+
+Use confidence labels only when the user may rely on the uncertainty:
+HIGH, MEDIUM, LOW, or UNKNOWN. If the basis is [FRAME], [INFERRED], or weakly
+sourced, do not present it as HIGH confidence.
+
+If you do not know, say that early. Do not bury uncertainty under a plausible
+story. Red flags: one explanation fits everything too neatly, the answer gets
+more confident after pushback without new evidence, or the answer supplies
+specific names, citations, laws, or numbers without support.
+
+For post-hoc explanations, ask: would this frame have predicted the outcome
+before seeing it? If not, label it as post-hoc inference.
+
+At the end of high-stakes answers, add a brief "Rules I may have broken"
+section naming any uncertainty, missing source, or unsupported leap.
+```
+
+The important shift is from **tone control** to **claim accounting**. A blunt model can still be wrong. A calibrated model has to expose whether it observed, computed, sourced, inferred, framed, or guessed the claim.
+
 ## Why AI Sycophancy Is a Real Problem
 
 Anthropic's own researchers published "Towards Understanding Sycophancy in Language Models" (October 2023), documenting that models trained with RLHF develop a bias toward agreeing with the user — even when the user is wrong.
@@ -61,6 +103,8 @@ The prompt applies several anti-sycophancy techniques simultaneously:
 3. **Permission to disagree** — "provocative, aggressive, argumentative" removes the politeness constraint
 4. **Ban on filler** — "Do not provide disclaimers" eliminates the hedging language that masks uncertainty
 5. **Honesty mandate** — "If you don't know, say so" directly addresses hallucination by permitting uncertainty
+6. **Claim labeling** — the Kai-Fu Lee-inspired variant makes the model surface whether a statement is observed, sourced, computed, inferred, framed, or unknown
+7. **Confidence caps** — weak bases should not be presented with strong certainty, especially in high-stakes domains
 
 ## Where to Put It
 
@@ -76,6 +120,7 @@ The prompt applies several anti-sycophancy techniques simultaneously:
 
 - **Tone shift is real** — Responses become noticeably more direct and less "friendly." Some users find this jarring at first.
 - **Not a silver bullet** — Models still hallucinate and make errors. The prompt reduces sycophantic agreement, not factual mistakes.
+- **Confidence labels are not measurements** — A model's confidence tag is a reasoning aid, not a calibrated probability unless checked against evidence.
 - **Context-dependent** — For customer-facing AI, you probably *want* politeness. This prompt is for personal/development use.
 - **Model-dependent** — Effectiveness varies across models. Anthropic reports the 4.5 model family substantially reduced sycophancy versus Opus 4.1 in their evaluations.
 
