@@ -10,7 +10,7 @@ image: "/assets/images/claude-tap-agent-trace-viewer.png"
 
 `claude-tap` is a local proxy and trace viewer for AI coding agents. The durable lesson is bigger than the tool: **do not debug agents from vibes; inspect the real request trace**. Terminal output shows what the agent chose to say back to you; a trace shows the system prompt, conversation history/messages, tool schemas, tool calls, tool results, streaming response, token usage, and request diffs that produced that behavior.
 
-*Source: [GitHub — liaohch3/claude-tap](https://github.com/liaohch3/claude-tap) | [Local AI Agent Trace Viewer](https://liaohch3.com/claude-tap/) | [How to view agent traces locally](https://github.com/liaohch3/claude-tap/blob/main/docs/guides/agent-trace-viewer.md) | [PyPI — claude-tap](https://pypi.org/project/claude-tap/)*
+*Sources: [GitHub — liaohch3/claude-tap](https://github.com/liaohch3/claude-tap), [Local AI Agent Trace Viewer](https://liaohch3.com/claude-tap/), [How to view agent traces locally](https://github.com/liaohch3/claude-tap/blob/main/docs/guides/agent-trace-viewer.md), and [PyPI — claude-tap](https://pypi.org/project/claude-tap/).*
 
 ## Why This Belongs in the Wiki
 
