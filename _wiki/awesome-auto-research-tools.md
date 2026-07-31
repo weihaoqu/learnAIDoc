@@ -85,6 +85,28 @@ The category where most teams actually deploy *today*, in my reading:
 - **Tongyi DeepResearch**, **Open Deep Research** — open-source analogs of commercial Deep Research products
 - **ChatPaper** — paper Q&A and summary
 
+### STORM — use it as a pre-writing method, not a magic PhD button
+
+A common claim about "making Claude research like a PhD" points to a useful workflow pattern, but the headline is too strong. STORM is not "Claude becomes a PhD in minutes." The durable lesson is narrower and better: **do not ask the model to write first. Make it research the topic from multiple perspectives, ask grounded questions, build an outline, then write.**
+
+*Source: [Stanford OVAL STORM GitHub](https://github.com/stanford-oval/storm) | [STORM research preview](https://storm.genie.stanford.edu/) | [STORM paper: Assisting in Writing Wikipedia-like Articles From Scratch with Large Language Models](https://arxiv.org/abs/2402.14207)*
+
+STORM stands for **Synthesis of Topic Outlines through Retrieval and Multi-perspective Question Asking**. A useful way to summarize the paper's pre-writing stage is: discover diverse perspectives, simulate conversations where perspective-specific writers ask a source-grounded expert questions, and curate the collected information into an outline before article generation.
+
+For a student manually adapting the STORM pattern in Claude, the transferable version is:
+
+| Step | Prompt shape | Output to inspect |
+|---|---|---|
+| 1. Perspective scan | "List the main viewpoints, stakeholders, historical angles, and skeptical positions on this topic." | Are important angles missing? |
+| 2. Question generation | "For each perspective, ask the questions a careful researcher would ask before writing." | Are questions specific enough to drive retrieval? |
+| 3. Source-grounded notes | "Answer each question only from cited sources; mark unknowns." | Are citations real and relevant? |
+| 4. Outline first | "Build a hierarchical outline and list evidence gaps before drafting." | Does the structure reveal what still needs checking? |
+| 5. Draft last | "Write only after the outline and gaps are reviewed." | Does the final piece stay tied to the sources? |
+
+This is worth teaching because it turns "write me a report" into a research protocol. It also gives instructors artifacts to grade before the prose exists: perspective list, question list, source notes, outline, and gap log.
+
+Important caveat: the STORM paper itself reports that generated articles still need substantial editing, and its expert feedback surfaced failure modes such as source-bias transfer and over-association of unrelated facts. So the student lesson is not "trust STORM." It is "separate pre-writing from writing, then audit every stage."
+
 ### ⚙️ Experiment / Code agents
 
 The "coding agent" category that overlaps heavily with general dev tooling:
