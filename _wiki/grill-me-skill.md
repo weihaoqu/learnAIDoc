@@ -3,7 +3,7 @@ title: "grill-me — When AI Interviews You Before Writing Code"
 date: 2026-05-14
 category: Skills & Plugins
 tags: [claude-code, codex, skills, planning, matt-pocock, anti-vibe-coding, requirements, rubber-ducking, course-design, anthropic, viral]
-related: ["Matt Pocock's Skills — Claude Code for Real Engineers", "Karpathy Skills — Four Rules That Fix LLM Coding's Worst Habits", "How Anthropic Uses Skills — Thariq's 9-Category Framework & the Gotchas Pattern", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Claude Code 101 — Anthropic's Official Onboarding Course", "Personal AI Skill Cheat Sheet — When to Use Each Skill"]
+related: ["Matt Pocock's Skills — Claude Code for Real Engineers", "Ponytail — The Anti-Overengineering Skill for Coding Agents", "Karpathy Skills — Four Rules That Fix LLM Coding's Worst Habits", "Cross-Model Code Review — Why Claude Can't Catch Its Own Bugs", "How Anthropic Uses Skills — Thariq's 9-Category Framework & the Gotchas Pattern", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Claude Code 101 — Anthropic's Official Onboarding Course", "Personal AI Skill Cheat Sheet — When to Use Each Skill"]
 icon: "🔥"
 image: "/assets/images/grill-me-skill.png"
 ---
@@ -95,6 +95,27 @@ Concrete non-coding applications:
 The non-coding angle is why this skill is worth understanding even for faculty / non-engineers — it's a structured-planning tool that happens to ride inside an agent shell.
 
 **Important framing note**: Matt's repo README explicitly describes the skills as **small, composable, and agent-agnostic** — they work with Claude Code, Codex, and other AI agents, not just Anthropic's stack. Don't let "Claude Code skill" become a barrier if your colleague is on Codex or another harness.
+
+## July 2026 Extension: grill-me-codex
+
+The July screenshot set also surfaced [`chaseai-yt/grill-me-codex`](https://github.com/chaseai-yt/grill-me-codex), which is best treated as an extension to this entry rather than a separate wiki page. It keeps the original grill-me idea, then adds a cross-model review loop:
+
+```text
+Act 1: Claude grills the human until the plan is clear
+Act 2: Codex reviews the frozen plan adversarially
+Act 3: optional role flip - Codex builds, Claude reviews the diff
+```
+
+The durable lesson is the same one in [Cross-Model Code Review](/learnAIDoc/wiki/cross-model-code-review-claude-codex/): the model that wrote the plan should not be the only judge of the plan. For students, this is a useful escalation path:
+
+| Situation | Use |
+|---|---|
+| Idea is fuzzy | Plain `grill-me` |
+| Project has established terminology and docs | `grill-with-docs` |
+| Plan is high-risk or expensive to implement | `grill-me-codex` / `codex-review` |
+| You want a second model to implement a reviewed spec | `codex-build`, with a clean git tree and proof command |
+
+Keep the caveat clear: cross-model review reduces blind spots, but it is not proof. The proof is still the diff, the tests, and the human's final review.
 
 ## Install
 

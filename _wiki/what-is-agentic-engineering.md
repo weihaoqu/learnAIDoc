@@ -3,7 +3,7 @@ title: "What is Agentic Engineering? A Teaching Primer"
 date: 2026-05-15
 category: Learning Resources
 tags: [agentic-engineering, ai-agent, primer, teaching, pedagogy, learnai, engineering-discipline, cs-310, system-design, debugging-agents, mcp, llm, claude-code]
-related: ["AI Agent Primer — The Vocabulary Ladder and 18-Step Workflow", "Harness Engineering — The Real Bottleneck Isn't the Model", "Agents Need Control Flow — Brian's Case for Code Over Prompts", "Agentic AI Engineer Roadmap 2026 — Eight Pillars from Prompt to Production", "Anthropic Managed Agents — Decoupling the Brain from the Hands", "How Anthropic Uses Skills — Thariq's 9-Category Framework & the Gotchas Pattern", "Beyond /goal — The Orchestrator + Headless Pattern for Long-Running Claude Sessions", "Start Here — AI Agents & Claude Code for Beginners"]
+related: ["AI Agent Primer — The Vocabulary Ladder and 18-Step Workflow", "AI Agent Book — Agent = Model + Context + Tools", "CMU 11-768 AI Agents — A Course Map for Agent Engineering", "Harness Engineering — The Real Bottleneck Isn't the Model", "Agents Need Control Flow — Brian's Case for Code Over Prompts", "Agentic AI Engineer Roadmap 2026 — Eight Pillars from Prompt to Production", "Anthropic Managed Agents — Decoupling the Brain from the Hands", "How Anthropic Uses Skills — Thariq's 9-Category Framework & the Gotchas Pattern", "Beyond /goal — The Orchestrator + Headless Pattern for Long-Running Claude Sessions", "Start Here — AI Agents & Claude Code for Beginners"]
 icon: "🧰"
 image: "/assets/images/what-is-agentic-engineering.png"
 ---

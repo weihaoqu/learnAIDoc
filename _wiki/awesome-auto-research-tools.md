@@ -97,6 +97,16 @@ These show up in this list because researchers often re-purpose them as the *exe
 
 Reusable skill packs you can install into your Claude Code / agent setup — `scientific-agent-skills`, `AI-Research-SKILLs`, `ARIS`, etc. Pairs naturally with [Karpathy: Skills are the Big New Idea](/learnAIDoc/wiki/karpathy-skills-claude-code/).
 
+**Consolidation rule for the wiki:** new research-skill screenshots should land here first unless they clearly introduce a new workflow pattern. A single repo screenshot is not enough for a standalone page. Promote it to a full entry only if it passes three checks:
+
+| Check | Promote only if |
+|---|---|
+| New capability | It automates a research phase not already covered by the landscape pages |
+| Durable mechanism | The interesting part is a method or workflow students can reuse, not just a tool announcement |
+| Source depth | There is a primary README/docs page with enough detail to verify claims and teach from |
+
+This keeps the AI-for-research section student-friendly: one map, a few deep dives, and fewer thin tool cards.
+
 ### 📋 Awesome lists — sibling catalogs
 
 The list cross-references *other awesome-style catalogs* (`awesome-ai-for-science`, `Autonomous-Agents`, `Awesome-Deep-Research`). It does **not** list standalone academic survey papers directly. If you want the survey-paper layer, follow those sibling lists or the [openags/Awesome-AI-Scientist-Papers](https://github.com/openags/Awesome-AI-Scientist-Papers) repo (which this catalog does not currently link).

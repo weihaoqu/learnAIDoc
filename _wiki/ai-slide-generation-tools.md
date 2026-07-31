@@ -20,6 +20,7 @@ image: "/assets/images/ai-slide-generation-tools.png"
 | [open-slide](/learnAIDoc/wiki/open-slide-agent-native-presentations/) | HTML | Agent-native iterative editing | Claude Code | Flexible (agent-directed) |
 | [GPT Image 2 水墨风](/learnAIDoc/wiki/gpt-image-2-ink-style-slide-prompt/) | Image-based slides | Ink-wash aesthetic academic slides | GPT Image 2 / CC pipeline | Ink-wash only |
 | [Math-To-Manim](/learnAIDoc/wiki/teaching-videos-manim-remotion/) | Animated video (MP4) | Prompt/LaTeX → Manim scene for math/CS | Claude Code + OpenAI Agents SDK | None (animation-focused) |
+| [CyberPPT](https://github.com/crazyykhllc-bit/CyberPPT) | Editable PPTX | Dense consulting-style decks from source material | Codex Skill | 8 fixed visual styles + QA gates |
 
 ## Decision Guide
 
@@ -35,6 +36,8 @@ image: "/assets/images/ai-slide-generation-tools.png"
 
 **"I need to animate a mathematical formula or proof" →** [Math-To-Manim / Manim](/learnAIDoc/wiki/teaching-videos-manim-remotion/) — prompt or LaTeX → Manim → animated MP4; not slides in the traditional sense but the right tool for visual math explanation
 
+**"I need an editable PowerPoint from dense source material" →** [CyberPPT](https://github.com/crazyykhllc-bit/CyberPPT) — evidence table → SCR storyline → page blueprint → editable PPTX, with strict QA gates. This is heavier than HTML slide generation and should be used for board-style, consulting-style, or data-heavy decks, not quick lectures.
+
 ## What They Have in Common
 
 - All work inside or alongside Claude Code
@@ -42,10 +45,10 @@ image: "/assets/images/ai-slide-generation-tools.png"
 - None require PowerPoint, Keynote, or Google Slides
 - All support Chinese + English content (varies by tool)
 
-## What None of Them Do
+## Format Caveat
 
-- **None produce editable .pptx files** — if you need PowerPoint-compatible output, none of these are the right choice (use Gamma, Beautiful.ai, or a direct PowerPoint template)
-- **None guarantee layout perfection** — AI-generated slides require human review; treat first drafts as first drafts
+- **Most tools here do not produce editable .pptx files.** CyberPPT is the exception, but it is a heavier workflow built around evidence gates, blueprints, visual QA, and editable-layer checks.
+- **None guarantee layout perfection.** AI-generated slides require human review; treat first drafts as first drafts.
 
 ## Tool Summaries
 
@@ -67,8 +70,12 @@ A structured prompt template for generating ink-wash style academic slides using
 ### [Math-To-Manim](/learnAIDoc/wiki/teaching-videos-manim-remotion/) — Animation pipeline
 Automates the prompt/LaTeX → Python animation code → Manim render → MP4 pipeline. Best for embedding animated mathematical explanations in lectures or educational videos, not for building a full slide deck.
 
+### [CyberPPT](https://github.com/crazyykhllc-bit/CyberPPT) — Dense editable PowerPoint
+Built for consulting-style decks where evidence, page density, and editability matter. The workflow is deliberately staged: analyze source materials into an evidence table, converge on an SCR storyline, generate page blueprints, then rebuild slides as editable PPTX with QA gates for evidence, layout, typography, overflow, and visual fidelity. It is the right candidate when the output must be a real PowerPoint file, not a web deck.
+
 ## How LearnAI Team Could Use This Hub
 
 - **Course planning** — When Q or a TA needs slides for a specific course, check this guide first rather than defaulting to the same tool every time. Make Slides for CS lectures; HTML PPT Studio for guest speakers or pitch-style talks.
 - **Student tool literacy** — Show students this comparison as a practical exercise in tool selection: what are the tradeoffs? what information would you need to choose? This builds the "choose the right tool" judgment AI engineers need.
 - **AI tools curriculum** — The variation across these six tools (output format, agent scope, aesthetic focus, pedagogical intent) is a good case study for how AI tools differentiate in a crowded market.
+- **Dense report decks** — Use CyberPPT only when the source material is evidence-heavy and the final artifact must be editable in PowerPoint. For everyday teaching, the HTML tools are faster and easier to inspect.

@@ -1,6 +1,6 @@
 # LearnAI Wiki Index
 Generated: 2026-07-31
-Total entries: 167
+Total entries: 172
 
 ## By Category
 
@@ -89,6 +89,8 @@ Total entries: 167
 - [MATLAB MCP — Connect Claude Code to Your Local MATLAB Environment](/learnAIDoc/wiki/matlab-mcp-claude-code/) (2026-05-21)
 - [notebooklm-py — Unofficial Python API for Google NotebookLM Automation](/learnAIDoc/wiki/notebooklm-py-python-api/) (2026-05-21)
 - [Personal AI Skill Cheat Sheet — When to Use Each Skill](/learnAIDoc/wiki/codex-skills-cheat-sheet/) (2026-05-24)
+- [OpenWorker — Local-First Desktop Agents That Deliver Finished Work](/learnAIDoc/wiki/openworker-local-first-desktop-agents/) (2026-07-31)
+- [Ponytail — The Anti-Overengineering Skill for Coding Agents](/learnAIDoc/wiki/ponytail-anti-overengineering-skill/) (2026-07-31)
 
 ### AI for Research
 - [Autoresearch: 100 Autonomous ML Experiments Overnight](/learnAIDoc/wiki/autoresearch-autonomous-ml/) (2026-03-12)
@@ -166,6 +168,8 @@ Total entries: 167
 - [12-Factor Agents — Engineering Principles for Production AI](/learnAIDoc/wiki/12-factor-agents/) (2026-05-21)
 - [All Agentic Architectures — 17+ Runnable Jupyter Notebook Implementations](/learnAIDoc/wiki/all-agentic-architectures-jupyter/) (2026-05-21)
 - [Start Here — AI Agents & Claude Code for Beginners](/learnAIDoc/wiki/start-here-ai-agents-beginners/) (2026-05-21)
+- [AI Agent Book — Agent = Model + Context + Tools](/learnAIDoc/wiki/ai-agent-book-engineering-practice/) (2026-07-31)
+- [CMU 11-768 AI Agents — A Course Map for Agent Engineering](/learnAIDoc/wiki/cmu-11-768-ai-agents-course/) (2026-07-31)
 
 ### Prompting & Writing
 - [Three Hidden Instructions That Stop Claude from Hallucinating](/learnAIDoc/wiki/claude-three-hidden-quality-prompts/) (2026-03-22)
@@ -184,6 +188,7 @@ Total entries: 167
 - [baoyu-comic — Turn Any Knowledge Into a Manga](/learnAIDoc/wiki/baoyu-comic-knowledge-manga/) (2026-05-21)
 - [Remotion Case Study — Animating "Adding Elements to an Array"](/learnAIDoc/wiki/remotion-case-study-array-addition/) (2026-06-03)
 - [Teaching Videos with Manim + Remotion — Two Engines for Code-Driven Explainers](/learnAIDoc/wiki/teaching-videos-manim-remotion/) (2026-06-03)
+- [video-use — Editing Video by Reading Transcripts, Not Dumping Frames](/learnAIDoc/wiki/video-use-agent-video-editing/) (2026-07-31)
 
 ### Industry & Trends
 - [Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era](/learnAIDoc/wiki/karpathy-end-of-coding/) (2026-03-22)

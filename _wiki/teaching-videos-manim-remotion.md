@@ -6,7 +6,7 @@ redirect_from:
   - "/wiki/math-to-manim-ai-animation/"
   - "/wiki/creative & media/math-to-manim-ai-animation/"
 tags: [manim, remotion, video, animation, teaching, explainer, python, react, learnai]
-related: ["Remotion Case Study — Animating \"Adding Elements to an Array\"", "Make Slides: AI-Powered Interactive Teaching Slides", "AI Slide Generation with Claude Code — Tool Comparison & Guide", "HTML PPT Studio — AI-Powered Presentation Skill for Claude Code"]
+related: ["video-use — Editing Video by Reading Transcripts, Not Dumping Frames", "Remotion Case Study — Animating \"Adding Elements to an Array\"", "Make Slides: AI-Powered Interactive Teaching Slides", "AI Slide Generation with Claude Code — Tool Comparison & Guide", "HTML PPT Studio — AI-Powered Presentation Skill for Claude Code"]
 icon: "🎥"
 image: "/assets/images/teaching-videos-manim-remotion.png"
 ---

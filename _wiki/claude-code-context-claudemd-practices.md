@@ -12,9 +12,23 @@ icon: "🏗️"
 image: "/assets/images/claude-code-context-claudemd-practices.png"
 ---
 
-A practical guide to the two biggest Claude Code pain points: **context window management** and **CLAUDE.md bloat**. Draws from a widely-shared Chinese-language analysis by 爱可可-爱生活, the open-source Citadel orchestration framework, and community discussions on Reddit about what happens when you stop adding rules and start building infrastructure instead.
+A practical guide to the two biggest Claude Code pain points: **context window management** and **CLAUDE.md bloat**. Draws from a widely-shared Chinese-language analysis by 爱可可-爱生活, the open-source Citadel orchestration framework, community discussions on Reddit about what happens when you stop adding rules and start building infrastructure instead, and Anthropic's July 2026 context-engineering guidance.
 
-*Source: [Claude Code Best Practice (shanraisshan)](https://github.com/shanraisshan/claude-code-best-practice) | [Citadel — Agent Orchestration (SethGammon)](https://github.com/SethGammon/Citadel) | [Reddit: What happens when you stop adding rules](https://reddit.com/r/ClaudeAI/comments/1rz2oo3/what_happens_when_you_stop_adding_rules_to) | [claude-md-management plugin](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-md-management) | [Ole Lehmann: CLAUDE.md Pruning](https://x.com/itsolelehmann/status/2036065138147471665/history)*
+*Source: [Claude Code Best Practice (shanraisshan)](https://github.com/shanraisshan/claude-code-best-practice) | [Citadel — Agent Orchestration (SethGammon)](https://github.com/SethGammon/Citadel) | [Reddit: What happens when you stop adding rules](https://reddit.com/r/ClaudeAI/comments/1rz2oo3/what_happens_when_you_stop_adding_rules_to) | [Anthropic: The new rules of context engineering](https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models) | [claude-md-management plugin](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-md-management) | [Ole Lehmann: CLAUDE.md Pruning](https://x.com/itsolelehmann/status/2036065138147471665/history)*
+
+## July 2026 Update: Delete Rules, Design Interfaces
+
+Anthropic's July 24, 2026 context-engineering post makes the earlier "CLAUDE.md pruning" lesson more explicit: as newer models improve, many old instructions become drag. Anthropic reports cutting a large majority of Claude Code's system prompt for newer Claude models, described as more than 80%, while preserving performance on its internal coding evaluations. The practical lesson is not "delete everything"; it is "move from rule piles to better context surfaces."
+
+| Older habit | Better pattern |
+|---|---|
+| Give Claude many specific rules | Let it match the surrounding code's idiom |
+| Put examples for every tool in the system prompt | Design expressive tool schemas and descriptions |
+| Load all verification rules upfront | Put verification into a skill loaded when needed |
+| Use CLAUDE.md as memory for everything | Keep CLAUDE.md lightweight; use memory, skills, and references |
+| Store every plan as plain Markdown | Use richer references when the task needs them: tests, HTML mockups, rubrics, code |
+
+The student-facing version: **CLAUDE.md should be a map and a gotcha file, not a warehouse.** If a rule only restates what the repo structure, linter, type checker, tests, or tool schema already says, it probably belongs outside the always-loaded context.
 
 ## Context Management Is the Core Battlefield
 
