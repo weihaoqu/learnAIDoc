@@ -5,7 +5,7 @@ category: Skills & Plugins
 redirect_from:
   - "/wiki/tools/code-review-graph-knowledge-graph/"
 tags: [claude-code, code-review, knowledge-graph, tree-sitter, mcp, token-optimization, blast-radius, open-source]
-related: ["Claude Code from Source — The Architecture Book That Treats Claude Code Like an OS", "codegraph — Local Code Knowledge Graph for AI Coding Agents"]
+related: ["Graphify — Multimodal Tool Memory for AI Coding Agents", "Claude Code from Source — The Architecture Book That Treats Claude Code Like an OS", "codegraph — Local Code Knowledge Graph for AI Coding Agents"]
 icon: "🕸️"
 image: "/assets/images/code-review-graph-knowledge-graph.png"
 ---

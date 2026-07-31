@@ -3,7 +3,7 @@ title: "Personal AI Skill Cheat Sheet — When to Use Each Skill"
 date: 2026-05-24
 category: Skills & Plugins
 tags: [codex, claude-code, skills, plugins, workflow, testing, security, finance, hardware, writing, mcp, codegraph, react-doctor, paperspine, openai-skills, voidful]
-related: ["codegraph — Local Code Knowledge Graph for AI Coding Agents", "grill-me — When AI Interviews You Before Writing Code", "Cross-Model Code Review — Why Claude Can't Catch Its Own Bugs", "PaperSpine — Motivation-Driven Paper Writing Skill Suite for Codex and Claude Code"]
+related: ["SkillsMP — Map the Agent Skills Ecosystem Before You Install", "codegraph — Local Code Knowledge Graph for AI Coding Agents", "grill-me — When AI Interviews You Before Writing Code", "Cross-Model Code Review — Why Claude Can't Catch Its Own Bugs", "PaperSpine — Motivation-Driven Paper Writing Skill Suite for Codex and Claude Code"]
 icon: "🧭"
 image: "/assets/images/codex-skills-cheat-sheet.png"
 ---

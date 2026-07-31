@@ -5,7 +5,7 @@ category: AI for Teaching
 redirect_from:
   - "/wiki/ai education/claude-teacher-setup/"
 tags: [claude-code, learning, documentation]
-related: ["Learning in the AI Era: Amplify Your Thinking, Don't Outsource It", "AI in Education — Teacher's Factory, Not Student's Cheat Tool", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure"]
+related: ["AI+Education Career Path — Learning Science, Data, and Teaching Tools", "Learning in the AI Era: Amplify Your Thinking, Don't Outsource It", "AI in Education — Teacher's Factory, Not Student's Cheat Tool", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure"]
 icon: "👨‍🏫"
 image: "/assets/images/claude-teacher-setup.jpg"
 ---

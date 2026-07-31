@@ -3,7 +3,7 @@ title: "How Anthropic Uses Skills — Thariq's 9-Category Framework & the Gotcha
 date: 2026-05-10
 category: Skills & Plugins
 tags: [claude-code, skills, anthropic, thariq-shihipar, skill-design, progressive-disclosure, gotchas, context-engineering, internal-tools, hooks]
-related: ["Addy Osmani's agent-skills — Senior Engineering Practices as SKILL.md Files", "Matt Pocock's Skills — Claude Code for Real Engineers", "Karpathy Skills — Four Rules That Fix LLM Coding's Worst Habits", "kepano/obsidian-skills — Agent Skills That Let AI Edit Your Vault", "grill-me — When AI Interviews You Before Writing Code", "Paper-Code Joint Analysis & Contract-Driven Skill Design"]
+related: ["SkillsMP — Map the Agent Skills Ecosystem Before You Install", "Addy Osmani's agent-skills — Senior Engineering Practices as SKILL.md Files", "Matt Pocock's Skills — Claude Code for Real Engineers", "Karpathy Skills — Four Rules That Fix LLM Coding's Worst Habits", "kepano/obsidian-skills — Agent Skills That Let AI Edit Your Vault", "grill-me — When AI Interviews You Before Writing Code", "Paper-Code Joint Analysis & Contract-Driven Skill Design"]
 icon: "🧩"
 image: "/assets/images/anthropic-skills-thariq-framework.png"
 ---

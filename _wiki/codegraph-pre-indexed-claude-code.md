@@ -3,7 +3,7 @@ title: "codegraph — Local Code Knowledge Graph for AI Coding Agents"
 date: 2026-05-17
 category: Skills & Plugins
 tags: [claude-code, mcp, knowledge-graph, tree-sitter, sqlite, codegraph, tool-call-reduction, framework-routing, performance, open-source]
-related: ["Code Review Graph — Turn Your Codebase Into a Knowledge Graph, Cut Tokens 8x", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Claude Code: Isolate Heavy Tasks with context: fork", "Harness Engineering — The Real Bottleneck Isn't the Model", "GBrain — Garry Tan's Persistent Agent Memory System", "What is Agentic Engineering? A Teaching Primer"]
+related: ["Graphify — Multimodal Tool Memory for AI Coding Agents", "Code Review Graph — Turn Your Codebase Into a Knowledge Graph, Cut Tokens 8x", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Claude Code: Isolate Heavy Tasks with context: fork", "Harness Engineering — The Real Bottleneck Isn't the Model", "GBrain — Garry Tan's Persistent Agent Memory System", "What is Agentic Engineering? A Teaching Primer"]
 icon: "🕸️"
 image: "/assets/images/codegraph-pre-indexed-claude-code.png"
 ---

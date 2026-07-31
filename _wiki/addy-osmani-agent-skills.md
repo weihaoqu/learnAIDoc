@@ -3,7 +3,7 @@ title: "Addy Osmani's agent-skills — Senior Engineering Practices as SKILL.md 
 date: 2026-04-26
 category: Skills & Plugins
 tags: [agent-skills, engineering-practices, skill-files, addy-osmani, claude-code, software-engineering, google]
-related: ["Agents with Taste — Encoding Design Judgment as Skill Files", "Building /review-wiki — A Batch AI Quality Pipeline from Scratch"]
+related: ["SkillsMP — Map the Agent Skills Ecosystem Before You Install", "Agents with Taste — Encoding Design Judgment as Skill Files", "Building /review-wiki — A Batch AI Quality Pipeline from Scratch"]
 icon: "🛠"
 image: "/assets/images/addy-osmani-agent-skills.png"
 ---

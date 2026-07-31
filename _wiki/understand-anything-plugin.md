@@ -5,7 +5,7 @@ category: Skills & Plugins
 redirect_from:
   - "/wiki/skills & plugins/understand-anything-plugin/"
 tags: [claude-code, plugin, knowledge-graph, codebase-analysis, onboarding, visualization, multi-agent]
-related: ["Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "Beads: Graph-Based Memory for AI Coding Agents"]
+related: ["Graphify — Multimodal Tool Memory for AI Coding Agents", "Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "Beads: Graph-Based Memory for AI Coding Agents"]
 icon: "🗺️"
 image: "/assets/images/understand-anything-plugin.png"
 ---

@@ -1,6 +1,6 @@
 # LearnAI Wiki Index
 Generated: 2026-07-31
-Total entries: 172
+Total entries: 175
 
 ## By Category
 
@@ -25,8 +25,8 @@ Total entries: 172
 - [/goal 使用指南 — The Visual Playbook for Claude Code's Persistent Goal Mechanism](/learnAIDoc/wiki/goal-command-usage-guide/) (2026-05-19)
 - [AI Coding Reliability — Implementation Notes Habit + 12 Engineering Rules](/learnAIDoc/wiki/ai-coding-reliability-notes/) (2026-05-21)
 - [Codex-Maxxing — Jason Liu's Power User Workflow for OpenAI's Codex Agent](/learnAIDoc/wiki/codex-maxxing-jxnl-workflow/) (2026-05-22)
-- [Using /goal for Wiki Management — Spec-Driven Autonomous Wiki Sessions](/learnAIDoc/wiki/goal-wiki-management-workflow/) (2026-05-22)
 - [project-spec-interviewer-skill — Interactive Terminal Interview That Writes Your spec.md](/learnAIDoc/wiki/project-spec-interviewer-skill/) (2026-05-22)
+- [Using /goal for Wiki Management — Spec-Driven Autonomous Wiki Sessions](/learnAIDoc/wiki/goal-wiki-management-workflow/) (2026-05-22)
 - [Claude Code Token Guard — Audit Unattended Token Burn](/learnAIDoc/wiki/claude-code-token-guard/) (2026-06-11)
 - [claude-tap — Local Trace Viewer for AI Coding Agents](/learnAIDoc/wiki/claude-tap-agent-trace-viewer/) (2026-07-31)
 
@@ -51,15 +51,15 @@ Total entries: 172
 - [Build Interactive Diagram Tools with Claude](/learnAIDoc/wiki/claude-interactive-diagram-tools/) (2026-02-13)
 - [Non-Coding Skills for Claude Code — Automating Business & Life](/learnAIDoc/wiki/non-coding-skills-claude-code/) (2026-03-17)
 - [mdpdf: Markdown to PDF with Claude Code](/learnAIDoc/wiki/mdpdf-skill/) (2026-03-21)
+- [alphaXiv MCP — Semantic ArXiv Search Directly in Claude Code](/learnAIDoc/wiki/alphaxiv-mcp-arxiv-search/) (2026-03-22)
 - [Gstack — Garry Tan's AI Software Factory for Claude Code](/learnAIDoc/wiki/gstack-ai-software-factory/) (2026-03-22)
-- [PUA Skill — Force Your AI to Stop Being Lazy and Actually Debug](/learnAIDoc/wiki/pua-skill-ai-persistence/) (2026-03-22)
 - [Posterskill — AI-Generated Academic Conference Posters from Your Paper](/learnAIDoc/wiki/posterskill-academic-posters/) (2026-03-22)
 - [Prompt Master — Write Accurate Prompts for Any AI Tool, Zero Waste](/learnAIDoc/wiki/prompt-master-skill/) (2026-03-22)
+- [PUA Skill — Force Your AI to Stop Being Lazy and Actually Debug](/learnAIDoc/wiki/pua-skill-ai-persistence/) (2026-03-22)
 - [Understand Anything — Turn Codebases Into Interactive Knowledge Graphs](/learnAIDoc/wiki/understand-anything-plugin/) (2026-03-22)
 - [Unsloth Studio — Train and Run LLMs Locally with 70% Less Memory](/learnAIDoc/wiki/unsloth-studio-llm-training/) (2026-03-22)
-- [alphaXiv MCP — Semantic ArXiv Search Directly in Claude Code](/learnAIDoc/wiki/alphaxiv-mcp-arxiv-search/) (2026-03-22)
-- [Pretext & Refero — Tools to Fix AI's Frontend Problem](/learnAIDoc/wiki/pretext-refero-ui-tools/) (2026-03-31)
 - [oh-my-claudecode — Multi-AI Orchestration Plugin for Claude Code](/learnAIDoc/wiki/oh-my-claudecode-orchestration/) (2026-03-31)
+- [Pretext & Refero — Tools to Fix AI's Frontend Problem](/learnAIDoc/wiki/pretext-refero-ui-tools/) (2026-03-31)
 - [Supermemory — The Memory API That Makes AI Actually Remember You](/learnAIDoc/wiki/supermemory-ai-context-engine/) (2026-04-05)
 - [AI Website Cloner — Reverse-Engineer Any Site Into Clean Next.js Code](/learnAIDoc/wiki/ai-website-cloner-template/) (2026-04-06)
 - [Paper2Code: Turn ArXiv Papers into Citation-Anchored Code](/learnAIDoc/wiki/paper2code-arxiv-to-implementation/) (2026-04-06)
@@ -82,15 +82,17 @@ Total entries: 172
 - [open-slide — The Slide Framework Built for AI Coding Agents](/learnAIDoc/wiki/open-slide-agent-native-presentations/) (2026-05-09)
 - [How Anthropic Uses Skills — Thariq's 9-Category Framework & the Gotchas Pattern](/learnAIDoc/wiki/anthropic-skills-thariq-framework/) (2026-05-10)
 - [grill-me — When AI Interviews You Before Writing Code](/learnAIDoc/wiki/grill-me-skill/) (2026-05-14)
-- [Paper-Code Joint Analysis & Contract-Driven Skill Design](/learnAIDoc/wiki/paper-code-joint-analysis-contract-driven/) (2026-05-17)
 - [codegraph — Local Code Knowledge Graph for AI Coding Agents](/learnAIDoc/wiki/codegraph-pre-indexed-claude-code/) (2026-05-17)
-- [ImageLens — Chrome Extension That Extracts AI-Editable Prompts from Any Web Image](/learnAIDoc/wiki/imagelens-chrome-plugin/) (2026-05-19)
+- [Paper-Code Joint Analysis & Contract-Driven Skill Design](/learnAIDoc/wiki/paper-code-joint-analysis-contract-driven/) (2026-05-17)
 - [html-anything — Claude Outputs Any Document Type as a Self-Contained HTML File, Zero Config](/learnAIDoc/wiki/html-anything-ai-generator/) (2026-05-19)
+- [ImageLens — Chrome Extension That Extracts AI-Editable Prompts from Any Web Image](/learnAIDoc/wiki/imagelens-chrome-plugin/) (2026-05-19)
 - [MATLAB MCP — Connect Claude Code to Your Local MATLAB Environment](/learnAIDoc/wiki/matlab-mcp-claude-code/) (2026-05-21)
 - [notebooklm-py — Unofficial Python API for Google NotebookLM Automation](/learnAIDoc/wiki/notebooklm-py-python-api/) (2026-05-21)
 - [Personal AI Skill Cheat Sheet — When to Use Each Skill](/learnAIDoc/wiki/codex-skills-cheat-sheet/) (2026-05-24)
+- [Graphify — Multimodal Tool Memory for AI Coding Agents](/learnAIDoc/wiki/graphify-tool-memory-knowledge-graphs/) (2026-07-31)
 - [OpenWorker — Local-First Desktop Agents That Deliver Finished Work](/learnAIDoc/wiki/openworker-local-first-desktop-agents/) (2026-07-31)
 - [Ponytail — The Anti-Overengineering Skill for Coding Agents](/learnAIDoc/wiki/ponytail-anti-overengineering-skill/) (2026-07-31)
+- [SkillsMP — Map the Agent Skills Ecosystem Before You Install](/learnAIDoc/wiki/skillsmp-agent-skills-marketplace/) (2026-07-31)
 
 ### AI for Research
 - [Autoresearch: 100 Autonomous ML Experiments Overnight](/learnAIDoc/wiki/autoresearch-autonomous-ml/) (2026-03-12)
@@ -130,12 +132,13 @@ Total entries: 172
 - [AI Mastery Games — Teaching AI Literacy Through Interactive Games](/learnAIDoc/wiki/ai-mastery-games/) (2026-04-04)
 - [AI Brain Fry — Why Deeper AI Use Makes You Less Productive, Not More](/learnAIDoc/wiki/ai-brain-fry-cognitive-fatigue/) (2026-04-06)
 - [OpenMAIC: Tsinghua's Multi-Agent AI Classroom](/learnAIDoc/wiki/openmaic-multi-agent-classroom/) (2026-04-07)
-- [Socratic Prompting — Ask Questions, Don't Give Instructions](/learnAIDoc/wiki/socratic-prompting-method/) (2026-04-13)
 - [claude.nagdy.me — Learn Claude Code by Doing, Not Reading](/learnAIDoc/wiki/claude-nagdy-interactive-learning/) (2026-04-13)
+- [Socratic Prompting — Ask Questions, Don't Give Instructions](/learnAIDoc/wiki/socratic-prompting-method/) (2026-04-13)
 - [What Researchers Should (and Shouldn't) Use LLMs For](/learnAIDoc/wiki/researcher-llm-use-boundaries/) (2026-04-17)
 - [Independent Thinking in the Age of AI — Visual PKM and 4D Knowledge](/learnAIDoc/wiki/independent-thinking-visual-pkm/) (2026-04-20)
 - [Anti-AI Exam Designer — A Claude Code Skill for AI-Resistant Exams](/learnAIDoc/wiki/anti-ai-exam-skill/) (2026-04-25)
 - [Build a Free Online Survey with GitHub Pages + Google Sheets](/learnAIDoc/wiki/github-pages-google-sheets-survey/) (2026-05-02)
+- [AI+Education Career Path — Learning Science, Data, and Teaching Tools](/learnAIDoc/wiki/ai-education-career-path-2026/) (2026-07-31)
 
 ### Learning Resources
 - [Pull Requests (PR): What They Are and How to Use Them in Claude Code](/learnAIDoc/wiki/pull-requests-explained/) (2026-03-08)
