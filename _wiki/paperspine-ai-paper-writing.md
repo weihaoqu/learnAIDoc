@@ -3,7 +3,7 @@ title: "PaperSpine — Motivation-Driven Paper Writing Skill Suite for Codex and
 date: 2026-05-21
 category: AI for Research
 tags: [paper-writing, academic-writing, claude-code, codex, latex, manuscript, research-workflow, motivation-driven, evidence-bank, writing-rationale]
-related: ["academic-research-skills — Imbad0202's 4-Skill Claude Code Pipeline for Academic Research", "AI Agents for Academic Research & Writing — From KatmerCode to the Nature Playbook", "Posterskill — AI-Generated Academic Conference Posters from Your Paper", "Nature Skills — 9-Skill Claude Code Bundle for Academic Writing at Nature Standards", "Claude-Prism — Local-First Academic Writing Workspace with AI", "Killing AI Slop: avoid-ai-writing + stop-slop"]
+related: ["Research Skills Starter Pack — Install and Use Academic AI Skills Without the Hype", "academic-research-skills — Imbad0202's 4-Skill Claude Code Pipeline for Academic Research", "AI Agents for Academic Research & Writing — From KatmerCode to the Nature Playbook", "Posterskill — AI-Generated Academic Conference Posters from Your Paper", "Nature Skills — Academic Writing and Research Skill Bundle for Codex and Claude Code", "Claude-Prism — Local-First Academic Writing Workspace with AI", "Killing AI Slop: avoid-ai-writing + stop-slop"]
 icon: "📄"
 image: "/assets/images/paperspine-ai-paper-writing.png"
 ---

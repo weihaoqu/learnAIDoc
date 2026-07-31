@@ -19,6 +19,18 @@ The reliable pattern is to name the skill explicitly, with invocation adjusted t
 
 *Sources and referenced repos: [OpenAI skills catalog](https://github.com/openai/skills) | [Claude Code skills docs](https://docs.claude.com/en/docs/claude-code/skills) | [Agent Skills open standard](https://agentskills.io) | [ComposioHQ/awesome-codex-skills](https://github.com/ComposioHQ/awesome-codex-skills) | [mattpocock/skills](https://github.com/mattpocock/skills) | [trailofbits/skills](https://github.com/trailofbits/skills) | [aklofas/kicad-happy](https://github.com/aklofas/kicad-happy) | [anthropics/financial-services](https://github.com/anthropics/financial-services) | [Imbad0202/academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) | [voidful/academic-skills](https://github.com/voidful/academic-skills) | [WUBING2023/PaperSpine](https://github.com/WUBING2023/PaperSpine) | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | [millionco/react-doctor](https://github.com/millionco/react-doctor)*
 
+## July2 Additions
+
+The July2 screenshot pass adds three durable skill pages to this router:
+
+| Skill/page | Use when |
+|---|---|
+| [/last30days](/learnAIDoc/wiki/last30days-research-skill/) | You need recent social/web/GitHub/arXiv signal before choosing what to research |
+| [book-to-skill](/learnAIDoc/wiki/book-to-skill-technical-books/) | You want a technical book or document set turned into a reusable skill |
+| [Cybersecurity Skills for AI Agents](/learnAIDoc/wiki/ai-agent-cybersecurity-skills/) | You need structured security workflows mapped to known frameworks |
+
+The same screenshot batch also included volatile "top 10 skill" lists, SuperClaude reminders, taste-skill reposts, and Claude/Codex setup videos. Those are useful for discovery, but they do not belong as standalone pages unless they add a workflow that is not already covered here.
+
 ## Operational legend
 
 Not every item in the skill stack behaves the same way.

@@ -10,7 +10,7 @@ image: "/assets/images/claude-tap-agent-trace-viewer.png"
 
 `claude-tap` is a local proxy and trace viewer for AI coding agents. The durable lesson is bigger than the tool: **do not debug agents from vibes; inspect the real request trace**. Terminal output shows what the agent chose to say back to you; a trace shows the system prompt, conversation history/messages, tool schemas, tool calls, tool results, streaming response, token usage, and request diffs that produced that behavior.
 
-*Sources: [GitHub — liaohch3/claude-tap](https://github.com/liaohch3/claude-tap), [Local AI Agent Trace Viewer](https://liaohch3.com/claude-tap/), [How to view agent traces locally](https://github.com/liaohch3/claude-tap/blob/main/docs/guides/agent-trace-viewer.md), and [PyPI — claude-tap](https://pypi.org/project/claude-tap/).*
+*Sources: [GitHub — liaohch3/claude-tap](https://github.com/liaohch3/claude-tap), [Local AI Agent Trace Viewer](https://liaohch3.com/claude-tap/), [How to view agent traces locally](https://github.com/liaohch3/claude-tap/blob/main/docs/guides/agent-trace-viewer.md), [PyPI — claude-tap](https://pypi.org/project/claude-tap/), and [GitHub — jianshuo/ccglass](https://github.com/jianshuo/ccglass).*
 
 ## Why This Belongs in the Wiki
 
@@ -88,6 +88,19 @@ claude-tap export trace.ctap.json -o trace.html
 ```
 
 The exported viewer is static HTML. That is useful for teaching, debugging, and incident notes because the artifact can be opened locally without a hosted observability service.
+
+## Related Tool: ccglass
+
+The July2 screenshot set surfaced [`ccglass`](https://github.com/jianshuo/ccglass), which should be treated as a sibling in the same agent-observability family rather than a separate wiki page. Its README describes a lightweight local reverse proxy and web dashboard for seeing what coding agents send to model providers, with support for clients such as Claude Code, Codex, OpenCode, Kimi, Ollama, OpenRouter, and others.
+
+The distinction:
+
+| Tool | Best first use |
+|---|---|
+| `claude-tap` | Trace capture/export for Claude Code, Codex, Gemini, and related agent runs |
+| `ccglass` | Quick local proxy/dashboard to inspect model requests across many coding-agent clients |
+
+For students, the shared lesson matters more than which tool wins: **agent debugging starts by inspecting the real request and tool trace**.
 
 ## A Student Debugging Drill
 

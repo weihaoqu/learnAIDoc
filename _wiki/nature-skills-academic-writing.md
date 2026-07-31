@@ -1,34 +1,34 @@
 ---
-title: "Nature Skills — 9-Skill Claude Code Bundle for Academic Writing at Nature Standards"
+title: "Nature Skills — Academic Writing and Research Skill Bundle for Codex and Claude Code"
 date: 2026-05-21
 category: AI for Research
-tags: [claude-code, skills, academic-writing, nature, paper-writing, bilingual, pptx, figure, citation, pubmed, arxiv, reviewer-response, shanghai-jiao-tong, open-source, mit]
-related: ["academic-research-skills — Imbad0202's 4-Skill Claude Code Pipeline for Academic Research", "PaperSpine — Motivation-Driven Paper Writing Skill Suite for Codex and Claude Code", "MATLAB MCP — Connect Claude Code to Your Local MATLAB Environment", "Posterskill — AI-Generated Academic Conference Posters from Your Paper", "AI Agents for Academic Research & Writing — From KatmerCode to the Nature Playbook", "Claude-Prism — Local-First Academic Writing Workspace with AI"]
+tags: [claude-code, codex, skills, academic-writing, nature, paper-writing, bilingual, pptx, figure, citation, pubmed, arxiv, reviewer-response, shanghai-jiao-tong, open-source, apache-2.0]
+related: ["Research Skills Starter Pack — Install and Use Academic AI Skills Without the Hype", "academic-research-skills — Imbad0202's 4-Skill Claude Code Pipeline for Academic Research", "PaperSpine — Motivation-Driven Paper Writing Skill Suite for Codex and Claude Code", "MATLAB MCP — Connect Claude Code to Your Local MATLAB Environment", "Posterskill — AI-Generated Academic Conference Posters from Your Paper", "AI Agents for Academic Research & Writing — From KatmerCode to the Nature Playbook", "Claude-Prism — Local-First Academic Writing Workspace with AI"]
 icon: "🔬"
 image: "/assets/images/nature-skills-academic-writing.png"
 ---
 
-**Nature Skills is a 10,000+ star MIT-licensed Claude Code skill bundle by a Shanghai Jiao Tong University PhD student that covers multiple stages of academic writing — PDF reading, bilingual translation, PPT generation, figure design, prose polishing, citation management, data analysis, reviewer response, and multi-source search — across nine cooperating skills designed to align with Nature journal standards as described in the repo.**
+**Nature Skills is an Apache-2.0-licensed research skill bundle for Codex, Claude Code, and other agent hosts. It covers multiple stages of academic work — PDF reading, bilingual translation, PPT generation, figure design, prose polishing, citation management, data analysis, reviewer response, and multi-source search — through cooperating skills designed to align with Nature-family journal standards as described in the repo.**
 
-*Source: [github.com/Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) — 10,000+ stars, 639+ forks, MIT License | Creator: Yuan Yizhe, Shanghai Jiao Tong University*
+*Source: [github.com/Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) — 32k+ stars, 1.9k+ forks, Apache-2.0 license as of July 31, 2026 | Creator: Yuan Yizhe*
 
 ## What It Is
 
-Academic AI tools tend to fall into two camps: broad general assistants that don't know academic conventions, or narrow single-purpose tools (just citation formatting, just translation). Nature Skills is neither. It's a nine-skill bundle, each targeting a specific friction point in the paper-writing lifecycle, designed to align with Nature-family journal standards as described in the repo.
+Academic AI tools tend to fall into two camps: broad general assistants that don't know academic conventions, or narrow single-purpose tools (just citation formatting, just translation). Nature Skills is neither. It is a multi-skill bundle, each targeting a specific friction point in the paper-writing lifecycle, designed to align with Nature-family journal standards as described in the repo.
 
 The headline skills are **nature-reader** (full-paper bilingual PDF → Markdown) and **nature-paper2ppt** (paper → Chinese .pptx for lab meetings), which surface the tool's origin story: a Chinese PhD student solving the real daily problems of reading foreign-language papers and presenting them to a Chinese-speaking lab group.
 
-The bundle has crossed 10,000 GitHub stars and 639 forks, which is exceptional for a niche academic tool. MIT licensed — no commercial restrictions.
+The bundle has crossed 32k GitHub stars and 1.9k forks, which is exceptional for a niche academic tool. The current repo license is Apache-2.0.
 
 **Install:**
+```bash
+npx skills add Yuan1z0825/nature-skills --list
+npx skills add Yuan1z0825/nature-skills --global --agent codex --skill '*' --yes --copy
 ```
-/plugin marketplace add https://github.com/Yuan1z0825/nature-skills
-/plugin install nature-skills
-/reload-plugins
-```
-Most skills activate automatically after install. Some skills (particularly nature-academic-search) may require additional API key configuration — see the repo README per skill for current requirements.
 
-## The 9 Skills
+For Claude Code, the current README recommends either stable-clone wrappers or the repo's optional sync script into `~/.claude/skills/`. Review the script, hooks, and copied support files before enabling auto-update. Some skills, especially `nature-academic-search`, may require additional API key or MCP configuration; see the repo README per skill for current requirements.
+
+## Core Skills
 
 ### 1. nature-reader (Beta)
 Full-paper bilingual reader. Converts local PDF files into complete bilingual (Chinese–English) Markdown documents with source anchors and figure grounding. Each paragraph or section is rendered in both languages side by side, with figure captions preserved in context.
@@ -112,13 +112,13 @@ Yuan Yizhe created Nature Skills as a PhD student at Shanghai Jiao Tong Universi
 - **Both `nature-reader` and `nature-paper2ppt` are Beta.** Expect rough edges; complex multi-column layouts or papers with many embedded equations may not render perfectly.
 - **"Nature standards" means Nature-family journals** (Nature, Nature Medicine, Nature Methods, etc.). The style guidance is calibrated to that editorial culture. For Cell, PNAS, or domain-specific journals, some conventions differ — treat the output as a strong starting point, not a guaranteed match.
 - **Chinese-language output** is the default for `nature-paper2ppt` (built for SJTU's lab meeting context). If you need English PPT, test whether the skill accepts a language parameter or post-translate.
-- **MIT licensed** — commercial use is permitted. Redistributed or adapted copies must retain the copyright and license notice (standard MIT requirement).
-- **10,000+ stars, 600+ forks** is strong traction for an academic niche tool, but the repo is from a PhD student, not an institution. Maintenance depends on Yuan Yizhe's continued involvement.
-- **Plugin install via URL** — because this isn't in an official marketplace, use the full GitHub URL form: `/plugin marketplace add https://github.com/Yuan1z0825/nature-skills`
+- **Apache-2.0 licensed** — commercial use is permitted under the Apache license terms, including preserving notices and license text.
+- **32k+ stars, 1.9k+ forks** is strong traction for an academic niche tool, but this is an open-source community project, not an official Nature product.
+- **Install path has changed** — use the current README rather than older plugin snippets copied from social posts.
 - **API keys** — see the repo README for current API key requirements per skill.
 
 ## Links
 
-- **Repo:** [github.com/Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) — 10,000+ stars, 639+ forks, MIT
+- **Repo:** [github.com/Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) — 32k+ stars, 1.9k+ forks, Apache-2.0
 - **Creator:** Yuan Yizhe, Shanghai Jiao Tong University
 - **Related:** [MATLAB MCP — Connect Claude Code to Your Local MATLAB Environment](/learnAIDoc/wiki/matlab-mcp-claude-code/)

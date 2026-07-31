@@ -1,6 +1,6 @@
 # LearnAI Wiki Index
 Generated: 2026-07-31
-Total entries: 175
+Total entries: 187
 
 ## By Category
 
@@ -93,6 +93,9 @@ Total entries: 175
 - [OpenWorker — Local-First Desktop Agents That Deliver Finished Work](/learnAIDoc/wiki/openworker-local-first-desktop-agents/) (2026-07-31)
 - [Ponytail — The Anti-Overengineering Skill for Coding Agents](/learnAIDoc/wiki/ponytail-anti-overengineering-skill/) (2026-07-31)
 - [SkillsMP — Map the Agent Skills Ecosystem Before You Install](/learnAIDoc/wiki/skillsmp-agent-skills-marketplace/) (2026-07-31)
+- [/last30days — Recent-Signal Research Skill for Agents](/learnAIDoc/wiki/last30days-research-skill/) (2026-07-31)
+- [book-to-skill — Turn Technical Books Into Agent Skills](/learnAIDoc/wiki/book-to-skill-technical-books/) (2026-07-31)
+- [Cybersecurity Skills for AI Agents — A Structured Security Skill Library](/learnAIDoc/wiki/ai-agent-cybersecurity-skills/) (2026-07-31)
 
 ### AI for Research
 - [Autoresearch: 100 Autonomous ML Experiments Overnight](/learnAIDoc/wiki/autoresearch-autonomous-ml/) (2026-03-12)
@@ -117,9 +120,14 @@ Total entries: 175
 - [Towards a Medical AI Scientist — Full Auto Clinical Research from Idea to Paper](/learnAIDoc/wiki/medical-ai-scientist/) (2026-05-08)
 - [academic-research-skills — Imbad0202's 4-Skill Claude Code Pipeline for Academic Research](/learnAIDoc/wiki/academic-research-skills-imbad0202/) (2026-05-12)
 - [Awesome-Auto-Research-Tools — A Curated Map of Automated-Science Projects](/learnAIDoc/wiki/awesome-auto-research-tools/) (2026-05-14)
-- [Nature Skills — 9-Skill Claude Code Bundle for Academic Writing at Nature Standards](/learnAIDoc/wiki/nature-skills-academic-writing/) (2026-05-21)
+- [Nature Skills — Academic Writing and Research Skill Bundle for Codex and Claude Code](/learnAIDoc/wiki/nature-skills-academic-writing/) (2026-05-21)
 - [PaperSpine — Motivation-Driven Paper Writing Skill Suite for Codex and Claude Code](/learnAIDoc/wiki/paperspine-ai-paper-writing/) (2026-05-21)
 - [Quality-First Research Partnership: A Claude + Codex Working Agreement](/learnAIDoc/wiki/quality-first-research-partnership/) (2026-05-21)
+- [Research Skills Starter Pack — Install and Use Academic AI Skills Without the Hype](/learnAIDoc/wiki/research-skills-starter-pack/) (2026-07-31)
+- [AI in Science — More Individual Impact, Narrower Collective Focus](/learnAIDoc/wiki/ai-science-impact-contract-focus/) (2026-07-31)
+- [CARE — Evidence-Grounded Agentic Medical Reasoning](/learnAIDoc/wiki/care-clinical-accountability-medical-ai/) (2026-07-31)
+- [GPT-Red — Automated Red Teaming Through Self-Play](/learnAIDoc/wiki/gpt-red-automated-red-teaming/) (2026-07-31)
+- [ResearchArena — Why Agent-Written Papers Still Need Artifact-Aware Review](/learnAIDoc/wiki/researcharena-auto-research-benchmark/) (2026-07-31)
 
 ### AI for Teaching
 - [Turn Claude Code into Claude Teacher](/learnAIDoc/wiki/claude-teacher-setup/) (2024-02-05)
@@ -139,6 +147,7 @@ Total entries: 175
 - [Anti-AI Exam Designer — A Claude Code Skill for AI-Resistant Exams](/learnAIDoc/wiki/anti-ai-exam-skill/) (2026-04-25)
 - [Build a Free Online Survey with GitHub Pages + Google Sheets](/learnAIDoc/wiki/github-pages-google-sheets-survey/) (2026-05-02)
 - [AI+Education Career Path — Learning Science, Data, and Teaching Tools](/learnAIDoc/wiki/ai-education-career-path-2026/) (2026-07-31)
+- [U.S. AI in Education Priority — What the 2026 Federal Register Notice Means](/learnAIDoc/wiki/ai-education-federal-priority-2026/) (2026-07-31)
 
 ### Learning Resources
 - [Pull Requests (PR): What They Are and How to Use Them in Claude Code](/learnAIDoc/wiki/pull-requests-explained/) (2026-03-08)
@@ -171,8 +180,11 @@ Total entries: 175
 - [12-Factor Agents — Engineering Principles for Production AI](/learnAIDoc/wiki/12-factor-agents/) (2026-05-21)
 - [All Agentic Architectures — 17+ Runnable Jupyter Notebook Implementations](/learnAIDoc/wiki/all-agentic-architectures-jupyter/) (2026-05-21)
 - [Start Here — AI Agents & Claude Code for Beginners](/learnAIDoc/wiki/start-here-ai-agents-beginners/) (2026-05-21)
+- [Agent AI Survey — Multimodal and Embodied Agents Beyond Chatbots](/learnAIDoc/wiki/agent-ai-multimodal-interaction-survey/) (2026-07-31)
 - [AI Agent Book — Agent = Model + Context + Tools](/learnAIDoc/wiki/ai-agent-book-engineering-practice/) (2026-07-31)
 - [CMU 11-768 AI Agents — A Course Map for Agent Engineering](/learnAIDoc/wiki/cmu-11-768-ai-agents-course/) (2026-07-31)
+- [Project N.O.M.A.D. — Offline Knowledge and AI Education Server](/learnAIDoc/wiki/project-nomad-offline-ai-education-server/) (2026-07-31)
+- [Socratopia AI Science I — Learning Neural Networks Through Socratic Dialogue](/learnAIDoc/wiki/socratopia-ai-science-i/) (2026-07-31)
 
 ### Prompting & Writing
 - [Three Hidden Instructions That Stop Claude from Hallucinating](/learnAIDoc/wiki/claude-three-hidden-quality-prompts/) (2026-03-22)

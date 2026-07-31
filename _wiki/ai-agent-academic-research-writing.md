@@ -5,7 +5,7 @@ category: AI for Research
 redirect_from:
   - "/wiki/ai research/ai-agent-academic-research-writing/"
 tags: [academic-writing, research, obsidian, katmer-code, peer-review, literature-review, citation, claude-code, chatgpt]
-related: ["Claude-Prism — Local-First Academic Writing Workspace with AI", "Feynman AI Research Agent & Claude as Lab Partner — Promise and Pitfalls", "Claude Code as Research Infrastructure — From Chatbot to AI Research Team", "Five Questions for Critical Paper Reading — The Cambridge Method with Claude", "Paper2Code: Turn ArXiv Papers into Citation-Anchored Code", "Nature Skills — 9-Skill Claude Code Bundle for Academic Writing at Nature Standards", "PaperSpine — Motivation-Driven Paper Writing Skill Suite for Codex and Claude Code"]
+related: ["Claude-Prism — Local-First Academic Writing Workspace with AI", "Feynman AI Research Agent & Claude as Lab Partner — Promise and Pitfalls", "Claude Code as Research Infrastructure — From Chatbot to AI Research Team", "Five Questions for Critical Paper Reading — The Cambridge Method with Claude", "Paper2Code: Turn ArXiv Papers into Citation-Anchored Code", "Nature Skills — Academic Writing and Research Skill Bundle for Codex and Claude Code", "PaperSpine — Motivation-Driven Paper Writing Skill Suite for Codex and Claude Code"]
 icon: "📝"
 image: "/assets/images/ai-agent-academic-research-writing.png"
 ---

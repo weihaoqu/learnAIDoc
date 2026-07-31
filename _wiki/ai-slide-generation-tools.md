@@ -21,6 +21,8 @@ image: "/assets/images/ai-slide-generation-tools.png"
 | [GPT Image 2 水墨风](/learnAIDoc/wiki/gpt-image-2-ink-style-slide-prompt/) | Image-based slides | Ink-wash aesthetic academic slides | GPT Image 2 / CC pipeline | Ink-wash only |
 | [Math-To-Manim](/learnAIDoc/wiki/teaching-videos-manim-remotion/) | Animated video (MP4) | Prompt/LaTeX → Manim scene for math/CS | Claude Code + OpenAI Agents SDK | None (animation-focused) |
 | [CyberPPT](https://github.com/crazyykhllc-bit/CyberPPT) | Editable PPTX | Dense consulting-style decks from source material | Codex Skill | 8 fixed visual styles + QA gates |
+| [slide-image-to-editable-pptx](https://github.com/w1163222589-coder/slide-image-to-editable-pptx) | Editable PPTX | Turn slide screenshots into editable decks | Codex Skill | Reconstruction-focused |
+| [html-video](https://github.com/nexu-io/html-video) | MP4 video | HTML/CSS/data → local rendered video | Coding agents | Template gallery + optional soundtrack |
 
 ## Decision Guide
 
@@ -37,6 +39,10 @@ image: "/assets/images/ai-slide-generation-tools.png"
 **"I need to animate a mathematical formula or proof" →** [Math-To-Manim / Manim](/learnAIDoc/wiki/teaching-videos-manim-remotion/) — prompt or LaTeX → Manim → animated MP4; not slides in the traditional sense but the right tool for visual math explanation
 
 **"I need an editable PowerPoint from dense source material" →** [CyberPPT](https://github.com/crazyykhllc-bit/CyberPPT) — evidence table → SCR storyline → page blueprint → editable PPTX, with strict QA gates. This is heavier than HTML slide generation and should be used for board-style, consulting-style, or data-heavy decks, not quick lectures.
+
+**"I already have image-based slides and need editable PPTX" →** [slide-image-to-editable-pptx](https://github.com/w1163222589-coder/slide-image-to-editable-pptx) — a July2 candidate for converting slide screenshots into editable PowerPoint. Treat it as experimental until tested on your own deck.
+
+**"I need an agent to render motion graphics or short videos locally" →** [html-video](https://github.com/nexu-io/html-video) — a July2 candidate for turning HTML/CSS/data into MP4 through browser rendering and FFmpeg.
 
 ## What They Have in Common
 
@@ -72,6 +78,10 @@ Automates the prompt/LaTeX → Python animation code → Manim render → MP4 pi
 
 ### [CyberPPT](https://github.com/crazyykhllc-bit/CyberPPT) — Dense editable PowerPoint
 Built for consulting-style decks where evidence, page density, and editability matter. The workflow is deliberately staged: analyze source materials into an evidence table, converge on an SCR storyline, generate page blueprints, then rebuild slides as editable PPTX with QA gates for evidence, layout, typography, overflow, and visual fidelity. It is the right candidate when the output must be a real PowerPoint file, not a web deck.
+
+### July2 Media Backlog
+
+The July2 folder also surfaced [PunithVT/ai-avatar-system](https://github.com/PunithVT/ai-avatar-system), [nexu-io/html-video](https://github.com/nexu-io/html-video), and `Y2A-Auto`. These are useful media-tool scouting leads, but only `html-video` is strong enough for this slide/video hub now. AI avatar systems need a separate teaching use case before becoming a wiki page; Y2A-Auto needs source verification before publishing.
 
 ## How LearnAI Team Could Use This Hub
 
