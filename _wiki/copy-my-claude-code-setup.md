@@ -3,7 +3,7 @@ title: "Copy My Claude Code Setup — The LearnAI Agent Stack From Scratch"
 date: 2026-05-22
 category: Agent Setup & Migration
 tags: [claude-code, setup, agent-harness, plugins, skills, goal, codex, oh-my-claudecode, migration, beginner-guide, workflow, spec-driven, agentic-engineering]
-related: ["New-Mac Migration — Codex + Claude Code + checkpoint/resume in 90 Minutes", "Claude Code 101 — Anthropic's Official Onboarding Course", "Harness Engineering — The Real Bottleneck Isn't the Model", "oh-my-claudecode — Multi-AI Orchestration Plugin for Claude Code", "/goal 使用指南 — The Visual Playbook for Claude Code's Persistent Goal Mechanism", "Cross-Model Code Review — Why Claude Can't Catch Its Own Bugs", "project-spec-interviewer-skill — Interactive Terminal Interview That Writes Your spec.md", "Start Here — AI Agents & Claude Code for Beginners", "progress.md Handoff — A Scripted Codex ⇄ Claude Code Workflow"]
+related: ["Claude Code 101 — Anthropic's Official Onboarding Course", "Harness Engineering — The Real Bottleneck Isn't the Model", "oh-my-claudecode — Multi-AI Orchestration Plugin for Claude Code", "/goal 使用指南 — The Visual Playbook for Claude Code's Persistent Goal Mechanism", "Cross-Model Code Review — Why Claude Can't Catch Its Own Bugs", "project-spec-interviewer-skill — Interactive Terminal Interview That Writes Your spec.md", "Start Here — AI Agents & Claude Code for Beginners", "Claude Code Environment Replication — Portable Setup Across Machines"]
 icon: "🛠️"
 image: "/assets/images/copy-my-claude-code-setup.png"
 ---
@@ -41,7 +41,7 @@ Start here if you've never used Claude Code or have only used it casually.
 | Entry | What you'll get |
 |-------|----------------|
 | **[Claude Code 101 — Anthropic's Official Onboarding Course](/learnAIDoc/wiki/claude-code-101/)** | Official 6-session onboarding: slash commands, memory, MCP, agents. The baseline everyone needs. |
-| **[Boris Cherny on Claude Code — Origin Story & Philosophy](/learnAIDoc/wiki/boris-cherny-claude-code-philosophy/)** | Why Claude Code works the way it does. Mental model from the creator. Read this before anything else. |
+| **[Claude Code 101 — Anthropic's Official Onboarding Course](/learnAIDoc/wiki/claude-code-101/)** | The baseline onboarding path plus the durable beginner patterns from real Claude Code users. |
 | **[Karpathy Skills — Four Rules That Fix LLM Coding's Worst Habits](/learnAIDoc/wiki/karpathy-skills-claude-code/)** | Karpathy's four rules: read the error, google with specifics, embrace frustration, start small. Non-negotiable baseline. |
 
 **Install:**
@@ -113,9 +113,8 @@ Skills extend Claude Code with domain-specific capabilities. The LearnAI stack u
 | Entry | What you'll get |
 |-------|----------------|
 | **[Personal AI Skill Cheat Sheet — When to Use Each Skill](/learnAIDoc/wiki/codex-skills-cheat-sheet/)** | The practical router: which skills to use for planning, debugging, review, testing, writing, and handoff. |
-| **[Claude Code Plugins & Marketplace](/learnAIDoc/wiki/claude-code-plugins/)** | Plugin-level additions beyond individual skills, grounded in the current marketplace model. |
+| **[Claude Code Tips & Context Engineering](/learnAIDoc/wiki/claude-code-tips-engineering/)** | Operational features beyond individual skills: permissions, sandboxing, hooks, status lines, plugins, and subagents. |
 | **[Non-Coding Skills for Claude Code](/learnAIDoc/wiki/non-coding-skills-claude-code/)** | Skills for writing, research, business ops — not just engineering. |
-| **[Anthropic Knowledge Work Plugins](/learnAIDoc/wiki/anthropic-knowledge-work-plugins/)** | Role-based plugins: researcher, writer, analyst. |
 
 **Top skills to install immediately:**
 - `oh-my-claudecode` (Layer 2 — already done)
@@ -176,7 +175,6 @@ project-spec-interviewer-skill
 
 | Entry | What you'll get |
 |-------|----------------|
-| **[progress.md Handoff — A Scripted Codex ⇄ Claude Code Workflow](/learnAIDoc/wiki/progress-md-codex-handoff/)** | Cross-agent handoff: a tracked `progress.md` log + `/checkpoint` and `/resume` slash commands that work identically in Claude Code and Codex. Use when you alternate sessions between the two agents. |
 | **[Meta Harness — The Agent That Optimizes Its Own Scaffolding](/learnAIDoc/wiki/meta-harness-self-optimizing-agent/)** | Stanford/MIT approach: the agent rewrites its own CLAUDE.md after each session. |
 
 ---
@@ -325,43 +323,6 @@ cp ~/Dropbox/claude-export/skills/*.md ~/.claude/skills/ 2>/dev/null || true
 # If you also exported full skill packages, restore them:
 # rsync -av ~/Dropbox/claude-export/skills/ ~/.claude/skills/
 ```
-
-### Step 8b — Migrate the progress.md handoff skills
-
-If you use the [progress.md Handoff workflow](/learnAIDoc/wiki/progress-md-codex-handoff/), there are **two halves** that need to travel:
-
-**Half 1 — User-level skill directories that back the handoff workflow (one-time per machine).** These are SKILL.md files inside named subdirectories (`~/.codex/skills/checkpoint/SKILL.md`, etc.), NOT top-level `.md` files — Step 1b's `*.md` glob misses them. Copy the whole directories explicitly:
-
-```bash
-# On the old Mac — add to your export
-mkdir -p ~/Desktop/claude-export/skills-tree/{codex,claude}
-cp -R ~/.codex/skills/checkpoint  ~/Desktop/claude-export/skills-tree/codex/
-cp -R ~/.codex/skills/resume      ~/Desktop/claude-export/skills-tree/codex/
-cp -R ~/.claude/skills/checkpoint ~/Desktop/claude-export/skills-tree/claude/
-cp -R ~/.claude/skills/resume     ~/Desktop/claude-export/skills-tree/claude/
-
-# On the new Mac — restore (after Dropbox/rsync transfer)
-mkdir -p ~/.codex/skills ~/.claude/skills
-cp -R ~/Dropbox/claude-export/skills-tree/codex/*  ~/.codex/skills/
-cp -R ~/Dropbox/claude-export/skills-tree/claude/* ~/.claude/skills/
-```
-
-After this, in Claude Code the `/checkpoint` and `/resume` slash commands resolve in any project on the new Mac **that also has the per-project handoff files from Half 2** — both halves are required. In Codex the same workflow is reachable by typing the bare trigger words `checkpoint` / `resume` (no slash; Codex doesn't honor user-defined slash commands — the skill activates on those trigger phrases from its description and `AGENTS.md`).
-
-**Half 2 — Per-project handoff files (already in `git` for projects that have it).** The script `scripts/agent-handoff.sh`, the project-level Claude Code slash command files `.claude/commands/checkpoint.md` and `.claude/commands/resume.md`, `AGENTS.md`, and the live `progress.md` log all live inside each repo and are tracked. For projects that already have the workflow, they come with `git clone` — nothing to install. For a NEW project (or one you didn't `git clone`), use the one-command installer:
-
-```bash
-cd /path/to/new/project
-bash ~/.claude/skills/checkpoint/install.sh
-```
-
-That copies the 4 files (script + 2 slash commands + AGENTS.md if absent) and adds two `.gitignore` entries. Idempotent and safe to re-run. Existing `AGENTS.md` is never overwritten — if you have one, the installer tells you what to append manually. `~/.codex/skills/checkpoint/install.sh` is the mirror for running from Codex. Source path defaults to `~/Desktop/learnai-course` (the canonical repo); override with `PROGRESS_HANDOFF_SRC=/path/to/source` if you keep it elsewhere.
-
-`progress.md` is NOT copied by the installer — it's created on your first `/checkpoint` in that project.
-
-(Note on terminology: `.claude/commands/checkpoint.md` is a Claude Code project-level slash command (gives you `/checkpoint` inside that project). `~/.claude/skills/checkpoint/SKILL.md` is a Claude Code user-level skill (also reachable as `/checkpoint` from any project — the cross-project fallback). `~/.codex/skills/checkpoint/SKILL.md` is a Codex skill — but Codex doesn't expose user skills as slash commands, it activates them on trigger phrases like `checkpoint`, `save context`, `wrap up` listed in the skill's description and in `AGENTS.md`. So the Claude-side install gives you a slash command; the Codex-side install gives you a triggered skill. Both invoke the same `scripts/agent-handoff.sh`.)
-
-The wiki entry has a Quick Reference section if you forget the daily-use commands: https://weihaoqu.github.io/learnAIDoc/wiki/progress-md-codex-handoff/
 
 ### Step 9 — Authenticate Codex
 

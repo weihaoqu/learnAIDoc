@@ -3,14 +3,14 @@ title: "Copy My Codex Setup — Portable AGENTS.md, Skills, Plugins, and Safety 
 date: 2026-05-25
 category: Agent Setup & Migration
 tags: [codex, codex-cli, agents-md, skills, plugins, setup, migration, backups, claude-code, safety-rules, review-gate]
-related: ["New-Mac Migration — Codex + Claude Code + checkpoint/resume in 90 Minutes", "Personal AI Skill Cheat Sheet — When to Use Each Skill", "progress.md Handoff — A Scripted Codex ⇄ Claude Code Workflow", "Claude Code + Codex Handoff Workflow — Switching Models Without Losing Context", "Codex-Maxxing — Jason Liu's Power User Workflow for OpenAI's Codex Agent", "Codex Orange Book — 花叔's Bilingual Codex Reference", "Codex Environment Replication — Portable `~/.codex/` Across Machines"]
+related: ["Personal AI Skill Cheat Sheet — When to Use Each Skill", "progress.md Handoff — A Scripted Codex ⇄ Claude Code Workflow", "Codex-Maxxing — Jason Liu's Power User Workflow for OpenAI's Codex Agent", "Codex Orange Book — 花叔's Bilingual Codex Reference", "Codex Environment Replication — Portable `~/.codex/` Across Machines", "Claude Code Environment Replication — Portable Setup Across Machines"]
 icon: "🧰"
 image: "/assets/images/codex-skills-cheat-sheet.png"
 ---
 
 **A good Codex setup is not just the CLI binary. It is a portable working environment: global `AGENTS.md`, curated skills, selected plugins, hooks, review-gate safety rules, memories, and project-level handoff conventions. Copying it to a new machine should preserve the useful behavior while avoiding secrets, stale sessions, local caches, and machine-specific process state.**
 
-*Source: A local Codex setup inspected on 2026-05-25 and spot-checked against `codex-cli 0.134.0` on 2026-05-27 (~200 user-level Codex skills, calibrated global `AGENTS.md`). Specific version and skill counts drift as Codex publishes new CLI releases and as you install/remove skills, so treat them as rough markers, not exact targets. | [Personal AI Skill Cheat Sheet](/learnAIDoc/wiki/codex-skills-cheat-sheet/) | [Claude Code + Codex Handoff Workflow](/learnAIDoc/wiki/claude-code-codex-handoff-workflow/)*
+*Source: A local Codex setup inspected on 2026-05-25 and spot-checked against `codex-cli 0.134.0` on 2026-05-27 (~200 user-level Codex skills, calibrated global `AGENTS.md`). Specific version and skill counts drift as Codex publishes new CLI releases and as you install/remove skills, so treat them as rough markers, not exact targets. | [Personal AI Skill Cheat Sheet](/learnAIDoc/wiki/codex-skills-cheat-sheet/) | [progress.md Handoff](/learnAIDoc/wiki/progress-md-codex-handoff/)*
 
 ## The Mental Model
 

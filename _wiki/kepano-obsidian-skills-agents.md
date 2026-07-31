@@ -166,7 +166,7 @@ The full pipeline from browser to published wiki entry, tested end-to-end:
 Browser → Clipper → inbox/clipped.md → Claude Code /mywiki → Wiki post
 ```
 
-Real example: Clipped [Seeing like an agent](https://claude.com/blog/seeing-like-an-agent) blog post → saved to `inbox/` → ran `/mywiki` on the clipped note → published [wiki entry](/learnAIDoc/wiki/seeing-like-an-agent-tool-design/) with cover, cross-links, and Obsidian note. The clipped note's frontmatter (`source`, `title`, `tags`) feeds directly into the wiki pipeline — no manual reformatting needed.
+Real example: clipped [Seeing like an agent](https://claude.com/blog/seeing-like-an-agent) → saved it to `inbox/` → ran `/mywiki` on the clipped note → produced a wiki draft with cover, cross-links, and an Obsidian note. The clipped note's frontmatter (`source`, `title`, `tags`) feeds directly into the wiki pipeline — no manual reformatting needed.
 
 ## How LearnAI Team Could Use This
 

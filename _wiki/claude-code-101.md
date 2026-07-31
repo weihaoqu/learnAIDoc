@@ -3,7 +3,13 @@ title: "Claude Code 101 — Anthropic's Official Onboarding Course"
 date: 2026-05-14
 category: Learning Resources
 tags: [claude-code, anthropic, anthropic-academy, beginner, course, free, certificate, claude-md, explore-plan-code-commit, mcp, subagents, skills, hooks]
-related: ["Anthropic Academy — 13 Free AI Courses with Certificates", "Boris Cherny on Claude Code — Origin Story, Product Philosophy & the End of Manual Coding", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Domain Experts Shipping Products with Claude Code — Stories from the Trenches", "The Five Levels of Claude Code — From Prompting to Orchestration", "Codex Orange Book — 花叔's Bilingual Codex Reference", "Start Here — AI Agents & Claude Code for Beginners"]
+redirect_from:
+  - "/wiki/anthropic-teams-use-claude-code/"
+  - "/wiki/claude code/anthropic-teams-use-claude-code/"
+  - "/wiki/boris-cherny-claude-code-philosophy/"
+  - "/wiki/claude-code-non-programmers-shipping/"
+  - "/wiki/claude code/claude-code-non-programmers-shipping/"
+related: ["Anthropic Academy — 13 Free AI Courses with Certificates", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "Claude Code Cheat Sheet, Everything-Claude-Code & Claude How-To — Complete Reference Kit", "The Five Levels of Claude Code — From Prompting to Orchestration", "Codex Orange Book — 花叔's Bilingual Codex Reference", "Start Here — AI Agents & Claude Code for Beginners"]
 icon: "🎓"
 image: "/assets/images/claude-code-101.png"
 ---
@@ -105,6 +111,18 @@ This is the pattern the *Daily workflows* section is built around — the one th
 
 The loop reframes agent use from "single prompt, hope for the best" into a repeatable rhythm with a critique point between each step.
 
+## What real users teach
+
+The archived case-study notes in this wiki all point to the same beginner lesson: Claude Code is useful only when the human supplies goals, constraints, review, and persistence. Treat the agent as a junior collaborator with tools, not as a magic compiler for vague wishes.
+
+| Pattern | Student takeaway |
+|---|---|
+| **Plan first** | Ask Claude to inspect the project and propose a plan before it edits files. The plan is where you catch wrong assumptions cheaply. |
+| **Verify in a loop** | A good session ends with evidence: tests, lint, screenshots, logs, or a manual check. "Looks done" is not a completion standard. |
+| **Reset bad attempts** | For medium-risk experiments, commit a save point first. If a run goes in the wrong direction, revert and retry with a sharper prompt instead of debugging a tangled partial solution. |
+| **Domain knowledge matters** | Non-programmers can build useful tools when they deeply understand the problem. The hard part is specifying behavior, finding edge cases, publishing, and iterating. |
+| **Parallel work is advanced** | Multiple sessions or worktrees can help, but only after you understand git, review, and context boundaries. Beginners should master one clean loop first. |
+
 ## Suggested follow-up path
 
 ```
@@ -118,6 +136,8 @@ Claude 101  ─────►  Claude Code 101  ─────►  Claude Code
 ```
 
 If you only have a short window, do Claude Code 101 first. To go deeper afterward, **Claude Code in Action** is the natural next step — 21 lessons that practice the same workflow on more substantial codebases. The Subagents / Skills / MCP / Hooks micro-courses are best taken *after* 101, when each name already has a place to land. (Anthropic does not publish an official sequence; this ordering is a suggested path.)
+
+For self-study outside Anthropic Academy, use [Claude Code Cheat Sheet, Everything-Claude-Code & Claude How-To — Complete Reference Kit](/learnAIDoc/wiki/claude-code-cheatsheet-everything/) as the reference shelf. It points to copy-paste templates and longer guided resources without turning this beginner page into a tool catalog.
 
 ## How LearnAI Team Could Use This
 
@@ -144,6 +164,6 @@ If you only have a short window, do Claude Code 101 first. To go deeper afterwar
 - **Companion deep-dives** in this wiki:
   - [Anthropic Academy — 13 Free AI Courses with Certificates](/learnAIDoc/wiki/anthropic-academy-free-courses/) — parent catalog
   - [Claude Code · CLAUDE.md Practices](/learnAIDoc/wiki/claude-code-context-claudemd-practices/) — Phase 4 deep-dive
-  - [Boris Cherny on Claude Code Philosophy](/learnAIDoc/wiki/boris-cherny-claude-code-philosophy/) — *why* the workflow works
-  - [Claude Code for Non-Programmers — Shipping Without Coding Background](/learnAIDoc/wiki/claude-code-non-programmers-shipping/) — the natural follow-up for non-engineers
+  - [Claude Code Tips & Context Engineering](/learnAIDoc/wiki/claude-code-tips-engineering/) — operational features, safety layers, and context habits
+  - [Claude Code Cheat Sheet, Everything-Claude-Code & Claude How-To](/learnAIDoc/wiki/claude-code-cheatsheet-everything/) — reference kit and template path
   - [Five Levels of Claude Code Mastery](/learnAIDoc/wiki/claude-code-five-levels-mastery/) — what to learn *after* 101

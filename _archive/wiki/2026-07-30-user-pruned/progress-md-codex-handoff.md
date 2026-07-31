@@ -3,14 +3,14 @@ title: "progress.md Handoff — A Scripted Codex ⇄ Claude Code Workflow"
 date: 2026-05-25
 category: Agent Setup & Migration
 tags: [codex, claude-code, handoff, progress-md, workflow, agents-md, multi-agent, slash-commands, automation, git, project-memory]
-related: ["New-Mac Migration — Codex + Claude Code + checkpoint/resume in 90 Minutes", "Claude Code + Codex Handoff Workflow — Switching Models Without Losing Context", "Codex + Claude Code for Research — A Practical Tutorial", "Copy My Claude Code Setup — The LearnAI Agent Stack From Scratch"]
+related: ["Codex + Claude Code for Research — A Practical Tutorial", "Copy My Claude Code Setup — The LearnAI Agent Stack From Scratch", "Copy My Codex Setup — Portable AGENTS.md, Skills, Plugins, and Safety Rules"]
 icon: "🔄"
 image: "/assets/images/progress-md-codex-handoff.png"
 ---
 
 **You finish work in Claude Code, stop, come back hours later in Codex (or vice versa), and you want the next agent to know exactly where you left off — branch, HEAD, what changed, what's next, what NOT to touch.** The v1 of this workflow used a hand-edited `# Current Handoff` block inside `CLAUDE.md`. It worked, but the block went stale the moment you made another commit. v2 replaces that block with a **tracked `progress.md` log** at repo root, two slash commands (`/checkpoint`, `/resume`), and a small bash script that handles git-state capture, locking, and atomic writes. You alternate sessions; the file is the shared memory.
 
-*Source: This workflow was built on Q's `learnai-course` project — committed as `3ad104a Switch agent handoff to progress.md log + harden script`. v1 reference: [Claude Code + Codex Handoff Workflow]({{ '/wiki/claude-code-codex-handoff-workflow/' | relative_url }}) | [AGENTS.md spec (OpenAI Developers)](https://developers.openai.com/codex/guides/agents-md) | [AGENTS.md complete guide 2026 (codersera)](https://codersera.com/blog/agents-md-complete-guide-2026/) | [Top AI Agent Standards 2026 (Agentailor)](https://blog.agentailor.com/posts/top-ai-agent-standards-2026)*
+*Source: This workflow was built on Q's `learnai-course` project — committed as `3ad104a Switch agent handoff to progress.md log + harden script`. It supersedes the older handoff note archived in the 2026-07-30 pruning pass. | [AGENTS.md spec (OpenAI Developers)](https://developers.openai.com/codex/guides/agents-md) | [AGENTS.md complete guide 2026 (codersera)](https://codersera.com/blog/agents-md-complete-guide-2026/) | [Top AI Agent Standards 2026 (Agentailor)](https://blog.agentailor.com/posts/top-ai-agent-standards-2026)*
 
 ## Why v1 wasn't enough
 
@@ -368,5 +368,4 @@ Sources:
 - [How to Build Your AGENTS.md (2026) — Augment Code](https://www.augmentcode.com/guides/how-to-build-agents-md)
 - [Top AI Agent Standards to Know in 2026 — Agentailor](https://blog.agentailor.com/posts/top-ai-agent-standards-2026)
 - [openai/codex AGENTS.md (GitHub)](https://github.com/openai/codex/blob/main/AGENTS.md)
-- [Claude Code + Codex Handoff Workflow (v1 — wiki)]({{ '/wiki/claude-code-codex-handoff-workflow/' | relative_url }})
 - Archived predecessor: Claude Code `/handover` as a generic save-context skill. Use `progress.md` for current cross-agent handoff work.

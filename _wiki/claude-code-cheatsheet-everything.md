@@ -4,6 +4,8 @@ date: 2026-03-31
 category: Claude Code Engineering
 redirect_from:
   - "/wiki/claude code/claude-code-cheatsheet-everything/"
+  - "/wiki/claude-howto-learning-path/"
+  - "/wiki/claude code/claude-howto-learning-path/"
 tags: [claude-code, cheatsheet, reference, configuration, agents, skills, mcp, shortcuts, tutorial, visual-guide, learning-path]
 related: ["Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "The Five Levels of Claude Code — From Prompting to Orchestration"]
 icon: "📋"
@@ -14,11 +16,11 @@ image: "/assets/images/claude-code-cheatsheet-everything.png"
 
 Three complementary references that together form a complete Claude Code toolkit:
 
-1. **Claude Code Cheat Sheet (v2.1.61)** — A dense, visual one-page reference covering every major feature of Claude Code: keyboard shortcuts, slash commands, MCP servers, memory files, workflows, configuration, and agent patterns. Designed to be printed or pinned as a quick-lookup companion.
+1. **Claude Code Cheat Sheet** — A dense, visual one-page reference covering major Claude Code features: keyboard shortcuts, slash commands, MCP servers, memory files, workflows, configuration, and agent patterns. Designed to be printed or pinned as a quick-lookup companion.
 
-2. **everything-claude-code** — An open-source GitHub repository ([github.com/affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code)) that exploded to 120K+ stars within days of release. It provides a complete, battle-tested Claude Code configuration — from agent setup to skill definitions, shortcuts, rules, and MCP connections. The configs won a hackathon and work on both Windows and Mac.
+2. **everything-claude-code** — An open-source GitHub repository ([github.com/affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code)) with a complete Claude Code configuration: agent setup, skill definitions, shortcuts, rules, and MCP connections. Treat it as a template to inspect and adapt, not something to copy blindly.
 
-3. **Claude How-To** — A visual, example-driven guide ([github.com/luongnv89/claude-howto](https://github.com/luongnv89/claude-howto)) with 13K+ stars that takes you from zero to advanced in a weekend. 10 progressive modules, copy-paste templates, and a structured learning path. v2.2.0, MIT licensed.
+3. **Claude How-To** — A visual, example-driven guide ([github.com/luongnv89/claude-howto](https://github.com/luongnv89/claude-howto)) with progressive modules, copy-paste templates, and a structured learning path from basic commands to orchestration.
 
 Together: the cheat sheet tells you *what exists*, the everything repo shows you *how to wire it all up*, and Claude How-To *teaches you step by step*.
 
@@ -150,7 +152,7 @@ everything-claude-code/
 
 ## Claude How-To — Visual Learning Path
 
-**Repo:** [github.com/luongnv89/claude-howto](https://github.com/luongnv89/claude-howto) (13.1K stars, 1.4K forks, v2.2.0)
+**Repo:** [github.com/luongnv89/claude-howto](https://github.com/luongnv89/claude-howto)
 
 ### The Problem It Solves
 

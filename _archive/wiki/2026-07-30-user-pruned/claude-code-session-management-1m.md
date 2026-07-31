@@ -8,7 +8,7 @@ redirect_from:
   - "/wiki/claude-code-resume-from-pr/"
   - "/wiki/claude code/claude-code-resume-from-pr/"
 tags: [claude-code, session-management, context-window, compact, rewind, subagents, context-rot, 1m-context]
-related: ["Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Claude Code: Agent Teams vs Subagents", "Opus 4.7 Thinking Effort — The Official Guide to Getting the Most from Claude Code"]
+related: ["Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Claude Code: Agent Teams vs Subagents"]
 icon: "🧭"
 image: "/assets/images/claude-code-session-management-1m.png"
 ---

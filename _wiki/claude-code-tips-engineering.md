@@ -4,8 +4,22 @@ date: 2026-03-22
 category: Claude Code Engineering
 redirect_from:
   - "/wiki/claude code/claude-code-tips-engineering/"
+  - "/wiki/claude-code-auto-mode/"
+  - "/wiki/claude code/claude-code-auto-mode/"
+  - "/wiki/claude-code-custom-agents/"
+  - "/wiki/claude code/claude-code-custom-agents/"
+  - "/wiki/claude-code-hooks/"
+  - "/wiki/claude code/claude-code-hooks/"
+  - "/wiki/claude-code-plugins/"
+  - "/wiki/claude code/claude-code-plugins/"
+  - "/wiki/claude-code-route-to-cheaper-models/"
+  - "/wiki/claude code/claude-code-route-to-cheaper-models/"
+  - "/wiki/claude-code-sandbox/"
+  - "/wiki/claude code/claude-code-sandbox/"
+  - "/wiki/claude-code-statusline/"
+  - "/wiki/claude code/claude-code-statusline/"
 tags: [claude-code, tips, context-management, skills, hooks, subagents, engineering-practices, prompt-caching]
-related: ["Claude Code: Isolate Heavy Tasks with context: fork", "Claude Code Plugins & Marketplace", "Claude Certified Architect — Anthropic's First Official AI Certification", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Boris Cherny on Claude Code — Origin Story, Product Philosophy & the End of Manual Coding"]
+related: ["Claude Code 101 — Anthropic's Official Onboarding Course", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Claude Code Token Guard — Audit Unattended Token Burn", "Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code Cheat Sheet, Everything-Claude-Code & Claude How-To — Complete Reference Kit"]
 icon: "🧠"
 image: "/assets/images/claude-code-tips-engineering.png"
 ---
@@ -55,7 +69,7 @@ The #1 insight from both resources: **context problems are usually noise, not ca
     └── Tool call results
 ```
 
-**Eye-opener:** 5 MCP servers = ~25,000 tokens fixed overhead (12.5% of your context gone before you type anything).
+**Eye-opener:** every MCP server and plugin adds fixed context before your task starts. Treat tool access as a budgeted design choice, not a free upgrade.
 
 ### Context Best Practices
 
@@ -118,6 +132,30 @@ Hook       →  "After every Edit on *.rs,              (enforcement)
 - **CLAUDE.md alone**: Claude often ignores rules
 - **Hooks alone**: Can't handle complex judgment calls
 - **All three together**: Declarations + workflows + enforcement = stable system
+
+## Operational Features to Teach Together
+
+The small standalone feature notes have been folded here because students need the relationships more than twelve separate pages. The durable mental model is: permissions decide whether Claude may act, sandboxing bounds where commands can act, hooks add deterministic workflow behavior, and status lines make the session state visible.
+
+*Consolidated sources: [Claude Code permission modes](https://code.claude.com/docs/en/permission-modes), [Claude Code status line docs](https://docs.anthropic.com/en/docs/claude-code/statusline), [Claude Code plugins docs](https://code.claude.com/docs/en/discover-plugins), [Claude Code subagents docs](https://code.claude.com/docs/en/sub-agents).*
+
+| Feature | Student-friendly use | Main caution |
+|---|---|---|
+| **Default approvals** | Use for new repos, credentials-adjacent work, and assignments where every file write should be visible. | Slow, but intentionally slow. |
+| **Auto mode** | Let routine edits and shell commands proceed while risky actions are filtered. | It reduces prompt fatigue; it is not a substitute for isolation or review. |
+| **Sandboxing** | Restrict what generated commands can read, write, or contact over the network. | Still review commands and keep secrets out of project folders. |
+| **Skip permissions** | Use only inside an intentionally disposable environment. | Dangerous on a normal laptop or shared project. |
+
+Hooks, status lines, plugins, and custom agents are best taught as workflow infrastructure:
+
+| Mechanism | What it adds | Good first exercise |
+|---|---|---|
+| **Hooks** | Event-triggered scripts for logging, checks, notifications, or blocking unsafe operations. | Log every bash command or run a formatter after edits. |
+| **Status line** | A compact display for model, directory, branch, cost, or context usage. | Show model + git branch + context usage during a demo. |
+| **Plugins** | Bundled skills, agents, MCP servers, hooks, or LSPs from a marketplace. | Inspect what a plugin adds before installing it. |
+| **Custom agents** | A default behavior profile or specialized worker for a task family. | Create a read-only researcher agent before creating writer agents. |
+
+For cost and context control, prefer **read-only subagents** for search, summarization, and codebase reconnaissance. Give those agents only read tools, then reserve the stronger main session for planning, editing, and final judgment. Avoid teaching exact price ratios as durable facts; model pricing and routing options change faster than the workflow pattern.
 
 ## Concept Boundaries — What Goes Where
 

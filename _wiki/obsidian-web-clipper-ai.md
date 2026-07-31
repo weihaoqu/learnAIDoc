@@ -125,7 +125,7 @@ Browser                     Obsidian Vault                Claude Code
 
 ### Real example
 
-Clipped [Seeing like an agent](https://claude.com/blog/seeing-like-an-agent) → saved to `inbox/` → Claude Code ran `/mywiki` → published as [wiki entry](/learnAIDoc/wiki/seeing-like-an-agent-tool-design/) with cover image, cross-links, and Obsidian note in under 3 minutes.
+Clipped [Seeing like an agent](https://claude.com/blog/seeing-like-an-agent) → saved to `inbox/` → Claude Code ran `/mywiki` → produced a wiki draft with cover image, cross-links, and an Obsidian note in under 3 minutes.
 
 ## How LearnAI Team Could Use This
 

@@ -5,7 +5,7 @@ category: Claude Code Engineering
 redirect_from:
   - "/wiki/claude code/claude-code-agent-teams-vs-subagents/"
 tags: [claude-code, cli, agents, multi-agent, productivity]
-related: ["Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code Session Management & 1M Context — The Official Decision Framework"]
+related: ["Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure"]
 icon: "🤝"
 image: "/assets/images/claude-code-agent-teams.jpg"
 ---

@@ -5,7 +5,7 @@ category: Industry & Trends
 redirect_from:
   - "/wiki/tools/career-ops-ai-job-search/"
 tags: [claude-code, job-search, resume, career, automation, skill, open-source, interview-prep]
-related: ["Claude Code Cheat Sheet, Everything-Claude-Code & Claude How-To — Complete Reference Kit", "Resumes Are Dead — Your .claude/ Folder Is Your New Career Card"]
+related: ["Claude Code Cheat Sheet, Everything-Claude-Code & Claude How-To — Complete Reference Kit"]
 icon: "💼"
 image: "/assets/images/career-ops-ai-job-search.png"
 ---

@@ -3,7 +3,7 @@ title: "Browser-Use — Make Any Website Accessible to AI Agents"
 date: 2026-05-09
 category: Skills & Plugins
 tags: [browser-automation, ai-agents, cdp, web-scraping, claude-code, python, open-source]
-related: ["Vision Agents: Real-Time AI That Watches, Listens, and Understands Video", "Accio Work — One Person + AI Agents = Entire Business"]
+related: []
 icon: "🌐"
 image: "/assets/images/browser-use-ai-browser-automation.png"
 ---

@@ -3,7 +3,7 @@ title: "Claude Drafts, Codex Gates — An Interleaved Two-Model Review Loop for 
 date: 2026-06-09
 category: Claude Code Workflows
 tags: [claude-code, codex, external-review, code-review, verification, proof-engineering, research-workflow, two-model-review, gate, design-first, empirical-de-risking, human-in-the-loop]
-related: ["Cross-Model Code Review — Why Claude Can't Catch Its Own Bugs", "Codex + Claude Code for Research — A Practical Tutorial", "Harness Engineering — The Real Bottleneck Isn't the Model", "progress.md Handoff — A Scripted Codex ⇄ Claude Code Workflow"]
+related: ["Cross-Model Code Review — Why Claude Can't Catch Its Own Bugs", "Codex + Claude Code for Research — A Practical Tutorial", "Harness Engineering — The Real Bottleneck Isn't the Model"]
 icon: "⚖️"
 image: "/assets/images/claude-codex-interleave.png"
 ---

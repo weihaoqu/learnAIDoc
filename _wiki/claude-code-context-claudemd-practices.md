@@ -4,8 +4,10 @@ date: 2026-03-22
 category: Claude Code Engineering
 redirect_from:
   - "/wiki/claude code/claude-code-context-claudemd-practices/"
+  - "/wiki/claude-code-import-syntax/"
+  - "/wiki/claude code/claude-code-import-syntax/"
 tags: [claude-code, context-management, claude-md, cost-control, citadel, planning, best-practices]
-related: ["Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "Claude Code: Isolate Heavy Tasks with context: fork", "Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code Session Management & 1M Context — The Official Decision Framework", "Claude Code 101 — Anthropic's Official Onboarding Course", "grill-me — When AI Interviews You Before Writing Code", "Beyond /goal — The Orchestrator + Headless Pattern for Long-Running Claude Sessions", "codegraph — Local Code Knowledge Graph for AI Coding Agents"]
+related: ["Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "Claude Code: Isolate Heavy Tasks with context: fork", "Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code 101 — Anthropic's Official Onboarding Course", "grill-me — When AI Interviews You Before Writing Code", "Beyond /goal — The Orchestrator + Headless Pattern for Long-Running Claude Sessions", "codegraph — Local Code Knowledge Graph for AI Coding Agents"]
 icon: "🏗️"
 image: "/assets/images/claude-code-context-claudemd-practices.png"
 ---
@@ -121,9 +123,48 @@ Claude can't solve this for you. If you don't know what you want, no amount of C
 | **Keep it under 200 lines** | For each line, ask: "Would removing this cause Claude to make mistakes?" If not, cut it |
 | **Use progressive disclosure** | Put domain-specific knowledge in skills, not CLAUDE.md |
 | **Use sub-folder CLAUDE.md files** | `/frontend/CLAUDE.md`, `/backend/CLAUDE.md` for scoped instructions |
-| **Audit regularly** | Use the `claude-md-management` plugin (76,000+ installs) to audit quality |
+| **Audit regularly** | Use a CLAUDE.md review workflow or plugin to check for contradictions and stale rules |
 | **Treat it like code** | Review it, prune it, test changes by observing behavior shifts |
 | **Simplify over time** | Your CLAUDE.md should get shorter as you learn what matters — not longer |
+
+## Memory Imports: Shared Standards Without One Giant File
+
+`CLAUDE.md` can import other Markdown files with `@path` references. This is the clean way to share team standards while keeping local preferences private and project-specific context scoped.
+
+*Source: [Claude Code docs — Memory imports](https://docs.anthropic.com/en/docs/claude-code/memory#imports). Check the docs for current depth limits and approval behavior before using imports in a locked-down classroom or enterprise setup.*
+
+```markdown
+# CLAUDE.md
+
+## Project Overview
+@README.md
+
+## Team Standards
+@docs/coding-standards.md
+@docs/security.md
+
+## Personal Preferences
+@~/.claude/my-preferences.md
+```
+
+| Import type | Use it for |
+|---|---|
+| **Relative path** | Project docs such as `@docs/architecture.md` or `@../shared-standards.md` |
+| **Home path** | Personal rules shared across worktrees, such as `@~/.claude/review-style.md` |
+| **Absolute path** | Shared machine-local standards where a team controls the path |
+
+The pattern that scales best is **shared standards plus local overrides**:
+
+```markdown
+# CLAUDE.md - committed
+@docs/team-standards.md
+@docs/project-architecture.md
+
+# CLAUDE.local.md - gitignored
+@~/.claude/my-local-preferences.md
+```
+
+That gives every student or teammate the same baseline while leaving room for local editor paths, sandbox URLs, and personal workflow preferences. Use `/memory` during a session to inspect what actually loaded.
 
 ## Cost Control: The Agent Layer Approach
 

@@ -3,7 +3,7 @@ title: "Godogen — Prompt-to-Game Pipeline for Godot, Bevy, and Babylon.js"
 date: 2026-04-26
 category: Skills & Plugins
 tags: [game-development, godot, bevy, babylonjs, claude-code, codex, ai-game-gen, autonomous-agents]
-related: ["AI Mastery Games — Teaching AI Literacy Through Interactive Games", "Claude Code Custom Agents", "Claude Code: Agent Teams vs Subagents"]
+related: ["AI Mastery Games — Teaching AI Literacy Through Interactive Games", "Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "Claude Code: Agent Teams vs Subagents"]
 icon: "🎮"
 image: "/assets/images/godogen-ai-game-dev.png"
 ---

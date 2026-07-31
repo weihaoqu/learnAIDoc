@@ -5,7 +5,7 @@ category: Agent Setup & Migration
 redirect_from:
   - "/wiki/claude code/claude-code-environment-replication/"
 tags: [claude-code, setup, dotfiles, plugins, skills, hooks, environment, replication, portable-config]
-related: ["Claude Code Cheat Sheet, Everything-Claude-Code & Claude How-To — Complete Reference Kit", "Claude Code Plugins & Marketplace", "Claude Code Hooks", "CC Unpacked — Visual Guide to Claude Code's Internals", "Cross-Model Code Review — Why Claude Can't Catch Its Own Bugs", "Codex Environment Replication — Portable `~/.codex/` Across Machines"]
+related: ["Claude Code Cheat Sheet, Everything-Claude-Code & Claude How-To — Complete Reference Kit", "Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "CC Unpacked — Visual Guide to Claude Code's Internals", "Cross-Model Code Review — Why Claude Can't Catch Its Own Bugs"]
 icon: "🔧"
 image: "/assets/images/claude-code-environment-replication.png"
 ---

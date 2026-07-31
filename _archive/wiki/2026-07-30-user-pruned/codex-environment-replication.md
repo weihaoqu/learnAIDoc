@@ -3,14 +3,14 @@ title: "Codex Environment Replication — Portable `~/.codex/` Across Machines"
 date: 2026-05-27
 category: Agent Setup & Migration
 tags: [codex, codex-cli, migration, new-machine, setup, dotfiles, shell-scripts, sed, hooks, secret-hygiene, replication, portable-config, oh-my-claudecode]
-related: ["Claude Code Environment Replication — Portable Setup Across Machines", "New-Mac Migration — Codex + Claude Code + checkpoint/resume in 90 Minutes", "Copy My Codex Setup — Portable AGENTS.md, Skills, Plugins, and Safety Rules", "Claude Code + Codex Handoff Workflow — Switching Models Without Losing Context", "Cross-Model Code Review — Why Claude Can't Catch Its Own Bugs"]
+related: ["Claude Code Environment Replication — Portable Setup Across Machines", "Copy My Codex Setup — Portable AGENTS.md, Skills, Plugins, and Safety Rules", "progress.md Handoff — A Scripted Codex ⇄ Claude Code Workflow", "Cross-Model Code Review — Why Claude Can't Catch Its Own Bugs"]
 icon: "🧳"
 image: "/assets/images/codex-environment-replication.png"
 ---
 
 **Codex CLI accumulates as much state as Claude Code does — a global `AGENTS.md`, custom agents, hooks, rules, memories, marketplace registrations, and a thicket of trusted project paths inside `config.toml`. Moving that to a new Mac is brittle if you `rsync -a ~/.codex/` blindly, because half of `~/.codex/` is live SQLite WAL, OAuth tokens, and machine-bound IDs. This entry documents a focused pair of scripts — `codex-export.sh` and `codex-bootstrap.sh` — that mirror the well-known [Claude Code replication scripts]({{ '/wiki/claude-code-environment-replication/' | relative_url }}) and ship the portable bits while quarantining the dangerous ones.**
 
-*Source: Companion scripts to `~/.claude/claude-code-export.sh` / `claude-code-bootstrap.sh` (documented in [Claude Code Environment Replication]({{ '/wiki/claude-code-environment-replication/' | relative_url }})) | Manual rsync alternative: [Copy My Codex Setup]({{ '/wiki/portable-codex-setup/' | relative_url }}) | Multi-tool walkthrough: [New-Mac Migration — Codex + Claude Code]({{ '/wiki/new-mac-migration-codex-claude-handoff/' | relative_url }}) | [OpenAI Codex CLI docs](https://developers.openai.com/codex) | [BSD vs GNU sed in-place differences](https://stackoverflow.com/questions/4247068/sed-command-with-i-option-failing-on-mac-but-works-on-linux)*
+*Source: Companion scripts to `~/.claude/claude-code-export.sh` / `claude-code-bootstrap.sh` (documented in [Claude Code Environment Replication]({{ '/wiki/claude-code-environment-replication/' | relative_url }})) | Manual rsync alternative: [Copy My Codex Setup]({{ '/wiki/portable-codex-setup/' | relative_url }}) | Handoff workflow: [progress.md Handoff]({{ '/wiki/progress-md-codex-handoff/' | relative_url }}) | [OpenAI Codex CLI docs](https://developers.openai.com/codex) | [BSD vs GNU sed in-place differences](https://stackoverflow.com/questions/4247068/sed-command-with-i-option-failing-on-mac-but-works-on-linux)*
 
 ## Quick Start — Replicate in 3 Steps
 
@@ -300,6 +300,6 @@ After `rm -rf ~/.codex/` (intentional or otherwise), the export bundle in Dropbo
 
 - [Claude Code Environment Replication]({{ '/wiki/claude-code-environment-replication/' | relative_url }}) — The sibling script pair for `~/.claude/`. Same pattern, different secret surface.
 - [Copy My Codex Setup]({{ '/wiki/portable-codex-setup/' | relative_url }}) — Manual rsync-and-quarantine alternative when you want maximum control over what crosses machines.
-- [New-Mac Migration — Codex + Claude Code]({{ '/wiki/new-mac-migration-codex-claude-handoff/' | relative_url }}) — The 90-minute orchestration walkthrough that ties Codex + Claude Code + the `/checkpoint` ⇄ `/resume` handoff into one ordered path.
-- [Claude Code + Codex Handoff Workflow]({{ '/wiki/claude-code-codex-handoff-workflow/' | relative_url }}) — Why having Codex configured *the same way* on both your machines matters for handoff continuity.
+- [progress.md Handoff]({{ '/wiki/progress-md-codex-handoff/' | relative_url }}) — The current `/checkpoint` ⇄ `/resume` handoff workflow for Codex + Claude Code.
+- [progress.md Handoff]({{ '/wiki/progress-md-codex-handoff/' | relative_url }}) — The current handoff workflow for keeping Codex and Claude Code sessions aligned.
 - [Cross-Model Code Review]({{ '/wiki/cross-model-code-review-claude-codex/' | relative_url }}) — Codex caught five issues in the first version of these very scripts. This is why the review gate is non-negotiable.

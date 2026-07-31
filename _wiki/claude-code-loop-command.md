@@ -5,7 +5,7 @@ category: Claude Code Workflows
 redirect_from:
   - "/wiki/claude code/claude-code-loop-command/"
 tags: [claude-code, cli, scheduling, automation, loop, cron]
-related: ["Claude Code Hooks"]
+related: ["Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture"]
 icon: "🔄"
 image: "/assets/images/claude-code-loop.png"
 ---

@@ -3,7 +3,7 @@ title: "10 Lessons for Agentic Coding — What Should We Do When Code Is Cheap?"
 date: 2026-05-09
 category: Industry & Trends
 tags: [agentic-coding, software-engineering, ai-coding, best-practices, taste, testing, architecture]
-related: ["Boris Cherny on Claude Code — Origin Story, Product Philosophy & the End of Manual Coding", "Harness Engineering — The Real Bottleneck Isn't the Model", "AI Fluency Index: Why Your Best Prompts Might Lead to Your Worst Work"]
+related: ["Claude Code 101 — Anthropic's Official Onboarding Course", "Harness Engineering — The Real Bottleneck Isn't the Model", "AI Fluency Index: Why Your Best Prompts Might Lead to Your Worst Work"]
 icon: "📐"
 image: "/assets/images/ten-lessons-agentic-coding.png"
 ---

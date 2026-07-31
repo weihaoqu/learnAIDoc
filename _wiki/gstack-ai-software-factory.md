@@ -5,7 +5,7 @@ category: Skills & Plugins
 redirect_from:
   - "/wiki/skills & plugins/gstack-ai-software-factory/"
 tags: [claude-code, skills, workflow, ai-development, yc, code-review, qa, shipping]
-related: ["Claude Code Plugins & Marketplace", "How Anthropic Teams Use Claude Code", "PUA Skill — Force Your AI to Stop Being Lazy and Actually Debug", "Agents with Taste — Encoding Design Judgment as Skill Files", "AI Website Cloner — Reverse-Engineer Any Site Into Clean Next.js Code", "Beyond /goal — The Orchestrator + Headless Pattern for Long-Running Claude Sessions"]
+related: ["Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture", "Claude Code 101 — Anthropic's Official Onboarding Course", "PUA Skill — Force Your AI to Stop Being Lazy and Actually Debug", "Agents with Taste — Encoding Design Judgment as Skill Files", "AI Website Cloner — Reverse-Engineer Any Site Into Clean Next.js Code", "Beyond /goal — The Orchestrator + Headless Pattern for Long-Running Claude Sessions"]
 icon: "🏭"
 image: "/assets/images/gstack-ai-software-factory.png"
 ---

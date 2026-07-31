@@ -3,7 +3,7 @@ title: "Dexter — Autonomous AI Agent for Deep Financial Research"
 date: 2026-05-08
 category: AI for Research
 tags: [ai-agent, finance, financial-research, claude-code, open-source, sec-filings, investment, multi-agent]
-related: ["Accio Work — One Person + AI Agents = Entire Business"]
+related: []
 icon: "📊"
 image: "/assets/images/dexter-ai-financial-research.png"
 ---

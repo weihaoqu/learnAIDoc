@@ -5,7 +5,7 @@ category: Claude Code Engineering
 redirect_from:
   - "/wiki/claude code/claude-code-from-source-book/"
 tags: [claude-code, architecture, book, source-analysis, agent-loop, tools, multi-agent, open-source, patterns]
-related: ["Claude Code Source Analysis — What Makes It Work & How to Actually Learn From It", "CC Unpacked — Visual Guide to Claude Code's Internals", "claude-howto — The Visual Learning Path from Slash Commands to Agent Orchestration"]
+related: ["Claude Code Source Analysis — What Makes It Work & How to Actually Learn From It", "CC Unpacked — Visual Guide to Claude Code's Internals", "Claude Code Cheat Sheet, Everything-Claude-Code & Claude How-To — Complete Reference Kit"]
 icon: "📕"
 image: "/assets/images/claude-code-from-source-book.png"
 ---

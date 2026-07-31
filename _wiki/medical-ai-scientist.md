@@ -3,7 +3,7 @@ title: "Towards a Medical AI Scientist — Full Auto Clinical Research from Idea
 date: 2026-05-08
 category: AI for Research
 tags: [ai-research, medical-ai, clinical-research, automated-science, multi-agent, paper-writing, benchmark]
-related: ["AI Agents for Academic Research & Writing — From KatmerCode to the Nature Playbook", "AI Health Vault — Private Family Health Management with Obsidian + Claude"]
+related: ["AI Agents for Academic Research & Writing — From KatmerCode to the Nature Playbook"]
 icon: "🏥"
 image: "/assets/images/medical-ai-scientist.png"
 ---

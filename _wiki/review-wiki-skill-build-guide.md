@@ -5,7 +5,7 @@ category: Claude Code Engineering
 redirect_from:
   - "/wiki/claude code/review-wiki-skill-build-guide/"
 tags: [claude-code, skill, batch-processing, codex, automation, quality-assurance, pipeline, loop, obsidian]
-related: ["Addy Osmani's agent-skills — Senior Engineering Practices as SKILL.md Files", "Harness Engineering — The Real Bottleneck Isn't the Model", "Boris Cherny on Claude Code — Origin Story, Product Philosophy & the End of Manual Coding", "Anti-AI Exam Designer — A Claude Code Skill for AI-Resistant Exams"]
+related: ["Addy Osmani's agent-skills — Senior Engineering Practices as SKILL.md Files", "Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code 101 — Anthropic's Official Onboarding Course", "Anti-AI Exam Designer — A Claude Code Skill for AI-Resistant Exams"]
 icon: "🔄"
 image: "/assets/images/review-wiki-skill-build-guide.png"
 ---

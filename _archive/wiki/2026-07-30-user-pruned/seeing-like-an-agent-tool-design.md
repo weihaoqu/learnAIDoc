@@ -3,7 +3,7 @@ title: "Seeing Like an Agent — How Anthropic Designs Tools for Claude Code"
 date: 2026-04-17
 category: Claude Code Engineering
 tags: [claude-code, tool-design, agent-architecture, progressive-disclosure, anthropic, harness-engineering, askuserquestion, tasks]
-related: ["Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code Session Management & 1M Context — The Official Decision Framework", "Opus 4.7 Thinking Effort — The Official Guide to Getting the Most from Claude Code"]
+related: ["Harness Engineering — The Real Bottleneck Isn't the Model", "Claude Code Session Management & 1M Context — The Official Decision Framework"]
 icon: "👁️"
 image: "/assets/images/seeing-like-an-agent-tool-design.png"
 ---

@@ -3,7 +3,7 @@ title: "grill-me — When AI Interviews You Before Writing Code"
 date: 2026-05-14
 category: Skills & Plugins
 tags: [claude-code, codex, skills, planning, matt-pocock, anti-vibe-coding, requirements, rubber-ducking, course-design, anthropic, viral]
-related: ["Matt Pocock's Skills — Claude Code for Real Engineers", "Karpathy Skills — Four Rules That Fix LLM Coding's Worst Habits", "How Anthropic Uses Skills — Thariq's 9-Category Framework & the Gotchas Pattern", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Domain Experts Shipping Products with Claude Code — Stories from the Trenches", "Personal AI Skill Cheat Sheet — When to Use Each Skill"]
+related: ["Matt Pocock's Skills — Claude Code for Real Engineers", "Karpathy Skills — Four Rules That Fix LLM Coding's Worst Habits", "How Anthropic Uses Skills — Thariq's 9-Category Framework & the Gotchas Pattern", "Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure", "Claude Code 101 — Anthropic's Official Onboarding Course", "Personal AI Skill Cheat Sheet — When to Use Each Skill"]
 icon: "🔥"
 image: "/assets/images/grill-me-skill.png"
 ---
@@ -159,4 +159,4 @@ Pick the original unless a variant pitches a specific twist you need.
   - [Karpathy Skills — Four Rules That Fix LLM Coding's Worst Habits](/learnAIDoc/wiki/karpathy-skills-claude-code/) — adjacent philosophy on small/composable skills
   - [How Anthropic Uses Skills — Thariq's 9-Category Framework & the Gotchas Pattern](/learnAIDoc/wiki/anthropic-skills-thariq-framework/) — the broader skills movement
   - [Claude Code · CLAUDE.md Practices](/learnAIDoc/wiki/claude-code-context-claudemd-practices/) — where grilling-output should land (CLAUDE.md / CONTEXT.md / ADRs)
-  - [Domain Experts Shipping Products with Claude Code](/learnAIDoc/wiki/claude-code-non-programmers-shipping/) — why the non-coding use case matters for faculty
+  - [Claude Code 101](/learnAIDoc/wiki/claude-code-101/) — why the non-coding use case matters for faculty

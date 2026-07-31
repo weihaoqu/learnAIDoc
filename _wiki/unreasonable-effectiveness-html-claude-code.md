@@ -3,7 +3,7 @@ title: "The Unreasonable Effectiveness of HTML — Thariq's Case for Output Form
 date: 2026-05-10
 category: Claude Code Engineering
 tags: [claude-code, html, output-format, thariq-shihipar, markdown, interactive-artifacts, prompt-engineering, anthropic]
-related: ["How Anthropic Uses Skills — Thariq's 9-Category Framework & the Gotchas Pattern", "Seeing Like an Agent — How Anthropic Designs Tools for Claude Code", "GPT Image 2 水墨风 Slide Prompt — Structured Template for Ink-Wash Style Slides", "HTML PPT Studio — AI-Powered Presentation Skill for Claude Code", "Make Slides: AI-Powered Interactive Teaching Slides", "open-slide — The Slide Framework Built for AI Coding Agents", "Build Interactive Diagram Tools with Claude", "Markdown Viewer Skills — 9,500 Icons and 14 Diagram Types for AI Agents"]
+related: ["How Anthropic Uses Skills — Thariq's 9-Category Framework & the Gotchas Pattern", "GPT Image 2 水墨风 Slide Prompt — Structured Template for Ink-Wash Style Slides", "HTML PPT Studio — AI-Powered Presentation Skill for Claude Code", "Make Slides: AI-Powered Interactive Teaching Slides", "open-slide — The Slide Framework Built for AI Coding Agents", "Build Interactive Diagram Tools with Claude", "Markdown Viewer Skills — 9,500 Icons and 14 Diagram Types for AI Agents"]
 icon: "🌐"
 image: "/assets/images/unreasonable-effectiveness-html-claude-code.png"
 ---

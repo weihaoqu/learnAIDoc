@@ -1,44 +1,23 @@
 # LearnAI Wiki Index
-Generated: 2026-07-29
-Total entries: 203
+Generated: 2026-07-30
+Total entries: 166
 
 ## By Category
 
 
-### Claude Code Basics
-- [Claude Code: Route Tasks to Cheaper Models with Subagents](/learnAIDoc/wiki/claude-code-route-to-cheaper-models/) (2026-02-08)
-- [Claude Code: Share Team Knowledge with @ Imports in CLAUDE.md](/learnAIDoc/wiki/claude-code-import-syntax/) (2026-02-08)
-- [Claude Code Custom Agents](/learnAIDoc/wiki/claude-code-custom-agents/) (2026-02-13)
-- [Claude Code Custom Status Lines](/learnAIDoc/wiki/claude-code-statusline/) (2026-02-13)
-- [Claude Code Plugins & Marketplace](/learnAIDoc/wiki/claude-code-plugins/) (2026-02-13)
-- [Claude Code Sandbox Mode](/learnAIDoc/wiki/claude-code-sandbox/) (2026-02-13)
-- [Claude Code Auto Mode — The Middle Path for Permissions](/learnAIDoc/wiki/claude-code-auto-mode/) (2026-03-24)
-- [Domain Experts Shipping Products with Claude Code — Stories from the Trenches](/learnAIDoc/wiki/claude-code-non-programmers-shipping/) (2026-04-01)
-- [Claude Auto Mode Unlock — Using Auto Mode with Any API Provider](/learnAIDoc/wiki/claude-auto-mode-unlock/) (2026-04-13)
-- [claude-howto — The Visual Learning Path from Slash Commands to Agent Orchestration](/learnAIDoc/wiki/claude-howto-learning-path/) (2026-04-13)
-- [DeepClaude — Run Claude Code with DeepSeek V4 Pro for 17x Less](/learnAIDoc/wiki/deepclaude-cheap-claude-code/) (2026-05-08)
-
 ### Claude Code Engineering
 - [Claude Code: Agent Teams vs Subagents](/learnAIDoc/wiki/claude-code-agent-teams-vs-subagents/) (2026-02-08)
 - [Claude Code: Isolate Heavy Tasks with context: fork](/learnAIDoc/wiki/claude-code-context-fork/) (2026-02-08)
-- [Claude Code Hooks](/learnAIDoc/wiki/claude-code-hooks/) (2026-02-13)
-- [How Anthropic Teams Use Claude Code](/learnAIDoc/wiki/anthropic-teams-use-claude-code/) (2026-02-24)
 - [Claude Code Context Management & CLAUDE.md — From Pitfalls to Infrastructure](/learnAIDoc/wiki/claude-code-context-claudemd-practices/) (2026-03-22)
 - [Claude Code Tips & Context Engineering — From 45 Tips to Six-Layer Architecture](/learnAIDoc/wiki/claude-code-tips-engineering/) (2026-03-22)
 - [Harness Engineering — The Real Bottleneck Isn't the Model](/learnAIDoc/wiki/harness-engineering-agents/) (2026-03-22)
 - [The Five Levels of Claude Code — From Prompting to Orchestration](/learnAIDoc/wiki/claude-code-five-levels-mastery/) (2026-03-24)
-- [Claude Code Token Costs: The Hidden Tax and How rtk Cuts It by 80%](/learnAIDoc/wiki/claude-code-token-costs-rtk/) (2026-03-26)
-- [Anthropic Knowledge Work Plugins — Role-Based AI That Works Like Your Team](/learnAIDoc/wiki/anthropic-knowledge-work-plugins/) (2026-03-31)
 - [Claude Code Cheat Sheet, Everything-Claude-Code & Claude How-To — Complete Reference Kit](/learnAIDoc/wiki/claude-code-cheatsheet-everything/) (2026-03-31)
 - [CC Unpacked — Visual Guide to Claude Code's Internals](/learnAIDoc/wiki/ccunpacked-claude-code-internals/) (2026-04-01)
 - [Claude Code Source Analysis — What Makes It Work & How to Actually Learn From It](/learnAIDoc/wiki/claude-code-source-analysis-learning/) (2026-04-01)
 - [Don't Make Too Many Decisions for AI — Anthropic's 3 Core Development Philosophies](/learnAIDoc/wiki/anthropic-subtract-dont-add-philosophy/) (2026-04-08)
 - [Claude Code from Source — The Architecture Book That Treats Claude Code Like an OS](/learnAIDoc/wiki/claude-code-from-source-book/) (2026-04-13)
 - [Karpathy Skills — Four Rules That Fix LLM Coding's Worst Habits](/learnAIDoc/wiki/karpathy-skills-claude-code/) (2026-04-13)
-- [Claude Code Session Management & 1M Context — The Official Decision Framework](/learnAIDoc/wiki/claude-code-session-management-1m/) (2026-04-17)
-- [Opus 4.7 Thinking Effort — The Official Guide to Getting the Most from Claude Code](/learnAIDoc/wiki/opus-47-thinking-effort-claude-code/) (2026-04-17)
-- [Seeing Like an Agent — How Anthropic Designs Tools for Claude Code](/learnAIDoc/wiki/seeing-like-an-agent-tool-design/) (2026-04-17)
-- [Boris Cherny on Claude Code — Origin Story, Product Philosophy & the End of Manual Coding](/learnAIDoc/wiki/boris-cherny-claude-code-philosophy/) (2026-05-06)
 - [Building /review-wiki — A Batch AI Quality Pipeline from Scratch](/learnAIDoc/wiki/review-wiki-skill-build-guide/) (2026-05-07)
 - [The Unreasonable Effectiveness of HTML — Thariq's Case for Output Format Engineering](/learnAIDoc/wiki/unreasonable-effectiveness-html-claude-code/) (2026-05-10)
 - [Agents Need Control Flow — Brian's Case for Code Over Prompts](/learnAIDoc/wiki/agents-need-control-flow/) (2026-05-11)
@@ -46,8 +25,8 @@ Total entries: 203
 - [/goal 使用指南 — The Visual Playbook for Claude Code's Persistent Goal Mechanism](/learnAIDoc/wiki/goal-command-usage-guide/) (2026-05-19)
 - [AI Coding Reliability — Implementation Notes Habit + 12 Engineering Rules](/learnAIDoc/wiki/ai-coding-reliability-notes/) (2026-05-21)
 - [Codex-Maxxing — Jason Liu's Power User Workflow for OpenAI's Codex Agent](/learnAIDoc/wiki/codex-maxxing-jxnl-workflow/) (2026-05-22)
-- [Using /goal for Wiki Management — Spec-Driven Autonomous Wiki Sessions](/learnAIDoc/wiki/goal-wiki-management-workflow/) (2026-05-22)
 - [project-spec-interviewer-skill — Interactive Terminal Interview That Writes Your spec.md](/learnAIDoc/wiki/project-spec-interviewer-skill/) (2026-05-22)
+- [Using /goal for Wiki Management — Spec-Driven Autonomous Wiki Sessions](/learnAIDoc/wiki/goal-wiki-management-workflow/) (2026-05-22)
 - [Claude Code Token Guard — Audit Unattended Token Burn](/learnAIDoc/wiki/claude-code-token-guard/) (2026-06-11)
 
 ### Claude Code Workflows
@@ -63,12 +42,7 @@ Total entries: 203
 
 ### Agent Setup & Migration
 - [Claude Code Environment Replication — Portable Setup Across Machines](/learnAIDoc/wiki/claude-code-environment-replication/) (2026-05-10)
-- [Claude Code + Codex Handoff Workflow — Switching Models Without Losing Context](/learnAIDoc/wiki/claude-code-codex-handoff-workflow/) (2026-05-22)
 - [Copy My Claude Code Setup — The LearnAI Agent Stack From Scratch](/learnAIDoc/wiki/copy-my-claude-code-setup/) (2026-05-22)
-- [Copy My Codex Setup — Portable AGENTS.md, Skills, Plugins, and Safety Rules](/learnAIDoc/wiki/portable-codex-setup/) (2026-05-25)
-- [New-Mac Migration — Codex + Claude Code + checkpoint/resume in 90 Minutes](/learnAIDoc/wiki/new-mac-migration-codex-claude-handoff/) (2026-05-25)
-- [progress.md Handoff — A Scripted Codex ⇄ Claude Code Workflow](/learnAIDoc/wiki/progress-md-codex-handoff/) (2026-05-25)
-- [Codex Environment Replication — Portable `~/.codex/` Across Machines](/learnAIDoc/wiki/codex-environment-replication/) (2026-05-27)
 
 ### Skills & Plugins
 - [Beads: Graph-Based Memory for AI Coding Agents](/learnAIDoc/wiki/beads-graph-memory-for-agents/) (2026-02-08)
@@ -76,21 +50,18 @@ Total entries: 203
 - [Build Interactive Diagram Tools with Claude](/learnAIDoc/wiki/claude-interactive-diagram-tools/) (2026-02-13)
 - [Non-Coding Skills for Claude Code — Automating Business & Life](/learnAIDoc/wiki/non-coding-skills-claude-code/) (2026-03-17)
 - [mdpdf: Markdown to PDF with Claude Code](/learnAIDoc/wiki/mdpdf-skill/) (2026-03-21)
+- [alphaXiv MCP — Semantic ArXiv Search Directly in Claude Code](/learnAIDoc/wiki/alphaxiv-mcp-arxiv-search/) (2026-03-22)
 - [Gstack — Garry Tan's AI Software Factory for Claude Code](/learnAIDoc/wiki/gstack-ai-software-factory/) (2026-03-22)
-- [PUA Skill — Force Your AI to Stop Being Lazy and Actually Debug](/learnAIDoc/wiki/pua-skill-ai-persistence/) (2026-03-22)
 - [Posterskill — AI-Generated Academic Conference Posters from Your Paper](/learnAIDoc/wiki/posterskill-academic-posters/) (2026-03-22)
 - [Prompt Master — Write Accurate Prompts for Any AI Tool, Zero Waste](/learnAIDoc/wiki/prompt-master-skill/) (2026-03-22)
+- [PUA Skill — Force Your AI to Stop Being Lazy and Actually Debug](/learnAIDoc/wiki/pua-skill-ai-persistence/) (2026-03-22)
 - [Understand Anything — Turn Codebases Into Interactive Knowledge Graphs](/learnAIDoc/wiki/understand-anything-plugin/) (2026-03-22)
 - [Unsloth Studio — Train and Run LLMs Locally with 70% Less Memory](/learnAIDoc/wiki/unsloth-studio-llm-training/) (2026-03-22)
-- [alphaXiv MCP — Semantic ArXiv Search Directly in Claude Code](/learnAIDoc/wiki/alphaxiv-mcp-arxiv-search/) (2026-03-22)
-- [Follow Builders: AI Digest Skill That Tracks Real Builders, Not Influencers](/learnAIDoc/wiki/follow-builders-ai-digest-skill/) (2026-03-26)
-- [Pretext & Refero — Tools to Fix AI's Frontend Problem](/learnAIDoc/wiki/pretext-refero-ui-tools/) (2026-03-31)
 - [oh-my-claudecode — Multi-AI Orchestration Plugin for Claude Code](/learnAIDoc/wiki/oh-my-claudecode-orchestration/) (2026-03-31)
-- [AI Health Vault — Private Family Health Management with Obsidian + Claude](/learnAIDoc/wiki/ai-health-vault-obsidian/) (2026-04-02)
+- [Pretext & Refero — Tools to Fix AI's Frontend Problem](/learnAIDoc/wiki/pretext-refero-ui-tools/) (2026-03-31)
 - [Supermemory — The Memory API That Makes AI Actually Remember You](/learnAIDoc/wiki/supermemory-ai-context-engine/) (2026-04-05)
 - [AI Website Cloner — Reverse-Engineer Any Site Into Clean Next.js Code](/learnAIDoc/wiki/ai-website-cloner-template/) (2026-04-06)
 - [Paper2Code: Turn ArXiv Papers into Citation-Anchored Code](/learnAIDoc/wiki/paper2code-arxiv-to-implementation/) (2026-04-06)
-- [Claude for Word — AI Edits With Native Track Changes, SaaS Trembles](/learnAIDoc/wiki/claude-for-word-office-integration/) (2026-04-13)
 - [Code Review Graph — Turn Your Codebase Into a Knowledge Graph, Cut Tokens 8x](/learnAIDoc/wiki/code-review-graph-knowledge-graph/) (2026-04-13)
 - [Fireworks Tech Graph — Natural Language to Architecture Diagrams in Claude Code](/learnAIDoc/wiki/fireworks-tech-graph-diagrams/) (2026-04-13)
 - [Markdown Viewer Skills — 9,500 Icons and 14 Diagram Types for AI Agents](/learnAIDoc/wiki/markdown-viewer-skills-diagrams/) (2026-04-13)
@@ -110,17 +81,15 @@ Total entries: 203
 - [open-slide — The Slide Framework Built for AI Coding Agents](/learnAIDoc/wiki/open-slide-agent-native-presentations/) (2026-05-09)
 - [How Anthropic Uses Skills — Thariq's 9-Category Framework & the Gotchas Pattern](/learnAIDoc/wiki/anthropic-skills-thariq-framework/) (2026-05-10)
 - [grill-me — When AI Interviews You Before Writing Code](/learnAIDoc/wiki/grill-me-skill/) (2026-05-14)
-- [Paper-Code Joint Analysis & Contract-Driven Skill Design](/learnAIDoc/wiki/paper-code-joint-analysis-contract-driven/) (2026-05-17)
 - [codegraph — Local Code Knowledge Graph for AI Coding Agents](/learnAIDoc/wiki/codegraph-pre-indexed-claude-code/) (2026-05-17)
-- [ImageLens — Chrome Extension That Extracts AI-Editable Prompts from Any Web Image](/learnAIDoc/wiki/imagelens-chrome-plugin/) (2026-05-19)
+- [Paper-Code Joint Analysis & Contract-Driven Skill Design](/learnAIDoc/wiki/paper-code-joint-analysis-contract-driven/) (2026-05-17)
 - [html-anything — Claude Outputs Any Document Type as a Self-Contained HTML File, Zero Config](/learnAIDoc/wiki/html-anything-ai-generator/) (2026-05-19)
+- [ImageLens — Chrome Extension That Extracts AI-Editable Prompts from Any Web Image](/learnAIDoc/wiki/imagelens-chrome-plugin/) (2026-05-19)
 - [MATLAB MCP — Connect Claude Code to Your Local MATLAB Environment](/learnAIDoc/wiki/matlab-mcp-claude-code/) (2026-05-21)
 - [notebooklm-py — Unofficial Python API for Google NotebookLM Automation](/learnAIDoc/wiki/notebooklm-py-python-api/) (2026-05-21)
 - [Personal AI Skill Cheat Sheet — When to Use Each Skill](/learnAIDoc/wiki/codex-skills-cheat-sheet/) (2026-05-24)
 
 ### AI for Research
-- [Vision Agents: Real-Time AI That Watches, Listens, and Understands Video](/learnAIDoc/wiki/vision-agents-realtime-ai/) (2026-02-08)
-- [Claude Use Cases Directory](/learnAIDoc/wiki/claude-use-cases-directory/) (2026-02-13)
 - [Autoresearch: 100 Autonomous ML Experiments Overnight](/learnAIDoc/wiki/autoresearch-autonomous-ml/) (2026-03-12)
 - [Claude-Prism — Local-First Academic Writing Workspace with AI](/learnAIDoc/wiki/claude-prism-academic-writing/) (2026-03-22)
 - [litellm Supply Chain Attack: How a Poisoned PyPI Package Nearly Compromised the AI Ecosystem](/learnAIDoc/wiki/litellm-supply-chain-attack/) (2026-03-26)
@@ -140,7 +109,6 @@ Total entries: 203
 - [AI Research Tools Landscape: FARS vs AutoResearch vs ARIS vs Elicit](/learnAIDoc/wiki/ai-research-tools-landscape/) (2026-04-26)
 - [GBrain — Garry Tan's Persistent Agent Memory System](/learnAIDoc/wiki/gbrain-agent-memory/) (2026-04-26)
 - [Dexter — Autonomous AI Agent for Deep Financial Research](/learnAIDoc/wiki/dexter-ai-financial-research/) (2026-05-08)
-- [SubQ — The First Subquadratic LLM: 12M Token Context at 5% of Opus Cost](/learnAIDoc/wiki/subq-subquadratic-sparse-attention/) (2026-05-08)
 - [Towards a Medical AI Scientist — Full Auto Clinical Research from Idea to Paper](/learnAIDoc/wiki/medical-ai-scientist/) (2026-05-08)
 - [academic-research-skills — Imbad0202's 4-Skill Claude Code Pipeline for Academic Research](/learnAIDoc/wiki/academic-research-skills-imbad0202/) (2026-05-12)
 - [Awesome-Auto-Research-Tools — A Curated Map of Automated-Science Projects](/learnAIDoc/wiki/awesome-auto-research-tools/) (2026-05-14)
@@ -157,11 +125,10 @@ Total entries: 203
 - [MIT Professor's NotebookLM Grading System — 47 Essays in 12 Minutes](/learnAIDoc/wiki/notebooklm-grading-education-paradox/) (2026-03-22)
 - [AI in Education — Teacher's Factory, Not Student's Cheat Tool](/learnAIDoc/wiki/ai-education-teacher-factory/) (2026-03-24)
 - [AI Mastery Games — Teaching AI Literacy Through Interactive Games](/learnAIDoc/wiki/ai-mastery-games/) (2026-04-04)
-- [Resumes Are Dead — Your .claude/ Folder Is Your New Career Card](/learnAIDoc/wiki/resume-dead-claude-folder-career/) (2026-04-05)
 - [AI Brain Fry — Why Deeper AI Use Makes You Less Productive, Not More](/learnAIDoc/wiki/ai-brain-fry-cognitive-fatigue/) (2026-04-06)
 - [OpenMAIC: Tsinghua's Multi-Agent AI Classroom](/learnAIDoc/wiki/openmaic-multi-agent-classroom/) (2026-04-07)
-- [Socratic Prompting — Ask Questions, Don't Give Instructions](/learnAIDoc/wiki/socratic-prompting-method/) (2026-04-13)
 - [claude.nagdy.me — Learn Claude Code by Doing, Not Reading](/learnAIDoc/wiki/claude-nagdy-interactive-learning/) (2026-04-13)
+- [Socratic Prompting — Ask Questions, Don't Give Instructions](/learnAIDoc/wiki/socratic-prompting-method/) (2026-04-13)
 - [What Researchers Should (and Shouldn't) Use LLMs For](/learnAIDoc/wiki/researcher-llm-use-boundaries/) (2026-04-17)
 - [Independent Thinking in the Age of AI — Visual PKM and 4D Knowledge](/learnAIDoc/wiki/independent-thinking-visual-pkm/) (2026-04-20)
 - [Anti-AI Exam Designer — A Claude Code Skill for AI-Resistant Exams](/learnAIDoc/wiki/anti-ai-exam-skill/) (2026-04-25)
@@ -180,7 +147,6 @@ Total entries: 203
 - [Building a Personal Knowledge Base — The LearnAI Workflow Guide](/learnAIDoc/wiki/learnai-knowledge-base-guide/) (2026-04-05)
 - [MuJing (幕境) — Learn English Vocabulary Through Movies and Real Context](/learnAIDoc/wiki/mujing-learn-english-movies/) (2026-04-06)
 - [Agentic AI Engineer Roadmap 2026 — Eight Pillars from Prompt to Production](/learnAIDoc/wiki/agentic-ai-engineer-roadmap-2026/) (2026-04-13)
-- [Bilingual Prompting — Why Mixing Chinese and English Unlocks Better AI Output](/learnAIDoc/wiki/bilingual-prompting-technique/) (2026-04-13)
 - [Mathematical Foundations of Reinforcement Learning — Free Textbook by Shiyu Zhao](/learnAIDoc/wiki/math-foundations-reinforcement-learning/) (2026-04-17)
 - [TimesFM 2.5 — Google's Zero-Shot Time Series Forecasting](/learnAIDoc/wiki/timesfm-25-time-series-forecasting/) (2026-04-17)
 - [7 Agent Architectures — From Single Agent to Enterprise Graph Workflows](/learnAIDoc/wiki/seven-agent-architectures/) (2026-05-08)
@@ -203,13 +169,11 @@ Total entries: 203
 ### Prompting & Writing
 - [Three Hidden Instructions That Stop Claude from Hallucinating](/learnAIDoc/wiki/claude-three-hidden-quality-prompts/) (2026-03-22)
 - [7 Framework Prompts That Turn Claude into a Thinking Partner](/learnAIDoc/wiki/seven-framework-prompts-thinking-partner/) (2026-03-26)
-- [The Secret of Great Prompts: Fewer Words, Better Results](/learnAIDoc/wiki/shortest-prompt-lines-that-work/) (2026-03-26)
 - [Anti-Sycophancy Prompt — Stop AI from Flattering You, Get Accurate Answers](/learnAIDoc/wiki/anti-sycophancy-system-prompt/) (2026-05-08)
 - [Killing AI Slop: avoid-ai-writing + stop-slop](/learnAIDoc/wiki/removing-ai-slop/) (2026-05-29)
 
 ### Creative & Media
 - [WebNovel Writer — How AI Writes 2M+ Word Novels Without Forgetting](/learnAIDoc/wiki/webnovel-writer-long-context/) (2026-04-08)
-- [Recordly — Open-Source Screen Recorder & Editor for Product Demos](/learnAIDoc/wiki/recordly-open-source-screen-recorder/) (2026-04-09)
 - [Toonflow — The AI Factory That Turns Novels Into Short Dramas](/learnAIDoc/wiki/toonflow-ai-short-drama/) (2026-04-10)
 - [InfiniteTalk — Unlimited-Length AI Talking Videos from a Single Photo](/learnAIDoc/wiki/infinitetalk-unlimited-ai-video/) (2026-04-13)
 - [GPT Image 2 水墨风 Slide Prompt — Structured Template for Ink-Wash Style Slides](/learnAIDoc/wiki/gpt-image-2-ink-style-slide-prompt/) (2026-05-11)
@@ -221,11 +185,8 @@ Total entries: 203
 - [Teaching Videos with Manim + Remotion — Two Engines for Code-Driven Explainers](/learnAIDoc/wiki/teaching-videos-manim-remotion/) (2026-06-03)
 
 ### Industry & Trends
-- [Vibe Marketing: The Step Most Founders Skip](/learnAIDoc/wiki/vibe-marketing/) (2026-02-08)
 - [Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era](/learnAIDoc/wiki/karpathy-end-of-coding/) (2026-03-22)
-- [Accio Work — One Person + AI Agents = Entire Business](/learnAIDoc/wiki/accio-work-ai-agent-business/) (2026-03-24)
 - [Career-Ops — The AI Job Search System That Landed a Head of Applied AI Role](/learnAIDoc/wiki/career-ops-ai-job-search/) (2026-04-13)
 - [10 Lessons for Agentic Coding — What Should We Do When Code Is Cheap?](/learnAIDoc/wiki/ten-lessons-agentic-coding/) (2026-05-09)
 - [Forward Deployed Engineer — AI时代的新岗位: On-Site Coder, Architect, and Consultant in One](/learnAIDoc/wiki/forward-deployed-engineer-ai/) (2026-05-19)
 - [Why I Don't Vibe Code — Jacob Harr's Defense of Friction and Essential Complexity](/learnAIDoc/wiki/i-dont-vibe-code-essay/) (2026-05-21)
-- [Claude Mythos and the Verification Problem in AI Security Claims](/learnAIDoc/wiki/claude-mythos-verification-crisis/) (2026-06-08)
