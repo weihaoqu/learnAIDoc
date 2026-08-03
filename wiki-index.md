@@ -1,6 +1,6 @@
 # LearnAI Wiki Index
-Generated: 2026-07-31
-Total entries: 187
+Generated: 2026-08-03
+Total entries: 188
 
 ## By Category
 
@@ -191,6 +191,7 @@ Total entries: 187
 - [7 Framework Prompts That Turn Claude into a Thinking Partner](/learnAIDoc/wiki/seven-framework-prompts-thinking-partner/) (2026-03-26)
 - [Anti-Sycophancy Prompt — Stop AI from Flattering You, Get Accurate Answers](/learnAIDoc/wiki/anti-sycophancy-system-prompt/) (2026-05-08)
 - [Killing AI Slop: avoid-ai-writing + stop-slop](/learnAIDoc/wiki/removing-ai-slop/) (2026-05-29)
+- [Editing AI-Sounding Writing: Which Skill Should You Use?](/learnAIDoc/wiki/removing-ai-taste-skill-list/) (2026-08-03)
 
 ### Creative & Media
 - [WebNovel Writer — How AI Writes 2M+ Word Novels Without Forgetting](/learnAIDoc/wiki/webnovel-writer-long-context/) (2026-04-08)
