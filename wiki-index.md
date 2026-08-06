@@ -1,6 +1,6 @@
 # LearnAI Wiki Index
 Generated: 2026-08-06
-Total entries: 189
+Total entries: 190
 
 ## By Category
 
@@ -126,6 +126,7 @@ Total entries: 189
 - [Research Skills Starter Pack — Install and Use Academic AI Skills Without the Hype](/learnAIDoc/wiki/research-skills-starter-pack/) (2026-07-31)
 - [AI in Science — More Individual Impact, Narrower Collective Focus](/learnAIDoc/wiki/ai-science-impact-contract-focus/) (2026-07-31)
 - [CARE — Evidence-Grounded Agentic Medical Reasoning](/learnAIDoc/wiki/care-clinical-accountability-medical-ai/) (2026-07-31)
+- [You Point, I Learn — Medical Segmentation Models That Adapt from User Clicks](/learnAIDoc/wiki/you-point-i-learn-medical-segmentation/) (2026-08-06)
 - [GPT-Red — Automated Red Teaming Through Self-Play](/learnAIDoc/wiki/gpt-red-automated-red-teaming/) (2026-07-31)
 - [ResearchArena — Why Agent-Written Papers Still Need Artifact-Aware Review](/learnAIDoc/wiki/researcharena-auto-research-benchmark/) (2026-07-31)
 
