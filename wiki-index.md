@@ -1,6 +1,6 @@
 # LearnAI Wiki Index
 Generated: 2026-08-06
-Total entries: 190
+Total entries: 191
 
 ## By Category
 
@@ -82,6 +82,7 @@ Total entries: 190
 - [open-slide — The Slide Framework Built for AI Coding Agents](/learnAIDoc/wiki/open-slide-agent-native-presentations/) (2026-05-09)
 - [How Anthropic Uses Skills — Thariq's 9-Category Framework & the Gotchas Pattern](/learnAIDoc/wiki/anthropic-skills-thariq-framework/) (2026-05-10)
 - [grill-me — When AI Interviews You Before Writing Code](/learnAIDoc/wiki/grill-me-skill/) (2026-05-14)
+- [leader — Turn Vague Ideas Into /goal-Ready Agent Task Briefs](/learnAIDoc/wiki/leader-skill-goal-task-briefs/) (2026-08-06)
 - [codegraph — Local Code Knowledge Graph for AI Coding Agents](/learnAIDoc/wiki/codegraph-pre-indexed-claude-code/) (2026-05-17)
 - [Paper-Code Joint Analysis & Contract-Driven Skill Design](/learnAIDoc/wiki/paper-code-joint-analysis-contract-driven/) (2026-05-17)
 - [html-anything — Claude Outputs Any Document Type as a Self-Contained HTML File, Zero Config](/learnAIDoc/wiki/html-anything-ai-generator/) (2026-05-19)
