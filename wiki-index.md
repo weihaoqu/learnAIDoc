@@ -1,6 +1,6 @@
 # LearnAI Wiki Index
-Generated: 2026-08-06
-Total entries: 191
+Generated: 2026-08-07
+Total entries: 192
 
 ## By Category
 
@@ -150,6 +150,7 @@ Total entries: 191
 - [Build a Free Online Survey with GitHub Pages + Google Sheets](/learnAIDoc/wiki/github-pages-google-sheets-survey/) (2026-05-02)
 - [AI+Education Career Path — Learning Science, Data, and Teaching Tools](/learnAIDoc/wiki/ai-education-career-path-2026/) (2026-07-31)
 - [U.S. AI in Education Priority — What the 2026 Federal Register Notice Means](/learnAIDoc/wiki/ai-education-federal-priority-2026/) (2026-07-31)
+- [LearnVector — Andrew Ng's AI-Native Learning Bet and the Cognitive-Offloading Problem](/learnAIDoc/wiki/learnvector-ai-native-learning/) (2026-08-07)
 
 ### Learning Resources
 - [Pull Requests (PR): What They Are and How to Use Them in Claude Code](/learnAIDoc/wiki/pull-requests-explained/) (2026-03-08)
