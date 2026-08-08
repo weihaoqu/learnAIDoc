@@ -3,7 +3,7 @@ title: "Graph Engineering — From Karpathy Loops to Agent Memory Graphs"
 date: 2026-08-07
 category: Learning Resources
 tags: [graph-engineering, agentic-engineering, autoresearch, karpathy, multi-agent, knowledge-graphs, langgraph, agent-memory]
-related: ["Autoresearch: 100 Autonomous ML Experiments Overnight", "Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "What is Agentic Engineering? A Teaching Primer", "LangGraph Stateful Business Workflows — Three Recipes from arXiv 2607.19297", "codegraph — Local Code Knowledge Graph for AI Coding Agents", "Graphify — Multimodal Tool Memory for AI Coding Agents", "Anthropic Managed Agents — Decoupling the Brain from the Hands"]
+related: ["AI Education Search-Space Design — Make Students Wider Before Faster", "Autoresearch: 100 Autonomous ML Experiments Overnight", "Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "What is Agentic Engineering? A Teaching Primer", "LangGraph Stateful Business Workflows — Three Recipes from arXiv 2607.19297", "codegraph — Local Code Knowledge Graph for AI Coding Agents", "Graphify — Multimodal Tool Memory for AI Coding Agents", "Anthropic Managed Agents — Decoupling the Brain from the Hands"]
 icon: "🕸️"
 ---
 

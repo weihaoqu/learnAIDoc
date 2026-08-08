@@ -3,7 +3,7 @@ title: "AI in Science — More Individual Impact, Narrower Collective Focus"
 date: 2026-07-31
 category: AI for Research
 tags: [ai-for-science, research-policy, scientific-impact, nature, academic-careers, research-methods]
-related: ["AI Agents for Academic Research & Writing — From KatmerCode to the Nature Playbook", "What Researchers Should (and Shouldn't) Use LLMs For", "AI-Assisted Research Workflow: Formulate → Find → Judge → Verify → Execute → Monitor → Record", "Quality-First Research Partnership: A Claude + Codex Working Agreement"]
+related: ["AI Education Search-Space Design — Make Students Wider Before Faster", "AI Agents for Academic Research & Writing — From KatmerCode to the Nature Playbook", "What Researchers Should (and Shouldn't) Use LLMs For", "AI-Assisted Research Workflow: Formulate → Find → Judge → Verify → Execute → Monitor → Record", "Quality-First Research Partnership: A Claude + Codex Working Agreement"]
 icon: "🔬"
 image: "/assets/images/ai-science-impact-contract-focus.png"
 ---

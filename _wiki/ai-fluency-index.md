@@ -5,7 +5,7 @@ category: AI for Teaching
 redirect_from:
   - "/wiki/ai education/ai-fluency-index/"
 tags: [ai-fluency, education, anthropic, research, critical-thinking, prompting]
-related: ["Learning in the AI Era: Amplify Your Thinking, Don't Outsource It"]
+related: ["AI Education Search-Space Design — Make Students Wider Before Faster", "Learning in the AI Era: Amplify Your Thinking, Don't Outsource It"]
 icon: "🎓"
 image: "/assets/images/ai-fluency-index.png"
 ---

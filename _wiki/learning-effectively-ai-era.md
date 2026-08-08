@@ -5,7 +5,7 @@ category: AI for Teaching
 redirect_from:
   - "/wiki/ai education/learning-effectively-ai-era/"
 tags: [learning, education, ai-fluency, critical-thinking, notebooklm, self-learning, study]
-related: ["AI Fluency Index: Why Your Best Prompts Might Lead to Your Worst Work", "Five Core Learning Prompts — From Memorization to Mastery", "MIT Professor's NotebookLM Grading System — 47 Essays in 12 Minutes", "OpenMAIC: Tsinghua's Multi-Agent AI Classroom", "Independent Thinking in the Age of AI — Visual PKM and 4D Knowledge"]
+related: ["AI Education Search-Space Design — Make Students Wider Before Faster", "AI Fluency Index: Why Your Best Prompts Might Lead to Your Worst Work", "Five Core Learning Prompts — From Memorization to Mastery", "MIT Professor's NotebookLM Grading System — 47 Essays in 12 Minutes", "OpenMAIC: Tsinghua's Multi-Agent AI Classroom", "Independent Thinking in the Age of AI — Visual PKM and 4D Knowledge"]
 icon: "🧠"
 image: "/assets/images/learning-effectively-ai-era.png"
 ---
