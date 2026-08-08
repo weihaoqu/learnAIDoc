@@ -1,6 +1,6 @@
 # LearnAI Wiki Index
-Generated: 2026-08-07
-Total entries: 193
+Generated: 2026-08-08
+Total entries: 194
 
 ## By Category
 
@@ -176,6 +176,7 @@ Total entries: 193
 - [Claude Code 101 — Anthropic's Official Onboarding Course](/learnAIDoc/wiki/claude-code-101/) (2026-05-14)
 - [What is Agentic Engineering? A Teaching Primer](/learnAIDoc/wiki/what-is-agentic-engineering/) (2026-05-15)
 - [Graph Engineering — From Karpathy Loops to Agent Memory Graphs](/learnAIDoc/wiki/graph-engineering-karpathy-agent-memory/) (2026-08-07)
+- [LangGraph Stateful Business Workflows — Three Recipes from arXiv 2607.19297](/learnAIDoc/wiki/langgraph-stateful-business-workflows/) (2026-08-08)
 - [Codex Orange Book — 花叔's Bilingual Codex Reference](/learnAIDoc/wiki/codex-orange-book-huashu/) (2026-05-17)
 - [MIT 6.5940 — Song Han's TinyML & Efficient Deep Learning Course](/learnAIDoc/wiki/mit-6-5940-song-han-tinyml-efficient/) (2026-05-18)
 - [How to Train Your GPT — Interactive ML Textbook for Building a 151M-Parameter LLM from Zero](/learnAIDoc/wiki/how-to-train-your-gpt/) (2026-05-19)
