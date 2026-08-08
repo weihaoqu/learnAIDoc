@@ -1,6 +1,6 @@
 # LearnAI Wiki Index
 Generated: 2026-08-08
-Total entries: 195
+Total entries: 196
 
 ## By Category
 
@@ -192,6 +192,7 @@ Total entries: 195
 - [Project N.O.M.A.D. — Offline Knowledge and AI Education Server](/learnAIDoc/wiki/project-nomad-offline-ai-education-server/) (2026-07-31)
 - [Socratopia AI Science I — Learning Neural Networks Through Socratic Dialogue](/learnAIDoc/wiki/socratopia-ai-science-i/) (2026-07-31)
 - [3Blue1Brown Neural Networks — Visual Foundations for ML, LLMs, and Diffusion](/learnAIDoc/wiki/3blue1brown-neural-networks-foundations/) (2026-08-06)
+- [DeepLearning.AI AI for Medicine — Practical Medical ML Course Path for Students](/learnAIDoc/wiki/deeplearning-ai-for-medicine-specialization/) (2026-08-08)
 
 ### Prompting & Writing
 - [Three Hidden Instructions That Stop Claude from Hallucinating](/learnAIDoc/wiki/claude-three-hidden-quality-prompts/) (2026-03-22)
