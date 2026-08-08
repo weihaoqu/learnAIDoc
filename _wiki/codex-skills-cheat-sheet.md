@@ -28,6 +28,7 @@ The July2 screenshot pass adds three durable skill pages to this router:
 | [/last30days](/learnAIDoc/wiki/last30days-research-skill/) | You need recent social/web/GitHub/arXiv signal before choosing what to research |
 | [book-to-skill](/learnAIDoc/wiki/book-to-skill-technical-books/) | You want a technical book or document set turned into a reusable skill |
 | [Cybersecurity Skills for AI Agents](/learnAIDoc/wiki/ai-agent-cybersecurity-skills/) | You need structured security workflows mapped to known frameworks |
+| [Codex Skill Watchlist — Media Generation and UI Quality](/learnAIDoc/wiki/codex-media-ui-skill-watchlist/) | You need to decide which trending media/UI skills are installed, worth testing, or only watchlist candidates |
 
 The same screenshot batch also included volatile "top 10 skill" lists, SuperClaude reminders, taste-skill reposts, and Claude/Codex setup videos. Those are useful for discovery, but they do not belong as standalone pages unless they add a workflow that is not already covered here.
 

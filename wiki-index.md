@@ -1,6 +1,6 @@
 # LearnAI Wiki Index
 Generated: 2026-08-08
-Total entries: 194
+Total entries: 195
 
 ## By Category
 
@@ -90,6 +90,7 @@ Total entries: 194
 - [MATLAB MCP — Connect Claude Code to Your Local MATLAB Environment](/learnAIDoc/wiki/matlab-mcp-claude-code/) (2026-05-21)
 - [notebooklm-py — Unofficial Python API for Google NotebookLM Automation](/learnAIDoc/wiki/notebooklm-py-python-api/) (2026-05-21)
 - [Personal AI Skill Cheat Sheet — When to Use Each Skill](/learnAIDoc/wiki/codex-skills-cheat-sheet/) (2026-05-24)
+- [Codex Skill Watchlist — Media Generation and UI Quality](/learnAIDoc/wiki/codex-media-ui-skill-watchlist/) (2026-08-08)
 - [Graphify — Multimodal Tool Memory for AI Coding Agents](/learnAIDoc/wiki/graphify-tool-memory-knowledge-graphs/) (2026-07-31)
 - [OpenWorker — Local-First Desktop Agents That Deliver Finished Work](/learnAIDoc/wiki/openworker-local-first-desktop-agents/) (2026-07-31)
 - [Ponytail — The Anti-Overengineering Skill for Coding Agents](/learnAIDoc/wiki/ponytail-anti-overengineering-skill/) (2026-07-31)
