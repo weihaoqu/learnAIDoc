@@ -3,7 +3,7 @@ title: "3Blue1Brown Neural Networks — Visual Foundations for ML, LLMs, and Dif
 date: 2026-08-06
 category: Learning Resources
 tags: [3blue1brown, neural-networks, machine-learning, llm, transformer, attention, diffusion, education, visual-learning]
-related: ["Stanford CS336 — Language Modeling from Scratch: The Complete Free LLM Curriculum", "How to Train Your GPT — Interactive ML Textbook for Building a 151M-Parameter LLM from Zero", "Socratopia AI Science I — Learning Neural Networks Through Socratic Dialogue", "LLM Architecture Gallery — Visual Reference for Every Major Model", "Karpathy's MicroGPT — A Complete GPT in 200 Lines of Pure Python"]
+related: ["Stanford CS336 — Language Modeling from Scratch: The Complete Free LLM Curriculum", "How to Train Your GPT — From-Scratch LLM Textbook with 12 Chapters and 28 Explainers", "Socratopia AI Science I — Learning Neural Networks Through Socratic Dialogue", "LLM Architecture Gallery — Visual Reference for Every Major Model", "Karpathy's MicroGPT — A Complete GPT in 200 Lines of Pure Python"]
 ---
 
 3Blue1Brown's **Neural networks** playlist is a particularly useful AI foundations sequence: it works before the math is fully comfortable and still remains useful after you know the equations. It starts with neurons, gradient descent, and backpropagation, then includes later videos on LLMs, transformers, attention, factual memory, cross-entropy, and diffusion models. For students, this is the right bridge between "AI feels magical" and "I can trace the mechanism."

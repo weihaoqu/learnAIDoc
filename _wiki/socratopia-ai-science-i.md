@@ -3,7 +3,7 @@ title: "Socratopia AI Science I — Learning Neural Networks Through Socratic Di
 date: 2026-07-31
 category: Learning Resources
 tags: [socratopia, ai-science, neural-networks, transformers, socratic-learning, ai-tutor, learning-resources]
-related: ["Stanford CS336 — Language Modeling from Scratch: The Complete Free LLM Curriculum", "How to Train Your GPT — Interactive ML Textbook for Building a 151M-Parameter LLM from Zero", "Learning in the AI Era: Amplify Your Thinking, Don't Outsource It", "Five Core Learning Prompts — From Memorization to Mastery"]
+related: ["Stanford CS336 — Language Modeling from Scratch: The Complete Free LLM Curriculum", "How to Train Your GPT — From-Scratch LLM Textbook with 12 Chapters and 28 Explainers", "Learning in the AI Era: Amplify Your Thinking, Don't Outsource It", "Five Core Learning Prompts — From Memorization to Mastery"]
 icon: "🎓"
 image: "/assets/images/socratopia-ai-science-i.jpg"
 ---

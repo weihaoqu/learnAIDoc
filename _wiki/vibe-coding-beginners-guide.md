@@ -3,7 +3,7 @@ title: "Vibe Coding 新手指南 — The Open-Source Primer for Non-Technical AI
 date: 2026-05-19
 category: Learning Resources
 tags: [vibe-coding, beginner, non-technical, ai-assisted-development, open-source, tutorial, no-code, low-code, claude-code, cursor]
-related: ["What is Agentic Engineering? A Teaching Primer", "Claude Code 101 — Anthropic's Official Onboarding Course", "Forward Deployed Engineer — AI时代的新岗位: On-Site Coder, Architect, and Consultant in One", "How to Train Your GPT — Interactive ML Textbook for Building a 151M-Parameter LLM from Zero", "Start Here — AI Agents & Claude Code for Beginners"]
+related: ["What is Agentic Engineering? A Teaching Primer", "Claude Code 101 — Anthropic's Official Onboarding Course", "Forward Deployed Engineer — AI时代的新岗位: On-Site Coder, Architect, and Consultant in One", "How to Train Your GPT — From-Scratch LLM Textbook with 12 Chapters and 28 Explainers", "Start Here — AI Agents & Claude Code for Beginners"]
 icon: "🌊"
 image: "/assets/images/vibe-coding-beginners-guide.png"
 ---
