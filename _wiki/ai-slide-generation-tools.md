@@ -4,7 +4,7 @@ date: 2026-05-21
 updated: 2026-08-09
 category: Creative & Media
 tags: [slides, presentations, html-slides, claude-code, agent-skills, teaching, ppt, manim, animation, open-source, hub]
-related: ["HTML PPT Studio — AI-Powered Presentation Skill for Claude Code", "Make Slides: AI-Powered Interactive Teaching Slides", "open-slide — The Slide Framework Built for AI Coding Agents", "GPT Image 2 水墨风 Slide Prompt — Structured Template for Ink-Wash Style Slides", "Teaching Videos with Manim + Remotion — Two Engines for Code-Driven Explainers", "html-video — Video-as-Code for Agentic Media Workflows"]
+related: ["HTML PPT Studio — AI-Powered Presentation Skill for Claude Code", "Make Slides: AI-Powered Interactive Teaching Slides", "open-slide — The Slide Framework Built for AI Coding Agents", "GPT Image 2 水墨风 Slide Prompt — Structured Template for Ink-Wash Style Slides", "Teaching Videos with Manim + Remotion — Two Engines for Code-Driven Explainers", "html-video — Video-as-Code for Agentic Media Workflows", "Slide Image to Editable PPTX — Tested Agent Workflow for Rebuilding Slide Screenshots"]
 icon: "📊"
 image: "/assets/images/ai-slide-generation-tools.png"
 ---
@@ -22,7 +22,7 @@ image: "/assets/images/ai-slide-generation-tools.png"
 | [GPT Image 2 水墨风](/learnAIDoc/wiki/gpt-image-2-ink-style-slide-prompt/) | Image-based slides | Ink-wash aesthetic academic slides | GPT Image 2 / CC pipeline | Ink-wash only |
 | [Math-To-Manim](/learnAIDoc/wiki/teaching-videos-manim-remotion/) | Animated video (MP4) | Prompt/LaTeX → Manim scene for math/CS | Claude Code + OpenAI Agents SDK | None (animation-focused) |
 | [CyberPPT](https://github.com/crazyykhllc-bit/CyberPPT) | Editable PPTX | Dense consulting-style decks from source material | Codex Skill | 8 fixed visual styles + QA gates |
-| [slide-image-to-editable-pptx](https://github.com/w1163222589-coder/slide-image-to-editable-pptx) | Editable PPTX | Turn slide screenshots into editable decks | Codex Skill | Reconstruction-focused |
+| [slide-image-to-editable-pptx](/learnAIDoc/wiki/slide-image-to-editable-pptx/) | Editable PPTX | Rebuild slide screenshots as editable decks | Codex Skill + manual QA | Reconstruction-focused |
 | [html-video](/learnAIDoc/wiki/html-video-video-as-code/) | MP4 video | Prompt/article/repo → HTML scenes → MP4 | Coding agents | Template gallery + optional soundtrack |
 
 ## Decision Guide
@@ -41,7 +41,7 @@ image: "/assets/images/ai-slide-generation-tools.png"
 
 **"I need an editable PowerPoint from dense source material" →** [CyberPPT](https://github.com/crazyykhllc-bit/CyberPPT) — evidence table → SCR storyline → page blueprint → editable PPTX, with strict QA gates. This is heavier than HTML slide generation and should be used for board-style, consulting-style, or data-heavy decks, not quick lectures.
 
-**"I already have image-based slides and need editable PPTX" →** [slide-image-to-editable-pptx](https://github.com/w1163222589-coder/slide-image-to-editable-pptx) — a scouted candidate for converting slide screenshots into editable PowerPoint. Treat it as experimental until tested on your own deck.
+**"I already have image-based slides and need editable PPTX" →** [slide-image-to-editable-pptx](/learnAIDoc/wiki/slide-image-to-editable-pptx/) — a locally tested reconstruction workflow pattern for rebuilding three repo example screenshots into layered PowerPoint objects. Still treat it as experimental on your own decks; our local test proved structural editability on three repo example slides, not broad automatic-converter reliability.
 
 **"I need an agent to render motion graphics or short videos locally" →** [html-video](/learnAIDoc/wiki/html-video-video-as-code/) — a scouted candidate for turning prompts, articles, or repos into HTML scenes and MP4 through browser rendering and `ffmpeg`.
 
@@ -80,9 +80,12 @@ Automates the prompt/LaTeX → Python animation code → Manim render → MP4 pi
 ### [CyberPPT](https://github.com/crazyykhllc-bit/CyberPPT) — Dense editable PowerPoint
 Built for consulting-style decks where evidence, page density, and editability matter. The workflow is deliberately staged: analyze source materials into an evidence table, converge on an SCR storyline, generate page blueprints, then rebuild slides as editable PPTX with QA gates for evidence, layout, typography, overflow, and visual fidelity. It is the right candidate when the output must be a real PowerPoint file, not a web deck.
 
+### [slide-image-to-editable-pptx](/learnAIDoc/wiki/slide-image-to-editable-pptx/) — Screenshot reconstruction
+A Codex skill pattern for turning slide screenshots or AI-generated slide images into editable PowerPoint decks. Its key idea is a three-layer reconstruction: complex visuals become replaceable images, layout structure becomes native PPT shapes, and readable content becomes text boxes. Our local test produced a 3-slide PPTX with many native text and shape objects and no full-slide image embedding, but the workflow is still manual/agent-guided rather than a polished one-command converter.
+
 ### Media Backlog
 
-The media-tool review also surfaced [PunithVT/ai-avatar-system](https://github.com/PunithVT/ai-avatar-system), [html-video](/learnAIDoc/wiki/html-video-video-as-code/), and `Y2A-Auto`. These are useful scouting leads, but only `html-video` is strong enough for this slide/video hub now. AI avatar systems need a separate teaching use case before becoming a wiki page; Y2A-Auto needs source verification before publishing.
+The media-tool review also surfaced [PunithVT/ai-avatar-system](https://github.com/PunithVT/ai-avatar-system) and `Y2A-Auto`. These are useful scouting leads, but they need a separate teaching use case or source verification before becoming standalone wiki pages.
 
 ## How LearnAI Team Could Use This Hub
 
