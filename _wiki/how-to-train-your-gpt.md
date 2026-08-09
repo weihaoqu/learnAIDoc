@@ -11,7 +11,7 @@ image: "/assets/images/how-to-train-your-gpt.png"
 
 **How to Train Your GPT** by [raiyanyahya](https://github.com/raiyanyahya/how-to-train-your-gpt) is an open-source walkthrough for building a modern-style decoder-only language model from scratch. When checked on August 9, 2026, the README described a 12-chapter interactive textbook with 7,500+ lines across the project materials, 28 companion explainer files, companion notebooks, a Colab entry point, and a CPU-friendly default run for a tiny 17M-parameter model before learners attempt the larger roughly GPT-2-small-sized configuration.
 
-*Source: [GitHub — raiyanyahya/how-to-train-your-gpt](https://github.com/raiyanyahya/how-to-train-your-gpt) | [Colab notebook](https://colab.research.google.com/github/raiyanyahya/how-to-train-your-gpt/blob/master/notebooks/colab_train.ipynb) | Surfaced via Q's Weibo screenshot of 蚁工厂, May 27, 2026*
+*Source: [GitHub — raiyanyahya/how-to-train-your-gpt](https://github.com/raiyanyahya/how-to-train-your-gpt); [Colab notebook](https://colab.research.google.com/github/raiyanyahya/how-to-train-your-gpt/blob/master/notebooks/colab_train.ipynb); surfaced via Q's Weibo screenshot of 蚁工厂, May 27, 2026*
 
 ## Why this matters
 
