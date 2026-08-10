@@ -3,7 +3,7 @@ title: "AI Education Search-Space Design — Make Students Wider Before Faster"
 date: 2026-08-08
 category: AI for Teaching
 tags: [ai-education, ai-literacy, graph-engineering, critical-thinking, students, pedagogy, search-space]
-related: ["AI in Science — More Individual Impact, Narrower Collective Focus", "Graph Engineering — From Karpathy Loops to Agent Memory Graphs", "Learning in the AI Era: Amplify Your Thinking, Don't Outsource It", "AI Fluency Index: Why Your Best Prompts Might Lead to Your Worst Work"]
+related: ["AI in Science — More Individual Impact, Narrower Collective Focus", "Graph Engineering — From Prompting AI to Managing AI Workflows", "Learning in the AI Era: Amplify Your Thinking, Don't Outsource It", "AI Fluency Index: Why Your Best Prompts Might Lead to Your Worst Work"]
 icon: "🧭"
 image: "/assets/images/ai-education-search-space-design.png"
 ---

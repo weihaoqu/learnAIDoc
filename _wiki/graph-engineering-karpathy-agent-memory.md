@@ -1,130 +1,193 @@
 ---
-title: "Graph Engineering — From Karpathy Loops to Agent Memory Graphs"
+title: "Graph Engineering — From Prompting AI to Managing AI Workflows"
 date: 2026-08-07
+updated: 2026-08-10
 category: Learning Resources
-tags: [graph-engineering, agentic-engineering, autoresearch, karpathy, multi-agent, knowledge-graphs, langgraph, agent-memory]
-related: ["AI Education Search-Space Design — Make Students Wider Before Faster", "Autoresearch: 100 Autonomous ML Experiments Overnight", "Karpathy: The End of Coding — Agents, AutoResearch, and the Loopy Era", "What is Agentic Engineering? A Teaching Primer", "LangGraph Stateful Business Workflows — Three Recipes from arXiv 2607.19297", "codegraph — Local Code Knowledge Graph for AI Coding Agents", "Graphify — Multimodal Tool Memory for AI Coding Agents", "Anthropic Managed Agents — Decoupling the Brain from the Hands"]
+tags: [graph-engineering, agentic-engineering, agent-graphs, knowledge-graphs, workflow, claude-code, codex, langgraph, human-in-the-loop]
+related: ["AI Infrastructure Literacy — The Missing Bridge to Agentic Building", "Agents Need Control Flow — Brian's Case for Code Over Prompts", "7 Agent Architectures — From Single Agent to Enterprise Graph Workflows", "LangGraph Stateful Business Workflows — Three Recipes from arXiv 2607.19297", "12-Factor Agents — Engineering Principles for Production AI", "What is Agentic Engineering? A Teaching Primer", "Anthropic Managed Agents — Decoupling the Brain from the Hands", "AI Education Search-Space Design — Make Students Wider Before Faster"]
 icon: "🕸️"
+image: "/assets/images/graph-engineering-karpathy-agent-memory.png"
 ---
 
-**Graph engineering** is one emerging label some people are using for a real architecture shift: complex agent systems need explicit state, routing, memory, evaluators, and audit trails. The useful part is not the slogan. It is the move from "write a better prompt" to "design the system that stores what agents did, routes the next step, and verifies claims."
+**Graph engineering** is a useful teaching label for the move from asking one AI chat for one answer to designing the workflow around AI: jobs, arrows, shared state, checks, merges, and human approval. The term is still loose and social-media-shaped, so the important part is not the label. The important part is learning to manage AI work as an auditable process instead of trusting one polished blob of text.
 
-The viral version that prompted this note overstates the provenance. The specific Google Drive URL that circulated with it was not accessible from this environment, and AI Builder Club's analysis of the circulated PDF says it was **not** an Anthropic or Karpathy publication. There is also no verified Anthropic announcement of a formal discipline called "graph engineering." So this entry treats the meme as a useful pointer, not as a trusted source.
+*Source: [Greg Isenberg — Why Graph Engineering will 10x your Claude/Codex, August 3, 2026](https://youtu.be/JWhICz1QR8M); [LangChain — 3 Years of Graph Engineering with LangGraph](https://www.langchain.com/blog/3-years-of-graph-engineering-with-langgraph); [Anthropic — How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system); [Microsoft GraphRAG docs](https://microsoft.github.io/graphrag/); [AutoGen GraphFlow docs](https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/graph-flow.html)*
 
-*Source: [karpathy/autoresearch](https://github.com/karpathy/autoresearch) | [Anthropic — How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system) | [LangChain — 3 Years of Graph Engineering with LangGraph](https://www.langchain.com/blog/3-years-of-graph-engineering-with-langgraph) | [AI Builder Club — Graph Engineering and the Karpathy Loop: What's Real](https://www.aibuilderclub.com/blog/graph-engineering-karpathy-loop) | [TuringPost — Is Graph Engineering Real?](https://www.turingpost.com/p/is-graph-engineering-real-why-everyone-is-talking-about-it) | [Ry Walker — AgentHub notes](https://rywalker.com/research/agenthub)*
+## What changed in this update
 
-## What is actually real
+The earlier version of this page, and the stable URL slug, treated graph engineering mainly as a viral term around Karpathy loops, LangGraph, agent memory, and knowledge graphs. This update broadens the page instead of creating a duplicate. The caution still holds: there is no verified Anthropic announcement that "graph engineering" is a formal discipline, and the circulated social-media framing should not be treated as authority.
 
-Separate the claims:
+Greg Isenberg's August 3, 2026 video is useful because it turns the idea into a beginner-friendly workflow model. A useful way to teach the video's framing is:
 
-| Claim | Status |
+| Layer | Practical question |
 |---|---|
-| Karpathy's AutoResearch loop is real | Public GitHub repo: agent edits code, trains briefly, checks metric, keeps or discards, repeats |
-| AgentHub-style collaboration is a real idea | Secondary reports describe a git-like DAG plus message board for agent swarms, but the original repo is no longer public |
-| Anthropic uses multi-agent orchestration | Official Anthropic engineering post describes a lead agent delegating to subagents with objectives, output formats, tool guidance, and boundaries |
-| LangGraph-style workflow graphs are real | LangGraph models workflows as nodes, edges, state, loops, routing, and checkpoints; a node can contain agent behavior |
-| "Anthropic launched Graph Engineering" | Not verified; treat as social-media packaging |
-| "1000x better" | Not a benchmark; ignore unless a reproducible measurement appears |
+| **Prompt engineering** | How do I ask the AI better? |
+| **Context engineering** | What information should the AI see? |
+| **Knowledge graph** | How do facts, entities, claims, and sources connect? |
+| **Agent graph** | How should work move between steps, checks, and approvals? |
 
-The lesson is not that one company coined the final term. The lesson is that many serious agent systems increasingly look like software systems with explicit control flow and memory.
+For LearnAI, the fourth row is the main lesson. Students should not only learn how to ask a model for an answer. They should learn how to design the work so the answer is produced through visible intermediate artifacts.
 
-## From prompt to loop to graph
+## Chat vs graph
+
+A chat-only workflow compresses too much responsibility into one model pass:
 
 ```text
-Prompting
-  one model call tries to solve the task
-
-Loop engineering
-  model proposes action
-  tool runs
-  verifier checks
-  keep / retry / discard
-
-Graph engineering
-  many loops run as nodes
-  state is shared through typed memory
-  routing decides the next node
-  evaluators check claims
-  traces survive the session
+question
+  -> model decides what matters
+  -> model researches
+  -> model interprets
+  -> model recommends
+  -> model grades its own confidence
 ```
 
-Karpathy's AutoResearch is the cleanest loop example. The agent modifies a small training setup, runs a short experiment, checks whether the validation metric improved, then keeps or discards the change. That is powerful because the verifier is not subjective judgment. It is a number.
+That may be fine for a small question. It is fragile when the answer affects code, research direction, customer communication, grading, or business decisions.
 
-The graph idea appears when one loop is no longer enough. If many agents explore in parallel, you need a shared memory surface, a way to prevent duplicate work, and an evaluator that can say which claims are backed by evidence.
-
-## Why graphs help agents
-
-Agents lose quality when everything is trapped in one transcript. A graph gives the system durable structure:
-
-| Need | Graph representation |
-|---|---|
-| Who did what | agent node + action edge |
-| What was learned | claim node with source edge |
-| What changed | commit / artifact node |
-| What remains uncertain | open-question node |
-| What to do next | routed edge based on state |
-| What passed verification | evaluator edge with evidence |
-
-This does not require a fancy knowledge-graph product. A git DAG, SQLite table, issue graph, LangGraph state object, codegraph index, or Obsidian note graph can all play part of the role. The key is that information becomes addressable and checkable instead of disappearing into chat history.
-
-## Anthropic's real lesson
-
-Anthropic's official multi-agent research-system post does not say "graph engineering." It does say something more practical: a lead agent must know how to delegate. Subagents need specific objectives, output formats, tool/source guidance, and clear boundaries. Anthropic also describes scaling the number of agents to query complexity and watching agent simulations to find failure modes.
-
-That maps cleanly onto graph thinking:
+A graph workflow separates the jobs:
 
 ```text
-lead agent
-  -> creates task nodes
-  -> assigns subagents
-  -> gathers evidence
-  -> routes follow-up work
-  -> synthesizes answer
+question
+  -> planner
+  -> researcher A
+  -> researcher B
+  -> researcher C
+  -> skeptic / verifier
+  -> merger / synthesis
+  -> human approval
 ```
 
-The architecture is not magic. It is work decomposition plus explicit interfaces.
+The final output may still be a memo, answer, code change, or post. The difference is that the work behind it becomes inspectable.
 
-## When not to use it
+## The diamond pattern
 
-TuringPost's critique is useful: the arrival of a new term tempts people to rebuild every agent as a distributed system. Most tasks still need one model, one tool loop, and one clear done condition.
+The most reusable beginner pattern is a diamond:
 
-Use graph engineering when at least one of these is true:
+```text
+                         planner
+                            |
+          +-----------------+-----------------+
+          |                 |                 |
+ customer researcher  competitor researcher  distribution researcher
+          |                 |                 |
+          +-----------------+-----------------+
+                            |
+                         skeptic
+                            |
+                          merge
+                            |
+                      human decision
+```
 
-- multiple agents need to work in parallel
-- evidence must survive across sessions
-- claims need source links and independent verification
-- routing depends on state, not just the next prompt
-- you need rollback, audit, or replay
-- repeated work is happening because the agent forgets what it already checked
+Use it when a task has multiple independent angles and the answer should be checked before it matters. A startup idea review, literature scan, support escalation, content package, or coding change can all fit this shape.
 
-Skip it when the task is linear, short, and easy to verify with one command.
+The key design move is **separating workers from checkers**. A lot of AI work fails because the same model produces the answer and then certifies the answer. In a graph, checking is its own job.
 
-## LearnAI teaching model
+## Knowledge graph vs agent graph
 
-Teach it as a three-stage maturity ladder:
+These two meanings of "graph" often get mixed together:
 
-| Stage | Student question |
-|---|---|
-| Prompt | Did I ask clearly? |
-| Loop | Did I define a verifier? |
-| Graph | Did I preserve state, evidence, and routing? |
+| Type | What it represents | Example |
+|---|---|---|
+| **Knowledge graph** | Relationships in information | Customer -> company -> product -> support issue -> feature owner |
+| **Agent graph** | Movement of work | Classify -> research -> draft -> verify -> approve |
 
-For a lab, give students the same task in three forms:
+Microsoft's GraphRAG is a knowledge-graph/RAG example: it extracts entities, relationships, and community-level summaries from text, builds graph/community structure, and uses that structure during retrieval. LangGraph and AutoGen GraphFlow are examples of graph/workflow orchestration for agentic systems: they represent control flow through nodes, edges, state, conditional branches, loops, and human gates.
 
-1. One prompt that tries to solve everything.
-2. A loop with a verifier and retry rule.
-3. A graph with task nodes, evidence nodes, and evaluator edges.
+Good systems can use both. A support workflow might use a knowledge graph to understand the customer/product relationship, then an agent graph to decide whether to answer, escalate, refund, or ask a human.
 
-Then ask: which version can another student audit tomorrow?
+## Three implementation levels
+
+Do not start by installing a framework. Start by drawing the work.
+
+| Level | How to run it | When it is enough |
+|---|---|---|
+| **1. Manual graph** | Draw jobs and arrows in Excalidraw, tldraw, Obsidian Canvas, or a whiteboard | First run of a new workflow |
+| **2. File graph** | Use Claude Code or Codex with files like `plan.md`, `customer.md`, `competitors.md`, `review.md`, `recommendation.md` | Repeatable personal/team workflow with an audit trail |
+| **3. Orchestrated graph** | Use LangGraph, AutoGen GraphFlow, workflow automation/orchestration tools such as n8n or Make, or small scripts | Production workflow with state, retries, tools, approvals, and persistence |
+
+The file graph is the best teaching step. It makes state concrete:
+
+```text
+graph-workflow/
+  plan.md
+  customer-research.md
+  competitor-research.md
+  distribution-research.md
+  skeptic-review.md
+  recommendation.md
+  decision-log.md
+```
+
+Students can inspect each file, compare claims to evidence, and see where the human decision enters. That is much harder when everything lives inside one chat transcript.
+
+## When to use graph engineering
+
+Use a graph when the work has:
+
+- multiple steps
+- multiple sources
+- parallelizable branches
+- explicit checks
+- risk or approvals
+- reusable state
+- a final output that should be audited later
+
+Skip it when the work is short, linear, and easy to verify. Summarizing a small email does not need a graph. Reviewing a repo change, preparing a research memo, triaging support risk, or deciding whether to launch an idea often does.
+
+## Coding-agent version
+
+For Claude Code or Codex, a simple graph can look like this:
+
+```text
+Q request
+  -> plan/spec
+  -> implementation
+  -> tests
+  -> independent review
+  -> fix review issues
+  -> final verification
+  -> human approval before push/deploy
+```
+
+That is already how reliable agent work feels in practice. The coding model writing code is only one node. Planning, testing, browser inspection, diff review, and push approval are separate nodes with different failure modes.
+
+This is also why graph engineering connects to [harness engineering](/learnAIDoc/wiki/harness-engineering-agents/). By harness, I mean the surrounding tools, files, policies, review gates, and state that let the model act. The graph is the shape of the work moving through that harness.
+
+## Teaching model for students
+
+Use this as a lab:
+
+1. Give students one broad task: "Should we build an AI study assistant for first-year CS students?"
+2. Have them ask one chat for an answer.
+3. Have them draw the diamond graph.
+4. Assign each branch a file.
+5. Require a skeptic file that attacks unsupported claims.
+6. Require a final recommendation that cites which branch each claim came from.
+7. Ask students which version another person could audit tomorrow.
+
+The learning outcome is not "students can use LangGraph." The learning outcome is:
+
+```text
+Students can turn AI assistance into a traceable workflow.
+```
+
+That matters because AI fluency is not just prompt fluency. It is knowing where evidence, judgment, and responsibility sit in the process.
+
+## Important caveats
+
+- **The term is not settled.** Treat "graph engineering" as a useful map, not a formal standard.
+- **Bigger graphs are often worse.** More agents can mean more coordination cost, repeated mistakes, and false confidence.
+- **Do not automate a workflow you do not understand.** If the manual graph does not improve quality, automation will only scale the confusion.
+- **Human gates belong where mistakes are expensive.** Public posts, customer emails, refunds, code deploys, grading, and production data need stricter approval than private drafts.
+- **A graph is not a substitute for verification.** It gives you places to put verification; it does not guarantee verification happened.
 
 ## Best LearnAI use
 
-Use this entry to connect several existing wiki threads:
+This page should sit between:
 
-- **AutoResearch** shows the keep-or-discard loop.
-- **Agentic Engineering** names the engineering discipline.
-- **LangGraph Stateful Business Workflows** shows three runnable state-graph recipes.
-- **codegraph / Graphify** show graph-shaped context and tool memory as tooling.
-- **Anthropic multi-agent research** shows delegation and boundary design.
+- [AI Infrastructure Literacy](/learnAIDoc/wiki/ai-infrastructure-literacy/) — why students need to see files, tools, diffs, and evidence
+- [Agents Need Control Flow](/learnAIDoc/wiki/agents-need-control-flow/) — why prompts alone are not enough for reliable agents
+- [LangGraph Stateful Business Workflows](/learnAIDoc/wiki/langgraph-stateful-business-workflows/) — runnable recipes once students understand the shape
+- [7 Agent Architectures](/learnAIDoc/wiki/seven-agent-architectures/) — where graph/workflow engines fit in the broader architecture ladder
 
-The takeaway for students is blunt: agent quality is no longer only about model quality. It is about the engineering substrate around the model: memory, routing, verification, and human control.
+The blunt takeaway: prompt engineering helps you talk to AI. Graph engineering helps you manage AI work.

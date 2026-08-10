@@ -3,7 +3,7 @@ title: "LangGraph Stateful Business Workflows — Three Recipes from arXiv 2607.
 date: 2026-08-08
 category: Learning Resources
 tags: [langgraph, graph-engineering, ai-agents, workflow, business-process, hitl, rag, text-to-sql, checkpoints, paper]
-related: ["Graph Engineering — From Karpathy Loops to Agent Memory Graphs", "7 Agent Architectures — From Single Agent to Enterprise Graph Workflows", "All Agentic Architectures — 17+ Runnable Jupyter Notebook Implementations", "12-Factor Agents — Engineering Principles for Production AI", "Agents Need Control Flow — Brian's Case for Code Over Prompts"]
+related: ["Graph Engineering — From Prompting AI to Managing AI Workflows", "7 Agent Architectures — From Single Agent to Enterprise Graph Workflows", "All Agentic Architectures — 17+ Runnable Jupyter Notebook Implementations", "12-Factor Agents — Engineering Principles for Production AI", "Agents Need Control Flow — Brian's Case for Code Over Prompts"]
 icon: "🧭"
 ---
 
