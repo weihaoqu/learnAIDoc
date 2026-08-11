@@ -10,7 +10,7 @@ image: "/assets/images/grill-me-ai-development-flow-slides.png"
 
 **This entry is a synthesis inspired by the linked `/grill-me` video and expanded with Matt Pocock's skills repo: a 15-slide teaching artifact for using AI agents without surrendering design decisions. The key pattern is simple: let the agent interrogate the human first, freeze the decisions into a spec, cut vertical tickets, execute with TDD, review against both code quality and the spec, then write the workflow down as reusable agent discipline.**
 
-*Source basis: [linked video — "700 萬人下載的 /grill-me，Matt Pocock 到底寫了什麼？"](https://www.youtube.com/watch?v=aR97E7aKEgg); [mattpocock/skills repo snapshot](https://github.com/mattpocock/skills/tree/84fdeffd12f2ee307994d1eb6feb48173b6e0502); internal deck generated from transcript-derived notes, repo inspection, and visual chapter sampling. The "700 萬人下載" phrase is part of the video title, not a usage metric independently verified here. Visual chapter sampling was used to match the deck's visual rhythm, not as a comprehensive factual audit.*
+*Source basis: [linked video — "700 萬人下載的 /grill-me，Matt Pocock 到底寫了什麼？"](https://www.youtube.com/watch?v=aR97E7aKEgg); [mattpocock/skills repo snapshot](https://github.com/mattpocock/skills/tree/84fdeffd12f2ee307994d1eb6feb48173b6e0502); public AIHero pages on [`/grill-me`](https://www.aihero.dev/skills-grill-me), [`grill-with-docs`](https://www.aihero.dev/grill-with-docs), and ["My 'Grill Me' Skill Went Viral"](https://www.aihero.dev/my-grill-me-skill-has-gone-viral); internal deck generated from transcript-derived notes, repo inspection, and visual chapter sampling. The "700 萬人下載" phrase is part of the video title, not a usage metric independently verified here. Visual chapter sampling was used to match the deck's visual rhythm, not as a comprehensive factual audit.*
 
 Framing note: the post intentionally separates three layers: **video inspiration**, **repo-grounded skill behavior**, and **LearnAI workflow synthesis**. Treat the pipeline below as a teaching pattern derived from those sources, not as a verbatim workflow prescribed by the video.
 
@@ -35,6 +35,14 @@ grilling -> to-spec -> to-tickets -> implement -> tdd -> code-review
 ```
 
 That matters because many practical AI coding failures are not caused by the model being unable to write code. They come from letting the model silently decide product behavior, edge cases, architecture boundaries, and testing standards before the human has noticed those decisions exist.
+
+## AIHero Clarification: What `/grill-me` Is For
+
+The public AIHero pages make the role of `/grill-me` sharper than the video alone. [`/grill-me`](https://www.aihero.dev/skills-grill-me) is best understood as the **entry-point questioning loop**: it is portable, stateless, and useful even when there is no repo. Its job is to turn a vague plan into explicit decisions by asking questions, exploring the codebase only when that helps answer a question, and giving the user a recommended answer to accept, reject, or edit.
+
+That means `/grill-me` is not the whole build workflow. It is still valuable whenever uncertainty is high, including later in a project, but its main output is clarified context. In the AIHero framing, if the work is software, the same conversation can then move into [`to-spec`](https://www.aihero.dev/skills-to-spec). In this post's LearnAI framing, that is where the build workflow begins.
+
+Use [`grill-with-docs`](https://www.aihero.dev/grill-with-docs) when repo-grounded continuity matters: it runs the same interview style, but reads the codebase and records what it learns as durable artifacts such as `CONTEXT.md` and ADRs. Use [`wayfinder`](https://www.aihero.dev/skills-wayfinder) when the effort is too large for one grilling session. Use a prototype when the question is not really answerable by talking, such as an interaction feel or layout choice.
 
 ## The Workflow
 
@@ -207,6 +215,11 @@ The goal is not to make students memorize Matt Pocock's skills. The goal is to t
 ## References
 
 - ["700 萬人下載的 /grill-me，Matt Pocock 到底寫了什麼？"](https://www.youtube.com/watch?v=aR97E7aKEgg), YouTube video.
+- [Matt Pocock — "My 'Grill Me' Skill Went Viral"](https://www.aihero.dev/my-grill-me-skill-has-gone-viral), AIHero.
+- [Matt Pocock — "The /grill-me Skill"](https://www.aihero.dev/skills-grill-me), AIHero.
+- [Matt Pocock — "grill-with-docs: Align Before You Build"](https://www.aihero.dev/grill-with-docs), AIHero.
+- [Matt Pocock — "The /to-spec Skill"](https://www.aihero.dev/skills-to-spec), AIHero.
+- [Matt Pocock — "The /wayfinder Skill"](https://www.aihero.dev/skills-wayfinder), AIHero.
 - [mattpocock/skills](https://github.com/mattpocock/skills), repo snapshot used here: [`84fdeffd12f2ee307994d1eb6feb48173b6e0502`](https://github.com/mattpocock/skills/tree/84fdeffd12f2ee307994d1eb6feb48173b6e0502).
 - Upstream skill files consulted: [`grill-me`](https://github.com/mattpocock/skills/blob/84fdeffd12f2ee307994d1eb6feb48173b6e0502/skills/productivity/grill-me/SKILL.md), [`grilling`](https://github.com/mattpocock/skills/blob/84fdeffd12f2ee307994d1eb6feb48173b6e0502/skills/productivity/grilling/SKILL.md), [`to-spec`](https://github.com/mattpocock/skills/blob/84fdeffd12f2ee307994d1eb6feb48173b6e0502/skills/engineering/to-spec/SKILL.md), [`to-tickets`](https://github.com/mattpocock/skills/blob/84fdeffd12f2ee307994d1eb6feb48173b6e0502/skills/engineering/to-tickets/SKILL.md), [`implement`](https://github.com/mattpocock/skills/blob/84fdeffd12f2ee307994d1eb6feb48173b6e0502/skills/engineering/implement/SKILL.md), [`tdd`](https://github.com/mattpocock/skills/blob/84fdeffd12f2ee307994d1eb6feb48173b6e0502/skills/engineering/tdd/SKILL.md), [`code-review`](https://github.com/mattpocock/skills/blob/84fdeffd12f2ee307994d1eb6feb48173b6e0502/skills/engineering/code-review/SKILL.md), [`improve-codebase-architecture`](https://github.com/mattpocock/skills/blob/84fdeffd12f2ee307994d1eb6feb48173b6e0502/skills/engineering/improve-codebase-architecture/SKILL.md), and [`writing-for-agents`](https://github.com/mattpocock/skills/blob/84fdeffd12f2ee307994d1eb6feb48173b6e0502/skills/productivity/writing-for-agents/SKILL.md).
 - Related LearnAI entries: [grill-me — When AI Interviews You Before Writing Code](/learnAIDoc/wiki/grill-me-skill/), [Matt Pocock's Skills — Claude Code for Real Engineers](/learnAIDoc/wiki/matt-pocock-skills-real-engineers/), [AI Slide Generation with Claude Code](/learnAIDoc/wiki/ai-slide-generation-tools/).
