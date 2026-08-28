@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#DAD7CF" stroke-width="1" opacity="0.45"/>
+    </pattern>
+    <marker id="arrow" markerWidth="11" markerHeight="11" refX="9" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,7 L10,3.5 z" fill="#0F766E"/>
+    </marker>
+  </defs>
+  <style>
+    .ui { font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Arial, sans-serif; letter-spacing: 0; }
+    .mono { font-family: "SFMono-Regular", "SF Mono", Consolas, "Liberation Mono", Menlo, monospace; letter-spacing: 0; }
+  </style>
+  <rect width="1600" height="900" fill="#F6F4EE"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect x="42" y="42" width="1516" height="816" rx="8" fill="#FFFFFF" opacity="0.74"/>
+  <path d="M42 168 H1558" stroke="#BDB7AC" stroke-width="2"/>
+  <g>
+    <rect x="86" y="66" width="128" height="42" rx="8" fill="#0F766E" opacity="0.12" stroke="#0F766E" stroke-width="1.5"/>
+    <text class="mono" x="104" y="94" fill="#0F766E" font-size="19" font-weight="800">REFRAME</text>
+  </g>
+    <text class="ui" x="86" y="185" fill="#1B1B1F" font-size="56" font-weight="850" text-anchor="start">&quot;Did they use AI?&quot;</text><text class="ui" x="86" y="251" fill="#1B1B1F" font-size="56" font-weight="850" text-anchor="start">is the wrong endpoint</text>
+    <text class="ui" x="90" y="347" fill="#666A73" font-size="27" font-weight="520" text-anchor="start">The ethical target is accountable learning.</text><circle cx="112" cy="537" r="6" fill="#0F766E"/><text class="ui" x="136" y="545" fill="#1B1B1F" font-size="24" font-weight="560" text-anchor="start">Did the student learn?</text><circle cx="112" cy="584" r="6" fill="#0F766E"/><text class="ui" x="136" y="592" fill="#1B1B1F" font-size="24" font-weight="560" text-anchor="start">Can they defend the work?</text><circle cx="112" cy="631" r="6" fill="#0F766E"/><text class="ui" x="136" y="639" fill="#1B1B1F" font-size="24" font-weight="560" text-anchor="start">Was assistance disclosed?</text><circle cx="112" cy="678" r="6" fill="#0F766E"/><text class="ui" x="136" y="686" fill="#1B1B1F" font-size="24" font-weight="560" text-anchor="start">Was private material protected?</text><g transform="translate(730 250)">
+    <rect x="0" y="0" width="360" height="250" rx="8" fill="#FFF8F6" stroke="#B91C1C" stroke-width="2"/>
+    <text class="ui" x="180" y="92" fill="#B91C1C" font-size="30" font-weight="850" text-anchor="middle">Did they use AI?</text>
+    <path d="M72 150 L288 150" stroke="#B91C1C" stroke-width="10" stroke-linecap="round"/>
+    <text class="ui" x="180" y="204" fill="#666A73" font-size="23" text-anchor="middle">detection endpoint</text>
+  </g><path d="M 1096 375 C 1109 375, 1109 375, 1122 375" fill="none" stroke="#0F766E" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/><g transform="translate(1130 250)">
+    <rect x="0" y="0" width="360" height="250" rx="8" fill="#F6FFF8" stroke="#15803D" stroke-width="2"/>
+    <text class="ui" x="180" y="82" fill="#15803D" font-size="30" font-weight="850" text-anchor="middle">Did they learn?</text>
+    <text class="ui" x="180" y="139" fill="#1B1B1F" font-size="24" font-weight="750" text-anchor="middle">explain</text>
+    <text class="ui" x="180" y="181" fill="#1B1B1F" font-size="24" font-weight="750" text-anchor="middle">verify</text>
+    <text class="ui" x="180" y="223" fill="#1B1B1F" font-size="24" font-weight="750" text-anchor="middle">defend</text>
+  </g>
+</svg>

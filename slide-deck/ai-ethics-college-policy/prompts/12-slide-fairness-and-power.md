@@ -1,0 +1,20 @@
+# 12-slide-fairness-and-power
+
+Use case: higher-education AI ethics teaching deck
+Asset type: 16:9 presentation slide
+Primary request: Render a clean academic-policy slide in English.
+Style: warm white paper background, high-contrast black text, teal/cobalt/amber/red/green accents, structured cards, decision diagrams, no logos, no decorative blobs, no stock AI imagery.
+Slide type: Content
+Layout: power-map
+Headline:
+- Ambiguity
+- reallocates advantage
+Subtitle:
+- Unequal access becomes invisible when policy stays vague.
+Body:
+- Paid models and AI fluency compound
+- Students carry punishment risk
+- Vendors gain data and dependency
+- Universities must define access and appeals
+Visual direction: Power map across student, teacher, university, and vendor.
+Execution note: This deck renders locally from SVG for exact text fidelity; this prompt records the intended image-generation spec for reproducibility.

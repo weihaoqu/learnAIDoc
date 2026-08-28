@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#DAD7CF" stroke-width="1" opacity="0.45"/>
+    </pattern>
+    <marker id="arrow" markerWidth="11" markerHeight="11" refX="9" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,7 L10,3.5 z" fill="#0F766E"/>
+    </marker>
+  </defs>
+  <style>
+    .ui { font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Arial, sans-serif; letter-spacing: 0; }
+    .mono { font-family: "SFMono-Regular", "SF Mono", Consolas, "Liberation Mono", Menlo, monospace; letter-spacing: 0; }
+  </style>
+  <rect width="1600" height="900" fill="#F6F4EE"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect x="42" y="42" width="1516" height="816" rx="8" fill="#FFFFFF" opacity="0.74"/>
+  <path d="M42 168 H1558" stroke="#BDB7AC" stroke-width="2"/>
+  <g>
+    <rect x="86" y="66" width="218" height="42" rx="8" fill="#0F766E" opacity="0.12" stroke="#0F766E" stroke-width="1.5"/>
+    <text class="mono" x="104" y="94" fill="#0F766E" font-size="19" font-weight="800">HOMEWORK DESIGN</text>
+  </g>
+    <text class="ui" x="86" y="185" fill="#1B1B1F" font-size="56" font-weight="850" text-anchor="start">Homework: use AI</text><text class="ui" x="86" y="251" fill="#1B1B1F" font-size="56" font-weight="850" text-anchor="start">as a thinking partner</text>
+    <text class="ui" x="90" y="347" fill="#666A73" font-size="27" font-weight="520" text-anchor="start">The final product must still prove student</text><text class="ui" x="90" y="382" fill="#666A73" font-size="27" font-weight="520" text-anchor="start">understanding.</text><circle cx="112" cy="552" r="6" fill="#0F766E"/><text class="ui" x="136" y="560" fill="#1B1B1F" font-size="24" font-weight="560" text-anchor="start">900-1200 word report</text><circle cx="112" cy="599" r="6" fill="#0F766E"/><text class="ui" x="136" y="607" fill="#1B1B1F" font-size="24" font-weight="560" text-anchor="start">Disclosure appendix</text><circle cx="112" cy="646" r="6" fill="#0F766E"/><text class="ui" x="136" y="654" fill="#1B1B1F" font-size="24" font-weight="560" text-anchor="start">Three prompt excerpts or</text><text class="ui" x="136" y="685" fill="#1B1B1F" font-size="24" font-weight="560" text-anchor="start">summaries</text><circle cx="112" cy="724" r="6" fill="#0F766E"/><text class="ui" x="136" y="732" fill="#1B1B1F" font-size="24" font-weight="560" text-anchor="start">Verification checklist</text><circle cx="112" cy="771" r="6" fill="#0F766E"/><text class="ui" x="136" y="779" fill="#1B1B1F" font-size="24" font-weight="560" text-anchor="start">Five-minute presentation</text><g transform="translate(720 235)">
+    <rect x="0" y="0" width="570" height="470" rx="8" fill="#FFFFFF" stroke="#1B1B1F" stroke-width="2"/>
+    <text class="ui" x="34" y="62" fill="#1B1B1F" font-size="32" font-weight="900">Assignment packet</text>
+    <g><rect x="40" y="108" width="24" height="24" rx="5" fill="#0F766E" opacity="0.14" stroke="#0F766E" stroke-width="2"/><text class="ui" x="82" y="128" fill="#1B1B1F" font-size="24" font-weight="700">Final report</text></g><g><rect x="40" y="163" width="24" height="24" rx="5" fill="#0F766E" opacity="0.14" stroke="#0F766E" stroke-width="2"/><text class="ui" x="82" y="183" fill="#1B1B1F" font-size="24" font-weight="700">AI disclosure appendix</text></g><g><rect x="40" y="218" width="24" height="24" rx="5" fill="#0F766E" opacity="0.14" stroke="#0F766E" stroke-width="2"/><text class="ui" x="82" y="238" fill="#1B1B1F" font-size="24" font-weight="700">3 prompt excerpts / summaries</text></g><g><rect x="40" y="273" width="24" height="24" rx="5" fill="#0F766E" opacity="0.14" stroke="#0F766E" stroke-width="2"/><text class="ui" x="82" y="293" fill="#1B1B1F" font-size="24" font-weight="700">Source verification checklist</text></g><g><rect x="40" y="328" width="24" height="24" rx="5" fill="#0F766E" opacity="0.14" stroke="#0F766E" stroke-width="2"/><text class="ui" x="82" y="348" fill="#1B1B1F" font-size="24" font-weight="700">Reflection on learning</text></g><g><rect x="40" y="383" width="24" height="24" rx="5" fill="#0F766E" opacity="0.14" stroke="#0F766E" stroke-width="2"/><text class="ui" x="82" y="403" fill="#1B1B1F" font-size="24" font-weight="700">5-minute presentation</text></g>
+  </g>
+</svg>

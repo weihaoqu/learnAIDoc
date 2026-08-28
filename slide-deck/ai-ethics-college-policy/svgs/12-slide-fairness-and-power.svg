@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#DAD7CF" stroke-width="1" opacity="0.45"/>
+    </pattern>
+    <marker id="arrow" markerWidth="11" markerHeight="11" refX="9" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,7 L10,3.5 z" fill="#0F766E"/>
+    </marker>
+  </defs>
+  <style>
+    .ui { font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Arial, sans-serif; letter-spacing: 0; }
+    .mono { font-family: "SFMono-Regular", "SF Mono", Consolas, "Liberation Mono", Menlo, monospace; letter-spacing: 0; }
+  </style>
+  <rect width="1600" height="900" fill="#F6F4EE"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect x="42" y="42" width="1516" height="816" rx="8" fill="#FFFFFF" opacity="0.74"/>
+  <path d="M42 168 H1558" stroke="#BDB7AC" stroke-width="2"/>
+  <g>
+    <rect x="86" y="66" width="254" height="42" rx="8" fill="#0F766E" opacity="0.12" stroke="#0F766E" stroke-width="1.5"/>
+    <text class="mono" x="104" y="94" fill="#0F766E" font-size="19" font-weight="800">FAIRNESS AND POWER</text>
+  </g>
+    <text class="ui" x="86" y="185" fill="#1B1B1F" font-size="56" font-weight="850" text-anchor="start">Ambiguity</text><text class="ui" x="86" y="251" fill="#1B1B1F" font-size="56" font-weight="850" text-anchor="start">reallocates advantage</text>
+    <text class="ui" x="90" y="347" fill="#666A73" font-size="27" font-weight="520" text-anchor="start">Unequal access becomes invisible when policy stays</text><text class="ui" x="90" y="382" fill="#666A73" font-size="27" font-weight="520" text-anchor="start">vague.</text><circle cx="112" cy="547" r="6" fill="#0F766E"/><text class="ui" x="136" y="555" fill="#1B1B1F" font-size="24" font-weight="560" text-anchor="start">Paid models and AI fluency</text><text class="ui" x="136" y="586" fill="#1B1B1F" font-size="24" font-weight="560" text-anchor="start">compound</text><circle cx="112" cy="625" r="6" fill="#0F766E"/><text class="ui" x="136" y="633" fill="#1B1B1F" font-size="24" font-weight="560" text-anchor="start">Students carry punishment risk</text><circle cx="112" cy="672" r="6" fill="#0F766E"/><text class="ui" x="136" y="680" fill="#1B1B1F" font-size="24" font-weight="560" text-anchor="start">Vendors gain data and</text><text class="ui" x="136" y="711" fill="#1B1B1F" font-size="24" font-weight="560" text-anchor="start">dependency</text><circle cx="112" cy="750" r="6" fill="#0F766E"/><text class="ui" x="136" y="758" fill="#1B1B1F" font-size="24" font-weight="560" text-anchor="start">Universities must define access</text><text class="ui" x="136" y="789" fill="#1B1B1F" font-size="24" font-weight="560" text-anchor="start">and appeals</text><path d="M1010 325 L790 445 M1010 325 L1230 445 M790 500 L990 630 M1230 500 L1030 630 M790 470 L1240 470" stroke="#BDB7AC" stroke-width="4" fill="none"/><g>
+      <circle cx="1010" cy="295" r="72" fill="#15803D" opacity="0.12" stroke="#15803D" stroke-width="3"/>
+      <text class="ui" x="1010" y="303" fill="#15803D" font-size="25" font-weight="900" text-anchor="middle">Student</text>
+    </g><g>
+      <circle cx="780" cy="470" r="72" fill="#2563EB" opacity="0.12" stroke="#2563EB" stroke-width="3"/>
+      <text class="ui" x="780" y="478" fill="#2563EB" font-size="25" font-weight="900" text-anchor="middle">Teacher</text>
+    </g><g>
+      <circle cx="1240" cy="470" r="72" fill="#0F766E" opacity="0.12" stroke="#0F766E" stroke-width="3"/>
+      <text class="ui" x="1240" y="478" fill="#0F766E" font-size="25" font-weight="900" text-anchor="middle">University</text>
+    </g><g>
+      <circle cx="1010" cy="650" r="72" fill="#B91C1C" opacity="0.12" stroke="#B91C1C" stroke-width="3"/>
+      <text class="ui" x="1010" y="658" fill="#B91C1C" font-size="25" font-weight="900" text-anchor="middle">Vendor</text>
+    </g><rect x="790" y="735" width="450" height="54" rx="8" fill="#B91C1C" opacity="0.10" stroke="#B91C1C" stroke-width="2"/><text class="ui" x="1015" y="770" fill="#B91C1C" font-size="23" font-weight="850" text-anchor="middle">Ambiguity shifts risk downward</text>
+</svg>
