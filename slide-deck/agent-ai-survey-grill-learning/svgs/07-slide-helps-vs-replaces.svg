@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <pattern id="grid" width="46" height="46" patternUnits="userSpaceOnUse">
+      <path d="M46 0 L0 0 0 46" fill="none" stroke="#D8D0C0" stroke-width="1" opacity="0.42"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#2F7373"/>
+    </marker>
+  </defs>
+  <style>
+    .ui { font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Arial, sans-serif; letter-spacing: 0; }
+    .mono { font-family: "SFMono-Regular", "SF Mono", Consolas, "Liberation Mono", Menlo, monospace; letter-spacing: 0; }
+  </style>
+  <rect width="1600" height="900" fill="#F5F0E6"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect x="42" y="42" width="1516" height="816" rx="8" fill="#FFFCF4" opacity="0.82"/>
+  <path d="M42 150 H1558" stroke="#D8D0C0" stroke-width="2"/>
+  <g>
+    <rect x="88" y="74" width="248" height="44" rx="8" fill="#2F7373" opacity="0.13" stroke="#2F7373" stroke-width="1.5"/>
+    <text class="mono" x="110" y="103" fill="#2F7373" font-size="19" font-weight="850">LEARNING BOUNDARY</text>
+  </g>
+    <text class="ui" x="86" y="212" fill="#171717" font-size="58" font-weight="880" text-anchor="start">AI Helps Learning When</text><text class="ui" x="86" y="280" fill="#171717" font-size="58" font-weight="880" text-anchor="start">Students Still Own Thinking</text>
+    <text class="ui" x="90" y="372" fill="#5E6670" font-size="27" font-weight="520" text-anchor="start">The boundary is observable student understanding.</text><circle cx="104" cy="547" r="6" fill="#2F7373"/><text class="ui" x="129" y="555" fill="#171717" font-size="25" font-weight="610" text-anchor="start">Help: explain, question, plan, revise,</text><text class="ui" x="129" y="587" fill="#171717" font-size="25" font-weight="610" text-anchor="start">verify</text><circle cx="104" cy="629" r="6" fill="#2F7373"/><text class="ui" x="129" y="637" fill="#171717" font-size="25" font-weight="610" text-anchor="start">Replace: generate final answer without</text><text class="ui" x="129" y="669" fill="#171717" font-size="25" font-weight="610" text-anchor="start">understanding</text><circle cx="104" cy="711" r="6" fill="#2F7373"/><text class="ui" x="129" y="719" fill="#171717" font-size="25" font-weight="610" text-anchor="start">Test: explain, verify, adapt, defend</text><g transform="translate(640 250)">
+    <rect x="0" y="0" width="370" height="370" rx="8" fill="#F6FFF8" stroke="#16803C" stroke-width="2"/>
+    <text class="ui" x="185" y="62" fill="#16803C" font-size="31" font-weight="900" text-anchor="middle">Helps learning</text>
+    <text class="ui" x="45" y="122" fill="#171717" font-size="28" font-weight="700" text-anchor="start">explain</text><text class="ui" x="45" y="165" fill="#171717" font-size="28" font-weight="700" text-anchor="start">question</text><text class="ui" x="45" y="208" fill="#171717" font-size="28" font-weight="700" text-anchor="start">plan</text><text class="ui" x="45" y="251" fill="#171717" font-size="28" font-weight="700" text-anchor="start">revise</text><text class="ui" x="45" y="294" fill="#171717" font-size="28" font-weight="700" text-anchor="start">verify</text>
+    <text class="ui" x="185" y="330" fill="#16803C" font-size="22" font-weight="850" text-anchor="middle">student can defend</text>
+  </g><g transform="translate(1060 250)">
+    <rect x="0" y="0" width="370" height="370" rx="8" fill="#FFF7F7" stroke="#B42318" stroke-width="2"/>
+    <text class="ui" x="185" y="62" fill="#B42318" font-size="31" font-weight="900" text-anchor="middle">Replaces learning</text>
+    <text class="ui" x="45" y="122" fill="#171717" font-size="28" font-weight="700" text-anchor="start">AI generates the main</text><text class="ui" x="45" y="161" fill="#171717" font-size="28" font-weight="700" text-anchor="start">answer; student submits</text><text class="ui" x="45" y="200" fill="#171717" font-size="28" font-weight="700" text-anchor="start">without understanding.</text>
+    <text class="ui" x="185" y="330" fill="#B42318" font-size="22" font-weight="850" text-anchor="middle">student cannot defend</text>
+  </g><rect x="730" y="700" width="610" height="58" rx="8" fill="#2F7373" opacity="0.12" stroke="#2F7373" stroke-width="2"/>
+    <text class="ui" x="1035" y="738" fill="#2F7373" font-size="25" font-weight="900" text-anchor="middle">Can they explain, verify, adapt, and defend?</text>
+</svg>

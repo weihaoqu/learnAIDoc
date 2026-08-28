@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <pattern id="grid" width="46" height="46" patternUnits="userSpaceOnUse">
+      <path d="M46 0 L0 0 0 46" fill="none" stroke="#D8D0C0" stroke-width="1" opacity="0.42"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#2F7373"/>
+    </marker>
+  </defs>
+  <style>
+    .ui { font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Arial, sans-serif; letter-spacing: 0; }
+    .mono { font-family: "SFMono-Regular", "SF Mono", Consolas, "Liberation Mono", Menlo, monospace; letter-spacing: 0; }
+  </style>
+  <rect width="1600" height="900" fill="#F5F0E6"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect x="42" y="42" width="1516" height="816" rx="8" fill="#FFFCF4" opacity="0.82"/>
+  <path d="M42 150 H1558" stroke="#D8D0C0" stroke-width="2"/>
+  <g>
+    <rect x="88" y="74" width="170" height="44" rx="8" fill="#2F7373" opacity="0.13" stroke="#2F7373" stroke-width="1.5"/>
+    <text class="mono" x="110" y="103" fill="#2F7373" font-size="19" font-weight="850">AGENT LOOP</text>
+  </g>
+    <text class="ui" x="86" y="212" fill="#171717" font-size="58" font-weight="880" text-anchor="start">The Agent Loop</text><text class="ui" x="86" y="280" fill="#171717" font-size="58" font-weight="880" text-anchor="start">Has Six Questions</text>
+    <text class="ui" x="90" y="372" fill="#5E6670" font-size="27" font-weight="520" text-anchor="start">This is the reusable reading checklist for multimodal agents.</text><circle cx="104" cy="552" r="6" fill="#2F7373"/><text class="ui" x="129" y="560" fill="#171717" font-size="25" font-weight="610" text-anchor="start">Perception</text><circle cx="104" cy="602" r="6" fill="#2F7373"/><text class="ui" x="129" y="610" fill="#171717" font-size="25" font-weight="610" text-anchor="start">Environment</text><circle cx="104" cy="652" r="6" fill="#2F7373"/><text class="ui" x="129" y="660" fill="#171717" font-size="25" font-weight="610" text-anchor="start">Action</text><circle cx="104" cy="702" r="6" fill="#2F7373"/><text class="ui" x="129" y="710" fill="#171717" font-size="25" font-weight="610" text-anchor="start">Feedback</text><circle cx="104" cy="752" r="6" fill="#2F7373"/><text class="ui" x="129" y="760" fill="#171717" font-size="25" font-weight="610" text-anchor="start">Evaluation</text><circle cx="104" cy="802" r="6" fill="#2F7373"/><text class="ui" x="129" y="810" fill="#171717" font-size="25" font-weight="610" text-anchor="start">Ethical risk</text><path d="M1090 285 L1190 335 L1220 548 L900 590 L820 435 L940 292 Z" fill="none" stroke="#D8D0C0" stroke-width="5"/><g>
+    <circle cx="1020" cy="250" r="78" fill="#2563EB" opacity="0.13" stroke="#2563EB" stroke-width="3"/>
+    <text class="ui" x="1020" y="259" fill="#2563EB" font-size="24" font-weight="900" text-anchor="middle">Perception</text>
+  </g><g>
+    <circle cx="1260" cy="365" r="78" fill="#8B7355" opacity="0.13" stroke="#8B7355" stroke-width="3"/>
+    <text class="ui" x="1260" y="374" fill="#8B7355" font-size="24" font-weight="900" text-anchor="middle">Environment</text>
+  </g><g>
+    <circle cx="1205" cy="620" r="78" fill="#722F37" opacity="0.13" stroke="#722F37" stroke-width="3"/>
+    <text class="ui" x="1205" y="629" fill="#722F37" font-size="24" font-weight="900" text-anchor="middle">Action</text>
+  </g><g>
+    <circle cx="835" cy="620" r="78" fill="#16803C" opacity="0.13" stroke="#16803C" stroke-width="3"/>
+    <text class="ui" x="835" y="629" fill="#16803C" font-size="24" font-weight="900" text-anchor="middle">Feedback</text>
+  </g><g>
+    <circle cx="780" cy="365" r="78" fill="#2F7373" opacity="0.13" stroke="#2F7373" stroke-width="3"/>
+    <text class="ui" x="780" y="374" fill="#2F7373" font-size="24" font-weight="900" text-anchor="middle">Evaluation</text>
+  </g><g>
+    <circle cx="1020" cy="485" r="78" fill="#B42318" opacity="0.13" stroke="#B42318" stroke-width="3"/>
+    <text class="ui" x="1020" y="494" fill="#B42318" font-size="24" font-weight="900" text-anchor="middle">Ethical risk</text>
+  </g>
+</svg>

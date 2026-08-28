@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <pattern id="grid" width="46" height="46" patternUnits="userSpaceOnUse">
+      <path d="M46 0 L0 0 0 46" fill="none" stroke="#D8D0C0" stroke-width="1" opacity="0.42"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#2F7373"/>
+    </marker>
+  </defs>
+  <style>
+    .ui { font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Arial, sans-serif; letter-spacing: 0; }
+    .mono { font-family: "SFMono-Regular", "SF Mono", Consolas, "Liberation Mono", Menlo, monospace; letter-spacing: 0; }
+  </style>
+  <rect width="1600" height="900" fill="#F5F0E6"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect x="42" y="42" width="1516" height="816" rx="8" fill="#FFFCF4" opacity="0.82"/>
+  <path d="M42 150 H1558" stroke="#D8D0C0" stroke-width="2"/>
+  <g>
+    <rect x="88" y="74" width="200" height="44" rx="8" fill="#2F7373" opacity="0.13" stroke="#2F7373" stroke-width="1.5"/>
+    <text class="mono" x="110" y="103" fill="#2F7373" font-size="19" font-weight="850">ETHICS STAKES</text>
+  </g>
+    <text class="ui" x="86" y="212" fill="#171717" font-size="58" font-weight="880" text-anchor="start">When Perception Becomes Action,</text><text class="ui" x="86" y="280" fill="#171717" font-size="58" font-weight="880" text-anchor="start">Ethics Gets Harder</text>
+    <text class="ui" x="90" y="372" fill="#5E6670" font-size="27" font-weight="520" text-anchor="start">Wrong perception can become a classroom consequence.</text><circle cx="104" cy="537" r="6" fill="#2F7373"/><text class="ui" x="129" y="545" fill="#171717" font-size="25" font-weight="610" text-anchor="start">Privacy: screens, faces, grades, voice,</text><text class="ui" x="129" y="577" fill="#171717" font-size="25" font-weight="610" text-anchor="start">teacher material</text><circle cx="104" cy="619" r="6" fill="#2F7373"/><text class="ui" x="129" y="627" fill="#171717" font-size="25" font-weight="610" text-anchor="start">Fairness: posture, accent, disability,</text><text class="ui" x="129" y="659" fill="#171717" font-size="25" font-weight="610" text-anchor="start">lighting, camera quality</text><circle cx="104" cy="701" r="6" fill="#2F7373"/><text class="ui" x="129" y="709" fill="#171717" font-size="25" font-weight="610" text-anchor="start">Accountability: who authorized the</text><text class="ui" x="129" y="741" fill="#171717" font-size="25" font-weight="610" text-anchor="start">action and who corrects it?</text><g>
+      <rect x="650" y="305" width="260" height="185" rx="8" fill="#FFFCF4" stroke="#2563EB" stroke-width="2"/>
+      <text class="ui" x="780" y="365" fill="#2563EB" font-size="26" font-weight="900" text-anchor="middle">Sensitive signal</text>
+      <text class="ui" x="780" y="420" fill="#171717" font-size="22" font-weight="600" text-anchor="middle">screen / face /</text><text class="ui" x="780" y="449" fill="#171717" font-size="22" font-weight="600" text-anchor="middle">voice / grades</text>
+      <path d="M920 397 C931 397, 931 397, 942 397" fill="none" stroke="#2563EB" stroke-width="4" marker-end="url(#arrow)"/>
+    </g><g>
+      <rect x="950" y="305" width="260" height="185" rx="8" fill="#FFFCF4" stroke="#B7791F" stroke-width="2"/>
+      <text class="ui" x="1080" y="365" fill="#B7791F" font-size="26" font-weight="900" text-anchor="middle">AI interpretation</text>
+      <text class="ui" x="1080" y="420" fill="#171717" font-size="22" font-weight="600" text-anchor="middle">confused /</text><text class="ui" x="1080" y="449" fill="#171717" font-size="22" font-weight="600" text-anchor="middle">disengaged /</text><text class="ui" x="1080" y="478" fill="#171717" font-size="22" font-weight="600" text-anchor="middle">suspicious</text>
+      <path d="M1220 397 C1231 397, 1231 397, 1242 397" fill="none" stroke="#B7791F" stroke-width="4" marker-end="url(#arrow)"/>
+    </g><g>
+      <rect x="1250" y="305" width="260" height="185" rx="8" fill="#FFFCF4" stroke="#B42318" stroke-width="2"/>
+      <text class="ui" x="1380" y="365" fill="#B42318" font-size="26" font-weight="900" text-anchor="middle">Classroom consequence</text>
+      <text class="ui" x="1380" y="420" fill="#171717" font-size="22" font-weight="600" text-anchor="middle">reteach / flag /</text><text class="ui" x="1380" y="449" fill="#171717" font-size="22" font-weight="600" text-anchor="middle">grade / report</text>
+      
+    </g><rect x="745" y="650" width="650" height="74" rx="8" fill="#B42318" opacity="0.11" stroke="#B42318" stroke-width="2"/>
+    <text class="ui" x="1070" y="696" fill="#B42318" font-size="27" font-weight="900" text-anchor="middle">Wrong perception can become wrong action</text>
+</svg>

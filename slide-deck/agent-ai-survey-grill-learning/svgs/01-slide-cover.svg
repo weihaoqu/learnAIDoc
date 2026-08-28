@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <pattern id="grid" width="46" height="46" patternUnits="userSpaceOnUse">
+      <path d="M46 0 L0 0 0 46" fill="none" stroke="#D8D0C0" stroke-width="1" opacity="0.42"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#2F7373"/>
+    </marker>
+  </defs>
+  <style>
+    .ui { font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Arial, sans-serif; letter-spacing: 0; }
+    .mono { font-family: "SFMono-Regular", "SF Mono", Consolas, "Liberation Mono", Menlo, monospace; letter-spacing: 0; }
+  </style>
+  <rect width="1600" height="900" fill="#F5F0E6"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect x="42" y="42" width="1516" height="816" rx="8" fill="#FFFCF4" opacity="0.82"/>
+  <path d="M42 150 H1558" stroke="#D8D0C0" stroke-width="2"/>
+  <g>
+    <rect x="88" y="74" width="224" height="44" rx="8" fill="#2F7373" opacity="0.13" stroke="#2F7373" stroke-width="1.5"/>
+    <text class="mono" x="110" y="103" fill="#2F7373" font-size="19" font-weight="850">AGENT AI SURVEY</text>
+  </g><text class="ui" x="90" y="300" fill="#171717" font-size="76" font-weight="900" text-anchor="start">Agent AI Is Not</text><text class="ui" x="90" y="388" fill="#171717" font-size="76" font-weight="900" text-anchor="start">Just a Chatbot</text><text class="ui" x="94" y="520" fill="#5E6670" font-size="30" font-weight="540" text-anchor="start">A grill-based reading of &quot;Agent AI: Surveying</text><text class="ui" x="94" y="560" fill="#5E6670" font-size="30" font-weight="540" text-anchor="start">the Horizons of Multimodal Interaction&quot;</text><circle cx="135" cy="677" r="6" fill="#2F7373"/><text class="ui" x="160" y="685" fill="#171717" font-size="25" font-weight="610" text-anchor="start">perception</text><circle cx="135" cy="727" r="6" fill="#2F7373"/><text class="ui" x="160" y="735" fill="#171717" font-size="25" font-weight="610" text-anchor="start">environment</text><circle cx="135" cy="777" r="6" fill="#2F7373"/><text class="ui" x="160" y="785" fill="#171717" font-size="25" font-weight="610" text-anchor="start">action</text><circle cx="135" cy="827" r="6" fill="#2F7373"/><text class="ui" x="160" y="835" fill="#171717" font-size="25" font-weight="610" text-anchor="start">feedback</text><g transform="translate(875 250)">
+    <rect x="0" y="0" width="520" height="360" rx="8" fill="#F6FFFB" stroke="#2F7373" stroke-width="2"/>
+    <text class="ui" x="260" y="72" fill="#2F7373" font-size="32" font-weight="900" text-anchor="middle">TASK LOOP</text>
+    <g>
+    <rect x="60" y="120" width="220" height="70" rx="8" fill="#2563EB" opacity="0.13" stroke="#2563EB" stroke-width="2"/>
+    <text class="ui" x="170" y="164" fill="#2563EB" font-size="28" font-weight="850" text-anchor="middle">Perception</text>
+  </g>
+    <g>
+    <rect x="60" y="235" width="220" height="70" rx="8" fill="#16803C" opacity="0.13" stroke="#16803C" stroke-width="2"/>
+    <text class="ui" x="170" y="279" fill="#16803C" font-size="28" font-weight="850" text-anchor="middle">Feedback</text>
+  </g>
+    <g>
+    <rect x="300" y="235" width="220" height="70" rx="8" fill="#722F37" opacity="0.13" stroke="#722F37" stroke-width="2"/>
+    <text class="ui" x="410" y="279" fill="#722F37" font-size="28" font-weight="850" text-anchor="middle">Action</text>
+  </g>
+    <path d="M280 155 C311 155, 311 235, 342 235" fill="none" stroke="#2F7373" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M300 270 C292.5 270, 292.5 270, 285 270" fill="none" stroke="#16803C" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M170 235 C170 235, 170 190, 170 190" fill="none" stroke="#2563EB" stroke-width="4" marker-end="url(#arrow)"/>
+  </g>
+</svg>

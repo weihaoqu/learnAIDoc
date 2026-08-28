@@ -66,6 +66,67 @@ Agent AI = foundation model
 
 That framing helps students understand why a robot, game NPC, healthcare assistant, and AR/VR companion are all "agent" problems, even though their tools and risks differ.
 
+## Grill Notes: From Multimodal to Agentic
+
+After grilling this post as a learning exercise, the cleanest reading lens is:
+
+```text
+Multimodal ability = the model can understand different sources of information.
+Agentic ability = the system can use perception, state, goals, actions, and feedback inside an environment.
+```
+
+This distinction matters because a model that only describes an image or video is not automatically Agent AI. If an AI watches a classroom video and says "three students look confused," that is mostly multimodal perception. It becomes closer to Agent AI when it chooses an intervention, shows a different explanation, observes the response, and adjusts the next step.
+
+### Multimodal Is Not Automatically Agentic
+
+The common beginner mistake is to equate "can see images" with "agent." A better test is:
+
+```text
+Can the system perceive context, choose an action, affect the environment,
+observe feedback, and decide what happens next?
+```
+
+For education, this separates two different systems:
+
+| System | What it does | Better label |
+|---|---|---|
+| Captions a student's presentation video | Describes visible or audible signals | Multimodal model |
+| Notices a misconception, selects a reteaching path, gives a quiz, and adapts | Uses perception to guide action and feedback | Multimodal classroom agent |
+
+### Education Risk Pattern
+
+The ethical stakes rise when perception becomes action. A text chatbot can give a wrong answer; a classroom agent can misperceive a student, act on that perception, and change the student's learning path or evaluation.
+
+Two practical risk patterns:
+
+- **Privacy exposure:** images, audio, screen recordings, faces, grades, private messages, teacher feedback, or copyrighted course materials may be captured or uploaded without real consent.
+- **Wrong perception -> wrong action:** the system may interpret posture, accent, eye movement, disability, lighting, or camera quality as confusion, disengagement, or cheating, then recommend an unfair intervention.
+
+### Governance Checklist
+
+For classroom use, "AI allowed" or "AI banned" is too weak. A useful course policy should define:
+
+- **Approved tools:** which models or agents students and teachers may use.
+- **Allowed uses:** brainstorming, explanation, practice, planning, design exploration, revision, and study support.
+- **Forbidden uses:** generating final submitted answers, exam work, undisclosed authorship, or unauthorized upload of course materials.
+- **Consent boundary:** no recording or analysis of classroom audio/video, screens, peer work, or teacher materials without explicit permission.
+- **Disclosure boundary:** students disclose meaningful AI assistance with a privacy-safe summary; raw prompt logs should not expose private or unauthorized material.
+- **Authority boundary:** AI can suggest, but humans keep final authority for grades, discipline, accommodations, and appeals.
+
+The strongest student-facing test is simple:
+
+```text
+After using AI, can the student explain, verify, adapt, and defend the work?
+```
+
+## Slide Deck
+
+I created a companion teaching deck from the grill path:
+
+- [PPTX deck](/learnAIDoc/assets/decks/agent-ai-survey-grill-learning/agent-ai-survey-grill-learning.pptx)
+- [PDF deck](/learnAIDoc/assets/decks/agent-ai-survey-grill-learning/agent-ai-survey-grill-learning.pdf)
+- [Contact sheet](/learnAIDoc/assets/decks/agent-ai-survey-grill-learning/contact-sheet.png)
+
 ## Teaching Use
 
 | Course moment | How to use the paper |
