@@ -3,7 +3,7 @@ title: "CS329A Agent-System Literacy — The Next Layer of AI Education"
 date: 2026-08-10
 category: AI for Teaching
 tags: [ai-education, ai-agents, cs329a, test-time-compute, verification, agentic-workflows, prompt-literacy]
-related: ["AI Infrastructure Literacy — The Missing Bridge to Agentic Building", "Stanford CS336 — Language Modeling from Scratch: The Complete Free LLM Curriculum", "Harness / Loop / Graph Engineering — Environment, Feedback, Flow", "What is Agentic Engineering? A Teaching Primer"]
+related: ["Stanford CS329A — Self-Improving AI Agents: Public Lecture Learning Path", "AI Infrastructure Literacy — The Missing Bridge to Agentic Building", "Stanford CS336 — Language Modeling from Scratch: The Complete Free LLM Curriculum", "Harness / Loop / Graph Engineering — Environment, Feedback, Flow", "What is Agentic Engineering? A Teaching Primer"]
 icon: "🎓"
 image: "/assets/images/cs329a-agent-system-literacy.png"
 ---
@@ -216,8 +216,18 @@ That means students should learn prompt writing, but also generation, verificati
 
 ## Related Reading
 
+- [Stanford CS329A — Self-Improving AI Agents: Public Lecture Learning Path](/learnAIDoc/wiki/stanford-cs329a-self-improving-ai-agents/)
+- [Stanford CS329A Part 1 — From Scaling to Self-Improving Agents](/learnAIDoc/wiki/cs329a-part-01-course-overview/)
+- [Stanford CS329A Part 2 — Test-Time Compute Scaling](/learnAIDoc/wiki/cs329a-part-02-test-time-compute-scaling/)
+- [Stanford CS329A Part 3 — Robust Verification](/learnAIDoc/wiki/cs329a-part-03-robust-verification/)
+- [Stanford CS329A Part 4 — Learning from Feedback with Tools and Code](/learnAIDoc/wiki/cs329a-part-04-learning-feedback-tools-code/)
+- [Stanford CS329A Part 5 — Planning and Multi-Step Reasoning](/learnAIDoc/wiki/cs329a-part-05-planning-multistep-reasoning/)
+- [Stanford CS329A Part 6 — Train-Time Scaling and Scaling RL](/learnAIDoc/wiki/cs329a-part-06-train-time-scaling-rl/)
+- [Stanford CS329A Part 7 — Self-Improvement and Deep Research Agents](/learnAIDoc/wiki/cs329a-part-07-self-improvement-deep-research/)
+- [Stanford CS329A Part 8 — Agentic Evaluations and Long-Horizon Tasks](/learnAIDoc/wiki/cs329a-part-08-agentic-evaluations-long-horizon/)
+- [Stanford CS329A Part 9 — Future Research Areas](/learnAIDoc/wiki/cs329a-part-09-future-research-areas/)
 - [AI Infrastructure Literacy - The Missing Bridge to Agentic Building](/learnAIDoc/wiki/ai-infrastructure-literacy/)
 - [Stanford CS336 - Language Modeling from Scratch](/learnAIDoc/wiki/stanford-cs336-language-modeling/)
-- [Harness / Loop / Graph Engineering - Environment, Feedback, Flow](/learnAIDoc/wiki/harness-loop-graph-engineering/)
+- [Harness / Loop / Graph Engineering — Environment, Feedback, Flow](/learnAIDoc/wiki/harness-loop-graph-engineering/)
 - [What is Agentic Engineering? A Teaching Primer](/learnAIDoc/wiki/what-is-agentic-engineering/)
 - [Anthropic - Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)
