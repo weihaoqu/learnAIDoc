@@ -16,6 +16,16 @@ This page is an independent educational companion, not an official Stanford summ
 
 This map is organized around the public lecture videos. Consult the [official course site](https://cs329a.stanford.edu/) for the authoritative syllabus and reading list.
 
+## Start Here: The 20-Minute Course
+
+Begin with the ten-slide overview. It gives a compact companion map of the course themes through one bounded system model and four questions: **generation, verification, persistence, and budget**. The PPTX contains a timed teaching script in its speaker notes; the PDF is the fastest reading format.
+
+[Download the 20-minute PDF](/learnAIDoc/assets/decks/cs329a-20-minute-course/cs329a-self-improving-agents-20-minutes.pdf) · [Download the editable PPTX with speaker notes](/learnAIDoc/assets/decks/cs329a-20-minute-course/cs329a-self-improving-agents-20-minutes.pptx) · [Open the contact sheet](/learnAIDoc/assets/decks/cs329a-20-minute-course/contact-sheet.png)
+
+![CS329A Self-Improving AI Agents in 20 Minutes contact sheet](/learnAIDoc/assets/decks/cs329a-20-minute-course/contact-sheet.png)
+
+Use the overview first. Then open the nine detailed posts below when you want the lecture evidence, mechanisms, papers, longer slide decks, teaching questions, homework, and failure boundaries behind each component.
+
 ## The Course in One System
 
 The system model below is this companion's synthesis, not a quoted Stanford framing.
