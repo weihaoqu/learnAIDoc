@@ -123,9 +123,12 @@ After using AI, can the student explain, verify, adapt, and defend the work?
 
 I created a companion teaching deck from the grill path:
 
+- [Accessible HTML deck](/learnAIDoc/assets/decks/agent-ai-survey-grill-learning/agent-ai-survey-grill-learning.html)
 - [PPTX deck](/learnAIDoc/assets/decks/agent-ai-survey-grill-learning/agent-ai-survey-grill-learning.pptx)
 - [PDF deck](/learnAIDoc/assets/decks/agent-ai-survey-grill-learning/agent-ai-survey-grill-learning.pdf)
 - [Contact sheet](/learnAIDoc/assets/decks/agent-ai-survey-grill-learning/contact-sheet.png)
+
+The HTML provides semantic headings and lists, and the PDF provides tagged, selectable text. The PPTX is rebuilt with native text and vector shapes so instructors can edit it; full PowerPoint or PDF/UA accessibility conformance has not been independently certified.
 
 ## Teaching Use
 

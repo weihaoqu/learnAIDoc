@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Accessible LearnAI teaching deck about multimodal and embodied Agent AI.">
+  <title>Agent AI Survey — Multimodal and Embodied Agents Beyond Chatbots</title>
+  <style>
+  @page { size: 13.333in 7.5in; margin: 0; }
+  :root { --bg:#F5F0E6;--paper:#FFFCF4;--ink:#171717;--muted:#5E6670;--line:#D8D0C0;--teal:#2F7373;--maroon:#722F37;--brown:#8B7355;--cobalt:#2563EB;--amber:#B7791F;--red:#B42318;--green:#16803C; }
+  * { box-sizing:border-box; }
+  html,body { margin:0;background:var(--bg);color:var(--ink);font-family:Arial,"Helvetica Neue",sans-serif; }
+  .slide { width:13.333in;height:7.5in;page-break-after:always;padding:.28in;background:var(--bg); }
+  .slide:last-child { page-break-after:auto; }
+  .panel { position:relative;width:100%;height:100%;padding:.30in .42in .22in;border:1px solid var(--line);border-radius:.08in;background:rgba(255,252,244,.96);display:flex;flex-direction:column; }
+  .stage { align-self:flex-start;margin:0 0 .12in;padding:.07in .15in;border:1px solid var(--teal);border-radius:.06in;background:#E6F0EC;color:var(--teal);font-size:10pt;font-weight:700;letter-spacing:.04em;text-transform:uppercase; }
+  h1 { margin:.07in 0 0;font-size:30pt;line-height:1.03; }
+  .subtitle { margin:.12in 0 .15in;color:var(--muted);font-size:14pt;line-height:1.22; }
+  .content { flex:1;display:grid;grid-template-columns:34% 66%;gap:.24in;min-height:0; }
+  .teaching-points { padding:.10in .08in; }
+  .teaching-points h2 { margin:0 0 .12in;color:var(--teal);font-size:12pt;text-transform:uppercase;letter-spacing:.04em; }
+  .teaching-points ul { margin:0;padding-left:.24in;font-size:15pt;line-height:1.28; }
+  .teaching-points li { margin:0 0 .16in; }
+  .visual { display:grid;gap:.15in;align-content:center;min-height:0; }
+  .visual.flow { grid-template-columns:repeat(3,1fr); }
+  .visual.compare { grid-template-columns:repeat(2,1fr); }
+  .visual.grid { grid-template-columns:repeat(2,1fr); }
+  .visual.six { grid-template-columns:repeat(3,1fr); }
+  .concept { border:2px solid var(--teal);border-radius:.08in;padding:.15in .16in;background:#F4FAF8;min-height:1.14in; }
+  .flow .concept,.compare .concept { min-height:2.0in; }
+  .concept h2 { margin:0 0 .09in;color:var(--teal);font-size:17pt;line-height:1.08; }
+  .concept p { margin:0;font-size:12pt;line-height:1.25; }
+  .concept.cobalt { border-color:var(--cobalt);background:#F2F6FF; } .concept.cobalt h2 { color:var(--cobalt); }
+  .concept.maroon { border-color:var(--maroon);background:#FCF4F4; } .concept.maroon h2 { color:var(--maroon); }
+  .concept.brown { border-color:var(--brown);background:#FBF8F2; } .concept.brown h2 { color:var(--brown); }
+  .concept.amber { border-color:var(--amber);background:#FFF8EA; } .concept.amber h2 { color:var(--amber); }
+  .concept.red { border-color:var(--red);background:#FFF4F2; } .concept.red h2 { color:var(--red); }
+  .concept.green { border-color:var(--green);background:#F2FBF5; } .concept.green h2 { color:var(--green); }
+  .callout { margin:.08in 0 0 .0;padding:.09in .15in;border:1px solid var(--teal);border-radius:.06in;background:#EAF3F0;color:var(--teal);font-size:12pt;font-weight:700;text-align:center; }
+  footer { display:flex;justify-content:space-between;gap:.25in;margin-top:.09in;color:var(--muted);font-size:8.5pt; }
+  footer a { color:var(--muted);text-decoration:none; }
+  @media screen { body { display:grid;gap:24px;padding:24px;justify-content:center; } .slide { box-shadow:0 12px 36px rgba(0,0,0,.14); } }
+  </style>
+</head>
+<body>
+<main aria-label="Agent AI survey teaching deck">
+<section class="slide" id="slide-1" aria-labelledby="title-1">
+  <div class="panel">
+    <p class="stage">Agent AI survey</p>
+    <h1 id="title-1">Agent AI Is Not Just a Chatbot</h1>
+    <p class="subtitle">A classroom reading of Agent AI: Surveying the Horizons of Multimodal Interaction</p>
+    <div class="content">
+      <div class="teaching-points"><h2>Key teaching points</h2><ul><li>Perception: what can the system observe?</li><li>Action: what can it change?</li><li>Feedback: what does it learn from next?</li></ul></div>
+      <div class="visual flow" aria-label="Concept diagram"><article class="concept cobalt"><h2>Perception</h2><p>Reads language, images, audio, video, or environment state.</p></article><article class="concept maroon"><h2>Action</h2><p>Changes a physical or digital environment.</p></article><article class="concept green"><h2>Feedback</h2><p>Observes the result and adjusts the next step.</p></article></div>
+    </div>
+    <p class="callout">Agent AI participates in a task loop; it does more than return advice.</p>
+    <footer><a href="https://arxiv.org/abs/2401.03568">Durante et al., Agent AI: Surveying the Horizons of Multimodal Interaction, arXiv:2401.03568 (January 2024)</a><span>1 / 10</span></footer>
+  </div>
+</section><section class="slide" id="slide-2" aria-labelledby="title-2">
+  <div class="panel">
+    <p class="stage">2024 paper framing</p>
+    <h1 id="title-2">The Paper Gives a Map, Not a Finished Machine</h1>
+    <p class="subtitle">Use the January 2024 survey as conceptual vocabulary—not as a 2026 catalog of current systems.</p>
+    <div class="content">
+      <div class="teaching-points"><h2>Key teaching points</h2><ul><li>Moves beyond the beginner formula “LLM + tools + memory.”</li><li>Centers multimodal perception and grounded environments.</li><li>Connects action prediction, feedback, evaluation, and risk.</li></ul></div>
+      <div class="visual grid" aria-label="Concept diagram"><article class="concept brown"><h2>Foundation model</h2><p>A building block, not the entire agent.</p></article><article class="concept cobalt"><h2>Multimodal perception</h2><p>Language plus sensory and contextual signals.</p></article><article class="concept maroon"><h2>Grounded action</h2><p>Behavior occurs inside a physical or virtual environment.</p></article><article class="concept teal"><h2>Evaluation in context</h2><p>Measure outcomes, feedback, and risk—not only text quality.</p></article></div>
+    </div>
+    <p class="callout">Historical framing: durable concepts, dated examples.</p>
+    <footer><a href="https://arxiv.org/abs/2401.03568">Durante et al., Agent AI: Surveying the Horizons of Multimodal Interaction, arXiv:2401.03568 (January 2024)</a><span>2 / 10</span></footer>
+  </div>
+</section><section class="slide" id="slide-3" aria-labelledby="title-3">
+  <div class="panel">
+    <p class="stage">Concept correction</p>
+    <h1 id="title-3">Multimodal Is Not Automatically Agentic</h1>
+    <p class="subtitle">The difference is the task loop—not simply the number of media types a model can read.</p>
+    <div class="content">
+      <div class="teaching-points"><h2>Key teaching points</h2><ul><li>A model can understand images or video without choosing an action.</li><li>An agent uses perception, state, goals, action, and feedback.</li><li>A caption is useful output, but it is not yet an agent loop.</li></ul></div>
+      <div class="visual compare" aria-label="Concept diagram"><article class="concept cobalt"><h2>Multimodal</h2><p>Understands different information sources: text, image, video, audio, or screen state.</p></article><article class="concept teal"><h2>Agentic</h2><p>Uses perception plus state, goal, action, and feedback to decide what happens next.</p></article></div>
+    </div>
+    <p class="callout">More media is not the same as more agency.</p>
+    <footer><a href="https://arxiv.org/abs/2401.03568">Durante et al., Agent AI: Surveying the Horizons of Multimodal Interaction, arXiv:2401.03568 (January 2024)</a><span>3 / 10</span></footer>
+  </div>
+</section><section class="slide" id="slide-4" aria-labelledby="title-4">
+  <div class="panel">
+    <p class="stage">Hypothetical classroom test</p>
+    <h1 id="title-4">Description Is Not Yet an Agent Loop</h1>
+    <p class="subtitle">Treat “students look confused” as an uncertain interpretation—not as a reliable fact about students.</p>
+    <div class="content">
+      <div class="teaching-points"><h2>Key teaching points</h2><ul><li>Describe a video signal: multimodal perception.</li><li>Choose a reteaching path, quiz, observe, and adapt: agentic loop.</li><li>The interpretation can be wrong before any action occurs.</li></ul></div>
+      <div class="visual flow" aria-label="Concept diagram"><article class="concept cobalt"><h2>Perceive</h2><p>A system processes a hypothetical classroom signal.</p></article><article class="concept amber"><h2>Interpret</h2><p>It predicts possible confusion—with uncertainty.</p></article><article class="concept teal"><h2>Act + adapt</h2><p>It recommends a response and observes feedback.</p></article></div>
+    </div>
+    <p class="callout">Class activity only: do not record or upload real student audio or video.</p>
+    <footer><a href="https://arxiv.org/abs/2401.03568">Durante et al., Agent AI: Surveying the Horizons of Multimodal Interaction, arXiv:2401.03568 (January 2024)</a><span>4 / 10</span></footer>
+  </div>
+</section><section class="slide" id="slide-5" aria-labelledby="title-5">
+  <div class="panel">
+    <p class="stage">Reusable agent test</p>
+    <h1 id="title-5">The Agent Loop Has Six Questions</h1>
+    <p class="subtitle">Use the same checklist for a robot, game agent, classroom tool, or software assistant.</p>
+    <div class="content">
+      <div class="teaching-points"><h2>Key teaching points</h2><ul><li>Trace what enters the system and what it can change.</li><li>Name the feedback signal and the success evidence.</li><li>Evaluate risk before granting authority.</li></ul></div>
+      <div class="visual six" aria-label="Concept diagram"><article class="concept cobalt"><h2>1 · Perception</h2><p>What can it observe?</p></article><article class="concept brown"><h2>2 · Environment</h2><p>Where is it grounded?</p></article><article class="concept maroon"><h2>3 · Action</h2><p>What can it change?</p></article><article class="concept green"><h2>4 · Feedback</h2><p>What happens next?</p></article><article class="concept teal"><h2>5 · Evaluation</h2><p>What proves progress?</p></article><article class="concept red"><h2>6 · Ethical risk</h2><p>Who could be harmed?</p></article></div>
+    </div>
+    <p class="callout">Capability and authority are separate design decisions.</p>
+    <footer><a href="https://arxiv.org/abs/2401.03568">Durante et al., Agent AI: Surveying the Horizons of Multimodal Interaction, arXiv:2401.03568 (January 2024)</a><span>5 / 10</span></footer>
+  </div>
+</section><section class="slide" id="slide-6" aria-labelledby="title-6">
+  <div class="panel">
+    <p class="stage">Ethics stakes</p>
+    <h1 id="title-6">Wrong Perception Can Become Wrong Action</h1>
+    <p class="subtitle">Signals such as posture, accent, eye movement, lighting, or camera quality are ambiguous—not evidence of intent.</p>
+    <div class="content">
+      <div class="teaching-points"><h2>Key teaching points</h2><ul><li>Privacy: screens, faces, voice, grades, and teacher materials.</li><li>Fairness: disability, accent, environment, and unequal technology.</li><li>Accountability: who authorized the action and who corrects it?</li></ul></div>
+      <div class="visual flow" aria-label="Concept diagram"><article class="concept cobalt"><h2>Sensitive signal</h2><p>Screen, face, voice, grade, or classroom behavior.</p></article><article class="concept amber"><h2>AI interpretation</h2><p>A probabilistic and potentially biased inference.</p></article><article class="concept red"><h2>Consequence</h2><p>Reteach, flag, report, restrict, or change a learning path.</p></article></div>
+    </div>
+    <p class="callout">Higher agency raises the cost of a mistaken inference.</p>
+    <footer><a href="https://arxiv.org/abs/2401.03568">Durante et al., Agent AI: Surveying the Horizons of Multimodal Interaction, arXiv:2401.03568 (January 2024)</a><span>6 / 10</span></footer>
+  </div>
+</section><section class="slide" id="slide-7" aria-labelledby="title-7">
+  <div class="panel">
+    <p class="stage">Learning boundary</p>
+    <h1 id="title-7">AI Helps Learning When Students Still Own the Thinking</h1>
+    <p class="subtitle">The boundary should be observable student understanding—not merely polished final output.</p>
+    <div class="content">
+      <div class="teaching-points"><h2>Key teaching points</h2><ul><li>Helpful support can explain, question, plan, revise, and verify.</li><li>Replacement produces the main answer without understanding.</li><li>Students should be able to explain, verify, adapt, and defend.</li></ul></div>
+      <div class="visual compare" aria-label="Concept diagram"><article class="concept green"><h2>Helps learning</h2><p>The student makes decisions, checks evidence, and can defend the work.</p></article><article class="concept red"><h2>Replaces learning</h2><p>The system supplies the reasoning while the student submits the surface output.</p></article></div>
+    </div>
+    <p class="callout">Ask: can the student explain, verify, adapt, and defend the result?</p>
+    <footer><a href="https://arxiv.org/abs/2401.03568">Durante et al., Agent AI: Surveying the Horizons of Multimodal Interaction, arXiv:2401.03568 (January 2024)</a><span>7 / 10</span></footer>
+  </div>
+</section><section class="slide" id="slide-8" aria-labelledby="title-8">
+  <div class="panel">
+    <p class="stage">Operational policy</p>
+    <h1 id="title-8">“AI Allowed” and “AI Banned” Are Both Too Weak</h1>
+    <p class="subtitle">A usable policy translates ethical language into observable permissions, duties, and boundaries.</p>
+    <div class="content">
+      <div class="teaching-points"><h2>Key teaching points</h2><ul><li>Name approved tools and allowed learning uses.</li><li>Name forbidden uses and exam boundaries.</li><li>Require privacy-safe disclosure and human verification.</li></ul></div>
+      <div class="visual grid" aria-label="Concept diagram"><article class="concept cobalt"><h2>Tools</h2><p>Which systems are approved?</p></article><article class="concept green"><h2>Uses</h2><p>What help is permitted?</p></article><article class="concept red"><h2>Prohibitions</h2><p>What may not be delegated?</p></article><article class="concept teal"><h2>Disclosure</h2><p>What assistance must be reported?</p></article></div>
+    </div>
+    <p class="callout">Operational policy replaces slogans with responsibilities.</p>
+    <footer><a href="https://arxiv.org/abs/2401.03568">Durante et al., Agent AI: Surveying the Horizons of Multimodal Interaction, arXiv:2401.03568 (January 2024)</a><span>8 / 10</span></footer>
+  </div>
+</section><section class="slide" id="slide-9" aria-labelledby="title-9">
+  <div class="panel">
+    <p class="stage">Classroom governance</p>
+    <h1 id="title-9">Boundaries Must Come Before Deployment</h1>
+    <p class="subtitle">These are discussion principles for classroom-agent design—not a replacement for institutional policy.</p>
+    <div class="content">
+      <div class="teaching-points"><h2>Key teaching points</h2><ul><li>Permission before recording or analyzing people.</li><li>Logs and audits for recommendations and actions.</li><li>Human authority for grades, discipline, accommodations, and appeals.</li><li>No unauthorized upload of course or peer materials.</li></ul></div>
+      <div class="visual grid" aria-label="Concept diagram"><article class="concept cobalt"><h2>Permission</h2><p>People and data are not automatically available to an agent.</p></article><article class="concept teal"><h2>Audit</h2><p>Recommendations and actions need a reviewable trail.</p></article><article class="concept maroon"><h2>Authority</h2><p>High-stakes decisions remain with accountable humans.</p></article><article class="concept red"><h2>Materials</h2><p>Protect course, peer, and restricted information.</p></article></div>
+    </div>
+    <p class="callout">An agent may suggest; accountable humans must decide and hear appeals.</p>
+    <footer><a href="https://arxiv.org/abs/2401.03568">Durante et al., Agent AI: Surveying the Horizons of Multimodal Interaction, arXiv:2401.03568 (January 2024)</a><span>9 / 10</span></footer>
+  </div>
+</section><section class="slide" id="slide-10" aria-labelledby="title-10">
+  <div class="panel">
+    <p class="stage">Takeaway</p>
+    <h1 id="title-10">From Advice to an Accountable Task Loop</h1>
+    <p class="subtitle">The upgrade is AI participating in perception, action, and feedback—inside explicit human boundaries.</p>
+    <div class="content">
+      <div class="teaching-points"><h2>Key teaching points</h2><ul><li>Chatbot: returns advice or content.</li><li>Agent AI: participates in the task loop.</li><li>Governance: who authorized, who checks, and who is accountable?</li></ul></div>
+      <div class="visual flow" aria-label="Concept diagram"><article class="concept brown"><h2>Advice</h2><p>A chatbot proposes what a person might do.</p></article><article class="concept teal"><h2>Task loop</h2><p>An agent perceives, acts, and receives feedback.</p></article><article class="concept red"><h2>Accountability gate</h2><p>A human reviews authority, evidence, risk, and consequences.</p></article></div>
+    </div>
+    <p class="callout">Design the authority boundary—not only the capability.</p>
+    <footer><a href="https://arxiv.org/abs/2401.03568">Durante et al., Agent AI: Surveying the Horizons of Multimodal Interaction, arXiv:2401.03568 (January 2024)</a><span>10 / 10</span></footer>
+  </div>
+</section>
+</main>
+</body>
+</html>
