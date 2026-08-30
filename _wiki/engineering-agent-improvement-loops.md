@@ -24,6 +24,10 @@ An agent improvement loop is a bounded process in which a system attempts a task
 
 The deck supports a 60-minute class: 28 minutes of instruction and a worked example, 22 minutes of comparative lab work, 7 minutes of assessment and reflection, and a 3-minute closing checklist.
 
+## Interactive Six-Question Learning Lab
+
+[Open the interactive Agent Improvement Loop learning lab]({{ '/wiki/agent-improvement-loop-grill-lab/' | relative_url }}). Students first learn the bounded-loop model and inspect a worked lecture-to-slides example. They then answer the same six demanding questions used in the original coaching exercise, diagnose their own first attempt, compare it with an anonymized learner case, study the correction, and build a personal playbook from their revised answers. The static activity takes about 25 minutes, stores responses only in the learner's browser, and does not use automated AI grading.
+
 ## Prompt Versus Agent
 
 A prompt asks a model to produce behavior within an interaction. An agent system may preserve task or session state across steps through orchestration, files, traces, tool context, or memory. It can call tools, observe results, repeat actions, and follow software-owned stopping and handoff rules.

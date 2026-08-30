@@ -1,0 +1,341 @@
+---
+title: "Build a Verifiable Agent Loop - Six-Question Learning Lab"
+description: "Learn the improvement-loop model, then work through the same six demanding questions that developed it."
+date: 2026-08-29
+category: AI for Teaching
+tags: [agents, verification, feedback-loops, grill-me, active-learning, assessment]
+related: ["Engineering Agent Improvement Loops - From Self-Critique to Verified Revision", "Stanford CS329A — Self-Improving AI Agents: Public Lecture Learning Path", "grill-me — When AI Interviews You Before Writing Code"]
+layout: lab
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/agent-improvement-loop-grill.css' | relative_url }}">
+
+<a class="lab-skip-link" href="#lab-workspace">Skip to the learning activity</a>
+
+<div class="grill-lab" id="agent-improvement-lab" data-storage-key="agentImprovementLoopGrill:v1">
+  <div class="lab-utility" aria-label="Learning lab controls">
+    <p class="lab-save-status" id="lab-save-status" role="status" aria-live="polite">Progress stays in this browser.</p>
+    <button class="lab-text-button js-only" id="lab-reset" type="button">Reset progress</button>
+  </div>
+
+  <nav class="lab-question-nav js-only" aria-label="Lab progress">
+    <button type="button" data-go="intro" aria-label="Open teaching section">Teach</button>
+    <button type="button" data-go="q1" aria-label="Open challenge 1">1</button>
+    <button type="button" data-go="q2" aria-label="Open challenge 2">2</button>
+    <button type="button" data-go="q3" aria-label="Open challenge 3">3</button>
+    <button type="button" data-go="q4" aria-label="Open challenge 4">4</button>
+    <button type="button" data-go="q5" aria-label="Open challenge 5">5</button>
+    <button type="button" data-go="q6" aria-label="Open challenge 6">6</button>
+    <button type="button" data-go="finish" aria-label="Open personal playbook">Playbook</button>
+  </nav>
+
+  <div class="lab-layout" id="lab-workspace">
+    <aside class="lab-reference" aria-labelledby="loop-reference-title">
+      <div class="lab-reference-sticky">
+        <p class="lab-small-label">Reference model</p>
+        <h2 id="loop-reference-title">The bounded loop</h2>
+        <ol class="lab-evidence-rail">
+          <li data-concept="contract"><span>1</span><strong>Contract</strong><small>Define success and limits</small></li>
+          <li data-concept="attempt"><span>2</span><strong>Attempt</strong><small>Create inspectable work</small></li>
+          <li data-concept="verify"><span>3</span><strong>Verify</strong><small>Check against evidence</small></li>
+          <li data-concept="diagnose"><span>4</span><strong>Diagnose</strong><small>Locate the supported defect</small></li>
+          <li data-concept="revise"><span>5</span><strong>Revise</strong><small>Repair only that defect</small></li>
+          <li data-concept="reverify"><span>6</span><strong>Reverify</strong><small>Rerun affected checks</small></li>
+          <li data-concept="handoff"><span>7</span><strong>Stop / hand off</strong><small>Pass, stop, or escalate</small></li>
+        </ol>
+        <p class="lab-reference-note">The six challenges test concepts from this seven-stage reference. They are related structures, not a one-to-one map.</p>
+      </div>
+    </aside>
+
+    <main class="lab-surface" tabindex="-1">
+      <section class="lab-stage is-active" data-stage="intro" data-concept="contract" aria-labelledby="intro-title">
+        <div class="lab-stage-heading">
+          <p class="lab-step-label">Teach first</p>
+          <h2 id="intro-title">Improve with evidence, not confidence</h2>
+          <p>First learn the system. Then answer six questions without seeing the learner case or enhanced answer in advance.</p>
+        </div>
+
+        <figure class="lab-cover-figure">
+          <img src="{{ '/assets/decks/agent-improvement-loop/01-slide-cover.png' | relative_url }}" alt="Engineering Agent Improvement Loops teaching deck cover">
+          <figcaption>Core rule: revise until externally checkable criteria pass, not until the model awards itself a high score.</figcaption>
+        </figure>
+
+        <section class="lab-teaching-band" aria-labelledby="model-agent-title">
+          <div>
+            <p class="lab-small-label">Mental model</p>
+            <h3 id="model-agent-title">A response is not an improvement system</h3>
+          </div>
+          <div class="lab-compare-lines">
+            <p><strong>Model response</strong><span>request &rarr; model &rarr; answer</span></p>
+            <p><strong>Agent loop</strong><span>contract &rarr; attempt &rarr; evidence &rarr; targeted repair &rarr; stop</span></p>
+          </div>
+        </section>
+
+        <section class="lab-teaching-band" aria-labelledby="gate-title">
+          <div>
+            <p class="lab-small-label">Suitability gate</p>
+            <h3 id="gate-title">Four questions before automation</h3>
+          </div>
+          <dl class="lab-four-grid">
+            <div><dt>Specifiable?</dt><dd>Can you state the desired result and constraints?</dd></div>
+            <div><dt>Verifiable?</dt><dd>Can evidence check quality independently of confidence?</dd></div>
+            <div><dt>Repairable?</dt><dd>Can a detected defect be changed and rolled back?</dd></div>
+            <div><dt>Bounded?</dt><dd>Can retries, cost, access, and authority be limited?</dd></div>
+          </dl>
+        </section>
+
+        <section class="lab-worked-example" aria-labelledby="worked-example-title">
+          <div class="lab-example-intro">
+            <p class="lab-small-label">Worked example</p>
+            <h3 id="worked-example-title">One lecture becomes ten slides</h3>
+            <p>The agent may help create the deck, but it cannot certify its own interpretation.</p>
+          </div>
+          <ol>
+            <li><strong>Contract:</strong> ten slides, one lecture, source fidelity, readable rendering, two revisions.</li>
+            <li><strong>Attempt:</strong> create a source map, teaching sequence, and first rendered deck.</li>
+            <li><strong>Verify:</strong> check timestamps, claims, links, dimensions, overflow, and visual hierarchy.</li>
+            <li><strong>Diagnose:</strong> identify the slide, defect, and evidence rather than saying "improve it."</li>
+            <li><strong>Revise:</strong> change only failed slides and rerun affected checks.</li>
+            <li><strong>Stop:</strong> pass the contract, exhaust the budget, or hand ambiguity to the teacher.</li>
+            <li><strong>Persist:</strong> save a verified rule or test, then evaluate it on a different lecture.</li>
+          </ol>
+        </section>
+
+        <section class="lab-key-distinction" aria-labelledby="persistence-title">
+          <div><strong>Correction</strong><span>The current deck improves.</span></div>
+          <div><strong>Persistent improvement</strong><span>A verified lesson changes a future run.</span></div>
+          <p id="persistence-title">A saved rule, checklist, test, tool, or governed memory must improve performance on a future task. Human approval of one correction is not enough.</p>
+        </section>
+
+        <details class="lab-glossary">
+          <summary>Open the short glossary</summary>
+          <dl>
+            <div><dt>Contract</dt><dd>The goal, evidence, constraints, permissions, budget, and handoff rule defined before generation.</dd></div>
+            <div><dt>Verifier</dt><dd>A check that can expose a specific defect. It supplies evidence, not automatic truth.</dd></div>
+            <div><dt>Diagnosis</dt><dd>A location-specific explanation connecting a failed check to evidence.</dd></div>
+            <div><dt>Candidate coverage</dt><dd>Whether any generated candidate contains a correct or useful answer.</dd></div>
+            <div><dt>Selection reliability</dt><dd>Whether the system identifies and returns the better candidate.</dd></div>
+            <div><dt>Persistence</dt><dd>What changes after the run: a rule, test, tool, memory, artifact, data, or model behavior.</dd></div>
+          </dl>
+        </details>
+
+        <div class="lab-privacy-note">
+          <strong>Your writing stays local.</strong>
+          <p>This static page does not intentionally upload your answers. Responses are stored only in this browser's local storage. Do not enter private, confidential, or identifying information.</p>
+        </div>
+
+        <div class="lab-stage-actions js-only">
+          <span></span>
+          <button class="lab-primary-button" type="button" data-go="q1">Begin challenge 1</button>
+        </div>
+      </section>
+
+      <section class="lab-stage lab-question" data-stage="q1" data-question="q1" data-concept="contract" aria-labelledby="q1-title">
+        <div class="lab-stage-heading">
+          <p class="lab-step-label">Challenge 1 of 6 <span>About 3 minutes</span></p>
+          <h2 id="q1-title">Reconstruct the loop</h2>
+          <p>Without checking the teaching section, reconstruct the agent improvement loop using approximately seven verbs.</p>
+        </div>
+        <pre class="lab-prompt-line" aria-label="Answer pattern">Define &rarr; ______ &rarr; ______ &rarr; ______ &rarr; ______ &rarr; ______ &rarr; ______</pre>
+        <details class="lab-hint"><summary>Optional hint</summary><p>The loop needs generation, evidence, a reason for changing something, and a terminal decision.</p></details>
+        <div class="lab-answer-block">
+          <label for="q1-initial">Your first answer</label>
+          <textarea id="q1-initial" data-field="initial" rows="4" placeholder="Write the loop from memory before opening the hint."></textarea>
+        </div>
+        <fieldset class="lab-confidence">
+          <legend>How confident are you?</legend>
+          <label><input type="radio" name="q1-confidence" value="low" data-field="confidence"> Low</label>
+          <label><input type="radio" name="q1-confidence" value="medium" data-field="confidence"> Medium</label>
+          <label><input type="radio" name="q1-confidence" value="high" data-field="confidence"> High</label>
+        </fieldset>
+        <div class="lab-self-check">
+          <h3>Self-check before comparison</h3>
+          <label><input type="checkbox" data-field="check-1"> I included an evidence-based check.</label>
+          <label><input type="checkbox" data-field="check-2"> I separated diagnosis from revision.</label>
+          <label><input type="checkbox" data-field="check-3"> I included stopping or human handoff.</label>
+        </div>
+        <div class="lab-answer-block">
+          <label for="q1-diagnosis">What is one weakness you would fix in your first answer?</label>
+          <textarea id="q1-diagnosis" data-field="diagnosis" rows="3"></textarea>
+        </div>
+        <button class="lab-secondary-button js-only" type="button" data-reveal-feedback>Compare with the learner case</button>
+        <div class="lab-feedback" data-feedback aria-labelledby="q1-feedback-title">
+          <p class="lab-small-label">Real first-pass learner case</p>
+          <h3 id="q1-feedback-title" tabindex="-1">"Plan, review, implement, audit, improve, loop."</h3>
+          <p><strong>What it recognized:</strong> work should be planned, checked, changed, and repeated.</p>
+          <p><strong>What remained weak:</strong> review and audit overlap; the answer lacks an explicit contract, evidence-linked diagnosis, and stop or handoff condition. A loop is the bounded return path, not the final stage.</p>
+          <div class="lab-enhanced-answer"><strong>Enhanced answer</strong><p>Contract &rarr; Attempt &rarr; Verify &rarr; Diagnose &rarr; Revise &rarr; Reverify &rarr; Stop or hand off.</p></div>
+        </div>
+        <div class="lab-final-response" data-final-response>
+          <div class="lab-answer-block">
+            <label for="q1-final">Your improved answer</label>
+            <textarea id="q1-final" data-field="final" rows="4"></textarea>
+          </div>
+          <div class="lab-answer-block">
+            <label for="q1-change">What did you change, and why?</label>
+            <textarea id="q1-change" data-field="change" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="lab-stage-actions js-only"><button class="lab-text-button" type="button" data-go="intro">Previous</button><button class="lab-primary-button" type="button" data-continue="q2">Save and continue</button></div>
+      </section>
+
+      <section class="lab-stage lab-question" data-stage="q2" data-question="q2" data-concept="contract" aria-labelledby="q2-title">
+        <div class="lab-stage-heading">
+          <p class="lab-step-label">Challenge 2 of 6 <span>About 4 minutes</span></p>
+          <h2 id="q2-title">Write the contract before generation</h2>
+          <p>Suppose an agent must create a ten-slide lesson from one Stanford lecture. What should the contract specify?</p>
+        </div>
+        <ol class="lab-required-list"><li>Goal</li><li>Required evidence</li><li>Prohibited behavior</li><li>Retry or human-approval rule</li></ol>
+        <details class="lab-hint"><summary>Optional hint</summary><p>Watching a video is a process. A claim-to-timestamp map is inspectable evidence.</p></details>
+        <div class="lab-answer-block"><label for="q2-initial">Your first contract</label><textarea id="q2-initial" data-field="initial" rows="7"></textarea></div>
+        <fieldset class="lab-confidence"><legend>How confident are you?</legend><label><input type="radio" name="q2-confidence" value="low" data-field="confidence"> Low</label><label><input type="radio" name="q2-confidence" value="medium" data-field="confidence"> Medium</label><label><input type="radio" name="q2-confidence" value="high" data-field="confidence"> High</label></fieldset>
+        <div class="lab-self-check"><h3>Self-check before comparison</h3><label><input type="checkbox" data-field="check-1"> The goal names the artifact, audience, and learning outcome.</label><label><input type="checkbox" data-field="check-2"> Evidence is inspectable, not merely an action the agent performs.</label><label><input type="checkbox" data-field="check-3"> The scope, budget, and authority are bounded.</label></div>
+        <div class="lab-answer-block"><label for="q2-diagnosis">What is one weakness you would fix in your contract?</label><textarea id="q2-diagnosis" data-field="diagnosis" rows="3"></textarea></div>
+        <button class="lab-secondary-button js-only" type="button" data-reveal-feedback>Compare with the learner case</button>
+        <div class="lab-feedback" data-feedback aria-labelledby="q2-feedback-title">
+          <p class="lab-small-label">Real first-pass learner case</p>
+          <h3 id="q2-feedback-title" tabindex="-1">A useful handoff rule, but process and evidence were mixed</h3>
+          <blockquote>"Create a ten-slide deck for the selected online lecture. Watch the lecture locally, check the transcript and screenshots, and arrange the topics consistently. Do not skip watching the videos. If the video or transcript cannot be accessed, ask for approval and suggest an operation."</blockquote>
+          <p><strong>What it recognized:</strong> source access matters, skipping source review is prohibited, and uncertainty should trigger human approval.</p>
+          <p><strong>What remained weak:</strong> "selected lecture" conflicts with "all videos"; watching is not evidence of accurate interpretation; readability, claim support, revision budget, and final authority are unspecified.</p>
+          <div class="lab-enhanced-answer"><strong>Enhanced answer</strong><p>Create ten slides that accurately teach one selected lecture. Map every major claim to a timestamp or approved source; render and inspect all slides. Do not invent claims, quotations, timestamps, or inaccessible-source coverage. Allow two revision cycles. Stop with the exact evidence gap and options when access or interpretation remains uncertain; the student or teacher approves publication.</p></div>
+        </div>
+        <div class="lab-final-response" data-final-response><div class="lab-answer-block"><label for="q2-final">Your improved contract</label><textarea id="q2-final" data-field="final" rows="7"></textarea></div><div class="lab-answer-block"><label for="q2-change">What did you change, and why?</label><textarea id="q2-change" data-field="change" rows="3"></textarea></div></div>
+        <div class="lab-stage-actions js-only"><button class="lab-text-button" type="button" data-go="q1">Previous</button><button class="lab-primary-button" type="button" data-continue="q3">Save and continue</button></div>
+      </section>
+
+      <section class="lab-stage lab-question" data-stage="q3" data-question="q3" data-concept="verify" aria-labelledby="q3-title">
+        <div class="lab-stage-heading">
+          <p class="lab-step-label">Challenge 3 of 6 <span>About 5 minutes</span></p>
+          <h2 id="q3-title">Design four verifiers</h2>
+          <p>The agent produced ten slides. Define one source-fidelity check, one content-completeness check, one visual-quality check, and one teaching-quality check.</p>
+        </div>
+        <p class="lab-callout">Each check must produce <strong>PASS</strong>, <strong>FAIL</strong>, or <strong>NEEDS HUMAN JUDGMENT</strong>.</p>
+        <details class="lab-hint"><summary>Optional hint</summary><p>Separate machine-checkable defects such as broken links or overflow from interpretive judgments such as whether the teaching narrative is appropriate.</p></details>
+        <div class="lab-answer-block"><label for="q3-initial">Your four verifier rules</label><textarea id="q3-initial" data-field="initial" rows="9"></textarea></div>
+        <fieldset class="lab-confidence"><legend>How confident are you?</legend><label><input type="radio" name="q3-confidence" value="low" data-field="confidence"> Low</label><label><input type="radio" name="q3-confidence" value="medium" data-field="confidence"> Medium</label><label><input type="radio" name="q3-confidence" value="high" data-field="confidence"> High</label></fieldset>
+        <div class="lab-self-check"><h3>Self-check before comparison</h3><label><input type="checkbox" data-field="check-1"> Every check names observable evidence.</label><label><input type="checkbox" data-field="check-2"> The verdict boundaries are explicit.</label><label><input type="checkbox" data-field="check-3"> Simulated reviewers provide advice, not automatic truth.</label></div>
+        <div class="lab-answer-block"><label for="q3-diagnosis">What is one weakness you would fix in your verifiers?</label><textarea id="q3-diagnosis" data-field="diagnosis" rows="3"></textarea></div>
+        <button class="lab-secondary-button js-only" type="button" data-reveal-feedback>Compare with the learner case</button>
+        <div class="lab-feedback" data-feedback aria-labelledby="q3-feedback-title">
+          <p class="lab-small-label">Real first-pass learner case</p>
+          <h3 id="q3-feedback-title" tabindex="-1">Multiple reviewers were proposed, but most verdicts remained subjective</h3>
+          <blockquote>"Check whether slide content appears in the transcript or screenshots; cover the video from beginning to end; ask a simulated student whether slides are clear; ask teacher and student subagents to review, and send disagreements to a human."</blockquote>
+          <p><strong>What it recognized:</strong> source support, coverage, readability, multiple perspectives, and human escalation all matter.</p>
+          <p><strong>What remained weak:</strong> screenshots rarely verify factual claims; chronological coverage can become transcript compression; simulated students do not prove readability; agreement between agents is not authority; "okay" has no observable threshold.</p>
+          <div class="lab-enhanced-answer"><strong>Enhanced answer</strong><ul><li><b>Source:</b> PASS when every major claim maps to a timestamp or approved source; FAIL for unsupported or overstated claims.</li><li><b>Completeness:</b> PASS when the central question, mechanisms, examples, limitations, and conclusion are represented; HUMAN for the best teaching narrative.</li><li><b>Visual:</b> PASS when renders show no overflow, collision, cutoff, broken media, or unreadably small text; HUMAN for aesthetics and pacing.</li><li><b>Teaching:</b> reviewer agents apply a defined rubric for objectives, definitions, examples, and misconceptions; their feedback informs diagnosis, while a teacher judges educational appropriateness.</li></ul></div>
+        </div>
+        <div class="lab-final-response" data-final-response><div class="lab-answer-block"><label for="q3-final">Your improved verifier rules</label><textarea id="q3-final" data-field="final" rows="9"></textarea></div><div class="lab-answer-block"><label for="q3-change">What did you change, and why?</label><textarea id="q3-change" data-field="change" rows="3"></textarea></div></div>
+        <div class="lab-stage-actions js-only"><button class="lab-text-button" type="button" data-go="q2">Previous</button><button class="lab-primary-button" type="button" data-continue="q4">Save and continue</button></div>
+      </section>
+
+      <section class="lab-stage lab-question" data-stage="q4" data-question="q4" data-concept="diagnose" aria-labelledby="q4-title">
+        <div class="lab-stage-heading">
+          <p class="lab-step-label">Challenge 4 of 6 <span>About 4 minutes</span></p>
+          <h2 id="q4-title">Diagnose an overclaim</h2>
+          <p>Slide 6 says: <strong>"Generating more answers makes an agent more reliable."</strong></p>
+          <p>The transcript says that more candidates increase the chance that one is correct, but the verifier may still select the wrong candidate.</p>
+        </div>
+        <ol class="lab-required-list"><li>What exactly is defective?</li><li>What evidence identifies the defect?</li><li>What targeted revision should be made?</li><li>What should be rechecked afterward?</li></ol>
+        <details class="lab-hint"><summary>Optional hint</summary><p>Candidate coverage and selected-answer reliability are different measurements.</p></details>
+        <div class="lab-answer-block"><label for="q4-initial">Your diagnosis and repair</label><textarea id="q4-initial" data-field="initial" rows="8"></textarea></div>
+        <fieldset class="lab-confidence"><legend>How confident are you?</legend><label><input type="radio" name="q4-confidence" value="low" data-field="confidence"> Low</label><label><input type="radio" name="q4-confidence" value="medium" data-field="confidence"> Medium</label><label><input type="radio" name="q4-confidence" value="high" data-field="confidence"> High</label></fieldset>
+        <div class="lab-self-check"><h3>Self-check before comparison</h3><label><input type="checkbox" data-field="check-1"> I identified the probability-to-guarantee shift.</label><label><input type="checkbox" data-field="check-2"> I did not introduce a new unsupported explanation.</label><label><input type="checkbox" data-field="check-3"> My recheck tests both source fidelity and the affected logic.</label></div>
+        <div class="lab-answer-block"><label for="q4-diagnosis">What is one weakness you would fix in your response?</label><textarea id="q4-diagnosis" data-field="diagnosis" rows="3"></textarea></div>
+        <button class="lab-secondary-button js-only" type="button" data-reveal-feedback>Compare with the learner case</button>
+        <div class="lab-feedback" data-feedback aria-labelledby="q4-feedback-title">
+          <p class="lab-small-label">Real first-pass learner case</p>
+          <h3 id="q4-feedback-title" tabindex="-1">The central overclaim was found, but the diagnosis added unsupported reasoning</h3>
+          <blockquote>"The slide claim is too strong: the transcript only says chance, but the slide says it will. More answers may create contradictions and confuse the agent. Revise it to say more answers increase the chance that one candidate is correct but need a human to verify. Then run it multiple times and compare."</blockquote>
+          <p><strong>What it recognized:</strong> the slide strengthened a probabilistic statement into a guarantee.</p>
+          <p><strong>What remained weak:</strong> contradiction and confusion were not evidence supplied by the transcript; humans are only one possible verifier; generating more runs does not independently identify the correct candidate.</p>
+          <div class="lab-enhanced-answer"><strong>Enhanced answer</strong><p>The defect conflates candidate coverage with returned-answer reliability. Revise to: "Generating more candidates can improve coverage, but final-answer reliability improves only when the verifier can identify the better candidate." Recheck the timestamped source, adjacent slides for the same overclaim, and - if evaluating the system - measure candidate coverage and selected-answer accuracy separately.</p></div>
+        </div>
+        <div class="lab-final-response" data-final-response><div class="lab-answer-block"><label for="q4-final">Your improved diagnosis and repair</label><textarea id="q4-final" data-field="final" rows="8"></textarea></div><div class="lab-answer-block"><label for="q4-change">What did you change, and why?</label><textarea id="q4-change" data-field="change" rows="3"></textarea></div></div>
+        <div class="lab-stage-actions js-only"><button class="lab-text-button" type="button" data-go="q3">Previous</button><button class="lab-primary-button" type="button" data-continue="q5">Save and continue</button></div>
+      </section>
+
+      <section class="lab-stage lab-question" data-stage="q5" data-question="q5" data-concept="handoff" aria-labelledby="q5-title">
+        <div class="lab-stage-heading">
+          <p class="lab-step-label">Challenge 5 of 6 <span>About 3 minutes</span></p>
+          <h2 id="q5-title">Stop without hiding uncertainty</h2>
+          <p>After two revision cycles, source and rendering checks pass. The teacher reviewer approves, but the student reviewer says Slide 8 remains too technical. The retry budget is exhausted.</p>
+        </div>
+        <ol class="lab-required-list"><li>Final status</li><li>What the agent must not do</li><li>What evidence and unresolved issue it gives the human</li></ol>
+        <details class="lab-hint"><summary>Optional hint</summary><p>Stopping does not require pretending that the artifact is fully complete or completely failed.</p></details>
+        <div class="lab-answer-block"><label for="q5-initial">Your stop and handoff decision</label><textarea id="q5-initial" data-field="initial" rows="7"></textarea></div>
+        <fieldset class="lab-confidence"><legend>How confident are you?</legend><label><input type="radio" name="q5-confidence" value="low" data-field="confidence"> Low</label><label><input type="radio" name="q5-confidence" value="medium" data-field="confidence"> Medium</label><label><input type="radio" name="q5-confidence" value="high" data-field="confidence"> High</label></fieldset>
+        <div class="lab-self-check"><h3>Self-check before comparison</h3><label><input type="checkbox" data-field="check-1"> The status distinguishes unresolved judgment from failure.</label><label><input type="checkbox" data-field="check-2"> The agent does not exceed its budget or self-authorize.</label><label><input type="checkbox" data-field="check-3"> The handoff contains passed checks, the exact concern, and options.</label></div>
+        <div class="lab-answer-block"><label for="q5-diagnosis">What is one weakness you would fix in your decision?</label><textarea id="q5-diagnosis" data-field="diagnosis" rows="3"></textarea></div>
+        <button class="lab-secondary-button js-only" type="button" data-reveal-feedback>Compare with the learner case</button>
+        <div class="lab-feedback" data-feedback aria-labelledby="q5-feedback-title">
+          <p class="lab-small-label">Real first-pass learner case</p>
+          <h3 id="q5-feedback-title" tabindex="-1">The learner correctly chose to stop and preserve the disagreement</h3>
+          <blockquote>"Stop, save the current progress and review, diagnose the issue on Slide 8, and ask for human verification with suggestions. Do not ignore the student reviewer, declare the job done, or hide the Slide 8 feedback."</blockquote>
+          <p><strong>What it recognized:</strong> budget exhaustion requires stopping, not silent extra work; disagreement and evidence must survive the handoff.</p>
+          <p><strong>What needed precision:</strong> label the status <b>NEEDS HUMAN JUDGMENT</b>; diagnosis can continue, but revision needs authorization. Provide concrete options rather than a vague request.</p>
+          <div class="lab-enhanced-answer"><strong>Enhanced answer</strong><p>Status: NEEDS HUMAN JUDGMENT. Hand off the current deck, revision history, passed source/render checks, exact Slide 8 concern, diagnosis, and exhausted budget. Offer options: approve for an advanced audience, simplify terminology, add an example, split the slide, or authorize one more cycle. Do not declare success, suppress feedback, revise beyond the budget, or self-authorize publication.</p></div>
+        </div>
+        <div class="lab-final-response" data-final-response><div class="lab-answer-block"><label for="q5-final">Your improved stop and handoff decision</label><textarea id="q5-final" data-field="final" rows="7"></textarea></div><div class="lab-answer-block"><label for="q5-change">What did you change, and why?</label><textarea id="q5-change" data-field="change" rows="3"></textarea></div></div>
+        <div class="lab-stage-actions js-only"><button class="lab-text-button" type="button" data-go="q4">Previous</button><button class="lab-primary-button" type="button" data-continue="q6">Save and continue</button></div>
+      </section>
+
+      <section class="lab-stage lab-question" data-stage="q6" data-question="q6" data-concept="reverify" aria-labelledby="q6-title">
+        <div class="lab-stage-heading">
+          <p class="lab-step-label">Challenge 6 of 6 <span>About 4 minutes</span></p>
+          <h2 id="q6-title">Make the lesson persist</h2>
+          <p>The agent repeatedly converted cautious source language such as "may improve" into strong claims such as "will improve." What should persist so the next project benefits?</p>
+        </div>
+        <ol class="lab-required-list"><li>One artifact to save</li><li>One new verification rule</li><li>One thing that should not be stored</li><li>How to test whether the next run improved</li></ol>
+        <details class="lab-hint"><summary>Optional hint</summary><p>Rerunning the same example tests regression. A different lecture tests whether the lesson generalizes.</p></details>
+        <div class="lab-answer-block"><label for="q6-initial">Your persistence design</label><textarea id="q6-initial" data-field="initial" rows="8"></textarea></div>
+        <fieldset class="lab-confidence"><legend>How confident are you?</legend><label><input type="radio" name="q6-confidence" value="low" data-field="confidence"> Low</label><label><input type="radio" name="q6-confidence" value="medium" data-field="confidence"> Medium</label><label><input type="radio" name="q6-confidence" value="high" data-field="confidence"> High</label></fieldset>
+        <div class="lab-self-check"><h3>Self-check before comparison</h3><label><input type="checkbox" data-field="check-1"> The saved artifact generalizes beyond one sentence.</label><label><input type="checkbox" data-field="check-2"> The verification rule is operational and source-grounded.</label><label><input type="checkbox" data-field="check-3"> Evaluation includes a held-out task and measures false warnings.</label></div>
+        <div class="lab-answer-block"><label for="q6-diagnosis">What is one weakness you would fix in your persistence design?</label><textarea id="q6-diagnosis" data-field="diagnosis" rows="3"></textarea></div>
+        <button class="lab-secondary-button js-only" type="button" data-reveal-feedback>Compare with the learner case</button>
+        <div class="lab-feedback" data-feedback aria-labelledby="q6-feedback-title">
+          <p class="lab-small-label">Real first-pass learner case</p>
+          <h3 id="q6-feedback-title" tabindex="-1">A reusable skill was proposed, but evaluation needed a held-out task</h3>
+          <blockquote>"Create a skill that records and analyzes similar mistakes. Check every strong claim against the source language. Do not store the actual source content. Run the task again and compare the result using the new skill or rule."</blockquote>
+          <p><strong>What it recognized:</strong> turn the failure into a reusable procedure, calibrate claim strength against the source, avoid unnecessary source retention, and compare performance.</p>
+          <p><strong>What needed precision:</strong> one example can overfit the skill; full source content is unnecessary and may create permission or privacy problems; rerunning only the original task tests regression, not generalization.</p>
+          <div class="lab-enhanced-answer"><strong>Enhanced answer</strong><p>Save a claim-calibration checklist or skill containing the generalized failure pattern, strength taxonomy, verification procedure, and permitted minimal examples. For every major claim, locate the source, classify it as direct statement, paraphrase, or inference, and flag unjustified shifts from "may" to "will." Do not retain complete transcripts or unauthorized material when pointers and minimal examples suffice. Test the original lecture for regression and a held-out lecture for generalization; compare overstated claims, unsupported claims, false warnings, human corrections, time, and cost under the same conditions.</p></div>
+        </div>
+        <div class="lab-final-response" data-final-response><div class="lab-answer-block"><label for="q6-final">Your improved persistence design</label><textarea id="q6-final" data-field="final" rows="8"></textarea></div><div class="lab-answer-block"><label for="q6-change">What did you change, and why?</label><textarea id="q6-change" data-field="change" rows="3"></textarea></div></div>
+        <div class="lab-stage-actions js-only"><button class="lab-text-button" type="button" data-go="q5">Previous</button><button class="lab-primary-button" type="button" data-continue="finish">Build my playbook</button></div>
+      </section>
+
+      <section class="lab-stage lab-finish" data-stage="finish" data-concept="handoff" aria-labelledby="finish-title">
+        <div class="lab-stage-heading">
+          <p class="lab-step-label">Your learning artifact</p>
+          <h2 id="finish-title">Agent-loop playbook</h2>
+          <p>This playbook uses your final answers when available and your first answers otherwise. Edit it before exporting.</p>
+        </div>
+        <div class="lab-answer-block">
+          <label for="lab-transfer">Where will you apply this process next?</label>
+          <textarea id="lab-transfer" rows="3" placeholder="Name a real lecture, paper, slide deck, research task, or teaching activity."></textarea>
+        </div>
+        <div class="lab-answer-block">
+          <label for="lab-playbook">Editable playbook</label>
+          <textarea id="lab-playbook" rows="28"></textarea>
+        </div>
+        <p class="lab-export-note">Copied, printed, or downloaded reflections leave this page's local storage. You are responsible for managing the exported file.</p>
+        <div class="lab-export-actions js-only">
+          <button class="lab-secondary-button" id="lab-copy" type="button">Copy text</button>
+          <button class="lab-secondary-button" id="lab-download" type="button">Download text</button>
+          <button class="lab-primary-button" id="lab-print" type="button">Print playbook</button>
+        </div>
+        <div class="lab-stage-actions js-only"><button class="lab-text-button" type="button" data-go="q6">Previous</button><button class="lab-text-button" type="button" data-go="intro">Review the teaching</button></div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="lab-provenance">
+    <h2>Teaching basis and case provenance</h2>
+    <p>This activity is a teaching synthesis based on <a href="{{ '/wiki/engineering-agent-improvement-loops/' | relative_url }}">Engineering Agent Improvement Loops</a> and the companion map for <a href="{{ '/wiki/stanford-cs329a-self-improving-ai-agents/' | relative_url }}">Stanford CS329A: Self-Improving AI Agents</a>. Course interpretations are not official Stanford guidance.</p>
+    <p>The learner case comes from a real prior coaching exercise. It is anonymized and lightly edited for spelling and readability. It is not a model answer; the page preserves both what the learner recognized and what required correction.</p>
+  </footer>
+</div>
+
+<noscript><p class="lab-noscript">JavaScript is unavailable. All teaching content, questions, learner cases, and corrections remain readable below, but saving, staged reveals, and playbook export are disabled.</p></noscript>
+<script src="{{ '/assets/js/agent-improvement-loop-grill.js' | relative_url }}" defer></script>

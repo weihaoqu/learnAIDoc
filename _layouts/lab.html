@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<article class="lab-page-shell">
+  <header class="lab-page-header">
+    <p class="lab-page-kicker">Interactive learning lab</p>
+    <h1 class="lab-page-title">{{ page.title }}</h1>
+    {% if page.description %}
+    <p class="lab-page-description">{{ page.description }}</p>
+    {% endif %}
+    <div class="lab-page-meta">
+      {% if page.category %}<span>{{ page.category }}</span>{% endif %}
+      <span>{{ page.date | date: "%B %d, %Y" }}</span>
+      <span>Six challenges</span>
+      <span>About 25 minutes</span>
+    </div>
+  </header>
+
+  {{ content }}
+
+  {% if page.related %}
+  <aside class="lab-related" aria-labelledby="lab-related-title">
+    <h2 id="lab-related-title">Continue learning</h2>
+    <ul>
+      {% for related in page.related %}
+      {% assign rel_entry = site.wiki | where: "title", related | first %}
+      {% if rel_entry %}
+      <li><a href="{{ rel_entry.url | relative_url }}">{{ rel_entry.title }}</a></li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </aside>
+  {% endif %}
+</article>
