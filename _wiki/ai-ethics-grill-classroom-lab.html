@@ -1,0 +1,415 @@
+---
+title: "Who Did the Learning? An AI Ethics Policy Lab"
+description: "Build an independent position, test it against new evidence and AI criticism, then submit a defensible college AI policy."
+date: 2026-09-06
+category: AI for Teaching
+tags: [ai-ethics, active-learning, grill-me, assessment, higher-education, claude]
+related:
+  - 'AI Ethics in College: Stop Asking "Did Students Use AI?" Ask Whether They Learned'
+  - "AI Ethics — From Principles to Power Structures"
+layout: lab
+challenge_count: "13 questions"
+duration: "70 minutes"
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/ai-ethics-grill-classroom.css' | relative_url }}">
+
+<a class="ethics-skip-link" href="#ethics-workspace">Skip to the exercise</a>
+
+<div class="ethics-lab" id="ai-ethics-classroom-lab" data-storage-key="aiEthicsClassroomGrill:v1" data-schema-version="1">
+  <div class="ethics-utility" aria-label="Exercise controls">
+    <p id="ethics-save-status" role="status" aria-live="polite">Your work stays in this browser.</p>
+    <div class="ethics-utility-actions">
+      <button class="ethics-button ethics-button-quiet js-only" id="ethics-backup" type="button">Download backup</button>
+      <label class="ethics-button ethics-button-quiet js-only" for="ethics-restore">Restore backup</label>
+      <input class="visually-hidden js-only" id="ethics-restore" type="file" accept="application/json,.json">
+      <button class="ethics-button ethics-button-quiet js-only" id="ethics-reset" type="button">Reset</button>
+    </div>
+  </div>
+
+  <nav class="ethics-stage-nav js-only" aria-label="Exercise stages">
+    <button type="button" data-go="primer">Primer</button>
+    <button type="button" data-go="baseline">Baseline</button>
+    <button type="button" data-go="group">Group</button>
+    <button type="button" data-go="access">Access</button>
+    <button type="button" data-go="privacy">Privacy</button>
+    <button type="button" data-go="accountability">Accountability</button>
+    <button type="button" data-go="critic">AI critic</button>
+    <button type="button" data-go="defense">Defense</button>
+    <button type="button" data-go="report">Report</button>
+  </nav>
+
+  <div class="ethics-workspace" id="ethics-workspace">
+    <aside class="ethics-ledger" aria-labelledby="ethics-ledger-title">
+      <div class="ethics-ledger-sticky">
+        <p class="ethics-label">Live evidence ledger</p>
+        <h2 id="ethics-ledger-title">What changed?</h2>
+        <ol class="ethics-progress-list">
+          <li data-ledger-stage="baseline"><span>01</span><div><strong>Commit</strong><small>Independent snapshot</small></div></li>
+          <li data-ledger-stage="access"><span>02</span><div><strong>Stress test</strong><small>Access and fairness</small></div></li>
+          <li data-ledger-stage="privacy"><span>03</span><div><strong>Protect</strong><small>Permission and data</small></div></li>
+          <li data-ledger-stage="accountability"><span>04</span><div><strong>Allocate</strong><small>Rules and judgment</small></div></li>
+          <li data-ledger-stage="critic"><span>05</span><div><strong>Challenge</strong><small>Evaluate AI advice</small></div></li>
+          <li data-ledger-stage="defense"><span>06</span><div><strong>Defend</strong><small>Revise under pressure</small></div></li>
+        </ol>
+        <div class="ethics-policy-key" aria-label="Final policy framework">
+          <span>Allow</span>
+          <span>Disclose</span>
+          <span>Protect</span>
+          <span>Assess</span>
+        </div>
+        <p class="ethics-ledger-note"><strong id="ethics-question-progress">0 of 13</strong> substantive answers recorded. Progress is descriptive, not a score.</p>
+      </div>
+    </aside>
+
+    <main class="ethics-surface" tabindex="-1">
+      <section class="ethics-stage is-active" data-stage="primer" aria-labelledby="primer-title">
+        <header class="ethics-stage-header">
+          <p class="ethics-step">0-8 minutes</p>
+          <h2 id="primer-title">Four lenses, one difficult case</h2>
+          <p>Use these ideas as decision tools. They are a classroom synthesis, not a claim that the four papers offer one unified college policy.</p>
+        </header>
+
+        <div class="ethics-lens-grid">
+          <article>
+            <span>Jobin</span>
+            <h3>Shared words are not shared rules</h3>
+            <p>Transparency, fairness, privacy, responsibility, and safety recur across guidelines, but their meanings and implementation differ.</p>
+            <strong>Ask: What exactly does this principle require here?</strong>
+          </article>
+          <article>
+            <span>Corrêa</span>
+            <h3>Principles need a delivery system</h3>
+            <p>Repeated commitments do not become governance until duties, procedures, implementation, and enforcement are specified.</p>
+            <strong>Ask: Who must do what, using which process?</strong>
+          </article>
+          <article>
+            <span>Giarmoleo</span>
+            <h3>Rules and judgment work together</h3>
+            <p>Act-centered responses govern actions through rules and procedures. Agent-centered responses develop the judgment to handle cases rules miss.</p>
+            <strong>Ask: What rule and what human capability are both needed?</strong>
+          </article>
+          <article>
+            <span>Groen</span>
+            <h3>Look beyond principles</h3>
+            <p>Ethical analysis also examines lived realities and power: access, monitoring, vulnerability, discretion, and who bears the consequences.</p>
+            <strong>Ask: Who gains power, and who absorbs the risk?</strong>
+          </article>
+        </div>
+
+        <details class="ethics-source-drawer">
+          <summary>Open paper details and source cautions</summary>
+          <div class="ethics-source-list">
+            <p><strong>Jobin, Ienca, and Vayena (2019).</strong> <a href="https://www.nature.com/articles/s42256-019-0088-2">The global landscape of AI ethics guidelines</a>. Review of 84 guideline documents.</p>
+            <p><strong>Corrêa et al. (2023).</strong> <a href="https://doi.org/10.1016/j.patter.2023.100857">Worldwide AI Ethics</a>. Review of 200 guidelines and governance recommendations.</p>
+            <p><strong>Giarmoleo et al. (2024).</strong> <a href="https://doi.org/10.1111/basr.12336">What ethics can say on artificial intelligence</a>. Systematic literature review.</p>
+            <p><strong>Groen, Sharon, and Becker (2026).</strong> <a href="https://link.springer.com/article/10.1007/s43681-025-00955-7">An overview of AI ethics</a>. Narrative overview through principles, lived realities, and power structures.</p>
+            <p class="ethics-source-warning">Claude is not one of these sources. Verify any paper claim it produces against the linked paper or the supplied source summaries.</p>
+          </div>
+        </details>
+
+        <section class="ethics-case-sheet" aria-labelledby="anchor-case-title">
+          <div class="ethics-case-index">Anchor case</div>
+          <div>
+            <h3 id="anchor-case-title">The polished report</h3>
+            <p>A professor assigns an analytical report. The syllabus says students may "use AI responsibly" and must disclose assistance, but neither term is defined.</p>
+            <p>A student submits a polished report and writes only, "AI helped with this assignment." During a short discussion, the student cannot explain or verify two important claims.</p>
+          </div>
+        </section>
+
+        <div class="ethics-privacy-band">
+          <strong>Do not enter real student cases.</strong>
+          <p>Use only the fictional case. This page stores responses locally, but exported files contain what you write.</p>
+        </div>
+
+        <div class="ethics-stage-actions js-only">
+          <a class="ethics-button ethics-button-secondary" href="{{ '/wiki/ai-ethics-grill-facilitator/' | relative_url }}">Teacher view</a>
+          <button class="ethics-button ethics-button-primary" type="button" data-go="baseline">Begin individual baseline</button>
+        </div>
+      </section>
+
+      <section class="ethics-stage" data-stage="baseline" aria-labelledby="baseline-title">
+        <header class="ethics-stage-header">
+          <p class="ethics-step">8-17 minutes | Individual | No AI</p>
+          <h2 id="baseline-title">Commit before consulting</h2>
+          <p>Answer independently. Your position can be uncertain, but it must be yours. The snapshot is ungraded and exists only so you can examine how your reasoning changes.</p>
+        </header>
+
+        <div class="ethics-question" data-question="q1">
+          <div class="ethics-question-number">Q1</div>
+          <div>
+            <h3>Which ethical principles matter most?</h3>
+            <fieldset class="ethics-choice-grid">
+              <legend>Select up to two</legend>
+              <label><input type="checkbox" data-baseline-field="q1-transparency" value="Transparency"> Transparency</label>
+              <label><input type="checkbox" data-baseline-field="q1-fairness" value="Fairness"> Fairness</label>
+              <label><input type="checkbox" data-baseline-field="q1-privacy" value="Privacy"> Privacy</label>
+              <label><input type="checkbox" data-baseline-field="q1-accountability" value="Accountability"> Accountability</label>
+              <label><input type="checkbox" data-baseline-field="q1-safety" value="Safety"> Safety</label>
+              <label><input type="checkbox" data-baseline-field="q1-none" value="No clear violation yet"> No clear violation yet</label>
+            </fieldset>
+            <label for="q1-reason">Why do your selected principles matter in this case?</label>
+            <textarea id="q1-reason" data-baseline-field="q1-reason" rows="3" maxlength="1600"></textarea>
+          </div>
+        </div>
+
+        <div class="ethics-question" data-question="q2">
+          <div class="ethics-question-number">Q2</div>
+          <div>
+            <h3>What is your initial verdict?</h3>
+            <fieldset class="ethics-choice-grid ethics-choice-grid-four">
+              <legend>Choose one</legend>
+              <label><input type="radio" name="q2-verdict" data-baseline-field="q2-verdict" value="Acceptable"> Acceptable</label>
+              <label><input type="radio" name="q2-verdict" data-baseline-field="q2-verdict" value="Borderline"> Borderline</label>
+              <label><input type="radio" name="q2-verdict" data-baseline-field="q2-verdict" value="Unacceptable"> Unacceptable</label>
+              <label><input type="radio" name="q2-verdict" data-baseline-field="q2-verdict" value="Insufficient evidence"> Insufficient evidence</label>
+            </fieldset>
+            <label for="q2-reason">Justify your verdict using facts from the case.</label>
+            <textarea id="q2-reason" data-baseline-field="q2-reason" rows="4" maxlength="1800"></textarea>
+          </div>
+        </div>
+
+        <div class="ethics-question" data-question="q3">
+          <div class="ethics-question-number">Q3</div>
+          <div>
+            <h3>What evidence is missing?</h3>
+            <label for="q3-evidence">Name two additional pieces of evidence that could change your verdict.</label>
+            <textarea id="q3-evidence" data-baseline-field="q3-evidence" rows="4" maxlength="1800"></textarea>
+          </div>
+        </div>
+
+        <div class="ethics-question" data-question="q4">
+          <div class="ethics-question-number">Q4</div>
+          <div>
+            <h3>Is banning AI fair?</h3>
+            <div class="ethics-split-fields">
+              <div><label for="q4-for">Strongest argument for a ban</label><textarea id="q4-for" data-baseline-field="q4-for" rows="3" maxlength="1400"></textarea></div>
+              <div><label for="q4-against">Strongest argument against a ban</label><textarea id="q4-against" data-baseline-field="q4-against" rows="3" maxlength="1400"></textarea></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ethics-question" data-question="q5">
+          <div class="ethics-question-number">Q5</div>
+          <div>
+            <h3>Who is accountable?</h3>
+            <p>Allocate exactly 100 responsibility points.</p>
+            <div class="ethics-allocation">
+              <label for="q5-student">Student<input id="q5-student" type="number" min="0" max="100" step="5" data-baseline-field="q5-student" inputmode="numeric"></label>
+              <label for="q5-instructor">Instructor<input id="q5-instructor" type="number" min="0" max="100" step="5" data-baseline-field="q5-instructor" inputmode="numeric"></label>
+              <label for="q5-university">University<input id="q5-university" type="number" min="0" max="100" step="5" data-baseline-field="q5-university" inputmode="numeric"></label>
+              <output id="q5-total" for="q5-student q5-instructor q5-university">Total: 0</output>
+            </div>
+            <label for="q5-reason">Explain your largest allocation.</label>
+            <textarea id="q5-reason" data-baseline-field="q5-reason" rows="3" maxlength="1600"></textarea>
+          </div>
+        </div>
+
+        <div class="ethics-snapshot-panel">
+          <fieldset class="ethics-confidence">
+            <legend>How confident are you in your overall judgment?</legend>
+            <label><input type="radio" name="baseline-confidence" data-baseline-field="baseline-confidence" value="1 - Very uncertain"> 1</label>
+            <label><input type="radio" name="baseline-confidence" data-baseline-field="baseline-confidence" value="2"> 2</label>
+            <label><input type="radio" name="baseline-confidence" data-baseline-field="baseline-confidence" value="3"> 3</label>
+            <label><input type="radio" name="baseline-confidence" data-baseline-field="baseline-confidence" value="4"> 4</label>
+            <label><input type="radio" name="baseline-confidence" data-baseline-field="baseline-confidence" value="5 - Very confident"> 5</label>
+          </fieldset>
+          <label class="ethics-confirm"><input id="baseline-confirm" type="checkbox" data-baseline-field="baseline-confirm"> I completed this baseline without generative-AI assistance.</label>
+          <p>A snapshot supports reflection; it is not secure proof of how the work was produced.</p>
+          <button class="ethics-button ethics-button-primary js-only" id="baseline-lock" type="button">Create baseline snapshot</button>
+          <p id="baseline-lock-state" role="status" aria-live="polite">Not yet saved as a snapshot.</p>
+        </div>
+        <div class="ethics-stage-actions js-only"><button class="ethics-button ethics-button-quiet" type="button" data-go="primer">Previous</button><button class="ethics-button ethics-button-primary" type="button" data-go="group" data-requires-baseline>Continue to group setup</button></div>
+      </section>
+
+      <section class="ethics-stage" data-stage="group" aria-labelledby="group-title">
+        <header class="ethics-stage-header">
+          <p class="ethics-step">17-22 minutes | Groups of 4, 4, and 3</p>
+          <h2 id="group-title">Compare without erasing difference</h2>
+          <p>Share conclusions, not private writing. The group must record disagreement rather than force artificial consensus.</p>
+        </header>
+
+        <div class="ethics-group-setup">
+          <label for="group-letter">Group letter<select id="group-letter" data-group-field="group-letter"><option value="">Choose</option><option>A</option><option>B</option><option>C</option></select></label>
+          <label for="group-members">Group members<textarea id="group-members" data-group-field="group-members" rows="2" maxlength="700" placeholder="Names separated by commas"></textarea></label>
+        </div>
+
+        <div class="ethics-role-grid">
+          <div><strong>Policy drafter</strong><span>Writes the clause</span></div>
+          <div><strong>Ethics challenger</strong><span>Finds the strongest objection</span></div>
+          <div><strong>Evidence keeper</strong><span>Records reasons and changes</span></div>
+          <div><strong>Spokesperson</strong><span>Defends the decision</span></div>
+        </div>
+
+        <div class="ethics-answer-block">
+          <label for="group-disagreement">Where did your individual judgments differ?</label>
+          <textarea id="group-disagreement" data-group-field="group-disagreement" rows="4" maxlength="2000"></textarea>
+        </div>
+        <div class="ethics-answer-block">
+          <label for="group-provisional">Write one provisional policy sentence before seeing new facts.</label>
+          <textarea id="group-provisional" data-group-field="group-provisional" rows="4" maxlength="2000"></textarea>
+        </div>
+        <div class="ethics-wait"><strong>Wait for the instructor.</strong><span>The next fact should arrive only after your provisional policy is recorded.</span></div>
+        <div class="ethics-stage-actions js-only"><button class="ethics-button ethics-button-quiet" type="button" data-go="baseline">Previous</button><button class="ethics-button ethics-button-primary" type="button" data-go="access">Reveal access variation</button></div>
+      </section>
+
+      <section class="ethics-stage" data-stage="access" aria-labelledby="access-title">
+        <header class="ethics-stage-header">
+          <p class="ethics-step">22-30 minutes | Variation 1</p>
+          <h2 id="access-title">Equal rule, unequal resources</h2>
+        </header>
+        <section class="ethics-case-sheet ethics-case-access" aria-labelledby="access-case-title">
+          <div class="ethics-case-index">New fact 1</div>
+          <div><h3 id="access-case-title">The access gap</h3><p>The student used a paid model substantially more capable than the university-provided tool. Another student avoided AI, spent twice as long, and received a lower grade.</p></div>
+        </section>
+
+        <div class="ethics-question" data-question="q6"><div class="ethics-question-number">Q6</div><div><h3>Where is the use boundary?</h3><div class="ethics-three-fields"><div><label for="q6-allowed">One allowed use</label><textarea id="q6-allowed" data-group-field="q6-allowed" rows="3" maxlength="1200"></textarea></div><div><label for="q6-borderline">One borderline use</label><textarea id="q6-borderline" data-group-field="q6-borderline" rows="3" maxlength="1200"></textarea></div><div><label for="q6-prohibited">One prohibited use</label><textarea id="q6-prohibited" data-group-field="q6-prohibited" rows="3" maxlength="1200"></textarea></div></div></div></div>
+
+        <div class="ethics-question" data-question="q7"><div class="ethics-question-number">Q7</div><div><h3>Why is "use AI responsibly" too vague?</h3><label for="q7-vague">Name two decisions the phrase fails to settle.</label><textarea id="q7-vague" data-group-field="q7-vague" rows="3" maxlength="1600"></textarea></div></div>
+
+        <div class="ethics-question" data-question="q8"><div class="ethics-question-number">Q8</div><div><h3>What would make access fair?</h3><label for="q8-fairness">Who benefits, who is disadvantaged, and what obligation follows?</label><textarea id="q8-fairness" data-group-field="q8-fairness" rows="4" maxlength="1800"></textarea><label for="q8-clause">Write one access and fairness clause.</label><textarea id="q8-clause" data-group-field="q8-clause" rows="3" maxlength="1400"></textarea></div></div>
+
+        <div class="ethics-micro-output"><strong>Required micro-output</strong><p>We revise / do not revise our judgment because ____. Our access clause is ____.</p></div>
+        <div class="ethics-stage-actions js-only"><button class="ethics-button ethics-button-quiet" type="button" data-go="group">Previous</button><button class="ethics-button ethics-button-primary" type="button" data-go="privacy">Continue to privacy</button></div>
+      </section>
+
+      <section class="ethics-stage" data-stage="privacy" aria-labelledby="privacy-title">
+        <header class="ethics-stage-header"><p class="ethics-step">30-38 minutes | Variation 2</p><h2 id="privacy-title">Useful input can still be unauthorized</h2></header>
+        <section class="ethics-case-sheet ethics-case-privacy" aria-labelledby="privacy-case-title"><div class="ethics-case-index">New fact 2</div><div><h3 id="privacy-case-title">The upload</h3><p>The student uploaded instructor feedback, a classmate's draft, and unpublished course materials to an unapproved AI service.</p></div></section>
+
+        <div class="ethics-question" data-question="q9"><div class="ethics-question-number">Q9</div><div><h3>Turn principles into practice</h3><p>Jobin shows that shared words can hide different meanings. Corrêa shows that repeated principles need implementation.</p><label for="q9-principle">Choose one principle and define what it requires in this case.</label><textarea id="q9-principle" data-group-field="q9-principle" rows="3" maxlength="1400"></textarea><label for="q9-practice">Name the actor, required action, process, and response to noncompliance.</label><textarea id="q9-practice" data-group-field="q9-practice" rows="4" maxlength="1800"></textarea></div></div>
+
+        <div class="ethics-question" data-question="q10"><div class="ethics-question-number">Q10</div><div><h3>What may AI receive?</h3><div class="ethics-three-fields"><div><label for="q10-prohibited">What must not be uploaded?</label><textarea id="q10-prohibited" data-group-field="q10-prohibited" rows="3" maxlength="1400"></textarea></div><div><label for="q10-permission">What requires permission?</label><textarea id="q10-permission" data-group-field="q10-permission" rows="3" maxlength="1400"></textarea></div><div><label for="q10-response">What happens after a mistake?</label><textarea id="q10-response" data-group-field="q10-response" rows="3" maxlength="1400"></textarea></div></div></div></div>
+
+        <div class="ethics-micro-output"><strong>Required micro-output</strong><p>Students may not upload ____. Permission is required when ____. If exposure occurs, ____ responds by ____.</p></div>
+        <div class="ethics-stage-actions js-only"><button class="ethics-button ethics-button-quiet" type="button" data-go="access">Previous</button><button class="ethics-button ethics-button-primary" type="button" data-go="accountability">Continue to accountability</button></div>
+      </section>
+
+      <section class="ethics-stage" data-stage="accountability" aria-labelledby="accountability-title">
+        <header class="ethics-stage-header"><p class="ethics-step">38-46 minutes | Variation 3</p><h2 id="accountability-title">Responsibility under a vague rule</h2></header>
+        <section class="ethics-case-sheet ethics-case-accountability" aria-labelledby="accountability-case-title"><div class="ethics-case-index">New fact 3</div><div><h3 id="accountability-case-title">The missing guidance</h3><p>The syllabus never defined responsible use or adequate disclosure. The instructor provided no examples. The student can now defend most, but not all, of the submitted work.</p></div></section>
+
+        <div class="ethics-question" data-question="q11"><div class="ethics-question-number">Q11</div><div><h3>What rule and what capability are both needed?</h3><div class="ethics-split-fields"><div><label for="q11-rule">Act-centered response: one rule, process, or consequence</label><textarea id="q11-rule" data-group-field="q11-rule" rows="4" maxlength="1600"></textarea></div><div><label for="q11-judgment">Agent-centered response: one judgment capability students must develop</label><textarea id="q11-judgment" data-group-field="q11-judgment" rows="4" maxlength="1600"></textarea></div></div></div></div>
+
+        <div class="ethics-question" data-question="q12"><div class="ethics-question-number">Q12</div><div><h3>What proves that learning occurred?</h3><label for="q12-evidence">Design three pieces of evidence showing that AI strengthened rather than replaced learning.</label><textarea id="q12-evidence" data-group-field="q12-evidence" rows="4" maxlength="1800"></textarea><label for="q12-test">Apply the test: can the student explain, verify, adapt, and defend the work?</label><textarea id="q12-test" data-group-field="q12-test" rows="3" maxlength="1600"></textarea></div></div>
+
+        <div class="ethics-answer-block"><label for="accountability-revision">Reallocate accountability after the new facts. What changed from the individual baseline?</label><textarea id="accountability-revision" data-group-field="accountability-revision" rows="4" maxlength="1800"></textarea></div>
+        <div class="ethics-stage-actions js-only"><button class="ethics-button ethics-button-quiet" type="button" data-go="privacy">Previous</button><button class="ethics-button ethics-button-primary" type="button" data-go="critic">Open the AI critic stage</button></div>
+      </section>
+
+      <section class="ethics-stage" data-stage="critic" aria-labelledby="critic-title">
+        <header class="ethics-stage-header"><p class="ethics-step">46-54 minutes | Claude permitted</p><h2 id="critic-title">Use AI to attack the policy, not write it</h2><p>Your group has already produced its ideas. Claude may now expose assumptions and counterexamples. It is not the decision maker or a source for the four papers.</p></header>
+
+        <div class="ethics-ai-boundary">
+          <div><strong>Paste</strong><span>Only the fictional case and your provisional policy</span></div>
+          <div><strong>Never paste</strong><span>Names, grades, peer work, feedback, course files, identifiers, or private data</span></div>
+          <div><strong>Verify</strong><span>Any factual or paper-related claim before accepting it</span></div>
+        </div>
+
+        <div class="ethics-answer-block"><label for="ai-prompt">Critic prompt</label><textarea id="ai-prompt" rows="16" readonly></textarea><button class="ethics-button ethics-button-secondary js-only" id="copy-ai-prompt" type="button">Copy critic prompt</button></div>
+        <p><a class="ethics-external-link" href="https://claude.ai" target="_blank" rel="noopener noreferrer">Open Claude in a new tab</a>. Use your individual university-sponsored account. If access fails, ask the instructor for the equivalent printed critique card.</p>
+
+        <div class="ethics-answer-block"><label for="ai-output">Paste or summarize the most relevant AI critique</label><textarea id="ai-output" data-group-field="ai-output" rows="5" maxlength="4000"></textarea></div>
+        <div class="ethics-split-fields">
+          <div><label for="ai-accepted">What advice did you accept, and why?</label><textarea id="ai-accepted" data-group-field="ai-accepted" rows="4" maxlength="2200"></textarea></div>
+          <div><label for="ai-rejected">What advice did you reject, and why?</label><textarea id="ai-rejected" data-group-field="ai-rejected" rows="4" maxlength="2200"></textarea></div>
+        </div>
+        <div class="ethics-answer-block"><label for="ai-verified">What did you verify, and how?</label><textarea id="ai-verified" data-group-field="ai-verified" rows="4" maxlength="2200"></textarea></div>
+
+        <div class="ethics-question" data-question="q13"><div class="ethics-question-number">Q13</div><div><h3>What is the strongest counterargument?</h3><label for="q13-counterargument">State it in a form a reasonable critic would accept.</label><textarea id="q13-counterargument" data-group-field="q13-counterargument" rows="4" maxlength="1800"></textarea><label for="q13-revision">Revise exactly one policy sentence in response, or defend why no revision is needed.</label><textarea id="q13-revision" data-group-field="q13-revision" rows="4" maxlength="1800"></textarea></div></div>
+
+        <details class="ethics-fallback-card">
+          <summary>Claude unavailable? Open the equivalent critique card</summary>
+          <p>Your policy may reward students who can produce polished disclosures rather than students who learned. It may also assume equal tool access, treat consent as sufficient privacy protection, and place duties on students without requiring instructors or the institution to provide usable rules. Identify which criticism is strongest, reject at least one that does not fit your policy, and revise one sentence.</p>
+        </details>
+
+        <div class="ethics-stage-actions js-only"><button class="ethics-button ethics-button-quiet" type="button" data-go="accountability">Previous</button><button class="ethics-button ethics-button-primary" type="button" data-go="defense">Continue to defense</button></div>
+      </section>
+
+      <section class="ethics-stage" data-stage="defense" aria-labelledby="defense-title">
+        <header class="ethics-stage-header"><p class="ethics-step">54-67 minutes | Revise and defend</p><h2 id="defense-title">A policy must survive another group</h2><p>Close Claude. Your group must now defend its own reasoning.</p></header>
+
+        <div class="ethics-challenge-map" aria-label="Cross-group challenge assignments"><span>Group A challenges B</span><span>Group B challenges C</span><span>Group C challenges A</span></div>
+
+        <div class="ethics-answer-block"><label for="cross-counterexample">Counterexample received from another group</label><textarea id="cross-counterexample" data-group-field="cross-counterexample" rows="3" maxlength="1600"></textarea></div>
+        <div class="ethics-answer-block"><label for="cross-response">Your 60-second defense or revision</label><textarea id="cross-response" data-group-field="cross-response" rows="4" maxlength="1800"></textarea></div>
+
+        <fieldset class="ethics-final-policy">
+          <legend>Final group policy</legend>
+          <label for="policy-allow"><span>Allow</span> Which learning uses are permitted?<textarea id="policy-allow" data-group-field="policy-allow" rows="3" maxlength="1800"></textarea></label>
+          <label for="policy-disclose"><span>Disclose</span> What assistance and process must be reported?<textarea id="policy-disclose" data-group-field="policy-disclose" rows="3" maxlength="1800"></textarea></label>
+          <label for="policy-protect"><span>Protect</span> What may not be uploaded or exposed?<textarea id="policy-protect" data-group-field="policy-protect" rows="3" maxlength="1800"></textarea></label>
+          <label for="policy-assess"><span>Assess</span> What evidence will demonstrate learning?<textarea id="policy-assess" data-group-field="policy-assess" rows="3" maxlength="1800"></textarea></label>
+        </fieldset>
+
+        <details class="ethics-group-transfer">
+          <summary>Share the group-authored fields with group members</summary>
+          <p>The packet omits the individual baseline, identity fields, and exit reflection. It contains the text entered in group-answer fields, so remove names or identifiers from those answers before sharing.</p>
+          <div class="ethics-export-row js-only"><button class="ethics-button ethics-button-secondary" id="copy-group-packet" type="button">Copy group packet</button><button class="ethics-button ethics-button-secondary" id="download-group-packet" type="button">Download group packet</button></div>
+          <label for="group-packet-import">Group members: paste the packet from your evidence keeper</label>
+          <textarea id="group-packet-import" rows="5" placeholder="Paste the group packet code here"></textarea>
+          <button class="ethics-button ethics-button-secondary js-only" id="import-group-packet" type="button">Import group answers</button>
+        </details>
+
+        <div class="ethics-stage-actions js-only"><button class="ethics-button ethics-button-quiet" type="button" data-go="critic">Previous</button><button class="ethics-button ethics-button-primary" type="button" data-go="report">Complete individual report</button></div>
+      </section>
+
+      <section class="ethics-stage" data-stage="report" aria-labelledby="report-title">
+        <header class="ethics-stage-header"><p class="ethics-step">67-70 minutes, then revise within three days</p><h2 id="report-title">Return to your own judgment</h2><p>These fields are individual work. Develop them after class before generating the PDF for eCampus.</p></header>
+
+        <fieldset class="ethics-identity">
+          <legend>Submission identity</legend>
+          <label for="student-name">Student name<input id="student-name" type="text" data-individual-field="student-name" maxlength="160"></label>
+          <label for="ecampus-id">eCampus username or student ID<input id="ecampus-id" type="text" data-individual-field="ecampus-id" maxlength="160"></label>
+          <label for="report-group-letter">Group letter<select id="report-group-letter" data-individual-field="report-group-letter"><option value="">Choose</option><option>A</option><option>B</option><option>C</option></select></label>
+          <label for="report-group-members">Group members<textarea id="report-group-members" data-individual-field="report-group-members" rows="2" maxlength="700"></textarea></label>
+        </fieldset>
+
+        <div class="ethics-question ethics-question-unnumbered"><div><h3>Final verdict</h3><fieldset class="ethics-choice-grid ethics-choice-grid-four"><legend>Choose one</legend><label><input type="radio" name="final-verdict" data-individual-field="final-verdict" value="Acceptable"> Acceptable</label><label><input type="radio" name="final-verdict" data-individual-field="final-verdict" value="Borderline"> Borderline</label><label><input type="radio" name="final-verdict" data-individual-field="final-verdict" value="Unacceptable"> Unacceptable</label><label><input type="radio" name="final-verdict" data-individual-field="final-verdict" value="Insufficient evidence"> Insufficient evidence</label></fieldset></div></div>
+        <div class="ethics-answer-block"><label for="reasoning-change">What changed from your baseline, and why?</label><textarea id="reasoning-change" data-individual-field="reasoning-change" rows="5" maxlength="3000"></textarea></div>
+        <div class="ethics-answer-block"><label for="remaining-uncertainty">What remains uncertain?</label><textarea id="remaining-uncertainty" data-individual-field="remaining-uncertainty" rows="4" maxlength="2400"></textarea></div>
+
+        <section class="ethics-paper-application" aria-labelledby="paper-application-title">
+          <h3 id="paper-application-title">Apply all four papers</h3>
+          <p>Use one accurate idea from each paper to justify a concrete policy decision. Do not write four disconnected summaries.</p>
+          <label for="jobin-application">Jobin: principle ambiguity<textarea id="jobin-application" data-individual-field="jobin-application" rows="4" maxlength="2400"></textarea></label>
+          <label for="correa-application">Corrêa: implementation and governance<textarea id="correa-application" data-individual-field="correa-application" rows="4" maxlength="2400"></textarea></label>
+          <label for="giarmoleo-application">Giarmoleo: rules and judgment<textarea id="giarmoleo-application" data-individual-field="giarmoleo-application" rows="4" maxlength="2400"></textarea></label>
+          <label for="groen-application">Groen: lived realities and power<textarea id="groen-application" data-individual-field="groen-application" rows="4" maxlength="2400"></textarea></label>
+        </section>
+
+        <label class="ethics-confirm"><input id="student-declaration" type="checkbox" data-individual-field="student-declaration"> I inspected this report, accurately distinguished individual, group, and AI-assisted work, and can explain, verify, adapt, and defend the submitted reasoning.</label>
+
+        <section class="ethics-rubric" aria-labelledby="rubric-title">
+          <h3 id="rubric-title">Report rubric: 20 points</h3>
+          <table><thead><tr><th>Criterion</th><th>Points</th></tr></thead><tbody><tr><td>Accurate application of all four papers</td><td>4</td></tr><tr><td>Visible reasoning revision</td><td>4</td></tr><tr><td>Specific operational policy</td><td>4</td></tr><tr><td>Fairness, privacy, access, and power analysis</td><td>3</td></tr><tr><td>Evaluation rather than copying of AI advice</td><td>3</td></tr><tr><td>Complete AI-use documentation</td><td>2</td></tr></tbody></table>
+        </section>
+
+        <div class="ethics-report-controls js-only">
+          <button class="ethics-button ethics-button-primary" id="build-report" type="button">Build report preview</button>
+          <button class="ethics-button ethics-button-secondary" id="download-report-text" type="button">Download editable draft</button>
+          <button class="ethics-button ethics-button-secondary" id="print-report" type="button">Print / Save as PDF</button>
+        </div>
+
+        <div class="ethics-template-links">
+          <a href="{{ '/assets/templates/ai-ethics-grill-report-template.docx' | relative_url }}">Download DOCX fallback template</a>
+          <a href="{{ '/assets/templates/ai-ethics-grill-report-template.pdf' | relative_url }}">Download PDF fallback template</a>
+        </div>
+
+        <article class="ethics-report-preview" id="ethics-report-preview" aria-labelledby="report-preview-title">
+          <h2 id="report-preview-title">Report preview</h2>
+          <p>Choose "Build report preview" to assemble your current work. Inspect every section before saving it as PDF.</p>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <footer class="ethics-provenance">
+    <h2>Teaching basis and limits</h2>
+    <p>This activity adapts Q's 26-question AI ethics learning path into 13 classroom questions. The case, policy framework, and exercise sequence are instructional syntheses. They are not scenarios or a unified higher-education framework directly presented by the four papers.</p>
+    <p>Continue with the <a href="{{ '/wiki/ai-ethics-college-policy/' | relative_url }}">full AI ethics college-policy post</a> or the <a href="{{ '/wiki/ai-ethics-grill-facilitator/' | relative_url }}">facilitator view</a>.</p>
+  </footer>
+</div>
+
+<noscript><p class="ethics-noscript">JavaScript is unavailable. This view is for reading only; do not use it to complete the classroom lab because it cannot enforce the baseline sequence. Use the DOCX or PDF fallback if JavaScript remains unavailable.</p></noscript>
+<script src="{{ '/assets/js/ai-ethics-grill-classroom.js' | relative_url }}" defer></script>

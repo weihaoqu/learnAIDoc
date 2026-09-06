@@ -1,0 +1,178 @@
+---
+title: "Facilitator Guide: Who Did the Learning?"
+description: "Run the 70-minute AI ethics policy lab for 11 students, including timed reveals, Claude critique, cross-group defense, and report handoff."
+date: 2026-09-06
+category: AI for Teaching
+tags: [ai-ethics, facilitator-guide, active-learning, assessment, higher-education]
+related:
+  - "Who Did the Learning? An AI Ethics Policy Lab"
+  - 'AI Ethics in College: Stop Asking "Did Students Use AI?" Ask Whether They Learned'
+layout: lab
+challenge_count: "Teacher guide"
+duration: "70 minutes"
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/ai-ethics-grill-classroom.css' | relative_url }}">
+
+<div class="ethics-facilitator" id="ai-ethics-facilitator">
+  <p><a class="ethics-button ethics-button-secondary" href="{{ '/wiki/ai-ethics-grill-classroom-lab/' | relative_url }}">Open student exercise</a></p>
+
+  <div class="facilitator-console">
+    <aside class="facilitator-clock" aria-labelledby="facilitator-clock-title">
+      <p class="ethics-label" id="facilitator-clock-title">Class clock</p>
+      <output class="facilitator-time" id="facilitator-time" aria-live="off">70:00</output>
+      <p class="facilitator-current" id="facilitator-current">Four ethical lenses</p>
+      <div class="facilitator-controls js-only">
+        <button class="ethics-button ethics-button-primary" id="facilitator-start" type="button">Start</button>
+        <button class="ethics-button ethics-button-secondary" id="facilitator-pause" type="button" disabled>Pause</button>
+        <button class="ethics-button ethics-button-secondary" id="facilitator-next" type="button">Next stage</button>
+        <button class="ethics-button ethics-button-quiet" id="facilitator-reset" type="button">Reset</button>
+      </div>
+      <p class="ethics-ledger-note">The timer is a pacing aid. Keep the 13 answers short in class; students develop them in the three-day report.</p>
+    </aside>
+
+    <main class="facilitator-content">
+      <section aria-labelledby="facilitator-outcome-title">
+        <h2 id="facilitator-outcome-title">Teaching outcome</h2>
+        <p>Students should leave able to translate broad ethical principles into a defensible college AI policy, evaluate rather than copy AI criticism, and identify evidence that learning occurred.</p>
+        <p><strong>Do not grade the pre-AI snapshot.</strong> The final report may be graded, but no preferred verdict earns points.</p>
+      </section>
+
+      <section aria-labelledby="before-class-title">
+        <h2 id="before-class-title">Before class</h2>
+        <ul>
+          <li>Post the student-page link in eCampus.</li>
+          <li>Confirm every student can access an individual university-sponsored Claude account in a browser.</li>
+          <li>Print three copies of the fallback critique card below.</li>
+          <li>Assign groups A, B, and C with 4, 4, and 3 students.</li>
+          <li>Test browser local storage, backup download, restore, report preview, and Print / Save as PDF.</li>
+          <li>Tell students that names and answers remain local until they export a file.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="agenda-title">
+        <h2 id="agenda-title">Run of show</h2>
+        <table class="facilitator-table facilitator-agenda">
+          <thead><tr><th>Time</th><th>Stage</th><th>Required output</th></tr></thead>
+          <tbody>
+            <tr data-duration="8" data-title="Four ethical lenses"><td>0-8</td><td>Four ethical lenses</td><td>Students can state one decision prompt from each paper.</td></tr>
+            <tr data-duration="9" data-title="Individual pre-AI baseline"><td>8-17</td><td>Individual baseline, no AI</td><td>Five substantive answers, confidence, confirmation, snapshot.</td></tr>
+            <tr data-duration="5" data-title="Group comparison"><td>17-22</td><td>Groups of 4, 4, and 3</td><td>One disagreement and one provisional policy sentence.</td></tr>
+            <tr data-duration="8" data-title="Variation 1: access"><td>22-30</td><td>Access and fairness</td><td>Q6-Q8 plus one access clause.</td></tr>
+            <tr data-duration="8" data-title="Variation 2: privacy"><td>30-38</td><td>Privacy and permission</td><td>Q9-Q10 plus one protection clause.</td></tr>
+            <tr data-duration="8" data-title="Variation 3: accountability"><td>38-46</td><td>Shared accountability</td><td>Q11-Q12 plus revised responsibility.</td></tr>
+            <tr data-duration="8" data-title="Claude critic"><td>46-54</td><td>Claude critique</td><td>Accepted, rejected, and verified advice plus Q13.</td></tr>
+            <tr data-duration="7" data-title="Final policy revision"><td>54-61</td><td>Final policy</td><td>Allow, Disclose, Protect, Assess.</td></tr>
+            <tr data-duration="6" data-title="Cross-group defense"><td>61-67</td><td>A challenges B; B challenges C; C challenges A</td><td>One counterexample and 60-second defense or revision.</td></tr>
+            <tr data-duration="3" data-title="Individual report handoff"><td>67-70</td><td>Individual return</td><td>Backup saved and three-day report task understood.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section aria-labelledby="teaching-script-title">
+        <h2 id="teaching-script-title">Eight-minute primer</h2>
+        <div class="facilitator-card-grid">
+          <article class="facilitator-card"><h3>Jobin</h3><p>Shared principles do not guarantee shared definitions.</p><p><strong>Prompt:</strong> What exactly must transparency or fairness require in this assignment?</p></article>
+          <article class="facilitator-card"><h3>Corrêa</h3><p>A principle without duties, processes, and implementation remains weak governance.</p><p><strong>Prompt:</strong> Who must do what, and what happens when the process fails?</p></article>
+          <article class="facilitator-card"><h3>Giarmoleo</h3><p>Act-centered rules govern behavior; agent-centered education develops judgment.</p><p><strong>Prompt:</strong> Which rule and capability are both necessary?</p></article>
+          <article class="facilitator-card"><h3>Groen</h3><p>Principles should be tested against lived realities and power structures.</p><p><strong>Prompt:</strong> Who gains options or discretion, and who bears risk?</p></article>
+        </div>
+        <p><strong>Calibration:</strong> These are operational teaching prompts derived from the papers, not complete paper summaries or a framework jointly proposed by the authors.</p>
+      </section>
+
+      <section aria-labelledby="reveal-script-title">
+        <h2 id="reveal-script-title">Reveal script</h2>
+        <div class="facilitator-card-grid">
+          <article class="facilitator-card">
+            <h3>Anchor case</h3>
+            <p>A student submits polished AI-assisted work under a vague responsible-use rule, discloses only "AI helped," and cannot defend two claims.</p>
+            <p><strong>Do not ask:</strong> Did the student cheat?</p>
+            <p><strong>Ask:</strong> What evidence is missing before judgment?</p>
+          </article>
+          <article class="facilitator-card">
+            <h3>Variation 1: access</h3>
+            <p>The student used a stronger paid model. A classmate avoided AI, spent twice as long, and received a lower grade.</p>
+            <p><strong>Force the distinction:</strong> unequal tool access versus unequal effort.</p>
+          </article>
+          <article class="facilitator-card">
+            <h3>Variation 2: privacy</h3>
+            <p>The student uploaded instructor feedback, a peer draft, and unpublished course materials to an unapproved service.</p>
+            <p><strong>Require:</strong> prohibited material, consent boundary, approved process, and incident response.</p>
+          </article>
+          <article class="facilitator-card">
+            <h3>Variation 3: accountability</h3>
+            <p>The syllabus never defined responsible use or adequate disclosure. The student can now defend most, but not all, of the report.</p>
+            <p><strong>Require:</strong> shared responsibility without erasing student agency.</p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="roles-title">
+        <h2 id="roles-title">Group roles and rotation</h2>
+        <table class="facilitator-table"><thead><tr><th>Role</th><th>Job</th><th>Rotate</th></tr></thead><tbody><tr><td>Policy drafter</td><td>Writes the one- or two-sentence output.</td><td>After access</td></tr><tr><td>Ethics challenger</td><td>States the strongest reasonable objection.</td><td>After privacy</td></tr><tr><td>Evidence keeper</td><td>Records facts, reasons, and revisions; exports the group packet.</td><td>Keep stable if needed</td></tr><tr><td>Spokesperson</td><td>Defends the policy without Claude open.</td><td>Before cross-group defense</td></tr></tbody></table>
+        <p>In the three-person group, combine evidence keeper and spokesperson.</p>
+      </section>
+
+      <section aria-labelledby="claude-stage-title">
+        <h2 id="claude-stage-title">Claude stage</h2>
+        <p>Students may open Claude only after the individual snapshot and group brainstorm. Every group uses the same prompt generated by the page.</p>
+        <h3>Stop students from outsourcing the decision</h3>
+        <ul>
+          <li>Claude attacks one provisional policy; it does not write a replacement.</li>
+          <li>Students must accept one suggestion, reject one, and document verification.</li>
+          <li>Claude output is not evidence about any paper.</li>
+          <li>Names, identifiers, grades, feedback, peer work, and course files stay out of the prompt.</li>
+          <li>Close Claude before the final defense.</li>
+        </ul>
+        <article class="facilitator-card">
+          <h3>Fallback critique card</h3>
+          <p>Your policy may reward polished disclosure rather than learning. It may assume equal tool access, treat consent as sufficient privacy protection, and place duties on students without requiring instructors or the institution to provide usable rules.</p>
+          <p><strong>Task:</strong> Identify the strongest criticism, reject at least one criticism that does not fit, and revise exactly one policy sentence.</p>
+        </article>
+      </section>
+
+      <section aria-labelledby="challenge-title">
+        <h2 id="challenge-title">Cross-group challenge</h2>
+        <p>Give each challenger one counterexample. The defending group has 60 seconds to preserve or revise one policy sentence.</p>
+        <div class="facilitator-card-grid">
+          <article class="facilitator-card"><h3>Counterexample A</h3><p>A multilingual student uses AI to translate their own argument. The policy classifies all generated wording as prohibited. Does the rule preserve fairness and learning?</p></article>
+          <article class="facilitator-card"><h3>Counterexample B</h3><p>A student uses an approved model but pastes peer feedback without permission. Does approved-tool status settle the privacy question?</p></article>
+          <article class="facilitator-card"><h3>Counterexample C</h3><p>A student discloses every prompt but cannot verify a central claim. Is transparency sufficient evidence of learning?</p></article>
+          <article class="facilitator-card"><h3>Counterexample D</h3><p>A student refuses AI for ethical reasons. The assignment rewards ambitious AI-enabled scope. What comparable path must the policy provide?</p></article>
+        </div>
+      </section>
+
+      <section aria-labelledby="misconceptions-title">
+        <h2 id="misconceptions-title">Misconceptions to challenge</h2>
+        <table class="facilitator-table"><thead><tr><th>If students say</th><th>Ask</th></tr></thead><tbody><tr><td>"Disclosure makes it fair."</td><td>Does disclosure repair unequal access or prove understanding?</td></tr><tr><td>"The student agreed, so privacy is solved."</td><td>Did the student have authority to share the teacher's or peer's material?</td></tr><tr><td>"The student is fully responsible."</td><td>What duties arise when the institution supplies a vague rule?</td></tr><tr><td>"The same tool for everyone is fair."</td><td>What about accessibility, AI literacy, refusal, or unequal support?</td></tr><tr><td>"A presentation proves authorship."</td><td>What can it establish, and what uncertainty remains?</td></tr></tbody></table>
+      </section>
+
+      <section aria-labelledby="report-handoff-title">
+        <h2 id="report-handoff-title">Three-day report handoff</h2>
+        <ol>
+          <li>Each evidence keeper shares the group packet with group members.</li>
+          <li>Each student imports the packet into their own browser session without replacing the baseline.</li>
+          <li>Students download a full session backup before leaving class.</li>
+          <li>Students complete the individual reflection and apply one accurate idea from each paper.</li>
+          <li>Students inspect the full HTML report preview, print or save it as PDF, and submit that PDF to eCampus.</li>
+        </ol>
+        <p>The pre-AI snapshot is ungraded. Grade the report's reasoning, revision, specificity, source use, and evaluation of AI advice.</p>
+      </section>
+
+      <section aria-labelledby="teacher-check-title">
+        <h2 id="teacher-check-title">Before students leave</h2>
+        <ul>
+          <li>Every individual baseline shows a snapshot time.</li>
+          <li>Every group has a complete group packet.</li>
+          <li>Every student has downloaded a full session backup.</li>
+          <li>Students know that local browser data can be lost.</li>
+          <li>Students know the PDF is due in eCampus within three days.</li>
+          <li>Students know that changing a verdict is not penalized.</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</div>
+
+<noscript><p class="ethics-noscript">The guide remains readable without JavaScript, but the class timer requires JavaScript.</p></noscript>
+<script src="{{ '/assets/js/ai-ethics-grill-classroom.js' | relative_url }}" defer></script>

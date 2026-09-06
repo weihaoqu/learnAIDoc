@@ -11,8 +11,8 @@ layout: default
     <div class="lab-page-meta">
       {% if page.category %}<span>{{ page.category }}</span>{% endif %}
       <span>{{ page.date | date: "%B %d, %Y" }}</span>
-      <span>Six challenges</span>
-      <span>About 25 minutes</span>
+      <span>{{ page.challenge_count | default: "Six challenges" }}</span>
+      <span>{{ page.duration | default: "About 25 minutes" }}</span>
     </div>
   </header>
 

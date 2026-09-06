@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "title": "AI Ethics Policy Lab Report",
+  "sections": [
+    {
+      "id": "identity",
+      "title": "Submission identity",
+      "authorship": "individual",
+      "fields": [
+        { "id": "student-name", "label": "Student name" },
+        { "id": "ecampus-id", "label": "eCampus username or student ID" },
+        { "id": "group-letter", "label": "Group letter" },
+        { "id": "group-members", "label": "Group members" }
+      ]
+    },
+    {
+      "id": "baseline",
+      "title": "Part A: Pre-AI baseline snapshot",
+      "authorship": "individual",
+      "fields": [
+        { "id": "q1-principles", "label": "Q1. Ethical principles and reasoning" },
+        { "id": "q2-verdict", "label": "Q2. Initial verdict and justification" },
+        { "id": "q3-evidence", "label": "Q3. Evidence needed" },
+        { "id": "q4-ban", "label": "Q4. Strongest arguments for and against a ban" },
+        { "id": "q5-accountability", "label": "Q5. Initial accountability allocation" },
+        { "id": "baseline-confidence", "label": "Initial confidence" },
+        { "id": "baseline-time", "label": "Baseline snapshot time" }
+      ]
+    },
+    {
+      "id": "group-reasoning",
+      "title": "Part B: Group policy stress test",
+      "authorship": "group",
+      "fields": [
+        { "id": "q6-boundaries", "label": "Q6. Allowed, borderline, and prohibited uses" },
+        { "id": "q7-vagueness", "label": "Q7. Why responsible use is too vague" },
+        { "id": "q8-fairness", "label": "Q8. Access and fairness decision" },
+        { "id": "q9-governance", "label": "Q9. Principles translated into practice" },
+        { "id": "q10-privacy", "label": "Q10. Privacy and permission rule" },
+        { "id": "q11-act-agent", "label": "Q11. Act-centered and agent-centered response" },
+        { "id": "q12-assessment", "label": "Q12. Evidence that learning occurred" },
+        { "id": "decision-ledger", "label": "Decision ledger" }
+      ]
+    },
+    {
+      "id": "ai-critique",
+      "title": "Part C: AI-assisted critique",
+      "authorship": "ai-assisted-student-evaluated",
+      "fields": [
+        { "id": "ai-tool", "label": "AI tool and purpose" },
+        { "id": "ai-prompt", "label": "Prompt used" },
+        { "id": "ai-output", "label": "Relevant AI critique" },
+        { "id": "ai-accepted", "label": "Advice accepted and why" },
+        { "id": "ai-rejected", "label": "Advice rejected and why" },
+        { "id": "ai-verified", "label": "Claims checked and verification method" },
+        { "id": "q13-counterargument", "label": "Q13. Strongest counterargument and revision" }
+      ]
+    },
+    {
+      "id": "policy",
+      "title": "Part D: Final group policy",
+      "authorship": "group",
+      "fields": [
+        { "id": "policy-allow", "label": "Allow" },
+        { "id": "policy-disclose", "label": "Disclose" },
+        { "id": "policy-protect", "label": "Protect" },
+        { "id": "policy-assess", "label": "Assess" },
+        { "id": "cross-group-defense", "label": "Cross-group challenge and response" }
+      ]
+    },
+    {
+      "id": "reflection",
+      "title": "Part E: Individual reflection and paper application",
+      "authorship": "individual",
+      "fields": [
+        { "id": "final-verdict", "label": "Final verdict" },
+        { "id": "reasoning-change", "label": "What changed and why" },
+        { "id": "remaining-uncertainty", "label": "Remaining uncertainty" },
+        { "id": "jobin-application", "label": "Jobin et al. application" },
+        { "id": "correa-application", "label": "Corrêa et al. application" },
+        { "id": "giarmoleo-application", "label": "Giarmoleo et al. application" },
+        { "id": "groen-application", "label": "Groen et al. application" },
+        { "id": "student-declaration", "label": "Student declaration" }
+      ]
+    }
+  ]
+}
