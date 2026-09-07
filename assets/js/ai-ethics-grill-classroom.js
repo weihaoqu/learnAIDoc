@@ -13,14 +13,19 @@
     const VERSION = 1;
     const BACKUP_KIND = "ai-ethics-classroom-session";
     const GROUP_KIND = "ai-ethics-classroom-group-packet";
-    const storageKey = root.dataset.storageKey || "aiEthicsClassroomGrill:v1";
+    const requestedCourse = new URLSearchParams(window.location.search).get("course");
+    const courseMode = String(requestedCourse || "").trim().toLowerCase() === "cs215";
+    const baseStorageKey = root.dataset.storageKey || "aiEthicsClassroomGrill:v1";
+    const storageKey = courseMode ? baseStorageKey + ":course:cs215" : baseStorageKey;
     const status = document.getElementById("ethics-save-status");
     const stages = Array.from(root.querySelectorAll("[data-stage]"));
     const stageNames = new Set(stages.map(function (stage) { return stage.dataset.stage; }));
     const navButtons = Array.from(root.querySelectorAll(".ethics-stage-nav [data-go]"));
     const baselineFields = Array.from(root.querySelectorAll("[data-baseline-field]"));
     const groupFields = Array.from(root.querySelectorAll("[data-group-field]"));
-    const individualFields = Array.from(root.querySelectorAll("[data-individual-field]"));
+    const individualFields = Array.from(root.querySelectorAll("[data-individual-field]")).filter(function (field) {
+      return !courseMode || !field.closest("#standalone-submission-identity");
+    });
     const fieldKeys = {
       baseline: new Set(baselineFields.map(function (field) { return field.dataset.baselineField; })),
       group: new Set(groupFields.map(function (field) { return field.dataset.groupField; })),
@@ -29,6 +34,60 @@
     const groupPacketKeys = new Set(Array.from(fieldKeys.group).filter(function (key) { return key !== "group-members"; }));
     const surface = root.querySelector(".ethics-surface");
     let statusTimer;
+
+    function setText(id, text) {
+      const element = document.getElementById(id);
+      if (element) element.textContent = text;
+    }
+
+    function configureCourseMode() {
+      if (!courseMode) return;
+      root.classList.add("is-cs215");
+      const bridge = document.getElementById("cs215-course-bridge");
+      const selfCheck = document.getElementById("cs215-memo-self-check");
+      if (bridge) bridge.hidden = false;
+      if (selfCheck) selfCheck.hidden = false;
+      ["standalone-submission-identity", "standalone-report-rubric", "standalone-report-templates", "print-report", "standalone-teacher-view"].forEach(function (id) {
+        const element = document.getElementById(id);
+        if (element) element.remove();
+      });
+      const pageDescription = document.querySelector(".lab-page-description");
+      if (pageDescription) pageDescription.textContent = "Build an independent position, stress-test it with classmates and a bounded critic, then export evidence for the existing CS-215 Week 3 policy memo.";
+      setText("report-stage-nav-label", "Memo notes");
+      setText("open-report-stage", "Capture memo evidence");
+      setText("primer-stage-time", "05-13 minutes | Recover the review lenses");
+      setText("baseline-stage-time", "13-22 minutes | Individual | No AI");
+      setText("group-stage-time", "22-27 minutes | Group setup");
+      setText("access-stage-time", "27-35 minutes | Variation 1");
+      setText("privacy-stage-time", "35-43 minutes | Variation 2");
+      setText("accountability-stage-time", "43-51 minutes | Variation 3");
+      setText("report-stage-time", "72-75 minutes | Individual memo handoff");
+      setText("report-stage-instruction", "These are formative notes for your existing Week 3 Responsible AI Policy Memo. Do not submit a second lab report. Export only the evidence you need, then write and verify the memo within the assignment's authorship rules.");
+      setText("paper-application-title", "Prepare evidence for the policy memo");
+      setText("paper-application-instruction", "Use accurate ideas from the four reviews to justify concrete policy choices. These notes are a bridge to your memo, not four disconnected summaries or submitted prose.");
+      setText("student-declaration-label", "I inspected these notes, accurately distinguished individual, group, and AI-assisted work, and can explain, verify, adapt, and defend the reasoning I carry into my memo.");
+      setText("build-report", "Build memo-evidence preview");
+      setText("download-report-text", "Export memo evidence");
+      setText("report-preview-title", "Memo-evidence preview");
+      setText("report-preview-instruction", "Choose “Build memo-evidence preview” to assemble your current notes. Inspect the evidence before exporting it; this preview is not a second assignment.");
+      setText("critic-stage-step", "51-59 minutes | Optional bounded critic");
+      setText("critic-stage-description", "Your group has already produced its ideas. An instructor-approved AI critic may expose assumptions and counterexamples; if that route is unavailable, use the built-in critique card. Neither route is the decision maker or a source for the four papers.");
+      setText("critic-fallback-summary", "No approved AI critic? Open the equivalent critique card");
+      setText("defense-stage-time", "59-72 minutes | Revise and defend");
+      setText("defense-stage-description", "Close the critic route. Your group must now defend its own reasoning.");
+      const criticAccess = document.getElementById("critic-access-instruction");
+      if (criticAccess) {
+        const link = document.createElement("a");
+        link.className = "ethics-external-link";
+        link.href = "https://claude.ai";
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.textContent = "Open Claude in a new tab";
+        criticAccess.replaceChildren(link, document.createTextNode(" only if your instructor has approved this route and access works. Otherwise open the built-in critique card below. Both routes earn the same course credit and neither may replace your group's judgment."));
+      }
+    }
+
+    configureCourseMode();
 
     function blankState() {
       return {
@@ -362,6 +421,7 @@
       return {
         kind: BACKUP_KIND,
         version: VERSION,
+        course: courseMode ? "cs215" : "standalone",
         exportedAt: new Date().toISOString(),
         state: state
       };
@@ -425,7 +485,10 @@
     }
 
     function validateBackup(payload) {
-      return isPlainRecord(payload) && payload.kind === BACKUP_KIND && payload.version === VERSION && validateSessionState(payload.state);
+      if (!isPlainRecord(payload)) return false;
+      const expectedCourse = courseMode ? "cs215" : "standalone";
+      const compatibleCourse = payload.course === expectedCourse || (!courseMode && payload.course == null);
+      return payload.kind === BACKUP_KIND && payload.version === VERSION && compatibleCourse && validateSessionState(payload.state);
     }
 
     function restoreAllFields() {
@@ -462,16 +525,20 @@
     }
 
     function groupPacketPayload() {
-      return {
+      const payload = {
         kind: GROUP_KIND,
         version: VERSION,
         exportedAt: new Date().toISOString(),
         group: copyKnownFields(state.group, groupPacketKeys)
       };
+      if (courseMode) payload.course = "cs215";
+      return payload;
     }
 
     function validateGroupPacket(payload) {
-      return isPlainRecord(payload) && payload.kind === GROUP_KIND && payload.version === VERSION && validFieldMap(payload.group, groupPacketKeys);
+      const packetCourse = isPlainRecord(payload) && typeof payload.course === "string" ? payload.course.trim().toLowerCase() : "";
+      const compatibleCourse = courseMode ? packetCourse === "cs215" : packetCourse === "";
+      return isPlainRecord(payload) && payload.kind === GROUP_KIND && payload.version === VERSION && compatibleCourse && validFieldMap(payload.group, groupPacketKeys);
     }
 
     function mergeGroupPacket(text) {
@@ -487,7 +554,7 @@
         updateProgress();
         saveState("Group packet merged. Omitted and individual fields were preserved.");
       } catch (error) {
-        announce("The group packet is invalid. No work was changed.", true);
+        announce("The group packet is invalid or belongs to a different lab mode. No work was changed.", true);
       }
     }
 
@@ -529,7 +596,7 @@
       const b = state.baseline;
       const g = state.group;
       const i = state.individual;
-      return [
+      const sections = [
         {
           title: "Submission identity",
           authorship: "Individual identifying information",
@@ -606,6 +673,7 @@
           ]
         }
       ];
+      return courseMode ? sections.filter(function (section) { return section.title !== "Submission identity"; }) : sections;
     }
 
     function createElement(tag, className, text) {
@@ -620,8 +688,10 @@
       const preview = document.getElementById("ethics-report-preview");
       if (!preview) return;
       preview.replaceChildren();
-      preview.appendChild(createElement("h2", "", "AI Ethics Policy Lab Report"));
-      preview.appendChild(createElement("p", "report-meta", "Generated " + new Date().toLocaleString() + " | Submit to eCampus within three days of class"));
+      preview.appendChild(createElement("h2", "", courseMode ? "CS-215 Policy Lab Memo Evidence" : "AI Ethics Policy Lab Report"));
+      preview.appendChild(createElement("p", "report-meta", courseMode
+        ? "Generated " + new Date().toLocaleString() + " | Formative notes for the existing Week 3 policy memo; no separate lab submission"
+        : "Generated " + new Date().toLocaleString() + " | Submit to eCampus within three days of class"));
 
       reportData().forEach(function (section) {
         preview.appendChild(createElement("h3", "", section.title));
@@ -640,12 +710,13 @@
         "Giarmoleo, G., Ferrero, I., Rocchi, M., & Pellegrini, M. M. (2024). What ethics can say on artificial intelligence. Business and Society Review.",
         "Groen, E. M., Sharon, T., & Becker, M. (2026). An overview of AI ethics. AI and Ethics, 6, Article 121."
       ].forEach(function (reference) { preview.appendChild(createElement("p", "", reference)); });
-      announce("Report preview rebuilt. Inspect missing fields before printing.");
+      announce(courseMode ? "Memo-evidence preview rebuilt. Inspect it before exporting." : "Report preview rebuilt. Inspect missing fields before printing.");
       return preview;
     }
 
     function reportAsText() {
-      const lines = ["AI ETHICS POLICY LAB REPORT", "Generated: " + new Date().toLocaleString(), ""];
+      const lines = [courseMode ? "CS-215 POLICY LAB MEMO EVIDENCE" : "AI ETHICS POLICY LAB REPORT", "Generated: " + new Date().toLocaleString(), ""];
+      if (courseMode) lines.push("Formative notes only. Use them to prepare the existing Week 3 Responsible AI Policy Memo; do not submit this file as a second lab report.", "");
       reportData().forEach(function (section) {
         lines.push(section.title.toUpperCase());
         lines.push("Authorship: " + section.authorship);
@@ -664,12 +735,16 @@
     function requiredReportMissing() {
       const i = state.individual;
       const g = state.group;
-      return [
+      const required = courseMode ? [
+        i["final-verdict"], i["reasoning-change"], i["remaining-uncertainty"],
+        g["policy-allow"], g["policy-disclose"], g["policy-protect"], g["policy-assess"]
+      ] : [
         i["student-name"], i["ecampus-id"], i["report-group-letter"],
         i["final-verdict"], i["reasoning-change"], i["remaining-uncertainty"],
         i["jobin-application"], i["correa-application"], i["giarmoleo-application"], i["groen-application"],
         g["policy-allow"], g["policy-disclose"], g["policy-protect"], g["policy-assess"]
-      ].some(function (value) { return !nonempty(value); }) || i["student-declaration"] !== true;
+      ];
+      return required.some(function (value) { return !nonempty(value); }) || i["student-declaration"] !== true;
     }
 
     function printReport() {
@@ -697,7 +772,7 @@
 
     const backupButton = document.getElementById("ethics-backup");
     if (backupButton) backupButton.addEventListener("click", function () {
-      downloadFile("ai-ethics-classroom-session.json", JSON.stringify(backupPayload(), null, 2), "application/json;charset=utf-8");
+      downloadFile(courseMode ? "cs215-week3-policy-lab-backup.json" : "ai-ethics-classroom-session.json", JSON.stringify(backupPayload(), null, 2), "application/json;charset=utf-8");
       announce("Session backup downloaded.");
     });
 
@@ -743,8 +818,8 @@
     if (downloadTextButton) downloadTextButton.addEventListener("click", function () {
       buildReportPreview();
       const name = valueOrBlank(state.individual, "student-name").replace(/[^a-z0-9]+/gi, "-").replace(/^-|-$/g, "").toLowerCase() || "student";
-      downloadFile(name + "-ai-ethics-report-draft.txt", reportAsText(), "text/plain;charset=utf-8");
-      announce("Editable report draft downloaded.");
+      downloadFile(courseMode ? "cs215-week3-policy-lab-memo-evidence.txt" : name + "-ai-ethics-report-draft.txt", reportAsText(), "text/plain;charset=utf-8");
+      announce(courseMode ? "Memo evidence exported. Return to the Week 3 memo and write in your own verified words." : "Editable report draft downloaded.");
     });
 
     const printButton = document.getElementById("print-report");

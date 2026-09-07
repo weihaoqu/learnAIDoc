@@ -12,11 +12,25 @@ challenge_count: "13 questions"
 duration: "70 minutes"
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/ai-ethics-grill-classroom.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/ai-ethics-grill-classroom.css?v=2' | relative_url }}">
 
 <a class="ethics-skip-link" href="#ethics-workspace">Skip to the exercise</a>
 
 <div class="ethics-lab" id="ai-ethics-classroom-lab" data-storage-key="aiEthicsClassroomGrill:v1" data-schema-version="1">
+  <section class="ethics-course-bridge" id="cs215-course-bridge" aria-labelledby="cs215-course-bridge-title" hidden>
+    <div>
+      <p class="ethics-label">CS-215 · Week 3 Policy Lab Day</p>
+      <h2 id="cs215-course-bridge-title">Use the lab to strengthen your policy memo.</h2>
+      <p>This guided lab is part of one 80-minute CS-215 class. It is formative: your existing Week 3 Responsible AI Policy Memo remains the only graded submission, so do not submit a second lab report.</p>
+    </div>
+    <div class="ethics-course-bridge-actions">
+      <span>Use only the fictional case</span>
+      <span>Approved AI or built-in critic</span>
+      <span>Export memo evidence</span>
+      <a class="ethics-button ethics-button-secondary" href="https://weihaoqu.github.io/learnai-course/week-03-policy-lab.html">Return to the CS-215 Lab Day page</a>
+    </div>
+  </section>
+
   <div class="ethics-utility" aria-label="Exercise controls">
     <p id="ethics-save-status" role="status" aria-live="polite">Your work stays in this browser.</p>
     <div class="ethics-utility-actions">
@@ -36,7 +50,7 @@ duration: "70 minutes"
     <button type="button" data-go="accountability">Accountability</button>
     <button type="button" data-go="critic">AI critic</button>
     <button type="button" data-go="defense">Defense</button>
-    <button type="button" data-go="report">Report</button>
+    <button type="button" data-go="report" id="report-stage-nav-label">Report</button>
   </nav>
 
   <div class="ethics-workspace" id="ethics-workspace">
@@ -65,7 +79,7 @@ duration: "70 minutes"
     <main class="ethics-surface" tabindex="-1">
       <section class="ethics-stage is-active" data-stage="primer" aria-labelledby="primer-title">
         <header class="ethics-stage-header">
-          <p class="ethics-step">0-8 minutes</p>
+          <p class="ethics-step" id="primer-stage-time">0-8 minutes</p>
           <h2 id="primer-title">Four lenses, one difficult case</h2>
           <p>Use these ideas as decision tools. They are a classroom synthesis, not a claim that the four papers offer one unified college policy.</p>
         </header>
@@ -123,14 +137,14 @@ duration: "70 minutes"
         </div>
 
         <div class="ethics-stage-actions js-only">
-          <a class="ethics-button ethics-button-secondary" href="{{ '/wiki/ai-ethics-grill-facilitator/' | relative_url }}">Teacher view</a>
+          <a class="ethics-button ethics-button-secondary" id="standalone-teacher-view" href="{{ '/wiki/ai-ethics-grill-facilitator/' | relative_url }}">Teacher view</a>
           <button class="ethics-button ethics-button-primary" type="button" data-go="baseline">Begin individual baseline</button>
         </div>
       </section>
 
       <section class="ethics-stage" data-stage="baseline" aria-labelledby="baseline-title">
         <header class="ethics-stage-header">
-          <p class="ethics-step">8-17 minutes | Individual | No AI</p>
+          <p class="ethics-step" id="baseline-stage-time">8-17 minutes | Individual | No AI</p>
           <h2 id="baseline-title">Commit before consulting</h2>
           <p>Answer independently. Your position can be uncertain, but it must be yours. The snapshot is ungraded and exists only so you can examine how your reasoning changes.</p>
         </header>
@@ -224,7 +238,7 @@ duration: "70 minutes"
 
       <section class="ethics-stage" data-stage="group" aria-labelledby="group-title">
         <header class="ethics-stage-header">
-          <p class="ethics-step">17-22 minutes | Groups of 4, 4, and 3</p>
+          <p class="ethics-step" id="group-stage-time">17-22 minutes | Groups of 4, 4, and 3</p>
           <h2 id="group-title">Compare without erasing difference</h2>
           <p>Share conclusions, not private writing. The group must record disagreement rather than force artificial consensus.</p>
         </header>
@@ -255,7 +269,7 @@ duration: "70 minutes"
 
       <section class="ethics-stage" data-stage="access" aria-labelledby="access-title">
         <header class="ethics-stage-header">
-          <p class="ethics-step">22-30 minutes | Variation 1</p>
+          <p class="ethics-step" id="access-stage-time">22-30 minutes | Variation 1</p>
           <h2 id="access-title">Equal rule, unequal resources</h2>
         </header>
         <section class="ethics-case-sheet ethics-case-access" aria-labelledby="access-case-title">
@@ -274,7 +288,7 @@ duration: "70 minutes"
       </section>
 
       <section class="ethics-stage" data-stage="privacy" aria-labelledby="privacy-title">
-        <header class="ethics-stage-header"><p class="ethics-step">30-38 minutes | Variation 2</p><h2 id="privacy-title">Useful input can still be unauthorized</h2></header>
+        <header class="ethics-stage-header"><p class="ethics-step" id="privacy-stage-time">30-38 minutes | Variation 2</p><h2 id="privacy-title">Useful input can still be unauthorized</h2></header>
         <section class="ethics-case-sheet ethics-case-privacy" aria-labelledby="privacy-case-title"><div class="ethics-case-index">New fact 2</div><div><h3 id="privacy-case-title">The upload</h3><p>The student uploaded instructor feedback, a classmate's draft, and unpublished course materials to an unapproved AI service.</p></div></section>
 
         <div class="ethics-question" data-question="q9"><div class="ethics-question-number">Q9</div><div><h3>Turn principles into practice</h3><p>Jobin shows that shared words can hide different meanings. Corrêa shows that repeated principles need implementation.</p><label for="q9-principle">Choose one principle and define what it requires in this case.</label><textarea id="q9-principle" data-group-field="q9-principle" rows="3" maxlength="1400"></textarea><label for="q9-practice">Name the actor, required action, process, and response to noncompliance.</label><textarea id="q9-practice" data-group-field="q9-practice" rows="4" maxlength="1800"></textarea></div></div>
@@ -286,7 +300,7 @@ duration: "70 minutes"
       </section>
 
       <section class="ethics-stage" data-stage="accountability" aria-labelledby="accountability-title">
-        <header class="ethics-stage-header"><p class="ethics-step">38-46 minutes | Variation 3</p><h2 id="accountability-title">Responsibility under a vague rule</h2></header>
+        <header class="ethics-stage-header"><p class="ethics-step" id="accountability-stage-time">38-46 minutes | Variation 3</p><h2 id="accountability-title">Responsibility under a vague rule</h2></header>
         <section class="ethics-case-sheet ethics-case-accountability" aria-labelledby="accountability-case-title"><div class="ethics-case-index">New fact 3</div><div><h3 id="accountability-case-title">The missing guidance</h3><p>The syllabus never defined responsible use or adequate disclosure. The instructor provided no examples. The student can now defend most, but not all, of the submitted work.</p></div></section>
 
         <div class="ethics-question" data-question="q11"><div class="ethics-question-number">Q11</div><div><h3>What rule and what capability are both needed?</h3><div class="ethics-split-fields"><div><label for="q11-rule">Act-centered response: one rule, process, or consequence</label><textarea id="q11-rule" data-group-field="q11-rule" rows="4" maxlength="1600"></textarea></div><div><label for="q11-judgment">Agent-centered response: one judgment capability students must develop</label><textarea id="q11-judgment" data-group-field="q11-judgment" rows="4" maxlength="1600"></textarea></div></div></div></div>
@@ -298,7 +312,7 @@ duration: "70 minutes"
       </section>
 
       <section class="ethics-stage" data-stage="critic" aria-labelledby="critic-title">
-        <header class="ethics-stage-header"><p class="ethics-step">46-54 minutes | Claude permitted</p><h2 id="critic-title">Use AI to attack the policy, not write it</h2><p>Your group has already produced its ideas. Claude may now expose assumptions and counterexamples. It is not the decision maker or a source for the four papers.</p></header>
+        <header class="ethics-stage-header"><p class="ethics-step" id="critic-stage-step">46-54 minutes | Claude permitted</p><h2 id="critic-title">Use AI to attack the policy, not write it</h2><p id="critic-stage-description">Your group has already produced its ideas. Claude may now expose assumptions and counterexamples. It is not the decision maker or a source for the four papers.</p></header>
 
         <div class="ethics-ai-boundary">
           <div><strong>Paste</strong><span>Only the fictional case and your provisional policy</span></div>
@@ -307,7 +321,7 @@ duration: "70 minutes"
         </div>
 
         <div class="ethics-answer-block"><label for="ai-prompt">Critic prompt</label><textarea id="ai-prompt" rows="16" readonly></textarea><button class="ethics-button ethics-button-secondary js-only" id="copy-ai-prompt" type="button">Copy critic prompt</button></div>
-        <p><a class="ethics-external-link" href="https://claude.ai" target="_blank" rel="noopener noreferrer">Open Claude in a new tab</a>. Use your individual university-sponsored account. If access fails, ask the instructor for the equivalent printed critique card.</p>
+        <p id="critic-access-instruction"><a class="ethics-external-link" href="https://claude.ai" target="_blank" rel="noopener noreferrer">Open Claude in a new tab</a>. Use your individual university-sponsored account. If access fails, ask the instructor for the equivalent printed critique card.</p>
 
         <div class="ethics-answer-block"><label for="ai-output">Paste or summarize the most relevant AI critique</label><textarea id="ai-output" data-group-field="ai-output" rows="5" maxlength="4000"></textarea></div>
         <div class="ethics-split-fields">
@@ -319,7 +333,7 @@ duration: "70 minutes"
         <div class="ethics-question" data-question="q13"><div class="ethics-question-number">Q13</div><div><h3>What is the strongest counterargument?</h3><label for="q13-counterargument">State it in a form a reasonable critic would accept.</label><textarea id="q13-counterargument" data-group-field="q13-counterargument" rows="4" maxlength="1800"></textarea><label for="q13-revision">Revise exactly one policy sentence in response, or defend why no revision is needed.</label><textarea id="q13-revision" data-group-field="q13-revision" rows="4" maxlength="1800"></textarea></div></div>
 
         <details class="ethics-fallback-card">
-          <summary>Claude unavailable? Open the equivalent critique card</summary>
+          <summary id="critic-fallback-summary">Claude unavailable? Open the equivalent critique card</summary>
           <p>Your policy may reward students who can produce polished disclosures rather than students who learned. It may also assume equal tool access, treat consent as sufficient privacy protection, and place duties on students without requiring instructors or the institution to provide usable rules. Identify which criticism is strongest, reject at least one that does not fit your policy, and revise one sentence.</p>
         </details>
 
@@ -327,7 +341,7 @@ duration: "70 minutes"
       </section>
 
       <section class="ethics-stage" data-stage="defense" aria-labelledby="defense-title">
-        <header class="ethics-stage-header"><p class="ethics-step">54-67 minutes | Revise and defend</p><h2 id="defense-title">A policy must survive another group</h2><p>Close Claude. Your group must now defend its own reasoning.</p></header>
+        <header class="ethics-stage-header"><p class="ethics-step" id="defense-stage-time">54-67 minutes | Revise and defend</p><h2 id="defense-title">A policy must survive another group</h2><p id="defense-stage-description">Close Claude. Your group must now defend its own reasoning.</p></header>
 
         <div class="ethics-challenge-map" aria-label="Cross-group challenge assignments"><span>Group A challenges B</span><span>Group B challenges C</span><span>Group C challenges A</span></div>
 
@@ -351,13 +365,13 @@ duration: "70 minutes"
           <button class="ethics-button ethics-button-secondary js-only" id="import-group-packet" type="button">Import group answers</button>
         </details>
 
-        <div class="ethics-stage-actions js-only"><button class="ethics-button ethics-button-quiet" type="button" data-go="critic">Previous</button><button class="ethics-button ethics-button-primary" type="button" data-go="report">Complete individual report</button></div>
+        <div class="ethics-stage-actions js-only"><button class="ethics-button ethics-button-quiet" type="button" data-go="critic">Previous</button><button class="ethics-button ethics-button-primary" id="open-report-stage" type="button" data-go="report">Complete individual report</button></div>
       </section>
 
       <section class="ethics-stage" data-stage="report" aria-labelledby="report-title">
-        <header class="ethics-stage-header"><p class="ethics-step">67-70 minutes, then revise within three days</p><h2 id="report-title">Return to your own judgment</h2><p>These fields are individual work. Develop them after class before generating the PDF for eCampus.</p></header>
+        <header class="ethics-stage-header"><p class="ethics-step" id="report-stage-time">67-70 minutes, then revise within three days</p><h2 id="report-title">Return to your own judgment</h2><p id="report-stage-instruction">These fields are individual work. Develop them after class before generating the PDF for eCampus.</p></header>
 
-        <fieldset class="ethics-identity">
+        <fieldset class="ethics-identity" id="standalone-submission-identity">
           <legend>Submission identity</legend>
           <label for="student-name">Student name<input id="student-name" type="text" data-individual-field="student-name" maxlength="160"></label>
           <label for="ecampus-id">eCampus username or student ID<input id="ecampus-id" type="text" data-individual-field="ecampus-id" maxlength="160"></label>
@@ -371,18 +385,29 @@ duration: "70 minutes"
 
         <section class="ethics-paper-application" aria-labelledby="paper-application-title">
           <h3 id="paper-application-title">Apply all four papers</h3>
-          <p>Use one accurate idea from each paper to justify a concrete policy decision. Do not write four disconnected summaries.</p>
+          <p id="paper-application-instruction">Use one accurate idea from each paper to justify a concrete policy decision. Do not write four disconnected summaries.</p>
           <label for="jobin-application">Jobin: principle ambiguity<textarea id="jobin-application" data-individual-field="jobin-application" rows="4" maxlength="2400"></textarea></label>
           <label for="correa-application">Corrêa: implementation and governance<textarea id="correa-application" data-individual-field="correa-application" rows="4" maxlength="2400"></textarea></label>
           <label for="giarmoleo-application">Giarmoleo: rules and judgment<textarea id="giarmoleo-application" data-individual-field="giarmoleo-application" rows="4" maxlength="2400"></textarea></label>
           <label for="groen-application">Groen: lived realities and power<textarea id="groen-application" data-individual-field="groen-application" rows="4" maxlength="2400"></textarea></label>
         </section>
 
-        <label class="ethics-confirm"><input id="student-declaration" type="checkbox" data-individual-field="student-declaration"> I inspected this report, accurately distinguished individual, group, and AI-assisted work, and can explain, verify, adapt, and defend the submitted reasoning.</label>
+        <label class="ethics-confirm"><input id="student-declaration" type="checkbox" data-individual-field="student-declaration"> <span id="student-declaration-label">I inspected this report, accurately distinguished individual, group, and AI-assisted work, and can explain, verify, adapt, and defend the submitted reasoning.</span></label>
 
-        <section class="ethics-rubric" aria-labelledby="rubric-title">
+        <section class="ethics-rubric" id="standalone-report-rubric" aria-labelledby="rubric-title">
           <h3 id="rubric-title">Report rubric: 20 points</h3>
           <table><thead><tr><th>Criterion</th><th>Points</th></tr></thead><tbody><tr><td>Accurate application of all four papers</td><td>4</td></tr><tr><td>Visible reasoning revision</td><td>4</td></tr><tr><td>Specific operational policy</td><td>4</td></tr><tr><td>Fairness, privacy, access, and power analysis</td><td>3</td></tr><tr><td>Evaluation rather than copying of AI advice</td><td>3</td></tr><tr><td>Complete AI-use documentation</td><td>2</td></tr></tbody></table>
+        </section>
+
+        <section class="ethics-course-self-check" id="cs215-memo-self-check" aria-labelledby="cs215-memo-self-check-title" hidden>
+          <h3 id="cs215-memo-self-check-title">Memo-evidence self-check</h3>
+          <p>Before exporting, confirm that your notes preserve all four items below. This is a learning check, not a second grade.</p>
+          <ul>
+            <li>Your final position differs from—or deliberately retains—your baseline for a stated reason.</li>
+            <li>At least two review-paper ideas support concrete policy choices.</li>
+            <li>The policy names permissions, disclosure, privacy, assessment, and institutional responsibility.</li>
+            <li>You evaluated the critic instead of copying it.</li>
+          </ul>
         </section>
 
         <div class="ethics-report-controls js-only">
@@ -391,14 +416,14 @@ duration: "70 minutes"
           <button class="ethics-button ethics-button-secondary" id="print-report" type="button">Print / Save as PDF</button>
         </div>
 
-        <div class="ethics-template-links">
+        <div class="ethics-template-links" id="standalone-report-templates">
           <a href="{{ '/assets/templates/ai-ethics-grill-report-template.docx' | relative_url }}">Download DOCX fallback template</a>
           <a href="{{ '/assets/templates/ai-ethics-grill-report-template.pdf' | relative_url }}">Download PDF fallback template</a>
         </div>
 
         <article class="ethics-report-preview" id="ethics-report-preview" aria-labelledby="report-preview-title">
           <h2 id="report-preview-title">Report preview</h2>
-          <p>Choose "Build report preview" to assemble your current work. Inspect every section before saving it as PDF.</p>
+          <p id="report-preview-instruction">Choose "Build report preview" to assemble your current work. Inspect every section before saving it as PDF.</p>
         </article>
       </section>
     </main>
@@ -412,4 +437,4 @@ duration: "70 minutes"
 </div>
 
 <noscript><p class="ethics-noscript">JavaScript is unavailable. This view is for reading only; do not use it to complete the classroom lab because it cannot enforce the baseline sequence. Use the DOCX or PDF fallback if JavaScript remains unavailable.</p></noscript>
-<script src="{{ '/assets/js/ai-ethics-grill-classroom.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/ai-ethics-grill-classroom.js?v=2' | relative_url }}" defer></script>
