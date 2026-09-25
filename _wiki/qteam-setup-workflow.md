@@ -1,8 +1,9 @@
 ---
 title: "QTeam — Set Up and Run a Codex–Claude Team"
 date: 2026-09-24
+last_updated: 2026-09-25
 category: Claude Code Workflows
-tags: [qteam, claude-code, codex, multi-agent, coordination, worktree, audit]
+tags: [qteam, claude-code, codex, multi-agent, coordination, worktree, audit, graph-engineering]
 related: []
 icon: "🤝"
 image: "/assets/images/qteam-setup-workflow.png"
@@ -10,7 +11,9 @@ image: "/assets/images/qteam-setup-workflow.png"
 
 QTeam is our reusable skill and coordination protocol for working with a coordinator, scoped workers, and an independent auditor. Its purpose is to keep decisions in one conversation while agents work on separate deliverables. Codex or Claude can fill each role; actual communication depends on the tools connected to those sessions.
 
-*Source: [Claude skills](https://code.claude.com/docs/en/skills) | [Git worktrees](https://git-scm.com/docs/git-worktree) | [Claude scheduled tasks](https://code.claude.com/docs/en/scheduled-tasks) | [Anthropic’s multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system) | [Multi-agent failure analysis](https://arxiv.org/abs/2503.13657)*
+*Updated September 25, 2026: graph context is now part of the updated skill's setup and resume workflow. The full setup prompt below can be copied into another agent session.*
+
+*Source: [Claude skills](https://code.claude.com/docs/en/skills) · [Git worktrees](https://git-scm.com/docs/git-worktree) · [Claude scheduled tasks](https://code.claude.com/docs/en/scheduled-tasks) · [Anthropic’s multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system) · [Multi-agent failure analysis](https://arxiv.org/abs/2503.13657)*
 
 The sources explain the underlying tools and design concerns. QTeam-specific behavior and trial results below come from our local prototype records, identified at the end. QTeam is a local prototype, with no verified public download link yet.
 
@@ -18,11 +21,53 @@ The sources explain the underlying tools and design concerns. QTeam-specific beh
 
 Open the intended project in an agent session with QTeam installed and say:
 
-> Start qteam for this project. Our goal is [goal]. First recommend the smallest useful team and discuss the roles with me.
+```text
+Start qteam for this project. Our goal is [goal]. First recommend the smallest useful team and discuss the roles with me.
+```
 
 The coordinator should inspect existing project instructions and team state, then recommend the worker count and assignments. **Agree on the team before it creates sessions or provisions their folders.** After agreement, it prepares complete startup files and gives you a short instruction for each terminal. You should not need to reconstruct long prompts.
 
 Natural-language skill selection is best effort. In Q’s configured hosts, try `$qteam` in Codex or `/qteam` in Claude when the skill is discovered. Otherwise ask the agent to read the installed `qteam/SKILL.md` explicitly.
+
+## Copy the full setup prompt
+
+Open a fresh Codex or Claude Code session in the intended project folder. Copy the prompt below, replace the goal line, and send it to the agent that will coordinate the team. You do not need to paste this article or our earlier conversation.
+
+**The two absolute skill paths below are for Q's Mac.** On another machine, substitute that machine's actual installed skill paths. The skill must already be installed; copying this prompt does not install QTeam. If the project already has a different coordinator, resolve the handoff before taking over.
+
+<div id="qteam-setup-prompt" class="qteam-prompt" markdown="1">
+
+<div class="qteam-copy-controls">
+  <button type="button" id="qteam-copy-setup" aria-describedby="qteam-copy-status" hidden>Copy setup prompt</button>
+  <span id="qteam-copy-status" role="status" aria-live="polite"></span>
+</div>
+
+```text
+Use the updated QTeam skill to set up coordination for this project. You will be the coordinator.
+
+Project: the current workspace.
+Goal: [describe what I want the team to accomplish]
+
+Read the installed skill first:
+- Codex: /Users/oreo/.codex/skills/qteam/SKILL.md
+- Claude Code: /Users/oreo/.claude/skills/qteam/SKILL.md
+
+Inspect project instructions and any existing team state/checkpoint. Resume an existing setup safely; do not reset it or create a competing coordinator.
+
+For a new team, recommend the smallest useful team, with clear responsibilities and file ownership. Tell me the worker count and total additional sessions, including any auditor. Discuss this with me before provisioning.
+
+After we agree, handle the setup details and generate complete startup files for each agent. Give me the exact folder and short instruction to paste into each session.
+
+Use the new graph-context workflow during setup, resume, and handoffs. Include each agent's exact context command in its startup file. Keep live coordination state outside Dropbox and worktrees.
+
+Use guided, visible agent sessions unless I choose another mode. Distinguish prepared assignments from acknowledged or actually running agents.
+
+Start with inspection and your team recommendation.
+```
+
+</div>
+
+The Copy button copies only the prompt. If clipboard access is blocked, it selects the prompt for manual copying with **Cmd+C / Ctrl+C**. With JavaScript disabled, or in a PDF, select and copy the text normally.
 
 ## Install once, reuse across projects
 
@@ -49,6 +94,39 @@ Do not start a project team or enable monitoring yet.
 ```
 
 Confirm the skill is discoverable in each intended host. If an existing session misses it, try a fresh session or explicit file read. No new hook, connector, or plugin installation is required by the QTeam package.
+
+For the graph-enabled version, the complete package also includes `scripts/graph.py` and `references/graph.md`. Update the reviewed package as a whole; replacing only `SKILL.md` can leave instructions that refer to a missing helper. With this version and compatible v1 state, graph context needs no separate database or opt-in step.
+
+## What graph context shares — and what it does not
+
+QTeam's graph is a **read-only view of recorded coordination state**, not a second source of truth. The SQLite database holds the operational records; `graph.py` connects agents, tasks, declared dependencies, artifacts, reviews, and message metadata so each agent can find relevant context.
+
+```text
+Recorded project state (host-local SQLite)
+                    |
+              read-only graph
+             /      |       \
+ coordinator   worker A   worker B
+      |            |          |
+ original assignments, artifacts, and review evidence
+```
+
+The updated skill tells the coordinator to verify the project, state, and actor identity before querying context. For a new team, it queries after the agreed actors and tasks exist. Each worker's startup file includes its exact context command; agents refresh context on resume and handoff instead of treating an old snapshot as current. These are actions the agent follows from the skill, not a background service.
+
+| View | What it helps an agent find |
+| --- | --- |
+| `context --actor <id>` | Related tasks and their prerequisites, artifact/review records, and inbox metadata. The current coordinator sees all tasks. |
+| `explain --task <id>` | Recorded blockers, dependency and ownership issues, and completion-metadata checks such as a missing review for the recorded artifact version. |
+| `impact --task <id>` | Downstream tasks connected by declared task dependencies that may need rechecking when an input changes. It does not infer code dependencies. |
+| `graph --format mermaid` | An optional diagram of the recorded relationships. Drawing it does not deliver assignments or wake workers. |
+
+For example, if worker A records a changed importer artifact and worker B's report task depends on it, the coordinator can use `impact` to find the report task to recheck. `explain` can expose a missing matching review in the metadata. The agents must still read the assignment, inspect the actual files, and run relevant checks: the graph does not open or rehash artifacts to prove their contents.
+
+**This is shared project context, not shared private chat history.** Unrecorded conversations and undeclared relationships are absent. Graph output does not grant permission, authenticate an agent, or replace original messages and evidence. A queued inbox entry is not an acknowledgment or proof that a worker is running. Context filtering is for relevance, not access control; even a filtered export may reveal project paths or titles.
+
+Keep live state and saved context snapshots outside Dropbox and other synchronization roots. If graph projection fails or an established setup uses a legacy protocol, inspect the existing source and report the limitation; do not reset, migrate, or create replacement state merely to obtain a graph.
+
+For the underlying ideas, see [Graph Engineering and Agent Memory]({{ '/wiki/graph-engineering-karpathy-agent-memory/' | relative_url }}) and [Harness Loops and Graph Engineering]({{ '/wiki/harness-loop-graph-engineering/' | relative_url }}). These are conceptual background, not evidence of QTeam reliability or a measured performance improvement.
 
 ## Choose roles before choosing more agents
 
@@ -119,7 +197,7 @@ Project files can still live in Dropbox. An existing `working-folder/agent-team/
 | Say this to the coordinator | Expected action |
 | --- | --- |
 | “Check the team and bring me decisions.” | Read current evidence; distinguish work, blockers, and decisions |
-| “Resume qteam.” | Recover the same team, ownership, messages, approvals, and consumed attempts |
+| “Resume qteam.” | Recover the same team, ownership, messages, approvals, and consumed attempts; refresh graph context when compatible |
 | “Prepare setup only; no workers yet.” | Discuss the design, then prepare only the agreed setup |
 | “Pause automatic checking.” | Disable only the relevant monitoring and record the pause |
 
@@ -172,6 +250,8 @@ The trials support further small, bounded use. They do not establish that an arb
 | Symptom | Next action |
 | --- | --- |
 | The agent does not recognize QTeam | Verify the full package and host discovery; explicitly read `SKILL.md` if needed |
+| The graph helper is missing or its query fails | Check the complete updated package and existing state compatibility; preserve established state and report the error rather than creating a replacement database |
+| A graph packet looks stale | Verify the same state and actor identity, then regenerate context; inspect primary evidence before acting |
 | Worker is idle after dispatch | Check receipt and acknowledgment; manually send the saved startup instruction if transport is absent |
 | Several workers await decisions | Present a consolidated decision list with recommendations; continue independent authorized work |
 | Two sessions claim to coordinate | Stop new dispatches and reconcile ownership without resetting state |
@@ -179,4 +259,15 @@ The trials support further small, bounded use. They do not establish that an arb
 
 To share QTeam, provide this guide, the reviewed skill package, and a bounded project goal. Do not copy live databases, private session transcripts, or project-specific approvals into someone else’s new team. Review raw logs and evidence archives for private paths, prompts, or project data before sharing them.
 
-Maintained local provenance in `agent-coordination-kit`: `skills/qteam/SKILL.md`, `docs/START-HERE.md`, `docs/QUICKSTART.md`, `docs/protocol.md`, `trials/mixed-provider-20260924/RESULT.md`, and `validation/agent-team/guided-setup/VERIFICATION.json`. The separate `gcd-coordination-trial/RESULT.md` records the DP-GCD trial. These are maintainer-held records, not public links or downloadable releases.
+Maintained local provenance in `agent-coordination-kit`: `skills/qteam/SKILL.md`, `skills/qteam/references/setup.md`, `docs/START-HERE.md`, `docs/QUICKSTART.md`, `docs/protocol.md`, `docs/graph.md`, `graph.py`, `tests/test_graph.py`, `trials/mixed-provider-20260924/RESULT.md`, and `validation/agent-team/guided-setup/VERIFICATION.json`. The separate `gcd-coordination-trial/RESULT.md` records the DP-GCD trial. These are maintainer-held records, not public links or downloadable releases.
+
+<style>
+  .qteam-copy-controls { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; margin: 1rem 0; }
+  #qteam-copy-setup { font: inherit; padding: .6rem .9rem; border: 1px solid currentColor; border-radius: .5rem; color: inherit; background: transparent; cursor: pointer; }
+  #qteam-copy-setup:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }
+  #qteam-copy-setup:disabled { cursor: wait; opacity: .65; }
+  #qteam-copy-status { font-size: .9rem; }
+  .qteam-prompt pre, .qteam-prompt code { white-space: pre-wrap; overflow-wrap: anywhere; }
+  @media print { .qteam-copy-controls { display: none; } }
+</style>
+<script src="{{ '/assets/js/qteam-setup-workflow.js' | relative_url }}" defer></script>
